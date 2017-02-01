@@ -1,0 +1,1322 @@
+
+file {
+	name="/afs/psi.ch/user/k/koprek_w/cvs/G/XFEL/14_Firmware/13_Prototype/Button_BPM/05_EPICS/Button_Eth/App/config/medm/IBFBWAV.adl"
+	version=030105
+}
+display {
+	object {
+		x=267
+		y=81
+		width=1000
+		height=650
+	}
+	clr=14
+	bclr=4
+	cmap=""
+	gridSpacing=5
+	gridOn=1
+	snapToGrid=1
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+"cartesian plot" {
+	object {
+		x=400
+		y=30
+		width=600
+		height=200
+	}
+	plotcom {
+		xlabel="Arrival time [1/216.6 MHz]"
+		ylabel="Position [mm]"
+		clr=0
+		bclr=14
+	}
+	erase_oldest="plot last n pts"
+	trace[0] {
+		xdata="$(DEV):Y-RX-UPDOWN-TIME"
+		ydata="$(DEV):Y-RX-UPDOWN-POS"
+		data_clr=20
+	}
+}
+rectangle {
+	object {
+		x=2
+		y=31
+		width=330
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=0
+		width=1000
+		height=30
+	}
+	"basic attribute" {
+		clr=1
+	}
+}
+polyline {
+	object {
+		x=2
+		y=51
+		width=330
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(2,51)
+		(332,51)
+	}
+}
+polyline {
+	object {
+		x=-40
+		y=860
+		width=1000
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(-40,860)
+		(960,860)
+	}
+}
+text {
+	object {
+		x=0
+		y=5
+		width=960
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="XFEL IBFB Controller [$(DEV)]"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=0
+		y=30
+		width=330
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(1,31)
+		(329,31)
+	}
+}
+text {
+	object {
+		x=16
+		y=116
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SFP in"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=111
+		y=51
+		width=0
+		height=220
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(111,51)
+		(111,271)
+	}
+}
+rectangle {
+	object {
+		x=281
+		y=116
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 536870912) > 0"
+		chan="$(DEV):RTMG-SFP1"
+	}
+}
+polyline {
+	object {
+		x=166
+		y=71
+		width=0
+		height=200
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(166,71)
+		(166,271)
+	}
+}
+rectangle {
+	object {
+		x=226
+		y=116
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 2097152) > 0"
+		chan="$(DEV):RTMG-SFP1"
+	}
+}
+polyline {
+	object {
+		x=221
+		y=51
+		width=0
+		height=220
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(221,51)
+		(221,271)
+	}
+}
+rectangle {
+	object {
+		x=171
+		y=116
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 8192) > 0"
+		chan="$(DEV):RTMG-SFP1"
+	}
+}
+polyline {
+	object {
+		x=276
+		y=71
+		width=0
+		height=200
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(276,71)
+		(276,271)
+	}
+}
+rectangle {
+	object {
+		x=116
+		y=116
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 32) > 0"
+		chan="$(DEV):RTMG-SFP1"
+	}
+}
+text {
+	object {
+		x=16
+		y=96
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RTMG port"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=1
+		y=111
+		width=330
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(1,111)
+		(331,111)
+	}
+}
+polyline {
+	object {
+		x=1
+		y=91
+		width=330
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(1,91)
+		(331,91)
+	}
+}
+text {
+	object {
+		x=281
+		y=96
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM2-1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=226
+		y=96
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM2-0"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=171
+		y=96
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1-1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=116
+		y=96
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1-0"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=226
+		y=116
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 2097152) = 0"
+		chan="$(DEV):RTMG-SFP1"
+	}
+}
+rectangle {
+	object {
+		x=281
+		y=116
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 536870912) = 0"
+		chan="$(DEV):RTMG-SFP1"
+	}
+}
+rectangle {
+	object {
+		x=171
+		y=116
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 8192) = 0"
+		chan="$(DEV):RTMG-SFP1"
+	}
+}
+rectangle {
+	object {
+		x=116
+		y=116
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 32) = 0"
+		chan="$(DEV):RTMG-SFP1"
+	}
+}
+text {
+	object {
+		x=116
+		y=76
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Up/Down"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=226
+		y=76
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Up/Down"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=171
+		y=76
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SASE"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=281
+		y=76
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SASE"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=1
+		y=71
+		width=330
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(1,71)
+		(331,71)
+	}
+}
+text {
+	object {
+		x=146
+		y=56
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Y"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=256
+		y=56
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="X"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=16
+		y=76
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPMs"
+	align="horiz. right"
+}
+text {
+	object {
+		x=16
+		y=56
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Plane"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=1
+		y=131
+		width=330
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(1,131)
+		(331,131)
+	}
+}
+text {
+	object {
+		x=16
+		y=136
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RX Loss"
+	align="horiz. right"
+}
+rectangle {
+	object {
+		x=281
+		y=136
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 268435456) > 0"
+		chan="$(DEV):RTMG-SFP1"
+	}
+}
+rectangle {
+	object {
+		x=226
+		y=136
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 1048576) > 0"
+		chan="$(DEV):RTMG-SFP1"
+	}
+}
+rectangle {
+	object {
+		x=171
+		y=136
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 4096) > 0"
+		chan="$(DEV):RTMG-SFP1"
+	}
+}
+rectangle {
+	object {
+		x=116
+		y=136
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 16) > 0"
+		chan="$(DEV):RTMG-SFP1"
+	}
+}
+polyline {
+	object {
+		x=1
+		y=151
+		width=330
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(1,151)
+		(331,151)
+	}
+}
+polyline {
+	object {
+		x=331
+		y=31
+		width=2
+		height=241
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(332,32)
+		(332,271)
+	}
+}
+text {
+	object {
+		x=131
+		y=36
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Feedback Optical Links"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=16
+		y=156
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Loss of sync"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=1
+		y=171
+		width=330
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(1,171)
+		(331,171)
+	}
+}
+text {
+	object {
+		x=15
+		y=256
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Received packets"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=271
+		width=330
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,271)
+		(330,271)
+	}
+}
+text {
+	object {
+		x=15
+		y=216
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Bad packets"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=231
+		width=330
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,231)
+		(330,231)
+	}
+}
+text {
+	object {
+		x=15
+		y=236
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="CRC errors"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=251
+		width=330
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,251)
+		(330,251)
+	}
+}
+text {
+	object {
+		x=16
+		y=196
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Loss counter"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=1
+		y=211
+		width=330
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(1,211)
+		(331,211)
+	}
+}
+text {
+	object {
+		x=16
+		y=176
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Reset statistics"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=1
+		y=191
+		width=330
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(1,191)
+		(331,191)
+	}
+}
+"cartesian plot" {
+	object {
+		x=0
+		y=410
+		width=400
+		height=240
+	}
+	plotcom {
+		xlabel="Bucket"
+		ylabel="DAC counts"
+		clr=0
+		bclr=14
+	}
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):Y-KICK1-OUT"
+		data_clr=20
+	}
+	trace[1] {
+		ydata="$(DEV):Y-KICK2-OUT"
+		data_clr=15
+	}
+}
+rectangle {
+	object {
+		x=170
+		y=155
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 512) > 0"
+		chan="$(DEV):Y-RTMG-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=114
+		y=255
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-UPDOWN-PACKETS"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=115
+		y=155
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 131072) > 0"
+		chan="$(DEV):Y-RTMG-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=169
+		y=255
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-SASE-PACKETS"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=114
+		y=215
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-UPDOWN-BAD-DATA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=169
+		y=215
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-SASE-BAD-DATA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=114
+		y=235
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-UPDOWN-CRC-ERR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=169
+		y=235
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-SASE-CRC-ERR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"message button" {
+	object {
+		x=115
+		y=173
+		width=100
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-GTX-STAT-RST"
+		clr=14
+		bclr=4
+	}
+	label="Stat reset"
+	press_msg="1"
+	release_msg="0"
+}
+"text update" {
+	object {
+		x=115
+		y=195
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-UPDOWN-LOSS-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=170
+		y=195
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-SASE-LOSS-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"message button" {
+	object {
+		x=225
+		y=173
+		width=100
+		height=15
+	}
+	control {
+		chan="$(DEV):X-GTX-STAT-RST"
+		clr=14
+		bclr=4
+	}
+	label="Stat reset"
+	press_msg="1"
+	release_msg="0"
+}
+"text update" {
+	object {
+		x=224
+		y=255
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-UPDOWN-PACKETS"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=279
+		y=255
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-SASE-PACKETS"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=224
+		y=215
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-UPDOWN-BAD-DATA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=279
+		y=215
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-SASE-BAD-DATA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=224
+		y=235
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-UPDOWN-CRC-ERR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=279
+		y=235
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-SASE-CRC-ERR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=225
+		y=195
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-UPDOWN-LOSS-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=280
+		y=195
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-SASE-LOSS-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=225
+		y=155
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 131072) > 0"
+		chan="$(DEV):X-RTMG-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=280
+		y=155
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 512) > 0"
+		chan="$(DEV):X-RTMG-GTX-STATUS"
+	}
+}
+"cartesian plot" {
+	object {
+		x=400
+		y=230
+		width=600
+		height=200
+	}
+	plotcom {
+		xlabel="Bucket"
+		ylabel="Position error [mm]"
+		clr=0
+		bclr=14
+	}
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):Y-FB-POS-ERR"
+		data_clr=20
+	}
+}
+"cartesian plot" {
+	object {
+		x=400
+		y=430
+		width=600
+		height=200
+	}
+	plotcom {
+		xlabel="Bucket"
+		ylabel="Angle error [rad]"
+		clr=0
+		bclr=14
+	}
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):Y-FB-ANGLE-ERR"
+		data_clr=20
+	}
+}

@@ -1,0 +1,788 @@
+
+file {
+	name="/afs/psi.ch/user/k/koprek_w/cvs/F/DI/FIN250/BPM/GPAC/BUT/App/config/medm/F_DI_FIN250_BPM_GPAC_BUT_RFFE_PWR.adl"
+	version=030104
+}
+display {
+	object {
+		x=102
+		y=399
+		width=600
+		height=200
+	}
+	clr=14
+	bclr=4
+	cmap=""
+	gridSpacing=5
+	gridOn=1
+	snapToGrid=1
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+oval {
+	object {
+		x=180
+		y=170
+		width=15
+		height=15
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 32) > 0"
+		chan="$(DEV):RFFE-GPIO-STATE"
+	}
+}
+oval {
+	object {
+		x=180
+		y=110
+		width=15
+		height=15
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A<11"
+		chan="$(DEV):RFFE-HS-P12V-V"
+	}
+}
+rectangle {
+	object {
+		x=-140
+		y=0
+		width=740
+		height=30
+	}
+	"basic attribute" {
+		clr=1
+	}
+}
+polyline {
+	object {
+		x=160
+		y=50
+		width=0
+		height=150
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(160,50)
+		(160,200)
+	}
+}
+polyline {
+	object {
+		x=215
+		y=50
+		width=0
+		height=150
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(215,50)
+		(215,200)
+	}
+}
+polyline {
+	object {
+		x=315
+		y=50
+		width=0
+		height=114
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(315,50)
+		(315,164)
+	}
+}
+polyline {
+	object {
+		x=415
+		y=50
+		width=0
+		height=114
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(415,50)
+		(415,164)
+	}
+}
+polyline {
+	object {
+		x=505
+		y=50
+		width=0
+		height=114
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(505,50)
+		(505,164)
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=30
+		width=740
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+"text update" {
+	object {
+		x=235
+		y=85
+		width=60
+		height=12
+	}
+	monitor {
+		chan="$(DEV):RFFE-HS-5V-V"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=15
+		y=85
+		width=120
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Hot Swap Controller 5V"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=235
+		y=115
+		width=60
+		height=12
+	}
+	monitor {
+		chan="$(DEV):RFFE-HS-P12V-V"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=10
+		y=115
+		width=120
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Hot Swap Controller 12V"
+}
+"text update" {
+	object {
+		x=235
+		y=145
+		width=60
+		height=12
+	}
+	monitor {
+		chan="$(DEV):RFFE-HS-N12V-V"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=10
+		y=145
+		width=120
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Hot Swap Controller -12V"
+}
+polyline {
+	object {
+		x=0
+		y=70
+		width=740
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(0,70)
+		(740,70)
+	}
+}
+text {
+	object {
+		x=415
+		y=55
+		width=80
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Status"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=510
+		y=55
+		width=80
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Fault"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=315
+		y=55
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Current [A]"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=215
+		y=55
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Voltage [V]"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=160
+		y=55
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Enable"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=65
+		y=35
+		width=400
+		height=12
+	}
+	"basic attribute" {
+		clr=1
+	}
+	textix="Power Control"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=240
+		y=5
+		width=300
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Button BPM RFFE Power ($(DEV):$(RFFE))"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=330
+		y=85
+		width=60
+		height=12
+	}
+	monitor {
+		chan="$(DEV):RFFE-HS-5V-I"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=330
+		y=115
+		width=60
+		height=12
+	}
+	monitor {
+		chan="$(DEV):RFFE-HS-P12V-I"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=330
+		y=145
+		width=60
+		height=12
+	}
+	monitor {
+		chan="$(DEV):RFFE-HS-N12V-I"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=430
+		y=85
+		width=60
+		height=12
+	}
+	monitor {
+		chan="$(DEV):RFFE-HS-5V-STATUS"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="hexadecimal"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=430
+		y=145
+		width=60
+		height=12
+	}
+	monitor {
+		chan="$(DEV):RFFE-HS-N12V-STATUS"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="hexadecimal"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=520
+		y=145
+		width=60
+		height=12
+	}
+	monitor {
+		chan="$(DEV):RFFE-HS-N12V-FAULT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="hexadecimal"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=520
+		y=85
+		width=60
+		height=12
+	}
+	monitor {
+		chan="$(DEV):RFFE-HS-5V-FAULT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="hexadecimal"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=430
+		y=115
+		width=60
+		height=12
+	}
+	monitor {
+		chan="$(DEV):RFFE-HS-P12V-STATUS"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="hexadecimal"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=520
+		y=115
+		width=60
+		height=12
+	}
+	monitor {
+		chan="$(DEV):RFFE-HS-P12V-FAULT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="hexadecimal"
+	limits {
+	}
+}
+text {
+	object {
+		x=15
+		y=175
+		width=120
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="6V IO Enable"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=215
+		y=165
+		width=380
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(215,165)
+		(595,165)
+	}
+}
+oval {
+	object {
+		x=180
+		y=80
+		width=15
+		height=15
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A<4.5"
+		chan="$(DEV):RFFE-HS-5V-V"
+	}
+}
+oval {
+	object {
+		x=180
+		y=80
+		width=15
+		height=15
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A>4.5 "
+		chan="$(DEV):RFFE-HS-5V-V"
+	}
+}
+oval {
+	object {
+		x=180
+		y=110
+		width=15
+		height=15
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A>11"
+		chan="$(DEV):RFFE-HS-P12V-V"
+	}
+}
+oval {
+	object {
+		x=180
+		y=140
+		width=15
+		height=15
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 128)=0"
+		chan="$(DEV):RFFE-HS-N12V-STATUS"
+	}
+}
+oval {
+	object {
+		x=180
+		y=140
+		width=15
+		height=15
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 128)>0"
+		chan="$(DEV):RFFE-HS-N12V-STATUS"
+	}
+}
+oval {
+	object {
+		x=180
+		y=170
+		width=15
+		height=15
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 32) = 0"
+		chan="$(DEV):RFFE-GPIO-STATE"
+	}
+}
+"message button" {
+	object {
+		x=50
+		y=50
+		width=30
+		height=20
+	}
+	control {
+		chan="$(DEV):RFFE-PWR-ON"
+		clr=14
+		bclr=4
+	}
+	label="On"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=80
+		y=50
+		width=30
+		height=20
+	}
+	control {
+		chan="$(DEV):RFFE-PWR-OFF"
+		clr=14
+		bclr=4
+	}
+	label="Off"
+	press_msg="1"
+}
+text {
+	object {
+		x=15
+		y=10
+		width=160
+		height=12
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 2) > 0"
+		chan="$(DEV):RFFE-PRESENT"
+	}
+	textix="INVALID RFFE BOARD !!!"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=0
+		y=10
+		width=160
+		height=12
+	}
+	"basic attribute" {
+		clr=17
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 3) = 1"
+		chan="$(DEV):RFFE-PRESENT"
+	}
+	textix="Board ready"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=0
+		y=10
+		width=160
+		height=12
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 1) = 0"
+		chan="$(DEV):RFFE-PRESENT"
+	}
+	textix="Board not ready"
+	align="horiz. centered"
+}

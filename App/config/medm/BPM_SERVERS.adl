@@ -1,0 +1,664 @@
+
+file {
+	name="/home/goran/epics/xfel/App/config/medm/BPM_SERVERS.adl"
+	version=030105
+}
+display {
+	object {
+		x=1090
+		y=75
+		width=450
+		height=235
+	}
+	clr=14
+	bclr=4
+	cmap=""
+	gridSpacing=5
+	gridOn=1
+	snapToGrid=1
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=30
+		width=150
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=85
+		width=150
+		height=5
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BUTBPM:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=85
+		width=150
+		height=5
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BUTBPM:S7GPAC-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=5
+		y=50
+		width=140
+		height=16
+	}
+	monitor {
+		chan="BUTBPM:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+"related display" {
+	object {
+		x=0
+		y=105
+		width=150
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
+		args="DEV=BUTBPM"
+	}
+	clr=14
+	bclr=57
+	label="-Button BPM"
+}
+"message button" {
+	object {
+		x=0
+		y=65
+		width=150
+		height=20
+	}
+	control {
+		chan="BUTBPM:BPM-STRING.AA"
+		clr=14
+		bclr=4
+	}
+	label="Disconnect"
+	press_msg=":51235# "
+}
+"text update" {
+	object {
+		x=50
+		y=90
+		width=100
+		height=16
+	}
+	monitor {
+		chan="BUTBPM:CONN-DEV.SVAL"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=5
+		y=90
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Device:"
+}
+"related display" {
+	object {
+		x=0
+		y=125
+		width=150
+		height=20
+	}
+	display[0] {
+		label="FL"
+		name="F_DI_FIN250_BPM_GPAC_BUT_RFFE.adl"
+		args="DEV=BUTBPM"
+	}
+	clr=14
+	bclr=57
+	label="-Button RFFE"
+}
+"related display" {
+	object {
+		x=0
+		y=145
+		width=150
+		height=20
+	}
+	display[0] {
+		label="FL"
+		name="F_DI_FIN250_BPM_GPAC_BUT_POS_TD.adl"
+		args="DEV=BUTBPM"
+	}
+	clr=14
+	bclr=57
+	label="-Position"
+}
+text {
+	object {
+		x=10
+		y=35
+		width=130
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Button BPM"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=0
+		y=0
+		width=450
+		height=30
+	}
+	"basic attribute" {
+		clr=1
+	}
+}
+text {
+	object {
+		x=5
+		y=10
+		width=430
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Single Instance BPM Servers"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=150
+		y=30
+		width=150
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+text {
+	object {
+		x=160
+		y=35
+		width=130
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Cavity BPM"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=300
+		y=30
+		width=150
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+text {
+	object {
+		x=310
+		y=35
+		width=130
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Re-entrant BPM"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=150
+		y=30
+		width=0
+		height=205
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(150,30)
+		(150,235)
+	}
+}
+polyline {
+	object {
+		x=300
+		y=30
+		width=0
+		height=205
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(300,30)
+		(300,235)
+	}
+}
+"text update" {
+	object {
+		x=155
+		y=50
+		width=140
+		height=16
+	}
+	monitor {
+		chan="CAVBPM:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+"message button" {
+	object {
+		x=150
+		y=65
+		width=150
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=4
+	}
+	label="Disconnect"
+	press_msg=":51235# "
+}
+rectangle {
+	object {
+		x=151
+		y=85
+		width=149
+		height=5
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="CAVBPM:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=151
+		y=85
+		width=149
+		height=5
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="CAVBPM:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=155
+		y=90
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Device:"
+}
+"text update" {
+	object {
+		x=200
+		y=90
+		width=100
+		height=16
+	}
+	monitor {
+		chan="CAVBPM:CONN-DEV.SVAL"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+	object {
+		x=150
+		y=105
+		width=150
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="caqtdm -noMsg -attach -macro DEV=CAVBPM App/config/qt/BPM_GPAC_CAV_SMP_single.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-Cavity BPM"
+}
+"text update" {
+	object {
+		x=305
+		y=50
+		width=140
+		height=16
+	}
+	monitor {
+		chan="RENBPM:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+"message button" {
+	object {
+		x=300
+		y=65
+		width=150
+		height=20
+	}
+	control {
+		chan="RENBPM:BPM-STRING.AA"
+		clr=14
+		bclr=4
+	}
+	label="Disconnect"
+	press_msg=":51235# "
+}
+rectangle {
+	object {
+		x=301
+		y=85
+		width=149
+		height=5
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="RENBPM:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=301
+		y=85
+		width=149
+		height=5
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="RENBPM:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=305
+		y=90
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Device:"
+}
+"text update" {
+	object {
+		x=350
+		y=90
+		width=100
+		height=16
+	}
+	monitor {
+		chan="RENBPM:CONN-DEV.SVAL"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+	object {
+		x=300
+		y=105
+		width=150
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="caqtdm -noMsg -attach -macro DEV=RENBPM App/config/qt/BPM_GPAC_REN_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-Re-entrant BPM"
+}
+"shell command" {
+	object {
+		x=150
+		y=125
+		width=150
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="caqtdm -noMsg -attach -macro DEV=CAVBPM App/config/qt/BPM_GPAC_CAV_RFFE_3GHz3_single.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-Cavity RFFE"
+}
+rectangle {
+	object {
+		x=0
+		y=190
+		width=150
+		height=5
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BUTBPMSERV:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=190
+		width=150
+		height=5
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BUTBPMSERV:S7GPAC-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=5
+		y=175
+		width=140
+		height=16
+	}
+	monitor {
+		chan="BUTBPMSERV:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"related display" {
+	object {
+		x=0
+		y=195
+		width=150
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT_EEPROM.adl"
+		args="DEV=BUTBPMSERV"
+	}
+	clr=14
+	bclr=57
+	label="-Button EEPROM"
+}
+"related display" {
+	object {
+		x=0
+		y=215
+		width=150
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT_DET.adl"
+		args="DEV=BUTBPMSERV"
+	}
+	clr=14
+	bclr=57
+	label="-RFFE Detector"
+}

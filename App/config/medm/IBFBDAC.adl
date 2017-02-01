@@ -1,0 +1,3132 @@
+
+file {
+	name="/afs/psi.ch/user/k/koprek_w/cvs/G/XFEL/14_Firmware/13_Prototype/Button_BPM/05_EPICS/Button_Eth/App/config/medm/IBFBDAC.adl"
+	version=030105
+}
+display {
+	object {
+		x=48
+		y=473
+		width=575
+		height=525
+	}
+	clr=14
+	bclr=4
+	cmap=""
+	gridSpacing=5
+	gridOn=1
+	snapToGrid=1
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=30
+		width=575
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=0
+		width=575
+		height=30
+	}
+	"basic attribute" {
+		clr=1
+	}
+}
+polyline {
+	object {
+		x=-40
+		y=860
+		width=1000
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(-40,860)
+		(960,860)
+	}
+}
+text {
+	object {
+		x=40
+		y=5
+		width=500
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="DAC16HL Status & Control"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=135
+		y=50
+		width=0
+		height=470
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(135,50)
+		(135,520)
+	}
+}
+polyline {
+	object {
+		x=410
+		y=150
+		width=0
+		height=325
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(410,150)
+		(410,475)
+	}
+}
+polyline {
+	object {
+		x=245
+		y=130
+		width=0
+		height=345
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(245,130)
+		(245,475)
+	}
+}
+polyline {
+	object {
+		x=190
+		y=150
+		width=0
+		height=325
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(190,150)
+		(190,475)
+	}
+}
+polyline {
+	object {
+		x=0
+		y=170
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,170)
+		(575,170)
+	}
+}
+polyline {
+	object {
+		x=0
+		y=130
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,130)
+		(575,130)
+	}
+}
+text {
+	object {
+		x=225
+		y=55
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Y (PB1)"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=445
+		y=55
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="X (PB2)"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=75
+		y=134
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Kicker"
+	align="horiz. right"
+}
+text {
+	object {
+		x=75
+		y=55
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Plane"
+	align="horiz. right"
+}
+text {
+	object {
+		x=250
+		y=35
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DAC Output Control"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=170
+		y=135
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK Y1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=390
+		y=135
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK X1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=280
+		y=135
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK Y2"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=500
+		y=135
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK X2"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=355
+		y=50
+		width=0
+		height=470
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(355,50)
+		(355,520)
+	}
+}
+polyline {
+	object {
+		x=520
+		y=150
+		width=0
+		height=325
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(520,150)
+		(520,475)
+	}
+}
+polyline {
+	object {
+		x=465
+		y=130
+		width=0
+		height=345
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(465,130)
+		(465,475)
+	}
+}
+polyline {
+	object {
+		x=300
+		y=150
+		width=0
+		height=325
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(300,150)
+		(300,475)
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=30
+		width=575
+		height=5
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBCTRL:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=30
+		width=575
+		height=5
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBCTRL:S7GPAC-STATUS"
+	}
+}
+polyline {
+	object {
+		x=0
+		y=150
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,150)
+		(575,150)
+	}
+}
+text {
+	object {
+		x=80
+		y=155
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Output"
+	align="horiz. right"
+}
+text {
+	object {
+		x=140
+		y=155
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="N"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=195
+		y=155
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="P"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=250
+		y=155
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="N"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=305
+		y=155
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="P"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=470
+		y=155
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="N"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=525
+		y=155
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="P"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=415
+		y=155
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="P"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=360
+		y=155
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="N"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=0
+		y=190
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,190)
+		(575,190)
+	}
+}
+text {
+	object {
+		x=80
+		y=175
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DAC"
+	align="horiz. right"
+}
+text {
+	object {
+		x=140
+		y=175
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=195
+		y=175
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=250
+		y=175
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=305
+		y=175
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=470
+		y=175
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=525
+		y=175
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=415
+		y=175
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=360
+		y=175
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=80
+		y=195
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Temperature [degC]"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=210
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,210)
+		(575,210)
+	}
+}
+"text update" {
+	object {
+		x=360
+		y=195
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DAC-TEMP-0"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=415
+		y=195
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DAC-TEMP-1"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=140
+		y=195
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DAC-TEMP-0"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=195
+		y=195
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DAC-TEMP-1"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=470
+		y=195
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DAC-TEMP-2"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=525
+		y=195
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DAC-TEMP-3"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=250
+		y=195
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DAC-TEMP-2"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=305
+		y=195
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DAC-TEMP-3"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=80
+		y=215
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Comparator N"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=230
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,230)
+		(575,230)
+	}
+}
+"text update" {
+	object {
+		x=360
+		y=215
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DAC-COMP-N-0"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=415
+		y=215
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DAC-COMP-N-1"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=140
+		y=215
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DAC-COMP-N-0"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=195
+		y=215
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DAC-COMP-N-1"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=470
+		y=215
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DAC-COMP-N-2"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=525
+		y=215
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DAC-COMP-N-3"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=250
+		y=215
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DAC-COMP-N-2"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=305
+		y=215
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DAC-COMP-N-3"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=80
+		y=235
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Comparator P"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=250
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,250)
+		(575,250)
+	}
+}
+"text update" {
+	object {
+		x=360
+		y=235
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DAC-COMP-P-0"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=415
+		y=235
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DAC-COMP-P-1"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=140
+		y=235
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DAC-COMP-P-0"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=195
+		y=235
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DAC-COMP-P-1"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=470
+		y=235
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DAC-COMP-P-2"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=525
+		y=235
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DAC-COMP-P-3"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=250
+		y=235
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DAC-COMP-P-2"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=305
+		y=235
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DAC-COMP-P-3"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=80
+		y=255
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DCM Frequency [MHz]"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=270
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,270)
+		(575,270)
+	}
+}
+"text update" {
+	object {
+		x=360
+		y=255
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DCM-FREQ-0"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=415
+		y=255
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DCM-FREQ-1"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=140
+		y=255
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DCM-FREQ-0"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=195
+		y=255
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DCM-FREQ-1"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=470
+		y=255
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DCM-FREQ-2"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=525
+		y=255
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-DCM-FREQ-3"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=250
+		y=255
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DCM-FREQ-2"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=305
+		y=255
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-DCM-FREQ-3"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=80
+		y=275
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DCM Locked"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=290
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,290)
+		(575,290)
+	}
+}
+rectangle {
+	object {
+		x=140
+		y=275
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x00000001"
+		chan="$(DEV):Y-DCM-LOCKED"
+	}
+}
+rectangle {
+	object {
+		x=195
+		y=275
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x00000100"
+		chan="$(DEV):Y-DCM-LOCKED"
+	}
+}
+rectangle {
+	object {
+		x=250
+		y=275
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x00010000"
+		chan="$(DEV):Y-DCM-LOCKED"
+	}
+}
+rectangle {
+	object {
+		x=305
+		y=275
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x01000000"
+		chan="$(DEV):Y-DCM-LOCKED"
+	}
+}
+rectangle {
+	object {
+		x=360
+		y=275
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x00000001"
+		chan="$(DEV):X-DCM-LOCKED"
+	}
+}
+rectangle {
+	object {
+		x=415
+		y=275
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x00000100"
+		chan="$(DEV):X-DCM-LOCKED"
+	}
+}
+rectangle {
+	object {
+		x=470
+		y=275
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x00010000"
+		chan="$(DEV):X-DCM-LOCKED"
+	}
+}
+rectangle {
+	object {
+		x=525
+		y=275
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x01000000"
+		chan="$(DEV):X-DCM-LOCKED"
+	}
+}
+polyline {
+	object {
+		x=0
+		y=70
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,70)
+		(575,70)
+	}
+}
+text {
+	object {
+		x=75
+		y=74
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="No External Clock"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=90
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,90)
+		(575,90)
+	}
+}
+rectangle {
+	object {
+		x=140
+		y=75
+		width=210
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A"
+		chan="$(DEV):Y-DAC-NO-EXT-CLK"
+	}
+}
+text {
+	object {
+		x=80
+		y=95
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="PLL1 Locked"
+	align="horiz. right"
+}
+rectangle {
+	object {
+		x=360
+		y=75
+		width=210
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A"
+		chan="$(DEV):X-DAC-NO-EXT-CLK"
+	}
+}
+rectangle {
+	object {
+		x=140
+		y=95
+		width=210
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A"
+		chan="$(DEV):Y-DAC-PLL1-LOCKED"
+	}
+}
+rectangle {
+	object {
+		x=360
+		y=95
+		width=210
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A"
+		chan="$(DEV):X-DAC-PLL1-LOCKED"
+	}
+}
+polyline {
+	object {
+		x=0
+		y=110
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,110)
+		(575,110)
+	}
+}
+text {
+	object {
+		x=80
+		y=115
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="PLL2 Locked"
+	align="horiz. right"
+}
+rectangle {
+	object {
+		x=140
+		y=115
+		width=210
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A"
+		chan="$(DEV):Y-DAC-PLL2-LOCKED"
+	}
+}
+rectangle {
+	object {
+		x=360
+		y=115
+		width=210
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A"
+		chan="$(DEV):X-DAC-PLL2-LOCKED"
+	}
+}
+"choice button" {
+	object {
+		x=140
+		y=293
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-AMP-ENA-0"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=80
+		y=294
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Amplifier Enable"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=310
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,310)
+		(575,310)
+	}
+}
+"choice button" {
+	object {
+		x=195
+		y=293
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-AMP-ENA-1"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=250
+		y=293
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-AMP-ENA-2"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=305
+		y=293
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-AMP-ENA-3"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=360
+		y=293
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-AMP-ENA-0"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=415
+		y=293
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-AMP-ENA-1"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=470
+		y=293
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-AMP-ENA-2"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=525
+		y=293
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-AMP-ENA-3"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=140
+		y=313
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-ENA-0"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=80
+		y=314
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DAC Enable"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=330
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,330)
+		(575,330)
+	}
+}
+"choice button" {
+	object {
+		x=195
+		y=313
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-ENA-1"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=250
+		y=313
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-ENA-2"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=305
+		y=313
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-ENA-3"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=360
+		y=313
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-ENA-0"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=415
+		y=313
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-ENA-1"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=470
+		y=313
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-ENA-2"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=525
+		y=313
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-ENA-3"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=140
+		y=333
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-AMP-CMV-0"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=195
+		y=333
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-AMP-CMV-1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=250
+		y=333
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-AMP-CMV-2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=305
+		y=333
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-AMP-CMV-3"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=55
+		y=335
+		width=75
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Amplifier CMV [bits]"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=350
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,350)
+		(575,350)
+	}
+}
+"text entry" {
+	object {
+		x=360
+		y=333
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-AMP-CMV-0"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=415
+		y=333
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-AMP-CMV-1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=470
+		y=333
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-AMP-CMV-2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=525
+		y=333
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-AMP-CMV-3"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=140
+		y=374
+		width=210
+		height=20
+	}
+	control {
+		chan="$(DEV):Y-DAC-MODE-M"
+		clr=14
+		bclr=56
+	}
+}
+text {
+	object {
+		x=55
+		y=376
+		width=75
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DAC Mode"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=395
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,395)
+		(575,395)
+	}
+}
+"text entry" {
+	object {
+		x=140
+		y=353
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-COMP-REF-0"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=195
+		y=353
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-COMP-REF-1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=250
+		y=353
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-COMP-REF-2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=305
+		y=353
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-COMP-REF-3"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=55
+		y=355
+		width=75
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Comparator Ref [bits]"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=370
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,370)
+		(575,370)
+	}
+}
+"text entry" {
+	object {
+		x=360
+		y=353
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-COMP-REF-0"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=415
+		y=353
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-COMP-REF-1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=470
+		y=353
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-COMP-REF-2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=525
+		y=353
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-COMP-REF-3"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=360
+		y=374
+		width=210
+		height=20
+	}
+	control {
+		chan="$(DEV):X-DAC-MODE-M"
+		clr=14
+		bclr=56
+	}
+}
+"text entry" {
+	object {
+		x=140
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-WAVE-AMPL-0"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=195
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-WAVE-AMPL-1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=250
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-WAVE-AMPL-2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=305
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-WAVE-AMPL-3"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=55
+		y=400
+		width=75
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Amplitude [norm]"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=415
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,415)
+		(575,415)
+	}
+}
+"text entry" {
+	object {
+		x=360
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-WAVE-AMPL-0"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=415
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-WAVE-AMPL-1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=470
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-WAVE-AMPL-2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=525
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-WAVE-AMPL-3"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=140
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-WAVE-FREQ-0"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=195
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-WAVE-FREQ-1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=250
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-WAVE-FREQ-2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=305
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-WAVE-FREQ-3"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=55
+		y=420
+		width=75
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Freuqency [MHz]"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=435
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,435)
+		(575,435)
+	}
+}
+"text entry" {
+	object {
+		x=360
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-WAVE-FREQ-0"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=415
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-WAVE-FREQ-1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=470
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-WAVE-FREQ-2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=525
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-WAVE-FREQ-3"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=140
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-WAVE-PHASE-0"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=195
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-WAVE-PHASE-1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=250
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-WAVE-PHASE-2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=305
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-WAVE-PHASE-3"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=55
+		y=440
+		width=75
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Phase [deg]"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=455
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,455)
+		(575,455)
+	}
+}
+"text entry" {
+	object {
+		x=360
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-WAVE-PHASE-0"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=415
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-WAVE-PHASE-1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=470
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-WAVE-PHASE-2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=525
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DAC-WAVE-PHASE-3"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=140
+		y=460
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DCM-PS-PHASE-0"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=55
+		y=462
+		width=75
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DCM Phase"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=477
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,477)
+		(575,477)
+	}
+}
+text {
+	object {
+		x=55
+		y=485
+		width=75
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DCM Command"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=500
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,500)
+		(575,500)
+	}
+}
+"text entry" {
+	object {
+		x=195
+		y=460
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DCM-PS-PHASE-1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=250
+		y=460
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DCM-PS-PHASE-2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=305
+		y=460
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DCM-PS-PHASE-3"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=360
+		y=460
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DCM-PS-PHASE-0"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=415
+		y=460
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DCM-PS-PHASE-1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=470
+		y=460
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DCM-PS-PHASE-2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=525
+		y=460
+		width=45
+		height=15
+	}
+	control {
+		chan="$(DEV):X-DCM-PS-PHASE-3"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"message button" {
+	object {
+		x=150
+		y=480
+		width=78
+		height=18
+	}
+	control {
+		chan="$(DEV):Y-DCM-PS-CMD"
+		clr=14
+		bclr=4
+	}
+	label="Increment"
+	press_msg="0x01010101"
+	release_msg="0"
+}
+"message button" {
+	object {
+		x=260
+		y=480
+		width=78
+		height=18
+	}
+	control {
+		chan="$(DEV):Y-DCM-PS-CMD"
+		clr=14
+		bclr=4
+	}
+	label="Reset"
+	press_msg="0x02020202"
+	release_msg="0"
+}
+"message button" {
+	object {
+		x=370
+		y=480
+		width=78
+		height=18
+	}
+	control {
+		chan="$(DEV):X-DCM-PS-CMD"
+		clr=14
+		bclr=4
+	}
+	label="Increment"
+	press_msg="0x01010101"
+	release_msg="0"
+}
+"message button" {
+	object {
+		x=480
+		y=480
+		width=78
+		height=18
+	}
+	control {
+		chan="$(DEV):X-DCM-PS-CMD"
+		clr=14
+		bclr=4
+	}
+	label="Reset"
+	press_msg="0x02020202"
+	release_msg="0"
+}
+text {
+	object {
+		x=80
+		y=505
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DCM Phase Overflow"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=520
+		width=575
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,520)
+		(575,520)
+	}
+}
+rectangle {
+	object {
+		x=140
+		y=505
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x10000"
+		chan="$(DEV):Y-DCM-PS-STATE-0"
+	}
+}
+rectangle {
+	object {
+		x=195
+		y=505
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x10000"
+		chan="$(DEV):Y-DCM-PS-STATE-1"
+	}
+}
+rectangle {
+	object {
+		x=250
+		y=505
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x10000"
+		chan="$(DEV):Y-DCM-PS-STATE-2"
+	}
+}
+rectangle {
+	object {
+		x=305
+		y=505
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x10000"
+		chan="$(DEV):Y-DCM-PS-STATE-3"
+	}
+}
+rectangle {
+	object {
+		x=360
+		y=505
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x10000"
+		chan="$(DEV):X-DCM-PS-STATE-0"
+	}
+}
+rectangle {
+	object {
+		x=415
+		y=505
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x10000"
+		chan="$(DEV):X-DCM-PS-STATE-1"
+	}
+}
+rectangle {
+	object {
+		x=470
+		y=505
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x10000"
+		chan="$(DEV):X-DCM-PS-STATE-2"
+	}
+}
+rectangle {
+	object {
+		x=525
+		y=505
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x10000"
+		chan="$(DEV):X-DCM-PS-STATE-3"
+	}
+}

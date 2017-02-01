@@ -1,0 +1,3103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>301</width>
+    <height>664</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1600</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>5</number>
+    </property>
+    <property name="margin">
+     <number>5</number>
+    </property>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>1</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="caLabel" name="caLabel_0">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>1</width>
+        <height>1</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>380</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string>$(I2C)</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::LogText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignAbsolute|Qt::AlignCenter|Qt::AlignHCenter|Qt::AlignVCenter</set>
+      </property>
+      <property name="lateralBorderWidth">
+       <double>2.000000000000000</double>
+      </property>
+      <property name="fontScaleMode">
+       <enum>ESimpleLabel::Height</enum>
+      </property>
+      <property name="foreground">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="background">
+       <color alpha="0">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>1</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="font">
+         <font>
+          <family>Lucida Sans</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>SFP-PIN</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="margin">
+          <number>2</number>
+         </property>
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <item row="4" column="1">
+          <widget class="caChoice" name="caChoice_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-TX-DIS</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>193</green>
+             <blue>135</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caChoice::Static</enum>
+           </property>
+           <property name="endBit">
+            <number>1</number>
+           </property>
+           <property name="fontScaleMode">
+            <enum>EPushButton::Height</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="caChoice" name="caChoice_1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-LED-RED</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>193</green>
+             <blue>135</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caChoice::Static</enum>
+           </property>
+           <property name="endBit">
+            <number>1</number>
+           </property>
+           <property name="fontScaleMode">
+            <enum>EPushButton::Height</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="caChoice" name="caChoice_0">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-LED-GREEN</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>193</green>
+             <blue>135</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caChoice::Static</enum>
+           </property>
+           <property name="endBit">
+            <number>1</number>
+           </property>
+           <property name="fontScaleMode">
+            <enum>EPushButton::Height</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="caLabel" name="caLabel_1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="text">
+            <string>LED</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignAbsolute|Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="fontScaleMode">
+            <enum>ESimpleLabel::None</enum>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="caLabel" name="caLabel_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="text">
+            <string>TX-DISABLE</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignAbsolute|Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="fontScaleMode">
+            <enum>ESimpleLabel::None</enum>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_95">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>GREEN</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_96">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>RED</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="caLabel" name="caLabel_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="text">
+            <string>PRESENT</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignAbsolute|Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="fontScaleMode">
+            <enum>ESimpleLabel::None</enum>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="caGraphics" name="caGraphics_0">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>216</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="linestyle" stdset="0">
+            <enum>caGraphics::Solid</enum>
+           </property>
+           <property name="fillstyle" stdset="0">
+            <enum>caGraphics::Filled</enum>
+           </property>
+           <property name="lineColor">
+            <color>
+             <red>0</red>
+             <green>216</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="visibility">
+            <enum>caGraphics::IfZero</enum>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-PRESENT</string>
+           </property>
+           <property name="form">
+            <enum>caGraphics::Circle</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="caLabel" name="caLabel_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="text">
+            <string>TX-FAULT</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignAbsolute|Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="fontScaleMode">
+            <enum>ESimpleLabel::None</enum>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="caGraphics" name="caGraphics_1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="linestyle" stdset="0">
+            <enum>caGraphics::Solid</enum>
+           </property>
+           <property name="fillstyle" stdset="0">
+            <enum>caGraphics::Filled</enum>
+           </property>
+           <property name="lineColor">
+            <color>
+             <red>0</red>
+             <green>216</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="visibility">
+            <enum>caGraphics::IfNotZero</enum>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-TX-FAULT</string>
+           </property>
+           <property name="form">
+            <enum>caGraphics::Circle</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="caLabel" name="caLabel_9">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="text">
+            <string>RX-LOS</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="fontScaleMode">
+            <enum>ESimpleLabel::None</enum>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="2">
+          <widget class="caGraphics" name="caGraphics_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="linestyle" stdset="0">
+            <enum>caGraphics::Solid</enum>
+           </property>
+           <property name="fillstyle" stdset="0">
+            <enum>caGraphics::Filled</enum>
+           </property>
+           <property name="lineColor">
+            <color>
+             <red>85</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="visibility">
+            <enum>caGraphics::IfNotZero</enum>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RX-LOS</string>
+           </property>
+           <property name="form">
+            <enum>caGraphics::Circle</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="font">
+         <font>
+          <family>Lucida Sans</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>SFP-ROM</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <property name="margin">
+          <number>2</number>
+         </property>
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <item row="0" column="1">
+          <widget class="caLineEdit" name="caLineEdit_43">
+           <property name="minimumSize">
+            <size>
+             <width>60</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>7</pointsize>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignAbsolute|Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-VN</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::string</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="caLabel" name="caLabel_7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="text">
+            <string>VENDOR</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignAbsolute|Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="fontScaleMode">
+            <enum>ESimpleLabel::None</enum>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="caLabel" name="caLabel_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="text">
+            <string>PRODUCT</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignAbsolute|Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="fontScaleMode">
+            <enum>ESimpleLabel::None</enum>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="caLineEdit" name="caLineEdit_42">
+           <property name="minimumSize">
+            <size>
+             <width>60</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>7</pointsize>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignAbsolute|Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-VPN</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::string</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lucida Sans</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>SFP-Repeater</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <property name="margin">
+          <number>2</number>
+         </property>
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <item row="7" column="1">
+          <widget class="QLabel" name="label_30">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x06 Slave Register Control</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="2">
+          <widget class="caTextEntry" name="caTextEntry_0">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP06</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="caTextEntry" name="caTextEntry_1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP01</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::User</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="label_31">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x01 Control 1</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="caTextEntry" name="caTextEntry_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP02</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLabel" name="label_32">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x02 Control 2</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="2">
+          <widget class="caTextEntry" name="caTextEntry_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP04</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLabel" name="label_33">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x04 Control 3</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QLabel" name="label_34">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x07 Digital Reset and Control</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="2">
+          <widget class="caTextEntry" name="caTextEntry_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP07</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="1">
+          <widget class="QLabel" name="label_35">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x08 Pin Override</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="2">
+          <widget class="caTextEntry" name="caTextEntry_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP08</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="1">
+          <widget class="QLabel" name="label_36">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x0C CHA Analog Override 1</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="2">
+          <widget class="caTextEntry" name="caTextEntry_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP0C</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="2">
+          <widget class="caTextEntry" name="caTextEntry_7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP0E</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="1">
+          <widget class="QLabel" name="label_37">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x0E CHA Idle Control</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="1">
+          <widget class="QLabel" name="label_38">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x0F CHA EQ Setting</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="2">
+          <widget class="caTextEntry" name="caTextEntry_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP0F</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="18" column="2">
+          <widget class="caTextEntry" name="caTextEntry_9">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP10</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="18" column="1">
+          <widget class="QLabel" name="label_39">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x10 CHA Control 1</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="20" column="2">
+          <widget class="caTextEntry" name="caTextEntry_10">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP11</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="20" column="1">
+          <widget class="QLabel" name="label_40">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x11 CHA Control 2</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="21" column="1">
+          <widget class="QLabel" name="label_41">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x12 CHA Idle Threshold</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="21" column="2">
+          <widget class="caTextEntry" name="caTextEntry_11">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP12</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="23" column="2">
+          <widget class="caTextEntry" name="caTextEntry_16">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP16</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="23" column="1">
+          <widget class="QLabel" name="label_46">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x16 CHB EQ Setting</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="24" column="1">
+          <widget class="QLabel" name="label_45">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x17 CHB Control 1</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="26" column="1">
+          <widget class="QLabel" name="label_44">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x19 CHB Idle Threshold</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="25" column="1">
+          <widget class="QLabel" name="label_43">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x18 CHB Control 2</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="22" column="1">
+          <widget class="QLabel" name="label_42">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x15 CHB Idle Control</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="22" column="2">
+          <widget class="caTextEntry" name="caTextEntry_15">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP15</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="25" column="2">
+          <widget class="caTextEntry" name="caTextEntry_14">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP18</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="24" column="2">
+          <widget class="caTextEntry" name="caTextEntry_12">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP17</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="26" column="2">
+          <widget class="caTextEntry" name="caTextEntry_13">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP19</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="28" column="2">
+          <widget class="caTextEntry" name="caTextEntry_17">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP23</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="28" column="1">
+          <widget class="QLabel" name="label_47">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x23 CHA VOD</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="30" column="2">
+          <widget class="caTextEntry" name="caTextEntry_18">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP28</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="30" column="1">
+          <widget class="QLabel" name="label_48">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x28 Idle Control</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="32" column="2">
+          <widget class="caTextEntry" name="caTextEntry_19">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP2D</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="32" column="1">
+          <widget class="QLabel" name="label_49">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x2D CHB VOD</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="33" column="1">
+          <widget class="QLabel" name="label_50">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0x51 Device Information</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="33" column="2">
+          <widget class="caTextEntry" name="caTextEntry_20">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>6</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">$(DEV):$(I2C)-RP51</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color>
+             <red>187</red>
+             <green>187</green>
+             <blue>187</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>2</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="limitsMode">
+            <enum>caLineEdit::Channel</enum>
+           </property>
+           <property name="maxValue">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="minValue">
+            <double>0.000000000000000</double>
+           </property>
+           <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::hexadecimal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caChoice</class>
+   <extends>QWidget</extends>
+   <header>caChoice</header>
+  </customwidget>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caLabel</class>
+   <extends>QLabel</extends>
+   <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caGraphics</class>
+   <extends>QWidget</extends>
+   <header>caGraphics</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

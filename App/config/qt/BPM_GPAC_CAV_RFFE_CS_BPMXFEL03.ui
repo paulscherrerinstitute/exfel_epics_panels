@@ -1,0 +1,5152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1050</width>
+    <height>652</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1050</width>
+    <height>652</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1050</width>
+    <height>652</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <property name="sizeConstraint">
+     <enum>QLayout::SetFixedSize</enum>
+    </property>
+    <property name="margin">
+     <number>5</number>
+    </property>
+    <item>
+     <spacer name="verticalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>1</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="caLabel" name="caLabel_10">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>520</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string>$(DEV)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignAbsolute|Qt::AlignCenter|Qt::AlignHCenter|Qt::AlignVCenter</set>
+      </property>
+      <property name="fontScaleMode">
+       <enum>ESimpleLabel::Height</enum>
+      </property>
+      <property name="foreground">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="background">
+       <color alpha="0">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>1</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>1040</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>RFFE CTRL</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <item row="2" column="0">
+        <widget class="caRelatedDisplay" name="caRelatedDisplay_0">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="label">
+          <string notr="true">-HS</string>
+         </property>
+         <property name="foreground">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="background">
+          <color>
+           <red>187</red>
+           <green>193</green>
+           <blue>135</blue>
+          </color>
+         </property>
+         <property name="labels">
+          <string>BPM</string>
+         </property>
+         <property name="files">
+          <string notr="true">BPM_GPAC_CAV_RFFE_CS_BPMXFEL03_HS.ui</string>
+         </property>
+         <property name="args">
+          <string>DEV=$(DEV)</string>
+         </property>
+         <property name="stackingMode" stdset="0">
+          <enum>caRowColMenu::Menu</enum>
+         </property>
+         <property name="removeParent" stdset="0">
+          <string>false</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="caMessageButton" name="caMessageButton_0">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="fontScaleMode">
+          <enum>EPushButton::WidthAndHeight</enum>
+         </property>
+         <property name="channel" stdset="0">
+          <string>$(DEV):RFFE-INIT</string>
+         </property>
+         <property name="label">
+          <string>Init</string>
+         </property>
+         <property name="foreground">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="background">
+          <color>
+           <red>187</red>
+           <green>193</green>
+           <blue>135</blue>
+          </color>
+         </property>
+         <property name="releaseMessage">
+          <string notr="true">0</string>
+         </property>
+         <property name="pressMessage">
+          <string>1</string>
+         </property>
+         <property name="colorMode">
+          <enum>caMessageButton::Static</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="caMessageButton" name="caMessageButton_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="fontScaleMode">
+          <enum>EPushButton::WidthAndHeight</enum>
+         </property>
+         <property name="channel" stdset="0">
+          <string>$(DEV):RFFE-EEPROM-WR</string>
+         </property>
+         <property name="label">
+          <string>Write</string>
+         </property>
+         <property name="foreground">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="background">
+          <color>
+           <red>187</red>
+           <green>193</green>
+           <blue>135</blue>
+          </color>
+         </property>
+         <property name="pressMessage">
+          <string>1</string>
+         </property>
+         <property name="colorMode">
+          <enum>caMessageButton::Static</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="caMessageButton" name="caMessageButton_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="fontScaleMode">
+          <enum>EPushButton::WidthAndHeight</enum>
+         </property>
+         <property name="channel" stdset="0">
+          <string>$(DEV):RFFE-EEPROM-RD</string>
+         </property>
+         <property name="label">
+          <string>Read</string>
+         </property>
+         <property name="foreground">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="background">
+          <color>
+           <red>187</red>
+           <green>193</green>
+           <blue>135</blue>
+          </color>
+         </property>
+         <property name="pressMessage">
+          <string>1</string>
+         </property>
+         <property name="colorMode">
+          <enum>caMessageButton::Static</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Preferred</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>800</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_52">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Power</string>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_53">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>RFFE-INIT</string>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="label_54">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>EEPROM-RD</string>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="label_55">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>EEPROM-WR</string>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>1040</width>
+        <height>500</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>RFFE Board</string>
+      </property>
+      <widget class="caGraphics" name="caGraphics_8">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caGraphics::Solid</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="form">
+        <enum>caGraphics::Circle</enum>
+       </property>
+       <property name="background" stdset="0">
+        <color alpha="0">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="caGraphics" name="caGraphics_11">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>360</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caGraphics::Solid</enum>
+       </property>
+       <property name="fillstyle" stdset="0">
+        <enum>caGraphics::Filled</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="form">
+        <enum>caGraphics::Circle</enum>
+       </property>
+      </widget>
+      <widget class="caGraphics" name="caGraphics_9">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>90</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caGraphics::Solid</enum>
+       </property>
+       <property name="fillstyle" stdset="0">
+        <enum>caGraphics::Filled</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="form">
+        <enum>caGraphics::Circle</enum>
+       </property>
+      </widget>
+      <widget class="caPolyLine" name="caPolyLine_9">
+       <property name="geometry">
+        <rect>
+         <x>740</x>
+         <y>130</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caPolyLine::Solid</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="xyPairs" stdset="0">
+        <string>0,0;20,20</string>
+       </property>
+       <property name="background" stdset="0">
+        <color alpha="0">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="caGraphics" name="caGraphics_10">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>350</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caGraphics::Solid</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="form">
+        <enum>caGraphics::Circle</enum>
+       </property>
+       <property name="background" stdset="0">
+        <color alpha="0">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="caGraphics" name="caGraphics_5">
+       <property name="geometry">
+        <rect>
+         <x>970</x>
+         <y>50</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caGraphics::Solid</enum>
+       </property>
+       <property name="fillstyle" stdset="0">
+        <enum>caGraphics::Filled</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="form">
+        <enum>caGraphics::Circle</enum>
+       </property>
+      </widget>
+      <widget class="caGraphics" name="caGraphics_12">
+       <property name="geometry">
+        <rect>
+         <x>965</x>
+         <y>350</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caGraphics::Solid</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="form">
+        <enum>caGraphics::Circle</enum>
+       </property>
+       <property name="background" stdset="0">
+        <color alpha="0">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="caGraphics" name="caGraphics_13">
+       <property name="geometry">
+        <rect>
+         <x>975</x>
+         <y>360</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caGraphics::Solid</enum>
+       </property>
+       <property name="fillstyle" stdset="0">
+        <enum>caGraphics::Filled</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="form">
+        <enum>caGraphics::Circle</enum>
+       </property>
+      </widget>
+      <widget class="caPolyLine" name="caPolyLine_7">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>50</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caPolyLine::Solid</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="xyPairs" stdset="0">
+        <string>0,0;20,20</string>
+       </property>
+       <property name="background" stdset="0">
+        <color alpha="0">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="caGraphics" name="caGraphics_7">
+       <property name="geometry">
+        <rect>
+         <x>970</x>
+         <y>130</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caGraphics::Solid</enum>
+       </property>
+       <property name="fillstyle" stdset="0">
+        <enum>caGraphics::Filled</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="form">
+        <enum>caGraphics::Circle</enum>
+       </property>
+      </widget>
+      <widget class="caGraphics" name="caGraphics_2">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>40</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caGraphics::Solid</enum>
+       </property>
+       <property name="lineSize">
+        <number>2</number>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="form">
+        <enum>caGraphics::Circle</enum>
+       </property>
+       <property name="background" stdset="0">
+        <color alpha="0">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="caGraphics" name="caGraphics_3">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>120</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caGraphics::Solid</enum>
+       </property>
+       <property name="lineSize">
+        <number>2</number>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="form">
+        <enum>caGraphics::Circle</enum>
+       </property>
+       <property name="background" stdset="0">
+        <color alpha="0">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="caPolyLine" name="caPolyLine_6">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>50</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caPolyLine::Solid</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="xyPairs" stdset="0">
+        <string>0,20;20,0</string>
+       </property>
+       <property name="background" stdset="0">
+        <color alpha="0">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="caGraphics" name="caGraphics_4">
+       <property name="geometry">
+        <rect>
+         <x>960</x>
+         <y>40</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caGraphics::Solid</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="form">
+        <enum>caGraphics::Circle</enum>
+       </property>
+       <property name="background" stdset="0">
+        <color alpha="0">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="caGraphics" name="caGraphics_6">
+       <property name="geometry">
+        <rect>
+         <x>960</x>
+         <y>120</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caGraphics::Solid</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="form">
+        <enum>caGraphics::Circle</enum>
+       </property>
+       <property name="background" stdset="0">
+        <color alpha="0">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="caPolyLine" name="caPolyLine_8">
+       <property name="geometry">
+        <rect>
+         <x>740</x>
+         <y>130</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caPolyLine::Solid</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="xyPairs" stdset="0">
+        <string>0,20;20,0</string>
+       </property>
+       <property name="background" stdset="0">
+        <color alpha="0">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>95</y>
+         <width>90</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_3">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>95</y>
+         <width>10</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_4">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>95</y>
+         <width>10</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_5">
+       <property name="geometry">
+        <rect>
+         <x>690</x>
+         <y>55</y>
+         <width>10</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_6">
+       <property name="geometry">
+        <rect>
+         <x>690</x>
+         <y>135</y>
+         <width>40</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_7">
+       <property name="geometry">
+        <rect>
+         <x>740</x>
+         <y>55</y>
+         <width>40</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_8">
+       <property name="geometry">
+        <rect>
+         <x>770</x>
+         <y>135</y>
+         <width>10</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_11">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>240</y>
+         <width>130</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_14">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>250</y>
+         <width>10</width>
+         <height>2</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_15">
+       <property name="geometry">
+        <rect>
+         <x>690</x>
+         <y>200</y>
+         <width>30</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_16">
+       <property name="geometry">
+        <rect>
+         <x>690</x>
+         <y>280</y>
+         <width>60</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_17">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>365</y>
+         <width>20</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_18">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>425</y>
+         <width>10</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_19">
+       <property name="geometry">
+        <rect>
+         <x>920</x>
+         <y>365</y>
+         <width>45</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_20">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>475</y>
+         <width>315</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_21">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>365</y>
+         <width>20</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_22">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>365</y>
+         <width>10</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_23">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>135</y>
+         <width>100</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_24">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>55</y>
+         <width>100</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_26">
+       <property name="geometry">
+        <rect>
+         <x>745</x>
+         <y>160</y>
+         <width>10</width>
+         <height>125</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_27">
+       <property name="geometry">
+        <rect>
+         <x>715</x>
+         <y>80</y>
+         <width>10</width>
+         <height>125</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_28">
+       <property name="geometry">
+        <rect>
+         <x>165</x>
+         <y>250</y>
+         <width>10</width>
+         <height>120</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_30">
+       <property name="geometry">
+        <rect>
+         <x>940</x>
+         <y>370</y>
+         <width>10</width>
+         <height>110</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_32">
+       <property name="geometry">
+        <rect>
+         <x>625</x>
+         <y>430</y>
+         <width>10</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>30</y>
+         <width>250</width>
+         <height>130</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="title">
+        <string>Attenuator</string>
+       </property>
+       <widget class="caRelatedDisplay" name="caRelatedDisplay_3">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>30</y>
+          <width>60</width>
+          <height>66</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="label">
+         <string notr="true">-Att Cal</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>193</green>
+          <blue>135</blue>
+         </color>
+        </property>
+        <property name="labels">
+         <string>BPM</string>
+        </property>
+        <property name="files">
+         <string notr="true">BPM_GPAC_CAV_RFFE_CS_BPMXFEL03_ATT_CAL.ui</string>
+        </property>
+        <property name="args">
+         <string>DEV=$(DEV)</string>
+        </property>
+        <property name="fontScaleMode">
+         <enum>EPushButton::None</enum>
+        </property>
+        <property name="stackingMode" stdset="0">
+         <enum>caRowColMenu::Menu</enum>
+        </property>
+        <property name="removeParent" stdset="0">
+         <string>false</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>REF</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>20</y>
+          <width>60</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>10</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>10</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Le</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="caChoice" name="caChoice_6">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>30</y>
+          <width>60</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="channel" stdset="0">
+         <string>$(DEV):ATT-R-LE</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>187</green>
+          <blue>187</blue>
+         </color>
+        </property>
+        <property name="colorMode">
+         <enum>caChoice::Static</enum>
+        </property>
+        <property name="endBit">
+         <number>1</number>
+        </property>
+       </widget>
+       <widget class="caNumeric" name="caNumeric_1">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>30</y>
+          <width>60</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="decimalDigits" stdset="0">
+         <number>0</number>
+        </property>
+        <property name="digitsFontScaleEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="channel" stdset="0">
+         <string>$(DEV):ATT-R</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>187</green>
+          <blue>187</blue>
+         </color>
+        </property>
+        <property name="precisionMode">
+         <enum>caNumeric::Channel</enum>
+        </property>
+        <property name="fixedFormat">
+         <bool>false</bool>
+        </property>
+        <property name="limitsMode">
+         <enum>caNumeric::Channel</enum>
+        </property>
+        <property name="maxValue">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="minValue">
+         <double>0.000000000000000</double>
+        </property>
+       </widget>
+       <widget class="caFrame" name="caframe_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>75</y>
+          <width>161</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="visibility">
+         <enum>caFrame::Calc</enum>
+        </property>
+        <property name="visibilityCalc">
+         <string notr="true">A=2 or B=2</string>
+        </property>
+        <property name="channel" stdset="0">
+         <string notr="true">$(DEV):SWX-CTRL</string>
+        </property>
+        <property name="channelB">
+         <string notr="true">$(DEV):SWY-CTRL</string>
+        </property>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>30</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>X/Y</string>
+         </property>
+        </widget>
+        <widget class="caNumeric" name="caNumeric_2">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>0</y>
+           <width>60</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>60</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="decimalDigits" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="digitsFontScaleEnabled">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>$(DEV):ATT-XY</string>
+         </property>
+         <property name="foreground">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="background">
+          <color>
+           <red>187</red>
+           <green>187</green>
+           <blue>187</blue>
+          </color>
+         </property>
+         <property name="precisionMode">
+          <enum>caNumeric::Channel</enum>
+         </property>
+         <property name="fixedFormat">
+          <bool>false</bool>
+         </property>
+         <property name="limitsMode">
+          <enum>caNumeric::Channel</enum>
+         </property>
+         <property name="maxValue">
+          <double>1.000000000000000</double>
+         </property>
+         <property name="minValue">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+        <widget class="caChoice" name="caChoice_8">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>0</y>
+           <width>60</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="channel" stdset="0">
+          <string>$(DEV):ATT-XY-LE</string>
+         </property>
+         <property name="foreground">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="background">
+          <color>
+           <red>187</red>
+           <green>187</green>
+           <blue>187</blue>
+          </color>
+         </property>
+         <property name="colorMode">
+          <enum>caChoice::Static</enum>
+         </property>
+         <property name="endBit">
+          <number>1</number>
+         </property>
+        </widget>
+       </widget>
+       <widget class="caRelatedDisplay" name="caRelatedDisplay_4">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>100</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="label">
+         <string notr="true">-RD</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>193</green>
+          <blue>135</blue>
+         </color>
+        </property>
+        <property name="labels">
+         <string>BPM</string>
+        </property>
+        <property name="files">
+         <string notr="true">BPM_GPAC_CAV_RFFE_CS_BPMXFEL03_ATT_CAL_RD.ui</string>
+        </property>
+        <property name="args">
+         <string>DEV=$(DEV)</string>
+        </property>
+        <property name="fontScaleMode">
+         <enum>EPushButton::None</enum>
+        </property>
+        <property name="stackingMode" stdset="0">
+         <enum>caRowColMenu::Menu</enum>
+        </property>
+        <property name="removeParent" stdset="0">
+         <string>false</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_5">
+       <property name="geometry">
+        <rect>
+         <x>780</x>
+         <y>30</y>
+         <width>80</width>
+         <height>130</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="title">
+        <string>IF Amplifier</string>
+       </property>
+       <widget class="caRelatedDisplay" name="caRelatedDisplay_1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>60</width>
+          <height>66</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="label">
+         <string notr="true">-I/Q Imbal</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>193</green>
+          <blue>135</blue>
+         </color>
+        </property>
+        <property name="labels">
+         <string>BPM</string>
+        </property>
+        <property name="files">
+         <string notr="true">BPM_GPAC_CAV_RFFE_CS_BPMXFEL03_IMBAL.ui</string>
+        </property>
+        <property name="args">
+         <string>DEV=$(DEV)</string>
+        </property>
+        <property name="fontScaleMode">
+         <enum>EPushButton::None</enum>
+        </property>
+        <property name="stackingMode" stdset="0">
+         <enum>caRowColMenu::Menu</enum>
+        </property>
+        <property name="removeParent" stdset="0">
+         <string>false</string>
+        </property>
+       </widget>
+       <widget class="caRelatedDisplay" name="caRelatedDisplay_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="label">
+         <string notr="true">-RD</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>193</green>
+          <blue>135</blue>
+         </color>
+        </property>
+        <property name="labels">
+         <string>BPM</string>
+        </property>
+        <property name="files">
+         <string notr="true">BPM_GPAC_CAV_RFFE_CS_BPMXFEL03_IMBAL_RD.ui</string>
+        </property>
+        <property name="args">
+         <string>DEV=$(DEV)</string>
+        </property>
+        <property name="fontScaleMode">
+         <enum>EPushButton::None</enum>
+        </property>
+        <property name="stackingMode" stdset="0">
+         <enum>caRowColMenu::Menu</enum>
+        </property>
+        <property name="removeParent" stdset="0">
+         <string>false</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_8">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>320</y>
+         <width>90</width>
+         <height>150</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="title">
+        <string>Oscillator</string>
+       </property>
+       <widget class="QFrame" name="frame">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>50</y>
+          <width>60</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <widget class="QFrame" name="frame_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>25</y>
+           <width>40</width>
+           <height>10</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_50">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>35</y>
+           <width>40</width>
+           <height>10</height>
+          </rect>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_51">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>15</y>
+           <width>40</width>
+           <height>10</height>
+          </rect>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_52">
+         <property name="geometry">
+          <rect>
+           <x>25</x>
+           <y>10</y>
+           <width>10</width>
+           <height>10</height>
+          </rect>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_53">
+         <property name="geometry">
+          <rect>
+           <x>25</x>
+           <y>40</y>
+           <width>10</width>
+           <height>10</height>
+          </rect>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="caChoice" name="caChoice_3">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>110</y>
+          <width>60</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="channel" stdset="0">
+         <string>$(DEV):OSC-ON-OFF</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>187</green>
+          <blue>187</blue>
+         </color>
+        </property>
+        <property name="colorMode">
+         <enum>caChoice::Static</enum>
+        </property>
+        <property name="endBit">
+         <number>1</number>
+        </property>
+       </widget>
+       <widget class="caMenu" name="caMenu_4">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>25</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="channel" stdset="0">
+         <string>$(DEV):SW-OSC</string>
+        </property>
+        <property name="colorMode">
+         <enum>caMenu::Static</enum>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>187</green>
+          <blue>187</blue>
+         </color>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_9">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>175</y>
+         <width>251</width>
+         <height>130</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="title">
+        <string>LO PLL</string>
+       </property>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>110</y>
+          <width>61</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>PLL_LOCK</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_11">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>320</y>
+         <width>440</width>
+         <height>150</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="title">
+        <string>CCLK DDS</string>
+       </property>
+       <widget class="caTextEntry" name="caTextEntry_1">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>100</y>
+          <width>80</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="channel" stdset="0">
+         <string>$(DEV):CCLK-DDS-CFR2</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>187</green>
+          <blue>187</blue>
+         </color>
+        </property>
+        <property name="colorMode">
+         <enum>caLineEdit::Static</enum>
+        </property>
+        <property name="precisionMode">
+         <enum>caLineEdit::Channel</enum>
+        </property>
+        <property name="limitsMode">
+         <enum>caLineEdit::Channel</enum>
+        </property>
+        <property name="maxValue">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="minValue">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="fontScaleMode">
+         <enum>caLineEdit::WidthAndHeight</enum>
+        </property>
+        <property name="formatType">
+         <enum>caLineEdit::hexadecimal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_31">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>45</y>
+          <width>10</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_37">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>45</y>
+          <width>20</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="caGraphics" name="caGraphics_1">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>30</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="linestyle" stdset="0">
+         <enum>caGraphics::Solid</enum>
+        </property>
+        <property name="lineColor">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="form">
+         <enum>caGraphics::Circle</enum>
+        </property>
+        <property name="background" stdset="0">
+         <color alpha="0">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="caTextEntry" name="caTextEntry_0">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>100</y>
+          <width>80</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="channel" stdset="0">
+         <string>$(DEV):CCLK-DDS-CFR1</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>187</green>
+          <blue>187</blue>
+         </color>
+        </property>
+        <property name="colorMode">
+         <enum>caLineEdit::Static</enum>
+        </property>
+        <property name="precisionMode">
+         <enum>caLineEdit::Channel</enum>
+        </property>
+        <property name="limitsMode">
+         <enum>caLineEdit::Channel</enum>
+        </property>
+        <property name="maxValue">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="minValue">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="fontScaleMode">
+         <enum>caLineEdit::WidthAndHeight</enum>
+        </property>
+        <property name="formatType">
+         <enum>caLineEdit::hexadecimal</enum>
+        </property>
+       </widget>
+       <widget class="caLineEdit" name="caLineEdit_0">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>110</y>
+          <width>40</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignAbsolute|Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="channel" stdset="0">
+         <string>$(DEV):DDS-PHASE.EGU</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>187</green>
+          <blue>187</blue>
+         </color>
+        </property>
+        <property name="colorMode">
+         <enum>caLineEdit::Static</enum>
+        </property>
+        <property name="precisionMode">
+         <enum>caLineEdit::Channel</enum>
+        </property>
+        <property name="limitsMode">
+         <enum>caLineEdit::Channel</enum>
+        </property>
+        <property name="maxValue">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="minValue">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="fontScaleMode">
+         <enum>caLineEdit::WidthAndHeight</enum>
+        </property>
+        <property name="formatType">
+         <enum>caLineEdit::decimal</enum>
+        </property>
+       </widget>
+       <widget class="caGraphics" name="caGraphics_0">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>30</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="linestyle" stdset="0">
+         <enum>caGraphics::Solid</enum>
+        </property>
+        <property name="lineColor">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="form">
+         <enum>caGraphics::Circle</enum>
+        </property>
+        <property name="background" stdset="0">
+         <color alpha="0">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="Line" name="line_47">
+        <property name="geometry">
+         <rect>
+          <x>215</x>
+          <y>50</y>
+          <width>10</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_7">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>30</y>
+          <width>100</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <widget class="caTextEntry" name="caTextEntry_25">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>80</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="channel" stdset="0">
+          <string>$(DEV):CCLK-DDS-DAC</string>
+         </property>
+         <property name="foreground">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="background">
+          <color>
+           <red>187</red>
+           <green>187</green>
+           <blue>187</blue>
+          </color>
+         </property>
+         <property name="colorMode">
+          <enum>caLineEdit::Static</enum>
+         </property>
+         <property name="precisionMode">
+          <enum>caLineEdit::Channel</enum>
+         </property>
+         <property name="limitsMode">
+          <enum>caLineEdit::Channel</enum>
+         </property>
+         <property name="maxValue">
+          <double>1.000000000000000</double>
+         </property>
+         <property name="minValue">
+          <double>0.000000000000000</double>
+         </property>
+         <property name="fontScaleMode">
+          <enum>caLineEdit::WidthAndHeight</enum>
+         </property>
+         <property name="formatType">
+          <enum>caLineEdit::hexadecimal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>100</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <widget class="caTextEntry" name="caTextEntry_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>80</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="channel" stdset="0">
+          <string>$(DEV):CCLK-DDS-FTW</string>
+         </property>
+         <property name="foreground">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="background">
+          <color>
+           <red>187</red>
+           <green>187</green>
+           <blue>187</blue>
+          </color>
+         </property>
+         <property name="colorMode">
+          <enum>caLineEdit::Static</enum>
+         </property>
+         <property name="precisionMode">
+          <enum>caLineEdit::Channel</enum>
+         </property>
+         <property name="limitsMode">
+          <enum>caLineEdit::Channel</enum>
+         </property>
+         <property name="maxValue">
+          <double>1.000000000000000</double>
+         </property>
+         <property name="minValue">
+          <double>0.000000000000000</double>
+         </property>
+         <property name="fontScaleMode">
+          <enum>caLineEdit::WidthAndHeight</enum>
+         </property>
+         <property name="formatType">
+          <enum>caLineEdit::hexadecimal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="Line" name="line_39">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>75</y>
+          <width>80</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="caNumeric" name="caNumeric_0">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>100</y>
+          <width>80</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>45</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="integerDigits" stdset="0">
+         <number>3</number>
+        </property>
+        <property name="digitsFontScaleEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="channel" stdset="0">
+         <string>$(DEV):DDS-PHASE</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>187</green>
+          <blue>187</blue>
+         </color>
+        </property>
+        <property name="precisionMode">
+         <enum>caNumeric::User</enum>
+        </property>
+        <property name="fixedFormat">
+         <bool>false</bool>
+        </property>
+        <property name="limitsMode">
+         <enum>caNumeric::Channel</enum>
+        </property>
+        <property name="maxValue">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="minValue">
+         <double>0.000000000000000</double>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_9">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>30</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <widget class="QLabel" name="label_48">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>15</y>
+           <width>20</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>20</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Z</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_49">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>5</y>
+           <width>20</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>20</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>-1</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_10">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>30</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_38">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>45</y>
+          <width>20</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_36">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>45</y>
+          <width>10</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_35">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>45</y>
+          <width>10</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_33">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>45</y>
+          <width>10</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_46">
+        <property name="geometry">
+         <rect>
+          <x>135</x>
+          <y>70</y>
+          <width>10</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_34">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>45</y>
+          <width>20</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="caChoice" name="caChoice_0">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>100</y>
+          <width>60</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="channel" stdset="0">
+         <string>$(DEV):CCLK-DDS-RESET</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>187</green>
+          <blue>187</blue>
+         </color>
+        </property>
+        <property name="colorMode">
+         <enum>caChoice::Static</enum>
+        </property>
+        <property name="endBit">
+         <number>1</number>
+        </property>
+        <property name="fontScaleMode">
+         <enum>EPushButton::None</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_27">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>15</y>
+          <width>60</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>DAC</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_28">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>85</y>
+          <width>60</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>PHASE</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>85</y>
+          <width>60</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>CFR2</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>85</y>
+          <width>60</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>CFR1</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_31">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>15</y>
+          <width>60</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>FTW</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_32">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>85</y>
+          <width>60</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>RESET</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_47">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>15</y>
+          <width>60</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ang/Amp</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="Line" name="line_55">
+        <property name="geometry">
+         <rect>
+          <x>245</x>
+          <y>40</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_54">
+        <property name="geometry">
+         <rect>
+          <x>135</x>
+          <y>40</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_7">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>320</y>
+         <width>280</width>
+         <height>150</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="title">
+        <string>CCLK PLL</string>
+       </property>
+       <widget class="caGraphics" name="caRectangle_28">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>115</y>
+          <width>10</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>216</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="linestyle" stdset="0">
+         <enum>caGraphics::Solid</enum>
+        </property>
+        <property name="fillstyle" stdset="0">
+         <enum>caGraphics::Filled</enum>
+        </property>
+        <property name="lineColor">
+         <color>
+          <red>0</red>
+          <green>216</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="visibility">
+         <enum>caGraphics::IfNotZero</enum>
+        </property>
+        <property name="channel" stdset="0">
+         <string>$(DEV):CCLK-PLL-MUX-OUT</string>
+        </property>
+        <property name="form">
+         <enum>caGraphics::Rectangle</enum>
+        </property>
+       </widget>
+       <widget class="caMenu" name="caMenu_1">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>115</y>
+          <width>69</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QComboBox::AdjustToContents</enum>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <property name="channel" stdset="0">
+         <string>$(DEV):CCLK-PLL-MUX</string>
+        </property>
+        <property name="colorMode">
+         <enum>caMenu::Static</enum>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>187</green>
+          <blue>187</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_13">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>35</y>
+          <width>80</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <widget class="caChoice" name="caChoice_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>60</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="channel" stdset="0">
+          <string>$(DEV):CCLK-PLL-F2</string>
+         </property>
+         <property name="foreground">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="background">
+          <color>
+           <red>187</red>
+           <green>187</green>
+           <blue>187</blue>
+          </color>
+         </property>
+         <property name="colorMode">
+          <enum>caChoice::Static</enum>
+         </property>
+         <property name="endBit">
+          <number>1</number>
+         </property>
+         <property name="fontScaleMode">
+          <enum>EPushButton::WidthAndHeight</enum>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_24">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>5</y>
+           <width>60</width>
+           <height>15</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>F2</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="Line" name="line_44">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>60</y>
+          <width>10</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_45">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>75</y>
+          <width>20</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>35</y>
+          <width>80</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <widget class="caTextEntry" name="caTextEntry_8">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="channel" stdset="0">
+          <string>$(DEV):CCLK-PLL-R</string>
+         </property>
+         <property name="foreground">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="background">
+          <color>
+           <red>187</red>
+           <green>187</green>
+           <blue>187</blue>
+          </color>
+         </property>
+         <property name="colorMode">
+          <enum>caLineEdit::Static</enum>
+         </property>
+         <property name="precisionMode">
+          <enum>caLineEdit::Channel</enum>
+         </property>
+         <property name="limitsMode">
+          <enum>caLineEdit::Channel</enum>
+         </property>
+         <property name="maxValue">
+          <double>1.000000000000000</double>
+         </property>
+         <property name="minValue">
+          <double>0.000000000000000</double>
+         </property>
+         <property name="fontScaleMode">
+          <enum>caLineEdit::WidthAndHeight</enum>
+         </property>
+         <property name="formatType">
+          <enum>caLineEdit::decimal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>95</y>
+          <width>80</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <widget class="caTextEntry" name="caTextEntry_7">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>60</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="channel" stdset="0">
+          <string>$(DEV):CCLK-PLL-N</string>
+         </property>
+         <property name="foreground">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="background">
+          <color>
+           <red>187</red>
+           <green>187</green>
+           <blue>187</blue>
+          </color>
+         </property>
+         <property name="colorMode">
+          <enum>caLineEdit::Static</enum>
+         </property>
+         <property name="precisionMode">
+          <enum>caLineEdit::Channel</enum>
+         </property>
+         <property name="limitsMode">
+          <enum>caLineEdit::Channel</enum>
+         </property>
+         <property name="maxValue">
+          <double>1.000000000000000</double>
+         </property>
+         <property name="minValue">
+          <double>0.000000000000000</double>
+         </property>
+         <property name="fontScaleMode">
+          <enum>caLineEdit::WidthAndHeight</enum>
+         </property>
+         <property name="formatType">
+          <enum>caLineEdit::decimal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="Line" name="line_49">
+        <property name="geometry">
+         <rect>
+          <x>75</x>
+          <y>80</y>
+          <width>10</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_14">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>35</y>
+          <width>80</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <widget class="caChoice" name="caChoice_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>25</y>
+           <width>60</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="channel" stdset="0">
+          <string>$(DEV):CCLK-PLL-F3</string>
+         </property>
+         <property name="foreground">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+         <property name="background">
+          <color>
+           <red>187</red>
+           <green>187</green>
+           <blue>187</blue>
+          </color>
+         </property>
+         <property name="colorMode">
+          <enum>caChoice::Static</enum>
+         </property>
+         <property name="endBit">
+          <number>1</number>
+         </property>
+         <property name="fontScaleMode">
+          <enum>EPushButton::WidthAndHeight</enum>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_23">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>60</width>
+           <height>15</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>F3</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="Line" name="line_43">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>50</y>
+          <width>10</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>100</y>
+          <width>60</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>MUXOUT</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>20</y>
+          <width>60</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>PFD</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>20</y>
+          <width>60</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>CP</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_25">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>60</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>R</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>60</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>N</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_13">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>35</y>
+         <width>40</width>
+         <height>125</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="caPolyLine" name="caPolyLine_55">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>25</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="linestyle" stdset="0">
+         <enum>caPolyLine::Solid</enum>
+        </property>
+        <property name="lineSize">
+         <number>2</number>
+        </property>
+        <property name="lineColor">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="xyPairs" stdset="0">
+         <string>0,40;39,0</string>
+        </property>
+        <property name="fillstyle" stdset="0">
+         <enum>caPolyLine::Filled</enum>
+        </property>
+       </widget>
+       <widget class="caPolyLine" name="caPolyLine_56">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>65</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="linestyle" stdset="0">
+         <enum>caPolyLine::Solid</enum>
+        </property>
+        <property name="lineSize">
+         <number>2</number>
+        </property>
+        <property name="lineColor">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="xyPairs" stdset="0">
+         <string>0,0;39,40</string>
+        </property>
+        <property name="fillstyle" stdset="0">
+         <enum>caPolyLine::Filled</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_41">
+       <property name="geometry">
+        <rect>
+         <x>965</x>
+         <y>15</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>15</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>I</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_42">
+       <property name="geometry">
+        <rect>
+         <x>965</x>
+         <y>90</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>15</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Q</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_43">
+       <property name="geometry">
+        <rect>
+         <x>955</x>
+         <y>320</y>
+         <width>60</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>60</width>
+         <height>15</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>CCLK</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_44">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>320</y>
+         <width>60</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>60</width>
+         <height>15</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>MREF</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_45">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>60</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>60</width>
+         <height>15</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>R,X,Y</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>30</y>
+         <width>110</width>
+         <height>130</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="title">
+        <string>MUX</string>
+       </property>
+       <widget class="caMenu" name="caMenu_2">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>90</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="channel" stdset="0">
+         <string>$(DEV):SWY-CTRL</string>
+        </property>
+        <property name="colorMode">
+         <enum>caMenu::Static</enum>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>187</green>
+          <blue>187</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="caMenu" name="caMenu_3">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>60</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="channel" stdset="0">
+         <string>$(DEV):SWX-CTRL</string>
+        </property>
+        <property name="colorMode">
+         <enum>caMenu::Static</enum>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>187</green>
+          <blue>187</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>20</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>X</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>20</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Y</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="caGraphics" name="caRectangle_22">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>285</y>
+         <width>10</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>216</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caGraphics::Solid</enum>
+       </property>
+       <property name="fillstyle" stdset="0">
+        <enum>caGraphics::Filled</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>216</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="visibility">
+        <enum>caGraphics::IfNotZero</enum>
+       </property>
+       <property name="channel" stdset="0">
+        <string>$(DEV):PLL-LOCK</string>
+       </property>
+       <property name="form">
+        <enum>caGraphics::Rectangle</enum>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_6">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>30</y>
+         <width>110</width>
+         <height>130</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="title">
+        <string>MUX</string>
+       </property>
+       <widget class="caMenu" name="caMenu_5">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>90</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="channel" stdset="0">
+         <string>$(DEV):SWY-CTRL</string>
+        </property>
+        <property name="colorMode">
+         <enum>caMenu::Static</enum>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>187</green>
+          <blue>187</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="caMenu" name="caMenu_6">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>60</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="channel" stdset="0">
+         <string>$(DEV):SWX-CTRL</string>
+        </property>
+        <property name="colorMode">
+         <enum>caMenu::Static</enum>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>187</green>
+          <blue>187</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>20</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>X</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>20</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Y</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="Line" name="line_9">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>95</y>
+         <width>10</width>
+         <height>10</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_15">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>180</y>
+         <width>40</width>
+         <height>125</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="caPolyLine" name="caPolyLine_59">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>25</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="linestyle" stdset="0">
+         <enum>caPolyLine::Solid</enum>
+        </property>
+        <property name="lineSize">
+         <number>2</number>
+        </property>
+        <property name="lineColor">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="xyPairs" stdset="0">
+         <string>0,40;39,0</string>
+        </property>
+        <property name="fillstyle" stdset="0">
+         <enum>caPolyLine::Filled</enum>
+        </property>
+       </widget>
+       <widget class="caPolyLine" name="caPolyLine_60">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>65</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="linestyle" stdset="0">
+         <enum>caPolyLine::Solid</enum>
+        </property>
+        <property name="lineSize">
+         <number>2</number>
+        </property>
+        <property name="lineColor">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="xyPairs" stdset="0">
+         <string>0,0;39,40</string>
+        </property>
+        <property name="fillstyle" stdset="0">
+         <enum>caPolyLine::Filled</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_50">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>10</y>
+          <width>30</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>0°</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_51">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>100</y>
+          <width>30</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>90°</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="caGraphics" name="caRectangle_23">
+       <property name="geometry">
+        <rect>
+         <x>920</x>
+         <y>435</y>
+         <width>10</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lucida Sans</family>
+        </font>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>216</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="linestyle" stdset="0">
+        <enum>caGraphics::Solid</enum>
+       </property>
+       <property name="fillstyle" stdset="0">
+        <enum>caGraphics::Filled</enum>
+       </property>
+       <property name="lineColor">
+        <color>
+         <red>0</red>
+         <green>216</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="visibility">
+        <enum>caGraphics::IfNotZero</enum>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEV):MUXOUT-ADCCLOCK</string>
+       </property>
+       <property name="form">
+        <enum>caGraphics::Rectangle</enum>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_10">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>175</y>
+         <width>80</width>
+         <height>135</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="title">
+        <string>Phase</string>
+       </property>
+       <widget class="QFrame" name="frame_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>60</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <widget class="caNumeric" name="canumeric">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>60</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="integerDigits" stdset="0">
+          <number>1</number>
+         </property>
+         <property name="decimalDigits" stdset="0">
+          <number>3</number>
+         </property>
+         <property name="channel" stdset="0">
+          <string notr="true">$(DEV):LO-PHASE</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>60</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>15</y>
+          <width>60</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>phi</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>75</y>
+          <width>60</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>DAC [V]</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="Line" name="line_25">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>250</y>
+         <width>10</width>
+         <height>2</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caNumeric</class>
+   <extends>QFrame</extends>
+   <header>caNumeric</header>
+  </customwidget>
+  <customwidget>
+   <class>caMenu</class>
+   <extends>QComboBox</extends>
+   <header>caMenu</header>
+  </customwidget>
+  <customwidget>
+   <class>caChoice</class>
+   <extends>QWidget</extends>
+   <header>caChoice</header>
+  </customwidget>
+  <customwidget>
+   <class>caRelatedDisplay</class>
+   <extends>QWidget</extends>
+   <header>caRelatedDisplay</header>
+  </customwidget>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caMessageButton</class>
+   <extends>QPushButton</extends>
+   <header>caMessageButton</header>
+  </customwidget>
+  <customwidget>
+   <class>caFrame</class>
+   <extends>QFrame</extends>
+   <header>caFrame</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>caLabel</class>
+   <extends>QLabel</extends>
+   <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caGraphics</class>
+   <extends>QWidget</extends>
+   <header>caGraphics</header>
+  </customwidget>
+  <customwidget>
+   <class>caPolyLine</class>
+   <extends>QWidget</extends>
+   <header>caPolyLine</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>5</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>5</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

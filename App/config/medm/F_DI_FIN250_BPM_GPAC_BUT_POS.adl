@@ -1,0 +1,208 @@
+
+file {
+	name="/afs/psi.ch/user/k/koprek_w/cvs/G/XFEL/14_Firmware/13_Prototype/Button_BPM/05_EPICS/Button_BPM/App/config/medm/F_DI_FIN250_BPM_GPAC_BUT_POS.adl"
+	version=030105
+}
+display {
+	object {
+		x=711
+		y=195
+		width=600
+		height=830
+	}
+	clr=14
+	bclr=4
+	cmap=""
+	gridSpacing=5
+	gridOn=1
+	snapToGrid=1
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=0
+		width=600
+		height=30
+	}
+	"basic attribute" {
+		clr=1
+	}
+}
+polyline {
+	object {
+		x=-40
+		y=860
+		width=1000
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(-40,860)
+		(960,860)
+	}
+}
+text {
+	object {
+		x=0
+		y=5
+		width=600
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Button BPM Expert Panel ($(DEV))"
+	align="horiz. centered"
+}
+"cartesian plot" {
+	object {
+		x=0
+		y=30
+		width=600
+		height=200
+	}
+	plotcom {
+		xlabel="Bunches"
+		ylabel="X [mm]"
+		clr=0
+		bclr=14
+	}
+	style="line-nomarks"
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):X-TRAIN"
+		data_clr=0
+	}
+}
+"cartesian plot" {
+	object {
+		x=0
+		y=230
+		width=600
+		height=200
+	}
+	plotcom {
+		xlabel="Bunches"
+		ylabel="Y [mm]"
+		clr=0
+		bclr=14
+	}
+	style="line-nomarks"
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):Y-TRAIN"
+		data_clr=0
+	}
+}
+"cartesian plot" {
+	object {
+		x=0
+		y=430
+		width=600
+		height=200
+	}
+	plotcom {
+		xlabel="Bunches"
+		ylabel="Q [pC]"
+		clr=0
+		bclr=14
+	}
+	style="line-nomarks"
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):Q-TRAIN"
+		data_clr=0
+	}
+}
+"cartesian plot" {
+	object {
+		x=0
+		y=630
+		width=600
+		height=200
+	}
+	plotcom {
+		xlabel="Bunches"
+		ylabel="Valid"
+		clr=0
+		bclr=14
+	}
+	style="line-nomarks"
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):V-TRAIN"
+		data_clr=0
+	}
+}

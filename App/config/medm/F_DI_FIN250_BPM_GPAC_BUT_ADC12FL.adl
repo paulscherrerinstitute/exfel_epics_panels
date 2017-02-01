@@ -1,0 +1,5322 @@
+
+file {
+	name="/afs/psi.ch/user/k/koprek_w/cvs/G/XFEL/14_Firmware/13_Prototype/Button_BPM/05_EPICS/Button_BPM/App/config/medm/F_DI_FIN250_BPM_GPAC_BUT_ADC12FL.adl"
+	version=030105
+}
+display {
+	object {
+		x=10
+		y=610
+		width=1260
+		height=570
+	}
+	clr=14
+	bclr=4
+	cmap=""
+	gridSpacing=5
+	gridOn=1
+	snapToGrid=1
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=1220
+		y=150
+		width=35
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+}
+rectangle {
+	object {
+		x=1220
+		y=200
+		width=35
+		height=20
+	}
+	"basic attribute" {
+		clr=35
+	}
+}
+rectangle {
+	object {
+		x=1220
+		y=250
+		width=35
+		height=20
+	}
+	"basic attribute" {
+		clr=25
+	}
+}
+rectangle {
+	object {
+		x=1220
+		y=300
+		width=35
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+}
+rectangle {
+	object {
+		x=1220
+		y=400
+		width=35
+		height=20
+	}
+	"basic attribute" {
+		clr=35
+	}
+}
+rectangle {
+	object {
+		x=1220
+		y=350
+		width=35
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+}
+rectangle {
+	object {
+		x=1220
+		y=500
+		width=35
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+}
+rectangle {
+	object {
+		x=1220
+		y=450
+		width=35
+		height=20
+	}
+	"basic attribute" {
+		clr=25
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=0
+		width=1260
+		height=20
+	}
+	"basic attribute" {
+		clr=1
+		width=2
+	}
+}
+rectangle {
+	object {
+		x=5
+		y=455
+		width=60
+		height=60
+	}
+	"basic attribute" {
+		clr=7
+		width=2
+	}
+}
+rectangle {
+	object {
+		x=5
+		y=410
+		width=60
+		height=40
+	}
+	"basic attribute" {
+		clr=7
+		width=2
+	}
+}
+rectangle {
+	object {
+		x=170
+		y=120
+		width=245
+		height=60
+	}
+	"basic attribute" {
+		clr=7
+		width=2
+	}
+}
+rectangle {
+	object {
+		x=895
+		y=120
+		width=320
+		height=430
+	}
+	"basic attribute" {
+		clr=7
+		width=2
+	}
+}
+rectangle {
+	object {
+		x=495
+		y=120
+		width=320
+		height=380
+	}
+	"basic attribute" {
+		clr=7
+		width=2
+	}
+}
+rectangle {
+	object {
+		x=95
+		y=190
+		width=320
+		height=360
+	}
+	"basic attribute" {
+		clr=7
+		width=2
+	}
+}
+oval {
+	object {
+		x=315
+		y=40
+		width=20
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A&1)=0"
+		chan="$(DEV):$(PB)-PWR-STATUS"
+	}
+}
+text {
+	object {
+		x=395
+		y=30
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="TEMP0"
+}
+"text update" {
+	object {
+		x=435
+		y=30
+		width=40
+		height=12
+	}
+	monitor {
+		chan="$(DEV):$(PB)-ADC0-TEMP"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=395
+		y=50
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="TEMP1"
+}
+"text update" {
+	object {
+		x=435
+		y=50
+		width=40
+		height=12
+	}
+	monitor {
+		chan="$(DEV):$(PB)-ADC1-TEMP"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=395
+		y=70
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="TEMP2"
+}
+"text update" {
+	object {
+		x=435
+		y=70
+		width=40
+		height=12
+	}
+	monitor {
+		chan="$(DEV):$(PB)-ADC2-TEMP"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=475
+		y=30
+		width=40
+		height=12
+	}
+	monitor {
+		chan="$(DEV):$(PB)-ADC0-TEMP.EGU"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=475
+		y=50
+		width=40
+		height=12
+	}
+	monitor {
+		chan="$(DEV):$(PB)-ADC1-TEMP.EGU"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=475
+		y=70
+		width=40
+		height=12
+	}
+	monitor {
+		chan="$(DEV):$(PB)-ADC2-TEMP.EGU"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+polyline {
+	object {
+		x=0
+		y=90
+		width=1260
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,90)
+		(1260,90)
+	}
+}
+polyline {
+	object {
+		x=0
+		y=20
+		width=1260
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,20)
+		(1260,20)
+	}
+}
+text {
+	object {
+		x=0
+		y=1
+		width=1260
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Button BPM ADC Expert Panel ($(DEV))"
+	align="horiz. centered"
+}
+"choice button" {
+	object {
+		x=605
+		y=25
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):$(PB)-TRIG0-DIR"
+		clr=14
+		bclr=57
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=535
+		y=25
+		width=120
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="TRIG0-DIR"
+}
+"choice button" {
+	object {
+		x=605
+		y=40
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):$(PB)-TRIG1-DIR"
+		clr=14
+		bclr=57
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=535
+		y=40
+		width=120
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="TRIG1-DIR"
+}
+"choice button" {
+	object {
+		x=605
+		y=55
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):$(PB)-TRIG2-DIR"
+		clr=14
+		bclr=57
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=535
+		y=55
+		width=120
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="TRIG2-DIR"
+}
+"choice button" {
+	object {
+		x=605
+		y=70
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):$(PB)-TRIG3-DIR"
+		clr=14
+		bclr=57
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=535
+		y=70
+		width=120
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="TRIG3-DIR"
+}
+"choice button" {
+	object {
+		x=180
+		y=60
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC-RESET"
+		clr=14
+		bclr=57
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=110
+		y=60
+		width=120
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="ADC-RESET"
+}
+rectangle {
+	object {
+		x=185
+		y=300
+		width=110
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+"text entry" {
+	object {
+		x=195
+		y=310
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-PWR-DIV"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=245
+		y=310
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-PWR-DLY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=315
+		y=310
+		width=80
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+		clr=14
+		bclr=4
+	}
+}
+text {
+	object {
+		x=315
+		y=285
+		width=80
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="MUX"
+}
+polyline {
+	object {
+		x=305
+		y=300
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(305,340)
+		(305,300)
+	}
+}
+polyline {
+	object {
+		x=305
+		y=300
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(305,300)
+		(405,310)
+	}
+}
+polyline {
+	object {
+		x=305
+		y=330
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(305,340)
+		(405,330)
+	}
+}
+text {
+	object {
+		x=195
+		y=285
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DIV"
+}
+text {
+	object {
+		x=245
+		y=285
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DLY"
+}
+polyline {
+	object {
+		x=100
+		y=420
+		width=61
+		height=0
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(100,420)
+		(160,440)
+	}
+}
+polyline {
+	object {
+		x=100
+		y=480
+		width=61
+		height=0
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(100,500)
+		(160,480)
+	}
+}
+polyline {
+	object {
+		x=160
+		y=440
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(160,440)
+		(160,480)
+	}
+}
+"choice button" {
+	object {
+		x=110
+		y=445
+		width=40
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-SEL"
+		clr=14
+		bclr=57
+	}
+}
+polyline {
+	object {
+		x=160
+		y=460
+		width=16
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(161,461)
+		(175,461)
+	}
+}
+polyline {
+	object {
+		x=294
+		y=320
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(295,321)
+		(305,321)
+	}
+}
+polyline {
+	object {
+		x=404
+		y=319
+		width=22
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(405,320)
+		(425,320)
+	}
+}
+rectangle {
+	object {
+		x=185
+		y=350
+		width=110
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+polyline {
+	object {
+		x=305
+		y=350
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(305,390)
+		(305,350)
+	}
+}
+polyline {
+	object {
+		x=305
+		y=350
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(305,350)
+		(405,360)
+	}
+}
+polyline {
+	object {
+		x=305
+		y=380
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(305,390)
+		(405,380)
+	}
+}
+polyline {
+	object {
+		x=175
+		y=470
+		width=11
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(176,471)
+		(185,471)
+	}
+}
+polyline {
+	object {
+		x=294
+		y=370
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(295,371)
+		(305,371)
+	}
+}
+polyline {
+	object {
+		x=404
+		y=370
+		width=32
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(405,371)
+		(435,371)
+	}
+}
+rectangle {
+	object {
+		x=185
+		y=400
+		width=110
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+polyline {
+	object {
+		x=305
+		y=400
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(305,440)
+		(305,400)
+	}
+}
+polyline {
+	object {
+		x=305
+		y=400
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(305,400)
+		(405,410)
+	}
+}
+polyline {
+	object {
+		x=305
+		y=430
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(305,440)
+		(405,430)
+	}
+}
+polyline {
+	object {
+		x=175
+		y=520
+		width=11
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(176,521)
+		(185,521)
+	}
+}
+polyline {
+	object {
+		x=294
+		y=419
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(295,420)
+		(305,420)
+	}
+}
+polyline {
+	object {
+		x=404
+		y=419
+		width=112
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(405,420)
+		(515,420)
+	}
+}
+rectangle {
+	object {
+		x=185
+		y=500
+		width=110
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+polyline {
+	object {
+		x=305
+		y=500
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(305,540)
+		(305,500)
+	}
+}
+polyline {
+	object {
+		x=305
+		y=500
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(305,500)
+		(405,510)
+	}
+}
+polyline {
+	object {
+		x=305
+		y=530
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(305,540)
+		(405,530)
+	}
+}
+polyline {
+	object {
+		x=175
+		y=419
+		width=11
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(176,420)
+		(185,420)
+	}
+}
+polyline {
+	object {
+		x=294
+		y=520
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(295,521)
+		(305,521)
+	}
+}
+polyline {
+	object {
+		x=405
+		y=520
+		width=500
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(406,521)
+		(904,521)
+	}
+}
+rectangle {
+	object {
+		x=185
+		y=450
+		width=110
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+polyline {
+	object {
+		x=305
+		y=450
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(305,490)
+		(305,450)
+	}
+}
+polyline {
+	object {
+		x=305
+		y=450
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(305,450)
+		(405,460)
+	}
+}
+polyline {
+	object {
+		x=305
+		y=480
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(305,490)
+		(405,480)
+	}
+}
+polyline {
+	object {
+		x=294
+		y=470
+		width=13
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(295,471)
+		(306,471)
+	}
+}
+polyline {
+	object {
+		x=405
+		y=470
+		width=140
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(406,471)
+		(544,471)
+	}
+}
+"text entry" {
+	object {
+		x=195
+		y=360
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-FPGA0-DIV"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=245
+		y=360
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-FPGA0-DLY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=315
+		y=360
+		width=80
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-FPGA0-MUX"
+		clr=14
+		bclr=4
+	}
+}
+text {
+	object {
+		x=430
+		y=340
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM FPGA"
+	align="horiz. centered"
+}
+"text entry" {
+	object {
+		x=195
+		y=410
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-PLL-REF-DIV"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=245
+		y=410
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-PLL-REF-DLY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=315
+		y=410
+		width=80
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-PLL-REF-MUX"
+		clr=14
+		bclr=4
+	}
+}
+text {
+	object {
+		x=470
+		y=405
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="REF"
+}
+"text entry" {
+	object {
+		x=195
+		y=510
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-CLK1-DIV"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=245
+		y=510
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-CLK1-DLY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=315
+		y=510
+		width=80
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-CLK1-MUX"
+		clr=14
+		bclr=4
+	}
+}
+"text entry" {
+	object {
+		x=197
+		y=460
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-PLL-CLK-DIV"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=245
+		y=460
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-PLL-CLK-DLY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=315
+		y=460
+		width=80
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-PLL-CLK-MUX"
+		clr=14
+		bclr=4
+	}
+}
+text {
+	object {
+		x=470
+		y=455
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="CLK"
+}
+polyline {
+	object {
+		x=174
+		y=319
+		width=2
+		height=202
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=2
+	}
+	points {
+		(175,520)
+		(175,320)
+	}
+}
+"choice button" {
+	object {
+		x=100
+		y=280
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-PD"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=100
+		y=265
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="PD"
+}
+"choice button" {
+	object {
+		x=100
+		y=330
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-EN"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=100
+		y=315
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="EN"
+}
+text {
+	object {
+		x=110
+		y=500
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SEL"
+}
+text {
+	object {
+		x=95
+		y=175
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="LMK01020"
+}
+"choice button" {
+	object {
+		x=35
+		y=190
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-GOE"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=35
+		y=175
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="GOE"
+}
+"choice button" {
+	object {
+		x=35
+		y=240
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-SYNC1"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=35
+		y=225
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SYNC"
+}
+polyline {
+	object {
+		x=804
+		y=459
+		width=102
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(805,460)
+		(905,460)
+	}
+}
+text {
+	object {
+		x=225
+		y=105
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="PB FPGA"
+}
+"choice button" {
+	object {
+		x=290
+		y=140
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-PWR-EN"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=290
+		y=125
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="EN"
+}
+text {
+	object {
+		x=200
+		y=130
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DIV"
+}
+"text entry" {
+	object {
+		x=200
+		y=145
+		width=60
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-PWR-DIV"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=625
+		y=385
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DIVH"
+}
+polyline {
+	object {
+		x=545
+		y=400
+		width=0
+		height=80
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(545,480)
+		(545,400)
+	}
+}
+polyline {
+	object {
+		x=545
+		y=400
+		width=60
+		height=0
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(545,400)
+		(605,420)
+	}
+}
+polyline {
+	object {
+		x=545
+		y=460
+		width=60
+		height=0
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(545,480)
+		(605,460)
+	}
+}
+polyline {
+	object {
+		x=605
+		y=420
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(605,420)
+		(605,460)
+	}
+}
+"choice button" {
+	object {
+		x=550
+		y=425
+		width=40
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-PLL-SEL"
+		clr=14
+		bclr=57
+	}
+}
+polyline {
+	object {
+		x=614
+		y=469
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(615,470)
+		(625,470)
+	}
+}
+polyline {
+	object {
+		x=615
+		y=420
+		width=10
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(616,421)
+		(624,421)
+	}
+}
+rectangle {
+	object {
+		x=625
+		y=450
+		width=100
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+polyline {
+	object {
+		x=725
+		y=471
+		width=20
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(726,472)
+		(744,472)
+	}
+}
+rectangle {
+	object {
+		x=625
+		y=400
+		width=100
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+polyline {
+	object {
+		x=725
+		y=421
+		width=20
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(726,422)
+		(744,422)
+	}
+}
+"text entry" {
+	object {
+		x=630
+		y=460
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-PLL-DIV1-H"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=630
+		y=410
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-PLL-DIV2-H"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+polyline {
+	object {
+		x=615
+		y=419
+		width=2
+		height=52
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=2
+	}
+	points {
+		(616,470)
+		(616,420)
+	}
+}
+text {
+	object {
+		x=495
+		y=105
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="AD9520"
+}
+rectangle {
+	object {
+		x=505
+		y=140
+		width=300
+		height=60
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+text {
+	object {
+		x=505
+		y=125
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SPI"
+}
+polyline {
+	object {
+		x=745
+		y=391
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(745,431)
+		(745,391)
+	}
+}
+polyline {
+	object {
+		x=745
+		y=390
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(745,390)
+		(805,400)
+	}
+}
+polyline {
+	object {
+		x=745
+		y=420
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(745,430)
+		(805,420)
+	}
+}
+polyline {
+	object {
+		x=745
+		y=441
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(745,481)
+		(745,441)
+	}
+}
+polyline {
+	object {
+		x=745
+		y=440
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(745,440)
+		(805,450)
+	}
+}
+polyline {
+	object {
+		x=745
+		y=470
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(745,480)
+		(805,470)
+	}
+}
+polyline {
+	object {
+		x=604
+		y=439
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(605,440)
+		(615,440)
+	}
+}
+polyline {
+	object {
+		x=175
+		y=370
+		width=11
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(176,371)
+		(185,371)
+	}
+}
+polyline {
+	object {
+		x=405
+		y=310
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(405,330)
+		(405,310)
+	}
+}
+polyline {
+	object {
+		x=405
+		y=360
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(405,380)
+		(405,360)
+	}
+}
+polyline {
+	object {
+		x=405
+		y=410
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(405,430)
+		(405,410)
+	}
+}
+polyline {
+	object {
+		x=405
+		y=460
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(405,480)
+		(405,460)
+	}
+}
+polyline {
+	object {
+		x=405
+		y=510
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(405,530)
+		(405,510)
+	}
+}
+polyline {
+	object {
+		x=805
+		y=450
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(805,470)
+		(805,450)
+	}
+}
+polyline {
+	object {
+		x=805
+		y=400
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(805,420)
+		(805,400)
+	}
+}
+polyline {
+	object {
+		x=804
+		y=409
+		width=55
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(805,410)
+		(858,410)
+	}
+}
+polyline {
+	object {
+		x=734
+		y=450
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(735,451)
+		(745,451)
+	}
+}
+polyline {
+	object {
+		x=734
+		y=400
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(735,401)
+		(745,401)
+	}
+}
+polyline {
+	object {
+		x=734
+		y=370
+		width=2
+		height=82
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=2
+	}
+	points {
+		(735,451)
+		(735,371)
+	}
+}
+polyline {
+	object {
+		x=534
+		y=369
+		width=2
+		height=42
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=2
+	}
+	points {
+		(535,410)
+		(535,370)
+	}
+}
+polyline {
+	object {
+		x=534
+		y=409
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(535,410)
+		(545,410)
+	}
+}
+polyline {
+	object {
+		x=514
+		y=369
+		width=2
+		height=52
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=2
+	}
+	points {
+		(515,420)
+		(515,370)
+	}
+}
+polyline {
+	object {
+		x=415
+		y=150
+		width=11
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(416,151)
+		(425,151)
+	}
+}
+polyline {
+	object {
+		x=425
+		y=150
+		width=2
+		height=169
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=2
+	}
+	points {
+		(426,318)
+		(426,151)
+	}
+}
+"choice button" {
+	object {
+		x=435
+		y=195
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-PLL-RESET"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=435
+		y=180
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RESET"
+}
+"choice button" {
+	object {
+		x=435
+		y=250
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-PLL-SYNC"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=435
+		y=235
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SYNC"
+}
+"choice button" {
+	object {
+		x=435
+		y=135
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-PLL-PD"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=435
+		y=120
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="PD"
+}
+"choice button" {
+	object {
+		x=435
+		y=305
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-PLL-EEPROM"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=435
+		y=290
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="EEPROM"
+}
+"text entry" {
+	object {
+		x=735
+		y=170
+		width=60
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-PLL-WR-DATA"
+		clr=14
+		bclr=4
+	}
+	format="hexadecimal"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=585
+		y=170
+		width=60
+		height=20
+	}
+	monitor {
+		chan="$(DEV):$(PB)-PLL-RD-DATA"
+		clr=14
+		bclr=4
+	}
+	format="hexadecimal"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=515
+		y=170
+		width=60
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-PLL-RD-ADDR"
+		clr=14
+		bclr=4
+	}
+	format="hexadecimal"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=665
+		y=170
+		width=60
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-PLL-WR-ADDR"
+		clr=14
+		bclr=4
+	}
+	format="hexadecimal"
+	limits {
+	}
+}
+text {
+	object {
+		x=515
+		y=155
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RD-ADDR"
+}
+text {
+	object {
+		x=585
+		y=155
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RD-DATA"
+}
+text {
+	object {
+		x=665
+		y=155
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="WR-ADDR"
+}
+text {
+	object {
+		x=735
+		y=155
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="WR-DATA"
+}
+polyline {
+	object {
+		x=525
+		y=370
+		width=2
+		height=101
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=2
+	}
+	points {
+		(526,470)
+		(526,371)
+	}
+}
+text {
+	object {
+		x=505
+		y=205
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="PLL"
+}
+rectangle {
+	object {
+		x=505
+		y=215
+		width=300
+		height=155
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+text {
+	object {
+		x=675
+		y=385
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DIVL"
+}
+"text entry" {
+	object {
+		x=675
+		y=460
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-PLL-DIV1-L"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=675
+		y=410
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-PLL-DIV2-L"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"choice button" {
+	object {
+		x=750
+		y=445
+		width=40
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-PLL-DIV1-SEL"
+		clr=14
+		bclr=57
+	}
+}
+"choice button" {
+	object {
+		x=750
+		y=395
+		width=40
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-PLL-DIV2-SEL"
+		clr=14
+		bclr=57
+	}
+}
+"message button" {
+	object {
+		x=515
+		y=250
+		width=60
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-PLL-IOUPDATE"
+		clr=14
+		bclr=2
+	}
+	label="IOUPDATE"
+	press_msg="1"
+}
+"choice button" {
+	object {
+		x=100
+		y=380
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK0-VBOOST"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=100
+		y=365
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="VBOOST"
+}
+"text entry" {
+	object {
+		x=995
+		y=460
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC6-CLK-DIV"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1045
+		y=460
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC6-CLK-DLY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=1115
+		y=460
+		width=80
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC6-CLK-MUX"
+		clr=14
+		bclr=4
+	}
+}
+"text entry" {
+	object {
+		x=995
+		y=410
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC5-CLK-DIV"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1045
+		y=410
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC5-CLK-DLY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=1115
+		y=410
+		width=80
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC5-CLK-MUX"
+		clr=14
+		bclr=4
+	}
+}
+"text entry" {
+	object {
+		x=995
+		y=360
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC4-CLK-DIV"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1045
+		y=360
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC4-CLK-DLY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=1115
+		y=360
+		width=80
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC4-CLK-MUX"
+		clr=14
+		bclr=4
+	}
+}
+"text entry" {
+	object {
+		x=995
+		y=510
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC7-CLK-DIV"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1045
+		y=510
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC7-CLK-DLY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=1115
+		y=510
+		width=80
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC7-CLK-MUX"
+		clr=14
+		bclr=4
+	}
+}
+"text entry" {
+	object {
+		x=995
+		y=210
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC1-CLK-DIV"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1045
+		y=210
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC1-CLK-DLY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=1115
+		y=210
+		width=80
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC1-CLK-MUX"
+		clr=14
+		bclr=4
+	}
+}
+"text entry" {
+	object {
+		x=995
+		y=160
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC0-CLK-DIV"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1045
+		y=160
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC0-CLK-DLY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=1115
+		y=160
+		width=80
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC0-CLK-MUX"
+		clr=14
+		bclr=4
+	}
+}
+"text entry" {
+	object {
+		x=995
+		y=310
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC3-CLK-DIV"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1045
+		y=310
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC3-CLK-DLY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=1115
+		y=310
+		width=80
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC3-CLK-MUX"
+		clr=14
+		bclr=4
+	}
+}
+"text entry" {
+	object {
+		x=995
+		y=260
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC2-CLK-DIV"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1045
+		y=260
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC2-CLK-DLY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=1115
+		y=260
+		width=80
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC2-CLK-MUX"
+		clr=14
+		bclr=4
+	}
+}
+text {
+	object {
+		x=1225
+		y=155
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="ADC0"
+}
+text {
+	object {
+		x=1225
+		y=205
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="ADC1"
+}
+text {
+	object {
+		x=1225
+		y=255
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="ADC2"
+}
+text {
+	object {
+		x=1225
+		y=305
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="ADC3"
+}
+text {
+	object {
+		x=1225
+		y=355
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="ADC4"
+}
+text {
+	object {
+		x=1225
+		y=405
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="ADC5"
+}
+text {
+	object {
+		x=1225
+		y=455
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="ADC6"
+}
+text {
+	object {
+		x=1225
+		y=505
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="ADC7"
+}
+rectangle {
+	object {
+		x=985
+		y=150
+		width=110
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+text {
+	object {
+		x=1115
+		y=135
+		width=80
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="MUX"
+}
+polyline {
+	object {
+		x=1105
+		y=150
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1105,190)
+		(1105,150)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=150
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,150)
+		(1205,160)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=180
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,190)
+		(1205,180)
+	}
+}
+text {
+	object {
+		x=995
+		y=135
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DIV"
+}
+text {
+	object {
+		x=1045
+		y=135
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DLY"
+}
+polyline {
+	object {
+		x=906
+		y=450
+		width=0
+		height=81
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(906,530)
+		(906,450)
+	}
+}
+polyline {
+	object {
+		x=905
+		y=450
+		width=61
+		height=0
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(905,450)
+		(965,470)
+	}
+}
+polyline {
+	object {
+		x=906
+		y=510
+		width=61
+		height=0
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(906,530)
+		(966,510)
+	}
+}
+polyline {
+	object {
+		x=966
+		y=470
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(966,470)
+		(966,510)
+	}
+}
+"choice button" {
+	object {
+		x=915
+		y=475
+		width=40
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK1-SEL"
+		clr=14
+		bclr=57
+	}
+}
+polyline {
+	object {
+		x=975
+		y=170
+		width=11
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(976,171)
+		(985,171)
+	}
+}
+polyline {
+	object {
+		x=1095
+		y=170
+		width=11
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1096,171)
+		(1105,171)
+	}
+}
+polyline {
+	object {
+		x=1205
+		y=170
+		width=29
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1206,171)
+		(1233,171)
+	}
+}
+rectangle {
+	object {
+		x=985
+		y=200
+		width=110
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=200
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1105,240)
+		(1105,200)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=200
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,200)
+		(1205,210)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=230
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,240)
+		(1205,230)
+	}
+}
+polyline {
+	object {
+		x=974
+		y=219
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(975,220)
+		(985,220)
+	}
+}
+polyline {
+	object {
+		x=1094
+		y=219
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1095,220)
+		(1105,220)
+	}
+}
+polyline {
+	object {
+		x=1204
+		y=219
+		width=32
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1205,220)
+		(1235,220)
+	}
+}
+rectangle {
+	object {
+		x=985
+		y=250
+		width=110
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=250
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1105,290)
+		(1105,250)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=250
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,250)
+		(1205,260)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=280
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,290)
+		(1205,280)
+	}
+}
+polyline {
+	object {
+		x=975
+		y=269
+		width=11
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(976,270)
+		(985,270)
+	}
+}
+polyline {
+	object {
+		x=1095
+		y=269
+		width=11
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1096,270)
+		(1105,270)
+	}
+}
+polyline {
+	object {
+		x=1205
+		y=269
+		width=29
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1206,270)
+		(1233,270)
+	}
+}
+rectangle {
+	object {
+		x=985
+		y=300
+		width=110
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=300
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1105,340)
+		(1105,300)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=300
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,300)
+		(1205,310)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=330
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,340)
+		(1205,330)
+	}
+}
+polyline {
+	object {
+		x=975
+		y=320
+		width=11
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(976,321)
+		(985,321)
+	}
+}
+polyline {
+	object {
+		x=1095
+		y=320
+		width=10
+		height=3
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1096,322)
+		(1104,321)
+	}
+}
+polyline {
+	object {
+		x=1204
+		y=319
+		width=30
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1205,320)
+		(1233,320)
+	}
+}
+rectangle {
+	object {
+		x=985
+		y=350
+		width=110
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=350
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1105,390)
+		(1105,350)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=350
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,350)
+		(1205,360)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=380
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,390)
+		(1205,380)
+	}
+}
+polyline {
+	object {
+		x=974
+		y=369
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(975,370)
+		(985,370)
+	}
+}
+polyline {
+	object {
+		x=1094
+		y=369
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1095,370)
+		(1105,370)
+	}
+}
+polyline {
+	object {
+		x=1204
+		y=369
+		width=32
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1205,370)
+		(1235,370)
+	}
+}
+polyline {
+	object {
+		x=974
+		y=169
+		width=2
+		height=352
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=2
+	}
+	points {
+		(975,520)
+		(975,170)
+	}
+}
+"choice button" {
+	object {
+		x=900
+		y=240
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK1-PD"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=900
+		y=225
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="PD"
+}
+"choice button" {
+	object {
+		x=900
+		y=290
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK1-EN"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=900
+		y=275
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="EN"
+}
+"choice button" {
+	object {
+		x=835
+		y=135
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-GOE"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=835
+		y=120
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="GOE"
+}
+"choice button" {
+	object {
+		x=835
+		y=185
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-SYNC2"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=835
+		y=170
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SYNC"
+}
+rectangle {
+	object {
+		x=985
+		y=400
+		width=110
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=400
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1105,440)
+		(1105,400)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=400
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,400)
+		(1205,410)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=430
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,440)
+		(1205,430)
+	}
+}
+polyline {
+	object {
+		x=974
+		y=419
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(975,420)
+		(985,420)
+	}
+}
+polyline {
+	object {
+		x=1094
+		y=419
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1095,420)
+		(1105,420)
+	}
+}
+rectangle {
+	object {
+		x=985
+		y=450
+		width=110
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=450
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1105,490)
+		(1105,450)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=450
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,450)
+		(1205,460)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=480
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,490)
+		(1205,480)
+	}
+}
+polyline {
+	object {
+		x=974
+		y=469
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(975,470)
+		(985,470)
+	}
+}
+polyline {
+	object {
+		x=1094
+		y=469
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1095,470)
+		(1105,470)
+	}
+}
+rectangle {
+	object {
+		x=985
+		y=500
+		width=110
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=500
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1105,540)
+		(1105,500)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=500
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,500)
+		(1205,510)
+	}
+}
+polyline {
+	object {
+		x=1105
+		y=530
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(PB)-CLK0-PWR-MUX"
+	}
+	points {
+		(1105,540)
+		(1205,530)
+	}
+}
+polyline {
+	object {
+		x=974
+		y=519
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(975,520)
+		(985,520)
+	}
+}
+polyline {
+	object {
+		x=1094
+		y=519
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1095,520)
+		(1105,520)
+	}
+}
+polyline {
+	object {
+		x=1204
+		y=419
+		width=32
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1205,420)
+		(1235,420)
+	}
+}
+polyline {
+	object {
+		x=1204
+		y=469
+		width=32
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1205,470)
+		(1235,470)
+	}
+}
+text {
+	object {
+		x=895
+		y=105
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="LMK01020"
+}
+polyline {
+	object {
+		x=964
+		y=489
+		width=12
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(965,490)
+		(975,490)
+	}
+}
+text {
+	object {
+		x=825
+		y=345
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM FPGA"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=1204
+		y=519
+		width=32
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(1205,520)
+		(1235,520)
+	}
+}
+polyline {
+	object {
+		x=1205
+		y=160
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1205,180)
+		(1205,160)
+	}
+}
+polyline {
+	object {
+		x=1205
+		y=210
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1205,230)
+		(1205,210)
+	}
+}
+polyline {
+	object {
+		x=1205
+		y=260
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1205,280)
+		(1205,260)
+	}
+}
+polyline {
+	object {
+		x=1205
+		y=310
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1205,330)
+		(1205,310)
+	}
+}
+polyline {
+	object {
+		x=1205
+		y=360
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1205,380)
+		(1205,360)
+	}
+}
+polyline {
+	object {
+		x=1205
+		y=410
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1205,430)
+		(1205,410)
+	}
+}
+polyline {
+	object {
+		x=1205
+		y=460
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1205,480)
+		(1205,460)
+	}
+}
+polyline {
+	object {
+		x=1205
+		y=510
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(1205,530)
+		(1205,510)
+	}
+}
+"choice button" {
+	object {
+		x=900
+		y=340
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK1-VBOOST"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=900
+		y=325
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="VBOOST"
+}
+polyline {
+	object {
+		x=100
+		y=420
+		width=0
+		height=79
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(100,499)
+		(100,420)
+	}
+}
+rectangle {
+	object {
+		x=15
+		y=480
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+polyline {
+	object {
+		x=15
+		y=475
+		width=40
+		height=1
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(15,475)
+		(54,475)
+	}
+}
+polyline {
+	object {
+		x=15
+		y=495
+		width=40
+		height=1
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(15,495)
+		(54,495)
+	}
+}
+polyline {
+	object {
+		x=35
+		y=465
+		width=0
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(35,465)
+		(35,474)
+	}
+}
+polyline {
+	object {
+		x=35
+		y=495
+		width=0
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	points {
+		(35,495)
+		(35,504)
+	}
+}
+text {
+	object {
+		x=15
+		y=425
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SMA CLK"
+}
+polyline {
+	object {
+		x=65
+		y=485
+		width=39
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(66,486)
+		(103,486)
+	}
+}
+polyline {
+	object {
+		x=65
+		y=430
+		width=39
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(66,431)
+		(103,431)
+	}
+}
+"choice button" {
+	object {
+		x=5
+		y=530
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-SCK-OE"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=5
+		y=515
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="OE"
+}
+"text update" {
+	object {
+		x=250
+		y=30
+		width=40
+		height=12
+	}
+	monitor {
+		chan="$(DEV):$(PB)-FIRMWARE"
+		clr=14
+		bclr=4
+	}
+	format="hexadecimal"
+	limits {
+	}
+}
+text {
+	object {
+		x=135
+		y=30
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="ADC12FL Firmware"
+}
+polyline {
+	object {
+		x=175
+		y=320
+		width=11
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(176,321)
+		(185,321)
+	}
+}
+text {
+	object {
+		x=80
+		y=415
+		width=10
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1"
+}
+text {
+	object {
+		x=80
+		y=470
+		width=10
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+}
+text {
+	object {
+		x=885
+		y=505
+		width=10
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+}
+text {
+	object {
+		x=885
+		y=445
+		width=10
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1"
+}
+text {
+	object {
+		x=345
+		y=45
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1.8V"
+}
+text {
+	object {
+		x=345
+		y=70
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2.3V"
+}
+polyline {
+	object {
+		x=305
+		y=20
+		width=0
+		height=70
+	}
+	"basic attribute" {
+		clr=0
+		fill="outline"
+	}
+	points {
+		(305,20)
+		(305,90)
+	}
+}
+text {
+	object {
+		x=290
+		y=25
+		width=115
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="ADC Power"
+	align="horiz. centered"
+}
+oval {
+	object {
+		x=315
+		y=40
+		width=20
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A&1)>0"
+		chan="$(DEV):$(PB)-PWR-STATUS"
+	}
+}
+oval {
+	object {
+		x=315
+		y=65
+		width=20
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A&2)=0"
+		chan="$(DEV):$(PB)-PWR-STATUS"
+	}
+}
+oval {
+	object {
+		x=315
+		y=65
+		width=20
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A&2)>0"
+		chan="$(DEV):$(PB)-PWR-STATUS"
+	}
+}
+polyline {
+	object {
+		x=380
+		y=20
+		width=0
+		height=70
+	}
+	"basic attribute" {
+		clr=0
+		fill="outline"
+	}
+	points {
+		(380,20)
+		(380,90)
+	}
+}
+polyline {
+	object {
+		x=525
+		y=20
+		width=0
+		height=70
+	}
+	"basic attribute" {
+		clr=0
+		fill="outline"
+	}
+	points {
+		(525,20)
+		(525,90)
+	}
+}
+polyline {
+	object {
+		x=730
+		y=20
+		width=0
+		height=70
+	}
+	"basic attribute" {
+		clr=0
+		fill="outline"
+	}
+	points {
+		(730,20)
+		(730,90)
+	}
+}
+oval {
+	object {
+		x=385
+		y=140
+		width=20
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A&32768)>0"
+		chan="$(DEV):$(PB)-PWR-STATUS"
+	}
+}
+text {
+	object {
+		x=370
+		y=125
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="ADC CLK"
+}
+oval {
+	object {
+		x=385
+		y=140
+		width=20
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A&32768)=0"
+		chan="$(DEV):$(PB)-PWR-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=1055
+		y=95
+		width=119
+		height=20
+	}
+	display[0] {
+		name="F_DI_FIN250_BPM_GPAC_BUT_ADC12FL_SYNC.adl"
+		args="DEV=$(DEV),PB=$(PB)"
+	}
+	clr=14
+	bclr=57
+	label="-ADC adjust"
+}
+"choice button" {
+	object {
+		x=430
+		y=354
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC-CLK-SRC"
+		clr=14
+		bclr=57
+	}
+}
+"choice button" {
+	object {
+		x=825
+		y=360
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):$(PB)-ADC-CLK-SRC"
+		clr=14
+		bclr=57
+	}
+}
+text {
+	object {
+		x=820
+		y=445
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="OUT3"
+}
+text {
+	object {
+		x=820
+		y=395
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="OUT8"
+}
+polyline {
+	object {
+		x=855
+		y=390
+		width=2
+		height=21
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=2
+	}
+	points {
+		(856,410)
+		(856,391)
+	}
+}
+text {
+	object {
+		x=420
+		y=405
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="OUT4"
+}
+text {
+	object {
+		x=420
+		y=455
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="OUT6"
+}
+text {
+	object {
+		x=420
+		y=505
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="OUT5"
+}
+text {
+	object {
+		x=700
+		y=255
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Locked"
+	align="horiz. right"
+}
+text {
+	object {
+		x=700
+		y=280
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Ref. mon."
+	align="horiz. right"
+}
+text {
+	object {
+		x=700
+		y=305
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Status"
+	align="horiz. right"
+}
+oval {
+	object {
+		x=765
+		y=255
+		width=15
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+oval {
+	object {
+		x=765
+		y=280
+		width=15
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+oval {
+	object {
+		x=765
+		y=280
+		width=15
+		height=15
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A&2)>0"
+		chan="$(DEV):$(PB)-PLL-STATUS"
+	}
+}
+oval {
+	object {
+		x=765
+		y=305
+		width=15
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+}
+oval {
+	object {
+		x=765
+		y=305
+		width=15
+		height=15
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A&2)>0"
+		chan="$(DEV):$(PB)-PLL-STATUS"
+	}
+}
+oval {
+	object {
+		x=765
+		y=255
+		width=15
+		height=15
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A&1)>0"
+		chan="$(DEV):$(PB)-PLL-STATUS"
+	}
+}
+text {
+	object {
+		x=405
+		y=305
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="OUT2"
+}
+text {
+	object {
+		x=405
+		y=355
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="OUT3"
+}
+oval {
+	object {
+		x=965
+		y=65
+		width=20
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A&1)>0"
+		chan="$(DEV):$(PB)-ADC-HCK-RDY"
+	}
+}
+text {
+	object {
+		x=960
+		y=50
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM FPGA ADC CLK"
+	align="horiz. centered"
+}
+oval {
+	object {
+		x=965
+		y=65
+		width=20
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A&1)=0"
+		chan="$(DEV):$(PB)-ADC-HCK-RDY"
+	}
+}
+text {
+	object {
+		x=15
+		y=35
+		width=65
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Clock Mode"
+	align="horiz. centered"
+}
+menu {
+	object {
+		x=10
+		y=50
+		width=75
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PB)-CLK-MODE"
+		clr=14
+		bclr=4
+	}
+}
+polyline {
+	object {
+		x=95
+		y=20
+		width=0
+		height=70
+	}
+	"basic attribute" {
+		clr=0
+		fill="outline"
+	}
+	points {
+		(95,20)
+		(95,90)
+	}
+}

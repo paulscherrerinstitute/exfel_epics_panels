@@ -1,0 +1,5247 @@
+
+file {
+	name="/afs/psi.ch/user/k/koprek_w/cvs/G/XFEL/14_Firmware/13_Prototype/Button_BPM/05_EPICS/Button_Eth/App/config/medm/IBFBSWITCH.adl"
+	version=030105
+}
+display {
+	object {
+		x=187
+		y=318
+		width=800
+		height=800
+	}
+	clr=14
+	bclr=4
+	cmap=""
+	gridSpacing=5
+	gridOn=1
+	snapToGrid=1
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=551
+		y=386
+		width=54
+		height=18
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="((C-B+1)*2)=A"
+		chan="IBFBSW:Y-FILT-SASE3-PASSED"
+		chanB="IBFBSW:FILT-SASE3-BUCKET-START"
+		chanC="IBFBSW:FILT-SASE3-BUCKET-STOP"
+	}
+}
+rectangle {
+	object {
+		x=606
+		y=386
+		width=54
+		height=18
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="((C-B+1)*2)=A"
+		chan="IBFBSW:X-FILT-SASE3-PASSED"
+		chanB="IBFBSW:FILT-SASE3-BUCKET-START"
+		chanC="IBFBSW:FILT-SASE3-BUCKET-STOP"
+	}
+}
+rectangle {
+	object {
+		x=661
+		y=386
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=2700"
+		chan="IBFBSW:FILT-COLL-PASSED"
+	}
+}
+rectangle {
+	object {
+		x=141
+		y=386
+		width=54
+		height=18
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="((C-B+1)*2)#A"
+		chan="IBFBSW:X-FILT-SASE1-PASSED"
+		chanB="IBFBSW:FILT-SASE1-BUCKET-START"
+		chanC="IBFBSW:FILT-SASE1-BUCKET-STOP"
+	}
+}
+rectangle {
+	object {
+		x=86
+		y=386
+		width=54
+		height=18
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="((C-B+1)*2)#A"
+		chan="IBFBSW:Y-FILT-SASE1-PASSED"
+		chanB="IBFBSW:FILT-SASE1-BUCKET-START"
+		chanC="IBFBSW:FILT-SASE1-BUCKET-STOP"
+	}
+}
+rectangle {
+	object {
+		x=251
+		y=386
+		width=54
+		height=18
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="((C-B+1)*2)#A"
+		chan="IBFBSW:X-FILT-SASE2-PASSED"
+		chanB="IBFBSW:FILT-SASE2-BUCKET-START"
+		chanC="IBFBSW:FILT-SASE2-BUCKET-STOP"
+	}
+}
+rectangle {
+	object {
+		x=196
+		y=386
+		width=54
+		height=18
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="((C-B+1)*2)#A"
+		chan="IBFBSW:Y-FILT-SASE2-PASSED"
+		chanB="IBFBSW:FILT-SASE2-BUCKET-START"
+		chanC="IBFBSW:FILT-SASE2-BUCKET-STOP"
+	}
+}
+rectangle {
+	object {
+		x=86
+		y=386
+		width=54
+		height=18
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="((C-B+1)*2)=A"
+		chan="IBFBSW:Y-FILT-SASE1-PASSED"
+		chanB="IBFBSW:FILT-SASE1-BUCKET-START"
+		chanC="IBFBSW:FILT-SASE1-BUCKET-STOP"
+	}
+}
+rectangle {
+	object {
+		x=141
+		y=386
+		width=54
+		height=18
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="((C-B+1)*2)=A"
+		chan="IBFBSW:X-FILT-SASE1-PASSED"
+		chanB="IBFBSW:FILT-SASE1-BUCKET-START"
+		chanC="IBFBSW:FILT-SASE1-BUCKET-STOP"
+	}
+}
+rectangle {
+	object {
+		x=196
+		y=386
+		width=54
+		height=18
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="((C-B+1)*2)=A"
+		chan="IBFBSW:Y-FILT-SASE2-PASSED"
+		chanB="IBFBSW:FILT-SASE2-BUCKET-START"
+		chanC="IBFBSW:FILT-SASE2-BUCKET-STOP"
+	}
+}
+rectangle {
+	object {
+		x=251
+		y=386
+		width=54
+		height=18
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="((C-B+1)*2)=A"
+		chan="IBFBSW:X-FILT-SASE2-PASSED"
+		chanB="IBFBSW:FILT-SASE2-BUCKET-START"
+		chanC="IBFBSW:FILT-SASE2-BUCKET-STOP"
+	}
+}
+rectangle {
+	object {
+		x=551
+		y=386
+		width=54
+		height=18
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="((C-B+1)*2)#A"
+		chan="IBFBSW:Y-FILT-SASE3-PASSED"
+		chanB="IBFBSW:FILT-SASE3-BUCKET-START"
+		chanC="IBFBSW:FILT-SASE3-BUCKET-STOP"
+	}
+}
+rectangle {
+	object {
+		x=606
+		y=386
+		width=54
+		height=18
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="((C-B+1)*2)#A"
+		chan="IBFBSW:X-FILT-SASE3-PASSED"
+		chanB="IBFBSW:FILT-SASE3-BUCKET-START"
+		chanC="IBFBSW:FILT-SASE3-BUCKET-STOP"
+	}
+}
+rectangle {
+	object {
+		x=661
+		y=386
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A#2700"
+		chan="IBFBSW:FILT-COLL-PASSED"
+	}
+}
+rectangle {
+	object {
+		x=551
+		y=366
+		width=108
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A > 0"
+		chan="IBFBSW:X-FILT-SASE3-DISCARD"
+	}
+}
+rectangle {
+	object {
+		x=196
+		y=366
+		width=108
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A > 0"
+		chan="IBFBSW:X-FILT-SASE2-DISCARD"
+	}
+}
+rectangle {
+	object {
+		x=86
+		y=366
+		width=108
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A > 0"
+		chan="IBFBSW:X-FILT-SASE1-DISCARD"
+	}
+}
+rectangle {
+	object {
+		x=661
+		y=236
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=2700"
+		chan="IBFBSW:FILT-COLL-UPSTREAM-PACKETS"
+	}
+}
+rectangle {
+	object {
+		x=661
+		y=236
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A#2700"
+		chan="IBFBSW:FILT-COLL-UPSTREAM-PACKETS"
+	}
+}
+rectangle {
+	object {
+		x=65
+		y=615
+		width=180
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=661
+		y=366
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A > 0"
+		chan="IBFBSW:FILT-COLL-DISCARD"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=445
+		width=135
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=470
+		y=215
+		width=245
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=5
+		y=215
+		width=300
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=470
+		y=55
+		width=300
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=5
+		y=55
+		width=300
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=90
+		y=120
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x00010000) = 0"
+		chan="IBFBSW:QSFP1-SFP-IN"
+	}
+}
+rectangle {
+	object {
+		x=145
+		y=120
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x01000000) = 0"
+		chan="IBFBSW:QSFP1-SFP-IN"
+	}
+}
+rectangle {
+	object {
+		x=200
+		y=120
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x00000100) = 0"
+		chan="IBFBSW:QSFP1-SFP-IN"
+	}
+}
+rectangle {
+	object {
+		x=255
+		y=120
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x00000001) = 0"
+		chan="IBFBSW:QSFP1-SFP-IN"
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=0
+		width=900
+		height=30
+	}
+	"basic attribute" {
+		clr=1
+	}
+}
+polyline {
+	object {
+		x=-39
+		y=860
+		width=1000
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(-39,860)
+		(961,860)
+	}
+}
+text {
+	object {
+		x=350
+		y=10
+		width=200
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="XFEL IBFB Switch"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=80
+		y=660
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SFP in"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=145
+		y=615
+		width=0
+		height=120
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(145,615)
+		(145,735)
+	}
+}
+polyline {
+	object {
+		x=195
+		y=616
+		width=0
+		height=120
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(195,616)
+		(195,736)
+	}
+}
+rectangle {
+	object {
+		x=200
+		y=660
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 8192) > 0"
+		chan="$(DEV):RTMG-SFP1"
+	}
+}
+rectangle {
+	object {
+		x=150
+		y=660
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 32) > 0"
+		chan="$(DEV):RTMG-SFP1"
+	}
+}
+text {
+	object {
+		x=80
+		y=620
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RTMG Port"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=65
+		y=655
+		width=180
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(65,655)
+		(245,655)
+	}
+}
+polyline {
+	object {
+		x=65
+		y=635
+		width=180
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(65,635)
+		(245,635)
+	}
+}
+text {
+	object {
+		x=200
+		y=621
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1-1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=150
+		y=620
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1-0"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=200
+		y=660
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 8192) = 0"
+		chan="IBFBSW:RTMG-SFP1"
+	}
+}
+rectangle {
+	object {
+		x=150
+		y=660
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 32) = 0"
+		chan="IBFBSW:RTMG-SFP1"
+	}
+}
+text {
+	object {
+		x=150
+		y=640
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Y"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=200
+		y=641
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="X"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=80
+		y=640
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Plane"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=65
+		y=675
+		width=180
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(65,675)
+		(245,675)
+	}
+}
+text {
+	object {
+		x=80
+		y=680
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RX Loss"
+	align="horiz. right"
+}
+rectangle {
+	object {
+		x=200
+		y=680
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 4096) > 0"
+		chan="IBFBSW:RTMG-SFP1"
+	}
+}
+rectangle {
+	object {
+		x=150
+		y=680
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 16) > 0"
+		chan="IBFBSW:RTMG-SFP1"
+	}
+}
+rectangle {
+	object {
+		x=105
+		y=5
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBSCOM:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=105
+		y=5
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBSCOM:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=40
+		y=10
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="IBFBSCOM"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=170
+		y=595
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(170,595)
+		(170,615)
+	}
+}
+polyline {
+	object {
+		x=220
+		y=575
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(220,575)
+		(220,615)
+	}
+}
+rectangle {
+	object {
+		x=65
+		y=615
+		width=181
+		height=121
+	}
+	"basic attribute" {
+		clr=1
+		fill="outline"
+		width=2
+	}
+}
+polyline {
+	object {
+		x=220
+		y=736
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(220,736)
+		(220,756)
+	}
+}
+polyline {
+	object {
+		x=170
+		y=735
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(170,735)
+		(170,755)
+	}
+}
+text {
+	object {
+		x=150
+		y=775
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1-1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=150
+		y=760
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="CTRL"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=200
+		y=776
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM2-1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=200
+		y=761
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="CTRL"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=20
+		y=120
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SFP in"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=85
+		y=75
+		width=0
+		height=120
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(85,75)
+		(85,195)
+	}
+}
+polyline {
+	object {
+		x=140
+		y=75
+		width=0
+		height=120
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(140,75)
+		(140,195)
+	}
+}
+text {
+	object {
+		x=20
+		y=100
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="QSFP1 Port"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=5
+		y=115
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(5,115)
+		(305,115)
+	}
+}
+polyline {
+	object {
+		x=5
+		y=95
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(5,95)
+		(305,95)
+	}
+}
+text {
+	object {
+		x=145
+		y=100
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=90
+		y=100
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=145
+		y=120
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x01000000) > 0"
+		chan="IBFBSW:QSFP1-SFP-IN"
+	}
+}
+rectangle {
+	object {
+		x=90
+		y=120
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x00010000) > 0"
+		chan="IBFBSW:QSFP1-SFP-IN"
+	}
+}
+text {
+	object {
+		x=90
+		y=80
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1UP"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=200
+		y=80
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1DOWN"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=20
+		y=80
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Source"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=5
+		y=135
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(5,135)
+		(305,135)
+	}
+}
+text {
+	object {
+		x=20
+		y=140
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RX Loss"
+	align="horiz. right"
+}
+rectangle {
+	object {
+		x=90
+		y=140
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x01000000) > 0"
+		chan="IBFBSW:QSFP1-RX-LOSS"
+	}
+}
+polyline {
+	object {
+		x=115
+		y=35
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(115,35)
+		(115,55)
+	}
+}
+polyline {
+	object {
+		x=170
+		y=35
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(170,35)
+		(170,55)
+	}
+}
+rectangle {
+	object {
+		x=5
+		y=55
+		width=301
+		height=141
+	}
+	"basic attribute" {
+		clr=1
+		fill="outline"
+		width=2
+	}
+}
+polyline {
+	object {
+		x=170
+		y=195
+		width=54
+		height=21
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(170,195)
+		(224,216)
+	}
+}
+polyline {
+	object {
+		x=115
+		y=195
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(115,195)
+		(115,215)
+	}
+}
+polyline {
+	object {
+		x=195
+		y=75
+		width=0
+		height=120
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(195,75)
+		(195,195)
+	}
+}
+polyline {
+	object {
+		x=250
+		y=75
+		width=0
+		height=120
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(250,75)
+		(250,195)
+	}
+}
+text {
+	object {
+		x=255
+		y=100
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=200
+		y=100
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=255
+		y=120
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x00000001) > 0"
+		chan="IBFBSW:QSFP1-SFP-IN"
+	}
+}
+rectangle {
+	object {
+		x=200
+		y=120
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x00000100) > 0"
+		chan="IBFBSW:QSFP1-SFP-IN"
+	}
+}
+text {
+	object {
+		x=145
+		y=80
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2UP"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=255
+		y=80
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2DOWN"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=225
+		y=35
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(225,35)
+		(225,55)
+	}
+}
+polyline {
+	object {
+		x=275
+		y=35
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(275,35)
+		(275,55)
+	}
+}
+polyline {
+	object {
+		x=275
+		y=195
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(275,195)
+		(275,215)
+	}
+}
+polyline {
+	object {
+		x=170
+		y=195
+		width=55
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(225,195)
+		(170,215)
+	}
+}
+rectangle {
+	object {
+		x=145
+		y=140
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x00010000) > 0"
+		chan="IBFBSW:QSFP1-RX-LOSS"
+	}
+}
+rectangle {
+	object {
+		x=255
+		y=140
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x00000001) > 0"
+		chan="IBFBSW:QSFP1-RX-LOSS"
+	}
+}
+rectangle {
+	object {
+		x=200
+		y=140
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x00000100) > 0"
+		chan="IBFBSW:QSFP1-RX-LOSS"
+	}
+}
+rectangle {
+	object {
+		x=555
+		y=120
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x00010000) = 0"
+		chan="IBFBSW:QSFP2-SFP-IN"
+	}
+}
+rectangle {
+	object {
+		x=610
+		y=120
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x01000000) = 0"
+		chan="IBFBSW:QSFP2-SFP-IN"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=120
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x00000100) = 0"
+		chan="IBFBSW:QSFP2-SFP-IN"
+	}
+}
+text {
+	object {
+		x=485
+		y=120
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SFP in"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=550
+		y=74
+		width=0
+		height=120
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(550,74)
+		(550,194)
+	}
+}
+polyline {
+	object {
+		x=605
+		y=74
+		width=0
+		height=120
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(605,74)
+		(605,194)
+	}
+}
+text {
+	object {
+		x=485
+		y=100
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="QSFP2 Port"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=470
+		y=115
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(470,115)
+		(770,115)
+	}
+}
+polyline {
+	object {
+		x=470
+		y=95
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(470,95)
+		(770,95)
+	}
+}
+text {
+	object {
+		x=610
+		y=100
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=555
+		y=100
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=610
+		y=120
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x01000000) > 0"
+		chan="IBFBSW:QSFP2-SFP-IN"
+	}
+}
+rectangle {
+	object {
+		x=555
+		y=120
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x00010000) > 0"
+		chan="IBFBSW:QSFP2-SFP-IN"
+	}
+}
+text {
+	object {
+		x=555
+		y=80
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3UP"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=665
+		y=80
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3DOWN"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=485
+		y=80
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Source"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=470
+		y=135
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(470,135)
+		(770,135)
+	}
+}
+text {
+	object {
+		x=485
+		y=140
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RX Loss"
+	align="horiz. right"
+}
+rectangle {
+	object {
+		x=555
+		y=140
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x01000000) > 0"
+		chan="IBFBSW:QSFP2-RX-LOSS"
+	}
+}
+polyline {
+	object {
+		x=580
+		y=35
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(580,35)
+		(580,55)
+	}
+}
+polyline {
+	object {
+		x=635
+		y=35
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(635,35)
+		(635,55)
+	}
+}
+rectangle {
+	object {
+		x=470
+		y=55
+		width=301
+		height=141
+	}
+	"basic attribute" {
+		clr=1
+		fill="outline"
+		width=2
+	}
+}
+polyline {
+	object {
+		x=635
+		y=195
+		width=54
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(635,195)
+		(689,215)
+	}
+}
+polyline {
+	object {
+		x=580
+		y=195
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(580,195)
+		(580,215)
+	}
+}
+polyline {
+	object {
+		x=660
+		y=74
+		width=0
+		height=120
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(660,74)
+		(660,194)
+	}
+}
+polyline {
+	object {
+		x=715
+		y=74
+		width=0
+		height=120
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(715,74)
+		(715,194)
+	}
+}
+text {
+	object {
+		x=720
+		y=100
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=665
+		y=100
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=665
+		y=120
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x00000100) > 0"
+		chan="IBFBSW:QSFP2-SFP-IN"
+	}
+}
+text {
+	object {
+		x=610
+		y=80
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="COL"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=665
+		y=80
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=690
+		y=35
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(690,35)
+		(690,55)
+	}
+}
+polyline {
+	object {
+		x=740
+		y=35
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(740,35)
+		(740,55)
+	}
+}
+polyline {
+	object {
+		x=633
+		y=195
+		width=57
+		height=21
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(690,195)
+		(633,216)
+	}
+}
+rectangle {
+	object {
+		x=610
+		y=140
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x00010000) > 0"
+		chan="IBFBSW:QSFP2-RX-LOSS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=140
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0x00000100) > 0"
+		chan="IBFBSW:QSFP2-RX-LOSS"
+	}
+}
+rectangle {
+	object {
+		x=190
+		y=5
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBSW1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=190
+		y=5
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBSW1:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=125
+		y=10
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="IBFBSW1"
+	align="horiz. right"
+}
+rectangle {
+	object {
+		x=275
+		y=5
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBSW2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=275
+		y=5
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBSW2:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=210
+		y=10
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="IBFBSW2"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=5
+		y=155
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(5,155)
+		(305,155)
+	}
+}
+text {
+	object {
+		x=20
+		y=160
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Loss of Sync"
+	align="horiz. right"
+}
+rectangle {
+	object {
+		x=90
+		y=160
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x80"
+		chan="IBFBSW:SW1-GTX-QSFP02-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=145
+		y=160
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x80"
+		chan="IBFBSW:SW1-GTX-QSFP13-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=255
+		y=160
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x20"
+		chan="IBFBSW:SW1-GTX-QSFP13-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=200
+		y=160
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x20"
+		chan="IBFBSW:SW1-GTX-QSFP02-STATUS"
+	}
+}
+polyline {
+	object {
+		x=65
+		y=695
+		width=180
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(65,695)
+		(245,695)
+	}
+}
+text {
+	object {
+		x=80
+		y=700
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Loss of Sync"
+	align="horiz. right"
+}
+rectangle {
+	object {
+		x=200
+		y=700
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x20"
+		chan="IBFBSW:SW1-GTX-P0-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=150
+		y=700
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x80"
+		chan="IBFBSW:SW1-GTX-P0-STATUS"
+	}
+}
+polyline {
+	object {
+		x=470
+		y=155
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(470,155)
+		(770,155)
+	}
+}
+text {
+	object {
+		x=485
+		y=160
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Loss of Sync"
+	align="horiz. right"
+}
+rectangle {
+	object {
+		x=555
+		y=160
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x80"
+		chan="IBFBSW:SW2-GTX-QSFP02-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=610
+		y=160
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x80"
+		chan="IBFBSW:SW2-GTX-QSFP13-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=160
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x20"
+		chan="IBFBSW:SW2-GTX-QSFP02-STATUS"
+	}
+}
+polyline {
+	object {
+		x=5
+		y=175
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(5,175)
+		(305,175)
+	}
+}
+"text update" {
+	object {
+		x=90
+		y=180
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:SW1-GTX-QSFP0-LOSS-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=145
+		y=180
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:SW1-GTX-QSFP1-LOSS-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=200
+		y=180
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:SW1-GTX-QSFP2-LOSS-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=255
+		y=180
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:SW1-GTX-QSFP3-LOSS-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=470
+		y=175
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(470,175)
+		(770,175)
+	}
+}
+"text update" {
+	object {
+		x=555
+		y=180
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:SW2-GTX-QSFP0-LOSS-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=610
+		y=180
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:SW2-GTX-QSFP1-LOSS-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=665
+		y=180
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:SW2-GTX-QSFP2-LOSS-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=80
+		y=720
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Loss counter"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=150
+		y=720
+		width=40
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:SW1-GTX-P0-0-LOSS-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=200
+		y=720
+		width=40
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:SW1-GTX-P0-1-LOSS-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=65
+		y=715
+		width=180
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(65,715)
+		(245,715)
+	}
+}
+"text entry" {
+	object {
+		x=90
+		y=305
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBCTRL:Y-FB-SASE1-BPM1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=90
+		y=325
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBCTRL:Y-FB-SASE1-BPM2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=145
+		y=305
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBCTRL:X-FB-SASE1-BPM1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=145
+		y=325
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBCTRL:X-FB-SASE1-BPM2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=200
+		y=305
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBCTRL:Y-FB-SASE2-BPM1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=200
+		y=325
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBCTRL:Y-FB-SASE2-BPM2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=255
+		y=305
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBCTRL:X-FB-SASE2-BPM1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=255
+		y=325
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBCTRL:X-FB-SASE2-BPM2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=100
+		y=60
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1 FPGA QSFP"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=565
+		y=60
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM2 FPGA QSFP"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=85
+		y=215
+		width=0
+		height=187
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(85,215)
+		(85,402)
+	}
+}
+polyline {
+	object {
+		x=140
+		y=235
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(140,235)
+		(140,255)
+	}
+}
+polyline {
+	object {
+		x=250
+		y=235
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(250,235)
+		(250,255)
+	}
+}
+polyline {
+	object {
+		x=195
+		y=215
+		width=0
+		height=187
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(195,215)
+		(195,402)
+	}
+}
+polyline {
+	object {
+		x=5
+		y=255
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(5,255)
+		(305,255)
+	}
+}
+text {
+	object {
+		x=20
+		y=240
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RX packets"
+	align="horiz. right"
+}
+text {
+	object {
+		x=15
+		y=315
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM Filter"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=5
+		y=345
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(5,345)
+		(305,345)
+	}
+}
+text {
+	object {
+		x=20
+		y=350
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Discarded"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=5
+		y=365
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(5,365)
+		(305,365)
+	}
+}
+text {
+	object {
+		x=20
+		y=370
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Invalid BPM"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=555
+		y=305
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBCTRL:Y-FB-SASE3-BPM1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=555
+		y=325
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBCTRL:Y-FB-SASE3-BPM2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=610
+		y=305
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBCTRL:X-FB-SASE3-BPM1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=610
+		y=325
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBCTRL:X-FB-SASE3-BPM2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+polyline {
+	object {
+		x=550
+		y=215
+		width=0
+		height=187
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(550,215)
+		(550,402)
+	}
+}
+polyline {
+	object {
+		x=605
+		y=235
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(605,235)
+		(605,255)
+	}
+}
+polyline {
+	object {
+		x=660
+		y=215
+		width=0
+		height=187
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(660,215)
+		(660,402)
+	}
+}
+polyline {
+	object {
+		x=470
+		y=255
+		width=245
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(470,255)
+		(715,255)
+	}
+}
+text {
+	object {
+		x=485
+		y=240
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RX packets"
+	align="horiz. right"
+}
+text {
+	object {
+		x=480
+		y=317
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM Filter"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=470
+		y=345
+		width=245
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(470,345)
+		(715,345)
+	}
+}
+text {
+	object {
+		x=485
+		y=350
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Discarded"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=470
+		y=365
+		width=245
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(470,365)
+		(715,365)
+	}
+}
+text {
+	object {
+		x=485
+		y=370
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Invalid BPM"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=5
+		y=235
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(5,235)
+		(305,235)
+	}
+}
+text {
+	object {
+		x=110
+		y=220
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SASE1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=220
+		y=220
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SASE2"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=470
+		y=235
+		width=245
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(470,235)
+		(715,235)
+	}
+}
+text {
+	object {
+		x=575
+		y=220
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SASE3"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=660
+		y=220
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Collim."
+	align="horiz. centered"
+}
+"message button" {
+	object {
+		x=7
+		y=176
+		width=78
+		height=18
+	}
+	control {
+		chan="IBFBSW:SW1-RST"
+		clr=14
+		bclr=4
+	}
+	label="Loss counter"
+	press_msg="1072693248"
+	release_msg="0"
+}
+"message button" {
+	object {
+		x=472
+		y=176
+		width=78
+		height=18
+	}
+	control {
+		chan="IBFBSW:SW2-RST"
+		clr=14
+		bclr=4
+	}
+	label="Loss counter"
+	press_msg="1072693248"
+	release_msg="0"
+}
+rectangle {
+	object {
+		x=325
+		y=445
+		width=136
+		height=61
+	}
+	"basic attribute" {
+		clr=1
+		fill="outline"
+		width=2
+	}
+}
+text {
+	object {
+		x=340
+		y=470
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Loss of Sync"
+	align="horiz. right"
+}
+"message button" {
+	object {
+		x=327
+		y=486
+		width=78
+		height=18
+	}
+	control {
+		chan="IBFBSW:SW1-RST"
+		clr=14
+		bclr=4
+	}
+	label="Loss counter"
+	press_msg="1072693248"
+	release_msg="0"
+}
+"text update" {
+	object {
+		x=410
+		y=490
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:SW1-GTX-BPM0-LOSS-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=410
+		y=470
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x20"
+		chan="IBFBSW:SW1-GTX-BPM01-STATUS"
+	}
+}
+polyline {
+	object {
+		x=325
+		y=465
+		width=135
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(325,465)
+		(460,465)
+	}
+}
+text {
+	object {
+		x=410
+		y=450
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM0"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=325
+		y=485
+		width=135
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(325,485)
+		(460,485)
+	}
+}
+polyline {
+	object {
+		x=460
+		y=475
+		width=20
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(460,475)
+		(480,475)
+	}
+}
+polyline {
+	object {
+		x=405
+		y=445
+		width=0
+		height=60
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(405,445)
+		(405,505)
+	}
+}
+polyline {
+	object {
+		x=180
+		y=475
+		width=145
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(180,475)
+		(325,475)
+	}
+}
+text {
+	object {
+		x=10
+		y=220
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Filters"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=475
+		y=220
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Filters"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=335
+		y=450
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1-BPM2 GTX"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=20
+		y=390
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Passed"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=5
+		y=385
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(5,385)
+		(305,385)
+	}
+}
+"text update" {
+	object {
+		x=90
+		y=390
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:Y-FILT-SASE1-PASSED"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=200
+		y=390
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:Y-FILT-SASE2-PASSED"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=470
+		y=385
+		width=245
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(470,385)
+		(715,385)
+	}
+}
+text {
+	object {
+		x=485
+		y=390
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Passed"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=555
+		y=390
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:Y-FILT-SASE3-PASSED"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=665
+		y=240
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:FILT-COLL-UPSTREAM-PACKETS"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=665
+		y=350
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:FILT-COLL-DISCARD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=665
+		y=370
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:FILT-COLL-INVALID-BPM"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=665
+		y=305
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBCTRL:Y-FB-COLL-BPM"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=210
+		y=563
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x80"
+		chan="IBFBSW:ROUTER1-OUT-ENA"
+	}
+}
+rectangle {
+	object {
+		x=130
+		y=493
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x20"
+		chan="IBFBSW:ROUTER1-OUT-ENA"
+	}
+}
+polyline {
+	object {
+		x=580
+		y=405
+		width=0
+		height=70
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(580,405)
+		(580,475)
+	}
+}
+polyline {
+	object {
+		x=685
+		y=405
+		width=0
+		height=90
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(685,405)
+		(685,495)
+	}
+}
+rectangle {
+	object {
+		x=482
+		y=470
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x10"
+		chan="IBFBSW:ROUTER2-OUT-ENA"
+	}
+}
+rectangle {
+	object {
+		x=482
+		y=470
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A&0x10)=0"
+		chan="IBFBSW:ROUTER2-OUT-ENA"
+	}
+}
+rectangle {
+	object {
+		x=210
+		y=563
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A&0x80)=0"
+		chan="IBFBSW:ROUTER1-OUT-ENA"
+	}
+}
+rectangle {
+	object {
+		x=130
+		y=493
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A&0x20)=0"
+		chan="IBFBSW:ROUTER1-OUT-ENA"
+	}
+}
+rectangle {
+	object {
+		x=480
+		y=445
+		width=80
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=480
+		y=445
+		width=81
+		height=60
+	}
+	"basic attribute" {
+		clr=1
+		fill="outline"
+		width=2
+	}
+}
+polyline {
+	object {
+		x=480
+		y=465
+		width=80
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(480,465)
+		(560,465)
+	}
+}
+text {
+	object {
+		x=485
+		y=450
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Router Y"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=5
+		y=280
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(5,280)
+		(305,280)
+	}
+}
+text {
+	object {
+		x=20
+		y=260
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Bucket Range"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=90
+		y=260
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBSW:FILT-SASE1-BUCKET-START"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=145
+		y=260
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBSW:FILT-SASE1-BUCKET-STOP"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=200
+		y=260
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBSW:FILT-SASE2-BUCKET-START"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=255
+		y=260
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBSW:FILT-SASE2-BUCKET-STOP"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=485
+		y=260
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Bucket Range"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=470
+		y=280
+		width=245
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(470,280)
+		(715,280)
+	}
+}
+"text entry" {
+	object {
+		x=555
+		y=260
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBSW:FILT-SASE3-BUCKET-START"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=610
+		y=260
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBSW:FILT-SASE3-BUCKET-STOP"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=665
+		y=390
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:FILT-COLL-PASSED"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=606
+		y=236
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=10800"
+		chan="IBFBSW:FILT-SASE3-DOWNSTREAM-PACKETS"
+	}
+}
+rectangle {
+	object {
+		x=606
+		y=236
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A#10800"
+		chan="IBFBSW:FILT-SASE3-DOWNSTREAM-PACKETS"
+	}
+}
+rectangle {
+	object {
+		x=251
+		y=236
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=10800"
+		chan="IBFBSW:FILT-SASE2-DOWNSTREAM-PACKETS"
+	}
+}
+rectangle {
+	object {
+		x=251
+		y=236
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A#10800"
+		chan="IBFBSW:FILT-SASE2-DOWNSTREAM-PACKETS"
+	}
+}
+rectangle {
+	object {
+		x=551
+		y=236
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=10800"
+		chan="IBFBSW:FILT-SASE3-UPSTREAM-PACKETS"
+	}
+}
+rectangle {
+	object {
+		x=551
+		y=236
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A#10800"
+		chan="IBFBSW:FILT-SASE3-UPSTREAM-PACKETS"
+	}
+}
+"text update" {
+	object {
+		x=610
+		y=240
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:FILT-SASE3-DOWNSTREAM-PACKETS"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=555
+		y=240
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:FILT-SASE3-UPSTREAM-PACKETS"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=196
+		y=236
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=10800"
+		chan="IBFBSW:FILT-SASE2-UPSTREAM-PACKETS"
+	}
+}
+rectangle {
+	object {
+		x=196
+		y=236
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A#10800"
+		chan="IBFBSW:FILT-SASE2-UPSTREAM-PACKETS"
+	}
+}
+rectangle {
+	object {
+		x=141
+		y=236
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=10800"
+		chan="IBFBSW:FILT-SASE1-DOWNSTREAM-PACKETS"
+	}
+}
+rectangle {
+	object {
+		x=141
+		y=236
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A#10800"
+		chan="IBFBSW:FILT-SASE1-DOWNSTREAM-PACKETS"
+	}
+}
+"text update" {
+	object {
+		x=255
+		y=240
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:FILT-SASE2-DOWNSTREAM-PACKETS"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=200
+		y=240
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:FILT-SASE2-UPSTREAM-PACKETS"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=86
+		y=236
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=10800"
+		chan="IBFBSW:FILT-SASE1-UPSTREAM-PACKETS"
+	}
+}
+rectangle {
+	object {
+		x=86
+		y=236
+		width=53
+		height=18
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A#10800"
+		chan="IBFBSW:FILT-SASE1-UPSTREAM-PACKETS"
+	}
+}
+"text update" {
+	object {
+		x=145
+		y=240
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:FILT-SASE1-DOWNSTREAM-PACKETS"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=90
+		y=240
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:FILT-SASE1-UPSTREAM-PACKETS"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=515
+		width=135
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+text {
+	object {
+		x=340
+		y=540
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Loss of Sync"
+	align="horiz. right"
+}
+"message button" {
+	object {
+		x=327
+		y=556
+		width=78
+		height=18
+	}
+	control {
+		chan="IBFBSW:SW1-RST"
+		clr=14
+		bclr=4
+	}
+	label="Loss counter"
+	press_msg="1072693248"
+	release_msg="0"
+}
+"text update" {
+	object {
+		x=410
+		y=560
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:SW1-GTX-BPM1-LOSS-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=325
+		y=535
+		width=135
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(325,535)
+		(460,535)
+	}
+}
+text {
+	object {
+		x=410
+		y=520
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=325
+		y=555
+		width=135
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(325,555)
+		(460,555)
+	}
+}
+polyline {
+	object {
+		x=460
+		y=545
+		width=20
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(460,545)
+		(480,545)
+	}
+}
+polyline {
+	object {
+		x=405
+		y=515
+		width=0
+		height=60
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(405,515)
+		(405,575)
+	}
+}
+polyline {
+	object {
+		x=260
+		y=545
+		width=65
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(260,545)
+		(325,545)
+	}
+}
+text {
+	object {
+		x=335
+		y=520
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1-BPM2 GTX"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=482
+		y=540
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x40"
+		chan="IBFBSW:ROUTER2-OUT-ENA"
+	}
+}
+rectangle {
+	object {
+		x=482
+		y=540
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A&0x40)=0"
+		chan="IBFBSW:ROUTER2-OUT-ENA"
+	}
+}
+rectangle {
+	object {
+		x=480
+		y=515
+		width=80
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=480
+		y=515
+		width=81
+		height=60
+	}
+	"basic attribute" {
+		clr=1
+		fill="outline"
+		width=2
+	}
+}
+polyline {
+	object {
+		x=480
+		y=535
+		width=80
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(480,535)
+		(560,535)
+	}
+}
+text {
+	object {
+		x=485
+		y=520
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Router X"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=410
+		y=540
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x80"
+		chan="IBFBSW:SW1-GTX-BPM01-STATUS"
+	}
+}
+polyline {
+	object {
+		x=5
+		y=300
+		width=300
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(5,300)
+		(305,300)
+	}
+}
+text {
+	object {
+		x=20
+		y=285
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Plane"
+	align="horiz. right"
+}
+text {
+	object {
+		x=90
+		y=285
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Y"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=145
+		y=285
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="X"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=200
+		y=285
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Y"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=255
+		y=285
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="X"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=140
+		y=280
+		width=0
+		height=65
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(140,280)
+		(140,345)
+	}
+}
+"text update" {
+	object {
+		x=120
+		y=350
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:X-FILT-SASE1-DISCARD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=250
+		y=280
+		width=0
+		height=65
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(250,280)
+		(250,345)
+	}
+}
+"text update" {
+	object {
+		x=230
+		y=350
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:X-FILT-SASE2-DISCARD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=470
+		y=300
+		width=245
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(470,300)
+		(715,300)
+	}
+}
+text {
+	object {
+		x=485
+		y=285
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Plane"
+	align="horiz. right"
+}
+text {
+	object {
+		x=555
+		y=285
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Y"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=610
+		y=285
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="X"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=665
+		y=285
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Y"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=605
+		y=280
+		width=0
+		height=65
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(605,280)
+		(605,345)
+	}
+}
+"text update" {
+	object {
+		x=585
+		y=350
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:X-FILT-SASE3-DISCARD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=120
+		y=370
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:X-FILT-SASE1-INVALID-BPM"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=230
+		y=370
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:X-FILT-SASE2-INVALID-BPM"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=585
+		y=370
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:X-FILT-SASE3-INVALID-BPM"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=145
+		y=390
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:X-FILT-SASE1-PASSED"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=255
+		y=390
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:X-FILT-SASE2-PASSED"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=610
+		y=390
+		width=45
+		height=10
+	}
+	monitor {
+		chan="IBFBSW:X-FILT-SASE3-PASSED"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=5
+		y=215
+		width=301
+		height=190
+	}
+	"basic attribute" {
+		clr=1
+		fill="outline"
+		width=2
+	}
+}
+rectangle {
+	object {
+		x=470
+		y=215
+		width=246
+		height=190
+	}
+	"basic attribute" {
+		clr=1
+		fill="outline"
+		width=2
+	}
+}
+polyline {
+	object {
+		x=630
+		y=405
+		width=0
+		height=140
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(630,405)
+		(630,545)
+	}
+}
+rectangle {
+	object {
+		x=100
+		y=445
+		width=80
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=100
+		y=445
+		width=81
+		height=60
+	}
+	"basic attribute" {
+		clr=1
+		fill="outline"
+		width=2
+	}
+}
+polyline {
+	object {
+		x=100
+		y=465
+		width=80
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(100,465)
+		(180,465)
+	}
+}
+text {
+	object {
+		x=105
+		y=450
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Router Y"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=180
+		y=515
+		width=80
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=180
+		y=515
+		width=81
+		height=60
+	}
+	"basic attribute" {
+		clr=1
+		fill="outline"
+		width=2
+	}
+}
+polyline {
+	object {
+		x=180
+		y=535
+		width=80
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(180,535)
+		(260,535)
+	}
+}
+text {
+	object {
+		x=185
+		y=520
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Router X"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=115
+		y=405
+		width=0
+		height=40
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(115,405)
+		(115,445)
+	}
+}
+polyline {
+	object {
+		x=220
+		y=405
+		width=0
+		height=30
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(220,405)
+		(220,435)
+	}
+}
+polyline {
+	object {
+		x=165
+		y=405
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(165,405)
+		(165,425)
+	}
+}
+polyline {
+	object {
+		x=280
+		y=405
+		width=0
+		height=100
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(280,405)
+		(280,505)
+	}
+}
+polyline {
+	object {
+		x=160
+		y=435
+		width=60
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(160,435)
+		(220,435)
+	}
+}
+polyline {
+	object {
+		x=160
+		y=435
+		width=0
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(160,435)
+		(160,445)
+	}
+}
+polyline {
+	object {
+		x=165
+		y=425
+		width=40
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(165,425)
+		(205,425)
+	}
+}
+polyline {
+	object {
+		x=205
+		y=425
+		width=0
+		height=90
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(205,425)
+		(205,515)
+	}
+}
+polyline {
+	object {
+		x=240
+		y=505
+		width=40
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(240,505)
+		(280,505)
+	}
+}
+polyline {
+	object {
+		x=240
+		y=505
+		width=0
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(240,505)
+		(240,515)
+	}
+}
+polyline {
+	object {
+		x=140
+		y=505
+		width=0
+		height=90
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(140,505)
+		(140,595)
+	}
+}
+polyline {
+	object {
+		x=140
+		y=595
+		width=30
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(140,595)
+		(170,595)
+	}
+}
+polyline {
+	object {
+		x=560
+		y=475
+		width=20
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(560,475)
+		(580,475)
+	}
+}
+polyline {
+	object {
+		x=560
+		y=495
+		width=125
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(560,495)
+		(685,495)
+	}
+}
+polyline {
+	object {
+		x=560
+		y=545
+		width=70
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(560,545)
+		(630,545)
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=515
+		width=136
+		height=61
+	}
+	"basic attribute" {
+		clr=1
+		fill="outline"
+		width=2
+	}
+}
+polyline {
+	object {
+		x=140
+		y=385
+		width=0
+		height=19
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(140,385)
+		(140,404)
+	}
+}
+polyline {
+	object {
+		x=250
+		y=385
+		width=0
+		height=19
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(250,385)
+		(250,404)
+	}
+}
+polyline {
+	object {
+		x=605
+		y=385
+		width=0
+		height=19
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(605,385)
+		(605,404)
+	}
+}
