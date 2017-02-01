@@ -1,0 +1,14 @@
+# This is a list of Button BPMs in the XFEL
+# The list contains two fields device name and connection string
+# Device        Connection string
+XFELDEVL-BUT1	flashlxbutbpm1:51245
+BPMG-24-I1      xfelgpac1di30i1:51245
+BPMG-25I-I1     xfelgpac1di30i1:51246
+BPMG-25II-I1    xfelgpac1di30i1:51247
+BPMC-38I-I1     xfelgpac1di55i1:51245
+BPMA-55-I1      xfelgpac3di55i1:51245
+BPMA-57-I1      xfelgpac3di55i1:51246
+BPMA-59-I1      xfelgpac1di59i1:51245
+BPMA-63-I1      xfelgpac1di59i1:51246
+BPMA-63-I1D     xfelgpac1di59i1:51247
+BPMA-64-I1D     xfelgpac1di59i1:51248
