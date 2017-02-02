@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=625
-		y=217
+		x=350
+		y=378
 		width=550
 		height=640
 	}
@@ -85,6 +85,134 @@ display {
 		3cb420,
 		289315,
 		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=496
+		y=181
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A<100"
+		chan="$(DEV):KICK-ATTN-FAN-TACHO-8"
+	}
+}
+rectangle {
+	object {
+		x=441
+		y=181
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A<100"
+		chan="$(DEV):KICK-ATTN-FAN-TACHO-7"
+	}
+}
+rectangle {
+	object {
+		x=386
+		y=181
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A<100"
+		chan="$(DEV):KICK-ATTN-FAN-TACHO-6"
+	}
+}
+rectangle {
+	object {
+		x=331
+		y=181
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A<100"
+		chan="$(DEV):KICK-ATTN-FAN-TACHO-5"
+	}
+}
+rectangle {
+	object {
+		x=276
+		y=181
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A<100"
+		chan="$(DEV):KICK-ATTN-FAN-TACHO-4"
+	}
+}
+rectangle {
+	object {
+		x=221
+		y=181
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A<100"
+		chan="$(DEV):KICK-ATTN-FAN-TACHO-3"
+	}
+}
+rectangle {
+	object {
+		x=166
+		y=181
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A<100"
+		chan="$(DEV):KICK-ATTN-FAN-TACHO-2"
+	}
+}
+rectangle {
+	object {
+		x=111
+		y=181
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A<100"
+		chan="$(DEV):KICK-ATTN-FAN-TACHO-1"
 	}
 }
 rectangle {

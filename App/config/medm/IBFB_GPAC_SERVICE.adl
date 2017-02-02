@@ -1,0 +1,4294 @@
+
+file {
+	name="/afs/psi.ch/user/k/koprek_w/cvs/G/XFEL/14_Firmware/13_Prototype/Button_BPM/05_EPICS/Button_Eth/App/config/medm/F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+	version=030105
+}
+display {
+	object {
+		x=537
+		y=95
+		width=810
+		height=410
+	}
+	clr=14
+	bclr=4
+	cmap=""
+	gridSpacing=5
+	gridOn=1
+	snapToGrid=1
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=411
+		y=245
+		width=400
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=140
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=130
+		y=170
+		width=280
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=0
+		width=810
+		height=30
+	}
+	"basic attribute" {
+		clr=1
+	}
+}
+rectangle {
+	object {
+		x=410
+		y=30
+		width=400
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+text {
+	object {
+		x=235
+		y=5
+		width=300
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="GPAC2 Service [$(DEV)]"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=595
+		y=35
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Firmware/Software"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=291
+		y=210
+		width=0
+		height=100
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(291,210)
+		(291,310)
+	}
+}
+polyline {
+	object {
+		x=191
+		y=230
+		width=0
+		height=80
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(191,230)
+		(191,310)
+	}
+}
+text {
+	object {
+		x=411
+		y=170
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SEU"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=526
+		y=185
+		width=60
+		height=10
+	}
+	monitor {
+		chan="$(DEV):SYS-FIRMWARE"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	format="hexadecimal"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=471
+		y=130
+		width=0
+		height=115
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(471,130)
+		(471,245)
+	}
+}
+text {
+	object {
+		x=411
+		y=155
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="CFG"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=526
+		y=155
+		width=60
+		height=10
+	}
+	monitor {
+		chan="$(DEV):CFG-FIRMWARE"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	format="hexadecimal"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=131
+		y=230
+		width=280
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(131,230)
+		(411,230)
+	}
+}
+text {
+	object {
+		x=260
+		y=175
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Temperature [degC]"
+	align="horiz. right"
+}
+text {
+	object {
+		x=201
+		y=215
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=131
+		y=235
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="FPGA"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=131
+		y=250
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DDR2"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=201
+		y=235
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-BPM1-FPGA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=201
+		y=250
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-BPM1-DDR2"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=131
+		y=265
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="QDR2"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=131
+		y=280
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Air"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=201
+		y=280
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-BPM1-AIR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=201
+		y=265
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-BPM1-QDR2"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=201
+		y=295
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-BPM1-SENSOR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=131
+		y=295
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Sensor"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=256
+		y=215
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM2"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=241
+		y=230
+		width=0
+		height=80
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(241,230)
+		(241,310)
+	}
+}
+"text update" {
+	object {
+		x=256
+		y=235
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-BPM2-FPGA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=256
+		y=250
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-BPM2-DDR2"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=256
+		y=280
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-BPM2-AIR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=256
+		y=265
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-BPM2-QDR2"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=256
+		y=295
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-BPM2-SENSOR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=356
+		y=230
+		width=0
+		height=80
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(356,230)
+		(356,310)
+	}
+}
+text {
+	object {
+		x=366
+		y=215
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SYS"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=296
+		y=235
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="FPGA"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=296
+		y=250
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DDR2(1)"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=366
+		y=235
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-SYS-FPGA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=366
+		y=250
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-SYS-DDR21"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=296
+		y=265
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DDR2(2)"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=366
+		y=265
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-SYS-DDR22"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=366
+		y=295
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-SYS-SENSOR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=296
+		y=295
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Sensor"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=411
+		y=185
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SYS"
+	align="horiz. right"
+}
+text {
+	object {
+		x=411
+		y=200
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BP"
+	align="horiz. right"
+}
+text {
+	object {
+		x=410
+		y=215
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1"
+	align="horiz. right"
+}
+text {
+	object {
+		x=411
+		y=230
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM2"
+	align="horiz. right"
+}
+"message button" {
+	object {
+		x=85
+		y=55
+		width=40
+		height=20
+	}
+	control {
+		chan="$(DEV):GPAC2-HARD-RESET"
+		clr=14
+		bclr=4
+	}
+	label="Reset"
+	press_msg="1"
+	release_msg="0"
+}
+text {
+	object {
+		x=40
+		y=145
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Voltage Status"
+	align="horiz. right"
+}
+text {
+	object {
+		x=55
+		y=165
+		width=35
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="OK"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=95
+		y=165
+		width=35
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Fault"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=60
+		y=187
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 1) > 0"
+		chan="$(DEV):GPAC2-PWR-STATUS"
+	}
+}
+text {
+	object {
+		x=10
+		y=185
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3V3  HS"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=200
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1V0 INT"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=215
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1V2 INT"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=230
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1V5 MGT"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=245
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="5V0  HS"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=260
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2V5 AUX"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=335
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="5V0  PB"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=320
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3V3  PB"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=305
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1V5 RAM"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=290
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1V8 RAM"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=275
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2V5    "
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=55
+		y=160
+		width=0
+		height=190
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(55,160)
+		(55,350)
+	}
+}
+polyline {
+	object {
+		x=90
+		y=160
+		width=0
+		height=190
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(90,160)
+		(90,350)
+	}
+}
+rectangle {
+	object {
+		x=60
+		y=202
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 2) > 0"
+		chan="$(DEV):GPAC2-PWR-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=60
+		y=217
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 4) > 0"
+		chan="$(DEV):GPAC2-PWR-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=60
+		y=232
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 8) > 0"
+		chan="$(DEV):GPAC2-PWR-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=60
+		y=247
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 16) > 0"
+		chan="$(DEV):GPAC2-PWR-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=60
+		y=262
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 32) > 0"
+		chan="$(DEV):GPAC2-PWR-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=60
+		y=277
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 64) > 0"
+		chan="$(DEV):GPAC2-PWR-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=60
+		y=292
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 128) > 0"
+		chan="$(DEV):GPAC2-PWR-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=60
+		y=322
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 1024) > 0"
+		chan="$(DEV):GPAC2-PWR-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=60
+		y=307
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 256) > 0"
+		chan="$(DEV):GPAC2-PWR-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=60
+		y=337
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 2048) > 0"
+		chan="$(DEV):GPAC2-PWR-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=95
+		y=187
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 1) > 0"
+		chan="$(DEV):GPAC2-PWR-FAULT"
+	}
+}
+rectangle {
+	object {
+		x=95
+		y=202
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 2) > 0"
+		chan="$(DEV):GPAC2-PWR-FAULT"
+	}
+}
+rectangle {
+	object {
+		x=95
+		y=217
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 4) > 0"
+		chan="$(DEV):GPAC2-PWR-FAULT"
+	}
+}
+rectangle {
+	object {
+		x=95
+		y=232
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 8) > 0"
+		chan="$(DEV):GPAC2-PWR-FAULT"
+	}
+}
+rectangle {
+	object {
+		x=95
+		y=247
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 16) > 0"
+		chan="$(DEV):GPAC2-PWR-FAULT"
+	}
+}
+rectangle {
+	object {
+		x=95
+		y=262
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 32) > 0"
+		chan="$(DEV):GPAC2-PWR-FAULT"
+	}
+}
+rectangle {
+	object {
+		x=95
+		y=277
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 64) > 0"
+		chan="$(DEV):GPAC2-PWR-FAULT"
+	}
+}
+rectangle {
+	object {
+		x=95
+		y=292
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 128) > 0"
+		chan="$(DEV):GPAC2-PWR-FAULT"
+	}
+}
+rectangle {
+	object {
+		x=95
+		y=307
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 256) > 0"
+		chan="$(DEV):GPAC2-PWR-FAULT"
+	}
+}
+rectangle {
+	object {
+		x=95
+		y=322
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 1024) > 0"
+		chan="$(DEV):GPAC2-PWR-FAULT"
+	}
+}
+rectangle {
+	object {
+		x=95
+		y=337
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 2048) > 0"
+		chan="$(DEV):GPAC2-PWR-FAULT"
+	}
+}
+rectangle {
+	object {
+		x=130
+		y=30
+		width=280
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+text {
+	object {
+		x=230
+		y=35
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Power Consumption (HS Controllers)"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=130
+		y=75
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="5V0 CFG"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=130
+		y=90
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3V3"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=130
+		y=105
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="5V0"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=130
+		y=120
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3V3 PB"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=130
+		y=135
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="5V0 PB"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=130
+		y=150
+		width=280
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(130,150)
+		(410,150)
+	}
+}
+polyline {
+	object {
+		x=130
+		y=70
+		width=280
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(130,70)
+		(410,70)
+	}
+}
+text {
+	object {
+		x=210
+		y=55
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Vin [V]"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=265
+		y=55
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Vout [V]"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=315
+		y=55
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="I [A]"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=370
+		y=55
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Pwr [W]"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=190
+		y=50
+		width=0
+		height=100
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(190,50)
+		(190,150)
+	}
+}
+text {
+	object {
+		x=290
+		y=155
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Total Power"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=200
+		y=75
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS5V0CFG-VIN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=260
+		y=75
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS5V0CFG-VOUT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=310
+		y=75
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS5V0CFG-I"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=360
+		y=75
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS5V0CFG-PWR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=200
+		y=90
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS3V3-VIN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=260
+		y=90
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS3V3-VOUT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=310
+		y=90
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS3V3-I"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=360
+		y=90
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS3V3-PWR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=200
+		y=105
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS5V0-VIN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=260
+		y=105
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS5V0-VOUT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=310
+		y=105
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS5V0-I"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=360
+		y=105
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS5V0-PWR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=200
+		y=120
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS3V3PB-VIN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=260
+		y=120
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS3V3PB-VOUT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=310
+		y=120
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS3V3PB-I"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=360
+		y=120
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS3V3PB-PWR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=200
+		y=135
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS5V0PB-VIN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=260
+		y=135
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS5V0PB-VOUT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=310
+		y=135
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS5V0PB-I"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=360
+		y=135
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-HS5V0PB-PWR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=360
+		y=155
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-TOTAL-PWR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=250
+		y=50
+		width=0
+		height=100
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(250,50)
+		(250,150)
+	}
+}
+polyline {
+	object {
+		x=305
+		y=50
+		width=0
+		height=100
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(305,50)
+		(305,150)
+	}
+}
+polyline {
+	object {
+		x=355
+		y=50
+		width=0
+		height=120
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(355,50)
+		(355,170)
+	}
+}
+polyline {
+	object {
+		x=411
+		y=150
+		width=400
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(411,150)
+		(811,150)
+	}
+}
+text {
+	object {
+		x=476
+		y=135
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Conf"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=521
+		y=130
+		width=0
+		height=115
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(521,130)
+		(521,245)
+	}
+}
+text {
+	object {
+		x=416
+		y=135
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="FPGA"
+	align="horiz. right"
+}
+text {
+	object {
+		x=526
+		y=135
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Version"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=155
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 1) > 0"
+		chan="$(DEV):GPAC2-FPGA-DONE"
+	}
+	textix="Yes"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=170
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 2) > 0"
+		chan="$(DEV):GPAC2-FPGA-DONE"
+	}
+	textix="Yes"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=200
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 8) > 0"
+		chan="$(DEV):GPAC2-FPGA-DONE"
+	}
+	textix="Yes"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=185
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 4) > 0"
+		chan="$(DEV):GPAC2-FPGA-DONE"
+	}
+	textix="Yes"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=230
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 32) > 0"
+		chan="$(DEV):GPAC2-FPGA-DONE"
+	}
+	textix="Yes"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=215
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 16) > 0"
+		chan="$(DEV):GPAC2-FPGA-DONE"
+	}
+	textix="Yes"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=0
+		y=180
+		width=130
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(0,180)
+		(130,180)
+	}
+}
+text {
+	object {
+		x=10
+		y=165
+		width=35
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Voltage"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=155
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 1) = 0"
+		chan="$(DEV):GPAC2-FPGA-DONE"
+	}
+	textix="No"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=170
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 2) = 0"
+		chan="$(DEV):GPAC2-FPGA-DONE"
+	}
+	textix="No"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=200
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 8) = 0"
+		chan="$(DEV):GPAC2-FPGA-DONE"
+	}
+	textix="No"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=185
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 4) = 0"
+		chan="$(DEV):GPAC2-FPGA-DONE"
+	}
+	textix="No"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=230
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 32) = 0"
+		chan="$(DEV):GPAC2-FPGA-DONE"
+	}
+	textix="No"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=215
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 16) = 0"
+		chan="$(DEV):GPAC2-FPGA-DONE"
+	}
+	textix="No"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=410
+		y=30
+		width=2
+		height=377
+	}
+	"basic attribute" {
+		clr=0
+		fill="outline"
+		width=2
+	}
+	points {
+		(411,406)
+		(411,31)
+	}
+}
+polyline {
+	object {
+		x=130
+		y=30
+		width=2
+		height=322
+	}
+	"basic attribute" {
+		clr=0
+		fill="outline"
+		width=2
+	}
+	points {
+		(131,351)
+		(131,31)
+	}
+}
+polyline {
+	object {
+		x=130
+		y=170
+		width=281
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(131,171)
+		(410,171)
+	}
+}
+polyline {
+	object {
+		x=411
+		y=130
+		width=400
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(411,130)
+		(811,130)
+	}
+}
+text {
+	object {
+		x=540
+		y=50
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=60
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 131072) > 0"
+		chan="$(DEV):GPAC2-CF-PRESENT"
+	}
+	textix="CF Card Present"
+	align="horiz. right"
+}
+text {
+	object {
+		x=548
+		y=50
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 131072) = 0"
+		chan="$(DEV):GPAC2-CF-PRESENT"
+	}
+	textix="CF Card Not Present"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=411
+		y=245
+		width=401
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(412,246)
+		(811,246)
+	}
+}
+"text update" {
+	object {
+		x=526
+		y=200
+		width=60
+		height=10
+	}
+	monitor {
+		chan="$(DEV):BP-FIRMWARE"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	format="hexadecimal"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=130
+		y=310
+		width=282
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(131,311)
+		(411,311)
+	}
+}
+text {
+	object {
+		x=605
+		y=250
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RFFE Control"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=428
+		y=290
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="A"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=660
+		y=290
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):P0HS1-SN"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=428
+		y=305
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="B"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=660
+		y=305
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):P0HS2-SN"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=428
+		y=320
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="C"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=660
+		y=320
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):P0HS3-SN"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=428
+		y=335
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="D"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=660
+		y=335
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):P0HS4-SN"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=411
+		y=285
+		width=400
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(411,285)
+		(811,285)
+	}
+}
+text {
+	object {
+		x=423
+		y=270
+		width=35
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RTM Port"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=519
+		y=265
+		width=0
+		height=140
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(519,265)
+		(519,405)
+	}
+}
+text {
+	object {
+		x=660
+		y=270
+		width=30
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="S/N"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=524
+		y=290
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 65536) > 0"
+		chan="$(DEV):P0HS1-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=524
+		y=305
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 65536) > 0"
+		chan="$(DEV):P0HS2-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=524
+		y=335
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 65536) > 0"
+		chan="$(DEV):P0HS4-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=524
+		y=320
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 65536) > 0"
+		chan="$(DEV):P0HS3-STATUS"
+	}
+}
+polyline {
+	object {
+		x=544
+		y=265
+		width=0
+		height=140
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(544,265)
+		(544,405)
+	}
+}
+text {
+	object {
+		x=519
+		y=270
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="In"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=549
+		y=290
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 256) > 0"
+		chan="$(DEV):P0HS1-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=549
+		y=305
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 256) > 0"
+		chan="$(DEV):P0HS2-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=549
+		y=335
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 256) > 0"
+		chan="$(DEV):P0HS4-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=549
+		y=320
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 256) > 0"
+		chan="$(DEV):P0HS3-STATUS"
+	}
+}
+polyline {
+	object {
+		x=569
+		y=265
+		width=0
+		height=140
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(569,265)
+		(569,405)
+	}
+}
+text {
+	object {
+		x=544
+		y=270
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Err"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=574
+		y=290
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 1) > 0"
+		chan="$(DEV):P0HS1-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=574
+		y=305
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 1) > 0"
+		chan="$(DEV):P0HS2-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=574
+		y=335
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 1) > 0"
+		chan="$(DEV):P0HS4-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=574
+		y=320
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 1) > 0"
+		chan="$(DEV):P0HS3-STATUS"
+	}
+}
+polyline {
+	object {
+		x=644
+		y=265
+		width=0
+		height=140
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(644,265)
+		(644,405)
+	}
+}
+text {
+	object {
+		x=569
+		y=270
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="PG"
+	align="horiz. centered"
+}
+"message button" {
+	object {
+		x=594
+		y=288
+		width=25
+		height=15
+	}
+	control {
+		chan="$(DEV):P0HS1-OFF"
+		clr=14
+		bclr=4
+	}
+	label="Off"
+	press_msg="1"
+	release_msg="0"
+}
+"message button" {
+	object {
+		x=619
+		y=288
+		width=25
+		height=15
+	}
+	control {
+		chan="$(DEV):P0HS1-ON"
+		clr=14
+		bclr=4
+	}
+	label="On"
+	press_msg="1"
+	release_msg="0"
+}
+"message button" {
+	object {
+		x=594
+		y=303
+		width=25
+		height=15
+	}
+	control {
+		chan="$(DEV):P0HS2-OFF"
+		clr=14
+		bclr=4
+	}
+	label="Off"
+	press_msg="1"
+	release_msg="0"
+}
+"message button" {
+	object {
+		x=619
+		y=303
+		width=25
+		height=15
+	}
+	control {
+		chan="$(DEV):P0HS2-ON"
+		clr=14
+		bclr=4
+	}
+	label="On"
+	press_msg="1"
+	release_msg="0"
+}
+"message button" {
+	object {
+		x=594
+		y=318
+		width=25
+		height=15
+	}
+	control {
+		chan="$(DEV):P0HS3-OFF"
+		clr=14
+		bclr=4
+	}
+	label="Off"
+	press_msg="1"
+	release_msg="0"
+}
+"message button" {
+	object {
+		x=619
+		y=318
+		width=25
+		height=15
+	}
+	control {
+		chan="$(DEV):P0HS3-ON"
+		clr=14
+		bclr=4
+	}
+	label="On"
+	press_msg="1"
+	release_msg="0"
+}
+"message button" {
+	object {
+		x=594
+		y=333
+		width=25
+		height=15
+	}
+	control {
+		chan="$(DEV):P0HS4-OFF"
+		clr=14
+		bclr=4
+	}
+	label="Off"
+	press_msg="1"
+	release_msg="0"
+}
+"message button" {
+	object {
+		x=619
+		y=333
+		width=25
+		height=15
+	}
+	control {
+		chan="$(DEV):P0HS4-ON"
+		clr=14
+		bclr=4
+	}
+	label="On"
+	press_msg="1"
+	release_msg="0"
+}
+text {
+	object {
+		x=609
+		y=270
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Power"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=0
+		y=30
+		width=130
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+text {
+	object {
+		x=35
+		y=35
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Hardware"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=10
+		y=60
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="S/N:"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=35
+		y=60
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-SN"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=0
+		y=140
+		width=131
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(1,141)
+		(130,141)
+	}
+}
+"text update" {
+	object {
+		x=526
+		y=215
+		width=60
+		height=10
+	}
+	monitor {
+		chan="$(DEV):BPM1-FIRMWARE"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	format="hexadecimal"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=526
+		y=230
+		width=60
+		height=10
+	}
+	monitor {
+		chan="$(DEV):BPM2-FIRMWARE"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	format="hexadecimal"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=591
+		y=130
+		width=0
+		height=115
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(591,130)
+		(591,245)
+	}
+}
+text {
+	object {
+		x=616
+		y=135
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Firmware"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=466
+		y=265
+		width=0
+		height=140
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(466,265)
+		(466,405)
+	}
+}
+text {
+	object {
+		x=477
+		y=270
+		width=35
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="MBU Slot"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=290
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=305
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="4"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=320
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="5"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=335
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="6"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=596
+		y=155
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):CFG-FW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=596
+		y=215
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):BPM1-FW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=596
+		y=230
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):BPM2-FW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=596
+		y=200
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):BP-FW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=596
+		y=185
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):SYS-FW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=35
+		y=80
+		width=70
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-PB1-SN"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=481
+		y=387
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="COM"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=524
+		y=387
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 65536) > 0"
+		chan="$(DEV):P0HS7-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=549
+		y=387
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 256) > 0"
+		chan="$(DEV):P0HS7-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=574
+		y=387
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 1) > 0"
+		chan="$(DEV):P0HS7-STATUS"
+	}
+}
+"message button" {
+	object {
+		x=594
+		y=385
+		width=25
+		height=15
+	}
+	control {
+		chan="$(DEV):P0HS7-OFF"
+		clr=14
+		bclr=4
+	}
+	label="Off"
+	press_msg="1"
+	release_msg="0"
+}
+"message button" {
+	object {
+		x=619
+		y=385
+		width=25
+		height=15
+	}
+	control {
+		chan="$(DEV):P0HS7-ON"
+		clr=14
+		bclr=4
+	}
+	label="On"
+	press_msg="1"
+	release_msg="0"
+}
+"text update" {
+	object {
+		x=660
+		y=387
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):P0HS7-SN"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=481
+		y=355
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="PWR"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=481
+		y=370
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DIO"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=706
+		y=135
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Software"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=706
+		y=155
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):CFG-SW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="string"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=701
+		y=130
+		width=0
+		height=115
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(701,130)
+		(701,245)
+	}
+}
+polyline {
+	object {
+		x=410
+		y=405
+		width=399
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(411,406)
+		(808,406)
+	}
+}
+"text update" {
+	object {
+		x=706
+		y=185
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):SYS-SW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=706
+		y=200
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):BP-SW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=706
+		y=215
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):BPM1-SW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=706
+		y=230
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):BPM2-SW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=10
+		y=120
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="MAC:"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=35
+		y=120
+		width=90
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-MAC.SVAL"
+		clr=14
+		bclr=4
+	}
+	format="hexadecimal"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=0
+		y=350
+		width=131
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(1,351)
+		(130,351)
+	}
+}
+polyline {
+	object {
+		x=720
+		y=265
+		width=0
+		height=140
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(720,265)
+		(720,405)
+	}
+}
+text {
+	object {
+		x=730
+		y=270
+		width=70
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Temp [degC]"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=735
+		y=290
+		width=60
+		height=10
+	}
+	monitor {
+		chan="$(DEV):P0HS1-TEMP"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=735
+		y=305
+		width=60
+		height=10
+	}
+	monitor {
+		chan="$(DEV):P0HS2-TEMP"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=735
+		y=320
+		width=60
+		height=10
+	}
+	monitor {
+		chan="$(DEV):P0HS3-TEMP"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=735
+		y=335
+		width=60
+		height=10
+	}
+	monitor {
+		chan="$(DEV):P0HS4-TEMP"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=735
+		y=387
+		width=60
+		height=10
+	}
+	monitor {
+		chan="$(DEV):P0HS7-TEMP"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=680
+		y=50
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Active revision"
+	align="horiz. centered"
+}
+"text update" {
+	object {
+		x=785
+		y=52
+		width=15
+		height=10
+	}
+	monitor {
+		chan="$(DEV):SYSACE-REV"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+text {
+	object {
+		x=683
+		y=73
+		width=80
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="New revision"
+	align="horiz. right"
+}
+menu {
+	object {
+		x=767
+		y=70
+		width=25
+		height=20
+	}
+	control {
+		chan="$(DEV):SYSACE-REV-SET"
+		clr=14
+		bclr=4
+	}
+}
+text {
+	object {
+		x=585
+		y=112
+		width=80
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SYS FPGA Ack"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=675
+		y=113
+		width=15
+		height=10
+	}
+	monitor {
+		chan="$(DEV):SYSFPGA-ACK-CONF"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+text {
+	object {
+		x=530
+		y=97
+		width=150
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SYS FPGA Ack Enable"
+	align="horiz. right"
+}
+"choice button" {
+	object {
+		x=685
+		y=95
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):SYSFPGA-ACK-CONF-SET"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=704
+		y=113
+		width=80
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Linux ready"
+	align="horiz. right"
+}
+rectangle {
+	object {
+		x=790
+		y=115
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A > 0"
+		chan="$(DEV):LINUX-READY"
+	}
+}
+text {
+	object {
+		x=10
+		y=80
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="PB1:"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=35
+		y=100
+		width=70
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-PB2-SN"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=10
+		y=100
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="PB2:"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=350
+		width=131
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(1,351)
+		(130,351)
+	}
+}
+polyline {
+	object {
+		x=0
+		y=30
+		width=2
+		height=323
+	}
+	"basic attribute" {
+		clr=0
+		fill="outline"
+		width=2
+	}
+	points {
+		(1,352)
+		(1,31)
+	}
+}
+polyline {
+	object {
+		x=130
+		y=210
+		width=280
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(130,210)
+		(410,210)
+	}
+}
+text {
+	object {
+		x=140
+		y=193
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Warning"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=195
+		y=195
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-WARNING"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=310
+		y=195
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Alarm"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=365
+		y=195
+		width=30
+		height=10
+	}
+	monitor {
+		chan="$(DEV):GPAC2-CFG-TMP-ALARM"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+byte {
+	object {
+		x=420
+		y=65
+		width=20
+		height=50
+	}
+	monitor {
+		chan="$(DEV):GPAC2-LAST-REBOOT"
+		clr=14
+		bclr=4
+	}
+	direction="down"
+	sbit=0
+	ebit=4
+}
+text {
+	object {
+		x=445
+		y=64
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Power down"
+}
+text {
+	object {
+		x=445
+		y=74
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Temperature alarm"
+}
+text {
+	object {
+		x=445
+		y=84
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="User reset"
+}
+text {
+	object {
+		x=420
+		y=50
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Last Reboot"
+}
+text {
+	object {
+		x=445
+		y=94
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="FP handle"
+}
+text {
+	object {
+		x=445
+		y=103
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Serial console"
+}
+rectangle {
+	object {
+		x=525
+		y=372
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 65536) > 0"
+		chan="$(DEV):P0HS6-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=550
+		y=372
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 256) > 0"
+		chan="$(DEV):P0HS6-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=575
+		y=372
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 1) > 0"
+		chan="$(DEV):P0HS6-STATUS"
+	}
+}
+"message button" {
+	object {
+		x=595
+		y=370
+		width=25
+		height=15
+	}
+	control {
+		chan="$(DEV):P0HS6-OFF"
+		clr=14
+		bclr=4
+	}
+	label="Off"
+	press_msg="1"
+	release_msg="0"
+}
+"message button" {
+	object {
+		x=620
+		y=370
+		width=25
+		height=15
+	}
+	control {
+		chan="$(DEV):P0HS6-ON"
+		clr=14
+		bclr=4
+	}
+	label="On"
+	press_msg="1"
+	release_msg="0"
+}
+"text update" {
+	object {
+		x=661
+		y=372
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):P0HS6-SN"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=736
+		y=372
+		width=60
+		height=10
+	}
+	monitor {
+		chan="$(DEV):P0HS6-TEMP"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="string"
+	limits {
+	}
+}

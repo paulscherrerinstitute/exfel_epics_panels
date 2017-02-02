@@ -8,7 +8,7 @@ display {
 		x=267
 		y=81
 		width=1000
-		height=650
+		height=630
 	}
 	clr=14
 	bclr=4
@@ -102,9 +102,12 @@ display {
 	}
 	erase_oldest="plot last n pts"
 	trace[0] {
-		xdata="$(DEV):Y-RX-UPDOWN-TIME"
-		ydata="$(DEV):Y-RX-UPDOWN-POS"
+		ydata="$(DEV):Y-RX-DOWN-BPM1"
 		data_clr=20
+	}
+	trace[1] {
+		ydata="$(DEV):Y-RX-DOWN-BPM2"
+		data_clr=30
 	}
 }
 rectangle {
@@ -910,9 +913,9 @@ polyline {
 "cartesian plot" {
 	object {
 		x=0
-		y=410
+		y=290
 		width=400
-		height=240
+		height=340
 	}
 	plotcom {
 		xlabel="Bucket"
