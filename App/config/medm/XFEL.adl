@@ -1,6 +1,6 @@
 
 file {
-	name="/home/goran/epics/xfel/App/config/medm/XFEL.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/XFEL.adl"
 	version=030105
 }
 display {
@@ -606,11 +606,11 @@ polyline {
 	}
 	display[0] {
 		label="Button BPM"
-		name="BPM_T1_SA1.adl"
+		name="BPM_T2_SA1.adl"
 	}
 	clr=14
 	bclr=57
-	label="-T1 SA1"
+	label="-T2 SA1"
 }
 polyline {
 	object {
@@ -631,16 +631,16 @@ polyline {
 	object {
 		x=565
 		y=230
-		width=110
+		width=240
 		height=20
 	}
 	display[0] {
 		label="Button BPM"
-		name="BPM_T2_SA2_T4_T4D.adl"
+		name="BPM_T1_SA2.adl"
 	}
 	clr=14
 	bclr=57
-	label="-T2 SA2 T4 T4D"
+	label="-T1 SA2 T3 UN1 T5 UN2 T5D"
 }
 "related display" {
 	object {
@@ -651,11 +651,11 @@ polyline {
 	}
 	display[0] {
 		label="Button BPM"
-		name="BPM_T3_SA3_T5_T5D.adl"
+		name="BPM_T4_SA3_T4D.adl"
 	}
 	clr=14
 	bclr=57
-	label="-T3 SA3 T5 T5D"
+	label="-T4 SA3 T4D"
 }
 polyline {
 	object {
