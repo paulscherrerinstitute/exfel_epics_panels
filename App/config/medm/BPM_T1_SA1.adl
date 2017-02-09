@@ -1,12 +1,12 @@
 
 file {
-	name="/home/goran/epics/xfel/App/config/medm/BPM_T1_SA1.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/BPM_T1_SA1.adl"
 	version=030105
 }
 display {
 	object {
-		x=897
-		y=132
+		x=86
+		y=171
 		width=700
 		height=570
 	}
@@ -1381,7 +1381,7 @@ text {
 	}
 	control {
 		chan="BUTBPM:BPM-STRING.AA"
-		clr=14
+		clr=10
 		bclr=40
 	}
 	label="BPMA-2132-T2"
@@ -1396,7 +1396,7 @@ text {
 	}
 	control {
 		chan="BUTBPM:BPM-STRING.AA"
-		clr=14
+		clr=10
 		bclr=40
 	}
 	label="BPMA-2145-T2"

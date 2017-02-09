@@ -1,11 +1,11 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/cvs/G/XFEL/14_Firmware/13_Prototype/Button_BPM/05_EPICS/Button_Eth/App/config/medm/IBFB.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_iocboot/XFELIBFB/../../xfel_epics_panels/App/config/medm/IBFB.adl"
 	version=030105
 }
 display {
 	object {
-		x=11
+		x=12
 		y=38
 		width=420
 		height=360
@@ -128,9 +128,9 @@ polyline {
 }
 "shell command" {
 	object {
-		x=270
+		x=260
 		y=80
-		width=130
+		width=140
 		height=20
 	}
 	command[0] {
@@ -619,9 +619,9 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=270
+		x=260
 		y=55
-		width=130
+		width=140
 		height=20
 	}
 	command[0] {
@@ -647,9 +647,9 @@ text {
 }
 "shell command" {
 	object {
-		x=270
+		x=260
 		y=105
-		width=130
+		width=140
 		height=20
 	}
 	command[0] {
@@ -946,7 +946,7 @@ rectangle {
 "related display" {
 	object {
 		x=5
-		y=260
+		y=255
 		width=140
 		height=20
 	}
@@ -961,7 +961,7 @@ rectangle {
 }
 "related display" {
 	object {
-		x=235
+		x=260
 		y=330
 		width=140
 		height=20
