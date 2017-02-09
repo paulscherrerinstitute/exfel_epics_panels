@@ -754,3 +754,18 @@ text {
 	bclr=57
 	label="-nedit"
 }
+"shell command" {
+	object {
+		x=695
+		y=100
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg yellow -e ssh wkoprek@xfelpsiibfb &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelpsiibfb"
+}

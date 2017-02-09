@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=19
-		y=39
+		x=8
+		y=34
 		width=810
 		height=305
 	}
@@ -725,4 +725,47 @@ text {
 	clr=14
 	bclr=57
 	label="-mdi7mpc1896"
+}
+text {
+	object {
+		x=465
+		y=55
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Tools"
+	align="horiz. centered"
+}
+"shell command" {
+	object {
+		x=440
+		y=100
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="nedit &"
+	}
+	clr=14
+	bclr=57
+	label="-nedit"
+}
+"shell command" {
+	object {
+		x=695
+		y=100
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg yellow -e ssh wkoprek@xfelpsiibfb &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelpsiibfb"
 }
