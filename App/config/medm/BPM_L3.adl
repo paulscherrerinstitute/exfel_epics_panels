@@ -4963,7 +4963,7 @@ rectangle {
 	}
 	control {
 		chan="BUTBPM:BPM-STRING.AA"
-		clr=14
+		clr=11
 		bclr=40
 	}
 	label="BPMA-1659-CL"
@@ -4978,7 +4978,7 @@ rectangle {
 	}
 	control {
 		chan="BUTBPM:BPM-STRING.AA"
-		clr=14
+		clr=11
 		bclr=40
 	}
 	label="BPMA-1669-CL"

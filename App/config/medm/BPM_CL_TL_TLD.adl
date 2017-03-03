@@ -2074,7 +2074,7 @@ text {
 	}
 	control {
 		chan="BUTBPM:BPM-STRING.AA"
-		clr=14
+		clr=11
 		bclr=40
 	}
 	label="BPMA-1641-L3"
@@ -2089,7 +2089,7 @@ text {
 	}
 	control {
 		chan="BUTBPM:BPM-STRING.AA"
-		clr=14
+		clr=11
 		bclr=40
 	}
 	label="BPMA-1650-L3"

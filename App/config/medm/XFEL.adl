@@ -1,6 +1,6 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/XFEL.adl"
+	name="/home/goran/epics/xfel/App/config/medm/XFEL.adl"
 	version=030105
 }
 display {
@@ -8,7 +8,7 @@ display {
 		x=8
 		y=34
 		width=810
-		height=305
+		height=345
 	}
 	clr=14
 	bclr=4
@@ -244,11 +244,11 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -bg yellow -e ssh wkoprek@flashlxuser1 &"
+		name="xterm -bg yellow -e ssh wkoprek@xfeluser1 &"
 	}
 	clr=14
 	bclr=57
-	label="-flashlxuser1"
+	label="-xfeluser1"
 }
 "shell command" {
 	object {
@@ -268,7 +268,7 @@ text {
 rectangle {
 	object {
 		x=0
-		y=255
+		y=280
 		width=810
 		height=20
 	}
@@ -279,7 +279,7 @@ rectangle {
 polyline {
 	object {
 		x=0
-		y=255
+		y=280
 		width=810
 		height=2
 	}
@@ -288,14 +288,14 @@ polyline {
 		width=2
 	}
 	points {
-		(1,256)
-		(809,256)
+		(1,281)
+		(809,281)
 	}
 }
 text {
 	object {
 		x=340
-		y=260
+		y=285
 		width=60
 		height=15
 	}
@@ -323,7 +323,7 @@ text {
 "related display" {
 	object {
 		x=5
-		y=280
+		y=305
 		width=130
 		height=20
 	}
@@ -339,7 +339,7 @@ text {
 "related display" {
 	object {
 		x=150
-		y=280
+		y=305
 		width=65
 		height=20
 	}
@@ -355,7 +355,7 @@ text {
 rectangle {
 	object {
 		x=280
-		y=280
+		y=305
 		width=5
 		height=20
 	}
@@ -371,7 +371,7 @@ rectangle {
 rectangle {
 	object {
 		x=280
-		y=280
+		y=305
 		width=5
 		height=20
 	}
@@ -387,7 +387,7 @@ rectangle {
 rectangle {
 	object {
 		x=135
-		y=280
+		y=305
 		width=5
 		height=20
 	}
@@ -403,7 +403,7 @@ rectangle {
 rectangle {
 	object {
 		x=135
-		y=280
+		y=305
 		width=5
 		height=20
 	}
@@ -419,7 +419,7 @@ rectangle {
 "shell command" {
 	object {
 		x=295
-		y=280
+		y=305
 		width=130
 		height=20
 	}
@@ -434,7 +434,7 @@ rectangle {
 "related display" {
 	object {
 		x=215
-		y=280
+		y=305
 		width=65
 		height=20
 	}
@@ -450,7 +450,7 @@ rectangle {
 "related display" {
 	object {
 		x=165
-		y=215
+		y=225
 		width=110
 		height=20
 	}
@@ -525,7 +525,7 @@ rectangle {
 polyline {
 	object {
 		x=275
-		y=225
+		y=235
 		width=20
 		height=0
 	}
@@ -533,14 +533,14 @@ polyline {
 		clr=0
 	}
 	points {
-		(275,225)
-		(295,225)
+		(275,235)
+		(295,235)
 	}
 }
 "related display" {
 	object {
 		x=295
-		y=215
+		y=225
 		width=110
 		height=20
 	}
@@ -555,7 +555,7 @@ polyline {
 polyline {
 	object {
 		x=405
-		y=225
+		y=235
 		width=20
 		height=0
 	}
@@ -563,14 +563,14 @@ polyline {
 		clr=0
 	}
 	points {
-		(405,225)
-		(425,225)
+		(405,235)
+		(425,235)
 	}
 }
 "related display" {
 	object {
 		x=425
-		y=215
+		y=225
 		width=110
 		height=20
 	}
@@ -585,7 +585,7 @@ polyline {
 polyline {
 	object {
 		x=535
-		y=210
+		y=220
 		width=30
 		height=15
 	}
@@ -593,14 +593,14 @@ polyline {
 		clr=0
 	}
 	points {
-		(535,225)
-		(565,210)
+		(535,235)
+		(565,220)
 	}
 }
 "related display" {
 	object {
 		x=565
-		y=200
+		y=210
 		width=110
 		height=20
 	}
@@ -615,7 +615,7 @@ polyline {
 polyline {
 	object {
 		x=535
-		y=224
+		y=234
 		width=30
 		height=15
 	}
@@ -623,14 +623,14 @@ polyline {
 		clr=0
 	}
 	points {
-		(535,224)
-		(565,239)
+		(535,234)
+		(565,249)
 	}
 }
 "related display" {
 	object {
 		x=565
-		y=230
+		y=240
 		width=240
 		height=20
 	}
@@ -645,7 +645,7 @@ polyline {
 "related display" {
 	object {
 		x=695
-		y=200
+		y=210
 		width=110
 		height=20
 	}
@@ -660,7 +660,7 @@ polyline {
 polyline {
 	object {
 		x=675
-		y=210
+		y=220
 		width=20
 		height=0
 	}
@@ -668,8 +668,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(675,210)
-		(695,210)
+		(675,220)
+		(695,220)
 	}
 }
 text {
@@ -763,9 +763,182 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -bg yellow -e ssh wkoprek@xfelpsiibfb &"
+		name="xterm -bg tan1 -e ssh wkoprek@xfelpsiibfb &"
 	}
 	clr=14
 	bclr=57
 	label="-xfelpsiibfb"
+}
+text {
+	object {
+		x=155
+		y=210
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=250
+		y=210
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="479"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=290
+		y=210
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="488"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=380
+		y=210
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1650"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=510
+		y=210
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2126"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=420
+		y=210
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1659"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=560
+		y=195
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2071"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=650
+		y=195
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2461"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=690
+		y=195
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2468"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=780
+		y=195
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3102"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=560
+		y=260
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2040"
+	align="horiz. centered"
+}
+"shell command" {
+	object {
+		x=695
+		y=125
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg tan2 -e ssh wkoprek@xfelpsibpm1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelpsibpm1"
+}
+"shell command" {
+	object {
+		x=695
+		y=150
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg tan3 -e ssh wkoprek@xfelpsibpm2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelpsibpm2"
 }

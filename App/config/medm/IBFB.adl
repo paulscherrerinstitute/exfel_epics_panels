@@ -1,6 +1,6 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_iocboot/XFELIBFB/../../xfel_epics_panels/App/config/medm/IBFB.adl"
+	name="/home/goran/epics/xfel/App/config/medm/IBFB.adl"
 	version=030105
 }
 display {
@@ -128,7 +128,7 @@ polyline {
 }
 "shell command" {
 	object {
-		x=260
+		x=275
 		y=80
 		width=140
 		height=20
@@ -385,46 +385,46 @@ rectangle {
 	object {
 		x=160
 		y=55
-		width=70
+		width=110
 		height=20
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -e telnet -l root ibfbctrl &"
+		name="xterm -e telnet -l root xfelgpacibfbctrl &"
 	}
 	clr=14
 	bclr=57
-	label="-ibfbctrl"
+	label="-xfelgpacibfbctrl"
 }
 "shell command" {
 	object {
 		x=160
 		y=80
-		width=70
+		width=110
 		height=20
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -e telnet -l root ibfbsw &"
+		name="xterm -e telnet -l root xfelgpacibfbsw &"
 	}
 	clr=14
 	bclr=57
-	label="-ibfbsw"
+	label="-xfelgpacibfbsw"
 }
 "shell command" {
 	object {
 		x=160
 		y=105
-		width=70
+		width=110
 		height=20
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -e telnet -l root ibfbmon &"
+		name="xterm -e telnet -l root xfelgpacibfbmon &"
 	}
 	clr=14
 	bclr=57
-	label="-ibfbmon"
+	label="-xfelgpacibfbmon"
 }
 "related display" {
 	object {
@@ -619,7 +619,7 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=260
+		x=275
 		y=55
 		width=140
 		height=20
@@ -647,7 +647,7 @@ text {
 }
 "shell command" {
 	object {
-		x=260
+		x=275
 		y=105
 		width=140
 		height=20
