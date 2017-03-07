@@ -1,6 +1,6 @@
 
 file {
-	name="/home/goran/epics/xfel/App/config/medm/XFEL.adl"
+	name="/xfel/controls/App/config/medm/XFEL.adl"
 	version=030105
 }
 display {
@@ -120,7 +120,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -bg yellow -e ssh goran@mdi7xfelpc1 &"
+		name="xterm -bg yellow -e ssh -X goran@mdi7xfelpc1 &"
 	}
 	clr=14
 	bclr=57
@@ -921,7 +921,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -bg tan2 -e ssh wkoprek@xfelpsibpm1 &"
+		name="xterm -bg DarkOrchid1 -e ssh wkoprek@xfelpsibpm1 &"
 	}
 	clr=14
 	bclr=57
@@ -936,7 +936,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -bg tan3 -e ssh wkoprek@xfelpsibpm2 &"
+		name="xterm -bg SeaGreen1 -e ssh wkoprek@xfelpsibpm2 &"
 	}
 	clr=14
 	bclr=57
