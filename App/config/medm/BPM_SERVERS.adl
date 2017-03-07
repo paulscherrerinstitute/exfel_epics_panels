@@ -1,12 +1,12 @@
 
 file {
-	name="/home/goran/epics/xfel/App/config/medm/BPM_SERVERS.adl"
+	name="/xfel/controls/App/config/medm/BPM_SERVERS.adl"
 	version=030105
 }
 display {
 	object {
-		x=1090
-		y=75
+		x=779
+		y=151
 		width=450
 		height=235
 	}
@@ -456,7 +456,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="caqtdm -noMsg -attach -macro DEV=CAVBPM App/config/qt/BPM_GPAC_CAV_SMP_single.ui &"
+		name="startDM -noMsg -attach -macro DEV=CAVBPM App/config/qt/BPM_GPAC_CAV_SMP_single.ui &"
 	}
 	clr=14
 	bclr=57

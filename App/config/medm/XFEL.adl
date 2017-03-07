@@ -1,6 +1,6 @@
 
 file {
-	name="/home/goran/epics/xfel/App/config/medm/XFEL.adl"
+	name="/xfel/controls/App/config/medm/XFEL.adl"
 	version=030105
 }
 display {
@@ -8,7 +8,7 @@ display {
 		x=8
 		y=34
 		width=810
-		height=345
+		height=380
 	}
 	clr=14
 	bclr=4
@@ -334,27 +334,27 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-XFELDEVL-BUT1"
+	label="-XFELDEVLBUT11"
 }
 "related display" {
 	object {
 		x=150
 		y=305
-		width=65
+		width=100
 		height=20
 	}
 	display[0] {
 		label="BPM"
 		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
-		args="DEV=FLASHLXBUTBPM1"
+		args="DEV=XFELDEVLBUT1"
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-XFELDEVLBUT1"
 }
 rectangle {
 	object {
-		x=280
+		x=315
 		y=305
 		width=5
 		height=20
@@ -365,12 +365,12 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="FLASHLXBUTBPM1:S7GPAC-STATUS"
+		chan="XFELDEVLBUT1:S7GPAC-STATUS"
 	}
 }
 rectangle {
 	object {
-		x=280
+		x=315
 		y=305
 		width=5
 		height=20
@@ -381,7 +381,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="FLASHLXBUTBPM1:S7GPAC-STATUS"
+		chan="XFELDEVLBUT1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -397,7 +397,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="XFELDEVL-BUT1:S7GPAC-STATUS"
+		chan="XFELDEVLBUT11:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -413,27 +413,27 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="XFELDEVL-BUT1:S7GPAC-STATUS"
+		chan="XFELDEVLBUT11:S7GPAC-STATUS"
 	}
 }
 "shell command" {
 	object {
-		x=295
+		x=620
 		y=305
 		width=130
 		height=20
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T flashlxbutbpm1 -bg rgb:40/A0/90 -e telnet -l root flashlxbutbpm1 &"
+		name="xterm -T mdi7psibut1 -bg rgb:40/A0/90 -e telnet -l root mdi7psibut1 &"
 	}
 	clr=14
 	bclr=57
-	label="-flashlxbutbpm1"
+	label="-mdi7psibut1"
 }
 "related display" {
 	object {
-		x=215
+		x=250
 		y=305
 		width=65
 		height=20
@@ -441,7 +441,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=FLASHLXBUTBPM1"
+		args="DEV=XFELDEVLBUT1"
 	}
 	clr=14
 	bclr=57
@@ -941,4 +941,115 @@ text {
 	clr=14
 	bclr=57
 	label="-xfelpsibpm2"
+}
+"shell command" {
+	object {
+		x=5
+		y=325
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="startDM -noMsg -attach -macro DEV=XFELDEVLCAV11 App/config/qt/BPM_GPAC_CAV_SMP_single.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-XFELDEVLCAV11"
+}
+"related display" {
+	object {
+		x=150
+		y=325
+		width=100
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELDEVLCAV1"
+	}
+	clr=14
+	bclr=57
+	label="-XFELDEVLCAV1"
+}
+rectangle {
+	object {
+		x=315
+		y=325
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELDEVLCAV1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=315
+		y=325
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELDEVLCAV1:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=250
+		y=325
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELDEVLCAV1"
+	}
+	clr=14
+	bclr=57
+	label="-Timing"
+}
+rectangle {
+	object {
+		x=135
+		y=325
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELDEVLCAV11:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=135
+		y=325
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELDEVLCAV11:S7GPAC-STATUS"
+	}
 }
