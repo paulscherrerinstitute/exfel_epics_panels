@@ -1,0 +1,1055 @@
+
+file {
+	name="/xfel/controls/App/config/medm/XFEL.adl"
+	version=030105
+}
+display {
+	object {
+		x=8
+		y=34
+		width=810
+		height=380
+	}
+	clr=14
+	bclr=4
+	cmap=""
+	gridSpacing=5
+	gridOn=1
+	snapToGrid=1
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=0
+		width=810
+		height=30
+	}
+	"basic attribute" {
+		clr=1
+	}
+}
+text {
+	object {
+		x=250
+		y=5
+		width=200
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="XFEL BPMs - Development & Maintenance "
+	align="horiz. centered"
+}
+"shell command" {
+	object {
+		x=5
+		y=75
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg yellow -e ssh -X goran@mdi7xfelpc1 &"
+	}
+	clr=14
+	bclr=57
+	label="-mdi7xfelpc1"
+}
+"shell command" {
+	object {
+		x=120
+		y=75
+		width=200
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg rgb:B0/90/60 -T mdi7xfelpc1:50001 -e telnet mdi7xfelpc1 50001 &"
+	}
+	clr=14
+	bclr=57
+	label="-GPAC/MBU IOC [XFELPROD]"
+}
+rectangle {
+	object {
+		x=0
+		y=175
+		width=810
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+text {
+	object {
+		x=335
+		y=180
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="E-XFEL BPMs"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=0
+		y=30
+		width=810
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+polyline {
+	object {
+		x=0
+		y=175
+		width=810
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(1,176)
+		(809,176)
+	}
+}
+text {
+	object {
+		x=355
+		y=35
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Maintenance Tools"
+	align="horiz. centered"
+}
+"shell command" {
+	object {
+		x=325
+		y=75
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="firefox http://mdi7xfelpc1:49011 &"
+	}
+	clr=14
+	bclr=57
+	label="-Archiver Status"
+}
+"shell command" {
+	object {
+		x=325
+		y=100
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="firefox http://localhost &"
+	}
+	clr=14
+	bclr=57
+	label="-Archiver Export"
+}
+"shell command" {
+	object {
+		x=5
+		y=150
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg yellow -e ssh wkoprek@xfeluser1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfeluser1"
+}
+"shell command" {
+	object {
+		x=440
+		y=75
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="firefox http://ttfinfo.desy.de/XFELelog &"
+	}
+	clr=14
+	bclr=57
+	label="-BPM ELOG"
+}
+rectangle {
+	object {
+		x=0
+		y=280
+		width=810
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+polyline {
+	object {
+		x=0
+		y=280
+		width=810
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(1,281)
+		(809,281)
+	}
+}
+text {
+	object {
+		x=340
+		y=285
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Development BPMs"
+	align="horiz. centered"
+}
+"shell command" {
+	object {
+		x=120
+		y=150
+		width=200
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg rgb:B0/90/60 -T mdi7xfelpc1:50002 -e telnet mdi7xfelpc1 50002 &"
+	}
+	clr=14
+	bclr=57
+	label="-Development IOC [XFELDEVL]"
+}
+"related display" {
+	object {
+		x=5
+		y=305
+		width=130
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
+		args="DEV=XFELDEVL-BUT1"
+	}
+	clr=14
+	bclr=57
+	label="-XFELDEVLBUT11"
+}
+"related display" {
+	object {
+		x=150
+		y=305
+		width=100
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELDEVLBUT1"
+	}
+	clr=14
+	bclr=57
+	label="-XFELDEVLBUT1"
+}
+rectangle {
+	object {
+		x=315
+		y=305
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELDEVLBUT1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=315
+		y=305
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELDEVLBUT1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=135
+		y=305
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELDEVLBUT11:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=135
+		y=305
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELDEVLBUT11:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=620
+		y=305
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T mdi7psibut1 -bg rgb:40/A0/90 -e telnet -l root mdi7psibut1 &"
+	}
+	clr=14
+	bclr=57
+	label="-mdi7psibut1"
+}
+"related display" {
+	object {
+		x=250
+		y=305
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELDEVLBUT1"
+	}
+	clr=14
+	bclr=57
+	label="-Timing"
+}
+"related display" {
+	object {
+		x=165
+		y=225
+		width=110
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="BPM_I1_L1_B1_L2_B2.adl"
+	}
+	clr=14
+	bclr=57
+	label="-I1 L1 B1 L2 B2"
+}
+"related display" {
+	object {
+		x=695
+		y=75
+		width=110
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="IBFB.adl"
+	}
+	clr=14
+	bclr=57
+	label="-IBFB"
+}
+"related display" {
+	object {
+		x=5
+		y=200
+		width=110
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="BPM_SERVERS.adl"
+	}
+	clr=14
+	bclr=57
+	label="-BPM Servers"
+}
+"shell command" {
+	object {
+		x=120
+		y=125
+		width=200
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg rgb:B0/90/60 -T mdi7xfelpc1:50003 -e telnet mdi7xfelpc1 50003 &"
+	}
+	clr=14
+	bclr=57
+	label="-IBFB IOC [XFELIBFB]"
+}
+"shell command" {
+	object {
+		x=120
+		y=100
+		width=200
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg rgb:B0/90/60 -T mdi7xfelpc1:50004 -e telnet mdi7xfelpc1 50004 &"
+	}
+	clr=14
+	bclr=57
+	label="-BPM IOC [XFELBPM]"
+}
+polyline {
+	object {
+		x=275
+		y=235
+		width=20
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(275,235)
+		(295,235)
+	}
+}
+"related display" {
+	object {
+		x=295
+		y=225
+		width=110
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="BPM_L3.adl"
+	}
+	clr=14
+	bclr=57
+	label="-L3"
+}
+polyline {
+	object {
+		x=405
+		y=235
+		width=20
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(405,235)
+		(425,235)
+	}
+}
+"related display" {
+	object {
+		x=425
+		y=225
+		width=110
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="BPM_CL_TL_TLD.adl"
+	}
+	clr=14
+	bclr=57
+	label="-CL TL TLD"
+}
+polyline {
+	object {
+		x=535
+		y=220
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(535,235)
+		(565,220)
+	}
+}
+"related display" {
+	object {
+		x=565
+		y=210
+		width=110
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="BPM_T2_SA1.adl"
+	}
+	clr=14
+	bclr=57
+	label="-T2 SA1"
+}
+polyline {
+	object {
+		x=535
+		y=234
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(535,234)
+		(565,249)
+	}
+}
+"related display" {
+	object {
+		x=565
+		y=240
+		width=240
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="BPM_T1_SA2.adl"
+	}
+	clr=14
+	bclr=57
+	label="-T1 SA2 T3 UN1 T5 UN2 T5D"
+}
+"related display" {
+	object {
+		x=695
+		y=210
+		width=110
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="BPM_T4_SA3_T4D.adl"
+	}
+	clr=14
+	bclr=57
+	label="-T4 SA3 T4D"
+}
+polyline {
+	object {
+		x=675
+		y=220
+		width=20
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(675,220)
+		(695,220)
+	}
+}
+text {
+	object {
+		x=195
+		y=55
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IOC Consoles"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=30
+		y=55
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Linux Terminals"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=350
+		y=55
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Archiver"
+	align="horiz. centered"
+}
+"shell command" {
+	object {
+		x=5
+		y=100
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg yellow -e ssh goran@mdi7mpc1896 &"
+	}
+	clr=14
+	bclr=57
+	label="-mdi7mpc1896"
+}
+text {
+	object {
+		x=465
+		y=55
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Tools"
+	align="horiz. centered"
+}
+"shell command" {
+	object {
+		x=440
+		y=100
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="nedit &"
+	}
+	clr=14
+	bclr=57
+	label="-nedit"
+}
+"shell command" {
+	object {
+		x=695
+		y=100
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg tan1 -e ssh wkoprek@xfelpsiibfb &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelpsiibfb"
+}
+text {
+	object {
+		x=155
+		y=210
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=250
+		y=210
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="479"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=290
+		y=210
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="488"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=380
+		y=210
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1650"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=510
+		y=210
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2126"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=420
+		y=210
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1659"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=560
+		y=195
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2071"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=650
+		y=195
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2461"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=690
+		y=195
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2468"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=780
+		y=195
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3102"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=560
+		y=260
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2040"
+	align="horiz. centered"
+}
+"shell command" {
+	object {
+		x=695
+		y=125
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg DarkOrchid1 -e ssh wkoprek@xfelpsibpm1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelpsibpm1"
+}
+"shell command" {
+	object {
+		x=695
+		y=150
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg SeaGreen1 -e ssh wkoprek@xfelpsibpm2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelpsibpm2"
+}
+"shell command" {
+	object {
+		x=5
+		y=325
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="startDM -noMsg -attach -macro DEV=XFELDEVLCAV11 App/config/qt/BPM_GPAC_CAV_SMP_single.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-XFELDEVLCAV11"
+}
+"related display" {
+	object {
+		x=150
+		y=325
+		width=100
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELDEVLCAV1"
+	}
+	clr=14
+	bclr=57
+	label="-XFELDEVLCAV1"
+}
+rectangle {
+	object {
+		x=315
+		y=325
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELDEVLCAV1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=315
+		y=325
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELDEVLCAV1:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=250
+		y=325
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELDEVLCAV1"
+	}
+	clr=14
+	bclr=57
+	label="-Timing"
+}
+rectangle {
+	object {
+		x=135
+		y=325
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELDEVLCAV11:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=135
+		y=325
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELDEVLCAV11:S7GPAC-STATUS"
+	}
+}
