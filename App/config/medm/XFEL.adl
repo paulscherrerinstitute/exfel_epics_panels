@@ -1,14 +1,14 @@
 
 file {
-	name="/xfel/controls/App/config/medm/XFEL.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/XFEL.adl"
 	version=030105
 }
 display {
 	object {
-		x=8
-		y=34
-		width=810
-		height=380
+		x=909
+		y=332
+		width=830
+		height=160
 	}
 	clr=14
 	bclr=4
@@ -91,7 +91,7 @@ rectangle {
 	object {
 		x=0
 		y=0
-		width=810
+		width=830
 		height=30
 	}
 	"basic attribute" {
@@ -100,21 +100,21 @@ rectangle {
 }
 text {
 	object {
-		x=250
-		y=5
+		x=330
+		y=8
 		width=200
 		height=20
 	}
 	"basic attribute" {
 		clr=14
 	}
-	textix="XFEL BPMs - Development & Maintenance "
+	textix="XFEL BPMs & IBFB - Development & Maintenance "
 	align="horiz. centered"
 }
 "shell command" {
 	object {
-		x=5
-		y=75
+		x=485
+		y=80
 		width=110
 		height=20
 	}
@@ -128,9 +128,9 @@ text {
 }
 "shell command" {
 	object {
-		x=120
-		y=75
-		width=200
+		x=5
+		y=130
+		width=150
 		height=20
 	}
 	command[0] {
@@ -139,76 +139,36 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC/MBU IOC [XFELPROD]"
-}
-rectangle {
-	object {
-		x=0
-		y=175
-		width=810
-		height=20
-	}
-	"basic attribute" {
-		clr=9
-	}
-}
-text {
-	object {
-		x=335
-		y=180
-		width=60
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="E-XFEL BPMs"
-	align="horiz. centered"
+	label="-IOC [XFELPROD]"
 }
 rectangle {
 	object {
 		x=0
 		y=30
-		width=810
+		width=830
 		height=20
 	}
 	"basic attribute" {
 		clr=9
 	}
 }
-polyline {
-	object {
-		x=0
-		y=175
-		width=810
-		height=2
-	}
-	"basic attribute" {
-		clr=0
-		width=2
-	}
-	points {
-		(1,176)
-		(809,176)
-	}
-}
 text {
 	object {
-		x=355
-		y=35
+		x=210
+		y=32
 		width=60
 		height=15
 	}
 	"basic attribute" {
 		clr=0
 	}
-	textix="Maintenance Tools"
+	textix="Maintenance Servers"
 	align="horiz. centered"
 }
 "shell command" {
 	object {
-		x=325
-		y=75
+		x=600
+		y=80
 		width=110
 		height=20
 	}
@@ -222,8 +182,8 @@ text {
 }
 "shell command" {
 	object {
-		x=325
-		y=100
+		x=600
+		y=105
 		width=110
 		height=20
 	}
@@ -237,8 +197,8 @@ text {
 }
 "shell command" {
 	object {
-		x=5
-		y=150
+		x=485
+		y=130
 		width=110
 		height=20
 	}
@@ -252,8 +212,8 @@ text {
 }
 "shell command" {
 	object {
-		x=440
-		y=75
+		x=715
+		y=80
 		width=110
 		height=20
 	}
@@ -265,51 +225,11 @@ text {
 	bclr=57
 	label="-BPM ELOG"
 }
-rectangle {
-	object {
-		x=0
-		y=280
-		width=810
-		height=20
-	}
-	"basic attribute" {
-		clr=9
-	}
-}
-polyline {
-	object {
-		x=0
-		y=280
-		width=810
-		height=2
-	}
-	"basic attribute" {
-		clr=0
-		width=2
-	}
-	points {
-		(1,281)
-		(809,281)
-	}
-}
-text {
-	object {
-		x=340
-		y=285
-		width=60
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="Development BPMs"
-	align="horiz. centered"
-}
 "shell command" {
 	object {
-		x=120
-		y=150
-		width=200
+		x=325
+		y=105
+		width=150
 		height=20
 	}
 	command[0] {
@@ -318,185 +238,28 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-Development IOC [XFELDEVL]"
+	label="-IOC [XFELDEVL]"
 }
 "related display" {
 	object {
 		x=5
-		y=305
-		width=130
+		y=55
+		width=150
 		height=20
 	}
 	display[0] {
 		label="Button BPM"
-		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
-		args="DEV=XFELDEVL-BUT1"
+		name="XFELBPM.adl"
 	}
 	clr=14
 	bclr=57
-	label="-XFELDEVLBUT11"
-}
-"related display" {
-	object {
-		x=150
-		y=305
-		width=100
-		height=20
-	}
-	display[0] {
-		label="BPM"
-		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
-		args="DEV=XFELDEVLBUT1"
-	}
-	clr=14
-	bclr=57
-	label="-XFELDEVLBUT1"
-}
-rectangle {
-	object {
-		x=315
-		y=305
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=0"
-		chan="XFELDEVLBUT1:S7GPAC-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=315
-		y=305
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=1"
-		chan="XFELDEVLBUT1:S7GPAC-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=135
-		y=305
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=0"
-		chan="XFELDEVLBUT11:S7GPAC-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=135
-		y=305
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=1"
-		chan="XFELDEVLBUT11:S7GPAC-STATUS"
-	}
+	label="-BPMs"
 }
 "shell command" {
-	object {
-		x=620
-		y=305
-		width=130
-		height=20
-	}
-	command[0] {
-		label="Terminal"
-		name="xterm -T mdi7psibut1 -bg rgb:40/A0/90 -e telnet -l root mdi7psibut1 &"
-	}
-	clr=14
-	bclr=57
-	label="-mdi7psibut1"
-}
-"related display" {
-	object {
-		x=250
-		y=305
-		width=65
-		height=20
-	}
-	display[0] {
-		label="BPM"
-		name="XFELTIM.adl"
-		args="DEV=XFELDEVLBUT1"
-	}
-	clr=14
-	bclr=57
-	label="-Timing"
-}
-"related display" {
 	object {
 		x=165
-		y=225
-		width=110
-		height=20
-	}
-	display[0] {
-		label="Button BPM"
-		name="BPM_I1_L1_B1_L2_B2.adl"
-	}
-	clr=14
-	bclr=57
-	label="-I1 L1 B1 L2 B2"
-}
-"related display" {
-	object {
-		x=695
-		y=75
-		width=110
-		height=20
-	}
-	display[0] {
-		label="Button BPM"
-		name="IBFB.adl"
-	}
-	clr=14
-	bclr=57
-	label="-IBFB"
-}
-"related display" {
-	object {
-		x=5
-		y=200
-		width=110
-		height=20
-	}
-	display[0] {
-		label="Button BPM"
-		name="BPM_SERVERS.adl"
-	}
-	clr=14
-	bclr=57
-	label="-BPM Servers"
-}
-"shell command" {
-	object {
-		x=120
-		y=125
-		width=200
+		y=105
+		width=150
 		height=20
 	}
 	command[0] {
@@ -505,13 +268,13 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-IBFB IOC [XFELIBFB]"
+	label="-IOC [XFELIBFB]"
 }
 "shell command" {
 	object {
-		x=120
-		y=100
-		width=200
+		x=5
+		y=105
+		width=150
 		height=20
 	}
 	command[0] {
@@ -520,174 +283,11 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-BPM IOC [XFELBPM]"
-}
-polyline {
-	object {
-		x=275
-		y=235
-		width=20
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(275,235)
-		(295,235)
-	}
-}
-"related display" {
-	object {
-		x=295
-		y=225
-		width=110
-		height=20
-	}
-	display[0] {
-		label="Button BPM"
-		name="BPM_L3.adl"
-	}
-	clr=14
-	bclr=57
-	label="-L3"
-}
-polyline {
-	object {
-		x=405
-		y=235
-		width=20
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(405,235)
-		(425,235)
-	}
-}
-"related display" {
-	object {
-		x=425
-		y=225
-		width=110
-		height=20
-	}
-	display[0] {
-		label="Button BPM"
-		name="BPM_CL_TL_TLD.adl"
-	}
-	clr=14
-	bclr=57
-	label="-CL TL TLD"
-}
-polyline {
-	object {
-		x=535
-		y=220
-		width=30
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(535,235)
-		(565,220)
-	}
-}
-"related display" {
-	object {
-		x=565
-		y=210
-		width=110
-		height=20
-	}
-	display[0] {
-		label="Button BPM"
-		name="BPM_T2_SA1.adl"
-	}
-	clr=14
-	bclr=57
-	label="-T2 SA1"
-}
-polyline {
-	object {
-		x=535
-		y=234
-		width=30
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(535,234)
-		(565,249)
-	}
-}
-"related display" {
-	object {
-		x=565
-		y=240
-		width=240
-		height=20
-	}
-	display[0] {
-		label="Button BPM"
-		name="BPM_T1_SA2.adl"
-	}
-	clr=14
-	bclr=57
-	label="-T1 SA2 T3 UN1 T5 UN2 T5D"
-}
-"related display" {
-	object {
-		x=695
-		y=210
-		width=110
-		height=20
-	}
-	display[0] {
-		label="Button BPM"
-		name="BPM_T4_SA3_T4D.adl"
-	}
-	clr=14
-	bclr=57
-	label="-T4 SA3 T4D"
-}
-polyline {
-	object {
-		x=675
-		y=220
-		width=20
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(675,220)
-		(695,220)
-	}
+	label="-IOC [XFELBPM]"
 }
 text {
 	object {
-		x=195
-		y=55
-		width=60
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="IOC Consoles"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=30
+		x=510
 		y=55
 		width=60
 		height=15
@@ -700,7 +300,7 @@ text {
 }
 text {
 	object {
-		x=350
+		x=625
 		y=55
 		width=60
 		height=15
@@ -713,8 +313,8 @@ text {
 }
 "shell command" {
 	object {
-		x=5
-		y=100
+		x=485
+		y=105
 		width=110
 		height=20
 	}
@@ -728,7 +328,7 @@ text {
 }
 text {
 	object {
-		x=465
+		x=740
 		y=55
 		width=60
 		height=15
@@ -741,8 +341,8 @@ text {
 }
 "shell command" {
 	object {
-		x=440
-		y=100
+		x=715
+		y=105
 		width=110
 		height=20
 	}
@@ -756,9 +356,9 @@ text {
 }
 "shell command" {
 	object {
-		x=695
-		y=100
-		width=110
+		x=165
+		y=80
+		width=150
 		height=20
 	}
 	command[0] {
@@ -769,154 +369,11 @@ text {
 	bclr=57
 	label="-xfelpsiibfb"
 }
-text {
-	object {
-		x=155
-		y=210
-		width=30
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="0"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=250
-		y=210
-		width=30
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="479"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=290
-		y=210
-		width=30
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="488"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=380
-		y=210
-		width=30
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="1650"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=510
-		y=210
-		width=30
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="2126"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=420
-		y=210
-		width=30
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="1659"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=560
-		y=195
-		width=30
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="2071"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=650
-		y=195
-		width=30
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="2461"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=690
-		y=195
-		width=30
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="2468"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=780
-		y=195
-		width=30
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="3102"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=560
-		y=260
-		width=30
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="2040"
-	align="horiz. centered"
-}
 "shell command" {
 	object {
-		x=695
-		y=125
-		width=110
+		x=5
+		y=80
+		width=150
 		height=20
 	}
 	command[0] {
@@ -929,9 +386,9 @@ text {
 }
 "shell command" {
 	object {
-		x=695
-		y=150
-		width=110
+		x=325
+		y=80
+		width=150
 		height=20
 	}
 	command[0] {
@@ -942,114 +399,93 @@ text {
 	bclr=57
 	label="-xfelpsibpm2"
 }
-"shell command" {
+polyline {
 	object {
-		x=5
-		y=325
-		width=130
-		height=20
+		x=160
+		y=50
+		width=0
+		height=110
 	}
-	command[0] {
-		label="Terminal"
-		name="startDM -noMsg -attach -macro DEV=XFELDEVLCAV11 App/config/qt/BPM_GPAC_CAV_SMP_single.ui &"
+	"basic attribute" {
+		clr=0
 	}
-	clr=14
-	bclr=57
-	label="-XFELDEVLCAV11"
+	points {
+		(160,50)
+		(160,160)
+	}
+}
+polyline {
+	object {
+		x=480
+		y=30
+		width=2
+		height=131
+	}
+	"basic attribute" {
+		clr=0
+		fill="outline"
+		width=2
+	}
+	points {
+		(481,160)
+		(481,31)
+	}
+}
+polyline {
+	object {
+		x=320
+		y=50
+		width=0
+		height=110
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(320,50)
+		(320,160)
+	}
+}
+text {
+	object {
+		x=600
+		y=32
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Tools"
+	align="horiz. centered"
 }
 "related display" {
 	object {
-		x=150
-		y=325
-		width=100
+		x=165
+		y=55
+		width=150
 		height=20
 	}
 	display[0] {
-		label="BPM"
-		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
-		args="DEV=XFELDEVLCAV1"
+		label="Button BPM"
+		name="XFELIBFB.adl"
 	}
 	clr=14
 	bclr=57
-	label="-XFELDEVLCAV1"
-}
-rectangle {
-	object {
-		x=315
-		y=325
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=0"
-		chan="XFELDEVLCAV1:S7GPAC-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=315
-		y=325
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=1"
-		chan="XFELDEVLCAV1:S7GPAC-STATUS"
-	}
+	label="-IBFB"
 }
 "related display" {
 	object {
-		x=250
-		y=325
-		width=65
+		x=325
+		y=55
+		width=150
 		height=20
 	}
 	display[0] {
-		label="BPM"
-		name="XFELTIM.adl"
-		args="DEV=XFELDEVLCAV1"
+		label="Button BPM"
+		name="XFELDEVL.adl"
 	}
 	clr=14
 	bclr=57
-	label="-Timing"
-}
-rectangle {
-	object {
-		x=135
-		y=325
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=0"
-		chan="XFELDEVLCAV11:S7GPAC-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=135
-		y=325
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=1"
-		chan="XFELDEVLCAV11:S7GPAC-STATUS"
-	}
+	label="-Development"
 }

@@ -1,0 +1,375 @@
+
+file {
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/XFELDEVL.adl"
+	version=030105
+}
+display {
+	object {
+		x=118
+		y=474
+		width=600
+		height=200
+	}
+	clr=14
+	bclr=4
+	cmap=""
+	gridSpacing=5
+	gridOn=1
+	snapToGrid=1
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=0
+		width=600
+		height=30
+	}
+	"basic attribute" {
+		clr=1
+	}
+}
+text {
+	object {
+		x=175
+		y=5
+		width=200
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="E-XFEL Development BPMs"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=0
+		y=30
+		width=600
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+text {
+	object {
+		x=340
+		y=35
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Development BPMs"
+	align="horiz. centered"
+}
+"related display" {
+	object {
+		x=5
+		y=55
+		width=130
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
+		args="DEV=XFELDEVL-BUT1"
+	}
+	clr=14
+	bclr=57
+	label="-XFELDEVLBUT11"
+}
+"related display" {
+	object {
+		x=150
+		y=55
+		width=100
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELDEVLBUT1"
+	}
+	clr=14
+	bclr=57
+	label="-XFELDEVLBUT1"
+}
+rectangle {
+	object {
+		x=315
+		y=55
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELDEVLBUT1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=315
+		y=55
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELDEVLBUT1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=135
+		y=55
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELDEVLBUT11:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=135
+		y=55
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELDEVLBUT11:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=365
+		y=55
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T mdi7psibut1 -bg rgb:40/A0/90 -e telnet -l root mdi7psibut1 &"
+	}
+	clr=14
+	bclr=57
+	label="-mdi7psibut1"
+}
+"related display" {
+	object {
+		x=250
+		y=55
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELDEVLBUT1"
+	}
+	clr=14
+	bclr=57
+	label="-Timing"
+}
+"shell command" {
+	object {
+		x=5
+		y=75
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="startDM -noMsg -attach -macro DEV=XFELDEVLCAV11 App/config/qt/BPM_GPAC_CAV_SMP_single.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-XFELDEVLCAV11"
+}
+"related display" {
+	object {
+		x=150
+		y=75
+		width=100
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELDEVLCAV1"
+	}
+	clr=14
+	bclr=57
+	label="-XFELDEVLCAV1"
+}
+rectangle {
+	object {
+		x=315
+		y=75
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELDEVLCAV1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=315
+		y=75
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELDEVLCAV1:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=250
+		y=75
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELDEVLCAV1"
+	}
+	clr=14
+	bclr=57
+	label="-Timing"
+}
+rectangle {
+	object {
+		x=135
+		y=75
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELDEVLCAV11:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=135
+		y=75
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELDEVLCAV11:S7GPAC-STATUS"
+	}
+}

@@ -1,12 +1,12 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/cvs/G/XFEL/14_Firmware/13_Prototype/Button_BPM/05_EPICS/Button_Eth/App/config/medm/IBFBCTRLFB.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCTRLFB.adl"
 	version=030105
 }
 display {
 	object {
-		x=684
-		y=172
+		x=284
+		y=141
 		width=1020
 		height=900
 	}
@@ -85,6 +85,219 @@ display {
 		3cb420,
 		289315,
 		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=966
+		y=251
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=5416"
+		chan="$(DEV):X-SASE-PACKETS"
+	}
+}
+rectangle {
+	object {
+		x=856
+		y=251
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=8124"
+		chan="$(DEV):Y-SASE-PACKETS"
+	}
+}
+rectangle {
+	object {
+		x=801
+		y=251
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=10832"
+		chan="$(DEV):Y-UPDOWN-PACKETS"
+	}
+}
+rectangle {
+	object {
+		x=911
+		y=231
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(DEV):X-UPDOWN-CRC-ERR"
+	}
+}
+rectangle {
+	object {
+		x=801
+		y=231
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(DEV):Y-UPDOWN-CRC-ERR"
+	}
+}
+rectangle {
+	object {
+		x=966
+		y=211
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(DEV):X-SASE-BAD-DATA"
+	}
+}
+rectangle {
+	object {
+		x=911
+		y=211
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(DEV):X-UPDOWN-BAD-DATA"
+	}
+}
+rectangle {
+	object {
+		x=856
+		y=211
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(DEV):Y-SASE-BAD-DATA"
+	}
+}
+rectangle {
+	object {
+		x=801
+		y=211
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(DEV):Y-UPDOWN-BAD-DATA"
+	}
+}
+rectangle {
+	object {
+		x=966
+		y=191
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(DEV):X-SASE-LOSS-CNT"
+	}
+}
+rectangle {
+	object {
+		x=911
+		y=191
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(DEV):X-UPDOWN-LOSS-CNT"
+	}
+}
+rectangle {
+	object {
+		x=856
+		y=191
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(DEV):Y-SASE-LOSS-CNT"
+	}
+}
+rectangle {
+	object {
+		x=856
+		y=231
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(DEV):Y-SASE-CRC-ERR"
+	}
+}
+rectangle {
+	object {
+		x=801
+		y=191
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(DEV):Y-UPDOWN-LOSS-CNT"
 	}
 }
 rectangle {
@@ -1589,22 +1802,6 @@ polyline {
 }
 "text update" {
 	object {
-		x=915
-		y=255
-		width=45
-		height=10
-	}
-	monitor {
-		chan="$(DEV):X-UPDOWN-PACKETS"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	limits {
-	}
-}
-"text update" {
-	object {
 		x=970
 		y=255
 		width=45
@@ -1660,22 +1857,6 @@ polyline {
 	}
 	monitor {
 		chan="$(DEV):X-UPDOWN-CRC-ERR"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=970
-		y=235
-		width=45
-		height=10
-	}
-	monitor {
-		chan="$(DEV):X-SASE-CRC-ERR"
 		clr=14
 		bclr=4
 	}
@@ -7493,6 +7674,69 @@ rectangle {
 	}
 	monitor {
 		chan="$(DEV):X-SASE2-BPM2-PACKETS"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=966
+		y=231
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(DEV):X-SASE-CRC-ERR"
+	}
+}
+"text update" {
+	object {
+		x=970
+		y=235
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-SASE-CRC-ERR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=911
+		y=251
+		width=54
+		height=19
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=10832"
+		chan="$(DEV):X-UPDOWN-PACKETS"
+	}
+}
+"text update" {
+	object {
+		x=915
+		y=255
+		width=45
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-UPDOWN-PACKETS"
 		clr=14
 		bclr=4
 	}

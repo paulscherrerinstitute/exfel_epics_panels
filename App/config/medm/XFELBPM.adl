@@ -1,0 +1,1035 @@
+
+file {
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/XFELBPM.adl"
+	version=030105
+}
+display {
+	object {
+		x=811
+		y=400
+		width=660
+		height=370
+	}
+	clr=14
+	bclr=4
+	cmap=""
+	gridSpacing=5
+	gridOn=1
+	snapToGrid=1
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=0
+		width=660
+		height=30
+	}
+	"basic attribute" {
+		clr=1
+	}
+}
+text {
+	object {
+		x=220
+		y=5
+		width=200
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="E-XFEL BPM EPICS Servers"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=0
+		y=260
+		width=660
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+text {
+	object {
+		x=265
+		y=265
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="E-XFEL BPM Sections"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=0
+		y=30
+		width=450
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+polyline {
+	object {
+		x=0
+		y=260
+		width=661
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(1,261)
+		(660,261)
+	}
+}
+"related display" {
+	object {
+		x=10
+		y=310
+		width=110
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="BPM_I1_L1_B1_L2_B2.adl"
+	}
+	clr=14
+	bclr=57
+	label="-I1 L1 B1 L2 B2"
+}
+polyline {
+	object {
+		x=120
+		y=320
+		width=20
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(120,320)
+		(140,320)
+	}
+}
+"related display" {
+	object {
+		x=140
+		y=310
+		width=110
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="BPM_L3.adl"
+	}
+	clr=14
+	bclr=57
+	label="-L3"
+}
+polyline {
+	object {
+		x=250
+		y=320
+		width=20
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(250,320)
+		(270,320)
+	}
+}
+"related display" {
+	object {
+		x=270
+		y=310
+		width=110
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="BPM_CL_TL_TLD.adl"
+	}
+	clr=14
+	bclr=57
+	label="-CL TL TLD"
+}
+polyline {
+	object {
+		x=380
+		y=305
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(380,320)
+		(410,305)
+	}
+}
+"related display" {
+	object {
+		x=410
+		y=295
+		width=110
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="BPM_T2_SA1.adl"
+	}
+	clr=14
+	bclr=57
+	label="-T2 SA1"
+}
+polyline {
+	object {
+		x=380
+		y=319
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(380,319)
+		(410,334)
+	}
+}
+"related display" {
+	object {
+		x=410
+		y=325
+		width=240
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="BPM_T1_SA2.adl"
+	}
+	clr=14
+	bclr=57
+	label="-T1 SA2 T3 UN1 T5 UN2 T5D"
+}
+"related display" {
+	object {
+		x=540
+		y=295
+		width=110
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="BPM_T4_SA3_T4D.adl"
+	}
+	clr=14
+	bclr=57
+	label="-T4 SA3 T4D"
+}
+polyline {
+	object {
+		x=520
+		y=305
+		width=20
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(520,305)
+		(540,305)
+	}
+}
+text {
+	object {
+		x=0
+		y=295
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=95
+		y=295
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="479"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=135
+		y=295
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="488"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=225
+		y=295
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1650"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=355
+		y=295
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2126"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=265
+		y=295
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1659"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=405
+		y=280
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2071"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=495
+		y=280
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2461"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=535
+		y=280
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2468"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=625
+		y=280
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3102"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=405
+		y=345
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2040"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=205
+		y=33
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="E-XFEL BPM Servers"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=0
+		y=110
+		width=150
+		height=5
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BUTBPM:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=110
+		width=150
+		height=5
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BUTBPM:S7GPAC-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=5
+		y=75
+		width=140
+		height=16
+	}
+	monitor {
+		chan="BUTBPM:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+"related display" {
+	object {
+		x=0
+		y=130
+		width=150
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
+		args="DEV=BUTBPM"
+	}
+	clr=14
+	bclr=57
+	label="-Button BPM"
+}
+"message button" {
+	object {
+		x=0
+		y=90
+		width=150
+		height=20
+	}
+	control {
+		chan="BUTBPM:BPM-STRING.AA"
+		clr=14
+		bclr=4
+	}
+	label="Disconnect"
+	press_msg=":51235# "
+}
+"text update" {
+	object {
+		x=50
+		y=115
+		width=100
+		height=16
+	}
+	monitor {
+		chan="BUTBPM:CONN-DEV.SVAL"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=5
+		y=115
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Device:"
+}
+"related display" {
+	object {
+		x=0
+		y=150
+		width=150
+		height=20
+	}
+	display[0] {
+		label="FL"
+		name="F_DI_FIN250_BPM_GPAC_BUT_RFFE.adl"
+		args="DEV=BUTBPM"
+	}
+	clr=14
+	bclr=57
+	label="-Button RFFE"
+}
+"related display" {
+	object {
+		x=0
+		y=170
+		width=150
+		height=20
+	}
+	display[0] {
+		label="FL"
+		name="F_DI_FIN250_BPM_GPAC_BUT_POS_TD.adl"
+		args="DEV=BUTBPM"
+	}
+	clr=14
+	bclr=57
+	label="-Position"
+}
+text {
+	object {
+		x=10
+		y=55
+		width=130
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Button BPM"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=160
+		y=55
+		width=130
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Cavity BPM"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=310
+		y=55
+		width=130
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Re-entrant BPM"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=150
+		y=50
+		width=0
+		height=210
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(150,50)
+		(150,260)
+	}
+}
+polyline {
+	object {
+		x=300
+		y=50
+		width=0
+		height=210
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(300,50)
+		(300,260)
+	}
+}
+"text update" {
+	object {
+		x=155
+		y=75
+		width=140
+		height=16
+	}
+	monitor {
+		chan="CAVBPM:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+"message button" {
+	object {
+		x=150
+		y=90
+		width=150
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=4
+	}
+	label="Disconnect"
+	press_msg=":51235# "
+}
+rectangle {
+	object {
+		x=151
+		y=110
+		width=149
+		height=5
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="CAVBPM:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=151
+		y=110
+		width=149
+		height=5
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="CAVBPM:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=155
+		y=115
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Device:"
+}
+"text update" {
+	object {
+		x=200
+		y=115
+		width=100
+		height=16
+	}
+	monitor {
+		chan="CAVBPM:CONN-DEV.SVAL"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+	object {
+		x=150
+		y=130
+		width=150
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="startDM -noMsg -attach -macro DEV=CAVBPM App/config/qt/BPM_GPAC_CAV_SMP_single.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-Cavity BPM"
+}
+"text update" {
+	object {
+		x=305
+		y=75
+		width=140
+		height=16
+	}
+	monitor {
+		chan="RENBPM:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+"message button" {
+	object {
+		x=300
+		y=90
+		width=150
+		height=20
+	}
+	control {
+		chan="RENBPM:BPM-STRING.AA"
+		clr=14
+		bclr=4
+	}
+	label="Disconnect"
+	press_msg=":51235# "
+}
+rectangle {
+	object {
+		x=301
+		y=110
+		width=149
+		height=5
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="RENBPM:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=301
+		y=110
+		width=149
+		height=5
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="RENBPM:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=305
+		y=115
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Device:"
+}
+"text update" {
+	object {
+		x=350
+		y=115
+		width=100
+		height=16
+	}
+	monitor {
+		chan="RENBPM:CONN-DEV.SVAL"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+	object {
+		x=300
+		y=130
+		width=150
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="caqtdm -noMsg -attach -macro DEV=RENBPM App/config/qt/BPM_GPAC_REN_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-Re-entrant BPM"
+}
+"shell command" {
+	object {
+		x=150
+		y=150
+		width=150
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="caqtdm -noMsg -attach -macro DEV=CAVBPM App/config/qt/BPM_GPAC_CAV_RFFE_3GHz3_single.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-Cavity RFFE"
+}
+rectangle {
+	object {
+		x=0
+		y=215
+		width=150
+		height=5
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BUTBPMSERV:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=215
+		width=150
+		height=5
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BUTBPMSERV:S7GPAC-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=5
+		y=200
+		width=140
+		height=16
+	}
+	monitor {
+		chan="BUTBPMSERV:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"related display" {
+	object {
+		x=0
+		y=220
+		width=150
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT_EEPROM.adl"
+		args="DEV=BUTBPMSERV"
+	}
+	clr=14
+	bclr=57
+	label="-Button EEPROM"
+}
+"related display" {
+	object {
+		x=0
+		y=240
+		width=150
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT_DET.adl"
+		args="DEV=BUTBPMSERV"
+	}
+	clr=14
+	bclr=57
+	label="-RFFE Detector"
+}
+polyline {
+	object {
+		x=0
+		y=70
+		width=450
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,70)
+		(450,70)
+	}
+}
+polyline {
+	object {
+		x=450
+		y=30
+		width=2
+		height=231
+	}
+	"basic attribute" {
+		clr=0
+		fill="outline"
+		width=2
+	}
+	points {
+		(451,260)
+		(451,31)
+	}
+}
