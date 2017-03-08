@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=811
-		y=400
+		x=184
+		y=91
 		width=660
 		height=370
 	}
@@ -286,7 +286,7 @@ polyline {
 	object {
 		x=410
 		y=325
-		width=240
+		width=110
 		height=20
 	}
 	display[0] {
@@ -295,7 +295,7 @@ polyline {
 	}
 	clr=14
 	bclr=57
-	label="-T1 SA2 T3 UN1 T5 UN2 T5D"
+	label="-T1 SA2"
 }
 "related display" {
 	object {
@@ -1032,4 +1032,73 @@ polyline {
 		(451,260)
 		(451,31)
 	}
+}
+"related display" {
+	object {
+		x=540
+		y=325
+		width=110
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="BPM_T1_SA2.adl"
+	}
+	clr=14
+	bclr=57
+	label="-T3 UN1 T5 UN2 T5D"
+}
+text {
+	object {
+		x=495
+		y=345
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2422"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=520
+		y=335
+		width=20
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(520,335)
+		(540,335)
+	}
+}
+text {
+	object {
+		x=535
+		y=345
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2430"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=625
+		y=345
+		width=30
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3185"
+	align="horiz. centered"
 }
