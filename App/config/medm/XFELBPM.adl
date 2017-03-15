@@ -1,12 +1,12 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/XFELBPM.adl"
+	name="/xfel/controls/App/config/medm/XFELBPM.adl"
 	version=030105
 }
 display {
 	object {
-		x=184
-		y=91
+		x=20
+		y=263
 		width=660
 		height=370
 	}
@@ -795,7 +795,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="startDM -noMsg -attach -macro DEV=CAVBPM App/config/qt/BPM_GPAC_CAV_SMP_single.ui &"
+		name="xfel_qt.sh CAVBPM BPM_GPAC_CAV_SMP_single.ui &"
 	}
 	clr=14
 	bclr=57
@@ -900,7 +900,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="caqtdm -noMsg -attach -macro DEV=RENBPM App/config/qt/BPM_GPAC_REN_SMP.ui &"
+		name="xfel_qt.sh RENBPM BPM_GPAC_REN_SMP.ui &"
 	}
 	clr=14
 	bclr=57
@@ -915,7 +915,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="caqtdm -noMsg -attach -macro DEV=CAVBPM App/config/qt/BPM_GPAC_CAV_RFFE_3GHz3_single.ui &"
+		name="xfel_qt.sh CAVBPM BPM_GPAC_CAV_RFFE_3GHz3_single.ui &"
 	}
 	clr=14
 	bclr=57

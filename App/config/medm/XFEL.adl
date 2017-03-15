@@ -6,9 +6,9 @@ file {
 display {
 	object {
 		x=5
-		y=30
-		width=830
-		height=160
+		y=60
+		width=945
+		height=180
 	}
 	clr=14
 	bclr=4
@@ -91,7 +91,7 @@ rectangle {
 	object {
 		x=0
 		y=0
-		width=830
+		width=945
 		height=30
 	}
 	"basic attribute" {
@@ -120,7 +120,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -bg yellow -e ssh -X goran@mdi7xfelpc1 &"
+		name="xterm -fg black -bg yellow -e ssh -X goran@mdi7xfelpc1 &"
 	}
 	clr=14
 	bclr=57
@@ -145,7 +145,7 @@ rectangle {
 	object {
 		x=0
 		y=30
-		width=830
+		width=945
 		height=20
 	}
 	"basic attribute" {
@@ -204,7 +204,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -bg yellow -e ssh wkoprek@xfeluser1 &"
+		name="xterm -fg black -bg yellow -e ssh wkoprek@xfeluser1 &"
 	}
 	clr=14
 	bclr=57
@@ -223,7 +223,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-BPM ELOG"
+	label="-E-XFEL ELOG"
 }
 "shell command" {
 	object {
@@ -279,7 +279,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -bg rgb:B0/90/60 -T mdi7xfelpc1:50004 -e telnet mdi7xfelpc1 50004 &"
+		name="xterm -bg rgb:B0/90/60 -T xfelpsibpm1:50003 -e telnet xfelpsibpm1 50003 &"
 	}
 	clr=14
 	bclr=57
@@ -320,7 +320,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -bg yellow -e ssh goran@mdi7mpc1896 &"
+		name="xterm -fg black -bg yellow -e ssh goran@mdi7mpc1896 &"
 	}
 	clr=14
 	bclr=57
@@ -348,11 +348,11 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="nedit &"
+		name="notepadqq &"
 	}
 	clr=14
 	bclr=57
-	label="-nedit"
+	label="-notepadqq"
 }
 "shell command" {
 	object {
@@ -363,7 +363,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T xfelpsiibfb -bg tan1 -e ssh wkoprek@xfelpsiibfb &"
+		name="xterm -T xfelpsiibfb -fg black -bg tan1 -e ssh wkoprek@xfelpsiibfb &"
 	}
 	clr=14
 	bclr=57
@@ -378,7 +378,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T xfelpsibpm1 -bg DarkOrchid1 -e ssh wkoprek@xfelpsibpm1 &"
+		name="xterm -T xfelpsibpm1 -fg black -bg DarkOrchid1 -e ssh wkoprek@xfelpsibpm1 &"
 	}
 	clr=14
 	bclr=57
@@ -393,7 +393,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T xfelpsibpm2 -bg SeaGreen1 -e ssh wkoprek@xfelpsibpm2 &"
+		name="xterm -T xfelpsibpm2 -fg black -bg SeaGreen1 -e ssh wkoprek@xfelpsibpm2 &"
 	}
 	clr=14
 	bclr=57
@@ -404,14 +404,14 @@ polyline {
 		x=160
 		y=50
 		width=0
-		height=110
+		height=130
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
 		(160,50)
-		(160,160)
+		(160,180)
 	}
 }
 polyline {
@@ -419,7 +419,7 @@ polyline {
 		x=480
 		y=30
 		width=2
-		height=131
+		height=150
 	}
 	"basic attribute" {
 		clr=0
@@ -427,7 +427,7 @@ polyline {
 		width=2
 	}
 	points {
-		(481,160)
+		(481,179)
 		(481,31)
 	}
 }
@@ -436,14 +436,14 @@ polyline {
 		x=320
 		y=50
 		width=0
-		height=110
+		height=130
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
 		(320,50)
-		(320,160)
+		(320,180)
 	}
 }
 text {
@@ -488,4 +488,47 @@ text {
 	clr=14
 	bclr=57
 	label="-Development"
+}
+text {
+	object {
+		x=855
+		y=55
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="DOOCS"
+	align="horiz. centered"
+}
+"shell command" {
+	object {
+		x=830
+		y=80
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="jddd -run -file /svn/user/gevorg/bpm/xfelbpm.xml &"
+	}
+	clr=14
+	bclr=57
+	label="-BPM Expert"
+}
+"shell command" {
+	object {
+		x=830
+		y=105
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xfel &"
+	}
+	clr=14
+	bclr=57
+	label="-XFEL Main"
 }
