@@ -1,12 +1,12 @@
 
 file {
-	name="/home/goran/epics/xfel/App/config/medm/F_DI_FIN250_BPM_GPAC_BUT_POS_TD.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/F_DI_FIN250_BPM_GPAC_BUT_POS_TD.adl"
 	version=030105
 }
 display {
 	object {
-		x=268
-		y=40
+		x=309
+		y=346
 		width=960
 		height=785
 	}
@@ -89,7 +89,18 @@ display {
 }
 rectangle {
 	object {
-		x=405
+		x=630
+		y=540
+		width=200
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=80
 		y=610
 		width=280
 		height=75
@@ -119,7 +130,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=325
+		x=0
 		y=540
 		width=630
 		height=20
@@ -239,7 +250,7 @@ text {
 }
 polyline {
 	object {
-		x=325
+		x=0
 		y=540
 		width=301
 		height=2
@@ -249,13 +260,13 @@ polyline {
 		width=2
 	}
 	points {
-		(326,541)
-		(625,541)
+		(1,541)
+		(300,541)
 	}
 }
 text {
 	object {
-		x=330
+		x=5
 		y=615
 		width=70
 		height=10
@@ -268,7 +279,7 @@ text {
 }
 text {
 	object {
-		x=330
+		x=5
 		y=645
 		width=70
 		height=10
@@ -281,7 +292,7 @@ text {
 }
 text {
 	object {
-		x=330
+		x=5
 		y=670
 		width=70
 		height=10
@@ -294,7 +305,7 @@ text {
 }
 text {
 	object {
-		x=615
+		x=290
 		y=545
 		width=60
 		height=10
@@ -348,7 +359,7 @@ text {
 }
 polyline {
 	object {
-		x=325
+		x=0
 		y=560
 		width=630
 		height=0
@@ -357,8 +368,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(325,560)
-		(955,560)
+		(0,560)
+		(630,560)
 	}
 }
 polyline {
@@ -1172,9 +1183,9 @@ text {
 }
 polyline {
 	object {
-		x=325
+		x=0
 		y=540
-		width=631
+		width=831
 		height=2
 	}
 	"basic attribute" {
@@ -1182,8 +1193,8 @@ polyline {
 		width=2
 	}
 	points {
-		(326,541)
-		(955,541)
+		(1,541)
+		(830,541)
 	}
 }
 "cartesian plot" {
@@ -1245,7 +1256,7 @@ polyline {
 }
 polyline {
 	object {
-		x=326
+		x=1
 		y=610
 		width=630
 		height=0
@@ -1254,13 +1265,13 @@ polyline {
 		clr=0
 	}
 	points {
-		(326,610)
-		(956,610)
+		(1,610)
+		(631,610)
 	}
 }
 "text update" {
 	object {
-		x=411
+		x=86
 		y=615
 		width=80
 		height=15
@@ -1276,7 +1287,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=410
+		x=85
 		y=640
 		width=80
 		height=15
@@ -1292,7 +1303,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=410
+		x=85
 		y=665
 		width=80
 		height=15
@@ -1308,7 +1319,7 @@ polyline {
 }
 polyline {
 	object {
-		x=326
+		x=1
 		y=635
 		width=630
 		height=0
@@ -1317,13 +1328,13 @@ polyline {
 		clr=0
 	}
 	points {
-		(326,635)
-		(956,635)
+		(1,635)
+		(631,635)
 	}
 }
 text {
 	object {
-		x=435
+		x=110
 		y=595
 		width=20
 		height=10
@@ -1336,7 +1347,7 @@ text {
 }
 polyline {
 	object {
-		x=405
+		x=80
 		y=590
 		width=0
 		height=195
@@ -1345,13 +1356,13 @@ polyline {
 		clr=0
 	}
 	points {
-		(405,590)
-		(405,785)
+		(80,590)
+		(80,785)
 	}
 }
 polyline {
 	object {
-		x=495
+		x=170
 		y=590
 		width=0
 		height=195
@@ -1360,13 +1371,13 @@ polyline {
 		clr=0
 	}
 	points {
-		(495,590)
-		(495,785)
+		(170,590)
+		(170,785)
 	}
 }
 polyline {
 	object {
-		x=585
+		x=260
 		y=590
 		width=0
 		height=195
@@ -1375,8 +1386,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(585,590)
-		(585,785)
+		(260,590)
+		(260,785)
 	}
 }
 rectangle {
@@ -1388,22 +1399,6 @@ rectangle {
 	}
 	"basic attribute" {
 		clr=9
-	}
-}
-polyline {
-	object {
-		x=0
-		y=540
-		width=329
-		height=2
-	}
-	"basic attribute" {
-		clr=0
-		width=2
-	}
-	points {
-		(1,541)
-		(328,541)
 	}
 }
 text {
@@ -1452,7 +1447,7 @@ polyline {
 }
 text {
 	object {
-		x=530
+		x=205
 		y=595
 		width=20
 		height=10
@@ -1465,7 +1460,7 @@ text {
 }
 polyline {
 	object {
-		x=325
+		x=0
 		y=660
 		width=630
 		height=0
@@ -1474,8 +1469,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(325,660)
-		(955,660)
+		(0,660)
+		(630,660)
 	}
 }
 text {
@@ -1507,7 +1502,7 @@ text {
 }
 polyline {
 	object {
-		x=325
+		x=0
 		y=685
 		width=630
 		height=0
@@ -1516,13 +1511,13 @@ polyline {
 		clr=0
 	}
 	points {
-		(325,685)
-		(955,685)
+		(0,685)
+		(630,685)
 	}
 }
 text {
 	object {
-		x=615
+		x=290
 		y=595
 		width=20
 		height=10
@@ -1546,9 +1541,9 @@ rectangle {
 }
 polyline {
 	object {
-		x=0
-		y=195
-		width=301
+		x=630
+		y=660
+		width=202
 		height=2
 	}
 	"basic attribute" {
@@ -1556,8 +1551,8 @@ polyline {
 		width=2
 	}
 	points {
-		(1,196)
-		(300,196)
+		(631,661)
+		(831,661)
 	}
 }
 text {
@@ -1727,7 +1722,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=500
+		x=175
 		y=615
 		width=80
 		height=15
@@ -1743,7 +1738,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=500
+		x=175
 		y=640
 		width=80
 		height=15
@@ -1759,7 +1754,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=500
+		x=175
 		y=665
 		width=80
 		height=15
@@ -1775,7 +1770,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=590
+		x=265
 		y=615
 		width=80
 		height=15
@@ -1791,7 +1786,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=590
+		x=265
 		y=640
 		width=80
 		height=15
@@ -1807,7 +1802,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=590
+		x=265
 		y=665
 		width=80
 		height=15
@@ -2258,7 +2253,7 @@ text {
 }
 polyline {
 	object {
-		x=325
+		x=0
 		y=590
 		width=630
 		height=0
@@ -2267,13 +2262,13 @@ polyline {
 		clr=0
 	}
 	points {
-		(325,590)
-		(955,590)
+		(0,590)
+		(630,590)
 	}
 }
 text {
 	object {
-		x=330
+		x=5
 		y=570
 		width=80
 		height=10
@@ -2286,7 +2281,7 @@ text {
 }
 text {
 	object {
-		x=505
+		x=180
 		y=570
 		width=80
 		height=10
@@ -2299,7 +2294,7 @@ text {
 }
 "wheel switch" {
 	object {
-		x=410
+		x=85
 		y=560
 		width=75
 		height=30
@@ -2314,7 +2309,7 @@ text {
 }
 "wheel switch" {
 	object {
-		x=605
+		x=280
 		y=560
 		width=75
 		height=30
@@ -2329,7 +2324,7 @@ text {
 }
 "message button" {
 	object {
-		x=850
+		x=525
 		y=565
 		width=100
 		height=20
@@ -2344,7 +2339,7 @@ text {
 }
 text {
 	object {
-		x=330
+		x=5
 		y=695
 		width=70
 		height=10
@@ -2357,7 +2352,7 @@ text {
 }
 polyline {
 	object {
-		x=326
+		x=1
 		y=710
 		width=630
 		height=0
@@ -2366,13 +2361,13 @@ polyline {
 		clr=0
 	}
 	points {
-		(326,710)
-		(956,710)
+		(1,710)
+		(631,710)
 	}
 }
 text {
 	object {
-		x=330
+		x=5
 		y=720
 		width=70
 		height=10
@@ -2385,7 +2380,7 @@ text {
 }
 polyline {
 	object {
-		x=325
+		x=0
 		y=735
 		width=630
 		height=0
@@ -2394,13 +2389,13 @@ polyline {
 		clr=0
 	}
 	points {
-		(325,735)
-		(955,735)
+		(0,735)
+		(630,735)
 	}
 }
 text {
 	object {
-		x=330
+		x=5
 		y=745
 		width=70
 		height=10
@@ -2413,7 +2408,7 @@ text {
 }
 polyline {
 	object {
-		x=325
+		x=0
 		y=760
 		width=630
 		height=0
@@ -2422,13 +2417,13 @@ polyline {
 		clr=0
 	}
 	points {
-		(325,760)
-		(955,760)
+		(0,760)
+		(630,760)
 	}
 }
 "text update" {
 	object {
-		x=411
+		x=86
 		y=690
 		width=80
 		height=15
@@ -2444,7 +2439,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=500
+		x=175
 		y=690
 		width=80
 		height=15
@@ -2460,7 +2455,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=590
+		x=265
 		y=690
 		width=80
 		height=15
@@ -2476,7 +2471,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=590
+		x=265
 		y=715
 		width=80
 		height=15
@@ -2492,7 +2487,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=500
+		x=175
 		y=715
 		width=80
 		height=15
@@ -2508,7 +2503,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=410
+		x=85
 		y=715
 		width=80
 		height=15
@@ -2524,7 +2519,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=410
+		x=85
 		y=740
 		width=80
 		height=15
@@ -2540,7 +2535,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=500
+		x=175
 		y=740
 		width=80
 		height=15
@@ -2556,7 +2551,7 @@ polyline {
 }
 "text update" {
 	object {
-		x=590
+		x=265
 		y=740
 		width=80
 		height=15
@@ -2572,7 +2567,7 @@ polyline {
 }
 text {
 	object {
-		x=330
+		x=5
 		y=770
 		width=70
 		height=10
@@ -2585,7 +2580,7 @@ text {
 }
 "text update" {
 	object {
-		x=410
+		x=85
 		y=765
 		width=80
 		height=15
@@ -2601,7 +2596,7 @@ text {
 }
 "text update" {
 	object {
-		x=500
+		x=175
 		y=765
 		width=80
 		height=15
@@ -2617,7 +2612,7 @@ text {
 }
 "text update" {
 	object {
-		x=590
+		x=265
 		y=765
 		width=80
 		height=15
@@ -3062,7 +3057,7 @@ polyline {
 }
 polyline {
 	object {
-		x=685
+		x=360
 		y=560
 		width=0
 		height=225
@@ -3071,13 +3066,13 @@ polyline {
 		clr=0
 	}
 	points {
-		(685,560)
-		(685,785)
+		(360,560)
+		(360,785)
 	}
 }
 polyline {
 	object {
-		x=775
+		x=450
 		y=590
 		width=0
 		height=195
@@ -3086,13 +3081,13 @@ polyline {
 		clr=0
 	}
 	points {
-		(775,590)
-		(775,785)
+		(450,590)
+		(450,785)
 	}
 }
 text {
 	object {
-		x=720
+		x=395
 		y=595
 		width=20
 		height=10
@@ -3105,7 +3100,7 @@ text {
 }
 "text update" {
 	object {
-		x=690
+		x=365
 		y=615
 		width=80
 		height=15
@@ -3121,7 +3116,7 @@ text {
 }
 "text update" {
 	object {
-		x=690
+		x=365
 		y=640
 		width=80
 		height=15
@@ -3137,7 +3132,7 @@ text {
 }
 "text update" {
 	object {
-		x=690
+		x=365
 		y=665
 		width=80
 		height=15
@@ -3153,7 +3148,7 @@ text {
 }
 "text update" {
 	object {
-		x=690
+		x=365
 		y=690
 		width=80
 		height=15
@@ -3169,7 +3164,7 @@ text {
 }
 "text update" {
 	object {
-		x=690
+		x=365
 		y=715
 		width=80
 		height=15
@@ -3185,7 +3180,7 @@ text {
 }
 "text update" {
 	object {
-		x=690
+		x=365
 		y=740
 		width=80
 		height=15
@@ -3201,7 +3196,7 @@ text {
 }
 "text update" {
 	object {
-		x=690
+		x=365
 		y=765
 		width=80
 		height=15
@@ -3217,7 +3212,7 @@ text {
 }
 polyline {
 	object {
-		x=865
+		x=540
 		y=590
 		width=0
 		height=195
@@ -3226,13 +3221,13 @@ polyline {
 		clr=0
 	}
 	points {
-		(865,590)
-		(865,785)
+		(540,590)
+		(540,785)
 	}
 }
 text {
 	object {
-		x=810
+		x=485
 		y=595
 		width=20
 		height=10
@@ -3245,7 +3240,7 @@ text {
 }
 "text update" {
 	object {
-		x=780
+		x=455
 		y=615
 		width=80
 		height=15
@@ -3261,7 +3256,7 @@ text {
 }
 "text update" {
 	object {
-		x=780
+		x=455
 		y=640
 		width=80
 		height=15
@@ -3277,7 +3272,7 @@ text {
 }
 "text update" {
 	object {
-		x=780
+		x=455
 		y=665
 		width=80
 		height=15
@@ -3293,7 +3288,7 @@ text {
 }
 "text update" {
 	object {
-		x=780
+		x=455
 		y=690
 		width=80
 		height=15
@@ -3309,7 +3304,7 @@ text {
 }
 "text update" {
 	object {
-		x=780
+		x=455
 		y=715
 		width=80
 		height=15
@@ -3325,7 +3320,7 @@ text {
 }
 "text update" {
 	object {
-		x=780
+		x=455
 		y=740
 		width=80
 		height=15
@@ -3341,7 +3336,7 @@ text {
 }
 "text update" {
 	object {
-		x=780
+		x=455
 		y=765
 		width=80
 		height=15
@@ -3355,24 +3350,9 @@ text {
 	limits {
 	}
 }
-polyline {
-	object {
-		x=955
-		y=540
-		width=0
-		height=240
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(955,540)
-		(955,780)
-	}
-}
 text {
 	object {
-		x=900
+		x=575
 		y=595
 		width=20
 		height=10
@@ -3385,7 +3365,7 @@ text {
 }
 "text update" {
 	object {
-		x=870
+		x=545
 		y=615
 		width=80
 		height=15
@@ -3401,7 +3381,7 @@ text {
 }
 "text update" {
 	object {
-		x=870
+		x=545
 		y=640
 		width=80
 		height=15
@@ -3417,7 +3397,7 @@ text {
 }
 "text update" {
 	object {
-		x=870
+		x=545
 		y=665
 		width=80
 		height=15
@@ -3433,7 +3413,7 @@ text {
 }
 "text update" {
 	object {
-		x=870
+		x=545
 		y=690
 		width=80
 		height=15
@@ -3449,7 +3429,7 @@ text {
 }
 "text update" {
 	object {
-		x=870
+		x=545
 		y=715
 		width=80
 		height=15
@@ -3465,7 +3445,7 @@ text {
 }
 "text update" {
 	object {
-		x=870
+		x=545
 		y=740
 		width=80
 		height=15
@@ -3481,7 +3461,7 @@ text {
 }
 "text update" {
 	object {
-		x=870
+		x=545
 		y=765
 		width=80
 		height=15
@@ -3493,21 +3473,6 @@ text {
 	}
 	align="horiz. right"
 	limits {
-	}
-}
-polyline {
-	object {
-		x=325
-		y=540
-		width=0
-		height=240
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(325,540)
-		(325,780)
 	}
 }
 "text update" {
@@ -3524,5 +3489,268 @@ polyline {
 	}
 	align="horiz. centered"
 	limits {
+	}
+}
+polyline {
+	object {
+		x=630
+		y=560
+		width=200
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(630,560)
+		(830,560)
+	}
+}
+text {
+	object {
+		x=700
+		y=545
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="MPS"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=635
+		y=610
+		width=70
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Y [mm]"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=635
+		y=635
+		width=70
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Q [pC]"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=635
+		y=585
+		width=70
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="X [mm]"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=720
+		y=565
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Min"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=785
+		y=565
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Max"
+	align="horiz. centered"
+}
+"text entry" {
+	object {
+		x=700
+		y=635
+		width=60
+		height=20
+	}
+	control {
+		chan="$(DEV):MPS-Q-MIN"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=765
+		y=635
+		width=60
+		height=20
+	}
+	control {
+		chan="$(DEV):MPS-Q-MAX"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=700
+		y=585
+		width=60
+		height=20
+	}
+	control {
+		chan="$(DEV):MPS-X-MIN"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=765
+		y=585
+		width=60
+		height=20
+	}
+	control {
+		chan="$(DEV):MPS-X-MAX"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=700
+		y=610
+		width=60
+		height=20
+	}
+	control {
+		chan="$(DEV):MPS-Y-MIN"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=765
+		y=610
+		width=60
+		height=20
+	}
+	control {
+		chan="$(DEV):MPS-Y-MAX"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=695
+		y=581
+		width=135
+		height=79
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A>0"
+		chan="$(DEV):MPS-GENERATED"
+	}
+}
+polyline {
+	object {
+		x=630
+		y=580
+		width=200
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(630,580)
+		(830,580)
+	}
+}
+polyline {
+	object {
+		x=695
+		y=560
+		width=0
+		height=100
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(695,560)
+		(695,660)
+	}
+}
+polyline {
+	object {
+		x=630
+		y=540
+		width=2
+		height=245
+	}
+	"basic attribute" {
+		clr=0
+		fill="outline"
+		width=2
+	}
+	points {
+		(631,784)
+		(631,541)
+	}
+}
+polyline {
+	object {
+		x=830
+		y=540
+		width=2
+		height=121
+	}
+	"basic attribute" {
+		clr=0
+		fill="outline"
+		width=2
+	}
+	points {
+		(831,660)
+		(831,541)
 	}
 }
