@@ -1,12 +1,12 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/BPM_T2_SA1.adl"
+	name="/xfel/controls/App/config/medm/BPM_T2_SA1.adl"
 	version=030105
 }
 display {
 	object {
-		x=800
-		y=47
+		x=897
+		y=122
 		width=700
 		height=550
 	}
@@ -634,7 +634,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1423"
 }
 rectangle {
 	object {
@@ -788,7 +788,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1431"
 }
 rectangle {
 	object {
@@ -942,7 +942,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1428"
 }
 rectangle {
 	object {
@@ -1096,7 +1096,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1509"
 }
 rectangle {
 	object {
@@ -1250,7 +1250,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1440"
 }
 rectangle {
 	object {
@@ -1404,7 +1404,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1486"
 }
 rectangle {
 	object {
@@ -1558,7 +1558,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1445"
 }
 rectangle {
 	object {
@@ -1712,7 +1712,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1441"
 }
 rectangle {
 	object {
@@ -1866,7 +1866,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1496"
 }
 rectangle {
 	object {
@@ -2020,7 +2020,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1554"
 }
 rectangle {
 	object {
@@ -2174,7 +2174,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1620"
 }
 rectangle {
 	object {
@@ -2328,7 +2328,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1600"
 }
 rectangle {
 	object {
@@ -2482,7 +2482,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1621"
 }
 rectangle {
 	object {
@@ -2636,7 +2636,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1541"
 }
 rectangle {
 	object {
@@ -2790,7 +2790,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1617"
 }
 rectangle {
 	object {
@@ -2944,7 +2944,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1544"
 }
 rectangle {
 	object {
@@ -3098,7 +3098,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1618"
 }
 rectangle {
 	object {
@@ -3252,7 +3252,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1613"
 }
 rectangle {
 	object {
@@ -3406,7 +3406,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1635"
 }
 rectangle {
 	object {
@@ -3442,7 +3442,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=300
+		x=500
 		y=530
 		width=100
 		height=20
@@ -3453,7 +3453,7 @@ rectangle {
 }
 "message button" {
 	object {
-		x=400
+		x=600
 		y=530
 		width=100
 		height=20
@@ -3464,7 +3464,7 @@ rectangle {
 		bclr=30
 	}
 	label="BPME-2461-SA1"
-	press_msg="xfelgpac1di2463sa1:51236#BPME-2461-SA1"
+	press_msg="xfelgpac1di2463sa1:51238#BPME-2461-SA1"
 }
 "shell command" {
 	object {
@@ -3495,7 +3495,7 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1580"
 }
 rectangle {
 	object {
@@ -3637,11 +3637,11 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T xfelgpac1dixs1ug3r02t1t1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1dixs1ug3r02t1t1 &"
+		name="xterm -T xfelgpac1dixs1ug3r02t1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1dixs1ug3r02t1 &"
 	}
 	clr=14
 	bclr=57
-	label="-xfelgpac1dixs1ug3r02t1t1"
+	label="-xfelgpac1dixs1ug3r02t1"
 }
 "related display" {
 	object {
@@ -3819,7 +3819,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1564"
 }
 rectangle {
 	object {
@@ -3946,7 +3946,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T xfelgpac1di2180t2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2180t2 &"
+		name="xterm -T xfelgpac1di2225t2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2225t2 &"
 	}
 	clr=14
 	bclr=57
@@ -3966,7 +3966,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1567"
 }
 rectangle {
 	object {
@@ -4137,7 +4137,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1446"
 }
 rectangle {
 	object {

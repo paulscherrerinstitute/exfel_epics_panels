@@ -1,6 +1,6 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/BPM_T4_SA3_T4D.adl"
+	name="/xfel/controls/App/config/medm/BPM_T4_SA3_T4D.adl"
 	version=030105
 }
 display {
@@ -634,7 +634,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1447"
 }
 rectangle {
 	object {
@@ -788,7 +788,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1450"
 }
 rectangle {
 	object {
@@ -942,7 +942,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1444"
 }
 rectangle {
 	object {
@@ -1096,7 +1096,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1538"
 }
 rectangle {
 	object {
@@ -1250,7 +1250,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1522"
 }
 rectangle {
 	object {
@@ -1404,7 +1404,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1430"
 }
 rectangle {
 	object {
@@ -1558,7 +1558,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1421"
 }
 rectangle {
 	object {
@@ -1712,7 +1712,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1434"
 }
 rectangle {
 	object {
@@ -1866,7 +1866,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1476"
 }
 rectangle {
 	object {
@@ -2020,7 +2020,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1506"
 }
 rectangle {
 	object {
@@ -2915,7 +2915,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1433"
 }
 rectangle {
 	object {
@@ -3077,7 +3077,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1482"
 }
 rectangle {
 	object {
@@ -3401,7 +3401,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1533"
 }
 rectangle {
 	object {
@@ -3879,7 +3879,7 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1608"
 }
 rectangle {
 	object {
