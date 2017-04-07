@@ -3208,7 +3208,7 @@ polyline {
 		x=240
 		y=330
 		width=0
-		height=55
+		height=60
 	}
 	"basic attribute" {
 		clr=0
@@ -3218,7 +3218,7 @@ polyline {
 	}
 	points {
 		(240,330)
-		(240,385)
+		(240,390)
 	}
 }
 text {
@@ -3239,7 +3239,7 @@ polyline {
 		x=320
 		y=330
 		width=0
-		height=55
+		height=60
 	}
 	"basic attribute" {
 		clr=0
@@ -3249,7 +3249,7 @@ polyline {
 	}
 	points {
 		(320,330)
-		(320,385)
+		(320,390)
 	}
 }
 rectangle {
