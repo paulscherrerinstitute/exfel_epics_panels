@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>479</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>1</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>44</width>
+    <height>24</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>1</width>
+    <height>1</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>44</width>
+    <height>24</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="caInclude" name="cainclude">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>145</y>
+     <width>336</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI160L1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel">
+   <property name="geometry">
+    <rect>
+     <x>185</x>
+     <y>130</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CFG</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_2">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>130</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SYS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_3">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>130</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BPM1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_4">
+   <property name="geometry">
+    <rect>
+     <x>245</x>
+     <y>130</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_5">
+   <property name="geometry">
+    <rect>
+     <x>335</x>
+     <y>130</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MMC2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_6">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>130</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BPM2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_7">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>s7gpac</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_8">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>130</y>
+     <width>126</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Name</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>336</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI160L1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>25</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">XFELPROD:CFG-FW-DATE.SVAL</string>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>25</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">XFELPROD:CFG-SW-DATE.SVAL</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_9">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>5</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Firmware</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_10">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>5</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Software</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_11">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>25</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CFG</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>0</number>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caLabel</class>
+   <extends>QLabel</extends>
+   <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caInclude</class>
+   <extends>QWidget</extends>
+   <header>caInclude</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
