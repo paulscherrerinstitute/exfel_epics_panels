@@ -167,31 +167,12 @@
     <number>1</number>
    </property>
   </widget>
-  <widget class="caLabel" name="calabel_7">
+  <widget class="caLabel" name="calabel_8">
    <property name="geometry">
     <rect>
      <x>30</x>
      <y>130</y>
-     <width>30</width>
-     <height>15</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>s7gpac</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-   <property name="borderWidth">
-    <number>1</number>
-   </property>
-  </widget>
-  <widget class="caLabel" name="calabel_8">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>130</y>
-     <width>126</width>
+     <width>156</width>
      <height>16</height>
     </rect>
    </property>
@@ -226,7 +207,7 @@
     <rect>
      <x>55</x>
      <y>25</y>
-     <width>100</width>
+     <width>126</width>
      <height>20</height>
     </rect>
    </property>
@@ -237,9 +218,9 @@
   <widget class="caLineEdit" name="calineedit_2">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>185</x>
      <y>25</y>
-     <width>100</width>
+     <width>126</width>
      <height>20</height>
     </rect>
    </property>
@@ -252,7 +233,7 @@
     <rect>
      <x>55</x>
      <y>5</y>
-     <width>101</width>
+     <width>126</width>
      <height>21</height>
     </rect>
    </property>
@@ -269,9 +250,9 @@
   <widget class="caLabel" name="calabel_10">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>185</x>
      <y>5</y>
-     <width>101</width>
+     <width>126</width>
      <height>21</height>
     </rect>
    </property>
@@ -304,8 +285,40 @@
     <number>0</number>
    </property>
   </widget>
+  <widget class="caShellCommand" name="cashellcommand_5">
+   <property name="geometry">
+    <rect>
+     <x>285</x>
+     <y>60</y>
+     <width>165</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Sans Serif</family>
+    </font>
+   </property>
+   <property name="label">
+    <string notr="true">Compare</string>
+   </property>
+   <property name="labels">
+    <string>Compare</string>
+   </property>
+   <property name="files">
+    <string>fw_sw_compare.sh</string>
+   </property>
+   <property name="args">
+    <string/>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>caShellCommand</class>
+   <extends>QWidget</extends>
+   <header>caShellCommand</header>
+  </customwidget>
   <customwidget>
    <class>caLabel</class>
    <extends>QLabel</extends>
