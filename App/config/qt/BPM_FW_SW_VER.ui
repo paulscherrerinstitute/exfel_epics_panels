@@ -306,7 +306,7 @@
     <string>Compare</string>
    </property>
    <property name="files">
-    <string>../../fw_sw_compare.sh</string>
+    <string>../../../fw_sw_compare.sh</string>
    </property>
    <property name="args">
     <string/>
