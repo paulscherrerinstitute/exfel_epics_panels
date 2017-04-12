@@ -405,7 +405,7 @@
     </rect>
    </property>
    <property name="macro">
-    <string>GPAC=XFELGPAC1DI176B1</string>
+    <string>GPAC=XFELGPAC1DI203B1</string>
    </property>
    <property name="filename" stdset="0">
     <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
@@ -421,7 +421,7 @@
     </rect>
    </property>
    <property name="macro">
-    <string>GPAC=XFELGPAC1DI176B1</string>
+    <string>GPAC=XFELGPAC1DI215B1</string>
    </property>
    <property name="filename" stdset="0">
     <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
@@ -437,7 +437,7 @@
     </rect>
    </property>
    <property name="macro">
-    <string>GPAC=XFELGPAC1DI176B1</string>
+    <string>GPAC=XFELGPAC1DI220B1</string>
    </property>
    <property name="filename" stdset="0">
     <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
@@ -453,7 +453,7 @@
     </rect>
    </property>
    <property name="macro">
-    <string>GPAC=XFELGPAC1DI176B1</string>
+    <string>GPAC=XFELGPAC1DI240B1</string>
    </property>
    <property name="filename" stdset="0">
     <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
