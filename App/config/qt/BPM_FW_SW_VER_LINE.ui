@@ -226,6 +226,9 @@
      <blue>187</blue>
     </color>
    </property>
+   <property name="releaseMessage">
+    <string notr="true">0</string>
+   </property>
    <property name="pressMessage">
     <string>1</string>
    </property>
