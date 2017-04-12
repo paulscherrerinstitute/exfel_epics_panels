@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>434</width>
-    <height>16</height>
+    <height>15</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -40,7 +40,7 @@
   <widget class="caByte" name="cabyte">
    <property name="geometry">
     <rect>
-     <x>170</x>
+     <x>185</x>
      <y>0</y>
      <width>195</width>
      <height>15</height>
@@ -122,7 +122,7 @@
   <widget class="caByte" name="cabyte_3">
    <property name="geometry">
     <rect>
-     <x>155</x>
+     <x>170</x>
      <y>0</y>
      <width>15</width>
      <height>15</height>
@@ -155,12 +155,30 @@
     </color>
    </property>
   </widget>
+  <widget class="caLineEdit" name="calineedit">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):SYSACE-REV</string>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>
    <class>caLabel</class>
    <extends>QLabel</extends>
    <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
   </customwidget>
   <customwidget>
    <class>caByte</class>
