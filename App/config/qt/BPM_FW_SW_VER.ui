@@ -544,7 +544,7 @@
     </rect>
    </property>
    <property name="macro">
-    <string>GPAC=XFELGPAC1DI390B2</string>
+    <string>GPAC=XFELGPAC1DI276L2</string>
    </property>
    <property name="filename" stdset="0">
     <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
@@ -560,7 +560,7 @@
     </rect>
    </property>
    <property name="macro">
-    <string>GPAC=XFELGPAC1DI415B2</string>
+    <string>GPAC=XFELGPAC2DI276L2</string>
    </property>
    <property name="filename" stdset="0">
     <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
@@ -576,7 +576,7 @@
     </rect>
    </property>
    <property name="macro">
-    <string>GPAC=XFELGPAC1DI458B2</string>
+    <string>GPAC=XFELGPAC2DI324L2</string>
    </property>
    <property name="filename" stdset="0">
     <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
@@ -592,7 +592,7 @@
     </rect>
    </property>
    <property name="macro">
-    <string>GPAC=XFELGPAC1DI438B2</string>
+    <string>GPAC=XFELGPAC1DI324L2</string>
    </property>
    <property name="filename" stdset="0">
     <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
@@ -608,7 +608,7 @@
     </rect>
    </property>
    <property name="macro">
-    <string>GPAC=XFELGPAC3DI458B2</string>
+    <string>GPAC=XFELGPAC2DI372L2</string>
    </property>
    <property name="filename" stdset="0">
     <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
@@ -624,7 +624,103 @@
     </rect>
    </property>
    <property name="macro">
+    <string>GPAC=XFELGPAC1DI372L2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_25">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>410</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI415B2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_26">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>455</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
     <string>GPAC=XFELGPAC2DI458B2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_27">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>440</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI458B2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_28">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>425</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI438B2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_29">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>395</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI390B2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_30">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>470</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC3DI458B2</string>
    </property>
    <property name="filename" stdset="0">
     <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
