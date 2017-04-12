@@ -50,7 +50,10 @@
     <string notr="true">$(GPAC):FW-SW-CHECK</string>
    </property>
    <property name="direction">
-    <enum>caByte::Right</enum>
+    <enum>caByte::Left</enum>
+   </property>
+   <property name="startBit">
+    <number>0</number>
    </property>
    <property name="endBit">
     <number>12</number>
