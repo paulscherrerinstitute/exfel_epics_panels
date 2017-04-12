@@ -40,7 +40,7 @@
   <widget class="caByte" name="cabyte">
    <property name="geometry">
     <rect>
-     <x>155</x>
+     <x>170</x>
      <y>0</y>
      <width>195</width>
      <height>15</height>
@@ -57,15 +57,15 @@
    </property>
    <property name="foreground" stdset="0">
     <color>
-     <red>0</red>
-     <green>255</green>
+     <red>255</red>
+     <green>0</green>
      <blue>0</blue>
     </color>
    </property>
    <property name="background" stdset="0">
     <color>
-     <red>255</red>
-     <green>0</green>
+     <red>0</red>
+     <green>255</green>
      <blue>0</blue>
     </color>
    </property>
@@ -100,6 +100,42 @@
    </property>
    <property name="endBit">
     <number>0</number>
+   </property>
+   <property name="foreground" stdset="0">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="background" stdset="0">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="caByte" name="cabyte_3">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):FW-SW-CHECK</string>
+   </property>
+   <property name="direction">
+    <enum>caByte::Right</enum>
+   </property>
+   <property name="startBit">
+    <number>13</number>
+   </property>
+   <property name="endBit">
+    <number>13</number>
    </property>
    <property name="foreground" stdset="0">
     <color>
