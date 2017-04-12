@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>845</width>
-    <height>866</height>
+    <height>795</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -42,7 +42,7 @@
     <rect>
      <x>0</x>
      <y>15</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -191,7 +191,7 @@
     <rect>
      <x>0</x>
      <y>30</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -207,7 +207,7 @@
     <rect>
      <x>0</x>
      <y>45</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -223,7 +223,7 @@
     <rect>
      <x>0</x>
      <y>60</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -239,7 +239,7 @@
     <rect>
      <x>0</x>
      <y>75</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -274,7 +274,7 @@
     <rect>
      <x>0</x>
      <y>220</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -290,7 +290,7 @@
     <rect>
      <x>0</x>
      <y>235</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -306,7 +306,7 @@
     <rect>
      <x>0</x>
      <y>250</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -322,7 +322,7 @@
     <rect>
      <x>0</x>
      <y>265</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -338,7 +338,7 @@
     <rect>
      <x>0</x>
      <y>280</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -378,7 +378,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>R</string>
+    <string>V</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -392,7 +392,7 @@
     <rect>
      <x>0</x>
      <y>165</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -408,7 +408,7 @@
     <rect>
      <x>0</x>
      <y>90</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -424,7 +424,7 @@
     <rect>
      <x>0</x>
      <y>120</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -440,7 +440,7 @@
     <rect>
      <x>0</x>
      <y>105</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -456,7 +456,7 @@
     <rect>
      <x>0</x>
      <y>150</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -472,7 +472,7 @@
     <rect>
      <x>0</x>
      <y>135</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -488,7 +488,7 @@
     <rect>
      <x>0</x>
      <y>185</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -504,7 +504,7 @@
     <rect>
      <x>0</x>
      <y>200</y>
-     <width>380</width>
+     <width>395</width>
      <height>16</height>
     </rect>
    </property>
@@ -513,6 +513,25 @@
    </property>
    <property name="filename" stdset="0">
     <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_14">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>R</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
    </property>
   </widget>
  </widget>
