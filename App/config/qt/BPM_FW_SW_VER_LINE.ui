@@ -42,7 +42,7 @@
     <rect>
      <x>155</x>
      <y>0</y>
-     <width>180</width>
+     <width>195</width>
      <height>15</height>
     </rect>
    </property>
@@ -53,7 +53,7 @@
     <enum>caByte::Right</enum>
    </property>
    <property name="endBit">
-    <number>11</number>
+    <number>12</number>
    </property>
    <property name="foreground" stdset="0">
     <color>
