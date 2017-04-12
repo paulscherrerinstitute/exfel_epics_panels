@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>434</width>
+    <width>424</width>
     <height>15</height>
    </rect>
   </property>
@@ -168,8 +168,78 @@
     <string notr="true">$(GPAC):SYSACE-REV</string>
    </property>
   </widget>
+  <widget class="caMessageButton" name="caMessageButton_0">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>15</width>
+     <height>15</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>6</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>R</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="fontScaleMode">
+    <enum>EPushButton::Height</enum>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):GPAC2-HARD-RESET</string>
+   </property>
+   <property name="label">
+    <string>Reset</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color>
+     <red>187</red>
+     <green>187</green>
+     <blue>187</blue>
+    </color>
+   </property>
+   <property name="pressMessage">
+    <string>1</string>
+   </property>
+   <property name="colorMode">
+    <enum>caMessageButton::Static</enum>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>caMessageButton</class>
+   <extends>QPushButton</extends>
+   <header>caMessageButton</header>
+  </customwidget>
   <customwidget>
    <class>caLabel</class>
    <extends>QLabel</extends>
