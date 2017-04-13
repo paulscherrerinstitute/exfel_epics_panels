@@ -1780,6 +1780,176 @@
     <enum>caGraphics::Filled</enum>
    </property>
   </widget>
+  <widget class="caInclude" name="cainclude_70">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>495</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC3DI2100TLD</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_71">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>450</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2018TLD</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_72">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>510</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DIXS1UG3TLD</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_73">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>480</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2074TLD</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_9">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>525</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_74">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>465</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2047TLD</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_75">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>560</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2225T2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_76">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>530</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2100T2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_77">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>575</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2232T2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_78">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>545</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2180T2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_10">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>590</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>
