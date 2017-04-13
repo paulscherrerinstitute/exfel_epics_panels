@@ -397,7 +397,7 @@
     </rect>
    </property>
    <property name="macro">
-    <string>GPAC=XFELGPAC1DI59I1</string>
+    <string>GPAC=XFELGPAC1DI107I1</string>
    </property>
    <property name="filename" stdset="0">
     <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
