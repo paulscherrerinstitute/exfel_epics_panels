@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=123
-		y=315
+		x=17
+		y=205
 		width=660
 		height=370
 	}
@@ -1042,7 +1042,7 @@ polyline {
 	}
 	display[0] {
 		label="Button BPM"
-		name="BPM_T1_SA2.adl"
+		name="BPM_T3_UN1_T5_UN2_T5D.adl"
 	}
 	clr=14
 	bclr=57
