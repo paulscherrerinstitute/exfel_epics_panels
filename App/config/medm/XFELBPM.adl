@@ -89,6 +89,17 @@ display {
 }
 rectangle {
 	object {
+		x=450
+		y=30
+		width=222
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
 		x=0
 		y=0
 		width=660
@@ -1104,8 +1115,8 @@ text {
 }
 "shell command" {
 	object {
-		x=470
-		y=100
+		x=480
+		y=55
 		width=150
 		height=20
 	}
@@ -1116,4 +1127,17 @@ text {
 	clr=14
 	bclr=57
 	label="-FW/SW Versions"
+}
+text {
+	object {
+		x=535
+		y=35
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="E-XFEL BPM Firmware/Software"
+	align="horiz. centered"
 }
