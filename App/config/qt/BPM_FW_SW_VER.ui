@@ -170,9 +170,9 @@
   <widget class="caLabel" name="calabel_8">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>15</x>
      <y>0</y>
-     <width>156</width>
+     <width>141</width>
      <height>15</height>
     </rect>
    </property>
@@ -1099,9 +1099,9 @@
   <widget class="caLabel" name="calabel_18">
    <property name="geometry">
     <rect>
-     <x>405</x>
+     <x>420</x>
      <y>0</y>
-     <width>156</width>
+     <width>141</width>
      <height>15</height>
     </rect>
    </property>
@@ -2278,9 +2278,9 @@
   <widget class="caLabel" name="calabel_39">
    <property name="geometry">
     <rect>
-     <x>810</x>
+     <x>825</x>
      <y>0</y>
-     <width>156</width>
+     <width>141</width>
      <height>15</height>
     </rect>
    </property>
@@ -3567,6 +3567,63 @@
    </property>
    <property name="filename" stdset="0">
     <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_43">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>16</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>A</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_44">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>0</y>
+     <width>16</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>A</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_45">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>0</y>
+     <width>16</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>A</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
    </property>
   </widget>
  </widget>
