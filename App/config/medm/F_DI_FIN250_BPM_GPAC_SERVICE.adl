@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=787
-		y=195
+		x=722
+		y=71
 		width=810
 		height=455
 	}
@@ -85,6 +85,70 @@ display {
 		3cb420,
 		289315,
 		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=81
+		y=331
+		width=104
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x0002"
+		chan="$(DEV):FW-SW-CHECK"
+	}
+}
+rectangle {
+	object {
+		x=81
+		y=351
+		width=104
+		height=19
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x0001"
+		chan="$(DEV):FW-SW-CHECK"
+	}
+}
+rectangle {
+	object {
+		x=590
+		y=135
+		width=110
+		height=15
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x0800"
+		chan="$(DEV):FW-SW-CHECK"
+	}
+}
+rectangle {
+	object {
+		x=700
+		y=135
+		width=110
+		height=15
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x0400"
+		chan="$(DEV):FW-SW-CHECK"
 	}
 }
 rectangle {
@@ -3286,7 +3350,7 @@ rectangle {
 }
 polyline {
 	object {
-		x=591
+		x=590
 		y=110
 		width=0
 		height=115
@@ -3295,8 +3359,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(591,110)
-		(591,225)
+		(590,110)
+		(590,225)
 	}
 }
 text {
@@ -3386,74 +3450,6 @@ text {
 	}
 	monitor {
 		chan="$(DEV):CFG-FW-DATE.SVAL"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	format="string"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=596
-		y=195
-		width=100
-		height=10
-	}
-	monitor {
-		chan="$(DEV):BPM1-FW-DATE.SVAL"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	format="string"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=596
-		y=210
-		width=100
-		height=10
-	}
-	monitor {
-		chan="$(DEV):BPM2-FW-DATE.SVAL"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	format="string"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=596
-		y=180
-		width=100
-		height=10
-	}
-	monitor {
-		chan="$(DEV):BP-FW-DATE.SVAL"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	format="string"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=596
-		y=165
-		width=100
-		height=10
-	}
-	monitor {
-		chan="$(DEV):SYS-FW-DATE.SVAL"
 		clr=14
 		bclr=4
 	}
@@ -3706,74 +3702,6 @@ polyline {
 	points {
 		(411,381)
 		(808,381)
-	}
-}
-"text update" {
-	object {
-		x=706
-		y=165
-		width=100
-		height=10
-	}
-	monitor {
-		chan="$(DEV):SYS-SW-DATE.SVAL"
-		clr=14
-		bclr=4
-	}
-	align="horiz. centered"
-	format="string"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=706
-		y=180
-		width=100
-		height=10
-	}
-	monitor {
-		chan="$(DEV):BP-SW-DATE.SVAL"
-		clr=14
-		bclr=4
-	}
-	align="horiz. centered"
-	format="string"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=706
-		y=195
-		width=100
-		height=10
-	}
-	monitor {
-		chan="$(DEV):BPM1-SW-DATE.SVAL"
-		clr=14
-		bclr=4
-	}
-	align="horiz. centered"
-	format="string"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=706
-		y=210
-		width=100
-		height=10
-	}
-	monitor {
-		chan="$(DEV):BPM2-SW-DATE.SVAL"
-		clr=14
-		bclr=4
-	}
-	align="horiz. centered"
-	format="string"
-	limits {
 	}
 }
 text {
@@ -4707,5 +4635,285 @@ polyline {
 	points {
 		(185,370)
 		(410,370)
+	}
+}
+rectangle {
+	object {
+		x=410
+		y=111
+		width=400
+		height=5
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x1000"
+		chan="$(DEV):FW-SW-CHECK"
+	}
+}
+rectangle {
+	object {
+		x=590
+		y=165
+		width=110
+		height=15
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x0200"
+		chan="$(DEV):FW-SW-CHECK"
+	}
+}
+rectangle {
+	object {
+		x=700
+		y=165
+		width=110
+		height=15
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x0100"
+		chan="$(DEV):FW-SW-CHECK"
+	}
+}
+"text update" {
+	object {
+		x=706
+		y=165
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):SYS-SW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=596
+		y=165
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):SYS-FW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	format="string"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=590
+		y=180
+		width=110
+		height=15
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x0080"
+		chan="$(DEV):FW-SW-CHECK"
+	}
+}
+rectangle {
+	object {
+		x=700
+		y=180
+		width=110
+		height=15
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x0040"
+		chan="$(DEV):FW-SW-CHECK"
+	}
+}
+"text update" {
+	object {
+		x=596
+		y=180
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):BP-FW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=706
+		y=180
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):BP-SW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="string"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=590
+		y=195
+		width=110
+		height=15
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x0020"
+		chan="$(DEV):FW-SW-CHECK"
+	}
+}
+"text update" {
+	object {
+		x=596
+		y=195
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):BPM1-FW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	format="string"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=590
+		y=210
+		width=110
+		height=15
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x0008"
+		chan="$(DEV):FW-SW-CHECK"
+	}
+}
+rectangle {
+	object {
+		x=700
+		y=210
+		width=110
+		height=15
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x0004"
+		chan="$(DEV):FW-SW-CHECK"
+	}
+}
+"text update" {
+	object {
+		x=596
+		y=210
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):BPM2-FW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	format="string"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=700
+		y=195
+		width=110
+		height=15
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A&0x0010"
+		chan="$(DEV):FW-SW-CHECK"
+	}
+}
+"text update" {
+	object {
+		x=706
+		y=210
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):BPM2-SW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=706
+		y=195
+		width=100
+		height=10
+	}
+	monitor {
+		chan="$(DEV):BPM1-SW-DATE.SVAL"
+		clr=14
+		bclr=4
+	}
+	align="horiz. centered"
+	format="string"
+	limits {
 	}
 }
