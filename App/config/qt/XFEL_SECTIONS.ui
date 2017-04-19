@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>808</width>
-    <height>614</height>
+    <width>946</width>
+    <height>710</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -42,8 +42,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>806</width>
-     <height>306</height>
+     <width>946</width>
+     <height>356</height>
     </rect>
    </property>
    <property name="filename" stdset="0">
@@ -54,9 +54,9 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>305</y>
-     <width>806</width>
-     <height>306</height>
+     <y>355</y>
+     <width>946</width>
+     <height>356</height>
     </rect>
    </property>
    <property name="filename" stdset="0">
