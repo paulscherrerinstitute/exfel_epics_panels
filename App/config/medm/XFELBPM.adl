@@ -1141,3 +1141,18 @@ text {
 	textix="E-XFEL BPM Firmware/Software"
 	align="horiz. centered"
 }
+"shell command" {
+	object {
+		x=480
+		y=80
+		width=150
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh CAVBPM XFEL_SECTIONS.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-XFEL Sections"
+}
