@@ -84,7 +84,7 @@ indicators. The left one is firmware and the right one is software.
 * R – GPAC reset button </string>
    </property>
    <property name="textFormat">
-    <enum>Qt::PlainText</enum>
+    <enum>Qt::AutoText</enum>
    </property>
    <property name="scaledContents">
     <bool>false</bool>
