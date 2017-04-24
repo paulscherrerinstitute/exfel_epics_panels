@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>768</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>1</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>44</width>
+    <height>24</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>1</width>
+    <height>1</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>44</width>
+    <height>24</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="caLabel" name="calabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>761</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The table lists all MBUs and the current status of the firmware and software versions. The check is done at the start of GPAC and it is checked against &lt;a href=&quot;http://xfelpsibpm1.desy.de/versions.txt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://xfelpsibpm1.desy.de/versions.txt&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;The column meaning is as follows:&lt;/p&gt;&lt;p&gt;* A – Green means that the GPAC is active and accessible over Ethernet. If this column is red&lt;br/&gt;the rest of the row has invalid values&lt;br/&gt;* Name – GPAC hostname&lt;br/&gt;* V – shows actually running revision number. The default revision should be ‘1’&lt;br/&gt;* C – Green means that the FW/SW check was successfully done. If this field is red then the&lt;br/&gt;rest of the row is invalid&lt;br/&gt;* E – Red means that there was an error during FW/SW check and the rest of the row is invalid&lt;/p&gt;&lt;p&gt;* CFG/SYS/BP/BPM1/BPM2/MMC2 - FPGA firmware/software. Each column consists of two&lt;br/&gt;indicators. The left one is firmware and the right one is software.&lt;br/&gt;* R – GPAC reset button &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caLabel</class>
+   <extends>QLabel</extends>
+   <header>caLabel</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
