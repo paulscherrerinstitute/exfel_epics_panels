@@ -65,12 +65,13 @@
    </property>
    <property name="font">
     <font>
-     <pointsize>16</pointsize>
+     <pointsize>12</pointsize>
      <kerning>false</kerning>
     </font>
    </property>
    <property name="text">
     <string>The table lists all MBUs and the current status of the firmware and software versions. The check is done at the start of GPAC and it is checked against http://xfelpsibpm1.desy.de/versions.txt.
+
 The column meaning is as follows:
 * A – Green means that the GPAC is active and accessible over Ethernet. If this column is red
 the rest of the row has invalid values
