@@ -3626,8 +3626,46 @@
     <number>1</number>
    </property>
   </widget>
+  <widget class="caRelatedDisplay" name="carelateddisplay_6">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>865</y>
+     <width>86</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Sans Serif</family>
+    </font>
+   </property>
+   <property name="label">
+    <string notr="true">-Help</string>
+   </property>
+   <property name="labels">
+    <string>Example 1</string>
+   </property>
+   <property name="files">
+    <string>XFEL_FW_SW_HELP.ui</string>
+   </property>
+   <property name="args">
+    <string>SYS=MTEST-VME-DIAG24,DEVICE=EVR0,FF=VME-300</string>
+   </property>
+   <property name="stackingMode" stdset="0">
+    <enum>caRowColMenu::Menu</enum>
+   </property>
+   <property name="styleSheet" stdset="0">
+    <string notr="true"/>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>caRelatedDisplay</class>
+   <extends>QWidget</extends>
+   <header>caRelatedDisplay</header>
+  </customwidget>
   <customwidget>
    <class>caLabel</class>
    <extends>QLabel</extends>
