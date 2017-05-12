@@ -1,13 +1,13 @@
 
 file {
-	name="/home/goran/epics/xfel/App/config/medm/IBFBCAV.adl"
+	name="/xfel/controls/App/config/medm/IBFBCAV.adl"
 	version=030105
 }
 display {
 	object {
-		x=2046
-		y=361
-		width=1000
+		x=261
+		y=248
+		width=1020
 		height=260
 	}
 	clr=14
@@ -184,7 +184,7 @@ text {
 }
 polyline {
 	object {
-		x=710
+		x=730
 		y=30
 		width=0
 		height=189
@@ -193,8 +193,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(710,30)
-		(710,219)
+		(730,30)
+		(730,219)
 	}
 }
 polyline {
@@ -253,7 +253,7 @@ text {
 }
 text {
 	object {
-		x=715
+		x=735
 		y=34
 		width=95
 		height=15
@@ -266,7 +266,7 @@ text {
 }
 polyline {
 	object {
-		x=815
+		x=835
 		y=30
 		width=0
 		height=189
@@ -275,8 +275,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(815,30)
-		(815,219)
+		(835,30)
+		(835,219)
 	}
 }
 text {
@@ -359,7 +359,7 @@ rectangle {
 	object {
 		x=610
 		y=117
-		width=45
+		width=55
 		height=15
 	}
 	control {
@@ -372,9 +372,9 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=660
+		x=670
 		y=117
-		width=45
+		width=55
 		height=15
 	}
 	control {
@@ -387,7 +387,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=715
+		x=735
 		y=117
 		width=45
 		height=15
@@ -402,7 +402,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=765
+		x=785
 		y=117
 		width=45
 		height=15
@@ -617,7 +617,7 @@ rectangle {
 	object {
 		x=610
 		y=97
-		width=45
+		width=55
 		height=15
 	}
 	control {
@@ -630,9 +630,9 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=660
+		x=670
 		y=97
-		width=45
+		width=55
 		height=15
 	}
 	control {
@@ -645,7 +645,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=715
+		x=735
 		y=97
 		width=45
 		height=15
@@ -660,7 +660,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=765
+		x=785
 		y=97
 		width=45
 		height=15
@@ -705,7 +705,7 @@ rectangle {
 	object {
 		x=610
 		y=77
-		width=45
+		width=55
 		height=15
 	}
 	control {
@@ -718,9 +718,9 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=660
+		x=670
 		y=77
-		width=45
+		width=55
 		height=15
 	}
 	control {
@@ -733,7 +733,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=715
+		x=735
 		y=77
 		width=45
 		height=15
@@ -748,7 +748,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=765
+		x=785
 		y=77
 		width=45
 		height=15
@@ -793,7 +793,7 @@ rectangle {
 	object {
 		x=610
 		y=57
-		width=45
+		width=55
 		height=15
 	}
 	control {
@@ -806,9 +806,9 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=660
+		x=670
 		y=57
-		width=45
+		width=55
 		height=15
 	}
 	control {
@@ -821,7 +821,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=715
+		x=735
 		y=57
 		width=45
 		height=15
@@ -836,7 +836,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=765
+		x=785
 		y=57
 		width=45
 		height=15
@@ -879,7 +879,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=820
+		x=840
 		y=57
 		width=45
 		height=15
@@ -894,7 +894,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=870
+		x=890
 		y=57
 		width=45
 		height=15
@@ -909,7 +909,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=820
+		x=840
 		y=77
 		width=45
 		height=15
@@ -924,7 +924,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=870
+		x=890
 		y=77
 		width=45
 		height=15
@@ -939,7 +939,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=820
+		x=840
 		y=97
 		width=45
 		height=15
@@ -954,7 +954,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=870
+		x=890
 		y=97
 		width=45
 		height=15
@@ -969,7 +969,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=820
+		x=840
 		y=117
 		width=45
 		height=15
@@ -984,7 +984,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=870
+		x=890
 		y=117
 		width=45
 		height=15
@@ -1194,7 +1194,7 @@ polyline {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1623"
 }
 rectangle {
 	object {
@@ -1386,7 +1386,7 @@ rectangle {
 }
 text {
 	object {
-		x=820
+		x=840
 		y=35
 		width=95
 		height=15

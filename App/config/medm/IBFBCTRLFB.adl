@@ -1,6 +1,6 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCTRLFB.adl"
+	name="/xfel/controls/App/config/medm/IBFBCTRLFB.adl"
 	version=030105
 }
 display {
@@ -95,11 +95,11 @@ rectangle {
 		height=19
 	}
 	"basic attribute" {
-		clr=15
+		clr=20
 	}
 	"dynamic attribute" {
 		vis="calc"
-		calc="A=5416"
+		calc="A!=5416"
 		chan="$(DEV):X-SASE-PACKETS"
 	}
 }
@@ -111,11 +111,11 @@ rectangle {
 		height=19
 	}
 	"basic attribute" {
-		clr=15
+		clr=20
 	}
 	"dynamic attribute" {
 		vis="calc"
-		calc="A=8124"
+		calc="A!=8124"
 		chan="$(DEV):Y-SASE-PACKETS"
 	}
 }
@@ -127,11 +127,11 @@ rectangle {
 		height=19
 	}
 	"basic attribute" {
-		clr=15
+		clr=20
 	}
 	"dynamic attribute" {
 		vis="calc"
-		calc="A=10832"
+		calc="A!=10832"
 		chan="$(DEV):Y-UPDOWN-PACKETS"
 	}
 }
@@ -7720,11 +7720,11 @@ rectangle {
 		height=19
 	}
 	"basic attribute" {
-		clr=15
+		clr=20
 	}
 	"dynamic attribute" {
 		vis="calc"
-		calc="A=10832"
+		calc="A!=10832"
 		chan="$(DEV):X-UPDOWN-PACKETS"
 	}
 }
