@@ -1,6 +1,6 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCAV.adl"
+	name="/xfel/controls/App/config/medm/IBFBCAV.adl"
 	version=030105
 }
 display {
@@ -1194,7 +1194,7 @@ polyline {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1623"
 }
 rectangle {
 	object {
