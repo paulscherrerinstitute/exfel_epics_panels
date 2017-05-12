@@ -1,12 +1,12 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCAV.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCAV_PSI.adl"
 	version=030105
 }
 display {
 	object {
-		x=25
-		y=816
+		x=12
+		y=444
 		width=1000
 		height=260
 	}
@@ -156,8 +156,8 @@ text {
 }
 polyline {
 	object {
-		x=630
-		y=32
+		x=652
+		y=30
 		width=0
 		height=189
 	}
@@ -165,13 +165,13 @@ polyline {
 		clr=0
 	}
 	points {
-		(630,32)
-		(630,221)
+		(652,30)
+		(652,219)
 	}
 }
 text {
 	object {
-		x=635
+		x=657
 		y=34
 		width=95
 		height=15
@@ -184,7 +184,7 @@ text {
 }
 polyline {
 	object {
-		x=735
+		x=757
 		y=30
 		width=0
 		height=189
@@ -193,8 +193,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(735,30)
-		(735,219)
+		(757,30)
+		(757,219)
 	}
 }
 polyline {
@@ -253,7 +253,7 @@ text {
 }
 text {
 	object {
-		x=740
+		x=762
 		y=34
 		width=95
 		height=15
@@ -266,7 +266,7 @@ text {
 }
 polyline {
 	object {
-		x=840
+		x=862
 		y=30
 		width=0
 		height=189
@@ -275,15 +275,15 @@ polyline {
 		clr=0
 	}
 	points {
-		(840,30)
-		(840,219)
+		(862,30)
+		(862,219)
 	}
 }
 text {
 	object {
-		x=510
+		x=520
 		y=37
-		width=100
+		width=90
 		height=15
 	}
 	"basic attribute" {
@@ -295,7 +295,7 @@ text {
 polyline {
 	object {
 		x=505
-		y=32
+		y=30
 		width=0
 		height=189
 	}
@@ -303,8 +303,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(505,32)
-		(505,221)
+		(505,30)
+		(505,219)
 	}
 }
 "related display" {
@@ -357,13 +357,13 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=635
+		x=657
 		y=117
 		width=45
 		height=15
 	}
 	control {
-		chan="IBFBXDOWN:BPM1-TRG-DELAY"
+		chan="IPC1647-IBFB:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -372,13 +372,13 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=685
+		x=707
 		y=117
 		width=45
 		height=15
 	}
 	control {
-		chan="IBFBXDOWN:BPM2-TRG-DELAY"
+		chan="IPC1647-IBFB:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -387,13 +387,13 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=740
+		x=762
 		y=117
 		width=45
 		height=15
 	}
 	control {
-		chan="IBFBXDOWN:BPM1-BPM-ID"
+		chan="IPC1647-IBFB:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -402,13 +402,13 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=790
+		x=812
 		y=117
 		width=45
 		height=15
 	}
 	control {
-		chan="IBFBXDOWN:BPM2-BPM-ID"
+		chan="IPC1647-IBFB:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -417,13 +417,13 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=510
-		y=115
-		width=55
+		x=521
+		y=117
+		width=60
 		height=15
 	}
 	control {
-		chan="IBFBXDOWN:BPM1-ENABLED"
+		chan="IPC1647-IBFB:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -431,13 +431,13 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=570
-		y=115
-		width=55
+		x=586
+		y=117
+		width=60
 		height=15
 	}
 	control {
-		chan="IBFBXDOWN:BPM2-ENABLED"
+		chan="IPC1647-IBFB:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -615,7 +615,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=635
+		x=657
 		y=97
 		width=45
 		height=15
@@ -630,7 +630,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=685
+		x=707
 		y=97
 		width=45
 		height=15
@@ -645,7 +645,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=740
+		x=762
 		y=97
 		width=45
 		height=15
@@ -660,7 +660,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=790
+		x=812
 		y=97
 		width=45
 		height=15
@@ -675,9 +675,9 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=510
-		y=95
-		width=55
+		x=521
+		y=97
+		width=60
 		height=15
 	}
 	control {
@@ -689,9 +689,9 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=570
-		y=95
-		width=55
+		x=586
+		y=97
+		width=60
 		height=15
 	}
 	control {
@@ -703,7 +703,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=635
+		x=657
 		y=77
 		width=45
 		height=15
@@ -718,7 +718,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=685
+		x=707
 		y=77
 		width=45
 		height=15
@@ -733,7 +733,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=740
+		x=762
 		y=77
 		width=45
 		height=15
@@ -748,7 +748,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=790
+		x=812
 		y=77
 		width=45
 		height=15
@@ -763,9 +763,9 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=510
-		y=75
-		width=55
+		x=521
+		y=77
+		width=60
 		height=15
 	}
 	control {
@@ -777,9 +777,9 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=570
-		y=75
-		width=55
+		x=586
+		y=77
+		width=60
 		height=15
 	}
 	control {
@@ -791,7 +791,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=635
+		x=657
 		y=57
 		width=45
 		height=15
@@ -806,7 +806,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=685
+		x=707
 		y=57
 		width=45
 		height=15
@@ -821,7 +821,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=740
+		x=762
 		y=57
 		width=45
 		height=15
@@ -836,7 +836,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=790
+		x=812
 		y=57
 		width=45
 		height=15
@@ -851,9 +851,9 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=510
-		y=55
-		width=55
+		x=521
+		y=57
+		width=60
 		height=15
 	}
 	control {
@@ -865,9 +865,9 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=570
-		y=55
-		width=55
+		x=586
+		y=57
+		width=60
 		height=15
 	}
 	control {
@@ -879,7 +879,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=845
+		x=867
 		y=57
 		width=45
 		height=15
@@ -894,7 +894,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=895
+		x=917
 		y=57
 		width=45
 		height=15
@@ -909,7 +909,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=845
+		x=867
 		y=77
 		width=45
 		height=15
@@ -924,7 +924,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=895
+		x=917
 		y=77
 		width=45
 		height=15
@@ -939,7 +939,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=845
+		x=867
 		y=97
 		width=45
 		height=15
@@ -954,7 +954,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=895
+		x=917
 		y=97
 		width=45
 		height=15
@@ -969,13 +969,13 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=845
+		x=867
 		y=117
 		width=45
 		height=15
 	}
 	control {
-		chan="IBFBXDOWN:BPM1-ROUTER-ENA"
+		chan="IPC1647-IBFB:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -984,13 +984,13 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=895
+		x=917
 		y=117
 		width=45
 		height=15
 	}
 	control {
-		chan="IBFBXDOWN:BPM2-ROUTER-ENA"
+		chan="IPC1647-IBFB:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -1000,7 +1000,7 @@ rectangle {
 polyline {
 	object {
 		x=0
-		y=141
+		y=140
 		width=1020
 		height=0
 	}
@@ -1008,8 +1008,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(0,141)
-		(1020,141)
+		(0,140)
+		(1020,140)
 	}
 }
 "message button" {
@@ -1158,11 +1158,11 @@ polyline {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T xfelgpac4di1899tl -bg rgb:40/A0/90 -e telnet -l root xfelgpac4di1899tl &"
+		name="xterm -T ipc1647 -bg rgb:40/A0/90 -e telnet -l root ipc1647 &"
 	}
 	clr=14
 	bclr=57
-	label="-xfelgpac4di1899tl"
+	label="-ipc1647"
 }
 "related display" {
 	object {
@@ -1190,11 +1190,11 @@ polyline {
 	display[0] {
 		label="BPM"
 		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
-		args="DEV=XFELGPAC4DI1899TL"
+		args="DEV=IPC1647"
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1647"
 }
 rectangle {
 	object {
@@ -1273,7 +1273,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="XFELGPAC4DI1899TL:S7GPAC-STATUS"
+		chan="IPC1647:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1289,7 +1289,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="XFELGPAC4DI1899TL:S7GPAC-STATUS"
+		chan="IPC1647:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1386,7 +1386,7 @@ rectangle {
 }
 text {
 	object {
-		x=845
+		x=867
 		y=35
 		width=95
 		height=15
@@ -1396,4 +1396,51 @@ text {
 	}
 	textix="Router"
 	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=506
+		y=115
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1647-IBFB:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=506
+		y=115
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1647-IBFB:S7GPAC-STATUS"
+	}
+}
+polyline {
+	object {
+		x=511
+		y=30
+		width=0
+		height=189
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(511,30)
+		(511,219)
+	}
 }
