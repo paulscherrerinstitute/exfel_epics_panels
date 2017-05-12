@@ -1395,7 +1395,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IBFBXDOWN-IBFB:S7GPAC-STATUS"
+		chan="IBFBXDOWN:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1411,7 +1411,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IBFBXDOWN-IBFB:S7GPAC-STATUS"
+		chan="IBFBXDOWN:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1427,7 +1427,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IBFBXUP-IBFB:S7GPAC-STATUS"
+		chan="IBFBXUP:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1443,7 +1443,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IBFBXUP-IBFB:S7GPAC-STATUS"
+		chan="IBFBXUP:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1459,7 +1459,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IBFBYDOWN-IBFB:S7GPAC-STATUS"
+		chan="IBFBYDOWN:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1475,7 +1475,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IBFBYDOWN-IBFB:S7GPAC-STATUS"
+		chan="IBFBYDOWN:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1491,7 +1491,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IBFBYUP-IBFB:S7GPAC-STATUS"
+		chan="IBFBYUP:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1507,6 +1507,6 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IBFBYUP-IBFB:S7GPAC-STATUS"
+		chan="IBFBYUP:S7GPAC-STATUS"
 	}
 }
