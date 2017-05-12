@@ -1,12 +1,12 @@
 
 file {
-	name="/home/goran/epics/xfel/App/config/medm/IBFBCAV.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCAV.adl"
 	version=030105
 }
 display {
 	object {
-		x=2046
-		y=361
+		x=25
+		y=816
 		width=1000
 		height=260
 	}
@@ -156,7 +156,7 @@ text {
 }
 polyline {
 	object {
-		x=605
+		x=630
 		y=32
 		width=0
 		height=189
@@ -165,13 +165,13 @@ polyline {
 		clr=0
 	}
 	points {
-		(605,32)
-		(605,221)
+		(630,32)
+		(630,221)
 	}
 }
 text {
 	object {
-		x=610
+		x=635
 		y=34
 		width=95
 		height=15
@@ -184,7 +184,7 @@ text {
 }
 polyline {
 	object {
-		x=710
+		x=735
 		y=30
 		width=0
 		height=189
@@ -193,8 +193,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(710,30)
-		(710,219)
+		(735,30)
+		(735,219)
 	}
 }
 polyline {
@@ -253,7 +253,7 @@ text {
 }
 text {
 	object {
-		x=715
+		x=740
 		y=34
 		width=95
 		height=15
@@ -266,7 +266,7 @@ text {
 }
 polyline {
 	object {
-		x=815
+		x=840
 		y=30
 		width=0
 		height=189
@@ -275,21 +275,21 @@ polyline {
 		clr=0
 	}
 	points {
-		(815,30)
-		(815,219)
+		(840,30)
+		(840,219)
 	}
 }
 text {
 	object {
 		x=510
 		y=37
-		width=70
+		width=100
 		height=15
 	}
 	"basic attribute" {
 		clr=0
 	}
-	textix="Enabled"
+	textix="Enabled Mode"
 	align="horiz. centered"
 }
 polyline {
@@ -357,7 +357,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=610
+		x=635
 		y=117
 		width=45
 		height=15
@@ -372,7 +372,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=660
+		x=685
 		y=117
 		width=45
 		height=15
@@ -387,7 +387,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=715
+		x=740
 		y=117
 		width=45
 		height=15
@@ -402,7 +402,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=765
+		x=790
 		y=117
 		width=45
 		height=15
@@ -417,9 +417,9 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=511
-		y=117
-		width=45
+		x=510
+		y=115
+		width=55
 		height=15
 	}
 	control {
@@ -431,9 +431,9 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=556
-		y=117
-		width=45
+		x=570
+		y=115
+		width=55
 		height=15
 	}
 	control {
@@ -615,7 +615,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=610
+		x=635
 		y=97
 		width=45
 		height=15
@@ -630,7 +630,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=660
+		x=685
 		y=97
 		width=45
 		height=15
@@ -645,7 +645,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=715
+		x=740
 		y=97
 		width=45
 		height=15
@@ -660,7 +660,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=765
+		x=790
 		y=97
 		width=45
 		height=15
@@ -675,9 +675,9 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=511
-		y=97
-		width=45
+		x=510
+		y=95
+		width=55
 		height=15
 	}
 	control {
@@ -689,9 +689,9 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=556
-		y=97
-		width=45
+		x=570
+		y=95
+		width=55
 		height=15
 	}
 	control {
@@ -703,7 +703,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=610
+		x=635
 		y=77
 		width=45
 		height=15
@@ -718,7 +718,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=660
+		x=685
 		y=77
 		width=45
 		height=15
@@ -733,7 +733,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=715
+		x=740
 		y=77
 		width=45
 		height=15
@@ -748,7 +748,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=765
+		x=790
 		y=77
 		width=45
 		height=15
@@ -763,9 +763,9 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=511
-		y=77
-		width=45
+		x=510
+		y=75
+		width=55
 		height=15
 	}
 	control {
@@ -777,9 +777,9 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=556
-		y=77
-		width=45
+		x=570
+		y=75
+		width=55
 		height=15
 	}
 	control {
@@ -791,7 +791,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=610
+		x=635
 		y=57
 		width=45
 		height=15
@@ -806,7 +806,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=660
+		x=685
 		y=57
 		width=45
 		height=15
@@ -821,7 +821,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=715
+		x=740
 		y=57
 		width=45
 		height=15
@@ -836,7 +836,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=765
+		x=790
 		y=57
 		width=45
 		height=15
@@ -851,9 +851,9 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=511
-		y=57
-		width=45
+		x=510
+		y=55
+		width=55
 		height=15
 	}
 	control {
@@ -865,9 +865,9 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=556
-		y=57
-		width=45
+		x=570
+		y=55
+		width=55
 		height=15
 	}
 	control {
@@ -879,7 +879,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=820
+		x=845
 		y=57
 		width=45
 		height=15
@@ -894,7 +894,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=870
+		x=895
 		y=57
 		width=45
 		height=15
@@ -909,7 +909,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=820
+		x=845
 		y=77
 		width=45
 		height=15
@@ -924,7 +924,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=870
+		x=895
 		y=77
 		width=45
 		height=15
@@ -939,7 +939,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=820
+		x=845
 		y=97
 		width=45
 		height=15
@@ -954,7 +954,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=870
+		x=895
 		y=97
 		width=45
 		height=15
@@ -969,7 +969,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=820
+		x=845
 		y=117
 		width=45
 		height=15
@@ -984,7 +984,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=870
+		x=895
 		y=117
 		width=45
 		height=15
@@ -1386,7 +1386,7 @@ rectangle {
 }
 text {
 	object {
-		x=820
+		x=845
 		y=35
 		width=95
 		height=15
