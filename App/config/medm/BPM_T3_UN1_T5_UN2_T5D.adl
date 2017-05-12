@@ -1,12 +1,12 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/BPM_T3_UN1_T5_UN2_T5D.adl"
+	name="/xfel/controls/App/config/medm/BPM_T3_UN1_T5_UN2_T5D.adl"
 	version=030105
 }
 display {
 	object {
-		x=1155
-		y=393
+		x=19
+		y=282
 		width=700
 		height=370
 	}
@@ -552,6 +552,19 @@ polyline {
 		(0,170)
 		(700,170)
 	}
+}
+text {
+	object {
+		x=5
+		y=310
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="T5D"
+	align="horiz. centered"
 }
 "shell command" {
 	object {
@@ -1348,6 +1361,19 @@ text {
 	label="BPMA-2668-T3"
 	press_msg="xfelgpac1di2632t3:51237#BPMA-2668-T3"
 }
+text {
+	object {
+		x=5
+		y=175
+		width=25
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="UN1"
+	align="horiz. centered"
+}
 "shell command" {
 	object {
 		x=40
@@ -1531,20 +1557,7 @@ polyline {
 text {
 	object {
 		x=5
-		y=175
-		width=25
-		height=10
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="UN1"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=5
-		y=225
+		y=235
 		width=25
 		height=10
 	}
@@ -2352,37 +2365,6 @@ text {
 polyline {
 	object {
 		x=0
-		y=270
-		width=700
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	"dynamic attribute" {
-		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
-	}
-	points {
-		(0,270)
-		(700,270)
-	}
-}
-text {
-	object {
-		x=5
-		y=275
-		width=25
-		height=10
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="UN2"
-	align="horiz. centered"
-}
-polyline {
-	object {
-		x=0
 		y=290
 		width=700
 		height=0
@@ -2397,19 +2379,6 @@ polyline {
 		(0,290)
 		(700,290)
 	}
-}
-text {
-	object {
-		x=5
-		y=325
-		width=25
-		height=10
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="T5D"
-	align="horiz. centered"
 }
 "shell command" {
 	object {

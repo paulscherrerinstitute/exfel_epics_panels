@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=32
-		y=527
+		x=81
+		y=333
 		width=600
-		height=200
+		height=250
 	}
 	clr=14
 	bclr=4
@@ -621,7 +621,7 @@ rectangle {
 }
 text {
 	object {
-		x=130
+		x=265
 		y=125
 		width=60
 		height=10
@@ -694,5 +694,218 @@ rectangle {
 		vis="calc"
 		calc="A=1"
 		chan="XFELDEVLBUTSERV11:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=185
+		width=600
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+text {
+	object {
+		x=265
+		y=190
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="LUX Project"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=185
+		width=601
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(1,186)
+		(600,186)
+	}
+}
+"shell command" {
+	object {
+		x=280
+		y=210
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh LUXGPAC1MDIBPM1 BPM_GPAC_CAV_SMP_single.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-LUXGPAC1MDIBPM1"
+}
+"related display" {
+	object {
+		x=5
+		y=210
+		width=100
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=LUXGPAC1MDI"
+	}
+	clr=14
+	bclr=57
+	label="-LUXGPAC1MDI"
+}
+rectangle {
+	object {
+		x=170
+		y=210
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="LUXGPAC1MDI:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=170
+		y=210
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="LUXGPAC1MDI:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=105
+		y=210
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=LUXGPAC1MDI"
+	}
+	clr=14
+	bclr=57
+	label="-Timing"
+}
+rectangle {
+	object {
+		x=410
+		y=210
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="LUXGPAC1MDIBPM1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=410
+		y=210
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="LUXGPAC1MDIBPM1:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=175
+		y=210
+		width=100
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T luxgpac1mdi -bg rgb:40/A0/90 -e telnet -l root luxgpac1mdi &"
+	}
+	clr=14
+	bclr=57
+	label="-luxgpac1mdi"
+}
+"shell command" {
+	object {
+		x=415
+		y=210
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh LUXGPAC1MDIBPM2 BPM_GPAC_CAV_SMP_single.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-LUXGPAC1MDIBPM2"
+}
+rectangle {
+	object {
+		x=545
+		y=210
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="LUXGPAC1MDIBPM2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=545
+		y=210
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="LUXGPAC1MDIBPM2:S7GPAC-STATUS"
 	}
 }

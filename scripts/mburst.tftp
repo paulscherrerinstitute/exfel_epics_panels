@@ -1,0 +1,12 @@
+# Waldemar Koprek (PSI)
+# 18.04.2017
+# 
+# This command resets the MMC2
+# Usage from bash:
+#	tftp <mm2_hostname> < mburst.tftp
+#
+# 
+binary
+get RESET
+quit
+

@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=871
-		y=189
+		x=529
+		y=212
 		width=700
 		height=510
 	}
@@ -2174,7 +2174,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1498"
 }
 rectangle {
 	object {
@@ -2328,7 +2328,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1588"
 }
 rectangle {
 	object {
@@ -2465,7 +2465,7 @@ polyline {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1582"
 }
 rectangle {
 	object {
@@ -2623,7 +2623,7 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1545"
 }
 rectangle {
 	object {
@@ -2778,7 +2778,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T xfelgpac2di3065t4d -bg rgb:40/A0/90 -e telnet -l root xfelgpac2di3065t4d &"
+		name="xterm -T xfelgpac1di3090t4d -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di3090t4d &"
 	}
 	clr=14
 	bclr=57
@@ -2798,7 +2798,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1634"
 }
 rectangle {
 	object {
@@ -3239,7 +3239,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1520"
 }
 rectangle {
 	object {
@@ -3563,7 +3563,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1452"
 }
 rectangle {
 	object {
@@ -3764,7 +3764,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1500"
 }
 rectangle {
 	object {

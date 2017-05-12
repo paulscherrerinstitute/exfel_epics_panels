@@ -1,0 +1,3687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1205</width>
+    <height>897</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>1</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>44</width>
+    <height>24</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>1</width>
+    <height>1</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>44</width>
+    <height>24</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="caInclude" name="cainclude">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>15</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI30I1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CFG</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SYS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_3">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BPM1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_4">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_5">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MMC2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_6">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BPM2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_8">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>0</y>
+     <width>140</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Name</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>30</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI55I1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>45</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI55I1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC3DI55I1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_5">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>75</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI59I1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_7">
+   <property name="geometry">
+    <rect>
+     <x>185</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>E</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_6">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>220</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI176B1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_7">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>235</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI203B1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_8">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>250</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI215B1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_9">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>265</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI220B1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_10">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>280</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI240B1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_12">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>C</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_13">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>V</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_11">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>165</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI107I1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_12">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>90</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI94I1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_13">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>120</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC3DI94I1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_14">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>105</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI94I1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_15">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>150</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI107I1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_16">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>135</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC4DI94I1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_17">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>185</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI160L1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_18">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>200</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI160L1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_14">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>R</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_19">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>300</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI276L2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_20">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>315</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI276L2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_21">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>345</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI324L2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_22">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>330</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI324L2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_23">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>375</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI372L2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_24">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>360</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI372L2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_25">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>410</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI415B2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_26">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>455</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI458B2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_27">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>440</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI458B2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_28">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>425</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI438B2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_29">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>395</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI390B2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_30">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>470</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC3DI458B2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_31">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>565</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI661L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_32">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>505</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI562L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_33">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>520</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI562L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_34">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>550</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI610L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_35">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>490</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI514L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_36">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>535</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI610L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_39">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>610</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI757L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_40">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>640</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI808L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_41">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>580</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI709L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_43">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>745</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1102L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_44">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>685</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI904L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_45">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>700</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI955L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_46">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>730</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1051L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_47">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>670</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI856L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_48">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>715</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1003L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_50">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>775</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1150L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_9">
+   <property name="geometry">
+    <rect>
+     <x>695</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BPM1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_10">
+   <property name="geometry">
+    <rect>
+     <x>635</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SYS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_15">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>V</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_11">
+   <property name="geometry">
+    <rect>
+     <x>755</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MMC2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_16">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>E</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_17">
+   <property name="geometry">
+    <rect>
+     <x>665</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_18">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>0</y>
+     <width>140</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Name</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_19">
+   <property name="geometry">
+    <rect>
+     <x>575</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>C</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_20">
+   <property name="geometry">
+    <rect>
+     <x>605</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CFG</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_21">
+   <property name="geometry">
+    <rect>
+     <x>785</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>R</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_22">
+   <property name="geometry">
+    <rect>
+     <x>725</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BPM2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_23">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>595</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>XFELGPAC2DI709L3</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_24">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>625</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>XFELGPAC2DI757L3</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_25">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>655</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>XFELGPAC2DI808L3</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_26">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>760</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>XFELGPAC2DI1102L3</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_51">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>790</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1198L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_27">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>805</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>XFELGPAC2DI1198L3</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_52">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>820</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1249L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_28">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>835</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>XFELGPAC2DI1249L3</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_53">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>850</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1297L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_29">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>865</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>XFELGPAC2DI1297L3</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_54">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>880</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1345L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_55">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>15</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1396L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_30">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>30</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>XFELGPAC2DI1396L3</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_56">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>45</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1444L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_31">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>60</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>XFELGPAC2DI1444L3</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_57">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>75</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1499L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_58">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>90</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1601L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_59">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>105</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1656L3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>180</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>295</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>390</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>485</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_5">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>120</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_6">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>215</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_37">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>200</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1793CL</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_38">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>140</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1720CL</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_42">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>155</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI1720CL</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_49">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>185</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI1755CL</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_60">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>125</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1685CL</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_61">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>170</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1755CL</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_62">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>215</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1828CL</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_7">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>230</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_63">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>310</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1973TL</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_64">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>325</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2018TL</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_65">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>235</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1862TL</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_66">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>265</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI1899TL</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_67">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>295</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC4DI1899TL</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_68">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>250</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI1899TL</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_69">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>280</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC3DI1899TL</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_8">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>340</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_70">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>390</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC3DI2100TLD</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_71">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>345</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2018TLD</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_72">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>405</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DIXS1UG3TLD</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_73">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>375</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2074TLD</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_9">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>420</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_74">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>360</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2047TLD</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_75">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>455</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2225T2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_76">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>425</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2100T2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_77">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>470</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2232T2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_78">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>440</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2180T2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_10">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>485</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_79">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>565</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2305SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_80">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>580</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2317SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_81">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>490</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2244SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_82">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>520</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2268SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_83">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>550</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2293SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_84">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>505</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2256SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_85">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>535</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2280SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_86">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>595</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2329SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_87">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>640</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2366SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_88">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>625</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2354SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_89">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>655</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2378SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_91">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>610</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2341SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_32">
+   <property name="geometry">
+    <rect>
+     <x>980</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>C</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_33">
+   <property name="geometry">
+    <rect>
+     <x>1190</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>R</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_34">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BPM1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_35">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SYS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_36">
+   <property name="geometry">
+    <rect>
+     <x>995</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>E</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_37">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CFG</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_38">
+   <property name="geometry">
+    <rect>
+     <x>1070</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_39">
+   <property name="geometry">
+    <rect>
+     <x>825</x>
+     <y>0</y>
+     <width>140</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Name</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_40">
+   <property name="geometry">
+    <rect>
+     <x>965</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>V</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_41">
+   <property name="geometry">
+    <rect>
+     <x>1130</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BPM2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_42">
+   <property name="geometry">
+    <rect>
+     <x>1160</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MMC2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_92">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>670</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2390SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_93">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>700</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2415SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_94">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>685</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2402SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_95">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>745</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2451SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_96">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>715</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2427SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_97">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>730</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2439SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_98">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>760</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2463SA1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_11">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>775</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_99">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>870</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2793T4</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_100">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>795</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2548T4</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_101">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>855</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DIXS3UG2T4</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_12">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>885</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_102">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>825</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2623T4</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_103">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>810</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2590T4</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_104">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>840</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2686T4</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_105">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>780</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2480T4</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_106">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>30</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2820SA3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_107">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>90</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2869SA3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_108">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>15</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2808SA3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_109">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>75</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2857SA3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_110">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>45</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2832SA3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_111">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>60</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2845SA3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_112">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>120</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2893SA3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_113">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>180</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2943SA3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_114">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>105</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2881SA3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_115">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>165</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2931SA3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_116">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>135</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2906SA3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_117">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>150</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2918SA3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_13">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>195</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_118">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>215</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI3065T4D</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_14">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>245</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_119">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>200</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI3065T4D</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_120">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>230</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI3090T4D</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_121">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>295</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2175T1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_15">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>325</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_122">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>250</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2047T1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_123">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>265</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2074T1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_124">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>280</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DI2100T1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_125">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>310</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2194T1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_126">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>360</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2231SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_127">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>375</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2244SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_128">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>390</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2256SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_129">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>345</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2219SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_130">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>330</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2207SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_131">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>435</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2292SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_132">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>450</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2305SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_133">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>465</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2317SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_134">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>420</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2280SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_135">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>405</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2268SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_136">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>495</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2341SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_138">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>540</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2378SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_139">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>600</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2423SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_140">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>525</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2366SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_141">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>585</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2414SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_142">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>555</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2390SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_143">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>480</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2329SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_144">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>570</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2402SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_145">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>510</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2353SA2</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_16">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>615</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_146">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>635</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2500T3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_17">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>695</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_147">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>665</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2585T3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_148">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>650</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2550T3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_149">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>680</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2632T3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_150">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>620</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2444T3</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_151">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>700</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2723UN1</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_18">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>715</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_152">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>780</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2972T5</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_153">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>765</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2911T5</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_154">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>720</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2785T5</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_19">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>795</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_155">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>750</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2848T5</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_156">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>735</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI2820T5</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_157">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>845</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC2DIXSDU1UG1T5D</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_158">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>800</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI3055T5D</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_159">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>830</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DIXSDU1UG1T5D</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_20">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>860</y>
+     <width>395</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+  </widget>
+  <widget class="caInclude" name="cainclude_160">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>815</y>
+     <width>395</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="macro">
+    <string>GPAC=XFELGPAC1DI3145T5D</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string notr="true">BPM_FW_SW_VER_LINE.ui</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_43">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>A</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_44">
+   <property name="geometry">
+    <rect>
+     <x>405</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>A</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_45">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>A</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="borderWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="caRelatedDisplay" name="carelateddisplay_6">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>865</y>
+     <width>86</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Sans Serif</family>
+    </font>
+   </property>
+   <property name="label">
+    <string notr="true">-Help</string>
+   </property>
+   <property name="labels">
+    <string>Example 1</string>
+   </property>
+   <property name="files">
+    <string>XFEL_FW_SW_HELP.ui</string>
+   </property>
+   <property name="args">
+    <string>SYS=MTEST-VME-DIAG24,DEVICE=EVR0,FF=VME-300</string>
+   </property>
+   <property name="stackingMode" stdset="0">
+    <enum>caRowColMenu::Menu</enum>
+   </property>
+   <property name="styleSheet" stdset="0">
+    <string notr="true"/>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caRelatedDisplay</class>
+   <extends>QWidget</extends>
+   <header>caRelatedDisplay</header>
+  </customwidget>
+  <customwidget>
+   <class>caLabel</class>
+   <extends>QLabel</extends>
+   <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caGraphics</class>
+   <extends>QWidget</extends>
+   <header>caGraphics</header>
+  </customwidget>
+  <customwidget>
+   <class>caInclude</class>
+   <extends>QWidget</extends>
+   <header>caInclude</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

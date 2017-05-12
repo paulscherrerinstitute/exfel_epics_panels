@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=20
-		y=263
+		x=17
+		y=205
 		width=660
 		height=370
 	}
@@ -85,6 +85,17 @@ display {
 		3cb420,
 		289315,
 		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=450
+		y=30
+		width=222
+		height=20
+	}
+	"basic attribute" {
+		clr=9
 	}
 }
 rectangle {
@@ -795,7 +806,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="./xfel_qt.sh CAVBPM BPM_GPAC_CAV_SMP_single.ui &"
+		name="./xfel_qt.sh CAVBPM BPM_GPAC_CAV_SMP.ui &"
 	}
 	clr=14
 	bclr=57
@@ -1042,7 +1053,7 @@ polyline {
 	}
 	display[0] {
 		label="Button BPM"
-		name="BPM_T1_SA2.adl"
+		name="BPM_T3_UN1_T5_UN2_T5D.adl"
 	}
 	clr=14
 	bclr=57
@@ -1101,4 +1112,47 @@ text {
 	}
 	textix="3185"
 	align="horiz. centered"
+}
+"shell command" {
+	object {
+		x=480
+		y=55
+		width=150
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh CAVBPM BPM_FW_SW_VER.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-FW/SW Versions"
+}
+text {
+	object {
+		x=535
+		y=35
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="E-XFEL BPM Firmware/Software"
+	align="horiz. centered"
+}
+"shell command" {
+	object {
+		x=480
+		y=80
+		width=150
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh CAVBPM XFEL_SECTIONS.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-XFEL Sections"
 }
