@@ -1,6 +1,6 @@
 
 file {
-	name="/home/goran/epics/xfel/App/config/medm/IBFB.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_iocboot/XFELIBFB/../../xfel_epics_panels/App/config/medm/XFELIBFB.adl"
 	version=030105
 }
 display {
@@ -630,7 +630,7 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-finlc xterm"
+	label="-gfalc xterm"
 }
 text {
 	object {
