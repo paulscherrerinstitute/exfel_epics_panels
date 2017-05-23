@@ -1,6 +1,6 @@
 
 file {
-	name="/xfel/controls/App/config/medm/IBFBCTRLFB.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCTRLFB.adl"
 	version=030105
 }
 display {
@@ -1977,8 +1977,8 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=540
-		y=654
+		x=440
+		y=720
 		width=90
 		height=15
 	}
@@ -6024,8 +6024,8 @@ text {
 }
 text {
 	object {
-		x=445
-		y=654
+		x=440
+		y=705
 		width=90
 		height=10
 	}
@@ -7741,6 +7741,34 @@ rectangle {
 		bclr=4
 	}
 	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=365
+		y=660
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Fast FB delay"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=390
+		y=660
+		width=40
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-FAST-FB-DEL"
+		clr=14
+		bclr=4
+	}
 	limits {
 	}
 }

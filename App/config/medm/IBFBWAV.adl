@@ -1,6 +1,6 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/cvs/G/XFEL/14_Firmware/13_Prototype/Button_BPM/05_EPICS/Button_Eth/App/config/medm/IBFBWAV.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBWAV.adl"
 	version=030105
 }
 display {
@@ -8,7 +8,7 @@ display {
 		x=267
 		y=81
 		width=1000
-		height=630
+		height=800
 	}
 	clr=14
 	bclr=4
@@ -912,10 +912,10 @@ polyline {
 }
 "cartesian plot" {
 	object {
-		x=0
-		y=290
-		width=400
-		height=340
+		x=400
+		y=630
+		width=600
+		height=200
 	}
 	plotcom {
 		xlabel="Bucket"
@@ -1321,5 +1321,41 @@ rectangle {
 	trace[0] {
 		ydata="$(DEV):Y-FB-ANGLE-ERR"
 		data_clr=20
+	}
+}
+"cartesian plot" {
+	object {
+		x=0
+		y=280
+		width=400
+		height=200
+	}
+	plotcom {
+		xlabel="Bucket"
+		ylabel="DAC counts"
+		clr=0
+		bclr=14
+	}
+	style="line-bigmarks"
+	erase_oldest="plot last n pts"
+	trace[0] {
+		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
+		ydata="$(DEV):Y-DOWN-BPM1-HIST"
+		data_clr=20
+	}
+	trace[1] {
+		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
+		ydata="$(DEV):Y-DOWN-BPM2-HIST"
+		data_clr=15
+	}
+	trace[2] {
+		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
+		ydata="$(DEV):Y-UP-BPM1-HIST"
+		data_clr=30
+	}
+	trace[3] {
+		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
+		ydata="$(DEV):Y-UP-BPM2-HIST"
+		data_clr=40
 	}
 }
