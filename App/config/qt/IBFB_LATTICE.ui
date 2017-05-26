@@ -149,9 +149,9 @@
    <widget class="caLineEdit" name="calineedit">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>135</x>
       <y>125</y>
-      <width>41</width>
+      <width>50</width>
       <height>20</height>
      </rect>
     </property>
@@ -162,9 +162,9 @@
    <widget class="caLineEdit" name="calineedit_2">
     <property name="geometry">
      <rect>
-      <x>265</x>
+      <x>260</x>
       <y>125</y>
-      <width>41</width>
+      <width>50</width>
       <height>20</height>
      </rect>
     </property>
@@ -175,9 +175,9 @@
    <widget class="caLineEdit" name="calineedit_3">
     <property name="geometry">
      <rect>
-      <x>555</x>
+      <x>550</x>
       <y>125</y>
-      <width>41</width>
+      <width>50</width>
       <height>20</height>
      </rect>
     </property>
@@ -188,9 +188,9 @@
    <widget class="caLineEdit" name="calineedit_4">
     <property name="geometry">
      <rect>
-      <x>680</x>
+      <x>675</x>
       <y>125</y>
-      <width>41</width>
+      <width>50</width>
       <height>20</height>
      </rect>
     </property>
@@ -407,9 +407,9 @@
    <widget class="caLineEdit" name="calineedit_5">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>135</x>
       <y>150</y>
-      <width>41</width>
+      <width>50</width>
       <height>20</height>
      </rect>
     </property>
@@ -420,9 +420,9 @@
    <widget class="caLineEdit" name="calineedit_6">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>135</x>
       <y>175</y>
-      <width>41</width>
+      <width>50</width>
       <height>20</height>
      </rect>
     </property>
@@ -433,9 +433,9 @@
    <widget class="caLineEdit" name="calineedit_7">
     <property name="geometry">
      <rect>
-      <x>265</x>
+      <x>260</x>
       <y>150</y>
-      <width>41</width>
+      <width>50</width>
       <height>20</height>
      </rect>
     </property>
@@ -446,9 +446,9 @@
    <widget class="caLineEdit" name="calineedit_8">
     <property name="geometry">
      <rect>
-      <x>265</x>
+      <x>260</x>
       <y>175</y>
-      <width>41</width>
+      <width>50</width>
       <height>20</height>
      </rect>
     </property>
@@ -459,9 +459,9 @@
    <widget class="caLineEdit" name="calineedit_9">
     <property name="geometry">
      <rect>
-      <x>680</x>
+      <x>675</x>
       <y>150</y>
-      <width>41</width>
+      <width>50</width>
       <height>20</height>
      </rect>
     </property>
@@ -472,9 +472,9 @@
    <widget class="caLineEdit" name="calineedit_10">
     <property name="geometry">
      <rect>
-      <x>680</x>
+      <x>675</x>
       <y>175</y>
-      <width>41</width>
+      <width>50</width>
       <height>20</height>
      </rect>
     </property>
@@ -485,9 +485,9 @@
    <widget class="caLineEdit" name="calineedit_11">
     <property name="geometry">
      <rect>
-      <x>555</x>
+      <x>550</x>
       <y>150</y>
-      <width>41</width>
+      <width>50</width>
       <height>20</height>
      </rect>
     </property>
@@ -498,9 +498,9 @@
    <widget class="caLineEdit" name="calineedit_12">
     <property name="geometry">
      <rect>
-      <x>555</x>
+      <x>550</x>
       <y>175</y>
-      <width>41</width>
+      <width>50</width>
       <height>20</height>
      </rect>
     </property>
