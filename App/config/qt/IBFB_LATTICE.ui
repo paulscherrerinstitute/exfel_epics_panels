@@ -155,6 +155,9 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
     <property name="channel" stdset="0">
      <string notr="true">IBFBYUP:BPM1-BPM-ID</string>
     </property>
@@ -167,6 +170,9 @@
       <width>60</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">IBFBYUP:BPM2-BPM-ID</string>
@@ -181,6 +187,9 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
     <property name="channel" stdset="0">
      <string notr="true">IBFBYDOWN:BPM1-BPM-ID</string>
     </property>
@@ -193,6 +202,9 @@
       <width>60</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">IBFBYDOWN:BPM2-BPM-ID</string>
@@ -413,6 +425,9 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
     <property name="channel" stdset="0">
      <string notr="true">IBFBCTRL:Y-LATVER-BPM1-UP-POS-M</string>
     </property>
@@ -425,6 +440,9 @@
       <width>60</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">IBFBCTRL:Y-LATVER-BPM1-UP-ANGLE-M</string>
@@ -439,6 +457,9 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
     <property name="channel" stdset="0">
      <string notr="true">IBFBCTRL:Y-LATVER-BPM2-UP-POS-M</string>
     </property>
@@ -451,6 +472,9 @@
       <width>60</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">IBFBCTRL:Y-LATVER-BPM2-UP-ANGLE-M</string>
@@ -465,6 +489,9 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
     <property name="channel" stdset="0">
      <string notr="true">IBFBCTRL:Y-LATVER-BPM2-DOWN-POS-M</string>
     </property>
@@ -477,6 +504,9 @@
       <width>60</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">IBFBCTRL:Y-LATVER-BPM2-DOWN-ANGLE-M</string>
@@ -491,6 +521,9 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
     <property name="channel" stdset="0">
      <string notr="true">IBFBCTRL:Y-LATVER-BPM1-DOWN-POS-M</string>
     </property>
@@ -503,6 +536,9 @@
       <width>60</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">IBFBCTRL:Y-LATVER-BPM1-DOWN-ANGLE-M</string>
