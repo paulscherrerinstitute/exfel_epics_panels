@@ -95,11 +95,11 @@ rectangle {
 		height=19
 	}
 	"basic attribute" {
-		clr=15
+		clr=20
 	}
 	"dynamic attribute" {
 		vis="calc"
-		calc="A=5416"
+		calc="A!=5416"
 		chan="$(DEV):X-SASE-PACKETS"
 	}
 }
@@ -111,11 +111,11 @@ rectangle {
 		height=19
 	}
 	"basic attribute" {
-		clr=15
+		clr=20
 	}
 	"dynamic attribute" {
 		vis="calc"
-		calc="A=8124"
+		calc="A!=8124"
 		chan="$(DEV):Y-SASE-PACKETS"
 	}
 }
@@ -127,11 +127,11 @@ rectangle {
 		height=19
 	}
 	"basic attribute" {
-		clr=15
+		clr=20
 	}
 	"dynamic attribute" {
 		vis="calc"
-		calc="A=10832"
+		calc="A!=10832"
 		chan="$(DEV):Y-UPDOWN-PACKETS"
 	}
 }
@@ -1977,8 +1977,8 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=540
-		y=654
+		x=440
+		y=720
 		width=90
 		height=15
 	}
@@ -6024,8 +6024,8 @@ text {
 }
 text {
 	object {
-		x=445
-		y=654
+		x=440
+		y=705
 		width=90
 		height=10
 	}
@@ -7720,11 +7720,11 @@ rectangle {
 		height=19
 	}
 	"basic attribute" {
-		clr=15
+		clr=20
 	}
 	"dynamic attribute" {
 		vis="calc"
-		calc="A=10832"
+		calc="A!=10832"
 		chan="$(DEV):X-UPDOWN-PACKETS"
 	}
 }
@@ -7741,6 +7741,34 @@ rectangle {
 		bclr=4
 	}
 	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=365
+		y=660
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Fast FB delay"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=390
+		y=660
+		width=40
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-FAST-FB-DEL"
+		clr=14
+		bclr=4
+	}
 	limits {
 	}
 }

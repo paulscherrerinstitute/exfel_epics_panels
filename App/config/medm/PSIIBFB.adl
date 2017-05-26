@@ -1,11 +1,11 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_iocboot/XFELIBFB/../../xfel_epics_panels/App/config/medm/XFELIBFB.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/PSIIBFB.adl"
 	version=030105
 }
 display {
 	object {
-		x=12
+		x=11
 		y=38
 		width=420
 		height=360
@@ -128,9 +128,9 @@ polyline {
 }
 "shell command" {
 	object {
-		x=275
+		x=270
 		y=80
-		width=140
+		width=130
 		height=20
 	}
 	command[0] {
@@ -385,7 +385,7 @@ rectangle {
 	object {
 		x=160
 		y=55
-		width=110
+		width=70
 		height=20
 	}
 	command[0] {
@@ -394,13 +394,13 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-xfelgpacibfbctrl"
+	label="-ibfbctrl"
 }
 "shell command" {
 	object {
 		x=160
 		y=80
-		width=110
+		width=70
 		height=20
 	}
 	command[0] {
@@ -409,13 +409,13 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-xfelgpacibfbsw"
+	label="-ibfbsw"
 }
 "shell command" {
 	object {
 		x=160
 		y=105
-		width=110
+		width=70
 		height=20
 	}
 	command[0] {
@@ -424,7 +424,7 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-xfelgpacibfbmon"
+	label="-ibfbmon"
 }
 "related display" {
 	object {
@@ -619,9 +619,9 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=275
+		x=270
 		y=55
-		width=140
+		width=130
 		height=20
 	}
 	command[0] {
@@ -630,7 +630,7 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-gfalc xterm"
+	label="-finlc xterm"
 }
 text {
 	object {
@@ -647,9 +647,9 @@ text {
 }
 "shell command" {
 	object {
-		x=275
+		x=270
 		y=105
-		width=140
+		width=130
 		height=20
 	}
 	command[0] {
@@ -946,13 +946,13 @@ rectangle {
 "related display" {
 	object {
 		x=5
-		y=255
+		y=260
 		width=140
 		height=20
 	}
 	display[0] {
 		label="BPM"
-		name="IBFBCAV.adl"
+		name="IBFBCAV_PSI.adl"
 		args="DEV=IBFBCTRL"
 	}
 	clr=14
@@ -961,7 +961,7 @@ rectangle {
 }
 "related display" {
 	object {
-		x=260
+		x=235
 		y=330
 		width=140
 		height=20
