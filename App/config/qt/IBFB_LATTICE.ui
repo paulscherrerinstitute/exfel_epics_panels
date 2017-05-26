@@ -435,7 +435,7 @@
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">IBFBCTRL:Y-BPM1-UP-POS-M</string>
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM1-UP-POS-M</string>
     </property>
    </widget>
    <widget class="caLineEdit" name="calineedit_6">
@@ -448,7 +448,7 @@
      </rect>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">IBFBCTRL:Y-BPM1-UP-ANGLE-M</string>
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM1-UP-ANGLE-M</string>
     </property>
    </widget>
   </widget>
