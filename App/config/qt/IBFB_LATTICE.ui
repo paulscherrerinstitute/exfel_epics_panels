@@ -17,10 +17,10 @@
    <widget class="caLabelVertical" name="calabelvertical">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>170</y>
+      <x>150</x>
+      <y>49</y>
       <width>20</width>
-      <height>90</height>
+      <height>71</height>
      </rect>
     </property>
     <property name="text">
@@ -33,10 +33,10 @@
    <widget class="caLabelVertical" name="calabelvertical_2">
     <property name="geometry">
      <rect>
-      <x>265</x>
-      <y>170</y>
+      <x>275</x>
+      <y>49</y>
       <width>20</width>
-      <height>90</height>
+      <height>71</height>
      </rect>
     </property>
     <property name="text">
@@ -49,10 +49,10 @@
    <widget class="caLabelVertical" name="calabelvertical_3">
     <property name="geometry">
      <rect>
-      <x>555</x>
-      <y>170</y>
+      <x>565</x>
+      <y>54</y>
       <width>20</width>
-      <height>90</height>
+      <height>66</height>
      </rect>
     </property>
     <property name="text">
@@ -65,10 +65,10 @@
    <widget class="caLabelVertical" name="calabelvertical_4">
     <property name="geometry">
      <rect>
-      <x>680</x>
-      <y>170</y>
+      <x>690</x>
+      <y>54</y>
       <width>20</width>
-      <height>90</height>
+      <height>66</height>
      </rect>
     </property>
     <property name="text">
@@ -81,8 +81,8 @@
    <widget class="caLabelVertical" name="calabelvertical_5">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>170</y>
+      <x>370</x>
+      <y>30</y>
       <width>20</width>
       <height>90</height>
      </rect>
@@ -97,8 +97,8 @@
    <widget class="caLabelVertical" name="calabelvertical_6">
     <property name="geometry">
      <rect>
-      <x>465</x>
-      <y>170</y>
+      <x>475</x>
+      <y>30</y>
       <width>20</width>
       <height>90</height>
      </rect>
@@ -113,8 +113,8 @@
    <widget class="caLabel" name="calabel">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>290</y>
+      <x>40</x>
+      <y>150</y>
       <width>61</width>
       <height>21</height>
      </rect>
@@ -131,8 +131,8 @@
    <widget class="caLabel" name="calabel_2">
     <property name="geometry">
      <rect>
-      <x>15</x>
-      <y>265</y>
+      <x>25</x>
+      <y>125</y>
       <width>76</width>
       <height>21</height>
      </rect>
@@ -149,8 +149,8 @@
    <widget class="caLineEdit" name="calineedit">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>265</y>
+      <x>140</x>
+      <y>125</y>
       <width>41</width>
       <height>20</height>
      </rect>
@@ -162,8 +162,8 @@
    <widget class="caLineEdit" name="calineedit_2">
     <property name="geometry">
      <rect>
-      <x>255</x>
-      <y>265</y>
+      <x>265</x>
+      <y>125</y>
       <width>41</width>
       <height>20</height>
      </rect>
@@ -175,8 +175,8 @@
    <widget class="caLineEdit" name="calineedit_3">
     <property name="geometry">
      <rect>
-      <x>545</x>
-      <y>265</y>
+      <x>555</x>
+      <y>125</y>
       <width>41</width>
       <height>20</height>
      </rect>
@@ -188,8 +188,8 @@
    <widget class="caLineEdit" name="calineedit_4">
     <property name="geometry">
      <rect>
-      <x>670</x>
-      <y>265</y>
+      <x>680</x>
+      <y>125</y>
       <width>41</width>
       <height>20</height>
      </rect>
@@ -201,8 +201,8 @@
    <widget class="caTextEntry" name="catextentry">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>145</y>
+      <x>170</x>
+      <y>60</y>
       <width>51</width>
       <height>22</height>
      </rect>
@@ -214,8 +214,8 @@
    <widget class="caTextEntry" name="catextentry_2">
     <property name="geometry">
      <rect>
-      <x>215</x>
-      <y>145</y>
+      <x>225</x>
+      <y>60</y>
       <width>51</width>
       <height>22</height>
      </rect>
@@ -227,8 +227,8 @@
    <widget class="caTextEntry" name="catextentry_3">
     <property name="geometry">
      <rect>
-      <x>215</x>
-      <y>170</y>
+      <x>225</x>
+      <y>85</y>
       <width>51</width>
       <height>22</height>
      </rect>
@@ -240,8 +240,8 @@
    <widget class="caTextEntry" name="catextentry_4">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>170</y>
+      <x>170</x>
+      <y>85</y>
       <width>51</width>
       <height>22</height>
      </rect>
@@ -253,8 +253,8 @@
    <widget class="caTextEntry" name="catextentry_5">
     <property name="geometry">
      <rect>
-      <x>575</x>
-      <y>175</y>
+      <x>585</x>
+      <y>85</y>
       <width>51</width>
       <height>22</height>
      </rect>
@@ -266,8 +266,8 @@
    <widget class="caTextEntry" name="catextentry_6">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>150</y>
+      <x>640</x>
+      <y>60</y>
       <width>51</width>
       <height>22</height>
      </rect>
@@ -279,8 +279,8 @@
    <widget class="caTextEntry" name="catextentry_7">
     <property name="geometry">
      <rect>
-      <x>575</x>
-      <y>150</y>
+      <x>585</x>
+      <y>60</y>
       <width>51</width>
       <height>22</height>
      </rect>
@@ -292,8 +292,8 @@
    <widget class="caTextEntry" name="catextentry_8">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>175</y>
+      <x>640</x>
+      <y>85</y>
       <width>51</width>
       <height>22</height>
      </rect>
@@ -302,32 +302,11 @@
      <string notr="true">IBFBCTRL:Y-FB-DOWN-ORBIT-M22</string>
     </property>
    </widget>
-   <widget class="caLabel" name="calabel_3">
-    <property name="geometry">
-     <rect>
-      <x>5</x>
-      <y>145</y>
-      <width>81</width>
-      <height>48</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Transfer Matrix</string>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="caLabel" name="calabel_4">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>315</y>
+      <x>10</x>
+      <y>175</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -344,8 +323,8 @@
    <widget class="caGraphics" name="cagraphics">
     <property name="geometry">
      <rect>
-      <x>35</x>
-      <y>255</y>
+      <x>45</x>
+      <y>115</y>
       <width>751</width>
       <height>16</height>
      </rect>
@@ -372,8 +351,8 @@
    <widget class="caCartesianPlot" name="cacartesianplot">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>340</y>
+      <x>160</x>
+      <y>200</y>
       <width>221</width>
       <height>104</height>
      </rect>
@@ -400,8 +379,8 @@
    <widget class="caCartesianPlot" name="cacartesianplot_2">
     <property name="geometry">
      <rect>
-      <x>564</x>
-      <y>340</y>
+      <x>574</x>
+      <y>200</y>
       <width>221</width>
       <height>104</height>
      </rect>
@@ -428,8 +407,8 @@
    <widget class="caLineEdit" name="calineedit_5">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>290</y>
+      <x>140</x>
+      <y>150</y>
       <width>41</width>
       <height>20</height>
      </rect>
@@ -441,14 +420,92 @@
    <widget class="caLineEdit" name="calineedit_6">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>315</y>
+      <x>140</x>
+      <y>175</y>
       <width>41</width>
       <height>20</height>
      </rect>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">IBFBCTRL:Y-LATVER-BPM1-UP-ANGLE-M</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_7">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>150</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM2-UP-POS-M</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_8">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>175</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM2-UP-ANGLE-M</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_9">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>150</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM2-DOWN-POS-M</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_10">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>175</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM2-DOWN-ANGLE-M</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_11">
+    <property name="geometry">
+     <rect>
+      <x>555</x>
+      <y>150</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM1-DOWN-POS-M</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_12">
+    <property name="geometry">
+     <rect>
+      <x>555</x>
+      <y>175</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM1-DOWN-ANGLE-M</string>
     </property>
    </widget>
   </widget>
