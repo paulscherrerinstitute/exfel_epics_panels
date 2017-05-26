@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>877</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="caLabelVertical" name="calabelvertical">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>170</y>
+      <width>20</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string notr="true">BPMI-1860</string>
+    </property>
+    <property name="alignment">
+     <enum>caLabelVertical::Right</enum>
+    </property>
+   </widget>
+   <widget class="caLabelVertical" name="calabelvertical_2">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>170</y>
+      <width>20</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string notr="true">BPMI-1878</string>
+    </property>
+    <property name="alignment">
+     <enum>caLabelVertical::Right</enum>
+    </property>
+   </widget>
+   <widget class="caLabelVertical" name="calabelvertical_3">
+    <property name="geometry">
+     <rect>
+      <x>555</x>
+      <y>170</y>
+      <width>20</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string notr="true">BPMI-1910</string>
+    </property>
+    <property name="alignment">
+     <enum>caLabelVertical::Right</enum>
+    </property>
+   </widget>
+   <widget class="caLabelVertical" name="calabelvertical_4">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>170</y>
+      <width>20</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string notr="true">BPMI-1930</string>
+    </property>
+    <property name="alignment">
+     <enum>caLabelVertical::Right</enum>
+    </property>
+   </widget>
+   <widget class="caLabelVertical" name="calabelvertical_5">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>170</y>
+      <width>20</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string notr="true">KICKY-1883</string>
+    </property>
+    <property name="alignment">
+     <enum>caLabelVertical::Right</enum>
+    </property>
+   </widget>
+   <widget class="caLabelVertical" name="calabelvertical_6">
+    <property name="geometry">
+     <rect>
+      <x>465</x>
+      <y>170</y>
+      <width>20</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string notr="true">KICKY-1908</string>
+    </property>
+    <property name="alignment">
+     <enum>caLabelVertical::Right</enum>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>x [mm]</string>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel_2">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>265</y>
+      <width>76</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>BPMID</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>265</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBYUP:BPM1-BPM-ID</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_2">
+    <property name="geometry">
+     <rect>
+      <x>255</x>
+      <y>265</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBYUP:BPM2-BPM-ID</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_3">
+    <property name="geometry">
+     <rect>
+      <x>545</x>
+      <y>265</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBYDOWN:BPM1-BPM-ID</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_4">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>265</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBYDOWN:BPM2-BPM-ID</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>145</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-UP-ORBIT-M11</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_2">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>145</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-UP-ORBIT-M12</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_3">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>170</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-UP-ORBIT-M22</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_4">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>170</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-UP-ORBIT-M21</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_5">
+    <property name="geometry">
+     <rect>
+      <x>575</x>
+      <y>175</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-DOWN-ORBIT-M21</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_6">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>150</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-DOWN-ORBIT-M12</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_7">
+    <property name="geometry">
+     <rect>
+      <x>575</x>
+      <y>150</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-DOWN-ORBIT-M11</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_8">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>175</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-DOWN-ORBIT-M22</string>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel_3">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>145</y>
+      <width>81</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Transfer Matrix</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>315</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>x' [mrad]</string>
+    </property>
+   </widget>
+   <widget class="caGraphics" name="cagraphics">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>255</y>
+      <width>751</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="fillstyle" stdset="0">
+     <enum>caGraphics::Outline</enum>
+    </property>
+    <property name="form">
+     <enum>caGraphics::Arrow</enum>
+    </property>
+    <property name="arrowSize">
+     <number>13</number>
+    </property>
+    <property name="arrowMode">
+     <enum>caGraphics::Single</enum>
+    </property>
+    <property name="tiltAngle">
+     <number>180</number>
+    </property>
+   </widget>
+   <widget class="caCartesianPlot" name="cacartesianplot">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>340</y>
+      <width>221</width>
+      <height>104</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <property name="grid">
+     <bool>true</bool>
+    </property>
+    <property name="XaxisEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="YaxisEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="caCartesianPlot" name="cacartesianplot_2">
+    <property name="geometry">
+     <rect>
+      <x>564</x>
+      <y>340</y>
+      <width>221</width>
+      <height>104</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <property name="grid">
+     <bool>true</bool>
+    </property>
+    <property name="XaxisEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="YaxisEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_5">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>290</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-BPM1-UP-POS-M</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_6">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>315</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-BPM1-UP-ANGLE-M</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caLabel</class>
+   <extends>QLabel</extends>
+   <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caLabelVertical</class>
+   <extends>QWidget</extends>
+   <header>caLabelVertical</header>
+  </customwidget>
+  <customwidget>
+   <class>caGraphics</class>
+   <extends>QWidget</extends>
+   <header>caGraphics</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+  <customwidget>
+   <class>caCartesianPlot</class>
+   <extends>QFrame</extends>
+   <header>caCartesianPlot</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
