@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>877</width>
-    <height>600</height>
+    <width>817</width>
+    <height>484</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>30</y>
+      <y>35</y>
       <width>20</width>
       <height>85</height>
      </rect>
@@ -34,7 +34,7 @@
     <property name="geometry">
      <rect>
       <x>275</x>
-      <y>30</y>
+      <y>35</y>
       <width>20</width>
       <height>85</height>
      </rect>
@@ -113,9 +113,9 @@
    <widget class="caLabel" name="calabel">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>25</x>
       <y>150</y>
-      <width>61</width>
+      <width>76</width>
       <height>21</height>
      </rect>
     </property>
@@ -125,7 +125,7 @@
      </font>
     </property>
     <property name="text">
-     <string>x [mm]</string>
+     <string>y   [mm]</string>
     </property>
    </widget>
    <widget class="caLabel" name="calabel_2">
@@ -143,7 +143,7 @@
      </font>
     </property>
     <property name="text">
-     <string>BPMID</string>
+     <string>BPM ID</string>
     </property>
    </widget>
    <widget class="caLineEdit" name="calineedit">
@@ -317,9 +317,9 @@
    <widget class="caLabel" name="calabel_4">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>25</x>
       <y>175</y>
-      <width>91</width>
+      <width>76</width>
       <height>21</height>
      </rect>
     </property>
@@ -329,7 +329,7 @@
      </font>
     </property>
     <property name="text">
-     <string>x' [mrad]</string>
+     <string>y' [mrad]</string>
     </property>
    </widget>
    <widget class="caGraphics" name="cagraphics">
@@ -358,62 +358,6 @@
     </property>
     <property name="tiltAngle">
      <number>180</number>
-    </property>
-   </widget>
-   <widget class="caCartesianPlot" name="cacartesianplot">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>200</y>
-      <width>221</width>
-      <height>104</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>0</number>
-    </property>
-    <property name="grid">
-     <bool>true</bool>
-    </property>
-    <property name="XaxisEnabled">
-     <bool>false</bool>
-    </property>
-    <property name="YaxisEnabled">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="caCartesianPlot" name="cacartesianplot_2">
-    <property name="geometry">
-     <rect>
-      <x>574</x>
-      <y>200</y>
-      <width>221</width>
-      <height>104</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>0</number>
-    </property>
-    <property name="grid">
-     <bool>true</bool>
-    </property>
-    <property name="XaxisEnabled">
-     <bool>false</bool>
-    </property>
-    <property name="YaxisEnabled">
-     <bool>false</bool>
     </property>
    </widget>
    <widget class="caLineEdit" name="calineedit_5">
@@ -544,6 +488,57 @@
      <string notr="true">IBFBCTRL:Y-LATVER-BPM1-DOWN-ANGLE-M</string>
     </property>
    </widget>
+   <widget class="caFrame" name="caframe">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>816</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="background">
+     <color>
+      <red>193</red>
+      <green>255</green>
+      <blue>206</blue>
+     </color>
+    </property>
+    <property name="backgroundMode">
+     <enum>caFrame::Filled</enum>
+    </property>
+   </widget>
+   <zorder>caframe</zorder>
+   <zorder>calabelvertical</zorder>
+   <zorder>calabelvertical_2</zorder>
+   <zorder>calabelvertical_3</zorder>
+   <zorder>calabelvertical_4</zorder>
+   <zorder>calabelvertical_5</zorder>
+   <zorder>calabelvertical_6</zorder>
+   <zorder>calabel</zorder>
+   <zorder>calabel_2</zorder>
+   <zorder>calineedit</zorder>
+   <zorder>calineedit_2</zorder>
+   <zorder>calineedit_3</zorder>
+   <zorder>calineedit_4</zorder>
+   <zorder>catextentry</zorder>
+   <zorder>catextentry_2</zorder>
+   <zorder>catextentry_3</zorder>
+   <zorder>catextentry_4</zorder>
+   <zorder>catextentry_5</zorder>
+   <zorder>catextentry_6</zorder>
+   <zorder>catextentry_7</zorder>
+   <zorder>catextentry_8</zorder>
+   <zorder>calabel_4</zorder>
+   <zorder>cagraphics</zorder>
+   <zorder>calineedit_5</zorder>
+   <zorder>calineedit_6</zorder>
+   <zorder>calineedit_7</zorder>
+   <zorder>calineedit_8</zorder>
+   <zorder>calineedit_9</zorder>
+   <zorder>calineedit_10</zorder>
+   <zorder>calineedit_11</zorder>
+   <zorder>calineedit_12</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
@@ -552,6 +547,12 @@
    <class>caTextEntry</class>
    <extends>caLineEdit</extends>
    <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caFrame</class>
+   <extends>QFrame</extends>
+   <header>caFrame</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>caLabel</class>
@@ -572,11 +573,6 @@
    <class>caLineEdit</class>
    <extends>QLineEdit</extends>
    <header>caLineEdit</header>
-  </customwidget>
-  <customwidget>
-   <class>caCartesianPlot</class>
-   <extends>QFrame</extends>
-   <header>caCartesianPlot</header>
   </customwidget>
  </customwidgets>
  <resources/>
