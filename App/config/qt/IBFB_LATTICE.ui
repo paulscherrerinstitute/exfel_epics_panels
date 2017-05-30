@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>817</width>
+    <height>484</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="caLabelVertical" name="calabelvertical">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>35</y>
+      <width>20</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string notr="true">BPMI-1860</string>
+    </property>
+    <property name="alignment">
+     <enum>caLabelVertical::Right</enum>
+    </property>
+   </widget>
+   <widget class="caLabelVertical" name="calabelvertical_2">
+    <property name="geometry">
+     <rect>
+      <x>275</x>
+      <y>35</y>
+      <width>20</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string notr="true">BPMI-1878</string>
+    </property>
+    <property name="alignment">
+     <enum>caLabelVertical::Right</enum>
+    </property>
+   </widget>
+   <widget class="caLabelVertical" name="calabelvertical_3">
+    <property name="geometry">
+     <rect>
+      <x>565</x>
+      <y>35</y>
+      <width>20</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string notr="true">BPMI-1910</string>
+    </property>
+    <property name="alignment">
+     <enum>caLabelVertical::Right</enum>
+    </property>
+   </widget>
+   <widget class="caLabelVertical" name="calabelvertical_4">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>35</y>
+      <width>20</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string notr="true">BPMI-1930</string>
+    </property>
+    <property name="alignment">
+     <enum>caLabelVertical::Right</enum>
+    </property>
+   </widget>
+   <widget class="caLabelVertical" name="calabelvertical_5">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>30</y>
+      <width>20</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string notr="true">KICKY-1883</string>
+    </property>
+    <property name="alignment">
+     <enum>caLabelVertical::Right</enum>
+    </property>
+   </widget>
+   <widget class="caLabelVertical" name="calabelvertical_6">
+    <property name="geometry">
+     <rect>
+      <x>475</x>
+      <y>30</y>
+      <width>20</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string notr="true">KICKY-1908</string>
+    </property>
+    <property name="alignment">
+     <enum>caLabelVertical::Right</enum>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>150</y>
+      <width>76</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>y   [mm]</string>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel_2">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>125</y>
+      <width>76</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>BPM ID</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>125</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBYUP:BPM1-BPM-ID</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_2">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>125</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBYUP:BPM2-BPM-ID</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_3">
+    <property name="geometry">
+     <rect>
+      <x>555</x>
+      <y>125</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBYDOWN:BPM1-BPM-ID</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_4">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>125</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBYDOWN:BPM2-BPM-ID</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>60</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-UP-ORBIT-M11</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_2">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>60</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-UP-ORBIT-M12</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_3">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>85</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-UP-ORBIT-M22</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_4">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>85</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-UP-ORBIT-M21</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_5">
+    <property name="geometry">
+     <rect>
+      <x>585</x>
+      <y>85</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-DOWN-ORBIT-M21</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_6">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>60</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-DOWN-ORBIT-M12</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_7">
+    <property name="geometry">
+     <rect>
+      <x>585</x>
+      <y>60</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-DOWN-ORBIT-M11</string>
+    </property>
+   </widget>
+   <widget class="caTextEntry" name="catextentry_8">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>85</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-FB-DOWN-ORBIT-M22</string>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel_4">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>175</y>
+      <width>76</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>y' [mrad]</string>
+    </property>
+   </widget>
+   <widget class="caGraphics" name="cagraphics">
+    <property name="geometry">
+     <rect>
+      <x>45</x>
+      <y>115</y>
+      <width>751</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="fillstyle" stdset="0">
+     <enum>caGraphics::Outline</enum>
+    </property>
+    <property name="form">
+     <enum>caGraphics::Arrow</enum>
+    </property>
+    <property name="arrowSize">
+     <number>13</number>
+    </property>
+    <property name="arrowMode">
+     <enum>caGraphics::Single</enum>
+    </property>
+    <property name="tiltAngle">
+     <number>180</number>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_5">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>150</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM1-UP-POS-M</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_6">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>175</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM1-UP-ANGLE-M</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_7">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>150</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM2-UP-POS-M</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_8">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>175</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM2-UP-ANGLE-M</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_9">
+    <property name="geometry">
+     <rect>
+      <x>665</x>
+      <y>150</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM2-DOWN-POS-M</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_10">
+    <property name="geometry">
+     <rect>
+      <x>665</x>
+      <y>175</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM2-DOWN-ANGLE-M</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_11">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>150</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM1-DOWN-POS-M</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_12">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>175</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">IBFBCTRL:Y-LATVER-BPM1-DOWN-ANGLE-M</string>
+    </property>
+   </widget>
+   <widget class="caFrame" name="caframe">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>816</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="background">
+     <color>
+      <red>193</red>
+      <green>255</green>
+      <blue>206</blue>
+     </color>
+    </property>
+    <property name="backgroundMode">
+     <enum>caFrame::Filled</enum>
+    </property>
+   </widget>
+   <zorder>caframe</zorder>
+   <zorder>calabelvertical</zorder>
+   <zorder>calabelvertical_2</zorder>
+   <zorder>calabelvertical_3</zorder>
+   <zorder>calabelvertical_4</zorder>
+   <zorder>calabelvertical_5</zorder>
+   <zorder>calabelvertical_6</zorder>
+   <zorder>calabel</zorder>
+   <zorder>calabel_2</zorder>
+   <zorder>calineedit</zorder>
+   <zorder>calineedit_2</zorder>
+   <zorder>calineedit_3</zorder>
+   <zorder>calineedit_4</zorder>
+   <zorder>catextentry</zorder>
+   <zorder>catextentry_2</zorder>
+   <zorder>catextentry_3</zorder>
+   <zorder>catextentry_4</zorder>
+   <zorder>catextentry_5</zorder>
+   <zorder>catextentry_6</zorder>
+   <zorder>catextentry_7</zorder>
+   <zorder>catextentry_8</zorder>
+   <zorder>calabel_4</zorder>
+   <zorder>cagraphics</zorder>
+   <zorder>calineedit_5</zorder>
+   <zorder>calineedit_6</zorder>
+   <zorder>calineedit_7</zorder>
+   <zorder>calineedit_8</zorder>
+   <zorder>calineedit_9</zorder>
+   <zorder>calineedit_10</zorder>
+   <zorder>calineedit_11</zorder>
+   <zorder>calineedit_12</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caTextEntry</class>
+   <extends>caLineEdit</extends>
+   <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caFrame</class>
+   <extends>QFrame</extends>
+   <header>caFrame</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>caLabel</class>
+   <extends>QLabel</extends>
+   <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caLabelVertical</class>
+   <extends>QWidget</extends>
+   <header>caLabelVertical</header>
+  </customwidget>
+  <customwidget>
+   <class>caGraphics</class>
+   <extends>QWidget</extends>
+   <header>caGraphics</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
