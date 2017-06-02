@@ -1,12 +1,12 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCAV.adl"
+	name="/xfel/controls/App/config/medm/IBFBCAV.adl"
 	version=030105
 }
 display {
 	object {
-		x=25
-		y=816
+		x=3
+		y=828
 		width=1000
 		height=260
 	}
@@ -126,19 +126,6 @@ polyline {
 		(1020,50)
 	}
 }
-text {
-	object {
-		x=250
-		y=35
-		width=50
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="BPMs"
-	align="horiz. centered"
-}
 polyline {
 	object {
 		x=635
@@ -169,7 +156,7 @@ text {
 }
 polyline {
 	object {
-		x=740
+		x=770
 		y=30
 		width=0
 		height=189
@@ -178,8 +165,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(740,30)
-		(740,219)
+		(770,30)
+		(770,219)
 	}
 }
 polyline {
@@ -238,7 +225,7 @@ text {
 }
 text {
 	object {
-		x=745
+		x=775
 		y=34
 		width=95
 		height=15
@@ -251,7 +238,7 @@ text {
 }
 polyline {
 	object {
-		x=845
+		x=875
 		y=30
 		width=0
 		height=189
@@ -260,8 +247,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(845,30)
-		(845,219)
+		(875,30)
+		(875,219)
 	}
 }
 text {
@@ -327,37 +314,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=640
-		y=117
-		width=45
-		height=15
-	}
-	control {
-		chan="IBFBXDOWN:BPM1-TRG-DELAY"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=690
-		y=117
-		width=45
-		height=15
-	}
-	control {
-		chan="IBFBXDOWN:BPM2-TRG-DELAY"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=745
+		x=775
 		y=117
 		width=45
 		height=15
@@ -372,7 +329,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=795
+		x=825
 		y=117
 		width=45
 		height=15
@@ -585,37 +542,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=640
-		y=97
-		width=45
-		height=15
-	}
-	control {
-		chan="IBFBXUP:BPM1-TRG-DELAY"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=690
-		y=97
-		width=45
-		height=15
-	}
-	control {
-		chan="IBFBXUP:BPM2-TRG-DELAY"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=745
+		x=775
 		y=97
 		width=45
 		height=15
@@ -630,7 +557,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=795
+		x=825
 		y=97
 		width=45
 		height=15
@@ -673,37 +600,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=640
-		y=77
-		width=45
-		height=15
-	}
-	control {
-		chan="IBFBYDOWN:BPM1-TRG-DELAY"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=690
-		y=77
-		width=45
-		height=15
-	}
-	control {
-		chan="IBFBYDOWN:BPM2-TRG-DELAY"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=745
+		x=775
 		y=77
 		width=45
 		height=15
@@ -718,7 +615,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=795
+		x=825
 		y=77
 		width=45
 		height=15
@@ -761,37 +658,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=640
-		y=57
-		width=45
-		height=15
-	}
-	control {
-		chan="IBFBYUP:BPM1-TRG-DELAY"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=690
-		y=57
-		width=45
-		height=15
-	}
-	control {
-		chan="IBFBYUP:BPM2-TRG-DELAY"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=745
+		x=775
 		y=57
 		width=45
 		height=15
@@ -806,7 +673,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=795
+		x=825
 		y=57
 		width=45
 		height=15
@@ -849,7 +716,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=850
+		x=880
 		y=57
 		width=45
 		height=15
@@ -864,7 +731,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=900
+		x=930
 		y=57
 		width=45
 		height=15
@@ -879,7 +746,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=850
+		x=880
 		y=77
 		width=45
 		height=15
@@ -894,7 +761,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=900
+		x=930
 		y=77
 		width=45
 		height=15
@@ -909,7 +776,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=850
+		x=880
 		y=97
 		width=45
 		height=15
@@ -924,7 +791,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=900
+		x=930
 		y=97
 		width=45
 		height=15
@@ -939,7 +806,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=850
+		x=880
 		y=117
 		width=45
 		height=15
@@ -954,7 +821,7 @@ rectangle {
 }
 "text entry" {
 	object {
-		x=900
+		x=930
 		y=117
 		width=45
 		height=15
@@ -1356,7 +1223,7 @@ rectangle {
 }
 text {
 	object {
-		x=850
+		x=880
 		y=35
 		width=95
 		height=15
@@ -1509,4 +1376,147 @@ rectangle {
 		calc="A=1"
 		chan="IBFBYUP:S7GPAC-STATUS"
 	}
+}
+"text update" {
+	object {
+		x=640
+		y=55
+		width=60
+		height=15
+	}
+	monitor {
+		chan="IBFBYUP:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=640
+		y=75
+		width=60
+		height=15
+	}
+	monitor {
+		chan="IBFBYDOWN:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=640
+		y=95
+		width=60
+		height=15
+	}
+	monitor {
+		chan="IBFBXUP:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=640
+		y=115
+		width=60
+		height=15
+	}
+	monitor {
+		chan="IBFBXDOWN:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=705
+		y=55
+		width=60
+		height=15
+	}
+	monitor {
+		chan="IBFBYUP:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=705
+		y=75
+		width=60
+		height=15
+	}
+	monitor {
+		chan="IBFBYDOWN:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=705
+		y=95
+		width=60
+		height=15
+	}
+	monitor {
+		chan="IBFBXUP:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=705
+		y=115
+		width=60
+		height=15
+	}
+	monitor {
+		chan="IBFBXDOWN:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"shell command" {
+	object {
+		x=220
+		y=30
+		width=150
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh CAVBPM BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-Cavity BPM (Qt)"
 }

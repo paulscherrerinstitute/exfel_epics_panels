@@ -1,12 +1,12 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_iocboot/XFELIBFB/../../xfel_epics_panels/App/config/medm/XFELIBFB.adl"
+	name="/xfel/controls/App/config/medm/XFELIBFB.adl"
 	version=030105
 }
 display {
 	object {
-		x=12
-		y=38
+		x=293
+		y=140
 		width=420
 		height=360
 	}
@@ -974,4 +974,19 @@ rectangle {
 	clr=14
 	bclr=57
 	label="-Feedback Player"
+}
+"shell command" {
+	object {
+		x=5
+		y=230
+		width=140
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh CAVBPM IBFB_LATTICE.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-Lattice Ver (Qt)"
 }

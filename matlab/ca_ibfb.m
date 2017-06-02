@@ -1,6 +1,7 @@
 classdef ca_ibfb < handle
     
    properties (Constant = true)
+      USE_PLAYER = 0;
       XLS_SECTION = 1;
       XLS_NAME1 = 3;
       XLS_NAME2 = 4;
@@ -207,7 +208,8 @@ classdef ca_ibfb < handle
       fprintf('  reading lattice parameters...');
       res = find_components_in_xfel_list(obj);
       if res
-          error('Cannot load lattice parameters');
+          errmsg = sprintf('ERROR %d: Cannot load lattice parameters', res);
+          error(errmsg);
           return;
       end
       lattice_process(obj);
@@ -259,16 +261,18 @@ classdef ca_ibfb < handle
       obj.ctrl.y_dac_mode_m       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-DAC-MODE-M' ]));
       obj.ctrl.x_dac_mode_m       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-DAC-MODE-M' ]));
       % player
-      obj.play.play1_mem_play_timestamp = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-TIMESTAMP']));
-      obj.play.play1_mem_play_control   = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-CONTROL'  ]));
-      obj.play.play1_mem_play_x         = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-X'        ]));
-      obj.play.play1_mem_play_y         = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-Y'        ]));
-      obj.play.play1_mem_play_cmd       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-CMD'      ]));
-      obj.play.play2_mem_play_timestamp = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_PLAY 'PLAY2-MEM-PLAY-TIMESTAMP']));
-      obj.play.play2_mem_play_control   = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_PLAY 'PLAY2-MEM-PLAY-CONTROL'  ]));
-      obj.play.play2_mem_play_x         = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_PLAY 'PLAY2-MEM-PLAY-X'        ]));
-      obj.play.play2_mem_play_y         = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_PLAY 'PLAY2-MEM-PLAY-Y'        ]));
-      obj.play.play2_mem_play_cmd       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_PLAY 'PLAY2-MEM-PLAY-CMD'      ]));
+      if obj.USE_PLAYER
+        obj.play.play1_mem_play_timestamp = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-TIMESTAMP']));
+        obj.play.play1_mem_play_control   = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-CONTROL'  ]));
+        obj.play.play1_mem_play_x         = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-X'        ]));
+        obj.play.play1_mem_play_y         = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-Y'        ]));
+        obj.play.play1_mem_play_cmd       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-CMD'      ]));
+        obj.play.play2_mem_play_timestamp = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_PLAY 'PLAY2-MEM-PLAY-TIMESTAMP']));
+        obj.play.play2_mem_play_control   = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_PLAY 'PLAY2-MEM-PLAY-CONTROL'  ]));
+        obj.play.play2_mem_play_x         = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_PLAY 'PLAY2-MEM-PLAY-X'        ]));
+        obj.play.play2_mem_play_y         = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_PLAY 'PLAY2-MEM-PLAY-Y'        ]));
+        obj.play.play2_mem_play_cmd       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_PLAY 'PLAY2-MEM-PLAY-CMD'      ]));
+      end;
       % monitor
       obj.mon(1).name = 'Y1 +';
       obj.mon(2).name = 'Y1 -';
@@ -1783,7 +1787,8 @@ classdef ca_ibfb < handle
 
       % try to open the file
       try
-        [r1, r2, r3] = xlsread(obj.LATTICE_FILE_NAME , 'LONGLIST');
+      %  [r1, r2, r3] = xlsread(obj.LATTICE_FILE_NAME , 'LONGLIST', '','basic');
+        [r1, r2, r3] = xlsread(obj.LATTICE_FILE_NAME, 'Sheet1' );
       catch
         fprintf('error reading file %s\n', obj.LATTICE_FILE_NAME )
         res = -1;
@@ -1875,6 +1880,7 @@ classdef ca_ibfb < handle
 
       idx=[];        
       for i=3:size(xfelcomps,1)
+          %fprintf('%s\n', xfelcomps{i, obj.XLS_GROUP})
           if strcmp(xfelcomps{i, obj.XLS_SECTION}, filter.section) & strcmp(xfelcomps{i, obj.XLS_GROUP}, filter.group) & strcmp(xfelcomps{i, obj.XLS_TYPE}, filter.type)
               idx = [idx i];
           end        
