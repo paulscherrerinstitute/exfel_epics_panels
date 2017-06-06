@@ -1,12 +1,12 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBWAV.adl"
+	name="/xfel/controls/App/config/medm/IBFBWAV.adl"
 	version=030105
 }
 display {
 	object {
-		x=267
-		y=81
+		x=40
+		y=87
 		width=1000
 		height=800
 	}
@@ -1326,13 +1326,13 @@ rectangle {
 "cartesian plot" {
 	object {
 		x=0
-		y=280
+		y=300
 		width=400
 		height=200
 	}
 	plotcom {
-		xlabel="Bucket"
-		ylabel="DAC counts"
+		xlabel="Clk Cycles"
+		ylabel="Y Packets"
 		clr=0
 		bclr=14
 	}
@@ -1356,6 +1356,42 @@ rectangle {
 	trace[3] {
 		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
 		ydata="$(DEV):Y-UP-BPM2-HIST"
+		data_clr=40
+	}
+}
+"cartesian plot" {
+	object {
+		x=0
+		y=510
+		width=400
+		height=200
+	}
+	plotcom {
+		xlabel="Clk Cycles"
+		ylabel="X Packets"
+		clr=0
+		bclr=14
+	}
+	style="line-bigmarks"
+	erase_oldest="plot last n pts"
+	trace[0] {
+		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
+		ydata="$(DEV):X-DOWN-BPM1-HIST"
+		data_clr=20
+	}
+	trace[1] {
+		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
+		ydata="$(DEV):X-DOWN-BPM2-HIST"
+		data_clr=15
+	}
+	trace[2] {
+		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
+		ydata="$(DEV):X-UP-BPM1-HIST"
+		data_clr=30
+	}
+	trace[3] {
+		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
+		ydata="$(DEV):X-UP-BPM2-HIST"
 		data_clr=40
 	}
 }
