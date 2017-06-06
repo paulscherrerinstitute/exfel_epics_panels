@@ -975,3 +975,18 @@ rectangle {
 	bclr=57
 	label="-Feedback Player"
 }
+"shell command" {
+	object {
+		x=5
+		y=230
+		width=140
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./psi_qt.sh CAVBPM IBFB_LATTICE.ui"
+	}
+	clr=14
+	bclr=57
+	label="-Optics (Qt)"
+}
