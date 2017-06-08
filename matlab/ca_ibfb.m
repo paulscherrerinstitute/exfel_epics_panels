@@ -566,14 +566,24 @@ classdef ca_ibfb < handle
       obj.ctrl_ff_table_generate('lin',plane,kicker, [-0.99 0.99], 30);
     end
 
-    function [res] = ctrl_ff_clear(obj, plane, kicker)
+    function [res] = ctrl_ff_train_alternating(obj, plane, kicker)
       % [res] = ctrl_ff_scan_single(obj, plane, kicker)
       %
       % Parameters:
       %   plane     - select plane 'X', 'Y', 'XY'
       %   kicker    - select kicker 'KICK1', 'KICK2', 'KICK12'
       
-      obj.ctrl_ff_table_generate('lin',plane,kicker, [0 0], 2707);
+      obj.ctrl_ff_table_generate('alt',plane,kicker, [-0.99 0.99], 30);
+    end
+
+    function [res] = ctrl_ff_clear(obj)
+      % [res] = ctrl_ff_scan_single(obj, plane, kicker)
+      %
+      % Parameters:
+      %   plane     - select plane 'X', 'Y', 'XY'
+      %   kicker    - select kicker 'KICK1', 'KICK2', 'KICK12'
+      
+      obj.ctrl_ff_table_generate('lin','XY','KICK12', [0 0], 2707);
     end
     
     % KW84 - Obsolete
