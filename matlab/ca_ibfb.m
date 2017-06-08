@@ -206,7 +206,7 @@ classdef ca_ibfb < handle
       % Open Excel sheet with XFEL lattice and find the components by
       % name. Read all necessary parameters
       fprintf('  reading lattice parameters...');
-      res = find_components_in_xfel_list(obj);
+      res = lattice_find_components_in_xfel_list(obj);
       if res
           errmsg = sprintf('ERROR %d: Cannot load lattice parameters', res);
           error(errmsg);
@@ -226,28 +226,29 @@ classdef ca_ibfb < handle
       obj.play.trgdel = 65536;
       % open EPICS channels
       fprintf('  initializing EPICS channel access...');
-      % controller
-      %obj.ctrl.y_down_rx_packets  = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-DOWN-RX-PACKETS' ]));
-      %obj.ctrl.y_up_rx_packets    = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-UP-RX-PACKETS'   ]));
+      %%  CONTROLLER  %%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+      %             Y               %
       obj.ctrl.y_updown_packets      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-UPDOWN-PACKETS'      ]));
       obj.ctrl.y_sase_packets        = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-SASE-PACKETS'        ]));
-      %obj.ctrl.y_rx_updown_time      = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-RX-UPDOWN-TIME'      ]));
-      %obj.ctrl.y_rx_updown_ctrl      = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-RX-UPDOWN-CTRL'      ]));
-      %obj.ctrl.y_rx_updown_pos       = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-RX-UPDOWN-POS'       ]));
+      obj.ctrl.y_ff_fast_mode        = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FF-FAST-MODE'        ]));
+      obj.ctrl.y_fb_cmd              = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FB-CMD'              ]));
+      obj.ctrl.y_ff_table_cnt        = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FF-TABLE-CNT'        ]));
       obj.ctrl.y_ff_table_pos        = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-FF-TABLE-POS'        ]));
       obj.ctrl.y_ff_table_angle      = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-FF-TABLE-ANGLE'      ]));
-      obj.ctrl.y_kick1_p_pattern     = Channels.create(context, ChannelDescriptor('integer[]'   , [obj.EPICS_CTRL 'Y-KICK1-P-PATTERN'     ]));
-      obj.ctrl.y_kick1_n_pattern     = Channels.create(context, ChannelDescriptor('integer[]'   , [obj.EPICS_CTRL 'Y-KICK1-N-PATTERN'     ]));
-      obj.ctrl.y_kick2_p_pattern     = Channels.create(context, ChannelDescriptor('integer[]'   , [obj.EPICS_CTRL 'Y-KICK2-P-PATTERN'     ]));
-      obj.ctrl.y_kick2_n_pattern     = Channels.create(context, ChannelDescriptor('integer[]'   , [obj.EPICS_CTRL 'Y-KICK2-N-PATTERN'     ]));
-      obj.ctrl.y_dac_wave_freq_2     = Channels.create(context, ChannelDescriptor('float'       , [obj.EPICS_CTRL 'Y-DAC-WAVE-FREQ-2'     ]));
-      obj.ctrl.y_dac_pattern_apply   = Channels.create(context, ChannelDescriptor('integer'     , [obj.EPICS_CTRL 'Y-DAC-PATTERN-APPLY'   ]));
-
+      obj.ctrl.y_kick1_p_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-KICK1-P-PATTERN'     ]));
+      obj.ctrl.y_kick1_n_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-KICK1-N-PATTERN'     ]));
+      obj.ctrl.y_kick2_p_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-KICK2-P-PATTERN'     ]));
+      obj.ctrl.y_kick2_n_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-KICK2-N-PATTERN'     ]));
+      obj.ctrl.y_dac_wave_freq_2     = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-DAC-WAVE-FREQ-2'     ]));
+      obj.ctrl.y_dac_pattern_apply   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-DAC-PATTERN-APPLY'   ]));
+      obj.ctrl.y_dcm_ps_cmd          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-DCM-PS-CMD'          ]));
+      obj.ctrl.y_dac_mode_m          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-DAC-MODE-M'          ]));
+      %             X               %
       obj.ctrl.x_updown_packets      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-UPDOWN-PACKETS'      ]));
       obj.ctrl.x_sase_packets        = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE-PACKETS'        ]));
-      %obj.ctrl.x_rx_updown_time      = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-RX-UPDOWN-TIME'      ]));
-      %obj.ctrl.x_rx_updown_ctrl      = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-RX-UPDOWN-CTRL'      ]));
-      %obj.ctrl.x_rx_updown_pos       = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-RX-UPDOWN-POS'       ]));
+      obj.ctrl.x_ff_fast_mode        = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-FF-FAST-MODE'        ]));
+      obj.ctrl.x_fb_cmd              = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-FB-CMD'              ]));
+      obj.ctrl.x_ff_table_cnt        = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-FF-TABLE-CNT'        ]));
       obj.ctrl.x_ff_table_pos        = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-FF-TABLE-POS'        ]));
       obj.ctrl.x_ff_table_angle      = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-FF-TABLE-ANGLE'      ]));
       obj.ctrl.x_kick1_p_pattern     = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-KICK1-P-PATTERN'     ]));
@@ -255,12 +256,9 @@ classdef ca_ibfb < handle
       obj.ctrl.x_kick2_p_pattern     = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-KICK2-P-PATTERN'     ]));
       obj.ctrl.x_kick2_n_pattern     = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-KICK2-N-PATTERN'     ]));
       obj.ctrl.x_dac_pattern_apply   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-DAC-PATTERN-APPLY'   ]));
-      
-      obj.ctrl.y_dcm_ps_cmd       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-DCM-PS-CMD' ]));
-      obj.ctrl.x_dcm_ps_cmd       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-DCM-PS-CMD' ]));
-      obj.ctrl.y_dac_mode_m       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-DAC-MODE-M' ]));
-      obj.ctrl.x_dac_mode_m       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-DAC-MODE-M' ]));
-      % player
+      obj.ctrl.x_dcm_ps_cmd          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-DCM-PS-CMD'          ]));
+      obj.ctrl.x_dac_mode_m          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-DAC-MODE-M'          ]));
+      %%   PLAYER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       if obj.USE_PLAYER
         obj.play.play1_mem_play_timestamp = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-TIMESTAMP']));
         obj.play.play1_mem_play_control   = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-CONTROL'  ]));
@@ -273,7 +271,7 @@ classdef ca_ibfb < handle
         obj.play.play2_mem_play_y         = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_PLAY 'PLAY2-MEM-PLAY-Y'        ]));
         obj.play.play2_mem_play_cmd       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_PLAY 'PLAY2-MEM-PLAY-CMD'      ]));
       end;
-      % monitor
+      %%  MONITOR  %%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
       obj.mon(1).name = 'Y1 +';
       obj.mon(2).name = 'Y1 -';
       obj.mon(3).name = 'Y2 +';
@@ -312,11 +310,16 @@ classdef ca_ibfb < handle
       %obj.play.mem_play_cmd.close();
     end
     
-    function player_gen_sequence(obj, player, packets, bpm)
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% PLAYER FUNCTIONS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    function play_gen_sequence(obj, player, packets, bpm)
       if packets > 2700
           error 'Packets number must not exceed 2700';
       end
-      obj.play.mem_play_timestamp.put(obj.player_calculate_timestamp());
+      obj.play.mem_play_timestamp.put(obj.play_calculate_timestamp());
       obj.play.mem_play_control.put(obj.player_calculate_control(packets, bpm));
       obj.play.mem_play_x.put(obj.player_calculate_pos(3.4));
       obj.play.mem_play_y.put(obj.player_calculate_pos(-0.7));
@@ -325,7 +328,7 @@ classdef ca_ibfb < handle
       pause(1);
       obj.play.mem_play_cmd.put(int32(0));
     end
-    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
     function play_gen_bpm_data(obj, bpmidx, offset, packets, posx, posy)
       obj.bpms(bpmidx).packets.num = packets;
       obj.bpms(bpmidx).packets.timestamp = offset + obj.BUCKET_SPACE*(0:(obj.BUCKET_NUMBER-1));
@@ -337,7 +340,7 @@ classdef ca_ibfb < handle
       obj.bpms(bpmidx).packets.x(:) = posx + 1e-2*(0:(obj.BUCKET_NUMBER-1));
       obj.bpms(bpmidx).packets.y(:) = posy + 1e-2*(0:(obj.BUCKET_NUMBER-1));           
     end      
-    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
     function play_program_mem(obj, bpm_fpga, player, bpms, debug) 
       % if length of bpms is zero then stop the transmission
       if isempty(bpms)
@@ -422,35 +425,157 @@ classdef ca_ibfb < handle
         obj.play.play2_mem_play_cmd.put(int32(0));
       end;
     end
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    function [res] = play_init_bpms(obj)
+      obj.play_gen_bpm_data(obj.BPMDOWNY1,       38,    2700,  0.11, -0.11);
+      obj.play_gen_bpm_data(obj.BPMDOWNY2,       41,    2700,  0.12, -0.12);
+      obj.play_gen_bpm_data(obj.BPMUPY1,         32,    2700,  0.21, -0.21);
+      obj.play_gen_bpm_data(obj.BPMUPY2,         35,    2700,  0.22, -0.22);
+      obj.play_gen_bpm_data(obj.BPMSASE1Y1,     132,    2700,  1.11, -1.11);
+      obj.play_gen_bpm_data(obj.BPMSASE1Y2,     135,    2700,  1.12, -1.12);
+      obj.play_gen_bpm_data(obj.BPMSASE2Y1,     142,    2700,  1.11, -1.11);
+      obj.play_gen_bpm_data(obj.BPMSASE2Y2,     145,    2700,  1.12, -1.12);
+      obj.play_gen_bpm_data(obj.BPMSASE3Y1,     232,    2700,  1.11, -1.11);
+      obj.play_gen_bpm_data(obj.BPMSASE3Y2,     235,    2700,  1.12, -1.12);
+      obj.play_gen_bpm_data(obj.BPMCOL1,         32,    2700,  1.12, -1.12);
+
+      % X plane
+      obj.play_gen_bpm_data(obj.BPMDOWNX1,       38,    2700,   2.3, -0.20);
+      obj.play_gen_bpm_data(obj.BPMDOWNX2,       41,    2700,  -2.3,  0.50);
+      obj.play_gen_bpm_data(obj.BPMUPX1,         32,    2700,  -2.3,  1.20);
+      obj.play_gen_bpm_data(obj.BPMUPX2,         35,    2700,  -2.3,  1.20);
+      obj.play_gen_bpm_data(obj.BPMSASE1X1,     132,    2700,  -2.3,  1.23);
+      obj.play_gen_bpm_data(obj.BPMSASE1X2,     135,    2700,  -2.3,  1.33);
+      obj.play_gen_bpm_data(obj.BPMSASE2X1,     142,    2700,  -2.3,  1.23);
+      obj.play_gen_bpm_data(obj.BPMSASE2X2,     145,    2700,  -2.3,  1.33);
+      obj.play_gen_bpm_data(obj.BPMSASE3X1,     232,    2700,  1.11, -1.11);
+      obj.play_gen_bpm_data(obj.BPMSASE3X2,     235,    2700,  1.12, -1.12);    
+    end
+
     
-    function [bpms] = plot_mgt_rx(obj)
-      % read data 
-      elems = obj.ctrl.y_updown_packets.get();
-      %  rx_tim = obj.ctrl.y_rx_updown_time.get();
-      rx_ctrl = obj.ctrl.y_rx_updown_ctrl.get();
-      rx_pos = obj.ctrl.y_rx_updown_pos.get();
-      % rx_tim = rx_tim(1:elems);
-      rx_ctrl = rx_ctrl(1:elems);
-      rx_pos = rx_pos(1:elems);
-      rx_bucket = bitand(rx_ctrl(1:20), 4095);
-      rx_bpm = bitand(rx_ctrl(1:20)/2^16, 255);          
-      bpms = unique(bitand(rx_ctrl(1:20)/2^16, 255));
-      bpm_num = length(bpms);
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% CONTROLLER FUNCTIONS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    function [res] = ctrl_ff_table_generate(obj, type, plane, kicker, amp, length)
+      % [res] = ctrl_ff_table_generate(obj, type, plane, kicker, amplitude, length)
+      %
+      % Parameters:
+      %   type      - possible strings 'lin', 'alt'
+      %   plane     - select plane 'X', 'Y', 'XY'
+      %   kicker    - select kicker 'KICK1', 'KICK2', 'KICK12'
+      %   amp       - a vector of two amplitudes [start, stop] for linear, and [pos, neg] for alternating pulses
+      %               the amplitude value is normalized to 1 and corresponds to +/- 32767 in hardware
+      %   length    - a length of the generated ff table
       
-      % sort data
-      for i=1:bpm_num
-        subplot(bpm_num,1,i);
-        x = rx_bucket(rx_bpm==bpms(i));
-        y = rx_pos(rx_bpm==bpms(i));
-        plot(x, y);
-        title(['BPM: ' num2str(bpms(i))]);
-        ylabel('Position [mm]');
-        xlabel('Bucket');
+      res = 0;
+      
+      % generate tables
+      switch type
+        case 'lin'
+          ff = linspace(amp(1), amp(2), length);
+        case 'alt'
+          ff = (-1)^([0:length-1]);
+          ff(1:2:end) = ff(1:2:end) * amp(1);
+          ff(2:2:end) = ff(1:2:end) * amp(2);
+      end
+           
+      ff_tab = zeros(2, 2708);
+      if strcmp(kicker, 'KICK1') || strcmp(kicker, 'KICK12')
+        ff_tab(1, 1:size(ff,2)) = ff;
+      end
+      if strcmp(kicker, 'KICK2') || strcmp(kicker, 'KICK12')
+        ff_tab(2, 1:size(ff,2)) = ff;
       end
       
+
+      % this value triggers writing of the FF tables
+      ff_tab(2, end) = 0.00001;
+
+      y_cnt = obj.ctrl.y_ff_table_cnt.get();
+      x_cnt = obj.ctrl.x_ff_table_cnt.get();
+      % write to hardware 
+      obj.ctrl.y_ff_fast_mode.put(uint32(1));
+      if strcmp(plane, 'X') || strcmp(plane, 'XY')
+        obj.ctrl.x_ff_table_pos.put(single(ff_tab(1,:))); 
+        obj.ctrl.x_ff_table_angle.put(single(ff_tab(2,:)));
+      end
+      if strcmp(plane, 'Y') || strcmp(plane, 'XY')
+        obj.ctrl.y_ff_table_pos.put(single(ff_tab(1,:))); 
+        obj.ctrl.y_ff_table_angle.put(single(ff_tab(2,:))); 
+      end
+      
+      % wait for completion, the internal FF table counter should be incremented
+      if strcmp(plane, 'Y') || strcmp(plane, 'XY')
+        while y_cnt == obj.ctrl.y_ff_table_cnt.get()
+          if res > 3000
+            break
+          end
+          res = res + 1;
+        end
+      end 
+      %pause(1)
+      if strcmp(plane, 'X') || strcmp(plane, 'XY')
+        while x_cnt == obj.ctrl.x_ff_table_cnt.get()
+          if res > 3000
+            break
+          end
+          res = res + 1;
+        end
+      end
+      %pause(0.2)
+      % send feedback command
+      %obj.ctrl.y_fb_cmd.put(uint32(8));
+      %pause(0.2)
+      %obj.ctrl.y_fb_cmd.put(uint32(0));
+      
     end
+
+    function [res] = ctrl_ff_scan_single(obj, plane, kicker)
+      for i=-1:0.1:1
+        obj.ctrl_ff_table_generate('lin',plane,kicker, [i i], 1);
+      end
+        obj.ctrl_ff_table_generate('lin',plane,kicker, [0 0], 2707);
+    end
+
     
-    function [Mx, My] = calc_m(obj, s0, s)
+    % KW84 - Obsolete
+    % function [bpms] = ctrl_plot_mgt_rx(obj)
+    %   % read data 
+    %   elems = obj.ctrl.y_updown_packets.get();
+    %   %  rx_tim = obj.ctrl.y_rx_updown_time.get();
+    %   rx_ctrl = obj.ctrl.y_rx_updown_ctrl.get();
+    %   rx_pos = obj.ctrl.y_rx_updown_pos.get();
+    %   % rx_tim = rx_tim(1:elems);
+    %   rx_ctrl = rx_ctrl(1:elems);
+    %   rx_pos = rx_pos(1:elems);
+    %   rx_bucket = bitand(rx_ctrl(1:20), 4095);
+    %   rx_bpm = bitand(rx_ctrl(1:20)/2^16, 255);          
+    %   bpms = unique(bitand(rx_ctrl(1:20)/2^16, 255));
+    %   bpm_num = length(bpms);
+    %   
+    %   % sort data
+    %   for i=1:bpm_num
+    %     subplot(bpm_num,1,i);
+    %     x = rx_bucket(rx_bpm==bpms(i));
+    %     y = rx_pos(rx_bpm==bpms(i));
+    %     plot(x, y);
+    %     title(['BPM: ' num2str(bpms(i))]);
+    %     ylabel('Position [mm]');
+    %     xlabel('Bucket');
+    %   end
+    %   
+    % end
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% LATTICE FUNCTIONS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    function [Mx, My] = lattice_calc_m(obj, s0, s)
       %
       % Function ibfb_calc_m calculates transfer matrix from s0 to s
       %
@@ -483,15 +608,15 @@ classdef ca_ibfb < handle
       %
       %M = [ m11 m12; m21 m22]
 
-      Mx = calc_m_one_plane(obj, s0.alfx, s0.betx, s0.mux, s.alfx, s.betx, s.mux);
-      My = calc_m_one_plane(obj, s0.alfy, s0.bety, s0.muy, s.alfy, s.bety, s.muy);
+      Mx = lattice_calc_m_one_plane(obj, s0.alfx, s0.betx, s0.mux, s.alfx, s.betx, s.mux);
+      My = lattice_calc_m_one_plane(obj, s0.alfy, s0.bety, s0.muy, s.alfy, s.bety, s.muy);
     end
-  
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     function lattice_process(obj)
 
       for i=1:size(obj.bpms,2)
-          obj.bpms(i).gamx = lattic_calc_gamma(obj, obj.bpms(i).alfx, obj.bpms(i).betx);
-          obj.bpms(i).gamy = lattic_calc_gamma(obj, obj.bpms(i).alfy, obj.bpms(i).bety);
+          obj.bpms(i).gamx = lattice_calc_gamma(obj, obj.bpms(i).alfx, obj.bpms(i).betx);
+          obj.bpms(i).gamy = lattice_calc_gamma(obj, obj.bpms(i).alfy, obj.bpms(i).bety);
           %obj.bpms(i).ex = 0.0024^2*obj.bpms(i).gamx;
           %obj.bpms(i).ey = 0.0028^2*obj.bpms(i).gamy;
           %obj.bpms(i).maxax = sqrt(obj.bpms(i).ex/obj.bpms(i).betx);
@@ -508,8 +633,64 @@ classdef ca_ibfb < handle
       end
       
     end
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    function [res] = lattice_c_code_init(obj, elems)
+      
+      fd = fopen('lattice.c', 'w');
+      
+      fprintf(fd, '#include "ibfb_ctrl.h"\n\n');
 
-    function plot_orbits(obj, plane)
+      fprintf(fd, 'void ibfb_load_lattice_params(struct structIBFBctrl *this) {\n\n');
+      
+      % empty element for indexing aligment between Matlab and C
+      fprintf(fd, '    this->shared->lattice[0].plane = PLANE_X;\n');
+      fprintf(fd, '    strcpy((char *)this->shared->lattice[0].name, "EMPTY");\n');
+      fprintf(fd, '    this->shared->lattice[0].z = 0.0;\n');
+      fprintf(fd, '    this->shared->lattice[0].twissX.beta = 0.0;\n');
+      fprintf(fd, '    this->shared->lattice[0].twissX.alfa = 0.0;\n');
+      fprintf(fd, '    this->shared->lattice[0].twissX.mu = 0.0;\n');
+      fprintf(fd, '    this->shared->lattice[0].twissX.gamma = 0.0;\n');
+      fprintf(fd, '    this->shared->lattice[0].twissY.beta = 0.0;\n');
+      fprintf(fd, '    this->shared->lattice[0].twissY.alfa = 0.0;\n');
+      fprintf(fd, '    this->shared->lattice[0].twissY.mu = 0.0;\n');
+      fprintf(fd, '    this->shared->lattice[0].twissY.gamma = 0.0;\n');
+      fprintf(fd, '\n');
+      
+      j=1;
+      for i=elems
+        fprintf(fd, '    this->shared->lattice[%d].plane = PLANE_%s;\n', j, obj.bpms(i).plane);
+        fprintf(fd, '    strcpy((char *)this->shared->lattice[%d].name, "%s");\n', j, obj.bpms(i).name);
+        fprintf(fd, '    this->shared->lattice[%d].z = %.2f;\n', j, obj.bpms(i).z);
+        fprintf(fd, '    this->shared->lattice[%d].twissX.beta = %.4f;\n', j, obj.bpms(i).betx);
+        fprintf(fd, '    this->shared->lattice[%d].twissX.alfa = %.4f;\n', j, obj.bpms(i).alfx);
+        fprintf(fd, '    this->shared->lattice[%d].twissX.mu = %.4f;\n', j, obj.bpms(i).mux);
+        fprintf(fd, '    this->shared->lattice[%d].twissX.gamma = 0.0;\n', j);
+        fprintf(fd, '    this->shared->lattice[%d].twissY.beta = %.4f;\n', j, obj.bpms(i).bety);
+        fprintf(fd, '    this->shared->lattice[%d].twissY.alfa = %.4f;\n', j, obj.bpms(i).alfy);
+        fprintf(fd, '    this->shared->lattice[%d].twissY.mu = %.4f;\n', j, obj.bpms(i).muy);
+        fprintf(fd, '    this->shared->lattice[%d].twissY.gamma = 0.0;\n', j);
+        fprintf(fd, '\n');
+        j = j + 1;
+      end
+
+      fprintf(fd, '    this->lattice_elems = %d;\n', elems(end)+1);      
+      
+      fprintf(fd, '    return;\n');
+      fprintf(fd, '}\n');
+
+      fclose(fd);
+    end    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    function [res] = lattice_display_table(obj)
+    
+      fprintf('\nidx:     name        plane\n\n');
+      for i=1:length(obj.bpms)
+        fprintf('%3d: %16s    %s    %3d  %f %f \n', i, obj.bpms(i).name, obj.bpms(i).plane, obj.bpms(i).betx, obj.bpms(i).bety);
+      end
+      
+    end
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    function lattice_plot_orbits(obj, plane)
       figure(1);
       clf;
       ax_range = [-0.004 , 0.004, -.25e-3, .25e-3];
@@ -528,7 +709,7 @@ classdef ca_ibfb < handle
       legend(leg);
     end
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    function M = calc_m_one_plane(obj, alf0, bet0, mu0, alfs, bets, mus) 
+    function M = lattice_calc_m_one_plane(obj, alf0, bet0, mu0, alfs, bets, mus) 
       phi = (mus - mu0);
       M(1,1) = sqrt(bets/bet0)*(cos(phi)+alf0*sin(phi))         ;
       M(1,2) = sqrt(bets*bet0)*sin(phi);
@@ -536,10 +717,15 @@ classdef ca_ibfb < handle
       M(2,2) = sqrt(bet0/bets)*(cos(phi)-alfs*sin(phi));
     end
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    function res = calc_fft(obj, wav)           
-      res = 20*log10(abs(fft(wav)));
-    end
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %function res = calc_fft(obj, wav)           
+    %  res = 20*log10(abs(fft(wav)));
+    %end
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% MONITOR FUNCTIONS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     function mon_read(obj, channels)
       for i=channels
         obj.mon(i).amp_wav    = double(obj.mon(i).amp_adc_wav.get())./obj.ADC_RANGE;
@@ -602,7 +788,13 @@ classdef ca_ibfb < handle
         title(['Kicker ' obj.mon(i).name ])
       end
     end
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% SYSTEM TEST FUNCTIONS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
     function [res] = test_init(obj, pair)
       test_record_set(obj, 'IBFBCTRL:Y-AMP-GATE-ENA'        , 'integer', 0);
       test_record_set(obj, 'IBFBCTRL:X-AMP-GATE-ENA'        , 'integer', 0);
@@ -628,7 +820,7 @@ classdef ca_ibfb < handle
       
       test_record_set(obj, 'IBFBCTRL:Y-AMP-GATE-ENA'        , 'integer', 1);
       test_record_set(obj, 'IBFBCTRL:X-AMP-GATE-ENA'        , 'integer', 1);
-
+    
     end
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     function [res] = test_general_records(obj, fd)
@@ -907,7 +1099,7 @@ classdef ca_ibfb < handle
 
       
     end
-    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     function [res] = test_generate(obj)
       fname = 'Test_result.txt';
       fd = fopen(fname, 'w');
@@ -946,7 +1138,7 @@ classdef ca_ibfb < handle
       end
 
     end 
-    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     function [res] = test_generate_general(obj)
       fname = 'Test_result.txt';
       fd = fopen(fname, 'w');
@@ -956,7 +1148,7 @@ classdef ca_ibfb < handle
         return;
       end
 
-      generate_general_report_header(obj, fd);
+      test_generate_general_report_header(obj, fd);
       
       res = test_general_records(obj, fd);
       if res
@@ -972,114 +1164,89 @@ classdef ca_ibfb < handle
 
     end 
     
-    function [res] = player_init_bpms(obj)
-      obj.play_gen_bpm_data(obj.BPMDOWNY1,       38,    2700,  0.11, -0.11);
-      obj.play_gen_bpm_data(obj.BPMDOWNY2,       41,    2700,  0.12, -0.12);
-      obj.play_gen_bpm_data(obj.BPMUPY1,         32,    2700,  0.21, -0.21);
-      obj.play_gen_bpm_data(obj.BPMUPY2,         35,    2700,  0.22, -0.22);
-      obj.play_gen_bpm_data(obj.BPMSASE1Y1,     132,    2700,  1.11, -1.11);
-      obj.play_gen_bpm_data(obj.BPMSASE1Y2,     135,    2700,  1.12, -1.12);
-      obj.play_gen_bpm_data(obj.BPMSASE2Y1,     142,    2700,  1.11, -1.11);
-      obj.play_gen_bpm_data(obj.BPMSASE2Y2,     145,    2700,  1.12, -1.12);
-      obj.play_gen_bpm_data(obj.BPMSASE3Y1,     232,    2700,  1.11, -1.11);
-      obj.play_gen_bpm_data(obj.BPMSASE3Y2,     235,    2700,  1.12, -1.12);
-      obj.play_gen_bpm_data(obj.BPMCOL1,         32,    2700,  1.12, -1.12);
-
-      % X plane
-      obj.play_gen_bpm_data(obj.BPMDOWNX1,       38,    2700,   2.3, -0.20);
-      obj.play_gen_bpm_data(obj.BPMDOWNX2,       41,    2700,  -2.3,  0.50);
-      obj.play_gen_bpm_data(obj.BPMUPX1,         32,    2700,  -2.3,  1.20);
-      obj.play_gen_bpm_data(obj.BPMUPX2,         35,    2700,  -2.3,  1.20);
-      obj.play_gen_bpm_data(obj.BPMSASE1X1,     132,    2700,  -2.3,  1.23);
-      obj.play_gen_bpm_data(obj.BPMSASE1X2,     135,    2700,  -2.3,  1.33);
-      obj.play_gen_bpm_data(obj.BPMSASE2X1,     142,    2700,  -2.3,  1.23);
-      obj.play_gen_bpm_data(obj.BPMSASE2X2,     145,    2700,  -2.3,  1.33);
-      obj.play_gen_bpm_data(obj.BPMSASE3X1,     232,    2700,  1.11, -1.11);
-      obj.play_gen_bpm_data(obj.BPMSASE3X2,     235,    2700,  1.12, -1.12);    
-    end
-   
-    function [res] = ctrl_rx_dump_memory(obj, plane)
-    
-      if strcmp(plane, 'Y')
-        obj.mem.timestamp = obj.ctrl.y_rx_updown_time.get();
-        ctrl_word = obj.ctrl.y_rx_updown_ctrl.get();
-        obj.mem.ctrl_word = ctrl_word;
-        obj.mem.bpmid = get_bpm_from_control_word(obj, ctrl_word);
-        obj.mem.bucket = get_bucket_from_control_word(obj, ctrl_word);
-        obj.mem.pos = obj.ctrl.y_rx_updown_pos.get();
-        obj.mem.updown_packets = obj.ctrl.y_updown_packets.get();
-        obj.mem.sase_packets = obj.ctrl.y_sase_packets.get();
-      else
-        obj.mem.timestamp = obj.ctrl.x_rx_updown_time.get();
-        ctrl_word = obj.ctrl.x_rx_updown_ctrl.get();
-        obj.mem.ctrl_word = ctrl_word;
-        obj.mem.bpmid = get_bpm_from_control_word(obj, ctrl_word);
-        obj.mem.bucket = get_bucket_from_control_word(obj, ctrl_word);
-        obj.mem.pos = obj.ctrl.x_rx_updown_pos.get();
-        obj.mem.updown_packets = obj.ctrl.x_updown_packets.get();
-        obj.mem.sase_packets = obj.ctrl.x_sase_packets.get();
-      end
-      
-      %save(fname, '-struct','obj.mem');
-    end
-    
-    function bpm = get_bpm_from_control_word(obj, table)
-      bpm = bitand(bitshift(table, -16), 255);
-    end
-    
-    function bpm = get_bucket_from_control_word(obj, table)
-      bpm = bitand(table, 65535);
-    end
-
-    function bpm = analyze_rx_strem(obj)
-      %if obj.mem.updown_packets > 2700
-      if obj.mem.sase_packets > 2700
-        p = 2700;
-      else
-        p = obj.mem.sase_packets;
-      end
-      mintim = min(obj.mem.timestamp(1:p));
-      bpmids = unique(obj.mem.bpmid(1:p));
-      bpms = length(bpmids);
-      fprintf('Found %d BPMs with numbers [%s]\n', bpms, num2str(bpmids'));
-      for i=1:bpms        
-        idxs = find(obj.mem.bpmid(1:p) == bpmids(i));
-        obj.mem.bpm(i).bucket = obj.mem.bucket(idxs);
-        obj.mem.bpm(i).timestamp = obj.mem.timestamp(idxs);
-        obj.mem.bpm(i).pos = obj.mem.pos(idxs);
-        obj.mem.bpm(i).timediff = diff(obj.mem.bpm(i).timestamp);        
-      end
-      %
-      figure(1);
-      clf
-      for i=1:bpms       
-        subplot(bpms+1, 2, i*2-1);
-        plot(obj.mem.bpm(i).bucket, obj.mem.bpm(i).pos);
-        grid on;
-        xlabel('Bucket number');
-        ylabel('Position [mm]');
-        title(['BPM ' num2str(bpmids(i))]);
-        subplot(bpms+1, 2, i*2);
-        arriv=unique(obj.mem.bpm(i).timediff);
-        bins = double((min(arriv)):max(arriv));
-        hist(obj.mem.bpm(i).timediff, bins);
-        title([num2str(length(obj.mem.bpm(i).pos)) ' bunches from ' num2str(min(obj.mem.bpm(i).bucket)) ' to '  num2str(max(obj.mem.bpm(i).bucket))])
-      end
-      figcols = ['b.';'r.';'g.';'c.'];
-      subplot(bpms+1, 2, bpms*2+1);
-      for i=1:bpms             
-        plot(obj.mem.bpm(i).timestamp-mintim, obj.mem.bpm(i).pos, figcols(i,:));
-        hold on
-        if max(diff(obj.mem.bpm(i).bucket)) > 1
-          fprintf('WARNING: BPM %d has gaps in buckets\n', bpmids(i));
-        end
-      end
-      legend(num2str(bpmids))
-      xlabel('Timestamp [216.6 MHz clock cycles]');
-      ylabel('Position [mm]');
-      grid on;
-      
-    end
+    % KW84 - Obsolete function
+    %function [res] = ctrl_rx_dump_memory(obj, plane)
+    %
+    %  if strcmp(plane, 'Y')
+    %    obj.mem.timestamp = obj.ctrl.y_rx_updown_time.get();
+    %    ctrl_word = obj.ctrl.y_rx_updown_ctrl.get();
+    %    obj.mem.ctrl_word = ctrl_word;
+    %    obj.mem.bpmid = get_bpm_from_control_word(obj, ctrl_word);
+    %    obj.mem.bucket = get_bucket_from_control_word(obj, ctrl_word);
+    %    obj.mem.pos = obj.ctrl.y_rx_updown_pos.get();
+    %    obj.mem.updown_packets = obj.ctrl.y_updown_packets.get();
+    %    obj.mem.sase_packets = obj.ctrl.y_sase_packets.get();
+    %  else
+    %    obj.mem.timestamp = obj.ctrl.x_rx_updown_time.get();
+    %    ctrl_word = obj.ctrl.x_rx_updown_ctrl.get();
+    %    obj.mem.ctrl_word = ctrl_word;
+    %    obj.mem.bpmid = get_bpm_from_control_word(obj, ctrl_word);
+    %    obj.mem.bucket = get_bucket_from_control_word(obj, ctrl_word);
+    %    obj.mem.pos = obj.ctrl.x_rx_updown_pos.get();
+    %    obj.mem.updown_packets = obj.ctrl.x_updown_packets.get();
+    %    obj.mem.sase_packets = obj.ctrl.x_sase_packets.get();
+    %  end
+    %  
+    %  %save(fname, '-struct','obj.mem');
+    %end
+    % 
+    % function bpm = get_bpm_from_control_word(obj, table)
+    %   bpm = bitand(bitshift(table, -16), 255);
+    % end
+    % 
+    % function bpm = get_bucket_from_control_word(obj, table)
+    %   bpm = bitand(table, 65535);
+    % end
+    % 
+    % function bpm = analyze_rx_strem(obj)
+    %   %if obj.mem.updown_packets > 2700
+    %   if obj.mem.sase_packets > 2700
+    %     p = 2700;
+    %   else
+    %     p = obj.mem.sase_packets;
+    %   end
+    %   mintim = min(obj.mem.timestamp(1:p));
+    %   bpmids = unique(obj.mem.bpmid(1:p));
+    %   bpms = length(bpmids);
+    %   fprintf('Found %d BPMs with numbers [%s]\n', bpms, num2str(bpmids'));
+    %   for i=1:bpms        
+    %     idxs = find(obj.mem.bpmid(1:p) == bpmids(i));
+    %     obj.mem.bpm(i).bucket = obj.mem.bucket(idxs);
+    %     obj.mem.bpm(i).timestamp = obj.mem.timestamp(idxs);
+    %     obj.mem.bpm(i).pos = obj.mem.pos(idxs);
+    %     obj.mem.bpm(i).timediff = diff(obj.mem.bpm(i).timestamp);        
+    %   end
+    %   %
+    %   figure(1);
+    %   clf
+    %   for i=1:bpms       
+    %     subplot(bpms+1, 2, i*2-1);
+    %     plot(obj.mem.bpm(i).bucket, obj.mem.bpm(i).pos);
+    %     grid on;
+    %     xlabel('Bucket number');
+    %     ylabel('Position [mm]');
+    %     title(['BPM ' num2str(bpmids(i))]);
+    %     subplot(bpms+1, 2, i*2);
+    %     arriv=unique(obj.mem.bpm(i).timediff);
+    %     bins = double((min(arriv)):max(arriv));
+    %     hist(obj.mem.bpm(i).timediff, bins);
+    %     title([num2str(length(obj.mem.bpm(i).pos)) ' bunches from ' num2str(min(obj.mem.bpm(i).bucket)) ' to '  num2str(max(obj.mem.bpm(i).bucket))])
+    %   end
+    %   figcols = ['b.';'r.';'g.';'c.'];
+    %   subplot(bpms+1, 2, bpms*2+1);
+    %   for i=1:bpms             
+    %     plot(obj.mem.bpm(i).timestamp-mintim, obj.mem.bpm(i).pos, figcols(i,:));
+    %     hold on
+    %     if max(diff(obj.mem.bpm(i).bucket)) > 1
+    %       fprintf('WARNING: BPM %d has gaps in buckets\n', bpmids(i));
+    %     end
+    %   end
+    %   legend(num2str(bpmids))
+    %   xlabel('Timestamp [216.6 MHz clock cycles]');
+    %   ylabel('Position [mm]');
+    %   grid on;
+    %   
+    % end
    
     function [res, scan] = dac_phase_scan(obj)
       res = 0;
@@ -1150,434 +1317,379 @@ classdef ca_ibfb < handle
       title('DAC16HL - PB2')
     end
 
-    function [res] = c_code_init_lattice(obj, elems)
-      
-      fd = fopen('lattice.c', 'w');
-      
-      fprintf(fd, '#include "ibfb_ctrl.h"\n\n');
-
-      fprintf(fd, 'void ibfb_load_lattice_params(struct structIBFBctrl *this) {\n\n');
-      
-      % empty element for indexing aligment between Matlab and C
-      fprintf(fd, '    this->shared->lattice[0].plane = PLANE_X;\n');
-      fprintf(fd, '    strcpy((char *)this->shared->lattice[0].name, "EMPTY");\n');
-      fprintf(fd, '    this->shared->lattice[0].z = 0.0;\n');
-      fprintf(fd, '    this->shared->lattice[0].twissX.beta = 0.0;\n');
-      fprintf(fd, '    this->shared->lattice[0].twissX.alfa = 0.0;\n');
-      fprintf(fd, '    this->shared->lattice[0].twissX.mu = 0.0;\n');
-      fprintf(fd, '    this->shared->lattice[0].twissX.gamma = 0.0;\n');
-      fprintf(fd, '    this->shared->lattice[0].twissY.beta = 0.0;\n');
-      fprintf(fd, '    this->shared->lattice[0].twissY.alfa = 0.0;\n');
-      fprintf(fd, '    this->shared->lattice[0].twissY.mu = 0.0;\n');
-      fprintf(fd, '    this->shared->lattice[0].twissY.gamma = 0.0;\n');
-      fprintf(fd, '\n');
-      
-      j=1;
-      for i=elems
-        fprintf(fd, '    this->shared->lattice[%d].plane = PLANE_%s;\n', j, obj.bpms(i).plane);
-        fprintf(fd, '    strcpy((char *)this->shared->lattice[%d].name, "%s");\n', j, obj.bpms(i).name);
-        fprintf(fd, '    this->shared->lattice[%d].z = %.2f;\n', j, obj.bpms(i).z);
-        fprintf(fd, '    this->shared->lattice[%d].twissX.beta = %.4f;\n', j, obj.bpms(i).betx);
-        fprintf(fd, '    this->shared->lattice[%d].twissX.alfa = %.4f;\n', j, obj.bpms(i).alfx);
-        fprintf(fd, '    this->shared->lattice[%d].twissX.mu = %.4f;\n', j, obj.bpms(i).mux);
-        fprintf(fd, '    this->shared->lattice[%d].twissX.gamma = 0.0;\n', j);
-        fprintf(fd, '    this->shared->lattice[%d].twissY.beta = %.4f;\n', j, obj.bpms(i).bety);
-        fprintf(fd, '    this->shared->lattice[%d].twissY.alfa = %.4f;\n', j, obj.bpms(i).alfy);
-        fprintf(fd, '    this->shared->lattice[%d].twissY.mu = %.4f;\n', j, obj.bpms(i).muy);
-        fprintf(fd, '    this->shared->lattice[%d].twissY.gamma = 0.0;\n', j);
-        fprintf(fd, '\n');
-        j = j + 1;
-      end
-
-      fprintf(fd, '    this->lattice_elems = %d;\n', elems(end)+1);      
-      
-      fprintf(fd, '    return;\n');
-      fprintf(fd, '}\n');
-
-      fclose(fd);
-    end    
-
-    function [res] = display_lattice_table(obj)
     
-      fprintf('\nidx:     name        plane\n\n');
-      for i=1:length(obj.bpms)
-        fprintf('%3d: %16s    %s    %3d  %f %f \n', i, obj.bpms(i).name, obj.bpms(i).plane, obj.bpms(i).betx, obj.bpms(i).bety);
-      end
-      
-    end
-    
-    function [f, a] = measure_amp_spectrum(obj)
-      N = 2048;
-      F = 109; %MHz
-    
-      f = [1:N].*(F/N);
-      a = zeros(1, N);
-      figure(1)
-      clf
-      for i=1:N
-        obj.ctrl.y_dac_wave_freq_2.put(single(f(i)));
-        pause(0.5);
-        outm = single(obj.mon(3).kick_adc_wav.get());
-        a(i) = 20*log10(mean(abs(outm)));
-        if i<N
-          a(i+1:end) = a(i);
-        end
-        plot(f,a)
-        grid on
-      end
-      obj.ctrl.y_dac_wave_freq_2.put(single(4.6));
-    
-    end
-
-    function [res] = doublet_optimization_in_time1(obj)
-      N=48;
-      MO = 0;
-      
-      if MO
-        % clear the pattern table 
-        ind = zeros(1, N);
-        obj.ctrl.y_kick2_p_pattern.put(int32(ind));
-        pause(2);
-        obj.ctrl.y_dac_pattern_apply.put(int32(1));
-        pause(2);
-        % noise measurement
-        nspan=0;
-        offst=zeros(1,10);
-        for i=1:10
-          w = single(obj.mon(3).kick_adc_wav.get());
-          offst(i) = mean(w);
-          pause(0.2);
-        end
-        offst = mean(offst)
-      else
-        offst = -60;
-      end 
-      
-      % generate intial patterns
-      outd = [zeros(1,2) -0.5.*ones(1,8) 0.5.*ones(1,16) -0.5.*ones(1,8) zeros(1,14)];
-      ind = [zeros(1,2) linspace(-0.523,-0.772,8) linspace(0.285,0.735,16) linspace(-0.27,-0.47,8) zeros(1,14)];
-      ind(3:34) = ind(3:34);
-      %clf; plot(ind); return
-      %outd = [zeros(1,5) -sin(2*pi.*[1:40]./40) zeros(1,3)];
-      outd = outd.*16384;
-      %ind = outd;
-      ind = ind.*16384;
-      obj.ctrl.y_kick2_p_pattern.put(int32(ind));
-      pause(2);
-      obj.ctrl.y_dac_pattern_apply.put(int32(1));
-      pause(3);
-      w = single(obj.mon(3).kick_adc_wav.get());
-      w = w(1:N);
-      w = w';
-      err = outd-w;
-      toprms = rms(err(12:26))
-      while toprms>30
-        figure(1)
-        clf
-        subplot(2,1,1)
-        plot(outd, 'b')
-        hold on
-        grid on
-        plot(ind, 'g')
-        plot(w, 'r')
-        legend('Desired output', 'Desired input', 'Measured output')
-        subplot(2,1,2)
-        plot(err)
-        hold on
-        grid on
-        
-        indp = ind;
-        ind = ind + 0.9.*err;
-        ind(3) = indp(3);
-        ind(11) = indp(11);
-        ind(27) = indp(27);
-        ind(35) = indp(35);
-        ind(46:48)=0;
-        obj.ctrl.y_kick1_p_pattern.put(int32(ind));
-        obj.ctrl.y_kick1_n_pattern.put(int32(ind));
-        obj.ctrl.y_kick2_p_pattern.put(int32(ind));
-        obj.ctrl.y_kick2_n_pattern.put(int32(ind));
-        pause(2);
-        obj.ctrl.y_dac_pattern_apply.put(int32(1));
-        pause(3);
-        w = single(obj.mon(3).kick_adc_wav.get());
-        w = w-offst;
-        w = w(1:N);
-        w = w';
-        err = outd-w;        
-        toprms = rms(err(12:26))
-        tailrms = rms(err(36:48))
-      end
-            
-      save('dac_pattern.mat', 'ind');
-      
-    end
-
-    function [res] = doublet_optimization_in_time(obj)
-    
-      N=48;
-    
-      %outd = [zeros(1,4) -0.5.*ones(1,10) 0.5.*ones(1,20) -0.5.*ones(1,10) zeros(1,4)];
-      
-      outd = [zeros(1,4) -sin(2*pi.*[1:40]./40) zeros(1,4)];
-      %figure(1)
-      %clf
-      %plot(outd, '-x')
-      %return
-      
-      outd = outd.*16384;
-      % clear the pattern table 
-      ind = zeros(1, N);
-      ind(5) = 20000;
-      obj.ctrl.y_kick2_p_pattern.put(int32(ind));
-      pause(2);
-      obj.ctrl.y_dac_pattern_apply.put(int32(1));
-      pause(2);
-      return
-      % noise measurement
-      nspan=0;
-      offst=zeros(1,10);
-      for i=1:10
-        w = single(obj.mon(3).kick_adc_wav.get());
-        pp = max(w) - min(w);
-        if pp > nspan
-          nspan = pp;
-        end
-        offst(i) = mean(w);
-        pause(0.2);
-      end
-      offst = mean(offst)
-      pp = 3*pp
-
-      % Pulse optimization
-      i=1;
-      while i<(N+1)
-        w = single(obj.mon(3).kick_adc_wav.get());
-        w = w-offst;  
-        if (w(i)<(outd(i)+pp)) && (w(i)>(outd(i)-pp))
-          i = i + 1;
-          fprintf('i=%d\n', i);
-        else
-          ind(i) = ind(i) + 0.2*(outd(i)-w(i));   
-          obj.ctrl.y_kick2_p_pattern.put(int32(ind));
-          pause(2);
-          obj.ctrl.y_dac_pattern_apply.put(int32(1));
-          pause(2);
-        end
-        figure(1)
-        clf
-        plot(outd, 'b')
-        hold on
-        grid on
-        plot(ind, 'g')
-        plot(w(1:N), 'r')
-        legend('Desired output', 'Desired input', 'Measured output')
-        %pause
-      end
-      
-      
-    end
-
-    function [res] = upload_dac_pattern(obj)
-      
-      ind = [0 0 0 0 ...
-             -5287 -8035 -10783 -13531 -16279 -19027 -21775 -24523 -27271 0 ...
-             9887 11061 10735 10709 11783 13157 16631 14405 17879 16253 20227 18401 22775 20649 26023 22897 29271 25145 32719 27393 ...
-             -5287 -8035 -10783 -13531 -16279 -19027 -21775 -24523 -27271 -30019 ...
-             0 0 0 0 ...
-             ];
-             
-      obj.ctrl.y_kick2_p_pattern.put(int32(ind));
-      
-    end
-
-    function [res] = find_optimal_doublet(obj, f, s)
-
-      N=2048; 
-      Fs=216.6666666; % MHz
-      t=[1:N]./Fs;
-    
-      % calculate desired output
-      outd = [zeros(1,4) -0.25 -0.5.*ones(1,8) -0.25 0 0.25 0.5.*ones(1,16) 0.25 0 -0.25 -0.5.*ones(1,8) -0.25 zeros(1,4)];
-      outd = [repmat(outd, 1, 42) zeros(1, 32)];
-      outdfftc = fft(outd);
-      outdfft = 20*log10(abs(outdfftc)); 
-      
-      % calculate spectrum of the desired input
-      sfft = 10.^((s-80)./20);
-      indfftc = ifftshift(outdfftc).*ifftshift(sfft);
-      indfft = 20*log10(abs(indfftc));
-      indt = ifft(ifftshift(indfftc));
-      %indt = indt-mean(indt);
-      %indt = indt.*4;
-      
-      inm = single(obj.ctrl.y_kick2_p_pattern.get());
-      % replicated pattern up to 2048 samples
-      %inm = [repmat(inm, 42, 1);inm(1:32)];
-      inm = [repmat(inm, 42, 1); zeros(32,1)];
-      % normalize to 1
-      inm = inm./max(abs(inm));
-      inmfftc   = fft(inm'); 
-      inmfft   = 20*log10(abs(inmfftc)); 
-
-      outmfftc = inmfftc./sfft;
-      outmfft   = 20*log10(abs(outmfftc)); 
-      outmt     = ifft((outmfftc)); 
-      
-      figure(1);
-      clf
-      %
-      rng=1:1150;
-      subplot(2,1,1)
-      plot(t(rng), outd(rng), 'b')
-      grid on
-      hold on
-      %plot(t(rng), indt(rng), 'r')
-      plot(t(rng), inm(rng), 'g')
-      plot(t(rng), outmt(rng), 'r')
-      
-      %
-      subplot(2,1,2)
-      plot(f, s-40, 'b')
-      hold on
-      grid on
-      %plot(f, outdfft, 'r')
-      plot(f, inmfft, 'g')
-      plot(f, outmfft-6,  'r')
-      %plot(f, indfft,  'g')
-      %
-      %figure(2)
-      %clf
-      
-    end
-    
-    function [res, outm, ind] = doublet_optimization(obj)
-      res=0;
-      N=2048; 
-      M=48;
-      Fs=216.6666666; % MHz
-      t=[1:N]./Fs;
-      f=Fs.*[1:N]./N;
-      %outmn = zeros(16, 2048);
-      %outmfftcn = zeros(16, 2048);
-      %for i=1:16
-      %  %outmn(i,:) = single(obj.mon(3).kick_adc_wav.get());
-      %  outm = single(obj.mon(3).kick_adc_wav.get());
-      %  outm = outm./max(abs(outm));
-      %  %outmn(i,:) = outmn(i,:)./max(abs(outmn(i,:)));
-      %  outmfftcn(i,:) = fft(outm);
-      %  pause(0.1);
-      %end
-      outm = single(obj.mon(3).kick_adc_wav.get());
-      %outm(2017:2048) = 0;
-      outm = outm./max(abs(outm));
-      outmfftc = fft(outm);
-      %outm = outm./max(abs(outm));
-      %outmfftc = mean(outmfftcn)';
-      %outm = mean(outmn)';
-      %outm = single(obj.mon(3).kick_adc_wav.get());
-      %figure(1); clf; plot(outm); hold on; plot(mean(outmn)', 'r'); return;
-      %figure(1); clf; plot(outm); return;
-      inm = single(obj.ctrl.y_kick2_p_pattern.get());
-      % replicated pattern up to 2048 samples
-      %inm = [repmat(inm, 42, 1);inm(1:32)];
-      inm = [repmat(inm, 42, 1); zeros(32,1)];
-      % normalize to 1
-      inm = inm./max(abs(inm));
-      %inm = inm.*hamming(N);
-      % remove DC
-      %outm = outm-mean(outm);
-      %inm = inm-mean(inm);
-      % scale them to the same amplitude
-      %scl = max(outm(1:48))/max(inm(1:48));
-      %inm = inm.*scl;
-      
-      inmfftc   = fft(inm); 
-      %outmfftc  = fft(outm);
-      
-      inmfft   = 20*log10(abs(inmfftc)); 
-      outmfft  = 20*log10(abs(outmfftc));
-      outmfftp = angle(outmfftc);
-      
-      %inmfft(1) = outmfft(1);    % do not care about the DC amplitude
-      %ht = outmfft-inmfft;
-      htfftc = outmfftc./inmfftc;
-      htfft  = 20*log10(abs(htfftc));
-      
-      %%%%
-      figure(1)
-      clf
-      
-      % desired shape
-      outd = [zeros(1,4) -0.25 -0.5.*ones(1,8) -0.25 0 0.25 0.5.*ones(1,16) 0.25 0 -0.25 -0.5.*ones(1,8) -0.25 zeros(1,4)];
-      % replicate the shape up to 2048 samples
-      %outd = [repmat(outd, 1, 42) outd(1:32)];
-      outd = [repmat(outd, 1, 42) zeros(1, 32)];
-      %hw = hamming(N);
-      %outd = outd.*hw';
-      outdfftc = fft(outd);
-      outdfft = 20*log10(abs(outdfftc)); 
-      
-      outd = ifft(inmfftc.*outmfftc);
-      
-      indfftc = outdfftc./htfftc';
-      indfft  = 20*log10(abs(indfftc)); 
-      %ind = ifft(indfftc);
-      ind = filter([.5 .5], [1], ifft(indfftc));
-      %ind = ifft(indfftc);
-      indm = mean(reshape(ind((M*1+1):(M*32)), 48, 31)');
-      indm = ind(1009:1056);
-      %indm(1:4) = 0;
-      %indm(45:48) = 0;
-      %indm(4:43) = indm(4:43) - mean(indm(4:43));
-      % scale pattern to 1 and then to 16-bit resolution
-      indm = indm./max(abs(indm));
-      indm = indm.*(2^15-1);
-      %plot(int32(indm));
-      %return;
-      %obj.ctrl.y_kick2_p_pattern.put(int32(indm));
-      
-      %
-      figure(1)
-      rng=1:2048;
-      subplot(3,1,1)
-      plot(t(rng), inm(rng), 'r')
-      hold on
-      grid on
-      plot(t(rng), outm(rng), 'b')
-      plot(t(rng), outd(rng), 'g')
-      %plot(t(rng), ind(rng), 'k')
-      xlabel('Time [us]')
-      ylabel('Norm(1)')
-      legend('Actual DAC output', 'Actual Kicker output', 'Desired kicker output', 'Desired DAC output')
-      title('Time domain waveforms')
-      %
-      subplot(3,1,2)
-      plot(f(1:end/2), inmfft(1:end/2), 'r')
-      grid on
-      hold on
-      plot(f(1:end/2), outmfft(1:end/2), 'b')
-      %plot(f(1:end/2), outdfft(1:end/2), 'g')
-      %plot(f(1:end/2), indfft(1:end/2), 'k')
-      xlabel('Frequency [MHz]')
-      ylabel('Magnitude [dB]')
-      legend('Actual DAC output', 'Actual Kicker output', 'Desired kicker output', 'Desired DAC output')
-      title('Spectrum')
-      %
-      subplot(3,1,3)
-      plot(f(1:end/2), outmfftp(1:end/2), 'r')
-      grid on
-      title('System transfer spectrum')
-      xlabel('Frequency [MHz]')
-      ylabel('Magnitude [dB]')
-      %
-      figure(2)
-      clf
-      plot(indm)
-      hold on;
-      grid on
-      
-    end 
+    % function [f, a] = measure_amp_spectrum(obj)
+    %   N = 2048;
+    %   F = 109; %MHz
+    % 
+    %   f = [1:N].*(F/N);
+    %   a = zeros(1, N);
+    %   figure(1)
+    %   clf
+    %   for i=1:N
+    %     obj.ctrl.y_dac_wave_freq_2.put(single(f(i)));
+    %     pause(0.5);
+    %     outm = single(obj.mon(3).kick_adc_wav.get());
+    %     a(i) = 20*log10(mean(abs(outm)));
+    %     if i<N
+    %       a(i+1:end) = a(i);
+    %     end
+    %     plot(f,a)
+    %     grid on
+    %   end
+    %   obj.ctrl.y_dac_wave_freq_2.put(single(4.6));
+    % 
+    % end
+    %
+    %function [res] = doublet_optimization_in_time1(obj)
+    %  N=48;
+    %  MO = 0;
+    %  
+    %  if MO
+    %    % clear the pattern table 
+    %    ind = zeros(1, N);
+    %    obj.ctrl.y_kick2_p_pattern.put(int32(ind));
+    %    pause(2);
+    %    obj.ctrl.y_dac_pattern_apply.put(int32(1));
+    %    pause(2);
+    %    % noise measurement
+    %    nspan=0;
+    %    offst=zeros(1,10);
+    %    for i=1:10
+    %      w = single(obj.mon(3).kick_adc_wav.get());
+    %      offst(i) = mean(w);
+    %      pause(0.2);
+    %    end
+    %    offst = mean(offst)
+    %  else
+    %    offst = -60;
+    %  end 
+    %  
+    %  % generate intial patterns
+    %  outd = [zeros(1,2) -0.5.*ones(1,8) 0.5.*ones(1,16) -0.5.*ones(1,8) zeros(1,14)];
+    %  ind = [zeros(1,2) linspace(-0.523,-0.772,8) linspace(0.285,0.735,16) linspace(-0.27,-0.47,8) zeros(1,14)];
+    %  ind(3:34) = ind(3:34);
+    %  %clf; plot(ind); return
+    %  %outd = [zeros(1,5) -sin(2*pi.*[1:40]./40) zeros(1,3)];
+    %  outd = outd.*16384;
+    %  %ind = outd;
+    %  ind = ind.*16384;
+    %  obj.ctrl.y_kick2_p_pattern.put(int32(ind));
+    %  pause(2);
+    %  obj.ctrl.y_dac_pattern_apply.put(int32(1));
+    %  pause(3);
+    %  w = single(obj.mon(3).kick_adc_wav.get());
+    %  w = w(1:N);
+    %  w = w';
+    %  err = outd-w;
+    %  toprms = rms(err(12:26))
+    %  while toprms>30
+    %    figure(1)
+    %    clf
+    %    subplot(2,1,1)
+    %    plot(outd, 'b')
+    %    hold on
+    %    grid on
+    %    plot(ind, 'g')
+    %    plot(w, 'r')
+    %    legend('Desired output', 'Desired input', 'Measured output')
+    %    subplot(2,1,2)
+    %    plot(err)
+    %    hold on
+    %    grid on
+    %    
+    %    indp = ind;
+    %    ind = ind + 0.9.*err;
+    %    ind(3) = indp(3);
+    %    ind(11) = indp(11);
+    %    ind(27) = indp(27);
+    %    ind(35) = indp(35);
+    %    ind(46:48)=0;
+    %    obj.ctrl.y_kick1_p_pattern.put(int32(ind));
+    %    obj.ctrl.y_kick1_n_pattern.put(int32(ind));
+    %    obj.ctrl.y_kick2_p_pattern.put(int32(ind));
+    %    obj.ctrl.y_kick2_n_pattern.put(int32(ind));
+    %    pause(2);
+    %    obj.ctrl.y_dac_pattern_apply.put(int32(1));
+    %    pause(3);
+    %    w = single(obj.mon(3).kick_adc_wav.get());
+    %    w = w-offst;
+    %    w = w(1:N);
+    %    w = w';
+    %    err = outd-w;        
+    %    toprms = rms(err(12:26))
+    %    tailrms = rms(err(36:48))
+    %  end
+    %        
+    %  save('dac_pattern.mat', 'ind');
+    %  
+    %end
+    %
+    %function [res] = doublet_optimization_in_time(obj)
+    %
+    %  N=48;
+    %
+    %  %outd = [zeros(1,4) -0.5.*ones(1,10) 0.5.*ones(1,20) -0.5.*ones(1,10) zeros(1,4)];
+    %  
+    %  outd = [zeros(1,4) -sin(2*pi.*[1:40]./40) zeros(1,4)];
+    %  %figure(1)
+    %  %clf
+    %  %plot(outd, '-x')
+    %  %return
+    %  
+    %  outd = outd.*16384;
+    %  % clear the pattern table 
+    %  ind = zeros(1, N);
+    %  ind(5) = 20000;
+    %  obj.ctrl.y_kick2_p_pattern.put(int32(ind));
+    %  pause(2);
+    %  obj.ctrl.y_dac_pattern_apply.put(int32(1));
+    %  pause(2);
+    %  return
+    %  % noise measurement
+    %  nspan=0;
+    %  offst=zeros(1,10);
+    %  for i=1:10
+    %    w = single(obj.mon(3).kick_adc_wav.get());
+    %    pp = max(w) - min(w);
+    %    if pp > nspan
+    %      nspan = pp;
+    %    end
+    %    offst(i) = mean(w);
+    %    pause(0.2);
+    %  end
+    %  offst = mean(offst)
+    %  pp = 3*pp
+    %
+    %  % Pulse optimization
+    %  i=1;
+    %  while i<(N+1)
+    %    w = single(obj.mon(3).kick_adc_wav.get());
+    %    w = w-offst;  
+    %    if (w(i)<(outd(i)+pp)) && (w(i)>(outd(i)-pp))
+    %      i = i + 1;
+    %      fprintf('i=%d\n', i);
+    %    else
+    %      ind(i) = ind(i) + 0.2*(outd(i)-w(i));   
+    %      obj.ctrl.y_kick2_p_pattern.put(int32(ind));
+    %      pause(2);
+    %      obj.ctrl.y_dac_pattern_apply.put(int32(1));
+    %      pause(2);
+    %    end
+    %    figure(1)
+    %    clf
+    %    plot(outd, 'b')
+    %    hold on
+    %    grid on
+    %    plot(ind, 'g')
+    %    plot(w(1:N), 'r')
+    %    legend('Desired output', 'Desired input', 'Measured output')
+    %    %pause
+    %  end
+    %  
+    %  
+    %end
+    %
+    %function [res] = upload_dac_pattern(obj)
+    %  
+    %  ind = [0 0 0 0 ...
+    %         -5287 -8035 -10783 -13531 -16279 -19027 -21775 -24523 -27271 0 ...
+    %         9887 11061 10735 10709 11783 13157 16631 14405 17879 16253 20227 18401 22775 20649 26023 22897 29271 25145 32719 27393 ...
+    %         -5287 -8035 -10783 -13531 -16279 -19027 -21775 -24523 -27271 -30019 ...
+    %         0 0 0 0 ...
+    %         ];
+    %         
+    %  obj.ctrl.y_kick2_p_pattern.put(int32(ind));
+    %  
+    %end
+    %
+    %function [res] = find_optimal_doublet(obj, f, s)
+    %
+    %  N=2048; 
+    %  Fs=216.6666666; % MHz
+    %  t=[1:N]./Fs;
+    %
+    %  % calculate desired output
+    %  outd = [zeros(1,4) -0.25 -0.5.*ones(1,8) -0.25 0 0.25 0.5.*ones(1,16) 0.25 0 -0.25 -0.5.*ones(1,8) -0.25 zeros(1,4)];
+    %  outd = [repmat(outd, 1, 42) zeros(1, 32)];
+    %  outdfftc = fft(outd);
+    %  outdfft = 20*log10(abs(outdfftc)); 
+    %  
+    %  % calculate spectrum of the desired input
+    %  sfft = 10.^((s-80)./20);
+    %  indfftc = ifftshift(outdfftc).*ifftshift(sfft);
+    %  indfft = 20*log10(abs(indfftc));
+    %  indt = ifft(ifftshift(indfftc));
+    %  %indt = indt-mean(indt);
+    %  %indt = indt.*4;
+    %  
+    %  inm = single(obj.ctrl.y_kick2_p_pattern.get());
+    %  % replicated pattern up to 2048 samples
+    %  %inm = [repmat(inm, 42, 1);inm(1:32)];
+    %  inm = [repmat(inm, 42, 1); zeros(32,1)];
+    %  % normalize to 1
+    %  inm = inm./max(abs(inm));
+    %  inmfftc   = fft(inm'); 
+    %  inmfft   = 20*log10(abs(inmfftc)); 
+    %
+    %  outmfftc = inmfftc./sfft;
+    %  outmfft   = 20*log10(abs(outmfftc)); 
+    %  outmt     = ifft((outmfftc)); 
+    %  
+    %  figure(1);
+    %  clf
+    %  %
+    %  rng=1:1150;
+    %  subplot(2,1,1)
+    %  plot(t(rng), outd(rng), 'b')
+    %  grid on
+    %  hold on
+    %  %plot(t(rng), indt(rng), 'r')
+    %  plot(t(rng), inm(rng), 'g')
+    %  plot(t(rng), outmt(rng), 'r')
+    %  
+    %  %
+    %  subplot(2,1,2)
+    %  plot(f, s-40, 'b')
+    %  hold on
+    %  grid on
+    %  %plot(f, outdfft, 'r')
+    %  plot(f, inmfft, 'g')
+    %  plot(f, outmfft-6,  'r')
+    %  %plot(f, indfft,  'g')
+    %  %
+    %  %figure(2)
+    %  %clf
+    %  
+    %end
+    %
+    %function [res, outm, ind] = doublet_optimization(obj)
+    %  res=0;
+    %  N=2048; 
+    %  M=48;
+    %  Fs=216.6666666; % MHz
+    %  t=[1:N]./Fs;
+    %  f=Fs.*[1:N]./N;
+    %  %outmn = zeros(16, 2048);
+    %  %outmfftcn = zeros(16, 2048);
+    %  %for i=1:16
+    %  %  %outmn(i,:) = single(obj.mon(3).kick_adc_wav.get());
+    %  %  outm = single(obj.mon(3).kick_adc_wav.get());
+    %  %  outm = outm./max(abs(outm));
+    %  %  %outmn(i,:) = outmn(i,:)./max(abs(outmn(i,:)));
+    %  %  outmfftcn(i,:) = fft(outm);
+    %  %  pause(0.1);
+    %  %end
+    %  outm = single(obj.mon(3).kick_adc_wav.get());
+    %  %outm(2017:2048) = 0;
+    %  outm = outm./max(abs(outm));
+    %  outmfftc = fft(outm);
+    %  %outm = outm./max(abs(outm));
+    %  %outmfftc = mean(outmfftcn)';
+    %  %outm = mean(outmn)';
+    %  %outm = single(obj.mon(3).kick_adc_wav.get());
+    %  %figure(1); clf; plot(outm); hold on; plot(mean(outmn)', 'r'); return;
+    %  %figure(1); clf; plot(outm); return;
+    %  inm = single(obj.ctrl.y_kick2_p_pattern.get());
+    %  % replicated pattern up to 2048 samples
+    %  %inm = [repmat(inm, 42, 1);inm(1:32)];
+    %  inm = [repmat(inm, 42, 1); zeros(32,1)];
+    %  % normalize to 1
+    %  inm = inm./max(abs(inm));
+    %  %inm = inm.*hamming(N);
+    %  % remove DC
+    %  %outm = outm-mean(outm);
+    %  %inm = inm-mean(inm);
+    %  % scale them to the same amplitude
+    %  %scl = max(outm(1:48))/max(inm(1:48));
+    %  %inm = inm.*scl;
+    %  
+    %  inmfftc   = fft(inm); 
+    %  %outmfftc  = fft(outm);
+    %  
+    %  inmfft   = 20*log10(abs(inmfftc)); 
+    %  outmfft  = 20*log10(abs(outmfftc));
+    %  outmfftp = angle(outmfftc);
+    %  
+    %  %inmfft(1) = outmfft(1);    % do not care about the DC amplitude
+    %  %ht = outmfft-inmfft;
+    %  htfftc = outmfftc./inmfftc;
+    %  htfft  = 20*log10(abs(htfftc));
+    %  
+    %  %%%%
+    %  figure(1)
+    %  clf
+    %  
+    %  % desired shape
+    %  outd = [zeros(1,4) -0.25 -0.5.*ones(1,8) -0.25 0 0.25 0.5.*ones(1,16) 0.25 0 -0.25 -0.5.*ones(1,8) -0.25 zeros(1,4)];
+    %  % replicate the shape up to 2048 samples
+    %  %outd = [repmat(outd, 1, 42) outd(1:32)];
+    %  outd = [repmat(outd, 1, 42) zeros(1, 32)];
+    %  %hw = hamming(N);
+    %  %outd = outd.*hw';
+    %  outdfftc = fft(outd);
+    %  outdfft = 20*log10(abs(outdfftc)); 
+    %  
+    %  outd = ifft(inmfftc.*outmfftc);
+    %  
+    %  indfftc = outdfftc./htfftc';
+    %  indfft  = 20*log10(abs(indfftc)); 
+    %  %ind = ifft(indfftc);
+    %  ind = filter([.5 .5], [1], ifft(indfftc));
+    %  %ind = ifft(indfftc);
+    %  indm = mean(reshape(ind((M*1+1):(M*32)), 48, 31)');
+    %  indm = ind(1009:1056);
+    %  %indm(1:4) = 0;
+    %  %indm(45:48) = 0;
+    %  %indm(4:43) = indm(4:43) - mean(indm(4:43));
+    %  % scale pattern to 1 and then to 16-bit resolution
+    %  indm = indm./max(abs(indm));
+    %  indm = indm.*(2^15-1);
+    %  %plot(int32(indm));
+    %  %return;
+    %  %obj.ctrl.y_kick2_p_pattern.put(int32(indm));
+    %  
+    %  %
+    %  figure(1)
+    %  rng=1:2048;
+    %  subplot(3,1,1)
+    %  plot(t(rng), inm(rng), 'r')
+    %  hold on
+    %  grid on
+    %  plot(t(rng), outm(rng), 'b')
+    %  plot(t(rng), outd(rng), 'g')
+    %  %plot(t(rng), ind(rng), 'k')
+    %  xlabel('Time [us]')
+    %  ylabel('Norm(1)')
+    %  legend('Actual DAC output', 'Actual Kicker output', 'Desired kicker output', 'Desired DAC output')
+    %  title('Time domain waveforms')
+    %  %
+    %  subplot(3,1,2)
+    %  plot(f(1:end/2), inmfft(1:end/2), 'r')
+    %  grid on
+    %  hold on
+    %  plot(f(1:end/2), outmfft(1:end/2), 'b')
+    %  %plot(f(1:end/2), outdfft(1:end/2), 'g')
+    %  %plot(f(1:end/2), indfft(1:end/2), 'k')
+    %  xlabel('Frequency [MHz]')
+    %  ylabel('Magnitude [dB]')
+    %  legend('Actual DAC output', 'Actual Kicker output', 'Desired kicker output', 'Desired DAC output')
+    %  title('Spectrum')
+    %  %
+    %  subplot(3,1,3)
+    %  plot(f(1:end/2), outmfftp(1:end/2), 'r')
+    %  grid on
+    %  title('System transfer spectrum')
+    %  xlabel('Frequency [MHz]')
+    %  ylabel('Magnitude [dB]')
+    %  %
+    %  figure(2)
+    %  clf
+    %  plot(indm)
+    %  hold on;
+    %  grid on
+    %  
+    %end 
     
     %save('doublet_calib.mat', 'ptrn1', 'ch2');
     
@@ -1670,7 +1782,7 @@ classdef ca_ibfb < handle
     end
 
     
-    function generate_amplifier_report_header(obj, fd, pair)
+    function test_generate_amplifier_report_header(obj, fd, pair)
       fprintf(fd, '#----------------------------------------                                      \n');
       fprintf(fd, '# The IBFB hardware is tested in cabinet WLHA.A08.0.03                         \n');
       fprintf(fd, '#----------------------------------------                                      \n');
@@ -1763,11 +1875,11 @@ classdef ca_ibfb < handle
     
     end
     
-    function table = player_calculate_timestamp(obj)
+    function table = play_calculate_timestamp(obj)
       table = int32(obj.BUCKET_SPACE*0:obj.BUCKET_NUMBER);
     end
     
-    function table = player_calculate_control(obj, packets, bpm)
+    function table = play_calculate_control(obj, packets, bpm)
       a = bpm*2^16+[0:obj.BUCKET_NUMBER];
       a(packets+1:end) = obj.PLAYER_EOP;
       table = int32(a);
@@ -1775,11 +1887,11 @@ classdef ca_ibfb < handle
 
 
 
-    function table = player_calculate_pos(obj, pos)
+    function table = play_calculate_pos(obj, pos)
       table = single(normrnd(0, 0.02, [1 2700]) + pos);
     end
     
-    function res = find_components_in_xfel_list(obj)
+    function res = lattice_find_components_in_xfel_list(obj)
 
       res = 0;
       %constants
@@ -1799,7 +1911,7 @@ classdef ca_ibfb < handle
       % fprintf('Finding IBFB component in XFEL list...')
       objid=0;
       for i=1:size(obj.xls.filters,2)
-        idxs = find_component_index(obj, r3, obj.xls.filters(i));
+        idxs = lattice_find_component_index(obj, r3, obj.xls.filters(i));
         if isempty(idxs)
           fprintf(2, '\nERROR: Nothing found in Section: %s, group: %s, type: %s', obj.xls.filters(i).section, obj.xls.filters(i).group, obj.xls.filters(i).type);
           res = -2;
@@ -1876,7 +1988,7 @@ classdef ca_ibfb < handle
       %fprintf('\ndone\n')     
     end
     
-    function [idx] = find_component_index(obj, xfelcomps, filter)
+    function [idx] = lattice_find_component_index(obj, xfelcomps, filter)
 
       idx=[];        
       for i=3:size(xfelcomps,1)
@@ -1888,7 +2000,7 @@ classdef ca_ibfb < handle
       
     end
           
-    function gamma = lattic_calc_gamma(obj, alfa, beta)
+    function gamma = lattice_calc_gamma(obj, alfa, beta)
       gamma = (1 + alfa^2)/beta;        % K. Wille, "Physik und Beschleuniger" s. 92
     end
       
