@@ -515,7 +515,7 @@ rectangle {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -e telnet -l root ibfbplay &"
+		name="xterm -e telnet -l root xfelgpacibfbplay &"
 	}
 	clr=14
 	bclr=57
@@ -974,4 +974,19 @@ rectangle {
 	clr=14
 	bclr=57
 	label="-Feedback Player"
+}
+"shell command" {
+	object {
+		x=5
+		y=230
+		width=140
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./psi_qt.sh CAVBPM IBFB_LATTICE.ui"
+	}
+	clr=14
+	bclr=57
+	label="-Optics (Qt)"
 }

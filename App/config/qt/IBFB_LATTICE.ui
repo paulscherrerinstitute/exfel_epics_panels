@@ -159,7 +159,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">IBFBYUP:BPM1-BPM-ID</string>
+     <string notr="true">IBFBCTRL:Y-FB-UP-BPM1</string>
     </property>
    </widget>
    <widget class="caLineEdit" name="calineedit_2">
@@ -175,7 +175,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">IBFBYUP:BPM2-BPM-ID</string>
+     <string notr="true">IBFBCTRL:Y-FB-UP-BPM2</string>
     </property>
    </widget>
    <widget class="caLineEdit" name="calineedit_3">
@@ -191,7 +191,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">IBFBYDOWN:BPM1-BPM-ID</string>
+     <string notr="true">IBFBCTRL:Y-FB-DOWN-BPM1</string>
     </property>
    </widget>
    <widget class="caLineEdit" name="calineedit_4">
@@ -207,7 +207,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">IBFBYDOWN:BPM2-BPM-ID</string>
+     <string notr="true">IBFBCTRL:Y-FB-DOWN-BPM2</string>
     </property>
    </widget>
    <widget class="caTextEntry" name="catextentry">
