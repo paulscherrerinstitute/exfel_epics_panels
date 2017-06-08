@@ -3639,7 +3639,7 @@ text {
 		label="Terminal"
 		name="xterm -T xfelgpac1dixs1ug3r02t1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1dixs1ug3r02t1 &"
 	}
-	clr=14
+	clr=10
 	bclr=57
 	label="-xfelgpac1dixs1ug3r02t1"
 }
@@ -3657,7 +3657,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1460"
 }
 rectangle {
 	object {

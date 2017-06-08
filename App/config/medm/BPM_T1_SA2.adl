@@ -1,6 +1,6 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/BPM_T1_SA2.adl"
+	name="/xfel/controls/App/config/medm/BPM_T1_SA2.adl"
 	version=030105
 }
 display {
@@ -1330,7 +1330,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1460"
 }
 rectangle {
 	object {

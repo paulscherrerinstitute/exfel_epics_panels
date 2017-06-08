@@ -534,6 +534,12 @@ classdef ca_ibfb < handle
     end
 
     function [res] = ctrl_ff_scan_single(obj, plane, kicker)
+      % [res] = ctrl_ff_scan_single(obj, plane, kicker)
+      %
+      % Parameters:
+      %   plane     - select plane 'X', 'Y', 'XY'
+      %   kicker    - select kicker 'KICK1', 'KICK2', 'KICK12'
+      
       for i=-1:0.1:1
         obj.ctrl_ff_table_generate('lin',plane,kicker, [i i], 1);
       end
