@@ -477,9 +477,10 @@ classdef ca_ibfb < handle
         case 'lin'
           ff = linspace(amp(1), amp(2), length);
         case 'alt'
-          ff = (-1)^([0:length-1]);
+          %ff = (-1).^(0:(length-1));
+          ff = ones(1, length);
           ff(1:2:end) = ff(1:2:end) * amp(1);
-          ff(2:2:end) = ff(1:2:end) * amp(2);
+          ff(2:2:end) = ff(2:2:end) * amp(2);
       end
            
       ff_tab = zeros(2, 2708);
@@ -573,7 +574,7 @@ classdef ca_ibfb < handle
       %   plane     - select plane 'X', 'Y', 'XY'
       %   kicker    - select kicker 'KICK1', 'KICK2', 'KICK12'
       
-      obj.ctrl_ff_table_generate('alt',plane,kicker, [-0.99 0.99], 30);
+      obj.ctrl_ff_table_generate('alt',plane,kicker, [-0.99 0.5], 30);
     end
 
     function [res] = ctrl_ff_clear(obj)
