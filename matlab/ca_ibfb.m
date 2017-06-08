@@ -546,6 +546,35 @@ classdef ca_ibfb < handle
         obj.ctrl_ff_table_generate('lin',plane,kicker, [0 0], 2707);
     end
 
+    function [res] = ctrl_ff_train_constant(obj, plane, kicker)
+      % [res] = ctrl_ff_scan_single(obj, plane, kicker)
+      %
+      % Parameters:
+      %   plane     - select plane 'X', 'Y', 'XY'
+      %   kicker    - select kicker 'KICK1', 'KICK2', 'KICK12'
+      
+      obj.ctrl_ff_table_generate('lin',plane,kicker, [0.99 0.99], 30);
+    end
+
+    function [res] = ctrl_ff_train_lin(obj, plane, kicker)
+      % [res] = ctrl_ff_scan_single(obj, plane, kicker)
+      %
+      % Parameters:
+      %   plane     - select plane 'X', 'Y', 'XY'
+      %   kicker    - select kicker 'KICK1', 'KICK2', 'KICK12'
+      
+      obj.ctrl_ff_table_generate('lin',plane,kicker, [-0.99 0.99], 30);
+    end
+
+    function [res] = ctrl_ff_clear(obj, plane, kicker)
+      % [res] = ctrl_ff_scan_single(obj, plane, kicker)
+      %
+      % Parameters:
+      %   plane     - select plane 'X', 'Y', 'XY'
+      %   kicker    - select kicker 'KICK1', 'KICK2', 'KICK12'
+      
+      obj.ctrl_ff_table_generate('lin',plane,kicker, [0 0], 2707);
+    end
     
     % KW84 - Obsolete
     % function [bpms] = ctrl_plot_mgt_rx(obj)
