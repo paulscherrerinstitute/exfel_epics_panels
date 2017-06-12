@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=37
-		y=95
+		x=150
+		y=311
 		width=1020
 		height=920
 	}
@@ -7837,7 +7837,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-BPM1-UP-POS"
+		chan="$(DEV):Y-BPM1-UP-POS-WAV"
 		clr=14
 		bclr=4
 	}
@@ -7853,7 +7853,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-BPM2-UP-POS"
+		chan="$(DEV):Y-BPM2-UP-POS-WAV"
 		clr=14
 		bclr=4
 	}
@@ -7869,7 +7869,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-BPM1-DOWN-POS"
+		chan="$(DEV):Y-BPM1-DOWN-POS-WAV"
 		clr=14
 		bclr=4
 	}
@@ -7885,7 +7885,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-BPM2-DOWN-POS"
+		chan="$(DEV):Y-BPM2-DOWN-POS-WAV"
 		clr=14
 		bclr=4
 	}
@@ -7901,7 +7901,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):X-BPM2-UP-POS"
+		chan="$(DEV):X-BPM2-UP-POS-WAV"
 		clr=14
 		bclr=4
 	}
@@ -7917,7 +7917,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):X-BPM1-UP-POS"
+		chan="$(DEV):X-BPM1-UP-POS-WAV"
 		clr=14
 		bclr=4
 	}
@@ -7933,7 +7933,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):X-BPM1-DOWN-POS"
+		chan="$(DEV):X-BPM1-DOWN-POS-WAV"
 		clr=14
 		bclr=4
 	}
@@ -7949,7 +7949,139 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):X-BPM2-DOWN-POS"
+		chan="$(DEV):X-BPM2-DOWN-POS-WAV"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=390
+		y=265
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-COL-POS-WAV"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=170
+		y=785
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-KICK1-WAV"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=100
+		y=785
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK1-OUT"
+	align="horiz. right"
+}
+text {
+	object {
+		x=235
+		y=785
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK1-OUT"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=305
+		y=785
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-KICK2-WAV"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=510
+		y=780
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-KICK1-WAV"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=440
+		y=780
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK1-OUT"
+	align="horiz. right"
+}
+text {
+	object {
+		x=570
+		y=780
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK1-OUT"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=640
+		y=780
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-KICK2-WAV"
 		clr=14
 		bclr=4
 	}
