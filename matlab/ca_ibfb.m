@@ -2,6 +2,8 @@ classdef ca_ibfb < handle
     
    properties (Constant = true)
       USE_PLAYER = 0;
+      TRG_CONTINUOUS = 0;
+      TRG_SINGLE = 1;
       XLS_SECTION = 1;
       XLS_NAME1 = 3;
       XLS_NAME2 = 4;
@@ -243,6 +245,21 @@ classdef ca_ibfb < handle
       obj.ctrl.y_dac_pattern_apply   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-DAC-PATTERN-APPLY'   ]));
       obj.ctrl.y_dcm_ps_cmd          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-DCM-PS-CMD'          ]));
       obj.ctrl.y_dac_mode_m          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-DAC-MODE-M'          ]));
+      obj.ctrl.y_bpm1_up_pos_wav     = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-BPM1-UP-POS-WAV'     ]));
+      obj.ctrl.y_bpm2_up_pos_wav     = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-BPM2-UP-POS-WAV'     ]));
+      obj.ctrl.y_bpm1_down_pos_wav   = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-BPM1-DOWN-POS-WAV'   ]));
+      obj.ctrl.y_bpm2_down_pos_wav   = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-BPM2-DOWN-POS-WAV'   ]));
+      obj.ctrl.y_col_pos_wav         = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-COL-POS-WAV'         ]));
+      obj.ctrl.y_bpm1_up_valid_wav   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-BPM1-UP-VALID-WAV'   ]));
+      obj.ctrl.y_bpm2_up_valid_wav   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-BPM2-UP-VALID-WAV'   ]));
+      obj.ctrl.y_bpm1_down_valid_wav = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-BPM1-DOWN-VALID-WAV' ]));
+      obj.ctrl.y_bpm2_down_valid_wav = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-BPM2-DOWN-VALID-WAV' ]));
+      obj.ctrl.y_col_valid_wav       = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-COL-VALID-WAV'       ]));
+      obj.ctrl.y_kick1_out_wav       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-KICK1-WAV'           ]));
+      obj.ctrl.y_kick2_out_wav       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-KICK2-WAV'           ]));
+      obj.ctrl.y_xfeltim_pulse       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-XFELTIM-PULSE'       ]));
+      obj.ctrl.y_trg_mode            = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-TRG-MODE'            ]));
+      obj.ctrl.y_trg_single          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-TRG-SINGLE'          ]));
       %             X               %
       obj.ctrl.x_updown_packets      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-UPDOWN-PACKETS'      ]));
       obj.ctrl.x_sase_packets        = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE-PACKETS'        ]));
@@ -258,6 +275,19 @@ classdef ca_ibfb < handle
       obj.ctrl.x_dac_pattern_apply   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-DAC-PATTERN-APPLY'   ]));
       obj.ctrl.x_dcm_ps_cmd          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-DCM-PS-CMD'          ]));
       obj.ctrl.x_dac_mode_m          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-DAC-MODE-M'          ]));
+      obj.ctrl.x_bpm1_up_pos_wav     = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-BPM1-UP-POS-WAV'     ]));
+      obj.ctrl.x_bpm2_up_pos_wav     = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-BPM2-UP-POS-WAV'     ]));
+      obj.ctrl.x_bpm1_down_pos_wav   = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-BPM1-DOWN-POS-WAV'   ]));
+      obj.ctrl.x_bpm2_down_pos_wav   = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-BPM2-DOWN-POS-WAV'   ]));
+      obj.ctrl.x_bpm1_up_valid_wav   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-BPM1-UP-VALID-WAV'   ]));
+      obj.ctrl.x_bpm2_up_valid_wav   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-BPM2-UP-VALID-WAV'   ]));
+      obj.ctrl.x_bpm1_down_valid_wav = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-BPM1-DOWN-VALID-WAV' ]));
+      obj.ctrl.x_bpm2_down_valid_wav = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-BPM2-DOWN-VALID-WAV' ]));
+      obj.ctrl.x_kick1_out_wav       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-KICK1-WAV'           ]));
+      obj.ctrl.x_kick2_out_wav       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-KICK2-WAV'           ]));
+      obj.ctrl.x_xfeltim_pulse       = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-XFELTIM-PULSE'       ]));
+      obj.ctrl.x_trg_mode            = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-TRG-MODE'            ]));
+      obj.ctrl.x_trg_single          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-TRG-SINGLE'          ]));
       %%   PLAYER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       if obj.USE_PLAYER
         obj.play.play1_mem_play_timestamp = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-TIMESTAMP']));
@@ -507,23 +537,25 @@ classdef ca_ibfb < handle
         obj.ctrl.y_ff_table_pos.put(single(ff_tab(1,:))); 
         obj.ctrl.y_ff_table_angle.put(single(ff_tab(2,:))); 
       end
-      
+      w=0;
       % wait for completion, the internal FF table counter should be incremented
       if strcmp(plane, 'Y') || strcmp(plane, 'XY')
         while y_cnt == obj.ctrl.y_ff_table_cnt.get()
-          if res > 3000
-            break
+          if w > 8000
+            res = -4;
+            return
           end
-          res = res + 1;
+          w = w + 1;
         end
       end 
       %pause(1)
       if strcmp(plane, 'X') || strcmp(plane, 'XY')
         while x_cnt == obj.ctrl.x_ff_table_cnt.get()
-          if res > 3000
-            break
+          if w > 8000
+            res = -5;
+            return
           end
-          res = res + 1;
+          w = w + 1;
         end
       end
       %pause(0.2)
@@ -534,17 +566,102 @@ classdef ca_ibfb < handle
       
     end
 
-    function [res] = ctrl_ff_scan_single(obj, plane, kicker)
+    function [m] = ctrl_ff_scan_init_sinle_m(obj, N, plane)
+      m.bpm1_up_pos     = zeros(1, N);
+      m.bpm2_up_pos     = zeros(1, N);
+      m.bpm1_down_pos   = zeros(1, N);
+      m.bpm2_down_pos   = zeros(1, N);
+      m.bpm1_up_valid   = uint32(zeros(1, N));
+      m.bpm2_up_valid   = uint32(zeros(1, N));
+      m.bpm1_down_valid = uint32(zeros(1, N));
+      m.bpm2_down_valid = uint32(zeros(1, N));
+      if strcmp(plane, 'Y')
+        m.col_pos       = zeros(1, N);
+        m.col_valid     = uint32(zeros(1, N));
+      end
+      m.kick1_out       = uint32(zeros(1, N));
+      m.kick2_out       = uint32(zeros(1, N));      
+      m.pulseid         = uint32(zeros(1, N));
+      %temporary
+      m.mon_adc7        = uint32(zeros(1, N));
+      m.mon_adc8        = uint32(zeros(1, N));
+    end
+
+    function [res] = ctrl_wait_for_next_pulse(obj, plane)
+      res = 0;
+      % assign pulse ID handler from the right plane
+      if strcmp(plane, 'Y')
+        h_pid = obj.ctrl.y_xfeltim_pulse;
+      end;
+      if strcmp(plane, 'X')
+        h_pid = obj.ctrl.x_xfeltim_pulse;
+      end;
+      w = 0;
+      pulid = h_pid.get();
+      while pulid >= h_pid.get()
+        pause(0.1);
+        w = w + 1;
+        if (w>10000) res=-2; return; end; % timeout
+      end
+    end
+
+    function [res, m] = ctrl_ff_scan_read_single_bunch(obj, m, plane, i)
+      res=0;
+      w=0;
+      res = ctrl_wait_for_next_pulse(obj, plane);
+      if res return; end ;
+      if strcmp(plane, 'Y')
+        m.bpm1_up_pos(i)     = obj.ctrl.y_bpm1_up_pos_wav.get();
+        m.bpm2_up_pos(i)     = obj.ctrl.y_bpm2_up_pos_wav.get();    
+        m.bpm1_down_pos(i)   = obj.ctrl.y_bpm1_down_pos_wav.get();
+        m.bpm2_down_pos(i)   = obj.ctrl.y_bpm2_down_pos_wav.get();
+        m.bpm1_up_valid(i)   = uint32(obj.ctrl.y_bpm1_up_valid_wav.get()  );
+        m.bpm2_up_valid(i)   = uint32(obj.ctrl.y_bpm2_up_valid_wav.get()  );
+        m.bpm1_down_valid(i) = uint32(obj.ctrl.y_bpm1_down_valid_wav.get());
+        m.bpm2_down_valid(i) = uint32(obj.ctrl.y_bpm2_down_valid_wav.get());
+        m.col_pos(i)         = obj.ctrl.y_col_pos_wav.get();
+        m.col_valid(i)       = uint32(obj.ctrl.y_col_valid_wav.get()); 
+        m.kick1_out(i)       = uint32(obj.ctrl.y_kick1_out_wav.get());
+        m.kick2_out(i)       = uint32(obj.ctrl.y_kick2_out_wav.get());
+        m.pulseid(i)         = uint32(obj.ctrl.y_xfeltim_pulse.get());
+        %temporary
+        adc = obj.mon(7).amp_adc_wav.get();
+        m.mon_adc7(i) = adc(45);
+        adc = obj.mon(8).amp_adc_wav.get();
+        m.mon_adc8(i) = adc(45);
+      end
+      if strcmp(plane, 'X')
+        m.bpm1_up_pos(i)     = obj.ctrl.x_bpm1_up_pos_wav.get();
+        m.bpm2_up_pos(i)     = obj.ctrl.x_bpm2_up_pos_wav.get();    
+        m.bpm1_down_pos(i)   = obj.ctrl.x_bpm1_down_pos_wav.get();
+        m.bpm2_down_pos(i)   = obj.ctrl.x_bpm2_down_pos_wav.get();
+        m.bpm1_up_valid(i)   = uint32(obj.ctrl.x_bpm1_up_valid_wav.get()  );
+        m.bpm2_up_valid(i)   = uint32(obj.ctrl.x_bpm2_up_valid_wav.get()  );
+        m.bpm1_down_valid(i) = uint32(obj.ctrl.x_bpm1_down_valid_wav.get());
+        m.bpm2_down_valid(i) = uint32(obj.ctrl.x_bpm2_down_valid_wav.get());
+        m.kick1_out(i)       = uint32(obj.ctrl.x_kick1_out_wav.get()      );
+        m.kick2_out(i)       = uint32(obj.ctrl.x_kick2_out_wav.get()      );
+        m.pulseid(i)         = uint32(obj.ctrl.x_xfeltim_pulse.get()      );
+      end
+    end
+    
+    function [res, m] = ctrl_ff_scan_single(obj, plane, kicker)
       % [res] = ctrl_ff_scan_single(obj, plane, kicker)
       %
       % Parameters:
       %   plane     - select plane 'X', 'Y', 'XY'
       %   kicker    - select kicker 'KICK1', 'KICK2', 'KICK12'
-      
-      for i=-1:0.1:1
-        obj.ctrl_ff_table_generate('lin',plane,kicker, [i i], 1);
+      res = 0;
+      k = -1:0.1:1;
+      N = size(k,2);
+      m = ctrl_ff_scan_init_sinle_m(obj, N, plane);
+      for i=1:N
+        [res] = obj.ctrl_ff_table_generate('lin',plane,kicker, [k(i) k(i)], 1);
+        if res return; end;
+        [res, m] = ctrl_ff_scan_read_single_bunch(obj, m, plane, i);
+        if res return; end;
       end
-        obj.ctrl_ff_table_generate('lin',plane,kicker, [0 0], 2707);
+      obj.ctrl_ff_table_generate('lin',plane,kicker, [0 0], 2707);
     end
 
     function [res] = ctrl_ff_train_constant(obj, plane, kicker)
@@ -554,6 +671,7 @@ classdef ca_ibfb < handle
       %   plane     - select plane 'X', 'Y', 'XY'
       %   kicker    - select kicker 'KICK1', 'KICK2', 'KICK12'
       
+      res = 0;
       obj.ctrl_ff_table_generate('lin',plane,kicker, [0.99 0.99], 30);
     end
 
@@ -564,6 +682,7 @@ classdef ca_ibfb < handle
       %   plane     - select plane 'X', 'Y', 'XY'
       %   kicker    - select kicker 'KICK1', 'KICK2', 'KICK12'
       
+      res = 0;
       obj.ctrl_ff_table_generate('lin',plane,kicker, [-0.99 0.99], 30);
     end
 
@@ -574,6 +693,7 @@ classdef ca_ibfb < handle
       %   plane     - select plane 'X', 'Y', 'XY'
       %   kicker    - select kicker 'KICK1', 'KICK2', 'KICK12'
       
+      res = 0;
       obj.ctrl_ff_table_generate('alt',plane,kicker, [-0.99 0.5], 30);
     end
 
@@ -584,6 +704,7 @@ classdef ca_ibfb < handle
       %   plane     - select plane 'X', 'Y', 'XY'
       %   kicker    - select kicker 'KICK1', 'KICK2', 'KICK12'
       
+      res = 0;
       obj.ctrl_ff_table_generate('lin','XY','KICK12', [0 0], 2707);
     end
     
