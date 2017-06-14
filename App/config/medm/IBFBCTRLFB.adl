@@ -1,12 +1,12 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCTRLFB.adl"
+	name="/xfel/controls/App/config/medm/IBFBCTRLFB.adl"
 	version=030105
 }
 display {
 	object {
-		x=150
-		y=311
+		x=1287
+		y=369
 		width=1020
 		height=920
 	}
@@ -8087,5 +8087,34 @@ text {
 	}
 	align="horiz. right"
 	limits {
+	}
+}
+"text update" {
+	object {
+		x=445
+		y=720
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-FF-TABLE-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+menu {
+	object {
+		x=445
+		y=665
+		width=90
+		height=20
+	}
+	control {
+		chan="$(DEV):X-FF-FAST-MODE"
+		clr=14
+		bclr=4
 	}
 }

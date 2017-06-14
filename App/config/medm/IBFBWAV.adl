@@ -1,6 +1,6 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBWAV.adl"
+	name="/xfel/controls/App/config/medm/IBFBWAV.adl"
 	version=030105
 }
 display {
@@ -8,7 +8,7 @@ display {
 		x=10
 		y=264
 		width=1000
-		height=660
+		height=900
 	}
 	clr=14
 	bclr=4
@@ -168,21 +168,6 @@ polyline {
 	points {
 		(2,50)
 		(332,50)
-	}
-}
-polyline {
-	object {
-		x=-40
-		y=860
-		width=1000
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(-40,860)
-		(960,860)
 	}
 }
 text {
@@ -925,7 +910,7 @@ polyline {
 		height=210
 	}
 	plotcom {
-		title="Feed Forward Tables"
+		title="Y Controller Output"
 		xlabel="Bucket"
 		ylabel="DAC counts"
 		clr=0
@@ -1451,5 +1436,29 @@ polyline {
 	points {
 		(0,280)
 		(400,280)
+	}
+}
+"cartesian plot" {
+	object {
+		x=400
+		y=660
+		width=600
+		height=210
+	}
+	plotcom {
+		title="X Controller Output"
+		xlabel="Bucket"
+		ylabel="DAC counts"
+		clr=0
+		bclr=14
+	}
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):X-KICK1-OUT"
+		data_clr=20
+	}
+	trace[1] {
+		ydata="$(DEV):X-KICK2-OUT"
+		data_clr=30
 	}
 }
