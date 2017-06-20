@@ -75,6 +75,7 @@ classdef ca_ibfb < handle
    end
 
   properties (Access = private)
+    hostname = '';
     context
     sw;    
     ff_tab1 = 0.001;
@@ -98,10 +99,13 @@ classdef ca_ibfb < handle
       import ch.psi.jcae.*;
 
       obj.context = context;
-      
+      [res, obj.hostname] = system('hostname');
+            
       fprintf('Initializing IBFB object...\n');
 
-      addpath('/local/lib');
+      if strcmp(obj.hostname, 'xfelpsiibfb')
+        addpath('/local/lib');
+      end
       
       % inittialize filter used to search for the components in the Excel sheet
       obj.xls.filters(1).section = 'TL';
@@ -235,15 +239,17 @@ classdef ca_ibfb < handle
       % open EPICS channels
       fprintf('  initializing EPICS channel access...');
       %%  BPMs %%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-      obj.bpm_e.bpmi_1925_tl_wav_x     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1925-TL:WAV-X'     ]));
-      obj.bpm_e.bpmi_1939_tl_wav_x     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1939-TL:WAV-X'     ]));
-      obj.bpm_e.bpmi_1910_tl_wav_y     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1910-TL:WAV-Y'     ]));
-      obj.bpm_e.bpmi_1930_tl_wav_y     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1930-TL:WAV-Y'     ]));
-      obj.bpm_e.bpmi_1925_tl_wav_y     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1925-TL:WAV-Y'     ]));
-      obj.bpm_e.bpmi_1939_tl_wav_y     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1939-TL:WAV-Y'     ]));
-      obj.bpm_e.bpmi_1910_tl_wav_x     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1910-TL:WAV-X'     ]));
-      obj.bpm_e.bpmi_1930_tl_wav_x     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1930-TL:WAV-X'     ]));
-
+      if strcmp(obj.hostname, 'xfelpsiibfb') % we are at DESY
+        obj.bpm_e.bpmi_1925_tl_wav_x     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1925-TL:WAV-X'     ]));
+        obj.bpm_e.bpmi_1939_tl_wav_x     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1939-TL:WAV-X'     ]));
+        obj.bpm_e.bpmi_1910_tl_wav_y     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1910-TL:WAV-Y'     ]));
+        obj.bpm_e.bpmi_1930_tl_wav_y     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1930-TL:WAV-Y'     ]));
+        obj.bpm_e.bpmi_1925_tl_wav_y     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1925-TL:WAV-Y'     ]));
+        obj.bpm_e.bpmi_1939_tl_wav_y     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1939-TL:WAV-Y'     ]));
+        obj.bpm_e.bpmi_1910_tl_wav_x     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1910-TL:WAV-X'     ]));
+        obj.bpm_e.bpmi_1930_tl_wav_x     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1930-TL:WAV-X'     ]));
+      end
+      
       %%  CONTROLLER  %%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
       %          COMMON             %
       obj.ctrl.xfeltim_      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-UPDOWN-PACKETS'      ]));
@@ -253,8 +259,6 @@ classdef ca_ibfb < handle
       obj.ctrl.y_ff_fast_mode        = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FF-FAST-MODE'        ]));
       obj.ctrl.y_fb_cmd              = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FB-CMD'              ]));
       obj.ctrl.y_ff_table_cnt        = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FF-TABLE-CNT'        ]));
-      obj.ctrl.y_ff_table_pos        = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-FF-TABLE-POS'        ]));
-      obj.ctrl.y_ff_table_angle      = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-FF-TABLE-ANGLE'      ]));
       %obj.ctrl.y_kick1_p_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-KICK1-P-PATTERN'     ]));
       %obj.ctrl.y_kick1_n_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-KICK1-N-PATTERN'     ]));
       %obj.ctrl.y_kick2_p_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-KICK2-P-PATTERN'     ]));
@@ -279,6 +283,16 @@ classdef ca_ibfb < handle
       obj.ctrl.y_trg_mode            = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-TRG-MODE'            ]));
       obj.ctrl.y_trg_single          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-TRG-SINGLE'          ]));
       obj.ctrl.y_trg_del             = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-TRG-DEL'             ]));
+      obj.ctrl.y_daq_ch00            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-DAQ-CH00'            ]));
+      obj.ctrl.y_daq_ch01            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-DAQ-CH01'            ]));
+      obj.ctrl.y_daq_ch10            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-DAQ-CH10'            ]));
+      obj.ctrl.y_daq_ch11            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-DAQ-CH11'            ]));
+      obj.ctrl.y_daq_ch20            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-DAQ-CH20'            ]));
+      obj.ctrl.y_daq_ch21            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-DAQ-CH21'            ]));
+      obj.ctrl.y_daq_ch30            = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-DAQ-CH30'            ]));
+      obj.ctrl.y_daq_ch31            = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-DAQ-CH31'            ]));
+      obj.ctrl.y_rx_down_bpm1        = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-RX-DOWN-BPM1'        ]));
+      obj.ctrl.y_rx_down_bpm2        = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-RX-DOWN-BPM2'        ]));
       %             X               %
       obj.ctrl.x_updown_packets      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-UPDOWN-PACKETS'      ]));
       obj.ctrl.x_sase_packets        = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE-PACKETS'        ]));
@@ -308,6 +322,16 @@ classdef ca_ibfb < handle
       obj.ctrl.x_trg_mode            = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-TRG-MODE'            ]));
       obj.ctrl.x_trg_single          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-TRG-SINGLE'          ]));
       obj.ctrl.x_trg_del             = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-TRG-DEL'             ]));
+      obj.ctrl.x_daq_ch00            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-DAQ-CH00'            ]));
+      obj.ctrl.x_daq_ch01            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-DAQ-CH01'            ]));
+      obj.ctrl.x_daq_ch10            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-DAQ-CH10'            ]));
+      obj.ctrl.x_daq_ch11            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-DAQ-CH11'            ]));
+      obj.ctrl.x_daq_ch20            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-DAQ-CH20'            ]));
+      obj.ctrl.x_daq_ch21            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-DAQ-CH21'            ]));
+      obj.ctrl.x_daq_ch30            = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-DAQ-CH30'            ]));
+      obj.ctrl.x_daq_ch31            = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-DAQ-CH31'            ]));
+      obj.ctrl.x_rx_down_bpm1        = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-RX-DOWN-BPM1'        ]));
+      obj.ctrl.x_rx_down_bpm2        = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-RX-DOWN-BPM2'        ]));
      
       %%   PLAYER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       if obj.USE_PLAYER
@@ -349,35 +373,37 @@ classdef ca_ibfb < handle
       obj.mon(8).kick_adc_wav   = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_MON 'KICK-ADC-WAV-7']));
       fprintf('done\n');
       
-      fprintf('  DOOCS properties initialization\n');
-      doocs_p     = 'XFEL.DIAG/BPM/';
-      obj.doocs.y_bpm1_up_pos_name = [doocs_p 'BPMI.1860.TL/X.TD'];
-      obj.doocs.y_bpm1_up_pos_name = [doocs_p 'BPMI.1860.TL/Y.TD'];
-      obj.doocs.y_bpm1_up_pos_name = [doocs_p 'BPMI.1860.TL/Q.TD'];
-      obj.doocs.y_bpm2_up_pos_name = [doocs_p 'BPMI.1878.TL/X.TD'];
-      obj.doocs.y_bpm2_up_pos_name = [doocs_p 'BPMI.1878.TL/Y.TD'];
-      obj.doocs.y_bpm2_up_pos_name = [doocs_p 'BPMI.1878.TL/Q.TD'];
-      obj.doocs.y_bpm1_down_pos_name = [doocs_p 'BPMI.1910.TL/X.TD'];
-      obj.doocs.y_bpm1_down_pos_name = [doocs_p 'BPMI.1910.TL/Y.TD'];
-      obj.doocs.y_bpm1_down_pos_name = [doocs_p 'BPMI.1910.TL/Q.TD'];
-      obj.doocs.y_bpm2_down_pos_name = [doocs_p 'BPMI.1930.TL/X.TD'];
-      obj.doocs.y_bpm2_down_pos_name = [doocs_p 'BPMI.1930.TL/Y.TD'];
-      obj.doocs.y_bpm2_down_pos_name = [doocs_p 'BPMI.1930.TL/Q.TD'];
+      if strcmp(obj.hostname, 'xfelpsiibfb')
+        fprintf('  DOOCS properties initialization\n');
+        doocs_p     = 'XFEL.DIAG/BPM/';
+        obj.doocs.y_bpm1_up_pos_name = [doocs_p 'BPMI.1860.TL/X.TD'];
+        obj.doocs.y_bpm1_up_pos_name = [doocs_p 'BPMI.1860.TL/Y.TD'];
+        obj.doocs.y_bpm1_up_pos_name = [doocs_p 'BPMI.1860.TL/Q.TD'];
+        obj.doocs.y_bpm2_up_pos_name = [doocs_p 'BPMI.1878.TL/X.TD'];
+        obj.doocs.y_bpm2_up_pos_name = [doocs_p 'BPMI.1878.TL/Y.TD'];
+        obj.doocs.y_bpm2_up_pos_name = [doocs_p 'BPMI.1878.TL/Q.TD'];
+        obj.doocs.y_bpm1_down_pos_name = [doocs_p 'BPMI.1910.TL/X.TD'];
+        obj.doocs.y_bpm1_down_pos_name = [doocs_p 'BPMI.1910.TL/Y.TD'];
+        obj.doocs.y_bpm1_down_pos_name = [doocs_p 'BPMI.1910.TL/Q.TD'];
+        obj.doocs.y_bpm2_down_pos_name = [doocs_p 'BPMI.1930.TL/X.TD'];
+        obj.doocs.y_bpm2_down_pos_name = [doocs_p 'BPMI.1930.TL/Y.TD'];
+        obj.doocs.y_bpm2_down_pos_name = [doocs_p 'BPMI.1930.TL/Q.TD'];
 
-      obj.doocs.x_bpm1_up_pos_name = [doocs_p 'BPMI.1863.TL/X.TD'];
-      obj.doocs.x_bpm1_up_pos_name = [doocs_p 'BPMI.1863.TL/Y.TD'];
-      obj.doocs.x_bpm1_up_pos_name = [doocs_p 'BPMI.1863.TL/Q.TD'];
-      obj.doocs.x_bpm2_up_pos_name = [doocs_p 'BPMI.1889.TL/X.TD'];
-      obj.doocs.x_bpm2_up_pos_name = [doocs_p 'BPMI.1889.TL/Y.TD'];
-      obj.doocs.x_bpm2_up_pos_name = [doocs_p 'BPMI.1889.TL/Q.TD'];
-      obj.doocs.x_bpm1_down_pos_name = [doocs_p 'BPMI.1925.TL/X.TD'];
-      obj.doocs.x_bpm1_down_pos_name = [doocs_p 'BPMI.1925.TL/Y.TD'];
-      obj.doocs.x_bpm1_down_pos_name = [doocs_p 'BPMI.1925.TL/Q.TD'];
-      obj.doocs.x_bpm2_down_pos_name = [doocs_p 'BPMI.1939.TL/X.TD'];
-      obj.doocs.x_bpm2_down_pos_name = [doocs_p 'BPMI.1939.TL/Y.TD'];
-      obj.doocs.x_bpm2_down_pos_name = [doocs_p 'BPMI.1939.TL/Q.TD'];
+        obj.doocs.x_bpm1_up_pos_name = [doocs_p 'BPMI.1863.TL/X.TD'];
+        obj.doocs.x_bpm1_up_pos_name = [doocs_p 'BPMI.1863.TL/Y.TD'];
+        obj.doocs.x_bpm1_up_pos_name = [doocs_p 'BPMI.1863.TL/Q.TD'];
+        obj.doocs.x_bpm2_up_pos_name = [doocs_p 'BPMI.1889.TL/X.TD'];
+        obj.doocs.x_bpm2_up_pos_name = [doocs_p 'BPMI.1889.TL/Y.TD'];
+        obj.doocs.x_bpm2_up_pos_name = [doocs_p 'BPMI.1889.TL/Q.TD'];
+        obj.doocs.x_bpm1_down_pos_name = [doocs_p 'BPMI.1925.TL/X.TD'];
+        obj.doocs.x_bpm1_down_pos_name = [doocs_p 'BPMI.1925.TL/Y.TD'];
+        obj.doocs.x_bpm1_down_pos_name = [doocs_p 'BPMI.1925.TL/Q.TD'];
+        obj.doocs.x_bpm2_down_pos_name = [doocs_p 'BPMI.1939.TL/X.TD'];
+        obj.doocs.x_bpm2_down_pos_name = [doocs_p 'BPMI.1939.TL/Y.TD'];
+        obj.doocs.x_bpm2_down_pos_name = [doocs_p 'BPMI.1939.TL/Q.TD'];
+        fprintf('done\n');
+      end
       
-      fprintf('done\n');
     end
 
     % Destructor
