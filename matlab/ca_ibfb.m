@@ -283,16 +283,40 @@ classdef ca_ibfb < handle
       obj.ctrl.y_trg_mode            = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-TRG-MODE'            ]));
       obj.ctrl.y_trg_single          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-TRG-SINGLE'          ]));
       obj.ctrl.y_trg_del             = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-TRG-DEL'             ]));
+      obj.ctrl.y_daq_mux0            = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-DAQ-MUX0'            ]));
+      obj.ctrl.y_daq_mux1            = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-DAQ-MUX1'            ]));
+      obj.ctrl.y_daq_mux2            = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-DAQ-MUX2'            ]));
+      obj.ctrl.y_daq_mux3            = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-DAQ-MUX3'            ]));
+      obj.ctrl.y_fb_sp_pos           = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-FB-SP-POS'           ]));
+      obj.ctrl.y_fb_sp_angle         = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-FB-SP-ANGLE'         ]));     
       obj.ctrl.y_daq_ch00            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-DAQ-CH00'            ]));
       obj.ctrl.y_daq_ch01            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-DAQ-CH01'            ]));
       obj.ctrl.y_daq_ch10            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-DAQ-CH10'            ]));
       obj.ctrl.y_daq_ch11            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-DAQ-CH11'            ]));
+      obj.ctrl.y_daq_ch00_int        = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-DAQ-CH00-INT'        ]));
+      obj.ctrl.y_daq_ch01_int        = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-DAQ-CH01-INT'        ]));
+      obj.ctrl.y_daq_ch10_int        = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-DAQ-CH10-INT'        ]));
+      obj.ctrl.y_daq_ch11_int        = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-DAQ-CH11-INT'        ]));
       obj.ctrl.y_daq_ch20            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-DAQ-CH20'            ]));
       obj.ctrl.y_daq_ch21            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-DAQ-CH21'            ]));
-      obj.ctrl.y_daq_ch30            = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-DAQ-CH30'            ]));
-      obj.ctrl.y_daq_ch31            = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-DAQ-CH31'            ]));
+      obj.ctrl.y_daq_ch30_int        = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-DAQ-CH30-INT'        ]));
+      obj.ctrl.y_daq_ch31_int        = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-DAQ-CH31-INT'        ]));
       obj.ctrl.y_rx_down_bpm1        = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-RX-DOWN-BPM1'        ]));
       obj.ctrl.y_rx_down_bpm2        = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-RX-DOWN-BPM2'        ]));
+      obj.ctrl.y_sase1_bucket_start  = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-SASE1-BUCKET-START'  ]));
+      obj.ctrl.y_sase1_bucket_stop   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-SASE1-BUCKET-STOP'   ]));
+      obj.ctrl.y_sase1_bunch_space   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-SASE1-BUNCH-SPACE'   ]));
+      obj.ctrl.y_sase1_bunch_num     = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-SASE1-BUNCH-NUM'     ]));
+      obj.ctrl.y_sase2_bucket_start  = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-SASE2-BUCKET-START'  ]));
+      obj.ctrl.y_sase2_bucket_stop   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-SASE2-BUCKET-STOP'   ]));
+      obj.ctrl.y_sase2_bunch_space   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-SASE2-BUNCH-SPACE'   ]));
+      obj.ctrl.y_sase2_bunch_num     = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-SASE2-BUNCH-NUM'     ]));
+      obj.ctrl.y_sase3_bucket_start  = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-SASE3-BUCKET-START'  ]));
+      obj.ctrl.y_sase3_bucket_stop   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-SASE3-BUCKET-STOP'   ]));
+      obj.ctrl.y_sase3_bunch_space   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-SASE3-BUNCH-SPACE'   ]));
+      obj.ctrl.y_sase3_bunch_num     = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-SASE3-BUNCH-NUM'     ]));
+      obj.ctrl.y_fast_fb_del         = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FAST-FB-DEL'         ]));
+      obj.ctrl.y_fb_fast_ki          = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-FB-FAST-KI'          ]));     
       %             X               %
       obj.ctrl.x_updown_packets      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-UPDOWN-PACKETS'      ]));
       obj.ctrl.x_sase_packets        = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE-PACKETS'        ]));
@@ -322,16 +346,40 @@ classdef ca_ibfb < handle
       obj.ctrl.x_trg_mode            = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-TRG-MODE'            ]));
       obj.ctrl.x_trg_single          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-TRG-SINGLE'          ]));
       obj.ctrl.x_trg_del             = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-TRG-DEL'             ]));
+      obj.ctrl.x_daq_mux0            = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-DAQ-MUX0'            ]));
+      obj.ctrl.x_daq_mux1            = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-DAQ-MUX1'            ]));
+      obj.ctrl.x_daq_mux2            = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-DAQ-MUX2'            ]));
+      obj.ctrl.x_daq_mux3            = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-DAQ-MUX3'            ]));
+      obj.ctrl.x_fb_sp_pos           = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-FB-SP-POS'           ]));
+      obj.ctrl.x_fb_sp_angle         = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-FB-SP-ANGLE'         ]));
       obj.ctrl.x_daq_ch00            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-DAQ-CH00'            ]));
       obj.ctrl.x_daq_ch01            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-DAQ-CH01'            ]));
       obj.ctrl.x_daq_ch10            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-DAQ-CH10'            ]));
       obj.ctrl.x_daq_ch11            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-DAQ-CH11'            ]));
+      obj.ctrl.x_daq_ch00_int        = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-DAQ-CH00-INT'        ]));
+      obj.ctrl.x_daq_ch01_int        = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-DAQ-CH01-INT'        ]));
+      obj.ctrl.x_daq_ch10_int        = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-DAQ-CH10-INT'        ]));
+      obj.ctrl.x_daq_ch11_int        = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-DAQ-CH11-INT'        ]));
       obj.ctrl.x_daq_ch20            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-DAQ-CH20'            ]));
       obj.ctrl.x_daq_ch21            = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-DAQ-CH21'            ]));
-      obj.ctrl.x_daq_ch30            = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-DAQ-CH30'            ]));
-      obj.ctrl.x_daq_ch31            = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-DAQ-CH31'            ]));
+      obj.ctrl.x_daq_ch30_int        = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-DAQ-CH30-INT'        ]));
+      obj.ctrl.x_daq_ch31_int        = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-DAQ-CH31-INT'        ]));
       obj.ctrl.x_rx_down_bpm1        = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-RX-DOWN-BPM1'        ]));
       obj.ctrl.x_rx_down_bpm2        = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-RX-DOWN-BPM2'        ]));
+      obj.ctrl.x_sase1_bucket_start  = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE1-BUCKET-START'  ]));
+      obj.ctrl.x_sase1_bucket_stop   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE1-BUCKET-STOP'   ]));
+      obj.ctrl.x_sase1_bunch_space   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE1-BUNCH-SPACE'   ]));
+      obj.ctrl.x_sase1_bunch_num     = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE1-BUNCH-NUM'     ]));
+      obj.ctrl.x_sase2_bucket_start  = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE2-BUCKET-START'  ]));
+      obj.ctrl.x_sase2_bucket_stop   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE2-BUCKET-STOP'   ]));
+      obj.ctrl.x_sase2_bunch_space   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE2-BUNCH-SPACE'   ]));
+      obj.ctrl.x_sase2_bunch_num     = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE2-BUNCH-NUM'     ]));
+      obj.ctrl.x_sase3_bucket_start  = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE3-BUCKET-START'  ]));
+      obj.ctrl.x_sase3_bucket_stop   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE3-BUCKET-STOP'   ]));
+      obj.ctrl.x_sase3_bunch_space   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE3-BUNCH-SPACE'   ]));
+      obj.ctrl.x_sase3_bunch_num     = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE3-BUNCH-NUM'     ]));
+      obj.ctrl.x_fast_fb_del         = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-FAST-FB-DEL'         ]));
+      obj.ctrl.x_fb_fast_ki          = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-FB-FAST-KI'          ]));     
      
       %%   PLAYER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       if obj.USE_PLAYER
@@ -563,7 +611,79 @@ classdef ca_ibfb < handle
     %% CONTROLLER FUNCTIONS
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    function [res] = ctrl_daq_set_mux(obj, plane, mux)
 
+      res=0;
+      if strcmp(plane, 'Y')
+        obj.ctrl.y_daq_mux0.put(uint32(mux(1)));
+        obj.ctrl.y_daq_mux1.put(uint32(mux(2)));
+        obj.ctrl.y_daq_mux2.put(uint32(mux(3)));
+        obj.ctrl.y_daq_mux3.put(uint32(mux(4)));
+      end
+      if strcmp(plane, 'X')
+        obj.ctrl.x_daq_mux0.put(uint32(mux(1)));
+        obj.ctrl.x_daq_mux1.put(uint32(mux(2)));
+        obj.ctrl.x_daq_mux2.put(uint32(mux(3)));
+        obj.ctrl.x_daq_mux3.put(uint32(mux(4)));
+      end      
+    end
+    
+    function [res, daq] = ctrl_read_daq(obj, plane)
+      % [res, daq] = ctrl_read_daq(obj, plane, mux)
+      % Parameters:
+      %   plane - 'X', 'Y'
+      %   mux - four elements vector selecting signals for each DAQ channel
+      % Return:
+      %   res - error when not zero
+      %   daq - readout structure
+      
+      res=0;
+      if strcmp(plane, 'Y')
+        if obj.ctrl.y_daq_mux0.get() == 2
+          daq.ch00 = (obj.ctrl.y_daq_ch00_int.get()        )';
+          daq.ch01 = (obj.ctrl.y_daq_ch01_int.get()        )';
+        else
+          daq.ch00 = (obj.ctrl.y_daq_ch00.get()            )';
+          daq.ch01 = (obj.ctrl.y_daq_ch01.get()            )';
+        end
+        if obj.ctrl.y_daq_mux1.get() == 2
+          daq.ch10 = (obj.ctrl.y_daq_ch10_int.get()        )';
+          daq.ch11 = (obj.ctrl.y_daq_ch11_int.get()        )';
+        else
+          daq.ch10 = (obj.ctrl.y_daq_ch10.get()            )';
+          daq.ch11 = (obj.ctrl.y_daq_ch11.get()            )';
+        end
+        daq.ch20 = (obj.ctrl.y_daq_ch20.get()              )';
+        daq.ch21 = (obj.ctrl.y_daq_ch21.get()              )';
+        daq.ch30 = (obj.ctrl.y_daq_ch30_int.get()          )';
+        daq.ch31 = (obj.ctrl.y_daq_ch31_int.get()          )';
+        daq.rx_down_bpm1 = (obj.ctrl.y_rx_down_bpm1.get()  )';
+        daq.rx_down_bpm2 = (obj.ctrl.y_rx_down_bpm2.get()  )';
+      end
+      if strcmp(plane, 'X')
+        if obj.ctrl.y_daq_mux0.get() == 2
+          daq.ch00         = (obj.ctrl.x_daq_ch00_int.get())';
+          daq.ch01         = (obj.ctrl.x_daq_ch01_int.get())';
+        else
+          daq.ch00         = (obj.ctrl.x_daq_ch00.get()    )';
+          daq.ch01         = (obj.ctrl.x_daq_ch01.get()    )';
+        end
+        if obj.ctrl.y_daq_mux1.get() == 2
+          daq.ch10         = (obj.ctrl.x_daq_ch10_int.get())';
+          daq.ch11         = (obj.ctrl.x_daq_ch11_int.get())';
+        else
+          daq.ch10         = (obj.ctrl.x_daq_ch10.get()    )';
+          daq.ch11         = (obj.ctrl.x_daq_ch11.get()    )';
+        end
+        daq.ch20         = (obj.ctrl.x_daq_ch20.get()      )';
+        daq.ch21         = (obj.ctrl.x_daq_ch21.get()      )';
+        daq.ch30         = (obj.ctrl.x_daq_ch30_int.get()  )';
+        daq.ch31         = (obj.ctrl.x_daq_ch31_int.get()  )';
+        daq.rx_down_bpm1 = (obj.ctrl.x_rx_down_bpm1.get()  )';
+        daq.rx_down_bpm2 = (obj.ctrl.x_rx_down_bpm2.get()  )';
+      end
+    end
+    
     function [res] = ctrl_ff_table_generate(obj, type, plane, kicker, amp, length)
       % [res] = ctrl_ff_table_generate(obj, type, plane, kicker, amplitude, length)
       %
