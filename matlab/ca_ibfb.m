@@ -317,6 +317,14 @@ classdef ca_ibfb < handle
       obj.ctrl.y_sase3_bunch_num     = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-SASE3-BUNCH-NUM'     ]));
       obj.ctrl.y_fast_fb_del         = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FAST-FB-DEL'         ]));
       obj.ctrl.y_fb_fast_ki          = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-FB-FAST-KI'          ]));     
+      obj.ctrl.y_fb_fast_kp          = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-FB-FAST-KP'          ]));     
+      obj.ctrl.y_fb_kicker_m11       = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-FB-KICKER-M11'       ]));     
+      obj.ctrl.y_fb_kicker_m12       = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-FB-KICKER-M12'       ]));     
+      obj.ctrl.y_fb_kicker_m21       = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-FB-KICKER-M21'       ]));     
+      obj.ctrl.y_fb_kicker_m22       = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-FB-KICKER-M22'       ]));     
+      obj.ctrl.y_fb_fast_on          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FB-FAST-ON'          ]));
+      obj.ctrl.y_ff_fast_on          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FF-FAST-ON'          ]));
+      obj.ctrl.y_fb_params_mode      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FB-PARAMS-MODE'      ]));
       %             X               %
       obj.ctrl.x_updown_packets      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-UPDOWN-PACKETS'      ]));
       obj.ctrl.x_sase_packets        = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE-PACKETS'        ]));
@@ -380,6 +388,14 @@ classdef ca_ibfb < handle
       obj.ctrl.x_sase3_bunch_num     = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE3-BUNCH-NUM'     ]));
       obj.ctrl.x_fast_fb_del         = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-FAST-FB-DEL'         ]));
       obj.ctrl.x_fb_fast_ki          = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-FB-FAST-KI'          ]));     
+      obj.ctrl.x_fb_fast_kp          = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-FB-FAST-KP'          ]));     
+      obj.ctrl.x_fb_kicker_m11       = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-FB-KICKER-M11'       ]));     
+      obj.ctrl.x_fb_kicker_m12       = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-FB-KICKER-M12'       ]));     
+      obj.ctrl.x_fb_kicker_m21       = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-FB-KICKER-M21'       ]));     
+      obj.ctrl.x_fb_kicker_m22       = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-FB-KICKER-M22'       ]));     
+      obj.ctrl.x_fb_fast_on          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-FB-FAST-ON'          ]));
+      obj.ctrl.x_ff_fast_on          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-FF-FAST-ON'          ]));
+      obj.ctrl.x_fb_params_mode      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-FB-PARAMS-MODE'      ]));
      
       %%   PLAYER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       if obj.USE_PLAYER
