@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=95
-		y=803
+		x=1672
+		y=723
 		width=1000
-		height=260
+		height=300
 	}
 	clr=14
 	bclr=4
@@ -1765,4 +1765,176 @@ rectangle {
 	align="horiz. right"
 	limits {
 	}
+}
+"shell command" {
+	object {
+		x=90
+		y=195
+		width=80
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh BPMI-1860-TL BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMI-1860-TL"
+}
+"shell command" {
+	object {
+		x=175
+		y=195
+		width=80
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh BPMI-1878-TL BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMI-1878-TL"
+}
+"shell command" {
+	object {
+		x=90
+		y=215
+		width=80
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh BPMI-1910-TL BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMI-1910-TL"
+}
+"shell command" {
+	object {
+		x=175
+		y=215
+		width=80
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh BPMI-1930-TL BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMI-1930-TL"
+}
+"shell command" {
+	object {
+		x=90
+		y=235
+		width=80
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh BPMI-1863-TL BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMI-1863-TL"
+}
+"shell command" {
+	object {
+		x=175
+		y=235
+		width=80
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh BPMI-1889-TL BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMI-1889-TL"
+}
+"shell command" {
+	object {
+		x=90
+		y=255
+		width=80
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh BPMI-1925-TL BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMI-1925-TL"
+}
+"shell command" {
+	object {
+		x=175
+		y=255
+		width=80
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh BPMI-1939-TL BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMI-1939-TL"
+}
+text {
+	object {
+		x=10
+		y=220
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Downstream Y"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=200
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Upstream Y"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=240
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Upstream X"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=260
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Downstream X"
+	align="horiz. right"
 }
