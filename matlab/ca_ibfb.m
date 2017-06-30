@@ -78,8 +78,8 @@ classdef ca_ibfb < handle
     hostname = '';
     context
     sw;    
-    ff_tab1 = 0.001;
-    ff_tab2 = 0.001;
+    ff_tab1 = 0.0001;
+    ff_tab2 = 0.0001;
   end
    
    properties 
@@ -325,6 +325,12 @@ classdef ca_ibfb < handle
       obj.ctrl.y_fb_fast_on          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FB-FAST-ON'          ]));
       obj.ctrl.y_ff_fast_on          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FF-FAST-ON'          ]));
       obj.ctrl.y_fb_params_mode      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FB-PARAMS-MODE'      ]));
+      obj.ctrl.y_ff_table_pos        = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-FF-TABLE-POS'        ]));
+      obj.ctrl.y_ff_table_angle      = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-FF-TABLE-ANGLE'      ]));
+      obj.ctrl.y_kick1_p_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-KICK1-P-PATTERN'     ]));
+      obj.ctrl.y_kick1_n_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-KICK1-N-PATTERN'     ]));
+      obj.ctrl.y_kick2_p_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-KICK2-P-PATTERN'     ]));
+      obj.ctrl.y_kick2_n_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-KICK2-N-PATTERN'     ]));
       %             X               %
       obj.ctrl.x_updown_packets      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-UPDOWN-PACKETS'      ]));
       obj.ctrl.x_sase_packets        = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE-PACKETS'        ]));
@@ -396,6 +402,12 @@ classdef ca_ibfb < handle
       obj.ctrl.x_fb_fast_on          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-FB-FAST-ON'          ]));
       obj.ctrl.x_ff_fast_on          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-FF-FAST-ON'          ]));
       obj.ctrl.x_fb_params_mode      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-FB-PARAMS-MODE'      ]));
+      obj.ctrl.x_ff_table_pos        = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-FF-TABLE-POS'        ]));
+      obj.ctrl.x_ff_table_angle      = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-FF-TABLE-ANGLE'      ]));
+      obj.ctrl.x_kick1_p_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-KICK1-P-PATTERN'     ]));
+      obj.ctrl.x_kick1_n_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-KICK1-N-PATTERN'     ]));
+      obj.ctrl.x_kick2_p_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-KICK2-P-PATTERN'     ]));
+      obj.ctrl.x_kick2_n_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-KICK2-N-PATTERN'     ]));
      
       %%   PLAYER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       if obj.USE_PLAYER
@@ -712,6 +724,7 @@ classdef ca_ibfb < handle
       %   length    - a length of the generated ff table
       
       res = 0;
+      tsize = 256;
       
       % generate tables
       switch type
@@ -747,13 +760,13 @@ classdef ca_ibfb < handle
       end
       
       % this value triggers writing of the FF tables
-      ff_tab(1, end) = obj.ff_tab1;
-      ff_tab(2, end) = obj.ff_tab2;
-      %ff_tab(1, 100) = obj.ff_tab1;
-      %ff_tab(2, 100) = obj.ff_tab2;
+      %ff_tab(1, end) = obj.ff_tab1;
+      %ff_tab(2, end) = obj.ff_tab2;
+      %ff_tab(1, 256) = obj.ff_tab1;
+      ff_tab(2, 256) = obj.ff_tab2;
 
-      obj.ff_tab1 = obj.ff_tab1 + 0.001;
-      obj.ff_tab2 = obj.ff_tab2 + 0.001;
+      obj.ff_tab1 = obj.ff_tab1 + 0.0001;
+      obj.ff_tab2 = obj.ff_tab2 + 0.0001;
 
       y_cnt = obj.ctrl.y_ff_table_cnt.get();
       x_cnt = obj.ctrl.x_ff_table_cnt.get();
@@ -762,23 +775,23 @@ classdef ca_ibfb < handle
       obj.ctrl.x_ff_fast_mode.put(uint32(1));
 
       if strcmp(plane, 'Y') || strcmp(plane, 'XY')
-        obj.ctrl.y_ff_table_pos.put(single(ff_tab(1,:))); 
+        obj.ctrl.y_ff_table_pos.put(single(ff_tab(1,1:tsize))); 
         %plot(obj.ctrl.y_ff_table_pos.get(), 'b')
         %pause(1)
-        obj.ctrl.y_ff_table_angle.put(single(ff_tab(2,:)));    
+        obj.ctrl.y_ff_table_angle.put(single(ff_tab(2,1:tsize)));    
         %plot(obj.ctrl.y_ff_table_angle.get(),'r')
       end
       if strcmp(plane, 'X') || strcmp(plane, 'XY')
-        obj.ctrl.x_ff_table_pos.put(single(ff_tab(1,:))); 
+        obj.ctrl.x_ff_table_pos.put(single(ff_tab(1,1:tsize))); 
         %pause(1);
-        obj.ctrl.x_ff_table_angle.put(single(ff_tab(2,:)));
+        obj.ctrl.x_ff_table_angle.put(single(ff_tab(2,1:tsize)));
       end
       w=0;
       pause(0.2)
       % wait for completion, the internal FF table counter should be incremented
       if strcmp(plane, 'Y') || strcmp(plane, 'XY')
         while y_cnt == obj.ctrl.y_ff_table_cnt.get()
-          if w > 100000
+          if w > 10000
             res = -4;
             return
           end
@@ -931,9 +944,6 @@ classdef ca_ibfb < handle
       end
       obj.ctrl_ff_table_generate('lin',plane, 'KICK12', [0 0 0 0], 2707);
     end
-
-    
-    
     
     function [res, m] = ctrl_ff_scan_single_plot(obj, m)
         figure(1);
@@ -1079,8 +1089,7 @@ classdef ca_ibfb < handle
       %   plane     - select plane 'X', 'Y', 'XY'
       %   kicker    - select kicker 'KICK1', 'KICK2', 'KICK12'
       
-      res = 0;
-      obj.ctrl_ff_table_generate('lin',plane,kicker, [0.99 0.99 0.99 0.99], n);
+      res = obj.ctrl_ff_table_generate('lin',plane,kicker, [-1 -1 0.99 0.99], n);
     end
 
     function [res] = ctrl_ff_train_lin(obj, plane, kicker)
@@ -1091,7 +1100,7 @@ classdef ca_ibfb < handle
       %   kicker    - select kicker 'KICK1', 'KICK2', 'KICK12'
       
       res = 0;
-      obj.ctrl_ff_table_generate('lin',plane,kicker, [-0.99 0.99 -0.99 0.99], 30);
+      obj.ctrl_ff_table_generate('lin',plane,kicker, [-1 -1 0.99 0.99], 30);
     end
 
     function [res] = ctrl_ff_train_alternating(obj, plane, kicker)
@@ -1115,6 +1124,66 @@ classdef ca_ibfb < handle
       res = 0;
       obj.ctrl_ff_table_generate('lin','XY','KICK12', [0 0 0 0], 2707);
     end
+    
+    
+    function [res] = doublet_user_pattern(obj, t, a, plane)
+      % Standard doublet
+      % 
+      % ibfb.doublet_user_pattern([0 2 3 13 14 33 34 44 45], [0 0 -5e3 -30e3 5e3 30e3 -5e3 -30e3 0])
+      %
+      %                _/|
+      %              _/  |
+      %            _/    |
+      %           /      |
+      %          |       |
+      %  ----    |       |   -------
+      %      |   |       |   |
+      %       \  |        \  |
+      %        \ |         \ |
+      %         \|          \|
+      %
+      %  1  23  45      67  89
+      %
+      res = 0;
+      if length(t) < 2
+        fprintf(2, 'ERROR: the time and amplitude vector lengthe must be bigger than 1\n');
+        res = -4;
+        return
+      end 
+      if length(t) ~= length(a)
+        fprintf(2, 'ERROR: the time and amplitude vector must have the same size\n');
+        res = -1;
+        return
+      end
+      if (min(t) < 0) < (max(t) > 47)
+        fprintf(2, 'ERROR: the time vector can have values from 0 to 27\n');
+        res = -2;
+        return
+      end
+      if max(abs(a)) > 32767
+        fprintf(2, 'ERROR: the amplitude vector can have values from -32767 to 32767\n');
+        res = -3;
+        return
+      end
+      p = zeros(1, 48);
+      pt = 0:47;
+      for i=1:length(t)-1
+        p(t(i)+1:t(i+1)+1) = linspace(a(i), a(i+1), t(i+1)-t(i)+1);
+      end      
+      obj.ctrl.y_kick1_p_pattern.put(int32(p));
+      obj.ctrl.y_kick1_n_pattern.put(int32(p));
+      obj.ctrl.y_kick2_p_pattern.put(int32(p));
+      obj.ctrl.y_kick2_n_pattern.put(int32(p));
+      pause(2);
+      obj.ctrl.y_dac_pattern_apply.put(int32(1));
+      pause(1);
+      obj.ctrl.y_dac_pattern_apply.put(int32(0));
+      
+      %plot(pt, p)
+      %grid on
+      
+    end
+
     
     % KW84 - Obsolete
     % function [bpms] = ctrl_plot_mgt_rx(obj)
