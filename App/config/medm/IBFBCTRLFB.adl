@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=74
-		y=198
+		x=428
+		y=72
 		width=1020
 		height=920
 	}
@@ -7761,7 +7761,7 @@ text {
 }
 "text entry" {
 	object {
-		x=200
+		x=190
 		y=572
 		width=40
 		height=15
@@ -8206,7 +8206,7 @@ text {
 }
 text {
 	object {
-		x=200
+		x=190
 		y=560
 		width=40
 		height=10
@@ -8402,4 +8402,31 @@ text {
 	}
 	textix="Errors"
 	align="horiz. centered"
+}
+"text entry" {
+	object {
+		x=250
+		y=572
+		width=40
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-FB-I-SMP-SHIFT"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=250
+		y=560
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="I Shift"
 }
