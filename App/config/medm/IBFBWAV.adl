@@ -1,14 +1,14 @@
 
 file {
-	name="/xfel/controls/App/config/medm/IBFBWAV.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBWAV.adl"
 	version=030105
 }
 display {
 	object {
-		x=10
-		y=264
-		width=1000
-		height=900
+		x=87
+		y=64
+		width=935
+		height=1110
 	}
 	clr=14
 	bclr=4
@@ -91,7 +91,7 @@ rectangle {
 	object {
 		x=0
 		y=280
-		width=400
+		width=335
 		height=20
 	}
 	"basic attribute" {
@@ -100,8 +100,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=334
-		y=50
+		x=867
+		y=230
 		width=65
 		height=20
 	}
@@ -111,13 +111,12 @@ rectangle {
 }
 "cartesian plot" {
 	object {
-		x=400
-		y=30
+		x=332
+		y=250
 		width=600
-		height=210
+		height=200
 	}
 	plotcom {
-		title="Downstream BPM1, BPM2"
 		xlabel="Bucket"
 		ylabel="Position [mm]"
 		clr=0
@@ -125,11 +124,11 @@ rectangle {
 	}
 	erase_oldest="plot last n pts"
 	trace[0] {
-		ydata="$(DEV):Y-RX-DOWN-BPM1"
+		ydata="$(DEV):Y-DAQ-CH00"
 		data_clr=20
 	}
 	trace[1] {
-		ydata="$(DEV):Y-RX-DOWN-BPM2"
+		ydata="$(DEV):Y-DAQ-CH01"
 		data_clr=30
 	}
 }
@@ -148,7 +147,7 @@ rectangle {
 	object {
 		x=0
 		y=0
-		width=1000
+		width=935
 		height=30
 	}
 	"basic attribute" {
@@ -707,18 +706,18 @@ polyline {
 }
 polyline {
 	object {
-		x=331
+		x=333
 		y=30
 		width=2
-		height=243
+		height=251
 	}
 	"basic attribute" {
 		clr=0
 		width=2
 	}
 	points {
-		(332,31)
-		(332,272)
+		(334,31)
+		(334,280)
 	}
 }
 text {
@@ -900,30 +899,6 @@ polyline {
 	points {
 		(1,191)
 		(331,191)
-	}
-}
-"cartesian plot" {
-	object {
-		x=400
-		y=450
-		width=600
-		height=210
-	}
-	plotcom {
-		title="Y Controller Output"
-		xlabel="Bucket"
-		ylabel="DAC counts"
-		clr=0
-		bclr=14
-	}
-	erase_oldest="plot last n pts"
-	trace[0] {
-		ydata="$(DEV):Y-KICK1-OUT"
-		data_clr=20
-	}
-	trace[1] {
-		ydata="$(DEV):Y-KICK2-OUT"
-		data_clr=30
 	}
 }
 rectangle {
@@ -1280,32 +1255,9 @@ rectangle {
 }
 "cartesian plot" {
 	object {
-		x=400
-		y=240
-		width=600
-		height=210
-	}
-	plotcom {
-		xlabel="Bucket"
-		ylabel="Position error [mm]"
-		clr=0
-		bclr=14
-	}
-	erase_oldest="plot last n pts"
-	trace[0] {
-		ydata="$(DEV):Y-FB-POS-ERR"
-		data_clr=20
-	}
-	trace[1] {
-		ydata="$(DEV):Y-FB-ANGLE-ERR"
-		data_clr=30
-	}
-}
-"cartesian plot" {
-	object {
 		x=0
 		y=300
-		width=400
+		width=335
 		height=180
 	}
 	plotcom {
@@ -1341,7 +1293,7 @@ rectangle {
 	object {
 		x=0
 		y=480
-		width=400
+		width=335
 		height=180
 	}
 	plotcom {
@@ -1375,8 +1327,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=334
-		y=30
+		x=802
+		y=230
 		width=65
 		height=20
 	}
@@ -1386,8 +1338,8 @@ rectangle {
 }
 text {
 	object {
-		x=345
-		y=35
+		x=812
+		y=235
 		width=45
 		height=10
 	}
@@ -1399,8 +1351,8 @@ text {
 }
 text {
 	object {
-		x=345
-		y=55
+		x=877
+		y=235
 		width=45
 		height=10
 	}
@@ -1412,7 +1364,7 @@ text {
 }
 text {
 	object {
-		x=155
+		x=72
 		y=285
 		width=100
 		height=10
@@ -1427,7 +1379,7 @@ polyline {
 	object {
 		x=0
 		y=280
-		width=400
+		width=335
 		height=0
 	}
 	"basic attribute" {
@@ -1435,30 +1387,317 @@ polyline {
 	}
 	points {
 		(0,280)
-		(400,280)
+		(335,280)
+	}
+}
+menu {
+	object {
+		x=240
+		y=280
+		width=90
+		height=20
+	}
+	control {
+		chan="$(DEV):Y-RX-HIST-ENA"
+		clr=14
+		bclr=4
+	}
+}
+menu {
+	object {
+		x=397
+		y=230
+		width=200
+		height=20
+	}
+	control {
+		chan="$(DEV):Y-DAQ-MUX0"
+		clr=14
+		bclr=4
+	}
+}
+text {
+	object {
+		x=337
+		y=235
+		width=55
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Channel 0"
+	align="horiz. right"
+}
+text {
+	object {
+		x=337
+		y=455
+		width=55
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Channel 1"
+	align="horiz. right"
+}
+menu {
+	object {
+		x=397
+		y=450
+		width=200
+		height=20
+	}
+	control {
+		chan="$(DEV):Y-DAQ-MUX1"
+		clr=14
+		bclr=4
 	}
 }
 "cartesian plot" {
 	object {
-		x=400
-		y=660
+		x=332
+		y=470
 		width=600
-		height=210
+		height=200
 	}
 	plotcom {
-		title="X Controller Output"
 		xlabel="Bucket"
-		ylabel="DAC counts"
+		ylabel="Position [mm]"
 		clr=0
 		bclr=14
 	}
 	erase_oldest="plot last n pts"
 	trace[0] {
-		ydata="$(DEV):X-KICK1-OUT"
+		ydata="$(DEV):Y-DAQ-CH10"
 		data_clr=20
 	}
 	trace[1] {
-		ydata="$(DEV):X-KICK2-OUT"
+		ydata="$(DEV):Y-DAQ-CH11"
 		data_clr=30
+	}
+}
+text {
+	object {
+		x=337
+		y=675
+		width=55
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Channel 2"
+	align="horiz. right"
+}
+menu {
+	object {
+		x=397
+		y=670
+		width=200
+		height=20
+	}
+	control {
+		chan="$(DEV):Y-DAQ-MUX2"
+		clr=14
+		bclr=4
+	}
+}
+"cartesian plot" {
+	object {
+		x=332
+		y=690
+		width=600
+		height=200
+	}
+	plotcom {
+		xlabel="Bucket"
+		ylabel="Position [mm]"
+		clr=0
+		bclr=14
+	}
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):Y-DAQ-CH20"
+		data_clr=20
+	}
+	trace[1] {
+		ydata="$(DEV):Y-DAQ-CH21"
+		data_clr=30
+	}
+}
+text {
+	object {
+		x=337
+		y=895
+		width=55
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Channel 3"
+	align="horiz. right"
+}
+menu {
+	object {
+		x=397
+		y=890
+		width=200
+		height=20
+	}
+	control {
+		chan="$(DEV):Y-DAQ-MUX3"
+		clr=14
+		bclr=4
+	}
+}
+"cartesian plot" {
+	object {
+		x=332
+		y=910
+		width=600
+		height=200
+	}
+	plotcom {
+		xlabel="Bucket"
+		ylabel="Position [mm]"
+		clr=0
+		bclr=14
+	}
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):Y-DAQ-CH30-INT"
+		data_clr=20
+	}
+	trace[1] {
+		ydata="$(DEV):Y-DAQ-CH31-INT"
+		data_clr=30
+	}
+}
+"cartesian plot" {
+	object {
+		x=335
+		y=30
+		width=600
+		height=200
+	}
+	plotcom {
+		title="Downstream BPMs"
+		xlabel="Bucket"
+		ylabel="Position [mm]"
+		clr=0
+		bclr=14
+	}
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):Y-RX-DOWN-BPM1"
+		data_clr=20
+	}
+	trace[1] {
+		ydata="$(DEV):Y-RX-DOWN-BPM2"
+		data_clr=30
+	}
+}
+"cartesian plot" {
+	object {
+		x=2
+		y=705
+		width=332
+		height=200
+	}
+	plotcom {
+		xlabel="Sample"
+		ylabel="DAC counts"
+		clr=0
+		bclr=14
+	}
+	style="line-nomarks"
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):Y-KICK1-P-PATTERN"
+		data_clr=51
+	}
+	trace[1] {
+		ydata="$(DEV):Y-KICK1-N-PATTERN"
+		data_clr=53
+	}
+	trace[2] {
+		ydata="$(DEV):Y-KICK2-P-PATTERN"
+		data_clr=61
+	}
+	trace[3] {
+		ydata="$(DEV):Y-KICK2-N-PATTERN"
+		data_clr=63
+	}
+}
+"message button" {
+	object {
+		x=130
+		y=685
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-PATTERN-APPLY"
+		clr=14
+		bclr=4
+	}
+	label="Apply user pattern"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=5
+		y=685
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-DAC-PATTERN-APPLY"
+		clr=14
+		bclr=4
+	}
+	label="Init user pattern"
+	press_msg="3"
+}
+rectangle {
+	object {
+		x=3
+		y=660
+		width=332
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+text {
+	object {
+		x=120
+		y=663
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Kicker Patterns"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=0
+		y=660
+		width=335
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,660)
+		(335,660)
 	}
 }
