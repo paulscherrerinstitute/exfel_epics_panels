@@ -5,13 +5,8 @@ file {
 }
 display {
 	object {
-<<<<<<< HEAD
-		x=535
-		y=207
-=======
 		x=1287
 		y=369
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=1020
 		height=920
 	}
@@ -697,11 +692,7 @@ rectangle {
 "choice button" {
 	object {
 		x=230
-<<<<<<< HEAD
-		y=735
-=======
 		y=750
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=60
 		height=30
 	}
@@ -1289,11 +1280,7 @@ text {
 text {
 	object {
 		x=280
-<<<<<<< HEAD
-		y=745
-=======
 		y=760
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=90
 		height=15
 	}
@@ -1306,11 +1293,7 @@ text {
 "wheel switch" {
 	object {
 		x=375
-<<<<<<< HEAD
-		y=735
-=======
 		y=750
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=60
 		height=30
 	}
@@ -1325,11 +1308,7 @@ text {
 "wheel switch" {
 	object {
 		x=375
-<<<<<<< HEAD
-		y=705
-=======
 		y=720
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=60
 		height=30
 	}
@@ -1344,11 +1323,7 @@ text {
 text {
 	object {
 		x=280
-<<<<<<< HEAD
-		y=715
-=======
 		y=730
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=90
 		height=10
 	}
@@ -2004,11 +1979,7 @@ rectangle {
 "wheel switch" {
 	object {
 		x=630
-<<<<<<< HEAD
-		y=735
-=======
 		y=750
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=55
 		height=30
 	}
@@ -2023,11 +1994,7 @@ rectangle {
 "choice button" {
 	object {
 		x=440
-<<<<<<< HEAD
-		y=746
-=======
 		y=761
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=90
 		height=15
 	}
@@ -2041,11 +2008,7 @@ rectangle {
 "wheel switch" {
 	object {
 		x=630
-<<<<<<< HEAD
-		y=705
-=======
 		y=720
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=55
 		height=30
 	}
@@ -2488,11 +2451,7 @@ polyline {
 byte {
 	object {
 		x=445
-<<<<<<< HEAD
-		y=790
-=======
 		y=811
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=20
 		height=45
 	}
@@ -2507,11 +2466,7 @@ byte {
 text {
 	object {
 		x=470
-<<<<<<< HEAD
-		y=790
-=======
 		y=811
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=10
 	}
@@ -2523,11 +2478,7 @@ text {
 text {
 	object {
 		x=470
-<<<<<<< HEAD
-		y=820
-=======
 		y=841
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=10
 	}
@@ -2539,11 +2490,7 @@ text {
 text {
 	object {
 		x=470
-<<<<<<< HEAD
-		y=805
-=======
 		y=826
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=10
 	}
@@ -2973,13 +2920,8 @@ polyline {
 }
 byte {
 	object {
-<<<<<<< HEAD
-		x=140
-		y=790
-=======
 		x=10
 		y=811
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=20
 		height=45
 	}
@@ -2993,13 +2935,8 @@ byte {
 }
 text {
 	object {
-<<<<<<< HEAD
-		x=165
-		y=790
-=======
 		x=35
 		y=811
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=10
 	}
@@ -3010,13 +2947,8 @@ text {
 }
 text {
 	object {
-<<<<<<< HEAD
-		x=165
-		y=820
-=======
 		x=35
 		y=841
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=10
 	}
@@ -3027,13 +2959,8 @@ text {
 }
 text {
 	object {
-<<<<<<< HEAD
-		x=165
-		y=805
-=======
 		x=35
 		y=826
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=10
 	}
@@ -4534,13 +4461,8 @@ polyline {
 }
 text {
 	object {
-<<<<<<< HEAD
-		x=85
-		y=570
-=======
 		x=90
 		y=575
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=30
 		height=10
 	}
@@ -4660,13 +4582,8 @@ text {
 "text entry" {
 	object {
 		x=140
-<<<<<<< HEAD
-		y=595
-		width=55
-=======
 		y=600
 		width=40
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		height=15
 	}
 	control {
@@ -4679,15 +4596,9 @@ text {
 }
 "text entry" {
 	object {
-<<<<<<< HEAD
-		x=200
-		y=595
-		width=55
-=======
 		x=140
 		y=620
 		width=40
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		height=15
 	}
 	control {
@@ -4700,15 +4611,9 @@ text {
 }
 "text entry" {
 	object {
-<<<<<<< HEAD
-		x=140
-		y=615
-		width=55
-=======
 		x=190
 		y=600
 		width=40
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		height=15
 	}
 	control {
@@ -4721,15 +4626,9 @@ text {
 }
 "text entry" {
 	object {
-<<<<<<< HEAD
-		x=200
-		y=615
-		width=55
-=======
 		x=190
 		y=620
 		width=40
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		height=15
 	}
 	control {
@@ -5013,13 +4912,8 @@ text {
 }
 text {
 	object {
-<<<<<<< HEAD
-		x=80
-		y=615
-=======
 		x=110
 		y=600
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=20
 		height=10
 	}
@@ -5031,13 +4925,8 @@ text {
 }
 text {
 	object {
-<<<<<<< HEAD
-		x=110
-		y=595
-=======
 		x=80
 		y=620
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=20
 		height=10
 	}
@@ -5060,8 +4949,6 @@ text {
 	textix="k11"
 	align="horiz. right"
 }
-<<<<<<< HEAD
-=======
 "text entry" {
 	object {
 		x=390
@@ -5092,7 +4979,6 @@ text {
 	limits {
 	}
 }
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 text {
 	object {
 		x=375
@@ -5109,11 +4995,7 @@ text {
 text {
 	object {
 		x=365
-<<<<<<< HEAD
-		y=658
-=======
 		y=660
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=20
 		height=10
 	}
@@ -5125,13 +5007,8 @@ text {
 }
 byte {
 	object {
-<<<<<<< HEAD
-		x=140
-		y=835
-=======
 		x=10
 		y=856
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=20
 		height=60
 	}
@@ -5146,13 +5023,8 @@ byte {
 }
 text {
 	object {
-<<<<<<< HEAD
-		x=165
-		y=837
-=======
 		x=35
 		y=858
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=10
 	}
@@ -5163,13 +5035,8 @@ text {
 }
 text {
 	object {
-<<<<<<< HEAD
-		x=165
-		y=852
-=======
 		x=35
 		y=873
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=10
 	}
@@ -5180,13 +5047,8 @@ text {
 }
 text {
 	object {
-<<<<<<< HEAD
-		x=165
-		y=882
-=======
 		x=35
 		y=903
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=10
 	}
@@ -5197,13 +5059,8 @@ text {
 }
 text {
 	object {
-<<<<<<< HEAD
-		x=165
-		y=867
-=======
 		x=35
 		y=888
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=10
 	}
@@ -5841,13 +5698,8 @@ text {
 "text entry" {
 	object {
 		x=440
-<<<<<<< HEAD
-		y=595
-		width=55
-=======
 		y=600
 		width=40
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		height=15
 	}
 	control {
@@ -5860,15 +5712,9 @@ text {
 }
 "text entry" {
 	object {
-<<<<<<< HEAD
-		x=500
-		y=595
-		width=55
-=======
 		x=440
 		y=620
 		width=40
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		height=15
 	}
 	control {
@@ -5881,15 +5727,9 @@ text {
 }
 "text entry" {
 	object {
-<<<<<<< HEAD
-		x=440
-		y=615
-		width=55
-=======
 		x=490
 		y=600
 		width=40
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		height=15
 	}
 	control {
@@ -5902,15 +5742,9 @@ text {
 }
 "text entry" {
 	object {
-<<<<<<< HEAD
-		x=500
-		y=615
-		width=55
-=======
 		x=490
 		y=620
 		width=40
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		height=15
 	}
 	control {
@@ -5924,11 +5758,7 @@ text {
 byte {
 	object {
 		x=445
-<<<<<<< HEAD
-		y=835
-=======
 		y=856
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=20
 		height=60
 	}
@@ -5944,11 +5774,7 @@ byte {
 text {
 	object {
 		x=470
-<<<<<<< HEAD
-		y=837
-=======
 		y=858
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=10
 	}
@@ -5960,11 +5786,7 @@ text {
 text {
 	object {
 		x=470
-<<<<<<< HEAD
-		y=852
-=======
 		y=873
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=10
 	}
@@ -5976,11 +5798,7 @@ text {
 text {
 	object {
 		x=470
-<<<<<<< HEAD
-		y=882
-=======
 		y=903
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=10
 	}
@@ -5992,11 +5810,7 @@ text {
 text {
 	object {
 		x=470
-<<<<<<< HEAD
-		y=867
-=======
 		y=888
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=10
 	}
@@ -6064,11 +5878,7 @@ text {
 text {
 	object {
 		x=135
-<<<<<<< HEAD
-		y=745
-=======
 		y=760
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=90
 		height=10
 	}
@@ -6081,11 +5891,7 @@ text {
 polyline {
 	object {
 		x=0
-<<<<<<< HEAD
-		y=785
-=======
 		y=780
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=685
 		height=0
 	}
@@ -6093,23 +5899,14 @@ polyline {
 		clr=0
 	}
 	points {
-<<<<<<< HEAD
-		(0,785)
-		(685,785)
-=======
 		(0,780)
 		(685,780)
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 	}
 }
 text {
 	object {
 		x=365
-<<<<<<< HEAD
-		y=678
-=======
 		y=680
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=20
 		height=10
 	}
@@ -6119,8 +5916,6 @@ text {
 	textix="max"
 	align="horiz. right"
 }
-<<<<<<< HEAD
-=======
 "text entry" {
 	object {
 		x=640
@@ -6151,7 +5946,6 @@ text {
 	limits {
 	}
 }
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 text {
 	object {
 		x=625
@@ -6168,11 +5962,7 @@ text {
 text {
 	object {
 		x=615
-<<<<<<< HEAD
 		y=658
-=======
-		y=660
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=20
 		height=10
 	}
@@ -6185,11 +5975,7 @@ text {
 text {
 	object {
 		x=615
-<<<<<<< HEAD
 		y=678
-=======
-		y=680
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=20
 		height=10
 	}
@@ -6202,11 +5988,7 @@ text {
 text {
 	object {
 		x=535
-<<<<<<< HEAD
 		y=745
-=======
-		y=760
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=90
 		height=15
 	}
@@ -6219,11 +6001,7 @@ text {
 text {
 	object {
 		x=535
-<<<<<<< HEAD
-		y=715
-=======
 		y=730
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=90
 		height=10
 	}
@@ -6263,11 +6041,7 @@ text {
 text {
 	object {
 		x=440
-<<<<<<< HEAD
-		y=731
-=======
 		y=746
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=90
 		height=10
 	}
@@ -6280,11 +6054,7 @@ text {
 text {
 	object {
 		x=15
-<<<<<<< HEAD
-		y=740
-=======
 		y=700
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=100
 		height=10
 	}
@@ -6296,13 +6066,8 @@ text {
 }
 text {
 	object {
-<<<<<<< HEAD
-		x=295
-		y=560
-=======
 		x=160
 		y=676
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=60
 		height=10
 	}
@@ -6314,13 +6079,8 @@ text {
 }
 "wheel switch" {
 	object {
-<<<<<<< HEAD
 		x=295
 		y=575
-=======
-		x=160
-		y=691
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=60
 		height=30
 	}
@@ -6531,13 +6291,8 @@ rectangle {
 rectangle {
 	object {
 		x=135
-<<<<<<< HEAD
 		y=590
 		width=125
-=======
-		y=595
-		width=100
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		height=45
 	}
 	"basic attribute" {
@@ -6551,13 +6306,8 @@ rectangle {
 }
 "message button" {
 	object {
-<<<<<<< HEAD
 		x=815
 		y=315
-=======
-		x=280
-		y=821
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=15
 	}
@@ -6571,13 +6321,8 @@ rectangle {
 }
 "message button" {
 	object {
-<<<<<<< HEAD
 		x=690
 		y=315
-=======
-		x=280
-		y=836
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=120
 		height=15
 	}
@@ -7091,13 +6836,8 @@ rectangle {
 rectangle {
 	object {
 		x=435
-<<<<<<< HEAD
 		y=590
 		width=125
-=======
-		y=595
-		width=100
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		height=45
 	}
 	"basic attribute" {
@@ -8023,15 +7763,9 @@ rectangle {
 }
 text {
 	object {
-<<<<<<< HEAD
 		x=295
 		y=610
 		width=80
-=======
-		x=365
-		y=701
-		width=20
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		height=10
 	}
 	"basic attribute" {
@@ -8042,13 +7776,8 @@ text {
 }
 "text entry" {
 	object {
-<<<<<<< HEAD
 		x=200
 		y=572
-=======
-		x=390
-		y=701
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=40
 		height=15
 	}
@@ -8062,13 +7791,8 @@ text {
 }
 "text update" {
 	object {
-<<<<<<< HEAD
 		x=315
 		y=680
-=======
-		x=165
-		y=726
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=40
 		height=10
 	}
@@ -8268,13 +7992,8 @@ text {
 }
 "text update" {
 	object {
-<<<<<<< HEAD
 		x=250
 		y=770
-=======
-		x=170
-		y=790
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=40
 		height=10
 	}
@@ -8289,13 +8008,8 @@ text {
 }
 text {
 	object {
-<<<<<<< HEAD
 		x=180
 		y=770
-=======
-		x=100
-		y=790
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=60
 		height=10
 	}
@@ -8307,13 +8021,8 @@ text {
 }
 text {
 	object {
-<<<<<<< HEAD
 		x=315
 		y=770
-=======
-		x=235
-		y=790
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=60
 		height=10
 	}
@@ -8325,13 +8034,8 @@ text {
 }
 "text update" {
 	object {
-<<<<<<< HEAD
 		x=385
 		y=770
-=======
-		x=305
-		y=790
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=40
 		height=10
 	}
@@ -8347,11 +8051,7 @@ text {
 "text update" {
 	object {
 		x=510
-<<<<<<< HEAD
 		y=770
-=======
-		y=785
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=40
 		height=10
 	}
@@ -8367,11 +8067,7 @@ text {
 text {
 	object {
 		x=440
-<<<<<<< HEAD
-		y=770
-=======
 		y=785
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=60
 		height=10
 	}
@@ -8384,11 +8080,7 @@ text {
 text {
 	object {
 		x=570
-<<<<<<< HEAD
 		y=770
-=======
-		y=785
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=60
 		height=10
 	}
@@ -8401,11 +8093,7 @@ text {
 "text update" {
 	object {
 		x=640
-<<<<<<< HEAD
 		y=770
-=======
-		y=785
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=40
 		height=10
 	}
@@ -8418,7 +8106,6 @@ text {
 	limits {
 	}
 }
-<<<<<<< HEAD
 text {
 	object {
 		x=365
@@ -8548,21 +8235,11 @@ text {
 	object {
 		x=645
 		y=615
-=======
-"text update" {
-	object {
-		x=445
-		y=725
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		width=40
 		height=10
 	}
 	monitor {
-<<<<<<< HEAD
 		chan="$(DEV):X-FAST-FB-DEL"
-=======
-		chan="$(DEV):X-FF-TABLE-CNT"
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 		clr=14
 		bclr=4
 	}
@@ -8570,7 +8247,6 @@ text {
 	limits {
 	}
 }
-<<<<<<< HEAD
 "text entry" {
 	object {
 		x=495
@@ -8741,18 +8417,4 @@ text {
 	}
 	textix="Errors"
 	align="horiz. centered"
-=======
-menu {
-	object {
-		x=445
-		y=670
-		width=90
-		height=20
-	}
-	control {
-		chan="$(DEV):X-FF-FAST-MODE"
-		clr=14
-		bclr=4
-	}
->>>>>>> 581ab59a1037b17d85bb3d6f1740929233bb4d64
 }
