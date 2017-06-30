@@ -1,12 +1,12 @@
 
 file {
-	name="/xfel/controls/App/config/medm/IBFBCTRLFB.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCTRLFB.adl"
 	version=030105
 }
 display {
 	object {
-		x=1287
-		y=369
+		x=74
+		y=198
 		width=1020
 		height=920
 	}
@@ -85,22 +85,6 @@ display {
 		3cb420,
 		289315,
 		1a7309,
-	}
-}
-rectangle {
-	object {
-		x=136
-		y=261
-		width=49
-		height=19
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A&0x01000000)=0"
-		chan="$(DEV):Y-BPM1-UP-VALID-WAV"
 	}
 }
 rectangle {
@@ -691,16 +675,17 @@ rectangle {
 }
 "choice button" {
 	object {
-		x=230
-		y=750
-		width=60
-		height=30
+		x=145
+		y=720
+		width=100
+		height=15
 	}
 	control {
 		chan="$(DEV):Y-AMP-GATE-ENA"
 		clr=14
 		bclr=4
 	}
+	stacking="column"
 }
 rectangle {
 	object {
@@ -1279,8 +1264,8 @@ text {
 }
 text {
 	object {
-		x=280
-		y=760
+		x=275
+		y=745
 		width=90
 		height=15
 	}
@@ -1292,8 +1277,8 @@ text {
 }
 "wheel switch" {
 	object {
-		x=375
-		y=750
+		x=370
+		y=735
 		width=60
 		height=30
 	}
@@ -1307,8 +1292,8 @@ text {
 }
 "wheel switch" {
 	object {
-		x=375
-		y=720
+		x=370
+		y=705
 		width=60
 		height=30
 	}
@@ -1322,8 +1307,8 @@ text {
 }
 text {
 	object {
-		x=280
-		y=730
+		x=275
+		y=715
 		width=90
 		height=10
 	}
@@ -1979,7 +1964,7 @@ rectangle {
 "wheel switch" {
 	object {
 		x=630
-		y=750
+		y=735
 		width=55
 		height=30
 	}
@@ -1994,8 +1979,8 @@ rectangle {
 "choice button" {
 	object {
 		x=440
-		y=761
-		width=90
+		y=720
+		width=100
 		height=15
 	}
 	control {
@@ -2008,7 +1993,7 @@ rectangle {
 "wheel switch" {
 	object {
 		x=630
-		y=720
+		y=705
 		width=55
 		height=30
 	}
@@ -2450,8 +2435,8 @@ polyline {
 }
 byte {
 	object {
-		x=445
-		y=811
+		x=440
+		y=790
 		width=20
 		height=45
 	}
@@ -2465,8 +2450,8 @@ byte {
 }
 text {
 	object {
-		x=470
-		y=811
+		x=465
+		y=790
 		width=120
 		height=10
 	}
@@ -2477,8 +2462,8 @@ text {
 }
 text {
 	object {
-		x=470
-		y=841
+		x=465
+		y=820
 		width=120
 		height=10
 	}
@@ -2489,8 +2474,8 @@ text {
 }
 text {
 	object {
-		x=470
-		y=826
+		x=465
+		y=805
 		width=120
 		height=10
 	}
@@ -2920,8 +2905,8 @@ polyline {
 }
 byte {
 	object {
-		x=10
-		y=811
+		x=140
+		y=790
 		width=20
 		height=45
 	}
@@ -2935,8 +2920,8 @@ byte {
 }
 text {
 	object {
-		x=35
-		y=811
+		x=165
+		y=790
 		width=120
 		height=10
 	}
@@ -2947,8 +2932,8 @@ text {
 }
 text {
 	object {
-		x=35
-		y=841
+		x=165
+		y=820
 		width=120
 		height=10
 	}
@@ -2959,8 +2944,8 @@ text {
 }
 text {
 	object {
-		x=35
-		y=826
+		x=165
+		y=805
 		width=120
 		height=10
 	}
@@ -4461,8 +4446,8 @@ polyline {
 }
 text {
 	object {
-		x=90
-		y=575
+		x=83
+		y=573
 		width=30
 		height=10
 	}
@@ -4583,7 +4568,7 @@ text {
 	object {
 		x=140
 		y=600
-		width=40
+		width=55
 		height=15
 	}
 	control {
@@ -4598,7 +4583,7 @@ text {
 	object {
 		x=140
 		y=620
-		width=40
+		width=55
 		height=15
 	}
 	control {
@@ -4611,9 +4596,9 @@ text {
 }
 "text entry" {
 	object {
-		x=190
+		x=200
 		y=600
-		width=40
+		width=55
 		height=15
 	}
 	control {
@@ -4626,9 +4611,9 @@ text {
 }
 "text entry" {
 	object {
-		x=190
+		x=200
 		y=620
-		width=40
+		width=55
 		height=15
 	}
 	control {
@@ -5007,8 +4992,8 @@ text {
 }
 byte {
 	object {
-		x=10
-		y=856
+		x=140
+		y=835
 		width=20
 		height=60
 	}
@@ -5023,8 +5008,8 @@ byte {
 }
 text {
 	object {
-		x=35
-		y=858
+		x=165
+		y=837
 		width=120
 		height=10
 	}
@@ -5035,8 +5020,8 @@ text {
 }
 text {
 	object {
-		x=35
-		y=873
+		x=165
+		y=852
 		width=120
 		height=10
 	}
@@ -5047,8 +5032,8 @@ text {
 }
 text {
 	object {
-		x=35
-		y=903
+		x=165
+		y=882
 		width=120
 		height=10
 	}
@@ -5059,8 +5044,8 @@ text {
 }
 text {
 	object {
-		x=35
-		y=888
+		x=165
+		y=867
 		width=120
 		height=10
 	}
@@ -5699,7 +5684,7 @@ text {
 	object {
 		x=440
 		y=600
-		width=40
+		width=55
 		height=15
 	}
 	control {
@@ -5714,7 +5699,7 @@ text {
 	object {
 		x=440
 		y=620
-		width=40
+		width=55
 		height=15
 	}
 	control {
@@ -5727,9 +5712,9 @@ text {
 }
 "text entry" {
 	object {
-		x=490
+		x=500
 		y=600
-		width=40
+		width=55
 		height=15
 	}
 	control {
@@ -5742,9 +5727,9 @@ text {
 }
 "text entry" {
 	object {
-		x=490
+		x=500
 		y=620
-		width=40
+		width=55
 		height=15
 	}
 	control {
@@ -5757,8 +5742,8 @@ text {
 }
 byte {
 	object {
-		x=445
-		y=856
+		x=440
+		y=835
 		width=20
 		height=60
 	}
@@ -5773,8 +5758,8 @@ byte {
 }
 text {
 	object {
-		x=470
-		y=858
+		x=465
+		y=837
 		width=120
 		height=10
 	}
@@ -5785,8 +5770,8 @@ text {
 }
 text {
 	object {
-		x=470
-		y=873
+		x=465
+		y=852
 		width=120
 		height=10
 	}
@@ -5797,8 +5782,8 @@ text {
 }
 text {
 	object {
-		x=470
-		y=903
+		x=465
+		y=882
 		width=120
 		height=10
 	}
@@ -5809,8 +5794,8 @@ text {
 }
 text {
 	object {
-		x=470
-		y=888
+		x=465
+		y=867
 		width=120
 		height=10
 	}
@@ -5877,8 +5862,8 @@ text {
 }
 text {
 	object {
-		x=135
-		y=760
+		x=140
+		y=705
 		width=90
 		height=10
 	}
@@ -5891,7 +5876,7 @@ text {
 polyline {
 	object {
 		x=0
-		y=780
+		y=784
 		width=685
 		height=0
 	}
@@ -5899,8 +5884,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(0,780)
-		(685,780)
+		(0,784)
+		(685,784)
 	}
 }
 text {
@@ -6001,7 +5986,7 @@ text {
 text {
 	object {
 		x=535
-		y=730
+		y=715
 		width=90
 		height=10
 	}
@@ -6041,7 +6026,7 @@ text {
 text {
 	object {
 		x=440
-		y=746
+		y=705
 		width=90
 		height=10
 	}
@@ -6066,8 +6051,8 @@ text {
 }
 text {
 	object {
-		x=160
-		y=676
+		x=295
+		y=560
 		width=60
 		height=10
 	}
@@ -6291,7 +6276,7 @@ rectangle {
 rectangle {
 	object {
 		x=135
-		y=590
+		y=594
 		width=125
 		height=45
 	}
@@ -6836,7 +6821,7 @@ rectangle {
 rectangle {
 	object {
 		x=435
-		y=590
+		y=594
 		width=125
 		height=45
 	}
@@ -7792,7 +7777,7 @@ text {
 "text update" {
 	object {
 		x=315
-		y=680
+		y=685
 		width=40
 		height=10
 	}
@@ -8067,7 +8052,7 @@ text {
 text {
 	object {
 		x=440
-		y=785
+		y=770
 		width=60
 		height=10
 	}
@@ -8222,7 +8207,7 @@ text {
 text {
 	object {
 		x=200
-		y=557
+		y=560
 		width=40
 		height=10
 	}
