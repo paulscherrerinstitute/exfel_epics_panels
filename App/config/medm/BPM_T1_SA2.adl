@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=90
-		y=252
+		x=2617
+		y=282
 		width=700
 		height=570
 	}
@@ -595,7 +595,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1483"
 }
 rectangle {
 	object {
@@ -757,7 +757,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1468"
 }
 rectangle {
 	object {
@@ -1310,11 +1310,11 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T xfelgpac1dixs1ug3r02t1t1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1dixs1ug3r02t1t1 &"
+		name="xterm -T xfelgpac1dixs1ug3r02t1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1dixs1ug3r02t1 &"
 	}
 	clr=14
 	bclr=57
-	label="-xfelgpac1dixs1ug3r02t1t1"
+	label="-xfelgpac1dixs1ug3r02t1"
 }
 "related display" {
 	object {

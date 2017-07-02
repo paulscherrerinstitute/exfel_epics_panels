@@ -1,6 +1,6 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBSCAN.adl"
+	name="/xfel/controls/App/config/medm/IBFBSCAN.adl"
 	version=030105
 }
 display {
@@ -349,7 +349,7 @@ text {
 "text update" {
 	object {
 		x=170
-		y=70
+		y=55
 		width=30
 		height=10
 	}
@@ -365,7 +365,7 @@ text {
 "text update" {
 	object {
 		x=170
-		y=55
+		y=70
 		width=30
 		height=10
 	}

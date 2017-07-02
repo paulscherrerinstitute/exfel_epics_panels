@@ -103,7 +103,7 @@ classdef ca_ibfb < handle
             
       fprintf('Initializing IBFB object...\n');
 
-      if strcmp(obj.hostname, 'xfelpsiibfb')
+      if strncmp(obj.hostname, 'xfelpsiibfb', 11)
         addpath('/local/lib');
       end
       
@@ -239,7 +239,7 @@ classdef ca_ibfb < handle
       % open EPICS channels
       fprintf('  initializing EPICS channel access...');
       %%  BPMs %%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-      if strcmp(obj.hostname, 'xfelpsiibfb') % we are at DESY
+      if strncmp(obj.hostname, 'xfelpsiibfb', 11) % we are at DESY
         obj.bpm_e.bpmi_1925_tl_wav_x     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1925-TL:WAV-X'     ]));
         obj.bpm_e.bpmi_1939_tl_wav_x     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1939-TL:WAV-X'     ]));
         obj.bpm_e.bpmi_1910_tl_wav_y     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1910-TL:WAV-Y'     ]));
@@ -449,7 +449,7 @@ classdef ca_ibfb < handle
       obj.mon(8).kick_adc_wav   = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_MON 'KICK-ADC-WAV-7']));
       fprintf('done\n');
       
-      if strcmp(obj.hostname, 'xfelpsiibfb')
+      if strncmp(obj.hostname, 'xfelpsiibfb', 11)
         fprintf('  DOOCS properties initialization\n');
         doocs_p     = 'XFEL.DIAG/BPM/';
         obj.doocs.y_bpm1_up_pos_name = [doocs_p 'BPMI.1860.TL/X.TD'];

@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=293
-		y=140
+		x=3
+		y=277
 		width=420
 		height=360
 	}
@@ -946,7 +946,7 @@ rectangle {
 "related display" {
 	object {
 		x=5
-		y=255
+		y=280
 		width=140
 		height=20
 	}
@@ -978,7 +978,7 @@ rectangle {
 "shell command" {
 	object {
 		x=5
-		y=230
+		y=255
 		width=140
 		height=20
 	}
@@ -989,4 +989,20 @@ rectangle {
 	clr=14
 	bclr=57
 	label="-Lattice Ver (Qt)"
+}
+"related display" {
+	object {
+		x=5
+		y=230
+		width=140
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="IBFBSCAN.adl"
+		args="DEV=IBFBCTRL"
+	}
+	clr=14
+	bclr=57
+	label="-IBFB Scan"
 }
