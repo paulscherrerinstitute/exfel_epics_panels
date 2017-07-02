@@ -45,12 +45,12 @@ function test_comp_pipe(ibfb)
   bkts = 2708;
   plane = 'Y';
 
-  CMP1 = 1;  % [ DAQ00  DAQ10  DAQ22  DAQ30 ] passed
-  CMP2 = 1;  % [ DAQ00  DAQ10  DAQ21  DAQ30 ] passed
+  CMP1 = 0;  % [ DAQ00  DAQ10  DAQ22  DAQ30 ] passed
+  CMP2 = 0;  % [ DAQ00  DAQ10  DAQ21  DAQ30 ] passed
   CMP3 = 1;  % [ DAQ01  DAQ10  DAQ20  DAQ30 ] passed
-  CMP4 = 1;  % [ DAQ01  DAQ10  DAQ21  DAQ30 ] passed
-  CMP5 = 1;  % [ DAQ01  DAQ11  DAQ21  DAQ32 ] passed
-  CMP6 = 1;  % [ DAQ02  DAQ12  DAQ20  DAQ32 ] passed
+  CMP4 = 0;  % [ DAQ01  DAQ10  DAQ21  DAQ30 ] passed
+  CMP5 = 0;  % [ DAQ01  DAQ11  DAQ21  DAQ32 ] passed
+  CMP6 = 0;  % [ DAQ02  DAQ12  DAQ20  DAQ32 ] passed
   
   t=0:1:(smp-1);
   
@@ -97,7 +97,9 @@ function test_comp_pipe(ibfb)
     bt_p_del(st.s3_start+1:st.s3_stop+1) = 1;    
   end
   d=double(ibfb.ctrl.y_fast_fb_del.get());
-    
+  bs = ibfb.ctrl.y_sase1_bunch_space.get();
+  i_smp_apply = ibfb.ctrl.y_fb_i_smp_apply.get();
+
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   if CMP1
     [err daq] = retrieve_daq_data(ibfb, [0 0 2 0], plane, 1, t);
@@ -110,6 +112,14 @@ function test_comp_pipe(ibfb)
     rx_down_bpm2 = zeros(1, length(daq.rx_down_bpm2));
     rx_down_bpm2(d+1:end) = daq.rx_down_bpm2(1:end-d);
     rx_down_bpm2(1:d) = zeros(1,d);
+    if bs > 1
+      for i=d+1:4:smp
+        rx_down_bpm1(i:i+3) = rx_down_bpm1(i);
+        rx_down_bpm2(i:i+3) = rx_down_bpm2(i);
+      end
+    end
+    rx_down_bpm1 = rx_down_bpm1(1:smp);
+    rx_down_bpm2 = rx_down_bpm2(1:smp);
     
     fprintf('  Comparing RXDAQ0 == DAQ22 ...');
     if vect_not_equal(rx_down_bpm1(d+1:end), daq.ch00(d+1:end)) | vect_not_equal(rx_down_bpm2(d+1:end), daq.ch01(d+1:end))
@@ -171,41 +181,32 @@ function test_comp_pipe(ibfb)
     ctrl_err(1, :) = daq.ch10;
     ctrl_err(2, :) = daq.ch11;
     ctrl_err(:, 1:d) = 0;
-    %ctrl_i(1, :) = cumsum(single(FB_KI).*(ctrl_err(1,:).*single(bt_p_del(1:smp))));
-    %ctrl_i(2, :) = cumsum(single(FB_KI).*(ctrl_err(2,:).*single(bt_p_del(1:smp))));
-    ctrl_i(1, :) = single(FB_KI).*(ctrl_err(1,:).*single(bt_p_del(1:smp)));
-    ctrl_i(2, :) = single(FB_KI).*(ctrl_err(2,:).*single(bt_p_del(1:smp)));
-    for i=d:smp-1
-      if i == 142
-        a=1;
-      end
-      if bt_p(i)
-        ctrl_i(1, i+1) = single(FB_KI)*ctrl_err(1, i+1) + ctrl_i(1, i);
-        ctrl_i(2, i+1) = single(FB_KI)*ctrl_err(2, i+1) + ctrl_i(2, i);
-      else
-        ctrl_i(1, i+1) = 0;
-        ctrl_i(2, i+1) = 0;
-      end
+    ctrl_i = zeros(2, smp);
+    for i=d+1:bs:smp
+      ctrl_i(1, i:i+bs-1) = single(FB_KI).*ctrl_err(1,i) + ctrl_i(1, i-1);  %.*single(bt_p_del(1:smp)));
+      ctrl_i(2, i:i+bs-1) = single(FB_KI).*ctrl_err(2,i) + ctrl_i(2, i-1);  %.*single(bt_p_del(1:smp)));
     end
-    %ctrl_i(:,1:end-1) = ctrl_i(:,2:end);
+    ctrl_i = ctrl_i(:,1:smp);
+    ctrl_i(1,:) = ctrl_i(1,:).*sign(daq.ch20(1:smp));
+    ctrl_i(2,:) = ctrl_i(2,:).*sign(daq.ch20(1:smp));
     if vect_not_equal(ctrl_i(1,:), daq.ch20) | vect_not_equal(ctrl_i(2,:), daq.ch21)
       fprintf(2, 'ERROR: Waveforms do not match\n');
       plot_wrong_waves(t, ctrl_i(1,:), daq.ch20, 'DAQ10', 'DAQ20');
-      return;
+      %return;
     else
       fprintf('OK\n');
     end
     
     % check gated integrator
     fprintf('  Comparing DAQ20 == DAQ01 ...');
-    ctrl_i_g = zeros(2, smp);
-    for i=(2*d):d:smp
-      ctrl_i_g(1,i:i+d-1) = daq.ch20(i-1);
-      ctrl_i_g(2,i:i+d-1) = daq.ch21(i-1);
+    ctrl_i_g = zeros(2, smp);    
+    for i=d+i_smp_apply+1:i_smp_apply:smp
+      ctrl_i_g(1,i:i+i_smp_apply-1) = daq.ch20(i-1);
+      ctrl_i_g(2,i:i+i_smp_apply-1) = daq.ch21(i-1);
     end
     ctrl_i_g = ctrl_i_g(:,1:smp);
-    ctrl_i_g(1,:) = ctrl_i_g(1,:).*single(bt_p_del(1:smp));
-    ctrl_i_g(2,:) = ctrl_i_g(2,:).*single(bt_p_del(1:smp));
+    ctrl_i_g(1,:) = ctrl_i_g(1,:).*sign(daq.ch00(1:smp));
+    ctrl_i_g(2,:) = ctrl_i_g(2,:).*sign(daq.ch00(1:smp));
     if vect_not_equal(ctrl_i_g(1,:), daq.ch00) | vect_not_equal(ctrl_i_g(2,:), daq.ch01)
       plot_wrong_waves(t, ctrl_i_g(1,:), daq.ch00, 'DAQ20', 'DAQ01');
       fprintf(2, 'ERROR: Waveforms do not match\n');
@@ -277,6 +278,10 @@ function test_comp_pipe(ibfb)
     kick_out(2,1:d) = 0;
     %kick_out(1,:) = int32(daq.ch00 + int32(FF_ON).*daq.ch10);
     %kick_out(2,:) = int32(daq.ch01 + int32(FF_ON).*daq.ch11);
+    bunch = zeros(1, smp);
+    bunch(1:bs:end) = 1;
+    kick_out(1,:) = kick_out(1,:).*int32(bunch);
+    kick_out(2,:) = kick_out(2,:).*int32(bunch);
     if vect_not_equal(kick_out(1,:), daq.ch30) | vect_not_equal(kick_out(2,:), daq.ch31)
       plot_wrong_waves(t, kick_out(1,:), daq.ch30, 'DAQ02+DAQ12', 'DAQ32');
       fprintf(2, 'ERROR: Waveforms do not match\n');

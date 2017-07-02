@@ -331,6 +331,8 @@ classdef ca_ibfb < handle
       obj.ctrl.y_kick1_n_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-KICK1-N-PATTERN'     ]));
       obj.ctrl.y_kick2_p_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-KICK2-P-PATTERN'     ]));
       obj.ctrl.y_kick2_n_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'Y-KICK2-N-PATTERN'     ]));
+      obj.ctrl.y_fb_i_smp_apply      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FB-I-SMP-APPLY'      ]));
+      obj.ctrl.y_fb_i_smp_shift      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-FB-I-SMP-SHIFT'      ]));
       %             X               %
       obj.ctrl.x_updown_packets      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-UPDOWN-PACKETS'      ]));
       obj.ctrl.x_sase_packets        = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-SASE-PACKETS'        ]));
@@ -408,7 +410,9 @@ classdef ca_ibfb < handle
       obj.ctrl.x_kick1_n_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-KICK1-N-PATTERN'     ]));
       obj.ctrl.x_kick2_p_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-KICK2-P-PATTERN'     ]));
       obj.ctrl.x_kick2_n_pattern     = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_CTRL 'X-KICK2-N-PATTERN'     ]));
-     
+      obj.ctrl.x_fb_i_smp_apply      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-FB-I-SMP-APPLY'      ]));
+      obj.ctrl.x_fb_i_smp_shift      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-FB-I-SMP-SHIFT'      ]));
+
       %%   PLAYER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       if obj.USE_PLAYER
         obj.play.play1_mem_play_timestamp = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-TIMESTAMP']));
