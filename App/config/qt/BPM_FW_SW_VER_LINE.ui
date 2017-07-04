@@ -171,7 +171,7 @@
   <widget class="caMessageButton" name="caMessageButton_0">
    <property name="geometry">
     <rect>
-     <x>380</x>
+     <x>400</x>
      <y>0</y>
      <width>15</width>
      <height>15</height>
@@ -192,13 +192,13 @@
    <property name="font">
     <font>
      <family>Arial</family>
-     <pointsize>6</pointsize>
+     <pointsize>5</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="text">
-    <string>R</string>
+    <string>Reset</string>
    </property>
    <property name="flat">
     <bool>true</bool>
@@ -234,6 +234,78 @@
    </property>
    <property name="colorMode">
     <enum>caMessageButton::Static</enum>
+   </property>
+  </widget>
+  <widget class="caByte" name="cabyte_4">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>0</y>
+     <width>10</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):MMC-PS-FAIL</string>
+   </property>
+   <property name="direction">
+    <enum>caByte::Right</enum>
+   </property>
+   <property name="startBit">
+    <number>0</number>
+   </property>
+   <property name="endBit">
+    <number>0</number>
+   </property>
+   <property name="foreground" stdset="0">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="background" stdset="0">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="caByte" name="cabyte_5">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>0</y>
+     <width>10</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):MMC-PS-FAIL</string>
+   </property>
+   <property name="direction">
+    <enum>caByte::Right</enum>
+   </property>
+   <property name="startBit">
+    <number>1</number>
+   </property>
+   <property name="endBit">
+    <number>1</number>
+   </property>
+   <property name="foreground" stdset="0">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="background" stdset="0">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
    </property>
   </widget>
  </widget>
