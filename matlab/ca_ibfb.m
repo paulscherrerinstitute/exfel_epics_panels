@@ -239,7 +239,7 @@ classdef ca_ibfb < handle
       % open EPICS channels
       fprintf('  initializing EPICS channel access...');
       %%  BPMs %%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-      if strncmp(obj.hostname, 'xfelpsiibfb', 11) % we are at DESY
+      if strncmp(obj.hostname, 'xfelpsiibfb', 12) % we are at DESY
         obj.bpm_e.bpmi_1925_tl_wav_x     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1925-TL:WAV-X'     ]));
         obj.bpm_e.bpmi_1939_tl_wav_x     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1939-TL:WAV-X'     ]));
         obj.bpm_e.bpmi_1910_tl_wav_y     = Channels.create(context, ChannelDescriptor('float[]'   , ['BPMI-1910-TL:WAV-Y'     ]));

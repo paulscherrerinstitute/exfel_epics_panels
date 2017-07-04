@@ -919,7 +919,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1549"
 }
 rectangle {
 	object {
