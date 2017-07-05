@@ -167,6 +167,21 @@
    <property name="channel" stdset="0">
     <string notr="true">$(GPAC):SYSACE-REV</string>
    </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Alarm_Default</enum>
+   </property>
+   <property name="framePresent" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="alarmHandling">
+    <enum>caLineEdit::onBackground</enum>
+   </property>
+   <property name="limitsMode">
+    <enum>caLineEdit::User</enum>
+   </property>
+   <property name="minValue">
+    <double>1.000000000000000</double>
+   </property>
   </widget>
   <widget class="caMessageButton" name="caMessageButton_0">
    <property name="geometry">
