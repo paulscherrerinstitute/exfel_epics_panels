@@ -168,13 +168,13 @@
     <string notr="true">$(GPAC):SYSACE-REV</string>
    </property>
    <property name="colorMode">
-    <enum>caLineEdit::Alarm_Static</enum>
+    <enum>caLineEdit::Alarm_Default</enum>
    </property>
    <property name="framePresent" stdset="0">
     <bool>false</bool>
    </property>
    <property name="alarmHandling">
-    <enum>caLineEdit::onBackground</enum>
+    <enum>caLineEdit::onForeground</enum>
    </property>
    <property name="limitsMode">
     <enum>caLineEdit::User</enum>
