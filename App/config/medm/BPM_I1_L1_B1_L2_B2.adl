@@ -1,6 +1,6 @@
 
 file {
-	name="/home/goran/epics/xfel/App/config/medm/BPM_I1_L1_B1_L2_B2.adl"
+	name="/xfel/controls/App/config/medm/BPM_I1_L1_B1_L2_B2.adl"
 	version=030105
 }
 display {
@@ -464,7 +464,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-IPC1376"
+	label="-IPC1633"
 }
 "related display" {
 	object {
@@ -480,7 +480,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-IPC1342"
+	label="-IPC1628"
 }
 "related display" {
 	object {
@@ -512,7 +512,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-IPC1310"
+	label="-IPC1530"
 }
 "related display" {
 	object {
@@ -528,7 +528,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-IPC1352"
+	label="-IPC1599"
 }
 rectangle {
 	object {

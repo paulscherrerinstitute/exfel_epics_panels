@@ -1,12 +1,12 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCTRLFB.adl"
+	name="/xfel/controls/App/config/medm/IBFBCTRLFB.adl"
 	version=030105
 }
 display {
 	object {
-		x=428
-		y=72
+		x=113
+		y=99
 		width=1020
 		height=920
 	}
@@ -3160,8 +3160,8 @@ polyline {
 }
 text {
 	object {
-		x=10
-		y=395
+		x=3
+		y=405
 		width=30
 		height=10
 	}
@@ -3187,7 +3187,7 @@ text {
 }
 text {
 	object {
-		x=70
+		x=82
 		y=390
 		width=15
 		height=10
@@ -3195,7 +3195,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="y/x"
+	textix="y1/x1"
 	align="horiz. right"
 }
 text {
@@ -3213,7 +3213,7 @@ text {
 }
 text {
 	object {
-		x=70
+		x=82
 		y=410
 		width=15
 		height=10
@@ -3221,7 +3221,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="y'/x'"
+	textix="y2/x2"
 	align="horiz. right"
 }
 "text entry" {
@@ -3249,7 +3249,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="[mrad]"
+	textix="[mm]"
 	align="horiz. right"
 }
 polyline {
@@ -5835,30 +5835,29 @@ text {
 }
 text {
 	object {
-		x=150
+		x=140
 		y=645
-		width=80
+		width=40
 		height=10
 	}
 	"basic attribute" {
 		clr=0
 	}
-	textix="FF Enable"
+	textix="FF"
 	align="horiz. centered"
 }
 "choice button" {
 	object {
-		x=160
+		x=140
 		y=660
-		width=60
-		height=15
+		width=40
+		height=30
 	}
 	control {
 		chan="$(DEV):Y-FF-FAST-ON"
 		clr=14
 		bclr=4
 	}
-	stacking="column"
 }
 text {
 	object {
@@ -6000,7 +5999,7 @@ text {
 	object {
 		x=440
 		y=645
-		width=20
+		width=40
 		height=10
 	}
 	"basic attribute" {
@@ -6011,17 +6010,16 @@ text {
 }
 "choice button" {
 	object {
-		x=475
-		y=645
-		width=60
-		height=15
+		x=440
+		y=660
+		width=40
+		height=30
 	}
 	control {
 		chan="$(DEV):X-FF-FAST-ON"
 		clr=14
 		bclr=4
 	}
-	stacking="column"
 }
 text {
 	object {
@@ -6108,7 +6106,7 @@ text {
 }
 text {
 	object {
-		x=235
+		x=190
 		y=645
 		width=90
 		height=10
@@ -6121,9 +6119,9 @@ text {
 }
 menu {
 	object {
-		x=235
+		x=190
 		y=660
-		width=90
+		width=92
 		height=20
 	}
 	control {
@@ -6163,8 +6161,8 @@ text {
 }
 "message button" {
 	object {
-		x=235
-		y=685
+		x=190
+		y=680
 		width=92
 		height=15
 	}
@@ -6191,7 +6189,7 @@ text {
 }
 text {
 	object {
-		x=70
+		x=81
 		y=520
 		width=15
 		height=10
@@ -6199,7 +6197,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="y/x"
+	textix="y1/x1"
 	align="horiz. right"
 }
 text {
@@ -6217,7 +6215,7 @@ text {
 }
 text {
 	object {
-		x=70
+		x=81
 		y=540
 		width=15
 		height=10
@@ -6225,7 +6223,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="y'/x'"
+	textix="y2/x2"
 	align="horiz. right"
 }
 text {
@@ -6238,7 +6236,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="[mrad]"
+	textix="[mm]"
 	align="horiz. right"
 }
 rectangle {
@@ -7776,9 +7774,9 @@ text {
 }
 "text update" {
 	object {
-		x=315
-		y=685
-		width=40
+		x=285
+		y=680
+		width=20
 		height=10
 	}
 	monitor {
@@ -8429,4 +8427,62 @@ text {
 		clr=0
 	}
 	textix="I Shift"
+}
+text {
+	object {
+		x=485
+		y=645
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="FF Table Mode"
+	align="horiz. centered"
+}
+menu {
+	object {
+		x=485
+		y=660
+		width=92
+		height=20
+	}
+	control {
+		chan="$(DEV):X-FF-FAST-MODE"
+		clr=14
+		bclr=4
+	}
+}
+"message button" {
+	object {
+		x=485
+		y=680
+		width=92
+		height=15
+	}
+	control {
+		chan="$(DEV):X-FB-CMD"
+		clr=14
+		bclr=4
+	}
+	label="Apply tables"
+	press_msg="8"
+	release_msg="0"
+}
+"text update" {
+	object {
+		x=580
+		y=680
+		width=20
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-FF-TABLE-CNT"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
 }
