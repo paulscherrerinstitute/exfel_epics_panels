@@ -1,6 +1,6 @@
 
 file {
-	name="/xfel/controls/App/config/medm/IBFBCTRLWAV.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCTRLWAV.adl"
 	version=030105
 }
 display {
@@ -116,6 +116,10 @@ rectangle {
 	trace[0] {
 		ydata="$(DEV):Y-BPM1-DOWN-POS-WAV"
 		data_clr=20
+	}
+	trace[1] {
+		ydata="$(DEV):Y-BPM1-SP-WAV.AVAL"
+		data_clr=0
 	}
 }
 rectangle {
@@ -252,6 +256,10 @@ text {
 		ydata="$(DEV):Y-BPM2-DOWN-POS-WAV"
 		data_clr=20
 	}
+	trace[1] {
+		ydata="$(DEV):Y-BPM2-SP-WAV.AVAL"
+		data_clr=0
+	}
 }
 "cartesian plot" {
 	object {
@@ -272,6 +280,10 @@ text {
 		ydata="$(DEV):X-BPM1-DOWN-POS-WAV"
 		data_clr=20
 	}
+	trace[1] {
+		ydata="$(DEV):X-BPM1-SP-WAV.AVAL"
+		data_clr=0
+	}
 }
 "cartesian plot" {
 	object {
@@ -291,6 +303,10 @@ text {
 	trace[0] {
 		ydata="$(DEV):X-BPM2-DOWN-POS-WAV"
 		data_clr=20
+	}
+	trace[1] {
+		ydata="$(DEV):X-BPM2-SP-WAV.AVAL"
+		data_clr=0
 	}
 }
 text {
