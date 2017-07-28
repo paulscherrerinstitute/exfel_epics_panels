@@ -1,14 +1,14 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCTRLWAV.adl"
+	name="/xfel/controls/App/config/medm/IBFBCTRLWAV.adl"
 	version=030105
 }
 display {
 	object {
-		x=91
-		y=332
-		width=600
-		height=500
+		x=3
+		y=286
+		width=1200
+		height=650
 	}
 	clr=14
 	bclr=4
@@ -103,9 +103,10 @@ rectangle {
 		x=0
 		y=50
 		width=600
-		height=400
+		height=300
 	}
 	plotcom {
+		title="Y BPM1"
 		xlabel="Bucket"
 		ylabel="Position [mm]"
 		clr=0
@@ -116,16 +117,12 @@ rectangle {
 		ydata="$(DEV):Y-BPM1-DOWN-POS-WAV"
 		data_clr=20
 	}
-	trace[1] {
-		ydata="$(DEV):Y-BPM2-DOWN-POS-WAV"
-		data_clr=30
-	}
 }
 rectangle {
 	object {
 		x=0
 		y=0
-		width=600
+		width=1200
 		height=30
 	}
 	"basic attribute" {
@@ -231,6 +228,120 @@ text {
 	}
 	control {
 		chan="$(DEV):Y-BPM-CLEAN-SMP-METHOD"
+		clr=14
+		bclr=4
+	}
+	stacking="column"
+}
+"cartesian plot" {
+	object {
+		x=0
+		y=350
+		width=600
+		height=300
+	}
+	plotcom {
+		title="Y BPM2"
+		xlabel="Bucket"
+		ylabel="Position [mm]"
+		clr=0
+		bclr=14
+	}
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):Y-BPM2-DOWN-POS-WAV"
+		data_clr=20
+	}
+}
+"cartesian plot" {
+	object {
+		x=600
+		y=50
+		width=600
+		height=300
+	}
+	plotcom {
+		title="X BPM1"
+		xlabel="Bucket"
+		ylabel="Position [mm]"
+		clr=0
+		bclr=14
+	}
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):X-BPM1-DOWN-POS-WAV"
+		data_clr=20
+	}
+}
+"cartesian plot" {
+	object {
+		x=600
+		y=350
+		width=600
+		height=300
+	}
+	plotcom {
+		title="X BPM2"
+		xlabel="Bucket"
+		ylabel="Position [mm]"
+		clr=0
+		bclr=14
+	}
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):X-BPM2-DOWN-POS-WAV"
+		data_clr=20
+	}
+}
+text {
+	object {
+		x=645
+		y=30
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Clean empty buckets"
+	align="horiz. centered"
+}
+"choice button" {
+	object {
+		x=730
+		y=30
+		width=80
+		height=15
+	}
+	control {
+		chan="$(DEV):X-BPM-CLEAN-SMP-ENA"
+		clr=14
+		bclr=4
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=850
+		y=30
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Clean method"
+	align="horiz. centered"
+}
+"choice button" {
+	object {
+		x=915
+		y=30
+		width=80
+		height=15
+	}
+	control {
+		chan="$(DEV):X-BPM-CLEAN-SMP-METHOD"
 		clr=14
 		bclr=4
 	}
