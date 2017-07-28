@@ -1,12 +1,12 @@
 
 file {
-	name="/xfel/controls/App/config/medm/IBFBCTRLWAV.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCTRLWAV.adl"
 	version=030105
 }
 display {
 	object {
-		x=87
-		y=60
+		x=91
+		y=332
 		width=600
 		height=500
 	}
@@ -181,4 +181,58 @@ text {
 	}
 	textix="BPM2/KICK2"
 	align="horiz. centered"
+}
+"choice button" {
+	object {
+		x=130
+		y=30
+		width=80
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-BPM-CLEAN-SMP-ENA"
+		clr=14
+		bclr=4
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=45
+		y=30
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Clean empty buckets"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=250
+		y=30
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Clean method"
+	align="horiz. centered"
+}
+"choice button" {
+	object {
+		x=315
+		y=30
+		width=80
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-BPM-CLEAN-SMP-METHOD"
+		clr=14
+		bclr=4
+	}
+	stacking="column"
 }

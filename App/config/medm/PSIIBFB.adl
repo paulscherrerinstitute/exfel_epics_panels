@@ -1006,3 +1006,19 @@ rectangle {
 	bclr=57
 	label="-IBFB Scan"
 }
+"related display" {
+	object {
+		x=160
+		y=155
+		width=80
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="IBFBCTRLWAV.adl"
+		args="DEV=IBFBCTRL"
+	}
+	clr=14
+	bclr=57
+	label="-IBFB plots"
+}
