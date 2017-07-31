@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=87
-		y=64
+		x=560
+		y=79
 		width=935
 		height=1110
 	}
@@ -124,11 +124,11 @@ rectangle {
 	}
 	erase_oldest="plot last n pts"
 	trace[0] {
-		ydata="$(DEV):Y-DAQ-CH00"
+		ydata="$(DEV):$(PLANE)-DAQ-CH00"
 		data_clr=20
 	}
 	trace[1] {
-		ydata="$(DEV):Y-DAQ-CH01"
+		ydata="$(DEV):$(PLANE)-DAQ-CH01"
 		data_clr=30
 	}
 }
@@ -179,7 +179,7 @@ text {
 	"basic attribute" {
 		clr=14
 	}
-	textix="XFEL IBFB Controller [$(DEV)]"
+	textix="XFEL IBFB Controller [$(DEV)] - $(PLANE) plane"
 	align="horiz. centered"
 }
 text {
@@ -1262,66 +1262,30 @@ rectangle {
 	}
 	plotcom {
 		xlabel="Clk Cycles"
-		ylabel="Y Packets"
+		ylabel="RX Packets"
 		clr=0
 		bclr=14
 	}
 	style="line-bigmarks"
 	erase_oldest="plot last n pts"
 	trace[0] {
-		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
-		ydata="$(DEV):Y-DOWN-BPM1-HIST"
+		xdata="$(DEV):$(PLANE)-TDIFF-HIST.AVAL"
+		ydata="$(DEV):$(PLANE)-DOWN-BPM1-HIST"
 		data_clr=20
 	}
 	trace[1] {
-		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
-		ydata="$(DEV):Y-DOWN-BPM2-HIST"
+		xdata="$(DEV):$(PLANE)-TDIFF-HIST.AVAL"
+		ydata="$(DEV):$(PLANE)-DOWN-BPM2-HIST"
 		data_clr=30
 	}
 	trace[2] {
-		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
-		ydata="$(DEV):Y-UP-BPM1-HIST"
+		xdata="$(DEV):$(PLANE)-TDIFF-HIST.AVAL"
+		ydata="$(DEV):$(PLANE)-UP-BPM1-HIST"
 		data_clr=15
 	}
 	trace[3] {
-		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
-		ydata="$(DEV):Y-UP-BPM2-HIST"
-		data_clr=35
-	}
-}
-"cartesian plot" {
-	object {
-		x=0
-		y=500
-		width=335
-		height=180
-	}
-	plotcom {
-		xlabel="Clk Cycles"
-		ylabel="X Packets"
-		clr=0
-		bclr=14
-	}
-	style="line-bigmarks"
-	erase_oldest="plot last n pts"
-	trace[0] {
-		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
-		ydata="$(DEV):X-DOWN-BPM1-HIST"
-		data_clr=20
-	}
-	trace[1] {
-		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
-		ydata="$(DEV):X-DOWN-BPM2-HIST"
-		data_clr=30
-	}
-	trace[2] {
-		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
-		ydata="$(DEV):X-UP-BPM1-HIST"
-		data_clr=15
-	}
-	trace[3] {
-		xdata="$(DEV):Y-TDIFF-HIST.AVAL"
-		ydata="$(DEV):X-UP-BPM2-HIST"
+		xdata="$(DEV):$(PLANE)-TDIFF-HIST.AVAL"
+		ydata="$(DEV):$(PLANE)-UP-BPM2-HIST"
 		data_clr=35
 	}
 }
@@ -1398,7 +1362,7 @@ menu {
 		height=20
 	}
 	control {
-		chan="$(DEV):Y-RX-HIST-ENA"
+		chan="$(DEV):$(PLANE)-RX-HIST-ENA"
 		clr=14
 		bclr=4
 	}
@@ -1411,7 +1375,7 @@ menu {
 		height=20
 	}
 	control {
-		chan="$(DEV):Y-DAQ-MUX0"
+		chan="$(DEV):$(PLANE)-DAQ-MUX0"
 		clr=14
 		bclr=4
 	}
@@ -1450,7 +1414,7 @@ menu {
 		height=20
 	}
 	control {
-		chan="$(DEV):Y-DAQ-MUX1"
+		chan="$(DEV):$(PLANE)-DAQ-MUX1"
 		clr=14
 		bclr=4
 	}
@@ -1470,11 +1434,11 @@ menu {
 	}
 	erase_oldest="plot last n pts"
 	trace[0] {
-		ydata="$(DEV):Y-DAQ-CH10"
+		ydata="$(DEV):$(PLANE)-DAQ-CH10"
 		data_clr=20
 	}
 	trace[1] {
-		ydata="$(DEV):Y-DAQ-CH11"
+		ydata="$(DEV):$(PLANE)-DAQ-CH11"
 		data_clr=30
 	}
 }
@@ -1499,7 +1463,7 @@ menu {
 		height=20
 	}
 	control {
-		chan="$(DEV):Y-DAQ-MUX2"
+		chan="$(DEV):$(PLANE)-DAQ-MUX2"
 		clr=14
 		bclr=4
 	}
@@ -1519,11 +1483,11 @@ menu {
 	}
 	erase_oldest="plot last n pts"
 	trace[0] {
-		ydata="$(DEV):Y-DAQ-CH20"
+		ydata="$(DEV):$(PLANE)-DAQ-CH20"
 		data_clr=20
 	}
 	trace[1] {
-		ydata="$(DEV):Y-DAQ-CH21"
+		ydata="$(DEV):$(PLANE)-DAQ-CH21"
 		data_clr=30
 	}
 }
@@ -1548,7 +1512,7 @@ menu {
 		height=20
 	}
 	control {
-		chan="$(DEV):Y-DAQ-MUX3"
+		chan="$(DEV):$(PLANE)-DAQ-MUX3"
 		clr=14
 		bclr=4
 	}
@@ -1568,11 +1532,11 @@ menu {
 	}
 	erase_oldest="plot last n pts"
 	trace[0] {
-		ydata="$(DEV):Y-DAQ-CH30-INT"
+		ydata="$(DEV):$(PLANE)-DAQ-CH30-INT"
 		data_clr=20
 	}
 	trace[1] {
-		ydata="$(DEV):Y-DAQ-CH31-INT"
+		ydata="$(DEV):$(PLANE)-DAQ-CH31-INT"
 		data_clr=30
 	}
 }
@@ -1592,18 +1556,18 @@ menu {
 	}
 	erase_oldest="plot last n pts"
 	trace[0] {
-		ydata="$(DEV):Y-RX-DOWN-BPM1"
+		ydata="$(DEV):$(PLANE)-RX-DOWN-BPM1"
 		data_clr=20
 	}
 	trace[1] {
-		ydata="$(DEV):Y-RX-DOWN-BPM2"
+		ydata="$(DEV):$(PLANE)-RX-DOWN-BPM2"
 		data_clr=30
 	}
 }
 "cartesian plot" {
 	object {
 		x=2
-		y=725
+		y=525
 		width=332
 		height=200
 	}
@@ -1616,31 +1580,31 @@ menu {
 	style="line-nomarks"
 	erase_oldest="plot last n pts"
 	trace[0] {
-		ydata="$(DEV):Y-KICK1-P-PATTERN"
+		ydata="$(DEV):$(PLANE)-KICK1-P-PATTERN"
 		data_clr=51
 	}
 	trace[1] {
-		ydata="$(DEV):Y-KICK1-N-PATTERN"
+		ydata="$(DEV):$(PLANE)-KICK1-N-PATTERN"
 		data_clr=53
 	}
 	trace[2] {
-		ydata="$(DEV):Y-KICK2-P-PATTERN"
+		ydata="$(DEV):$(PLANE)-KICK2-P-PATTERN"
 		data_clr=61
 	}
 	trace[3] {
-		ydata="$(DEV):Y-KICK2-N-PATTERN"
+		ydata="$(DEV):$(PLANE)-KICK2-N-PATTERN"
 		data_clr=63
 	}
 }
 "message button" {
 	object {
 		x=130
-		y=705
+		y=505
 		width=120
 		height=15
 	}
 	control {
-		chan="$(DEV):Y-DAC-PATTERN-APPLY"
+		chan="$(DEV):$(PLANE)-DAC-PATTERN-APPLY"
 		clr=14
 		bclr=4
 	}
@@ -1650,12 +1614,12 @@ menu {
 "message button" {
 	object {
 		x=5
-		y=705
+		y=505
 		width=120
 		height=15
 	}
 	control {
-		chan="$(DEV):Y-DAC-PATTERN-APPLY"
+		chan="$(DEV):$(PLANE)-DAC-PATTERN-APPLY"
 		clr=14
 		bclr=4
 	}
@@ -1665,7 +1629,7 @@ menu {
 rectangle {
 	object {
 		x=3
-		y=680
+		y=480
 		width=332
 		height=20
 	}
@@ -1676,7 +1640,7 @@ rectangle {
 text {
 	object {
 		x=120
-		y=683
+		y=483
 		width=100
 		height=10
 	}
@@ -1689,7 +1653,7 @@ text {
 polyline {
 	object {
 		x=0
-		y=680
+		y=480
 		width=335
 		height=0
 	}
@@ -1697,20 +1661,7 @@ polyline {
 		clr=0
 	}
 	points {
-		(0,680)
-		(335,680)
-	}
-}
-menu {
-	object {
-		x=240
-		y=480
-		width=90
-		height=20
-	}
-	control {
-		chan="$(DEV):X-RX-HIST-ENA"
-		clr=14
-		bclr=4
+		(0,480)
+		(335,480)
 	}
 }
