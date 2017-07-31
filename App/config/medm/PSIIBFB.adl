@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=13
-		y=38
+		x=14
+		y=41
 		width=420
 		height=360
 	}
@@ -994,17 +994,17 @@ rectangle {
 	object {
 		x=5
 		y=255
-		width=140
+		width=65
 		height=20
 	}
 	display[0] {
 		label="BPM"
 		name="IBFBSCAN.adl"
-		args="DEV=IBFBCTRL"
+		args="DEV=IBFBCTRL,PLANE=Y"
 	}
 	clr=14
 	bclr=57
-	label="-IBFB Scan"
+	label="-FF Scan Y"
 }
 "related display" {
 	object {
@@ -1021,4 +1021,20 @@ rectangle {
 	clr=14
 	bclr=57
 	label="-IBFB plots"
+}
+"related display" {
+	object {
+		x=80
+		y=255
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="IBFBSCAN.adl"
+		args="DEV=IBFBCTRL,PLANE=X"
+	}
+	clr=14
+	bclr=57
+	label="-FF Scan X"
 }
