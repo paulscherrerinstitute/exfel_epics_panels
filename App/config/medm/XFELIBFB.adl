@@ -862,3 +862,267 @@ text {
 	bclr=57
 	label="-DAQ X"
 }
+rectangle {
+	object {
+		x=160
+		y=155
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBCTRL1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=160
+		y=155
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBCTRL1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=160
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBCWAV1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=160
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBCWAV1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=160
+		y=175
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBCTRL2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=160
+		y=175
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBCTRL2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=160
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBCWAV2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=160
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBCWAV2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=160
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBSCOM:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=160
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBSCOM:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=160
+		y=195
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBCCOM:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=160
+		y=195
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBCCOM:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=170
+		y=157
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBCTRL1"
+}
+text {
+	object {
+		x=170
+		y=177
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBCTRL2"
+}
+text {
+	object {
+		x=170
+		y=197
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBCCOM"
+}
+text {
+	object {
+		x=170
+		y=237
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBCWAV2"
+}
+text {
+	object {
+		x=170
+		y=217
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBCWAV1"
+}
+text {
+	object {
+		x=170
+		y=257
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBSCOM"
+}
