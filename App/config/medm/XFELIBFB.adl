@@ -5,9 +5,9 @@ file {
 }
 display {
 	object {
-		x=67
-		y=550
-		width=420
+		x=466
+		y=585
+		width=510
 		height=400
 	}
 	clr=14
@@ -91,7 +91,7 @@ rectangle {
 	object {
 		x=0
 		y=0
-		width=420
+		width=510
 		height=30
 	}
 	"basic attribute" {
@@ -115,7 +115,7 @@ polyline {
 	object {
 		x=0
 		y=50
-		width=420
+		width=510
 		height=0
 	}
 	"basic attribute" {
@@ -123,7 +123,7 @@ polyline {
 	}
 	points {
 		(0,50)
-		(420,50)
+		(510,50)
 	}
 }
 "shell command" {
@@ -643,7 +643,7 @@ text {
 }
 "related display" {
 	object {
-		x=260
+		x=150
 		y=155
 		width=140
 		height=20
@@ -659,7 +659,7 @@ text {
 }
 "related display" {
 	object {
-		x=260
+		x=150
 		y=230
 		width=140
 		height=20
@@ -674,7 +674,7 @@ text {
 }
 "related display" {
 	object {
-		x=260
+		x=150
 		y=180
 		width=140
 		height=20
@@ -690,7 +690,7 @@ text {
 }
 "related display" {
 	object {
-		x=260
+		x=150
 		y=205
 		width=140
 		height=20
@@ -721,7 +721,7 @@ text {
 }
 "related display" {
 	object {
-		x=260
+		x=150
 		y=255
 		width=140
 		height=20
@@ -769,7 +769,7 @@ text {
 }
 "shell command" {
 	object {
-		x=260
+		x=150
 		y=280
 		width=140
 		height=20
@@ -864,8 +864,8 @@ text {
 }
 rectangle {
 	object {
-		x=160
-		y=155
+		x=430
+		y=75
 		width=5
 		height=20
 	}
@@ -880,8 +880,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=160
-		y=155
+		x=430
+		y=75
 		width=5
 		height=20
 	}
@@ -896,8 +896,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=160
-		y=215
+		x=430
+		y=115
 		width=5
 		height=20
 	}
@@ -912,8 +912,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=160
-		y=215
+		x=430
+		y=115
 		width=5
 		height=20
 	}
@@ -928,8 +928,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=160
-		y=175
+		x=430
+		y=95
 		width=5
 		height=20
 	}
@@ -944,8 +944,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=160
-		y=175
+		x=430
+		y=95
 		width=5
 		height=20
 	}
@@ -960,8 +960,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=160
-		y=235
+		x=430
+		y=135
 		width=5
 		height=20
 	}
@@ -976,8 +976,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=160
-		y=235
+		x=430
+		y=135
 		width=5
 		height=20
 	}
@@ -992,8 +992,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=160
-		y=255
+		x=430
+		y=275
 		width=5
 		height=20
 	}
@@ -1008,8 +1008,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=160
-		y=255
+		x=430
+		y=275
 		width=5
 		height=20
 	}
@@ -1024,8 +1024,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=160
-		y=195
+		x=430
+		y=55
 		width=5
 		height=20
 	}
@@ -1040,8 +1040,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=160
-		y=195
+		x=430
+		y=55
 		width=5
 		height=20
 	}
@@ -1056,8 +1056,8 @@ rectangle {
 }
 text {
 	object {
-		x=170
-		y=157
+		x=440
+		y=77
 		width=70
 		height=15
 	}
@@ -1068,8 +1068,8 @@ text {
 }
 text {
 	object {
-		x=170
-		y=177
+		x=440
+		y=97
 		width=70
 		height=15
 	}
@@ -1080,8 +1080,8 @@ text {
 }
 text {
 	object {
-		x=170
-		y=197
+		x=440
+		y=57
 		width=70
 		height=15
 	}
@@ -1092,8 +1092,8 @@ text {
 }
 text {
 	object {
-		x=170
-		y=237
+		x=440
+		y=137
 		width=70
 		height=15
 	}
@@ -1104,8 +1104,8 @@ text {
 }
 text {
 	object {
-		x=170
-		y=217
+		x=440
+		y=117
 		width=70
 		height=15
 	}
@@ -1116,8 +1116,8 @@ text {
 }
 text {
 	object {
-		x=170
-		y=257
+		x=440
+		y=277
 		width=70
 		height=15
 	}
@@ -1125,4 +1125,519 @@ text {
 		clr=0
 	}
 	textix="IBFBSCOM"
+}
+rectangle {
+	object {
+		x=430
+		y=155
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBCTAB1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=430
+		y=155
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBCTAB1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=430
+		y=175
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBCTAB2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=430
+		y=175
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBCTAB2:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=440
+		y=177
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBCTAB2"
+}
+text {
+	object {
+		x=440
+		y=157
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBCTAB1"
+}
+rectangle {
+	object {
+		x=430
+		y=195
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBCPAT1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=430
+		y=195
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBCPAT1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=430
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBCPAT2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=430
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBCPAT2:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=440
+		y=217
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBCPAT2"
+}
+text {
+	object {
+		x=440
+		y=197
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBCPAT1"
+}
+polyline {
+	object {
+		x=420
+		y=30
+		width=0
+		height=370
+	}
+	"basic attribute" {
+		clr=0
+	}
+	"dynamic attribute" {
+		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
+	}
+	points {
+		(420,30)
+		(420,400)
+	}
+}
+text {
+	object {
+		x=440
+		y=30
+		width=50
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="s7gpac servers"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=430
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBSCAN1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=430
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBSCAN1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=430
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBSCAN2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=430
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBSCAN2:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=440
+		y=257
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBSCAN2"
+}
+text {
+	object {
+		x=440
+		y=237
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBSCAN1"
+}
+rectangle {
+	object {
+		x=430
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBSW1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=430
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBSW1:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=440
+		y=297
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBSW1"
+}
+rectangle {
+	object {
+		x=430
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBSW2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=430
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBSW2:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=440
+		y=317
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBSW2"
+}
+rectangle {
+	object {
+		x=430
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBMCOM:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=430
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBMCOM:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=440
+		y=337
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBMCOM"
+}
+rectangle {
+	object {
+		x=430
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBMON1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=430
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBMON1:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=440
+		y=357
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBMON1"
+}
+rectangle {
+	object {
+		x=430
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBMON2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=430
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBMON2:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=440
+		y=377
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="IBFBMON2"
 }
