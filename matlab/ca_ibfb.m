@@ -1,7 +1,6 @@
 classdef ca_ibfb < handle
     
    properties (Constant = true)
-      USE_PLAYER = 0;
       TRG_CONTINUOUS = 0;
       TRG_SINGLE = 1;
       XLS_SECTION = 1;
@@ -80,6 +79,7 @@ classdef ca_ibfb < handle
     sw;    
     ff_tab1 = 0.0001;
     ff_tab2 = 0.0001;
+    use_player = 0;
   end
    
    properties 
@@ -105,6 +105,8 @@ classdef ca_ibfb < handle
 
       if strncmp(obj.hostname, 'xfelpsiibfb', 11)
         addpath('/local/lib');
+      else
+        obj.use_player = 1;
       end
       
       % inittialize filter used to search for the components in the Excel sheet
@@ -252,7 +254,7 @@ classdef ca_ibfb < handle
       
       %%  CONTROLLER  %%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
       %          COMMON             %
-      obj.ctrl.xfeltim_      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-UPDOWN-PACKETS'      ]));
+      %obj.ctrl.xfeltim_      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-UPDOWN-PACKETS'      ]));
       %             Y               %
       obj.ctrl.y_updown_packets      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-UPDOWN-PACKETS'      ]));
       obj.ctrl.y_sase_packets        = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-SASE-PACKETS'        ]));
@@ -414,7 +416,7 @@ classdef ca_ibfb < handle
       obj.ctrl.x_fb_i_smp_shift      = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-FB-I-SMP-SHIFT'      ]));
 
       %%   PLAYER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      if obj.USE_PLAYER
+      if obj.use_player
         obj.play.play1_mem_play_timestamp = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-TIMESTAMP']));
         obj.play.play1_mem_play_control   = Channels.create(context, ChannelDescriptor('integer[]' , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-CONTROL'  ]));
         obj.play.play1_mem_play_x         = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_PLAY 'PLAY1-MEM-PLAY-X'        ]));
@@ -1374,10 +1376,20 @@ classdef ca_ibfb < handle
     %% MONITOR FUNCTIONS
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    function mon_read(obj, channels)
+    function [res] = mon_read(obj, channels, pulses)
+      res = 0;
+      if (min(channels) < 1) || (max(channels) > 8)
+        fprintf(2, 'ERROR: Invalid channel number\n');
+        res = -1; return
+      end
       for i=channels
-        obj.mon(i).amp_wav    = double(obj.mon(i).amp_adc_wav.get())./obj.ADC_RANGE;
-        obj.mon(i).kicker_wav = double(obj.mon(i).kick_adc_wav.get())./obj.ADC_RANGE;
+        obj.mon(i).amp_wav    = zeros(pulses, 2048);
+        obj.mon(i).kicker_wav = zeros(pulses, 2048);
+        for j=1:pulses
+          obj.mon(i).amp_wav(j, :)    = double(obj.mon(i).amp_adc_wav.get() )./obj.ADC_RANGE;
+          obj.mon(i).kicker_wav(j, :) = double(obj.mon(i).kick_adc_wav.get())./obj.ADC_RANGE;
+          pause(0.2);
+        end
       end
     end
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2138,18 +2150,80 @@ classdef ca_ibfb < handle
     %  
     %end
     %
-    %function [res] = upload_dac_pattern(obj)
-    %  
-    %  ind = [0 0 0 0 ...
-    %         -5287 -8035 -10783 -13531 -16279 -19027 -21775 -24523 -27271 0 ...
-    %         9887 11061 10735 10709 11783 13157 16631 14405 17879 16253 20227 18401 22775 20649 26023 22897 29271 25145 32719 27393 ...
-    %         -5287 -8035 -10783 -13531 -16279 -19027 -21775 -24523 -27271 -30019 ...
-    %         0 0 0 0 ...
-    %         ];
-    %         
-    %  obj.ctrl.y_kick2_p_pattern.put(int32(ind));
-    %  
-    %end
+    function [res, v] = doublet_add(obj, v, del, amp)
+      
+      res = 0;
+      dbl_p = [1 -1];
+      dbl_n = [-1 1];
+      
+      v(del:del+1) = v(del:del+1) + amp.*dbl_p;
+          
+    end
+    
+    function [res, ind] = upload_dac_pattern(obj, v)
+      res = 0;
+    
+      if nargin == 2
+        ind = v;
+      else
+      
+        PT = 2;
+        %ind = [0 0 0 0 ...
+        %       -5287 -8035 -10783 -13531 -16279 -19027 -21775 -24523 -27271 0 ...
+        %       9887 11061 10735 10709 11783 13157 16631 14405 17879 16253 20227 18401 22775 20649 26023 22897 29271 25145 32719 27393 ...
+        %       -5287 -8035 -10783 -13531 -16279 -19027 -21775 -24523 -27271 -30019 ...
+        %       0 0 0 0 ...
+        %       ];
+              
+        ind = zeros(1,48);
+              
+        % pulse
+        %ind(24) = 30000;
+
+        
+        if PT == 1% bi-polar pulse composition
+          [res, ind] = doublet_add(obj, ind,  3, -1);
+          [res, ind] = doublet_add(obj, ind,  4, -2);
+          [res, ind] = doublet_add(obj, ind,  5, -3);
+          [res, ind] = doublet_add(obj, ind,  6, -1);
+          [res, ind] = doublet_add(obj, ind,  7,  1.3);
+          [res, ind] = doublet_add(obj, ind,  8,  3.6);
+          [res, ind] = doublet_add(obj, ind,  9,  6.0);
+          [res, ind] = doublet_add(obj, ind, 10,  8.5);
+          [res, ind] = doublet_add(obj, ind, 11,  11.2);
+          [res, ind] = doublet_add(obj, ind, 12,  10.2);
+          [res, ind] = doublet_add(obj, ind, 13,  9.2);
+          [res, ind] = doublet_add(obj, ind, 14,  8.2);
+          [res, ind] = doublet_add(obj, ind, 15,  7.2);
+          [res, ind] = doublet_add(obj, ind, 16,  6.2);
+          [res, ind] = doublet_add(obj, ind, 17,  5.2);
+          [res, ind] = doublet_add(obj, ind, 18,  4.2);
+          [res, ind] = doublet_add(obj, ind, 19,  3.2);
+          [res, ind] = doublet_add(obj, ind, 20,  2.2);
+          [res, ind] = doublet_add(obj, ind, 21,  1.2);
+          [res, ind] = doublet_add(obj, ind, 22,  0.2);
+        end
+        if PT == 2% bi-polar pulse composition
+          ind( 2:4 ) = linspace(-1, -1.3, 3);
+          %ind( 5:10) = linspace( 2,  2, 6);
+          ind( 5:10) = [2, 2.3, 2.3, 2.4, 2.5, 2.7];
+          %ind(11:21) = linspace(-1, -0.9, 11);
+          ind(11:14) = linspace(-2.3, -2.3, 4);
+          ind(15:20) = linspace(-0.2, -0.2, 6);
+        end
+      end
+      
+      % step
+      %ind = 30000.*ones(1,48);
+             
+      % normalize to 32767
+      inds = ind.*32767;
+      obj.ctrl.y_kick1_p_pattern.put(int32(inds));
+      obj.ctrl.y_kick1_n_pattern.put(int32(inds));
+      obj.ctrl.y_kick2_p_pattern.put(int32(inds));
+      obj.ctrl.y_kick2_n_pattern.put(int32(inds));
+      
+    end
     %
     %function [res] = find_optimal_doublet(obj, f, s)
     %

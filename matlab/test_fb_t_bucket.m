@@ -1,13 +1,13 @@
 clear all
 
-B=50;               % number of buckets
+B=50;                 % number of buckets
 BS=1;                 % bunch spacing
-%BPM_SMP_DEL=10;       % bpm valid delay with respect to bucket trigger
+%BPM_SMP_DEL=10;      % bpm valid delay with respect to bucket trigger
 
 FB_DEL=9;             % feedback delay in buckets
-t=1:B;            % time domain vector
+t=1:B;                % time domain vector
 Kp=0.9;               % P gain
-Ki=1/11;             % I gain
+Ki=1/11;              % I gain
 FB_ON=1;              % enable feedback
 I_APPLY=FB_DEL;
 I_SHIFT=1;
