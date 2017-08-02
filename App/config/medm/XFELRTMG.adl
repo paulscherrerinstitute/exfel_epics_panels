@@ -1,6 +1,6 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/cvs/G/XFEL/14_Firmware/13_Prototype/Button_BPM/05_EPICS/Button_Eth/App/config/medm/XFELRTMG.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/XFELRTMG.adl"
 	version=030105
 }
 display {

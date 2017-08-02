@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=620
-		y=328
+		x=322
+		y=555
 		width=670
 		height=560
 	}
@@ -108,7 +108,7 @@ text {
 	"basic attribute" {
 		clr=14
 	}
-	textix="IBFB Feed Forward Scan Procedure [$(DEV)]"
+	textix="IBFB Feed Forward Scan Procedure [$(DEV)] - $(PLANE) plane"
 	align="horiz. centered"
 }
 "cartesian plot" {
@@ -128,13 +128,13 @@ text {
 	style="line-bigmarks"
 	erase_oldest="plot last n pts"
 	trace[0] {
-		xdata="$(DEV):Y-FF-SCAN-KICK"
-		ydata="$(DEV):Y-FF-SCAN-K1-BPM1"
+		xdata="$(DEV):$(PLANE)-FF-SCAN-KICK"
+		ydata="$(DEV):$(PLANE)-FF-SCAN-K1-BPM1"
 		data_clr=15
 	}
 	trace[1] {
-		xdata="$(DEV):Y-FF-SCAN-X"
-		ydata="$(DEV):Y-FF-SCAN-Y-K1-BPM1"
+		xdata="$(DEV):$(PLANE)-FF-SCAN-X"
+		ydata="$(DEV):$(PLANE)-FF-SCAN-Y-K1-BPM1"
 		data_clr=20
 	}
 }
@@ -155,13 +155,13 @@ text {
 	style="line-bigmarks"
 	erase_oldest="plot last n pts"
 	trace[0] {
-		xdata="$(DEV):Y-FF-SCAN-KICK"
-		ydata="$(DEV):Y-FF-SCAN-K1-BPM2"
+		xdata="$(DEV):$(PLANE)-FF-SCAN-KICK"
+		ydata="$(DEV):$(PLANE)-FF-SCAN-K1-BPM2"
 		data_clr=15
 	}
 	trace[1] {
-		xdata="$(DEV):Y-FF-SCAN-X"
-		ydata="$(DEV):Y-FF-SCAN-Y-K1-BPM2"
+		xdata="$(DEV):$(PLANE)-FF-SCAN-X"
+		ydata="$(DEV):$(PLANE)-FF-SCAN-Y-K1-BPM2"
 		data_clr=20
 	}
 }
@@ -182,13 +182,13 @@ text {
 	style="line-bigmarks"
 	erase_oldest="plot last n pts"
 	trace[0] {
-		xdata="$(DEV):Y-FF-SCAN-KICK"
-		ydata="$(DEV):Y-FF-SCAN-K2-BPM1"
+		xdata="$(DEV):$(PLANE)-FF-SCAN-KICK"
+		ydata="$(DEV):$(PLANE)-FF-SCAN-K2-BPM1"
 		data_clr=15
 	}
 	trace[1] {
-		xdata="$(DEV):Y-FF-SCAN-X"
-		ydata="$(DEV):Y-FF-SCAN-Y-K2-BPM1"
+		xdata="$(DEV):$(PLANE)-FF-SCAN-X"
+		ydata="$(DEV):$(PLANE)-FF-SCAN-Y-K2-BPM1"
 		data_clr=20
 	}
 }
@@ -209,13 +209,13 @@ text {
 	style="line-bigmarks"
 	erase_oldest="plot last n pts"
 	trace[0] {
-		xdata="$(DEV):Y-FF-SCAN-KICK"
-		ydata="$(DEV):Y-FF-SCAN-K2-BPM2"
+		xdata="$(DEV):$(PLANE)-FF-SCAN-KICK"
+		ydata="$(DEV):$(PLANE)-FF-SCAN-K2-BPM2"
 		data_clr=15
 	}
 	trace[1] {
-		xdata="$(DEV):Y-FF-SCAN-X"
-		ydata="$(DEV):Y-FF-SCAN-Y-K2-BPM2"
+		xdata="$(DEV):$(PLANE)-FF-SCAN-X"
+		ydata="$(DEV):$(PLANE)-FF-SCAN-Y-K2-BPM2"
 		data_clr=20
 	}
 }
@@ -227,7 +227,7 @@ byte {
 		height=75
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-STATUS"
+		chan="$(DEV):$(PLANE)-FF-SCAN-STATUS"
 		clr=14
 		bclr=4
 	}
@@ -386,7 +386,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(DEV):Y-FB-CMD"
+		chan="$(DEV):$(PLANE)-FB-CMD"
 		clr=14
 		bclr=4
 	}
@@ -402,7 +402,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(DEV):Y-FB-CMD"
+		chan="$(DEV):$(PLANE)-FB-CMD"
 		clr=14
 		bclr=4
 	}
@@ -431,7 +431,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-K1-BPM1-A"
+		chan="$(DEV):$(PLANE)-FF-SCAN-K1-BPM1-A"
 		clr=14
 		bclr=4
 	}
@@ -460,7 +460,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-K1-BPM1-B"
+		chan="$(DEV):$(PLANE)-FF-SCAN-K1-BPM1-B"
 		clr=14
 		bclr=4
 	}
@@ -489,7 +489,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-K2-BPM1-A"
+		chan="$(DEV):$(PLANE)-FF-SCAN-K2-BPM1-A"
 		clr=14
 		bclr=4
 	}
@@ -518,7 +518,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-K2-BPM1-B"
+		chan="$(DEV):$(PLANE)-FF-SCAN-K2-BPM1-B"
 		clr=14
 		bclr=4
 	}
@@ -547,7 +547,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-K1-BPM2-A"
+		chan="$(DEV):$(PLANE)-FF-SCAN-K1-BPM2-A"
 		clr=14
 		bclr=4
 	}
@@ -576,7 +576,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-K1-BPM2-B"
+		chan="$(DEV):$(PLANE)-FF-SCAN-K1-BPM2-B"
 		clr=14
 		bclr=4
 	}
@@ -605,7 +605,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-K2-BPM2-A"
+		chan="$(DEV):$(PLANE)-FF-SCAN-K2-BPM2-A"
 		clr=14
 		bclr=4
 	}
@@ -634,7 +634,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-K2-BPM2-B"
+		chan="$(DEV):$(PLANE)-FF-SCAN-K2-BPM2-B"
 		clr=14
 		bclr=4
 	}
@@ -662,7 +662,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-KICK-M11"
+		chan="$(DEV):$(PLANE)-FF-SCAN-KICK-M11"
 		clr=14
 		bclr=4
 	}
@@ -678,7 +678,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-KICK-M12"
+		chan="$(DEV):$(PLANE)-FF-SCAN-KICK-M12"
 		clr=14
 		bclr=4
 	}
@@ -694,7 +694,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-KICK-M21"
+		chan="$(DEV):$(PLANE)-FF-SCAN-KICK-M21"
 		clr=14
 		bclr=4
 	}
@@ -710,7 +710,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-KICK-M22"
+		chan="$(DEV):$(PLANE)-FF-SCAN-KICK-M22"
 		clr=14
 		bclr=4
 	}
@@ -726,7 +726,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(DEV):Y-FB-CMD"
+		chan="$(DEV):$(PLANE)-FB-CMD"
 		clr=14
 		bclr=4
 	}

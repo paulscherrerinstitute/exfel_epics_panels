@@ -1,6 +1,6 @@
 
 file {
-	name="/xfel/controls/App/config/medm/F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/F_DI_FIN250_BPM_GPAC_SERVICE.adl"
 	version=030105
 }
 display {
@@ -4913,6 +4913,22 @@ rectangle {
 		bclr=4
 	}
 	align="horiz. centered"
+	format="string"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=230
+		y=410
+		width=75
+		height=10
+	}
+	monitor {
+		chan="$(DEV):MMC-PS-FAIL"
+		clr=14
+		bclr=4
+	}
 	format="string"
 	limits {
 	}
