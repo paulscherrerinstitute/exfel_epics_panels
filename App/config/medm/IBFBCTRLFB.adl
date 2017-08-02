@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=179
-		y=134
+		x=2759
+		y=379
 		width=1020
 		height=920
 	}
@@ -3170,21 +3170,6 @@ text {
 	}
 	textix="SASE SP"
 }
-"text entry" {
-	object {
-		x=190
-		y=520
-		width=40
-		height=15
-	}
-	control {
-		chan="$(DEV):Y-FB-SP-POS"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
 text {
 	object {
 		x=82
@@ -3224,21 +3209,6 @@ text {
 	textix="y2/x2"
 	align="horiz. right"
 }
-"text entry" {
-	object {
-		x=190
-		y=540
-		width=40
-		height=15
-	}
-	control {
-		chan="$(DEV):Y-FB-SP-ANGLE"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
 text {
 	object {
 		x=105
@@ -3265,36 +3235,6 @@ polyline {
 	points {
 		(0,430)
 		(685,430)
-	}
-}
-"text entry" {
-	object {
-		x=490
-		y=520
-		width=40
-		height=15
-	}
-	control {
-		chan="$(DEV):X-FB-SP-POS"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=490
-		y=540
-		width=40
-		height=15
-	}
-	control {
-		chan="$(DEV):X-FB-SP-ANGLE"
-		clr=14
-		bclr=4
-	}
-	limits {
 	}
 }
 menu {
@@ -5398,7 +5338,7 @@ polyline {
 }
 "choice button" {
 	object {
-		x=240
+		x=290
 		y=520
 		width=40
 		height=30
@@ -5411,7 +5351,7 @@ polyline {
 }
 "choice button" {
 	object {
-		x=290
+		x=340
 		y=520
 		width=40
 		height=30
@@ -5424,7 +5364,7 @@ polyline {
 }
 "choice button" {
 	object {
-		x=340
+		x=390
 		y=520
 		width=40
 		height=30
@@ -5437,7 +5377,7 @@ polyline {
 }
 "choice button" {
 	object {
-		x=540
+		x=565
 		y=520
 		width=40
 		height=30
@@ -5450,7 +5390,7 @@ polyline {
 }
 "choice button" {
 	object {
-		x=590
+		x=605
 		y=520
 		width=40
 		height=30
@@ -5463,7 +5403,7 @@ polyline {
 }
 "choice button" {
 	object {
-		x=640
+		x=645
 		y=520
 		width=40
 		height=30
@@ -8119,7 +8059,7 @@ text {
 }
 "wheel switch" {
 	object {
-		x=625
+		x=640
 		y=575
 		width=60
 		height=30
@@ -8134,7 +8074,7 @@ text {
 }
 "wheel switch" {
 	object {
-		x=565
+		x=580
 		y=575
 		width=60
 		height=30
@@ -8149,7 +8089,7 @@ text {
 }
 text {
 	object {
-		x=565
+		x=580
 		y=560
 		width=60
 		height=10
@@ -8162,7 +8102,7 @@ text {
 }
 text {
 	object {
-		x=625
+		x=640
 		y=560
 		width=60
 		height=10
@@ -8232,8 +8172,8 @@ text {
 }
 "text entry" {
 	object {
-		x=495
-		y=573
+		x=485
+		y=575
 		width=40
 		height=15
 	}
@@ -8247,8 +8187,8 @@ text {
 }
 text {
 	object {
-		x=495
-		y=558
+		x=485
+		y=560
 		width=40
 		height=10
 	}
@@ -8483,6 +8423,93 @@ menu {
 		bclr=4
 	}
 	align="horiz. right"
+	limits {
+	}
+}
+"wheel switch" {
+	object {
+		x=140
+		y=520
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):Y-FB-SP-POS"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"wheel switch" {
+	object {
+		x=205
+		y=520
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):Y-FB-SP-ANGLE"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"wheel switch" {
+	object {
+		x=440
+		y=520
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):X-FB-SP-POS"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"wheel switch" {
+	object {
+		x=500
+		y=520
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):X-FB-SP-ANGLE"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=535
+		y=562
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="I Shift"
+}
+"text entry" {
+	object {
+		x=535
+		y=574
+		width=40
+		height=15
+	}
+	control {
+		chan="$(DEV):X-FB-I-SMP-SHIFT"
+		clr=14
+		bclr=4
+	}
 	limits {
 	}
 }

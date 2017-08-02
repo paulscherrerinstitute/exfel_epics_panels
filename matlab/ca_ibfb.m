@@ -269,8 +269,8 @@ classdef ca_ibfb < handle
       obj.ctrl.y_dac_mode_m          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-DAC-MODE-M'          ]));
       obj.ctrl.y_bpm1_up_pos_wav     = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-BPM1-UP-POS-WAV'     ]));
       obj.ctrl.y_bpm2_up_pos_wav     = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-BPM2-UP-POS-WAV'     ]));
-      obj.ctrl.y_bpm1_down_pos_wav   = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-BPM1-DOWN-POS-WAV'   ]));
-      obj.ctrl.y_bpm2_down_pos_wav   = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-BPM2-DOWN-POS-WAV'   ]));
+      obj.ctrl.y_bpm1_down_pos_wav   = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-BPM1-DOWN-POS-WAV'   ]));
+      obj.ctrl.y_bpm2_down_pos_wav   = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'Y-BPM2-DOWN-POS-WAV'   ]));
       obj.ctrl.y_col_pos_wav         = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'Y-COL-POS-WAV'         ]));
       obj.ctrl.y_bpm1_up_valid_wav   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-BPM1-UP-VALID-WAV'   ]));
       obj.ctrl.y_bpm2_up_valid_wav   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'Y-BPM2-UP-VALID-WAV'   ]));
@@ -350,8 +350,8 @@ classdef ca_ibfb < handle
       obj.ctrl.x_dac_mode_m          = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-DAC-MODE-M'          ]));
       obj.ctrl.x_bpm1_up_pos_wav     = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-BPM1-UP-POS-WAV'     ]));
       obj.ctrl.x_bpm2_up_pos_wav     = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-BPM2-UP-POS-WAV'     ]));
-      obj.ctrl.x_bpm1_down_pos_wav   = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-BPM1-DOWN-POS-WAV'   ]));
-      obj.ctrl.x_bpm2_down_pos_wav   = Channels.create(context, ChannelDescriptor('float'     , [obj.EPICS_CTRL 'X-BPM2-DOWN-POS-WAV'   ]));
+      obj.ctrl.x_bpm1_down_pos_wav   = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-BPM1-DOWN-POS-WAV'   ]));
+      obj.ctrl.x_bpm2_down_pos_wav   = Channels.create(context, ChannelDescriptor('float[]'   , [obj.EPICS_CTRL 'X-BPM2-DOWN-POS-WAV'   ]));
       obj.ctrl.x_bpm1_up_valid_wav   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-BPM1-UP-VALID-WAV'   ]));
       obj.ctrl.x_bpm2_up_valid_wav   = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-BPM2-UP-VALID-WAV'   ]));
       obj.ctrl.x_bpm1_down_valid_wav = Channels.create(context, ChannelDescriptor('integer'   , [obj.EPICS_CTRL 'X-BPM1-DOWN-VALID-WAV' ]));
@@ -643,6 +643,76 @@ classdef ca_ibfb < handle
     %% CONTROLLER FUNCTIONS
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    function [res, m] = ctrl_read_down_bpms(obj, plane)        
+        res = 0;
+        n = 16;
+        smp = 256;
+        
+        m.bpm1 = zeros(n, smp);
+        m.bpm2 = zeros(n, smp);
+        if strcmp(plane, 'Y')        
+            hbpm1 = obj.ctrl.y_bpm1_down_pos_wav;
+            hbpm2 = obj.ctrl.y_bpm2_down_pos_wav;
+        end
+        if strcmp(plane, 'X')        
+            hbpm1 = obj.ctrl.x_bpm1_down_pos_wav;
+            hbpm2 = obj.ctrl.x_bpm2_down_pos_wav;
+        end
+        
+        for i=1:16
+            m.bpm1(i,:) = hbpm1.get();
+            m.bpm2(i,:) = hbpm2.get();
+            pause(0.3);
+        end
+        
+    end
+
+    function [res, m] = ctrl_plot_fb_compare(obj, plane, bpmb, bpma)
+        % bpmb - measurements taken with open loop
+        % bpma - measurements taken with closed loop
+        
+        clf
+        pts=116;
+        % reduce number of points to number of bunches * bunch_spacing
+        bpmb.bpm1 = bpmb.bpm1(:,1:4:pts);
+        bpmb.bpm2 = bpmb.bpm2(:,1:4:pts);              
+        bpma.bpm1 = bpma.bpm1(:,1:4:pts);
+        bpma.bpm2 = bpma.bpm2(:,1:4:pts);              
+        pts = length(bpmb.bpm1);
+                
+        bpmb1m = mean(bpmb.bpm1);
+        bpmb2m = mean(bpmb.bpm2);
+        bpma1m = mean(bpma.bpm1);
+        bpma2m = mean(bpma.bpm2);
+        
+        % BPM1
+        subplot(2,1,1);
+        e=errorbar(1:pts,bpmb1m, min(bpmb.bpm1)-bpmb1m, max(bpmb.bpm1)-bpmb1m);
+        hold on
+        e.Color = 'red';
+        e = errorbar(1:pts,bpma1m, min(bpma.bpm1)-bpma1m, max(bpma.bpm1)-bpma1m);
+        e.Color = 'blue';
+        xlabel('Bunch number');
+        ylabel('BPM1 position [mm]');
+        title([plane ' Plane']);
+        grid on
+        legend('FB off', 'FB on')
+        
+        %BPM2
+        subplot(2,1,2);
+        e = errorbar(1:pts,bpmb2m, min(bpmb.bpm2)-bpmb2m, max(bpmb.bpm2)-bpmb2m)
+        hold on
+        e.Color = 'red';
+        e = errorbar(1:pts,bpma2m, min(bpma.bpm2)-bpma2m, max(bpma.bpm2)-bpma2m);
+        e.Color = 'blue';        
+        xlabel('Bunch number');
+        ylabel('BPM2 position [mm]');
+        title([plane ' Plane']);
+        grid on
+        legend('FB off', 'FB on')
+        
+    end
+    
     function [res] = ctrl_daq_set_mux(obj, plane, mux)
 
       res=0;
@@ -664,13 +734,16 @@ classdef ca_ibfb < handle
       % [res, daq] = ctrl_read_daq(obj, plane, mux)
       % Parameters:
       %   plane - 'X', 'Y'
-      %   mux - four elements vector selecting signals for each DAQ channel
       % Return:
       %   res - error when not zero
       %   daq - readout structure
       
       res=0;
       if strcmp(plane, 'Y')
+        daq.mux0 = obj.ctrl.y_daq_mux0.get();
+        daq.mux1 = obj.ctrl.y_daq_mux1.get();
+        daq.mux2 = obj.ctrl.y_daq_mux2.get();
+        daq.mux3 = obj.ctrl.y_daq_mux3.get();          
         if obj.ctrl.y_daq_mux0.get() == 2
           daq.ch00 = (obj.ctrl.y_daq_ch00_int.get()        )';
           daq.ch01 = (obj.ctrl.y_daq_ch01_int.get()        )';
@@ -693,6 +766,10 @@ classdef ca_ibfb < handle
         daq.rx_down_bpm2 = (obj.ctrl.y_rx_down_bpm2.get()  )';
       end
       if strcmp(plane, 'X')
+        daq.mux0 = obj.ctrl.x_daq_mux0.get();
+        daq.mux1 = obj.ctrl.x_daq_mux1.get();
+        daq.mux2 = obj.ctrl.x_daq_mux2.get();
+        daq.mux3 = obj.ctrl.x_daq_mux3.get();          
         if obj.ctrl.y_daq_mux0.get() == 2
           daq.ch00         = (obj.ctrl.x_daq_ch00_int.get())';
           daq.ch01         = (obj.ctrl.x_daq_ch01_int.get())';
@@ -1006,10 +1083,14 @@ classdef ca_ibfb < handle
         m.trg_del(i) = m.trg_del(i);
       end
       if strcmp(plane, 'X')
-        m.bpm1_up_pos(i)     = obj.ctrl.x_bpm1_up_pos_wav.get();
-        m.bpm2_up_pos(i)     = obj.ctrl.x_bpm2_up_pos_wav.get();    
-        m.bpm1_down_pos(i)   = obj.ctrl.x_bpm1_down_pos_wav.get();
-        m.bpm2_down_pos(i)   = obj.ctrl.x_bpm2_down_pos_wav.get();
+        wav = obj.ctrl.x_bpm1_up_pos_wav.get();
+        m.bpm1_up_pos(i)     = wav(1);
+        wav = obj.ctrl.x_bpm2_up_pos_wav.get();
+        m.bpm2_up_pos(i)     = wav(1);    
+        wav = obj.ctrl.x_bpm1_down_pos_wav.get();
+        m.bpm1_down_pos(i)   = wav(1);
+        wav = obj.ctrl.x_bpm2_down_pos_wav.get();
+        m.bpm2_down_pos(i)   = wav(1);
         %m.bpm1_up_valid(i)   = uint32(obj.ctrl.x_bpm1_up_valid_wav.get()  );
         %m.bpm2_up_valid(i)   = uint32(obj.ctrl.x_bpm2_up_valid_wav.get()  );
         %m.bpm1_down_valid(i) = uint32(obj.ctrl.x_bpm1_down_valid_wav.get());
@@ -1056,7 +1137,7 @@ classdef ca_ibfb < handle
         
         for d=1:N
             h_trg.put(uint32(trg_init-d));
-            %m.trg_del(d) = trg_init-d;
+            m.trg_del(d) = trg_init-d;
             pause(0.5);
             [res m] = ctrl_ff_scan_read_single_bunch_pos(obj, m, plane, d);
         end        
@@ -1085,6 +1166,32 @@ classdef ca_ibfb < handle
         legend('BPM1', 'BPM2');
 
     end 
+    
+    function [res, k] = ctrl_scale_kick_matrix(obj, plane)        
+        res=0;
+        if strcmp(plane, 'X')
+            k(1) = obj.ctrl.x_fb_kicker_m11.get();
+            k(2) = obj.ctrl.x_fb_kicker_m12.get();
+            k(3) = obj.ctrl.x_fb_kicker_m21.get();
+            k(4) = obj.ctrl.x_fb_kicker_m22.get();        
+            k = k./max(k);
+            obj.ctrl.x_fb_kicker_m11.put(single(k(1)));
+            obj.ctrl.x_fb_kicker_m12.put(single(k(2)));
+            obj.ctrl.x_fb_kicker_m21.put(single(k(3)));
+            obj.ctrl.x_fb_kicker_m22.put(single(k(4)));        
+        end
+        if strcmp(plane, 'Y')
+            k(1) = obj.ctrl.y_fb_kicker_m11.get();
+            k(2) = obj.ctrl.y_fb_kicker_m12.get();
+            k(3) = obj.ctrl.y_fb_kicker_m21.get();
+            k(4) = obj.ctrl.y_fb_kicker_m22.get();        
+            k = k./max(k);
+            obj.ctrl.y_fb_kicker_m11.put(single(k(1)));
+            obj.ctrl.y_fb_kicker_m12.put(single(k(2)));
+            obj.ctrl.y_fb_kicker_m21.put(single(k(3)));
+            obj.ctrl.y_fb_kicker_m22.put(single(k(4)));        
+        end
+    end
     
     function [res] = ctrl_ff_train_constant(obj, plane, kicker,n)
       % [res] = ctrl_ff_scan_single(obj, plane, kicker)
