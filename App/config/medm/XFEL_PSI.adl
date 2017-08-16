@@ -1,0 +1,2149 @@
+
+file {
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/XFEL_PSI.adl"
+	version=030105
+}
+display {
+	object {
+		x=19
+		y=39
+		width=810
+		height=620
+	}
+	clr=14
+	bclr=4
+	cmap=""
+	gridSpacing=5
+	gridOn=1
+	snapToGrid=1
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=470
+		width=810
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=0
+		width=810
+		height=30
+	}
+	"basic attribute" {
+		clr=1
+	}
+}
+text {
+	object {
+		x=250
+		y=5
+		width=200
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="E-XFEL BPMs - Development System at PSI"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=140
+		y=133
+		width=50
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=295
+		y=133
+		width=50
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="MBU Service"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=430
+		y=133
+		width=50
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="GPAC Linux"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=245
+		y=130
+		width=0
+		height=340
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(245,130)
+		(245,470)
+	}
+}
+polyline {
+	object {
+		x=0
+		y=150
+		width=810
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,150)
+		(810,150)
+	}
+}
+polyline {
+	object {
+		x=390
+		y=130
+		width=0
+		height=340
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(390,130)
+		(390,470)
+	}
+}
+polyline {
+	object {
+		x=530
+		y=130
+		width=0
+		height=340
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(530,130)
+		(530,470)
+	}
+}
+"related display" {
+	object {
+		x=105
+		y=150
+		width=130
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
+		args="DEV=IPC1587-BUT1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1587-BUT1"
+}
+"related display" {
+	object {
+		x=250
+		y=150
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=IPC1587"
+	}
+	clr=14
+	bclr=57
+	label="-GPAC"
+}
+rectangle {
+	object {
+		x=380
+		y=150
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1587:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=380
+		y=150
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1587:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=150
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1587-BUT1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=150
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1587-BUT1:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=395
+		y=150
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T ipc1587 -bg rgb:40/A0/90 -e telnet -l root ipc1587 &"
+	}
+	clr=14
+	bclr=57
+	label="-ipc1587"
+}
+text {
+	object {
+		x=575
+		y=134
+		width=50
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="WWW"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=670
+		y=130
+		width=0
+		height=340
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(670,130)
+		(670,470)
+	}
+}
+"shell command" {
+	object {
+		x=5
+		y=55
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm &"
+	}
+	clr=14
+	bclr=57
+	label="-finlc"
+}
+"shell command" {
+	object {
+		x=120
+		y=55
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg rgb:B0/90/60 -T fin129-softioc:50029 -e telnet fin129-softioc 50029 &"
+	}
+	clr=14
+	bclr=57
+	label="-EXFEL-TEST-PC1"
+}
+"related display" {
+	object {
+		x=105
+		y=170
+		width=130
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
+		args="DEV=IPC1587-BUT2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1587-BUT2"
+}
+rectangle {
+	object {
+		x=235
+		y=170
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1587-BUT2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=170
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1587-BUT2:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=105
+		y=190
+		width=130
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
+		args="DEV=IPC1587-BUT3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1587-BUT3"
+}
+rectangle {
+	object {
+		x=235
+		y=190
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1587-BUT3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=190
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1587-BUT3:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=105
+		y=250
+		width=130
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
+		args="DEV=BPMC-38I-I1"
+	}
+	clr=14
+	bclr=57
+	label="-BPMC-38I-I1"
+}
+"related display" {
+	object {
+		x=250
+		y=250
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI55I1"
+	}
+	clr=14
+	bclr=57
+	label="-GPAC"
+}
+rectangle {
+	object {
+		x=380
+		y=250
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI55I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=380
+		y=250
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI55I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=250
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPMC-38I-I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=250
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPMC-38I-I1:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=395
+		y=250
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -bg rgb:40/A0/90 -T xfelgpac1di55i1 -e telnet -l root xfelgpac1di55i1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di55i1"
+}
+text {
+	object {
+		x=20
+		y=133
+		width=50
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Type"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=5
+		y=153
+		width=90
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Button"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=5
+		y=173
+		width=90
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Button"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=5
+		y=253
+		width=90
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Button"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=5
+		y=193
+		width=90
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Button"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=100
+		y=130
+		width=0
+		height=340
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(100,130)
+		(100,470)
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=270
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPMR-38II-I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=270
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPMR-38II-I1:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=5
+		y=273
+		width=90
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Re-entrant"
+	align="horiz. centered"
+}
+"related display" {
+	object {
+		x=105
+		y=350
+		width=130
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
+		args="DEV=BPMA-55-I1"
+	}
+	clr=14
+	bclr=57
+	label="-BPMA-55-I1"
+}
+"related display" {
+	object {
+		x=250
+		y=330
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC3DI55I1"
+	}
+	clr=14
+	bclr=57
+	label="-GPAC"
+}
+rectangle {
+	object {
+		x=380
+		y=330
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC3DI55I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=380
+		y=330
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC3DI55I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=350
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPMA-55-I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=350
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPMA-55-I1:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=395
+		y=330
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac3di55i1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac3di55i1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac3di55i1"
+}
+text {
+	object {
+		x=5
+		y=353
+		width=90
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Button"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=5
+		y=293
+		width=90
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Cavity"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=5
+		y=313
+		width=90
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Cavity"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=235
+		y=290
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPMF-47-I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=290
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPMF-47-I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=310
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPMF-48-I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=310
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPMF-48-I1:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=250
+		y=290
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC2DI55I1"
+	}
+	clr=14
+	bclr=57
+	label="-GPAC"
+}
+rectangle {
+	object {
+		x=380
+		y=290
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC2DI55I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=380
+		y=290
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC2DI55I1:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=395
+		y=290
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac2di55i1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac2di55i1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac2di55i1"
+}
+text {
+	object {
+		x=5
+		y=333
+		width=90
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Cavity"
+	align="horiz. centered"
+}
+rectangle {
+	object {
+		x=235
+		y=330
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPMF-52-I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=330
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPMF-52-I1:S7GPAC-STATUS"
+	}
+}
+polyline {
+	object {
+		x=0
+		y=230
+		width=810
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,230)
+		(810,230)
+	}
+}
+polyline {
+	object {
+		x=0
+		y=290
+		width=670
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,290)
+		(670,290)
+	}
+}
+polyline {
+	object {
+		x=0
+		y=330
+		width=670
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,330)
+		(670,330)
+	}
+}
+"related display" {
+	object {
+		x=105
+		y=370
+		width=130
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
+		args="DEV=BPMA-57-I1"
+	}
+	clr=14
+	bclr=57
+	label="-BPMA-57-I1"
+}
+rectangle {
+	object {
+		x=235
+		y=370
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPMA-57-I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=370
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPMA-57-I1:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=5
+		y=373
+		width=90
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Button"
+	align="horiz. centered"
+}
+"related display" {
+	object {
+		x=105
+		y=390
+		width=130
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
+		args="DEV=BPMA-59-I1"
+	}
+	clr=14
+	bclr=57
+	label="-BPMA-59-I1"
+}
+rectangle {
+	object {
+		x=235
+		y=390
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPMA-59-I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=390
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPMA-59-I1:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=5
+		y=393
+		width=90
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Button"
+	align="horiz. centered"
+}
+"related display" {
+	object {
+		x=105
+		y=410
+		width=130
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
+		args="DEV=BPMA-63-I1"
+	}
+	clr=14
+	bclr=57
+	label="-BPMA-63-I1"
+}
+rectangle {
+	object {
+		x=235
+		y=410
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPMA-63-I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=410
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPMA-63-I1:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=5
+		y=413
+		width=90
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Button"
+	align="horiz. centered"
+}
+"related display" {
+	object {
+		x=105
+		y=430
+		width=130
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
+		args="DEV=BPMA-63-I1D"
+	}
+	clr=14
+	bclr=57
+	label="-BPMA-63-I1D"
+}
+rectangle {
+	object {
+		x=235
+		y=430
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPMA-63-I1D:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=430
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPMA-63-I1D:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=5
+		y=433
+		width=90
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Button"
+	align="horiz. centered"
+}
+"related display" {
+	object {
+		x=105
+		y=450
+		width=130
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
+		args="DEV=BPMA-64-I1D"
+	}
+	clr=14
+	bclr=57
+	label="-BPMA-64-I1D"
+}
+rectangle {
+	object {
+		x=235
+		y=450
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPMA-64-I1D:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=450
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPMA-64-I1D:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=5
+		y=453
+		width=90
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Button"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=0
+		y=390
+		width=670
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,390)
+		(670,390)
+	}
+}
+"related display" {
+	object {
+		x=250
+		y=390
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI59I1"
+	}
+	clr=14
+	bclr=57
+	label="-GPAC"
+}
+rectangle {
+	object {
+		x=380
+		y=390
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI59I1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=380
+		y=390
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI59I1:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=395
+		y=390
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di59i1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di59i1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di59i1"
+}
+rectangle {
+	object {
+		x=0
+		y=80
+		width=810
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+text {
+	object {
+		x=300
+		y=83
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Production BPMs"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=340
+		y=473
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Button BPM Service"
+	align="horiz. centered"
+}
+"related display" {
+	object {
+		x=30
+		y=520
+		width=130
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT_EEPROM.adl"
+		args="DEV=BUTBPMSERV"
+	}
+	clr=14
+	bclr=57
+	label="-EEPROM"
+}
+"shell command" {
+	object {
+		x=105
+		y=330
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="caqtdm -noMsg -attach -macro DEV=BPMF-52-I1 App/config/qt/BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMF-52-I1"
+}
+rectangle {
+	object {
+		x=154
+		y=495
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BUTBPMSERV:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=154
+		y=495
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BUTBPMSERV:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=105
+		y=310
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="caqtdm -noMsg -attach -macro DEV=BPMF-48-I1 App/config/qt/BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMF-48-I1"
+}
+"shell command" {
+	object {
+		x=105
+		y=290
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="caqtdm -noMsg -attach -macro DEV=BPMF-47-I1 App/config/qt/BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMF-47-I1"
+}
+"shell command" {
+	object {
+		x=105
+		y=270
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="caqtdm -noMsg -attach -macro DEV=BPMR-38II-I1 App/config/qt/BPM_GPAC_REN_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMR-38II-I1"
+}
+"message button" {
+	object {
+		x=170
+		y=495
+		width=100
+		height=20
+	}
+	control {
+		chan="BUTBPMSERV:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	label="BPMG-24-I1"
+	press_msg="xfelgpac1di30i1:51245"
+}
+"text update" {
+	object {
+		x=0
+		y=498
+		width=150
+		height=16
+	}
+	monitor {
+		chan="BUTBPMSERV:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=30
+		width=810
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+polyline {
+	object {
+		x=0
+		y=80
+		width=810
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(1,81)
+		(809,81)
+	}
+}
+polyline {
+	object {
+		x=0
+		y=30
+		width=810
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(1,31)
+		(809,31)
+	}
+}
+polyline {
+	object {
+		x=0
+		y=470
+		width=810
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(1,471)
+		(809,471)
+	}
+}
+text {
+	object {
+		x=300
+		y=35
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Maintenance IOC [mdi7xfelpc1]"
+	align="horiz. centered"
+}
+"message button" {
+	object {
+		x=170
+		y=515
+		width=100
+		height=20
+	}
+	control {
+		chan="BUTBPMSERV:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	label="BPMG-25I-I1"
+	press_msg="xfelgpac1di30i1:51246"
+}
+"message button" {
+	object {
+		x=170
+		y=535
+		width=100
+		height=20
+	}
+	control {
+		chan="BUTBPMSERV:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	label="BPMG-25II-I1"
+	press_msg="xfelgpac1di30i1:51247"
+}
+"message button" {
+	object {
+		x=170
+		y=555
+		width=100
+		height=20
+	}
+	control {
+		chan="BUTBPMSERV:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	label="BPMC-38I-I1"
+	press_msg="xfelgpac1di55i1:51245"
+}
+"message button" {
+	object {
+		x=170
+		y=575
+		width=100
+		height=20
+	}
+	control {
+		chan="BUTBPMSERV:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	label="BPMG-55-I1"
+	press_msg="xfelgpac3di55i1:51245"
+}
+"message button" {
+	object {
+		x=170
+		y=595
+		width=100
+		height=20
+	}
+	control {
+		chan="BUTBPMSERV:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	label="BPMG-57-I1"
+	press_msg="xfelgpac3di55i1:51246"
+}
+"message button" {
+	object {
+		x=270
+		y=495
+		width=100
+		height=20
+	}
+	control {
+		chan="BUTBPMSERV:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	label="BPMG-59-I1"
+	press_msg="xfelgpac1di59i1:51245"
+}
+"message button" {
+	object {
+		x=270
+		y=515
+		width=100
+		height=20
+	}
+	control {
+		chan="BUTBPMSERV:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	label="BPMG-63-I1"
+	press_msg="xfelgpac1di59i1:51246"
+}
+"message button" {
+	object {
+		x=270
+		y=535
+		width=100
+		height=20
+	}
+	control {
+		chan="BUTBPMSERV:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	label="BPMG-63-I1D"
+	press_msg="xfelgpac1di59i1:51247"
+}
+"message button" {
+	object {
+		x=270
+		y=555
+		width=100
+		height=20
+	}
+	control {
+		chan="BUTBPMSERV:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	label="BPMG-64-I1D"
+	press_msg="xfelgpac1di59i1:51248"
+}
+"related display" {
+	object {
+		x=5
+		y=105
+		width=110
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="XFEL_STATISTICS.adl"
+	}
+	clr=14
+	bclr=57
+	label="-Statistics"
+}
+polyline {
+	object {
+		x=0
+		y=130
+		width=810
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,130)
+		(810,130)
+	}
+}
+"shell command" {
+	object {
+		x=535
+		y=150
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="firefox http://ipc1587.psi.ch &"
+	}
+	clr=14
+	bclr=57
+	label="-ipc1587"
+}
+"shell command" {
+	object {
+		x=535
+		y=250
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="firefox http://xfelgpac1di55i1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di55i1"
+}
+"shell command" {
+	object {
+		x=535
+		y=290
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="firefox http://xfelgpac2di55i1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac2di55i1"
+}
+"shell command" {
+	object {
+		x=535
+		y=330
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="firefox http://xfelgpac3di55i1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac3di55i1"
+}
+"shell command" {
+	object {
+		x=535
+		y=390
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="firefox http://xfelgpac1di59i1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di59i1"
+}
+"related display" {
+	object {
+		x=30
+		y=545
+		width=130
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT_DET.adl"
+		args="DEV=BUTBPMSERV"
+	}
+	clr=14
+	bclr=57
+	label="-RFFE Detector"
+}
+"message button" {
+	object {
+		x=705
+		y=495
+		width=100
+		height=20
+	}
+	control {
+		chan="BUTBPMSERV:S7GPAC-ADDR"
+		clr=14
+		bclr=4
+	}
+	label="XFELDEVL-BUT1"
+	press_msg="flashlxbutbpm1:51245"
+}
+"related display" {
+	object {
+		x=315
+		y=390
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI59I1"
+	}
+	clr=14
+	bclr=57
+	label="-Timing"
+}
+"related display" {
+	object {
+		x=315
+		y=150
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1587"
+	}
+	clr=14
+	bclr=57
+	label="-Timing"
+}
+"related display" {
+	object {
+		x=315
+		y=250
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI55I1"
+	}
+	clr=14
+	bclr=57
+	label="-Timing"
+}
+"related display" {
+	object {
+		x=315
+		y=290
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC2DI55I1"
+	}
+	clr=14
+	bclr=57
+	label="-Timing"
+}
+"related display" {
+	object {
+		x=315
+		y=330
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC3DI55I1"
+	}
+	clr=14
+	bclr=57
+	label="-Timing"
+}
+"related display" {
+	object {
+		x=120
+		y=105
+		width=110
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_FIRMWARE.adl"
+	}
+	clr=14
+	bclr=57
+	label="-Firmware"
+}
+"related display" {
+	object {
+		x=105
+		y=210
+		width=130
+		height=20
+	}
+	display[0] {
+		label="Button BPM"
+		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
+		args="DEV=IPC1587-BUT4"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1587-BUT4"
+}
+rectangle {
+	object {
+		x=235
+		y=210
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1587-BUT4:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=210
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1587-BUT4:S7GPAC-STATUS"
+	}
+}
+text {
+	object {
+		x=5
+		y=210
+		width=90
+		height=15
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Button"
+	align="horiz. centered"
+}

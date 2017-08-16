@@ -1,13 +1,13 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/XFELIBFB.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/PSIIBFB.adl"
 	version=030105
 }
 display {
 	object {
-		x=466
-		y=585
-		width=510
+		x=14
+		y=41
+		width=520
 		height=400
 	}
 	clr=14
@@ -91,7 +91,7 @@ rectangle {
 	object {
 		x=0
 		y=0
-		width=510
+		width=520
 		height=30
 	}
 	"basic attribute" {
@@ -115,7 +115,7 @@ polyline {
 	object {
 		x=0
 		y=50
-		width=510
+		width=630
 		height=0
 	}
 	"basic attribute" {
@@ -123,14 +123,14 @@ polyline {
 	}
 	points {
 		(0,50)
-		(510,50)
+		(630,50)
 	}
 }
 "shell command" {
 	object {
-		x=275
+		x=270
 		y=80
-		width=140
+		width=130
 		height=20
 	}
 	command[0] {
@@ -353,7 +353,7 @@ rectangle {
 	object {
 		x=160
 		y=55
-		width=110
+		width=70
 		height=20
 	}
 	command[0] {
@@ -362,13 +362,13 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-xfelgpacibfbctrl"
+	label="-ibfbctrl"
 }
 "shell command" {
 	object {
 		x=160
 		y=80
-		width=110
+		width=70
 		height=20
 	}
 	command[0] {
@@ -377,13 +377,13 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-xfelgpacibfbsw"
+	label="-ibfbsw"
 }
 "shell command" {
 	object {
 		x=160
 		y=105
-		width=110
+		width=70
 		height=20
 	}
 	command[0] {
@@ -392,7 +392,23 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-xfelgpacibfbmon"
+	label="-ibfbmon"
+}
+"related display" {
+	object {
+		x=5
+		y=205
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="IBFBWAV.adl"
+		args="DEV=IBFBCTRL,PLANE=Y"
+	}
+	clr=14
+	bclr=57
+	label="-DAQ Y"
 }
 "related display" {
 	object {
@@ -467,7 +483,7 @@ rectangle {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -e telnet -l root ibfbplay &"
+		name="xterm -e telnet -l root xfelgpacibfbplay &"
 	}
 	clr=14
 	bclr=57
@@ -475,9 +491,9 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=275
+		x=270
 		y=55
-		width=140
+		width=130
 		height=20
 	}
 	command[0] {
@@ -486,7 +502,7 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-gfalc xterm"
+	label="-finlc xterm"
 }
 text {
 	object {
@@ -503,9 +519,9 @@ text {
 }
 "shell command" {
 	object {
-		x=275
+		x=270
 		y=105
-		width=140
+		width=130
 		height=20
 	}
 	command[0] {
@@ -744,7 +760,7 @@ text {
 	}
 	display[0] {
 		label="BPM"
-		name="IBFBCAV.adl"
+		name="IBFBCAV_PSI.adl"
 		args="DEV=IBFBCTRL"
 	}
 	clr=14
@@ -753,7 +769,7 @@ text {
 }
 "related display" {
 	object {
-		x=260
+		x=235
 		y=355
 		width=140
 		height=20
@@ -776,11 +792,11 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="./xfel_qt.sh CAVBPM IBFB_LATTICE.ui &"
+		name="./psi_qt.sh CAVBPM IBFB_LATTICE.ui"
 	}
 	clr=14
 	bclr=57
-	label="-Lattice Ver (Qt)"
+	label="-Optics (Qt)"
 }
 "related display" {
 	object {
@@ -829,22 +845,6 @@ text {
 	clr=14
 	bclr=57
 	label="-FF Scan X"
-}
-"related display" {
-	object {
-		x=5
-		y=205
-		width=65
-		height=20
-	}
-	display[0] {
-		label="BPM"
-		name="IBFBWAV.adl"
-		args="DEV=IBFBCTRL,PLANE=Y"
-	}
-	clr=14
-	bclr=57
-	label="-DAQ Y"
 }
 "related display" {
 	object {

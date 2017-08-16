@@ -1,14 +1,14 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/cvs/G/XFEL/14_Firmware/13_Prototype/Button_BPM/05_EPICS/Button_Eth/App/config/medm/IBFBWAV.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBWAV.adl"
 	version=030105
 }
 display {
 	object {
-		x=267
-		y=81
-		width=1000
-		height=630
+		x=560
+		y=79
+		width=935
+		height=1110
 	}
 	clr=14
 	bclr=4
@@ -87,33 +87,55 @@ display {
 		1a7309,
 	}
 }
+rectangle {
+	object {
+		x=0
+		y=280
+		width=335
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+rectangle {
+	object {
+		x=867
+		y=230
+		width=65
+		height=20
+	}
+	"basic attribute" {
+		clr=30
+	}
+}
 "cartesian plot" {
 	object {
-		x=400
-		y=30
+		x=332
+		y=250
 		width=600
 		height=200
 	}
 	plotcom {
-		xlabel="Arrival time [1/216.6 MHz]"
+		xlabel="Bucket"
 		ylabel="Position [mm]"
 		clr=0
 		bclr=14
 	}
 	erase_oldest="plot last n pts"
 	trace[0] {
-		ydata="$(DEV):Y-RX-DOWN-BPM1"
+		ydata="$(DEV):$(PLANE)-DAQ-CH00"
 		data_clr=20
 	}
 	trace[1] {
-		ydata="$(DEV):Y-RX-DOWN-BPM2"
+		ydata="$(DEV):$(PLANE)-DAQ-CH01"
 		data_clr=30
 	}
 }
 rectangle {
 	object {
 		x=2
-		y=31
+		y=30
 		width=330
 		height=20
 	}
@@ -125,7 +147,7 @@ rectangle {
 	object {
 		x=0
 		y=0
-		width=1000
+		width=935
 		height=30
 	}
 	"basic attribute" {
@@ -135,7 +157,7 @@ rectangle {
 polyline {
 	object {
 		x=2
-		y=51
+		y=50
 		width=330
 		height=0
 	}
@@ -143,23 +165,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(2,51)
-		(332,51)
-	}
-}
-polyline {
-	object {
-		x=-40
-		y=860
-		width=1000
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(-40,860)
-		(960,860)
+		(2,50)
+		(332,50)
 	}
 }
 text {
@@ -172,24 +179,8 @@ text {
 	"basic attribute" {
 		clr=14
 	}
-	textix="XFEL IBFB Controller [$(DEV)]"
+	textix="XFEL IBFB Controller [$(DEV)] - $(PLANE) plane"
 	align="horiz. centered"
-}
-polyline {
-	object {
-		x=0
-		y=30
-		width=330
-		height=2
-	}
-	"basic attribute" {
-		clr=0
-		width=2
-	}
-	points {
-		(1,31)
-		(329,31)
-	}
 }
 text {
 	object {
@@ -715,24 +706,24 @@ polyline {
 }
 polyline {
 	object {
-		x=331
-		y=31
+		x=333
+		y=30
 		width=2
-		height=241
+		height=251
 	}
 	"basic attribute" {
 		clr=0
 		width=2
 	}
 	points {
-		(332,32)
-		(332,271)
+		(334,31)
+		(334,280)
 	}
 }
 text {
 	object {
 		x=131
-		y=36
+		y=34
 		width=100
 		height=10
 	}
@@ -908,29 +899,6 @@ polyline {
 	points {
 		(1,191)
 		(331,191)
-	}
-}
-"cartesian plot" {
-	object {
-		x=0
-		y=290
-		width=400
-		height=340
-	}
-	plotcom {
-		xlabel="Bucket"
-		ylabel="DAC counts"
-		clr=0
-		bclr=14
-	}
-	erase_oldest="plot last n pts"
-	trace[0] {
-		ydata="$(DEV):Y-KICK1-OUT"
-		data_clr=20
-	}
-	trace[1] {
-		ydata="$(DEV):Y-KICK2-OUT"
-		data_clr=15
 	}
 }
 rectangle {
@@ -1287,39 +1255,413 @@ rectangle {
 }
 "cartesian plot" {
 	object {
-		x=400
-		y=230
-		width=600
-		height=200
+		x=0
+		y=300
+		width=335
+		height=180
 	}
 	plotcom {
-		xlabel="Bucket"
-		ylabel="Position error [mm]"
+		xlabel="Clk Cycles"
+		ylabel="RX Packets"
 		clr=0
 		bclr=14
 	}
+	style="line-bigmarks"
 	erase_oldest="plot last n pts"
 	trace[0] {
-		ydata="$(DEV):Y-FB-POS-ERR"
+		xdata="$(DEV):$(PLANE)-TDIFF-HIST.AVAL"
+		ydata="$(DEV):$(PLANE)-DOWN-BPM1-HIST"
 		data_clr=20
+	}
+	trace[1] {
+		xdata="$(DEV):$(PLANE)-TDIFF-HIST.AVAL"
+		ydata="$(DEV):$(PLANE)-DOWN-BPM2-HIST"
+		data_clr=30
+	}
+	trace[2] {
+		xdata="$(DEV):$(PLANE)-TDIFF-HIST.AVAL"
+		ydata="$(DEV):$(PLANE)-UP-BPM1-HIST"
+		data_clr=15
+	}
+	trace[3] {
+		xdata="$(DEV):$(PLANE)-TDIFF-HIST.AVAL"
+		ydata="$(DEV):$(PLANE)-UP-BPM2-HIST"
+		data_clr=35
+	}
+}
+rectangle {
+	object {
+		x=802
+		y=230
+		width=65
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+}
+text {
+	object {
+		x=812
+		y=235
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="BPM1/KICK1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=877
+		y=235
+		width=45
+		height=10
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="BPM2/KICK2"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=72
+		y=285
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Packet Arrival Jitter Histograms"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=0
+		y=280
+		width=335
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,280)
+		(335,280)
+	}
+}
+menu {
+	object {
+		x=240
+		y=280
+		width=90
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PLANE)-RX-HIST-ENA"
+		clr=14
+		bclr=4
+	}
+}
+menu {
+	object {
+		x=397
+		y=230
+		width=200
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PLANE)-DAQ-MUX0"
+		clr=14
+		bclr=4
+	}
+}
+text {
+	object {
+		x=337
+		y=235
+		width=55
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Channel 0"
+	align="horiz. right"
+}
+text {
+	object {
+		x=337
+		y=455
+		width=55
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Channel 1"
+	align="horiz. right"
+}
+menu {
+	object {
+		x=397
+		y=450
+		width=200
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PLANE)-DAQ-MUX1"
+		clr=14
+		bclr=4
 	}
 }
 "cartesian plot" {
 	object {
-		x=400
-		y=430
+		x=332
+		y=470
 		width=600
 		height=200
 	}
 	plotcom {
 		xlabel="Bucket"
-		ylabel="Angle error [rad]"
+		ylabel="Position [mm]"
 		clr=0
 		bclr=14
 	}
 	erase_oldest="plot last n pts"
 	trace[0] {
-		ydata="$(DEV):Y-FB-ANGLE-ERR"
+		ydata="$(DEV):$(PLANE)-DAQ-CH10"
 		data_clr=20
+	}
+	trace[1] {
+		ydata="$(DEV):$(PLANE)-DAQ-CH11"
+		data_clr=30
+	}
+}
+text {
+	object {
+		x=337
+		y=670
+		width=55
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Channel 2"
+	align="horiz. right"
+}
+menu {
+	object {
+		x=397
+		y=670
+		width=200
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PLANE)-DAQ-MUX2"
+		clr=14
+		bclr=4
+	}
+}
+"cartesian plot" {
+	object {
+		x=332
+		y=690
+		width=600
+		height=200
+	}
+	plotcom {
+		xlabel="Bucket"
+		ylabel="Position [mm]"
+		clr=0
+		bclr=14
+	}
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):$(PLANE)-DAQ-CH20"
+		data_clr=20
+	}
+	trace[1] {
+		ydata="$(DEV):$(PLANE)-DAQ-CH21"
+		data_clr=30
+	}
+}
+text {
+	object {
+		x=337
+		y=890
+		width=55
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Channel 3"
+	align="horiz. right"
+}
+menu {
+	object {
+		x=397
+		y=890
+		width=200
+		height=20
+	}
+	control {
+		chan="$(DEV):$(PLANE)-DAQ-MUX3"
+		clr=14
+		bclr=4
+	}
+}
+"cartesian plot" {
+	object {
+		x=332
+		y=910
+		width=600
+		height=200
+	}
+	plotcom {
+		xlabel="Bucket"
+		ylabel="Position [mm]"
+		clr=0
+		bclr=14
+	}
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):$(PLANE)-DAQ-CH30-INT"
+		data_clr=20
+	}
+	trace[1] {
+		ydata="$(DEV):$(PLANE)-DAQ-CH31-INT"
+		data_clr=30
+	}
+}
+"cartesian plot" {
+	object {
+		x=335
+		y=30
+		width=600
+		height=200
+	}
+	plotcom {
+		title="Downstream BPMs"
+		xlabel="Bucket"
+		ylabel="Position [mm]"
+		clr=0
+		bclr=14
+	}
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):$(PLANE)-RX-DOWN-BPM1"
+		data_clr=20
+	}
+	trace[1] {
+		ydata="$(DEV):$(PLANE)-RX-DOWN-BPM2"
+		data_clr=30
+	}
+}
+"cartesian plot" {
+	object {
+		x=2
+		y=525
+		width=332
+		height=200
+	}
+	plotcom {
+		xlabel="Sample"
+		ylabel="DAC counts"
+		clr=0
+		bclr=14
+	}
+	style="line-nomarks"
+	erase_oldest="plot last n pts"
+	trace[0] {
+		ydata="$(DEV):$(PLANE)-KICK1-P-PATTERN"
+		data_clr=51
+	}
+	trace[1] {
+		ydata="$(DEV):$(PLANE)-KICK1-N-PATTERN"
+		data_clr=53
+	}
+	trace[2] {
+		ydata="$(DEV):$(PLANE)-KICK2-P-PATTERN"
+		data_clr=61
+	}
+	trace[3] {
+		ydata="$(DEV):$(PLANE)-KICK2-N-PATTERN"
+		data_clr=63
+	}
+}
+"message button" {
+	object {
+		x=130
+		y=505
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):$(PLANE)-DAC-PATTERN-APPLY"
+		clr=14
+		bclr=4
+	}
+	label="Apply user pattern"
+	press_msg="1"
+}
+"message button" {
+	object {
+		x=5
+		y=505
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):$(PLANE)-DAC-PATTERN-APPLY"
+		clr=14
+		bclr=4
+	}
+	label="Init user pattern"
+	press_msg="3"
+}
+rectangle {
+	object {
+		x=3
+		y=480
+		width=332
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+text {
+	object {
+		x=120
+		y=483
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Kicker Patterns"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=0
+		y=480
+		width=335
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,480)
+		(335,480)
 	}
 }
