@@ -958,11 +958,11 @@ polyline {
 	}
 	command[0] {
 		label="Terminal"
-		name="./xfel_qt.sh FLASHFGPACMAFFBPM1 BPM_GPAC_CAV_SMP_single.ui &"
+		name="./xfel_qt.sh 11FLFMAFF BPM_GPAC_CAV_SMP_single.ui &"
 	}
 	clr=14
 	bclr=57
-	label="-FLASHFGPACMAFFBPM1"
+	label="-11FLFMAFF"
 }
 "related display" {
 	object {
@@ -1041,7 +1041,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="FLASHFGPACMAFFBPM1:S7GPAC-STATUS"
+		chan="11FLFMAFF:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1057,7 +1057,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="FLASHFGPACMAFFBPM1:S7GPAC-STATUS"
+		chan="11FLFMAFF:S7GPAC-STATUS"
 	}
 }
 "shell command" {
@@ -1084,11 +1084,11 @@ rectangle {
 	}
 	command[0] {
 		label="Terminal"
-		name="./xfel_qt.sh FLASHFGPACMAFFBPM2 BPM_GPAC_CAV_SMP_single.ui &"
+		name="./xfel_qt.sh 14FLFMAFF BPM_GPAC_CAV_SMP_single.ui &"
 	}
 	clr=14
 	bclr=57
-	label="-FLASHFGPACMAFFBPM2"
+	label="-14FLFMAFF"
 }
 rectangle {
 	object {
@@ -1103,7 +1103,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="FLASHFGPACMAFFBPM2:S7GPAC-STATUS"
+		chan="14FLFMAFF:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1119,7 +1119,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="FLASHFGPACMAFFBPM2:S7GPAC-STATUS"
+		chan="14FLFMAFF:S7GPAC-STATUS"
 	}
 }
 "shell command" {
@@ -1131,11 +1131,11 @@ rectangle {
 	}
 	command[0] {
 		label="Terminal"
-		name="./xfel_qt.sh FLASHFGPACDIAG1BPM1 BPM_GPAC_CAV_SMP_single.ui &"
+		name="./xfel_qt.sh 1FLFDIAG BPM_GPAC_CAV_SMP_single.ui &"
 	}
 	clr=14
 	bclr=57
-	label="-FLASHFGPACDIAG1BPM1"
+	label="-1FLFDIAG"
 }
 "related display" {
 	object {
@@ -1214,7 +1214,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="FLASHFGPACDIAG1BPM1:S7GPAC-STATUS"
+		chan="1FLFDIAG:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1230,7 +1230,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="FLASHFGPACDIAG1BPM1:S7GPAC-STATUS"
+		chan="1FLFDIAG:S7GPAC-STATUS"
 	}
 }
 "shell command" {
@@ -1257,11 +1257,11 @@ rectangle {
 	}
 	command[0] {
 		label="Terminal"
-		name="./xfel_qt.sh LUXGPAC1MDIBPM2 BPM_GPAC_CAV_SMP_single.ui &"
+		name="./xfel_qt.sh 3FLFDIAG BPM_GPAC_CAV_SMP_single.ui &"
 	}
 	clr=14
 	bclr=57
-	label="-FLASHFGPACDIAG1BPM2"
+	label="-3FLFDIAG"
 }
 rectangle {
 	object {
@@ -1276,7 +1276,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="FLASHFGPACDIAG1BPM2:S7GPAC-STATUS"
+		chan="3FLFDIAG:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1292,6 +1292,6 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="FLASHFGPACDIAG1BPM2:S7GPAC-STATUS"
+		chan="3FLFDIAG:S7GPAC-STATUS"
 	}
 }
