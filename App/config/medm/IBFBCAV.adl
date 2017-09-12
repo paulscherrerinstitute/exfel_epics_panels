@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=1672
-		y=723
+		x=92
+		y=339
 		width=1000
-		height=300
+		height=400
 	}
 	clr=14
 	bclr=4
@@ -1937,4 +1937,77 @@ text {
 	}
 	textix="Downstream X"
 	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=285
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SASE 1"
+	align="horiz. right"
+}
+"shell command" {
+	object {
+		x=90
+		y=280
+		width=80
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh BPMI-2241-SA1 BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMI-2241-SA1"
+}
+"shell command" {
+	object {
+		x=175
+		y=280
+		width=80
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh BPMI-2247-SA1 BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMI-2247-SA1"
+}
+"shell command" {
+	object {
+		x=90
+		y=300
+		width=80
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh BPMI-2253-SA1 BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMI-2253-SA1"
+}
+"shell command" {
+	object {
+		x=175
+		y=300
+		width=80
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh BPMI-2259-SA1 BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMI-2259-SA1"
 }

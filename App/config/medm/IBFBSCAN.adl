@@ -338,7 +338,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-KICKER"
+		chan="$(DEV):$(PLANE)-FF-SCAN-KICKER"
 		clr=14
 		bclr=4
 	}
@@ -354,7 +354,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-ITERATION"
+		chan="$(DEV):$(PLANE)-FF-SCAN-ITERATION"
 		clr=14
 		bclr=4
 	}
@@ -370,7 +370,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-FF-SCAN-POINT"
+		chan="$(DEV):$(PLANE)-FF-SCAN-POINT"
 		clr=14
 		bclr=4
 	}

@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=42
-		y=323
+		x=29
+		y=632
 		width=700
 		height=470
 	}
@@ -3667,7 +3667,7 @@ rectangle {
 		bclr=40
 	}
 	label="BPMD-2121-TLD"
-	press_msg="xfelgpac1dixs1ug3tld:51237#BPMD-2121-TLD"
+	press_msg="xfelgpac1dixs1ug3tld:51235#BPMD2121TLD"
 }
 "message button" {
 	object {
@@ -3682,7 +3682,7 @@ rectangle {
 		bclr=40
 	}
 	label="BPMW-2126-TLD"
-	press_msg="xfelgpac1dixs1ug3tld:51238#BPMW-2126-TLD"
+	press_msg="xfelgpac1dixs1ug3tld:51236#BPMW2126TLD"
 }
 "message button" {
 	object {
