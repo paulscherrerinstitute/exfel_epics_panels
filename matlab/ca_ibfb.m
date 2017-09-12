@@ -1176,7 +1176,7 @@ classdef ca_ibfb < handle
             k(2) = obj.ctrl.x_fb_kicker_m12.get();
             k(3) = obj.ctrl.x_fb_kicker_m21.get();
             k(4) = obj.ctrl.x_fb_kicker_m22.get();        
-            k = k./max(k);
+            k = k./max(abs(k));
             obj.ctrl.x_fb_kicker_m11.put(single(k(1)));
             obj.ctrl.x_fb_kicker_m12.put(single(k(2)));
             obj.ctrl.x_fb_kicker_m21.put(single(k(3)));
@@ -1187,7 +1187,7 @@ classdef ca_ibfb < handle
             k(2) = obj.ctrl.y_fb_kicker_m12.get();
             k(3) = obj.ctrl.y_fb_kicker_m21.get();
             k(4) = obj.ctrl.y_fb_kicker_m22.get();        
-            k = k./max(k);
+            k = k./max(abs(k));
             obj.ctrl.y_fb_kicker_m11.put(single(k(1)));
             obj.ctrl.y_fb_kicker_m12.put(single(k(2)));
             obj.ctrl.y_fb_kicker_m21.put(single(k(3)));
