@@ -8,7 +8,7 @@ display {
 		x=81
 		y=333
 		width=600
-		height=250
+		height=320
 	}
 	clr=14
 	bclr=4
@@ -907,5 +907,391 @@ rectangle {
 		vis="calc"
 		calc="A=1"
 		chan="LUXGPAC1MDIBPM2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=0
+		y=245
+		width=600
+		height=20
+	}
+	"basic attribute" {
+		clr=9
+	}
+}
+text {
+	object {
+		x=265
+		y=250
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="FLASH Forward"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=245
+		width=601
+		height=2
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(1,246)
+		(600,246)
+	}
+}
+"shell command" {
+	object {
+		x=280
+		y=270
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh 11FLFMAFF BPM_GPAC_CAV_SMP_single.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-11FLFMAFF"
+}
+"related display" {
+	object {
+		x=5
+		y=270
+		width=100
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=FLASHFGPACMAFF"
+	}
+	clr=14
+	bclr=57
+	label="-FLASHFGPACMAFF"
+}
+rectangle {
+	object {
+		x=170
+		y=270
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="FLASHFGPACMAFF:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=170
+		y=270
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="FLASHFGPACMAFF:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=105
+		y=270
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=FLASHFGPACMAFF"
+	}
+	clr=14
+	bclr=57
+	label="-Timing"
+}
+rectangle {
+	object {
+		x=410
+		y=270
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="11FLFMAFF:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=410
+		y=270
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="11FLFMAFF:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=175
+		y=270
+		width=100
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T flashfgpacmaff -bg rgb:40/A0/90 -e telnet -l root flashfgpacmaff &"
+	}
+	clr=14
+	bclr=57
+	label="-flashfgpacmaff"
+}
+"shell command" {
+	object {
+		x=415
+		y=270
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh 14FLFMAFF BPM_GPAC_CAV_SMP_single.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-14FLFMAFF"
+}
+rectangle {
+	object {
+		x=545
+		y=270
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="14FLFMAFF:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=545
+		y=270
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="14FLFMAFF:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=280
+		y=290
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh 1FLFDIAG BPM_GPAC_CAV_SMP_single.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-1FLFDIAG"
+}
+"related display" {
+	object {
+		x=5
+		y=290
+		width=100
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=FLASHFGPACDIAG1"
+	}
+	clr=14
+	bclr=57
+	label="-FLASHFGPACDIAG1"
+}
+rectangle {
+	object {
+		x=170
+		y=290
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="FLASHFGPACDIAG1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=170
+		y=290
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="FLASHFGPACDIAG1:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=105
+		y=290
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=FLASHFGPACDIAG1"
+	}
+	clr=14
+	bclr=57
+	label="-Timing"
+}
+rectangle {
+	object {
+		x=410
+		y=290
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="1FLFDIAG:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=410
+		y=290
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="1FLFDIAG:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=175
+		y=290
+		width=100
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T flashfgpacdiag1 -bg rgb:40/A0/90 -e telnet -l root flashfgpacdiag1 &"
+	}
+	clr=14
+	bclr=57
+	label="-flashfgpacdiag1"
+}
+"shell command" {
+	object {
+		x=415
+		y=290
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh 3FLFDIAG BPM_GPAC_CAV_SMP_single.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-3FLFDIAG"
+}
+rectangle {
+	object {
+		x=545
+		y=290
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="3FLFDIAG:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=545
+		y=290
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="3FLFDIAG:S7GPAC-STATUS"
 	}
 }
