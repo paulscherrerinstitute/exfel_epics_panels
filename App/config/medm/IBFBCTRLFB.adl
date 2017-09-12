@@ -1,6 +1,6 @@
 
 file {
-	name="/xfel/controls/App/config/medm/IBFBCTRLFB.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCTRLFB.adl"
 	version=030105
 }
 display {
@@ -676,7 +676,7 @@ rectangle {
 "choice button" {
 	object {
 		x=145
-		y=720
+		y=740
 		width=100
 		height=15
 	}
@@ -1265,7 +1265,7 @@ text {
 text {
 	object {
 		x=275
-		y=745
+		y=765
 		width=90
 		height=15
 	}
@@ -1278,7 +1278,7 @@ text {
 "wheel switch" {
 	object {
 		x=370
-		y=735
+		y=755
 		width=60
 		height=30
 	}
@@ -1293,7 +1293,7 @@ text {
 "wheel switch" {
 	object {
 		x=370
-		y=705
+		y=725
 		width=60
 		height=30
 	}
@@ -1308,7 +1308,7 @@ text {
 text {
 	object {
 		x=275
-		y=715
+		y=735
 		width=90
 		height=10
 	}
@@ -1964,7 +1964,7 @@ rectangle {
 "wheel switch" {
 	object {
 		x=630
-		y=735
+		y=755
 		width=55
 		height=30
 	}
@@ -1979,7 +1979,7 @@ rectangle {
 "choice button" {
 	object {
 		x=440
-		y=720
+		y=740
 		width=100
 		height=15
 	}
@@ -1993,7 +1993,7 @@ rectangle {
 "wheel switch" {
 	object {
 		x=630
-		y=705
+		y=725
 		width=55
 		height=30
 	}
@@ -2436,7 +2436,7 @@ polyline {
 byte {
 	object {
 		x=440
-		y=790
+		y=810
 		width=20
 		height=45
 	}
@@ -2451,7 +2451,7 @@ byte {
 text {
 	object {
 		x=465
-		y=790
+		y=810
 		width=120
 		height=10
 	}
@@ -2463,7 +2463,7 @@ text {
 text {
 	object {
 		x=465
-		y=820
+		y=840
 		width=120
 		height=10
 	}
@@ -2475,7 +2475,7 @@ text {
 text {
 	object {
 		x=465
-		y=805
+		y=825
 		width=120
 		height=10
 	}
@@ -2906,7 +2906,7 @@ polyline {
 byte {
 	object {
 		x=140
-		y=790
+		y=810
 		width=20
 		height=45
 	}
@@ -2921,7 +2921,7 @@ byte {
 text {
 	object {
 		x=165
-		y=790
+		y=810
 		width=120
 		height=10
 	}
@@ -2933,7 +2933,7 @@ text {
 text {
 	object {
 		x=165
-		y=820
+		y=840
 		width=120
 		height=10
 	}
@@ -2945,7 +2945,7 @@ text {
 text {
 	object {
 		x=165
-		y=805
+		y=825
 		width=120
 		height=10
 	}
@@ -4500,7 +4500,7 @@ text {
 polyline {
 	object {
 		x=0
-		y=640
+		y=660
 		width=685
 		height=0
 	}
@@ -4508,8 +4508,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(0,640)
-		(685,640)
+		(0,660)
+		(685,660)
 	}
 }
 text {
@@ -4627,7 +4627,7 @@ text {
 menu {
 	object {
 		x=140
-		y=490
+		y=450
 		width=90
 		height=20
 	}
@@ -4640,7 +4640,7 @@ menu {
 menu {
 	object {
 		x=440
-		y=490
+		y=455
 		width=90
 		height=20
 	}
@@ -4937,7 +4937,7 @@ text {
 "text entry" {
 	object {
 		x=390
-		y=680
+		y=700
 		width=40
 		height=15
 	}
@@ -4952,7 +4952,7 @@ text {
 "text entry" {
 	object {
 		x=390
-		y=660
+		y=680
 		width=40
 		height=15
 	}
@@ -4967,7 +4967,7 @@ text {
 text {
 	object {
 		x=375
-		y=645
+		y=665
 		width=40
 		height=10
 	}
@@ -4980,7 +4980,7 @@ text {
 text {
 	object {
 		x=365
-		y=660
+		y=680
 		width=20
 		height=10
 	}
@@ -4993,7 +4993,7 @@ text {
 byte {
 	object {
 		x=140
-		y=835
+		y=855
 		width=20
 		height=60
 	}
@@ -5009,7 +5009,7 @@ byte {
 text {
 	object {
 		x=165
-		y=837
+		y=857
 		width=120
 		height=10
 	}
@@ -5021,7 +5021,7 @@ text {
 text {
 	object {
 		x=165
-		y=852
+		y=872
 		width=120
 		height=10
 	}
@@ -5033,7 +5033,7 @@ text {
 text {
 	object {
 		x=165
-		y=882
+		y=902
 		width=120
 		height=10
 	}
@@ -5045,7 +5045,7 @@ text {
 text {
 	object {
 		x=165
-		y=867
+		y=887
 		width=120
 		height=10
 	}
@@ -5477,7 +5477,7 @@ polyline {
 text {
 	object {
 		x=440
-		y=470
+		y=440
 		width=90
 		height=10
 	}
@@ -5670,7 +5670,7 @@ text {
 text {
 	object {
 		x=140
-		y=470
+		y=435
 		width=90
 		height=10
 	}
@@ -5743,7 +5743,7 @@ text {
 byte {
 	object {
 		x=440
-		y=835
+		y=855
 		width=20
 		height=60
 	}
@@ -5759,7 +5759,7 @@ byte {
 text {
 	object {
 		x=465
-		y=837
+		y=857
 		width=120
 		height=10
 	}
@@ -5771,7 +5771,7 @@ text {
 text {
 	object {
 		x=465
-		y=852
+		y=872
 		width=120
 		height=10
 	}
@@ -5783,7 +5783,7 @@ text {
 text {
 	object {
 		x=465
-		y=882
+		y=902
 		width=120
 		height=10
 	}
@@ -5795,7 +5795,7 @@ text {
 text {
 	object {
 		x=465
-		y=867
+		y=887
 		width=120
 		height=10
 	}
@@ -5836,7 +5836,7 @@ text {
 text {
 	object {
 		x=140
-		y=645
+		y=665
 		width=40
 		height=10
 	}
@@ -5849,7 +5849,7 @@ text {
 "choice button" {
 	object {
 		x=140
-		y=660
+		y=680
 		width=40
 		height=30
 	}
@@ -5862,7 +5862,7 @@ text {
 text {
 	object {
 		x=140
-		y=705
+		y=725
 		width=90
 		height=10
 	}
@@ -5875,7 +5875,7 @@ text {
 polyline {
 	object {
 		x=0
-		y=784
+		y=804
 		width=685
 		height=0
 	}
@@ -5883,14 +5883,14 @@ polyline {
 		clr=0
 	}
 	points {
-		(0,784)
-		(685,784)
+		(0,804)
+		(685,804)
 	}
 }
 text {
 	object {
 		x=365
-		y=680
+		y=700
 		width=20
 		height=10
 	}
@@ -5903,7 +5903,7 @@ text {
 "text entry" {
 	object {
 		x=640
-		y=680
+		y=700
 		width=40
 		height=15
 	}
@@ -5918,7 +5918,7 @@ text {
 "text entry" {
 	object {
 		x=640
-		y=660
+		y=680
 		width=40
 		height=15
 	}
@@ -5933,7 +5933,7 @@ text {
 text {
 	object {
 		x=625
-		y=645
+		y=665
 		width=40
 		height=10
 	}
@@ -5946,7 +5946,7 @@ text {
 text {
 	object {
 		x=615
-		y=658
+		y=678
 		width=20
 		height=10
 	}
@@ -5959,7 +5959,7 @@ text {
 text {
 	object {
 		x=615
-		y=678
+		y=698
 		width=20
 		height=10
 	}
@@ -5972,7 +5972,7 @@ text {
 text {
 	object {
 		x=535
-		y=745
+		y=765
 		width=90
 		height=15
 	}
@@ -5985,7 +5985,7 @@ text {
 text {
 	object {
 		x=535
-		y=715
+		y=735
 		width=90
 		height=10
 	}
@@ -5998,7 +5998,7 @@ text {
 text {
 	object {
 		x=440
-		y=645
+		y=665
 		width=40
 		height=10
 	}
@@ -6011,7 +6011,7 @@ text {
 "choice button" {
 	object {
 		x=440
-		y=660
+		y=680
 		width=40
 		height=30
 	}
@@ -6024,7 +6024,7 @@ text {
 text {
 	object {
 		x=440
-		y=705
+		y=725
 		width=90
 		height=10
 	}
@@ -6037,7 +6037,7 @@ text {
 text {
 	object {
 		x=15
-		y=700
+		y=720
 		width=100
 		height=10
 	}
@@ -6107,7 +6107,7 @@ text {
 text {
 	object {
 		x=190
-		y=645
+		y=665
 		width=90
 		height=10
 	}
@@ -6120,7 +6120,7 @@ text {
 menu {
 	object {
 		x=190
-		y=660
+		y=680
 		width=92
 		height=20
 	}
@@ -6158,22 +6158,6 @@ text {
 	align="horiz. right"
 	limits {
 	}
-}
-"message button" {
-	object {
-		x=190
-		y=680
-		width=92
-		height=15
-	}
-	control {
-		chan="$(DEV):Y-FB-CMD"
-		clr=14
-		bclr=4
-	}
-	label="Apply tables"
-	press_msg="8"
-	release_msg="0"
 }
 text {
 	object {
@@ -7775,7 +7759,7 @@ text {
 "text update" {
 	object {
 		x=285
-		y=680
+		y=685
 		width=20
 		height=10
 	}
@@ -7837,7 +7821,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-BPM1-UP-POS-WAV"
+		chan="$(DEV):Y-BPM1-UP-POS-NTH"
 		clr=14
 		bclr=4
 	}
@@ -7853,7 +7837,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-BPM2-UP-POS-WAV"
+		chan="$(DEV):Y-BPM2-UP-POS-NTH"
 		clr=14
 		bclr=4
 	}
@@ -7869,7 +7853,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-BPM1-DOWN-POS-WAV"
+		chan="$(DEV):Y-BPM1-DOWN-POS-NTH"
 		clr=14
 		bclr=4
 	}
@@ -7885,7 +7869,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-BPM2-DOWN-POS-WAV"
+		chan="$(DEV):Y-BPM2-DOWN-POS-NTH"
 		clr=14
 		bclr=4
 	}
@@ -7901,7 +7885,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):X-BPM2-UP-POS-WAV"
+		chan="$(DEV):X-BPM2-UP-POS-NTH"
 		clr=14
 		bclr=4
 	}
@@ -7917,7 +7901,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):X-BPM1-UP-POS-WAV"
+		chan="$(DEV):X-BPM1-UP-POS-NTH"
 		clr=14
 		bclr=4
 	}
@@ -7933,7 +7917,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):X-BPM1-DOWN-POS-WAV"
+		chan="$(DEV):X-BPM1-DOWN-POS-NTH"
 		clr=14
 		bclr=4
 	}
@@ -7949,7 +7933,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):X-BPM2-DOWN-POS-WAV"
+		chan="$(DEV):X-BPM2-DOWN-POS-NTH"
 		clr=14
 		bclr=4
 	}
@@ -7965,7 +7949,7 @@ text {
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-COL-POS-WAV"
+		chan="$(DEV):Y-BPM-COL-POS-NTH"
 		clr=14
 		bclr=4
 	}
@@ -7976,12 +7960,12 @@ text {
 "text update" {
 	object {
 		x=250
-		y=770
+		y=790
 		width=40
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-KICK1-WAV"
+		chan="$(DEV):Y-KICK1-NTH"
 		clr=14
 		bclr=4
 	}
@@ -7992,7 +7976,7 @@ text {
 text {
 	object {
 		x=180
-		y=770
+		y=790
 		width=60
 		height=10
 	}
@@ -8005,7 +7989,7 @@ text {
 text {
 	object {
 		x=315
-		y=770
+		y=790
 		width=60
 		height=10
 	}
@@ -8018,12 +8002,12 @@ text {
 "text update" {
 	object {
 		x=385
-		y=770
+		y=790
 		width=40
 		height=10
 	}
 	monitor {
-		chan="$(DEV):Y-KICK2-WAV"
+		chan="$(DEV):Y-KICK2-NTH"
 		clr=14
 		bclr=4
 	}
@@ -8034,12 +8018,12 @@ text {
 "text update" {
 	object {
 		x=510
-		y=770
+		y=790
 		width=40
 		height=10
 	}
 	monitor {
-		chan="$(DEV):X-KICK1-WAV"
+		chan="$(DEV):X-KICK1-NTH"
 		clr=14
 		bclr=4
 	}
@@ -8050,7 +8034,7 @@ text {
 text {
 	object {
 		x=440
-		y=770
+		y=790
 		width=60
 		height=10
 	}
@@ -8063,7 +8047,7 @@ text {
 text {
 	object {
 		x=570
-		y=770
+		y=790
 		width=60
 		height=10
 	}
@@ -8076,12 +8060,12 @@ text {
 "text update" {
 	object {
 		x=640
-		y=770
+		y=790
 		width=40
 		height=10
 	}
 	monitor {
-		chan="$(DEV):X-KICK2-WAV"
+		chan="$(DEV):X-KICK2-NTH"
 		clr=14
 		bclr=4
 	}
@@ -8260,7 +8244,7 @@ text {
 "text update" {
 	object {
 		x=390
-		y=660
+		y=680
 		width=40
 		height=10
 	}
@@ -8276,7 +8260,7 @@ text {
 "text update" {
 	object {
 		x=390
-		y=680
+		y=700
 		width=40
 		height=10
 	}
@@ -8292,7 +8276,7 @@ text {
 "text update" {
 	object {
 		x=640
-		y=680
+		y=700
 		width=40
 		height=10
 	}
@@ -8308,7 +8292,7 @@ text {
 "text update" {
 	object {
 		x=640
-		y=660
+		y=680
 		width=40
 		height=10
 	}
@@ -8363,7 +8347,7 @@ polyline {
 polyline {
 	object {
 		x=0
-		y=700
+		y=720
 		width=685
 		height=0
 	}
@@ -8371,14 +8355,14 @@ polyline {
 		clr=0
 	}
 	points {
-		(0,700)
-		(685,700)
+		(0,720)
+		(685,720)
 	}
 }
 text {
 	object {
 		x=15
-		y=665
+		y=685
 		width=100
 		height=10
 	}
@@ -8391,7 +8375,7 @@ text {
 text {
 	object {
 		x=10
-		y=790
+		y=810
 		width=100
 		height=10
 	}
@@ -8431,7 +8415,7 @@ text {
 text {
 	object {
 		x=485
-		y=645
+		y=665
 		width=90
 		height=10
 	}
@@ -8444,7 +8428,7 @@ text {
 menu {
 	object {
 		x=485
-		y=660
+		y=680
 		width=92
 		height=20
 	}
@@ -8454,26 +8438,10 @@ menu {
 		bclr=4
 	}
 }
-"message button" {
-	object {
-		x=485
-		y=680
-		width=92
-		height=15
-	}
-	control {
-		chan="$(DEV):X-FB-CMD"
-		clr=14
-		bclr=4
-	}
-	label="Apply tables"
-	press_msg="8"
-	release_msg="0"
-}
 "text update" {
 	object {
 		x=580
-		y=680
+		y=685
 		width=20
 		height=10
 	}
@@ -8484,5 +8452,173 @@ menu {
 	}
 	align="horiz. right"
 	limits {
+	}
+}
+"text update" {
+	object {
+		x=290
+		y=265
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-BPM1-SASE-POS-NTH"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=290
+		y=285
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-BPM2-SASE-POS-NTH"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=590
+		y=265
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-BPM1-SASE-POS-NTH"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=590
+		y=285
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-BPM2-SASE-POS-NTH"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=140
+		y=480
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SP Table Mode"
+	align="horiz. centered"
+}
+menu {
+	object {
+		x=140
+		y=495
+		width=92
+		height=20
+	}
+	control {
+		chan="$(DEV):Y-TAB-SP-MODE"
+		clr=14
+		bclr=4
+	}
+}
+text {
+	object {
+		x=440
+		y=480
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SP Table Mode"
+	align="horiz. centered"
+}
+menu {
+	object {
+		x=440
+		y=495
+		width=92
+		height=20
+	}
+	control {
+		chan="$(DEV):X-TAB-SP-MODE"
+		clr=14
+		bclr=4
+	}
+}
+text {
+	object {
+		x=165
+		y=645
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Gain Table Mode"
+	align="horiz. centered"
+}
+menu {
+	object {
+		x=260
+		y=640
+		width=92
+		height=20
+	}
+	control {
+		chan="$(DEV):Y-TAB-GAIN-MODE"
+		clr=14
+		bclr=4
+	}
+}
+text {
+	object {
+		x=465
+		y=645
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Gain Table Mode"
+	align="horiz. centered"
+}
+menu {
+	object {
+		x=560
+		y=640
+		width=92
+		height=20
+	}
+	control {
+		chan="$(DEV):X-TAB-GAIN-MODE"
+		clr=14
+		bclr=4
 	}
 }

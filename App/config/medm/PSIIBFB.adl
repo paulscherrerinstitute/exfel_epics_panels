@@ -1641,3 +1641,19 @@ text {
 	}
 	textix="IBFBMON2"
 }
+"related display" {
+	object {
+		x=5
+		y=305
+		width=140
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="IBFBOPER.adl"
+		args="DEV=IBFBCTRL"
+	}
+	clr=14
+	bclr=57
+	label="-IBFB Operation"
+}
