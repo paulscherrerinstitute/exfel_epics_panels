@@ -1,12 +1,12 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCTRLFB.adl"
+	name="/xfel/controls/App/config/medm/IBFBCTRLFB.adl"
 	version=030105
 }
 display {
 	object {
-		x=2759
-		y=379
+		x=99
+		y=60
 		width=1020
 		height=920
 	}
@@ -700,10 +700,10 @@ rectangle {
 }
 text {
 	object {
-		x=0
-		y=5
-		width=960
-		height=20
+		x=340
+		y=6
+		width=260
+		height=23
 	}
 	"basic attribute" {
 		clr=14
@@ -2441,7 +2441,7 @@ byte {
 		height=45
 	}
 	monitor {
-		chan="$(DEV):Y-FB-ERROR"
+		chan="$(DEV):X-FB-ERROR"
 		clr=20
 		bclr=4
 	}
@@ -2911,7 +2911,7 @@ byte {
 		height=45
 	}
 	monitor {
-		chan="$(DEV):X-FB-ERROR"
+		chan="$(DEV):Y-FB-ERROR"
 		clr=20
 		bclr=4
 	}
@@ -8396,7 +8396,7 @@ menu {
 }
 "text update" {
 	object {
-		x=290
+		x=340
 		y=265
 		width=40
 		height=10
@@ -8412,7 +8412,7 @@ menu {
 }
 "text update" {
 	object {
-		x=290
+		x=340
 		y=285
 		width=40
 		height=10
@@ -8426,10 +8426,9 @@ menu {
 	limits {
 	}
 }
-<<<<<<< HEAD
 "text update" {
 	object {
-		x=590
+		x=640
 		y=265
 		width=40
 		height=10
@@ -8445,7 +8444,7 @@ menu {
 }
 "text update" {
 	object {
-		x=590
+		x=640
 		y=285
 		width=40
 		height=10
@@ -8539,23 +8538,13 @@ menu {
 }
 text {
 	object {
-		x=465
-		y=645
-		width=90
-=======
-"wheel switch" {
-	object {
 		x=140
 		y=520
 		width=60
 		height=30
 	}
-	control {
-		chan="$(DEV):Y-FB-SP-POS"
-		clr=14
-		bclr=4
-	}
-	limits {
+	"basic attribute" {
+		clr=0
 	}
 }
 "wheel switch" {
@@ -8603,19 +8592,6 @@ text {
 	limits {
 	}
 }
-text {
-	object {
-		x=535
-		y=562
-		width=40
-		height=10
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="Gain Table Mode"
-	align="horiz. centered"
-}
 menu {
 	object {
 		x=560
@@ -8628,4 +8604,143 @@ menu {
 		clr=14
 		bclr=4
 	}
+}
+"text entry" {
+	object {
+		x=540
+		y=573
+		width=40
+		height=15
+	}
+	control {
+		chan="$(DEV):X-FB-I-SMP-SHIFT"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=540
+		y=561
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="I Shift"
+}
+text {
+	object {
+		x=470
+		y=645
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Gain Table Mode"
+	align="horiz. centered"
+}
+"wheel switch" {
+	object {
+		x=145
+		y=520
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):Y-FB-SP-POS"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+menu {
+	object {
+		x=620
+		y=5
+		width=90
+		height=20
+	}
+	control {
+		chan="$(DEV):ARCHIVER-STATE"
+		clr=14
+		bclr=4
+	}
+}
+"text entry" {
+	object {
+		x=715
+		y=5
+		width=300
+		height=20
+	}
+	control {
+		chan="$(DEV):ARCHIVER-DESCRIPTION"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"wheel switch" {
+	object {
+		x=270
+		y=265
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):Y-BUCKET-SEL"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=240
+		y=275
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Nth"
+	align="horiz. centered"
+}
+"wheel switch" {
+	object {
+		x=570
+		y=265
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):X-BUCKET-SEL"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=540
+		y=275
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Nth"
+	align="horiz. centered"
 }
