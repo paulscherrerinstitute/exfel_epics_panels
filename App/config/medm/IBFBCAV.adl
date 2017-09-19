@@ -6,7 +6,7 @@ file {
 display {
 	object {
 		x=3
-		y=365
+		y=639
 		width=1000
 		height=400
 	}
@@ -861,8 +861,8 @@ polyline {
 		clr=14
 		bclr=57
 	}
-	label="BPMI-1860-TL"
-	press_msg="xfelgpac1di1899tl:51236#BPMI-1860-TL"
+	label="BPMI-1878-TL"
+	press_msg="xfelgpac1di1899tl:51236#BPMI-1878-TL"
 }
 "message button" {
 	object {
@@ -876,8 +876,8 @@ polyline {
 		clr=14
 		bclr=57
 	}
-	label="BPMI-1878-TL"
-	press_msg="xfelgpac1di1899tl:51238#BPMI-1878-TL"
+	label="BPMI-1860-TL"
+	press_msg="xfelgpac1di1899tl:51238#BPMI-1860-TL"
 }
 "message button" {
 	object {
@@ -891,8 +891,8 @@ polyline {
 		clr=14
 		bclr=57
 	}
-	label="BPMI-1910-TL"
-	press_msg="xfelgpac2di1899tl:51236#BPMI-1910-TL"
+	label="BPMI-1930-TL"
+	press_msg="xfelgpac2di1899tl:51236#BPMI-1930-TL"
 }
 "message button" {
 	object {
@@ -906,8 +906,8 @@ polyline {
 		clr=14
 		bclr=57
 	}
-	label="BPMI-1930-TL"
-	press_msg="xfelgpac2di1899tl:51238#BPMI-1930-TL"
+	label="BPMI-1910-TL"
+	press_msg="xfelgpac2di1899tl:51238#BPMI-1910-TL"
 }
 "related display" {
 	object {
@@ -1173,8 +1173,8 @@ rectangle {
 		clr=14
 		bclr=57
 	}
-	label="BPMI-1863-TL"
-	press_msg="xfelgpac3di1899tl:51236#BPMI-1863-TL"
+	label="BPMI-1889-TL"
+	press_msg="xfelgpac3di1899tl:51236#BPMI-1889-TL"
 }
 "message button" {
 	object {
@@ -1188,8 +1188,8 @@ rectangle {
 		clr=14
 		bclr=57
 	}
-	label="BPMI-1925-TL"
-	press_msg="xfelgpac4di1899tl:51236#BPMI-1925-TL"
+	label="BPMI-1939-TL"
+	press_msg="xfelgpac4di1899tl:51236#BPMI-1939-TL"
 }
 "message button" {
 	object {
@@ -1203,8 +1203,8 @@ rectangle {
 		clr=14
 		bclr=57
 	}
-	label="BPMI-1889-TL"
-	press_msg="xfelgpac3di1899tl:51238#BPMI-1889-TL"
+	label="BPMI-1863-TL"
+	press_msg="xfelgpac3di1899tl:51238#BPMI-1863-TL"
 }
 "message button" {
 	object {
@@ -1218,8 +1218,8 @@ rectangle {
 		clr=14
 		bclr=57
 	}
-	label="BPMI-1939-TL"
-	press_msg="xfelgpac4di1899tl:51238#BPMI-1939-TL"
+	label="BPMI-1925-TL"
+	press_msg="xfelgpac4di1899tl:51238#BPMI-1925-TL"
 }
 text {
 	object {
