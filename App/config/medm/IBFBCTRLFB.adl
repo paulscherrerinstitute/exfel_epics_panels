@@ -1,12 +1,12 @@
 
 file {
-	name="/xfel/controls/App/config/medm/IBFBCTRLFB.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCTRLFB.adl"
 	version=030105
 }
 display {
 	object {
-		x=99
-		y=60
+		x=157
+		y=138
 		width=1020
 		height=920
 	}
@@ -7670,7 +7670,7 @@ rectangle {
 }
 text {
 	object {
-		x=295
+		x=270
 		y=610
 		width=80
 		height=10
@@ -7899,8 +7899,8 @@ text {
 }
 "text update" {
 	object {
-		x=250
-		y=790
+		x=220
+		y=760
 		width=40
 		height=10
 	}
@@ -7915,8 +7915,8 @@ text {
 }
 text {
 	object {
-		x=180
-		y=790
+		x=150
+		y=760
 		width=60
 		height=10
 	}
@@ -7928,21 +7928,21 @@ text {
 }
 text {
 	object {
-		x=315
-		y=790
+		x=150
+		y=775
 		width=60
 		height=10
 	}
 	"basic attribute" {
 		clr=0
 	}
-	textix="KICK1-OUT"
+	textix="KICK2-OUT"
 	align="horiz. right"
 }
 "text update" {
 	object {
-		x=385
-		y=790
+		x=220
+		y=775
 		width=40
 		height=10
 	}
@@ -7957,8 +7957,8 @@ text {
 }
 "text update" {
 	object {
-		x=510
-		y=790
+		x=505
+		y=760
 		width=40
 		height=10
 	}
@@ -7974,7 +7974,7 @@ text {
 text {
 	object {
 		x=440
-		y=790
+		y=760
 		width=60
 		height=10
 	}
@@ -7986,8 +7986,8 @@ text {
 }
 text {
 	object {
-		x=570
-		y=790
+		x=440
+		y=775
 		width=60
 		height=10
 	}
@@ -7999,8 +7999,8 @@ text {
 }
 "text update" {
 	object {
-		x=640
-		y=790
+		x=505
+		y=775
 		width=40
 		height=10
 	}
@@ -8043,7 +8043,7 @@ text {
 }
 "wheel switch" {
 	object {
-		x=640
+		x=660
 		y=575
 		width=60
 		height=30
@@ -8058,7 +8058,7 @@ text {
 }
 "wheel switch" {
 	object {
-		x=580
+		x=590
 		y=575
 		width=60
 		height=30
@@ -8073,7 +8073,7 @@ text {
 }
 text {
 	object {
-		x=580
+		x=590
 		y=560
 		width=60
 		height=10
@@ -8086,7 +8086,7 @@ text {
 }
 text {
 	object {
-		x=640
+		x=660
 		y=560
 		width=60
 		height=10
@@ -8100,7 +8100,7 @@ text {
 text {
 	object {
 		x=560
-		y=616
+		y=610
 		width=80
 		height=10
 	}
@@ -8112,8 +8112,8 @@ text {
 }
 "text update" {
 	object {
-		x=380
-		y=613
+		x=285
+		y=625
 		width=40
 		height=10
 	}
@@ -8140,8 +8140,8 @@ text {
 }
 "text update" {
 	object {
-		x=645
-		y=615
+		x=580
+		y=625
 		width=40
 		height=10
 	}
@@ -8743,4 +8743,176 @@ text {
 	}
 	textix="Nth"
 	align="horiz. centered"
+}
+text {
+	object {
+		x=365
+		y=605
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="FB Kd"
+	align="horiz. centered"
+}
+"wheel switch" {
+	object {
+		x=365
+		y=620
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):Y-FB-FAST-KD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"wheel switch" {
+	object {
+		x=660
+		y=620
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):X-FB-FAST-KD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=660
+		y=605
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="FB Kd"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=150
+		y=790
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK1-MEAN"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=220
+		y=790
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-KICK1-OUT-MEAN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=295
+		y=790
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK2-MEAN"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=365
+		y=790
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-KICK2-OUT-MEAN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=440
+		y=790
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK1-MEAN"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=505
+		y=790
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-KICK1-OUT-MEAN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=570
+		y=790
+		width=60
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK2-MEAN"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=640
+		y=790
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-KICK2-OUT-MEAN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
 }
