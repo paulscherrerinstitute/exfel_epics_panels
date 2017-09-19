@@ -862,6 +862,58 @@ classdef ca_ibfb < handle
       end
     end
     
+    function [res] = ctrl_gain_table_generate(obj, plane)
+      res = 0;
+      tsize=256;
+      gain_tab = zeros(2, 2708);
+      gain_tab(1,1:tsize) = linspace(2,0,tsize);
+      gain_tab(2,1:tsize) = linspace(1,0,tsize);
+      
+      if strcmp(plane, 'Y') || strcmp(plane, 'XY')      
+        obj.ctrl.y_ff_table_pos.put(single(gain_tab(1,1:tsize))); 
+        obj.ctrl.y_ff_table_angle.put(single(gain_tab(2,1:tsize))); 
+        pause(2);
+        obj.ctrl.y_fb_cmd.put(uint32(9));
+        pause(2);
+        obj.ctrl.y_fb_cmd.put(uint32(0));
+      end
+      
+      if strcmp(plane, 'X') || strcmp(plane, 'XY')      
+        obj.ctrl.x_ff_table_pos.put(single(gain_tab(1,1:tsize))); 
+        obj.ctrl.x_ff_table_angle.put(single(gain_tab(2,1:tsize))); 
+        pause(2);
+        obj.ctrl.x_fb_cmd.put(uint8(9));
+        pause(2);
+        obj.ctrl.x_fb_cmd.put(uint8(0));
+      end      
+    end
+    
+    function [res] = ctrl_sp_table_generate(obj, plane)
+      res = 0;
+      tsize=256;
+      ctrltab = zeros(2, 2708);
+      ctrltab(1,1:tsize) = linspace(0.1,0.3,tsize);
+      ctrltab(2,1:tsize) = linspace(-0.2,-0.3,tsize);
+      
+      if strcmp(plane, 'Y') || strcmp(plane, 'XY')      
+        obj.ctrl.y_ff_table_pos.put(single(ctrltab(1,1:tsize))); 
+        obj.ctrl.y_ff_table_angle.put(single(ctrltab(2,1:tsize))); 
+        pause(2);
+        obj.ctrl.y_fb_cmd.put(uint32(10));
+        pause(2);
+        obj.ctrl.y_fb_cmd.put(uint32(0));
+      end
+      
+      if strcmp(plane, 'X') || strcmp(plane, 'XY')      
+        obj.ctrl.x_ff_table_pos.put(single(ctrltab(1,1:tsize))); 
+        obj.ctrl.x_ff_table_angle.put(single(ctrltab(2,1:tsize))); 
+        pause(2);
+        obj.ctrl.x_fb_cmd.put(uint8(10));
+        pause(2);
+        obj.ctrl.x_fb_cmd.put(uint8(0));
+      end      
+    end
+    
     function [res] = ctrl_ff_table_generate(obj, type, plane, kicker, amp, length)
       % [res] = ctrl_ff_table_generate(obj, type, plane, kicker, amplitude, length)
       %
