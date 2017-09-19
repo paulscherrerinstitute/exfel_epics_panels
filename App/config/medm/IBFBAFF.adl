@@ -259,3 +259,27 @@ text {
 	textix="Gain"
 	align="horiz. right"
 }
+text {
+	object {
+		x=280
+		y=50
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Iteration"
+}
+text {
+	object {
+		x=280
+		y=35
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Table reset"
+}
