@@ -665,7 +665,10 @@ classdef ca_ibfb < handle
     %% CONTROLLER FUNCTIONS
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    function [res, m] = ctrl_read_down_bpms(obj, plane)        
+    function [res, m] = ctrl_read_down_bpms(obj, plane, pl)        
+        %  Parameters:
+        %    plane - 'Y', 'X'
+        %    pl - plot results, 1-plot
         res = 0;
         n = 16;
         smp = 256;
@@ -685,6 +688,32 @@ classdef ca_ibfb < handle
             m.bpm1(i,:) = hbpm1.get();
             m.bpm2(i,:) = hbpm2.get();
             pause(0.3);
+        end
+        m.bucket_start = obj.ctrl.y_sase1_bucket_start.get();
+        m.bucket_stop  = obj.ctrl.y_sase1_bucket_stop.get();
+        m.bunch_space  = obj.ctrl.y_sase1_bunch_space.get();
+        m.bunch_num    = obj.ctrl.y_sase1_bunch_num.get();        
+        
+        if pl
+            bpm1p = m.bpm1(:, m.bucket_start+1:m.bunch_space:m.bucket_stop+1)';
+            bpm2p = m.bpm2(:, m.bucket_start+1:m.bunch_space:m.bucket_stop+1)';
+            clf
+            subplot(2,1,1)
+            plot(bpm1p);
+            hold on
+            plot(mean(bpm1p,2), 'k', 'LineWidth', 2);
+            grid on
+            title(['Plane ' plane ' - BPM1'])
+            xlabel('Bunch number');
+            ylabel('Position [mm]');
+            subplot(2,1,2)
+            plot(bpm2p);
+            hold on
+            plot(mean(bpm2p,2), 'k', 'LineWidth', 2);
+            grid on
+            title(['Plane ' plane ' - BPM2'])
+            xlabel('Bunch number');
+            ylabel('Position [mm]');
         end
         
     end
