@@ -1,12 +1,12 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/XFELIBFB.adl"
+	name="/xfel/controls/App/config/medm/XFELIBFB.adl"
 	version=030105
 }
 display {
 	object {
-		x=466
-		y=585
+		x=3
+		y=290
 		width=510
 		height=400
 	}
@@ -707,7 +707,7 @@ text {
 "related display" {
 	object {
 		x=5
-		y=255
+		y=280
 		width=140
 		height=20
 	}
@@ -738,7 +738,7 @@ text {
 "related display" {
 	object {
 		x=5
-		y=280
+		y=305
 		width=140
 		height=20
 	}
@@ -1640,4 +1640,36 @@ text {
 		clr=0
 	}
 	textix="IBFBMON2"
+}
+"related display" {
+	object {
+		x=5
+		y=255
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="IBFBAFF.adl"
+		args="DEV=IBFBCTRL,PLANE=Y"
+	}
+	clr=14
+	bclr=57
+	label="-AFF Y"
+}
+"related display" {
+	object {
+		x=80
+		y=255
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="IBFBAFF.adl"
+		args="DEV=IBFBCTRL,PLANE=X"
+	}
+	clr=14
+	bclr=57
+	label="-AFF X"
 }
