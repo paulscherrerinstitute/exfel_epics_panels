@@ -678,10 +678,15 @@ classdef ca_ibfb < handle
         if strcmp(plane, 'Y')        
             hbpm1 = obj.ctrl.y_bpm1_down_pos_wav;
             hbpm2 = obj.ctrl.y_bpm2_down_pos_wav;
+            m.fb_fast_on = obj.ctrl.y_fb_fast_on.get();
+            m.ff_fast_on = obj.ctrl.y_ff_fast_on.get();
+            m.fb_fast_kp = obj.ctrl.y_fb_fast_kp.get();
         end
         if strcmp(plane, 'X')        
             hbpm1 = obj.ctrl.x_bpm1_down_pos_wav;
             hbpm2 = obj.ctrl.x_bpm2_down_pos_wav;
+            m.fb_fast_on = obj.ctrl.x_fb_fast_on.get();
+            m.ff_fast_on = obj.ctrl.x_ff_fast_on.get();
         end
         
         for i=1:16
@@ -733,13 +738,18 @@ classdef ca_ibfb < handle
         bpmb.bpm2 = bpmb.bpm2(:,1:4:pts);              
         bpma.bpm1 = bpma.bpm1(:,1:4:pts);
         bpma.bpm2 = bpma.bpm2(:,1:4:pts);
-        for i=1:16 bpma.bpm1(i,4:17) = bpma.bpm1(i,4:17)+linspace(-0.02, 0.00, 14);end
+        %for i=1:16 bpma.bpm1(i,4:17) = bpma.bpm1(i,4:17)+linspace(-0.02, 0.00, 14);end
         pts = length(bpmb.bpm1);
                 
         bpmb1m = mean(bpmb.bpm1);
         bpmb2m = mean(bpmb.bpm2);
         bpma1m = mean(bpma.bpm1);
         bpma2m = mean(bpma.bpm2);
+        
+        bpma1std = std(bpma1m(4:end));
+        bpma2std = std(bpma2m(4:end));
+        bpmb1std = std(bpmb1m(4:end));
+        bpmb2std = std(bpmb2m(4:end));
         
         if strcmp(pl_type, 'bars')
           % BPM1
@@ -751,7 +761,7 @@ classdef ca_ibfb < handle
           e.Color = 'blue';
           xlabel('Bunch number');
           ylabel('BPM1 position [mm]');
-          title([plane ' Plane']);
+          title([plane ' Plane -RMS_O_F_F=' num2str(bpmb1std) ' RMS_O_N=' num2str(bpma1std)]);
           grid on
           legend('FB off', 'FB on')
 
@@ -764,7 +774,7 @@ classdef ca_ibfb < handle
           e.Color = 'blue';        
           xlabel('Bunch number');
           ylabel('BPM2 position [mm]');
-          title([plane ' Plane']);
+          title([plane ' Plane -RMS_O_F_F=' num2str(bpmb2std) ' RMS_O_N=' num2str(bpma2std)]);
           grid on
           legend('FB off', 'FB on')
         end
@@ -1160,10 +1170,12 @@ classdef ca_ibfb < handle
       res = ctrl_wait_for_next_pulse(obj, plane);
       if res return; end ;
       if strcmp(plane, 'Y')
-        m.bpm1_up_pos(i)     = obj.ctrl.y_bpm1_up_pos_wav.get();
-        m.bpm2_up_pos(i)     = obj.ctrl.y_bpm2_up_pos_wav.get();    
-        m.bpm1_down_pos(i)   = obj.ctrl.y_bpm1_down_pos_wav.get();
-        m.bpm2_down_pos(i)   = obj.ctrl.y_bpm2_down_pos_wav.get();
+        m.bpm1_up_pos(i)     = obj.ctrl.y_bpm1_up_pos_nth.get();
+        m.bpm2_up_pos(i)     = obj.ctrl.y_bpm2_up_pos_nth.get();    
+        bpm_wav = obj.ctrl.y_bpm1_down_pos_wav.get();
+        m.bpm1_down_pos(i)   = bpm_wav(1);
+        bpm_wav = obj.ctrl.y_bpm2_down_pos_wav.get();
+        m.bpm2_down_pos(i)   = bpm_wav(1);
         %m.bpm1_up_valid(i)   = uint32(obj.ctrl.y_bpm1_up_valid_wav.get()  );
         %m.bpm2_up_valid(i)   = uint32(obj.ctrl.y_bpm2_up_valid_wav.get()  );
         %m.bpm1_down_valid(i) = uint32(obj.ctrl.y_bpm1_down_valid_wav.get());
@@ -1181,10 +1193,8 @@ classdef ca_ibfb < handle
         m.trg_del(i) = m.trg_del(i);
       end
       if strcmp(plane, 'X')
-        wav = obj.ctrl.x_bpm1_up_pos_wav.get();
-        m.bpm1_up_pos(i)     = wav(1);
-        wav = obj.ctrl.x_bpm2_up_pos_wav.get();
-        m.bpm2_up_pos(i)     = wav(1);    
+        m.bpm1_up_pos(i)     = obj.ctrl.x_bpm1_up_pos_nth.get();
+        m.bpm2_up_pos(i)     = obj.ctrl.x_bpm2_up_pos_nth.get();
         wav = obj.ctrl.x_bpm1_down_pos_wav.get();
         m.bpm1_down_pos(i)   = wav(1);
         wav = obj.ctrl.x_bpm2_down_pos_wav.get();
