@@ -4943,8 +4943,8 @@ byte {
 		bclr=4
 	}
 	direction="down"
-	sbit=0
-	ebit=3
+	sbit=3
+	ebit=6
 }
 text {
 	object {
@@ -5693,8 +5693,8 @@ byte {
 		bclr=4
 	}
 	direction="down"
-	sbit=0
-	ebit=3
+	sbit=3
+	ebit=6
 }
 text {
 	object {
