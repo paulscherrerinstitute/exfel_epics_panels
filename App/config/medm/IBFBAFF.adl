@@ -299,3 +299,30 @@ text {
 	press_msg="25"
 	release_msg="0"
 }
+text {
+	object {
+		x=5
+		y=155
+		width=90
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Use corr matrix"
+	align="horiz. right"
+}
+"choice button" {
+	object {
+		x=100
+		y=155
+		width=100
+		height=15
+	}
+	control {
+		chan="$(DEV):$(PLANE)-AFF-USE-CORR"
+		clr=14
+		bclr=4
+	}
+	stacking="column"
+}
