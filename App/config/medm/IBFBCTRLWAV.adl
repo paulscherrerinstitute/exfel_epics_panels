@@ -1,14 +1,14 @@
 
 file {
-	name="/xfel/controls/App/config/medm/IBFBCTRLWAV.adl"
+	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCTRLWAV.adl"
 	version=030105
 }
 display {
 	object {
 		x=189
 		y=135
-		width=1300
-		height=770
+		width=1200
+		height=780
 	}
 	clr=14
 	bclr=4
@@ -92,7 +92,7 @@ rectangle {
 		x=255
 		y=85
 		width=120
-		height=35
+		height=65
 	}
 	"basic attribute" {
 		clr=20
@@ -105,7 +105,7 @@ rectangle {
 "cartesian plot" {
 	object {
 		x=0
-		y=170
+		y=185
 		width=600
 		height=300
 	}
@@ -161,7 +161,7 @@ text {
 "choice button" {
 	object {
 		x=125
-		y=150
+		y=165
 		width=80
 		height=15
 	}
@@ -175,7 +175,7 @@ text {
 text {
 	object {
 		x=40
-		y=150
+		y=165
 		width=40
 		height=10
 	}
@@ -188,7 +188,7 @@ text {
 text {
 	object {
 		x=245
-		y=150
+		y=165
 		width=40
 		height=10
 	}
@@ -201,7 +201,7 @@ text {
 "cartesian plot" {
 	object {
 		x=0
-		y=470
+		y=485
 		width=600
 		height=300
 	}
@@ -233,7 +233,7 @@ text {
 "cartesian plot" {
 	object {
 		x=600
-		y=170
+		y=185
 		width=600
 		height=300
 	}
@@ -265,7 +265,7 @@ text {
 "cartesian plot" {
 	object {
 		x=600
-		y=470
+		y=485
 		width=600
 		height=300
 	}
@@ -297,7 +297,7 @@ text {
 text {
 	object {
 		x=650
-		y=150
+		y=165
 		width=40
 		height=10
 	}
@@ -310,7 +310,7 @@ text {
 "choice button" {
 	object {
 		x=735
-		y=150
+		y=165
 		width=80
 		height=15
 	}
@@ -324,7 +324,7 @@ text {
 text {
 	object {
 		x=855
-		y=150
+		y=165
 		width=40
 		height=10
 	}
@@ -366,7 +366,7 @@ text {
 menu {
 	object {
 		x=315
-		y=145
+		y=160
 		width=98
 		height=20
 	}
@@ -379,7 +379,7 @@ menu {
 menu {
 	object {
 		x=920
-		y=145
+		y=160
 		width=98
 		height=20
 	}
@@ -549,7 +549,7 @@ polyline {
 "message button" {
 	object {
 		x=440
-		y=145
+		y=160
 		width=100
 		height=20
 	}
@@ -816,7 +816,7 @@ polyline {
 "message button" {
 	object {
 		x=1045
-		y=145
+		y=160
 		width=100
 		height=20
 	}
@@ -1251,7 +1251,7 @@ text {
 polyline {
 	object {
 		x=0
-		y=140
+		y=155
 		width=1200
 		height=0
 	}
@@ -1259,8 +1259,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(0,140)
-		(1200,140)
+		(0,155)
+		(1200,155)
 	}
 }
 rectangle {
@@ -1268,7 +1268,7 @@ rectangle {
 		x=855
 		y=85
 		width=120
-		height=35
+		height=65
 	}
 	"basic attribute" {
 		clr=20
@@ -1448,8 +1448,8 @@ text {
 }
 text {
 	object {
-		x=165
-		y=120
+		x=385
+		y=115
 		width=85
 		height=10
 	}
@@ -1461,8 +1461,8 @@ text {
 }
 "choice button" {
 	object {
-		x=255
-		y=120
+		x=475
+		y=115
 		width=120
 		height=15
 	}
@@ -1475,8 +1475,8 @@ text {
 }
 text {
 	object {
-		x=765
-		y=120
+		x=985
+		y=115
 		width=85
 		height=10
 	}
@@ -1488,8 +1488,8 @@ text {
 }
 "choice button" {
 	object {
-		x=855
-		y=120
+		x=1075
+		y=115
 		width=120
 		height=15
 	}
@@ -1499,4 +1499,184 @@ text {
 		bclr=4
 	}
 	stacking="column"
+}
+text {
+	object {
+		x=165
+		y=120
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Kicker min"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=265
+		y=120
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-KICK1-OUT-MIN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=325
+		y=120
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-KICK2-OUT-MIN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=165
+		y=135
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Kicker min"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=265
+		y=135
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-KICK1-OUT-MAX"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=325
+		y=135
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-KICK2-OUT-MAX"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=765
+		y=120
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Kicker min"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=865
+		y=120
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-KICK1-OUT-MIN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=925
+		y=120
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-KICK2-OUT-MIN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=765
+		y=135
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Kicker min"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=865
+		y=135
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-KICK1-OUT-MAX"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=925
+		y=135
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-KICK2-OUT-MAX"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
 }
