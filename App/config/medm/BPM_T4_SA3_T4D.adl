@@ -2308,7 +2308,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T xfelgpac1di2931sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2931sa3 &"
+		name="xterm -T xfelgpac1di2943sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2943sa3 &"
 	}
 	clr=14
 	bclr=57
