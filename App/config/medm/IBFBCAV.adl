@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=3
-		y=639
+		x=1304
+		y=753
 		width=1000
-		height=400
+		height=220
 	}
 	clr=14
 	bclr=4
@@ -282,8 +282,8 @@ text {
 }
 rectangle {
 	object {
-		x=170
-		y=145
+		x=715
+		y=365
 		width=5
 		height=20
 	}
@@ -298,8 +298,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=170
-		y=145
+		x=715
+		y=365
 		width=5
 		height=20
 	}
@@ -414,8 +414,8 @@ text {
 }
 rectangle {
 	object {
-		x=170
-		y=125
+		x=715
+		y=345
 		width=5
 		height=20
 	}
@@ -430,8 +430,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=170
-		y=125
+		x=715
+		y=345
 		width=5
 		height=20
 	}
@@ -462,8 +462,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=170
-		y=105
+		x=715
+		y=325
 		width=5
 		height=20
 	}
@@ -478,8 +478,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=170
-		y=105
+		x=715
+		y=325
 		width=5
 		height=20
 	}
@@ -510,8 +510,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=170
-		y=85
+		x=715
+		y=305
 		width=5
 		height=20
 	}
@@ -526,8 +526,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=170
-		y=85
+		x=715
+		y=305
 		width=5
 		height=20
 	}
@@ -851,8 +851,8 @@ polyline {
 }
 "message button" {
 	object {
-		x=90
-		y=85
+		x=635
+		y=305
 		width=80
 		height=20
 	}
@@ -866,8 +866,8 @@ polyline {
 }
 "message button" {
 	object {
-		x=175
-		y=85
+		x=720
+		y=305
 		width=80
 		height=20
 	}
@@ -881,8 +881,8 @@ polyline {
 }
 "message button" {
 	object {
-		x=90
-		y=105
+		x=635
+		y=325
 		width=80
 		height=20
 	}
@@ -896,8 +896,8 @@ polyline {
 }
 "message button" {
 	object {
-		x=175
-		y=105
+		x=720
+		y=325
 		width=80
 		height=20
 	}
@@ -1163,8 +1163,8 @@ rectangle {
 }
 "message button" {
 	object {
-		x=90
-		y=125
+		x=635
+		y=345
 		width=80
 		height=20
 	}
@@ -1178,8 +1178,8 @@ rectangle {
 }
 "message button" {
 	object {
-		x=90
-		y=145
+		x=635
+		y=365
 		width=80
 		height=20
 	}
@@ -1193,8 +1193,8 @@ rectangle {
 }
 "message button" {
 	object {
-		x=175
-		y=125
+		x=720
+		y=345
 		width=80
 		height=20
 	}
@@ -1208,8 +1208,8 @@ rectangle {
 }
 "message button" {
 	object {
-		x=175
-		y=145
+		x=720
+		y=365
 		width=80
 		height=20
 	}
@@ -1566,8 +1566,8 @@ text {
 }
 rectangle {
 	object {
-		x=170
-		y=55
+		x=715
+		y=275
 		width=5
 		height=20
 	}
@@ -1582,8 +1582,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=170
-		y=55
+		x=715
+		y=275
 		width=5
 		height=20
 	}
@@ -1642,8 +1642,8 @@ rectangle {
 }
 "message button" {
 	object {
-		x=175
-		y=55
+		x=720
+		y=275
 		width=80
 		height=20
 	}
@@ -1769,22 +1769,7 @@ rectangle {
 "shell command" {
 	object {
 		x=90
-		y=200
-		width=80
-		height=20
-	}
-	command[0] {
-		label="Terminal"
-		name="./xfel_qt.sh BPMI-1878-TL BPM_GPAC_CAV_SMP.ui &"
-	}
-	clr=14
-	bclr=57
-	label="-BPMI-1878-TL"
-}
-"shell command" {
-	object {
-		x=175
-		y=200
+		y=85
 		width=80
 		height=20
 	}
@@ -1798,23 +1783,23 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=90
-		y=220
+		x=175
+		y=85
 		width=80
 		height=20
 	}
 	command[0] {
 		label="Terminal"
-		name="./xfel_qt.sh BPMI-1930-TL BPM_GPAC_CAV_SMP.ui &"
+		name="./xfel_qt.sh BPMI-1878-TL BPM_GPAC_CAV_SMP.ui &"
 	}
 	clr=14
 	bclr=57
-	label="-BPMI-1930-TL"
+	label="-BPMI-1878-TL"
 }
 "shell command" {
 	object {
-		x=175
-		y=220
+		x=90
+		y=105
 		width=80
 		height=20
 	}
@@ -1828,23 +1813,23 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=90
-		y=240
+		x=175
+		y=105
 		width=80
 		height=20
 	}
 	command[0] {
 		label="Terminal"
-		name="./xfel_qt.sh BPMI-1889-TL BPM_GPAC_CAV_SMP.ui &"
+		name="./xfel_qt.sh BPMI-1930-TL BPM_GPAC_CAV_SMP.ui &"
 	}
 	clr=14
 	bclr=57
-	label="-BPMI-1889-TL"
+	label="-BPMI-1930-TL"
 }
 "shell command" {
 	object {
-		x=175
-		y=240
+		x=90
+		y=125
 		width=80
 		height=20
 	}
@@ -1858,23 +1843,23 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=90
-		y=260
+		x=175
+		y=125
 		width=80
 		height=20
 	}
 	command[0] {
 		label="Terminal"
-		name="./xfel_qt.sh BPMI-1939-TL BPM_GPAC_CAV_SMP.ui &"
+		name="./xfel_qt.sh BPMI-1889-TL BPM_GPAC_CAV_SMP.ui &"
 	}
 	clr=14
 	bclr=57
-	label="-BPMI-1939-TL"
+	label="-BPMI-1889-TL"
 }
 "shell command" {
 	object {
-		x=175
-		y=260
+		x=90
+		y=145
 		width=80
 		height=20
 	}
@@ -1886,10 +1871,25 @@ rectangle {
 	bclr=57
 	label="-BPMI-1925-TL"
 }
+"shell command" {
+	object {
+		x=175
+		y=145
+		width=80
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh BPMI-1939-TL BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-BPMI-1939-TL"
+}
 text {
 	object {
 		x=10
-		y=225
+		y=290
 		width=70
 		height=15
 	}
@@ -1902,7 +1902,7 @@ text {
 text {
 	object {
 		x=10
-		y=205
+		y=270
 		width=70
 		height=15
 	}
@@ -1915,7 +1915,7 @@ text {
 text {
 	object {
 		x=10
-		y=245
+		y=310
 		width=70
 		height=15
 	}
@@ -1928,7 +1928,7 @@ text {
 text {
 	object {
 		x=10
-		y=265
+		y=330
 		width=70
 		height=15
 	}
@@ -1941,7 +1941,7 @@ text {
 text {
 	object {
 		x=10
-		y=290
+		y=175
 		width=70
 		height=15
 	}
@@ -1954,7 +1954,7 @@ text {
 "shell command" {
 	object {
 		x=90
-		y=285
+		y=175
 		width=80
 		height=20
 	}
@@ -1969,7 +1969,7 @@ text {
 "shell command" {
 	object {
 		x=175
-		y=285
+		y=175
 		width=80
 		height=20
 	}
@@ -1984,7 +1984,7 @@ text {
 "shell command" {
 	object {
 		x=90
-		y=305
+		y=195
 		width=80
 		height=20
 	}
@@ -1999,7 +1999,7 @@ text {
 "shell command" {
 	object {
 		x=175
-		y=305
+		y=195
 		width=80
 		height=20
 	}
@@ -2014,7 +2014,7 @@ text {
 "shell command" {
 	object {
 		x=175
-		y=175
+		y=55
 		width=80
 		height=20
 	}
@@ -2029,7 +2029,7 @@ text {
 text {
 	object {
 		x=10
-		y=180
+		y=245
 		width=70
 		height=15
 	}
