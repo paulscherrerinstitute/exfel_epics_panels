@@ -5,9 +5,9 @@ file {
 }
 display {
 	object {
-		x=1304
-		y=753
-		width=1000
+		x=13
+		y=810
+		width=1200
 		height=220
 	}
 	clr=14
@@ -91,7 +91,7 @@ rectangle {
 	object {
 		x=0
 		y=0
-		width=1020
+		width=1200
 		height=30
 	}
 	"basic attribute" {
@@ -115,7 +115,7 @@ polyline {
 	object {
 		x=0
 		y=80
-		width=1020
+		width=1200
 		height=0
 	}
 	"basic attribute" {
@@ -123,7 +123,7 @@ polyline {
 	}
 	points {
 		(0,80)
-		(1020,80)
+		(1200,80)
 	}
 }
 polyline {
@@ -838,7 +838,7 @@ polyline {
 	object {
 		x=0
 		y=171
-		width=1020
+		width=1200
 		height=0
 	}
 	"basic attribute" {
@@ -846,7 +846,7 @@ polyline {
 	}
 	points {
 		(0,171)
-		(1020,171)
+		(1200,171)
 	}
 }
 "message button" {
@@ -1524,7 +1524,7 @@ polyline {
 	object {
 		x=0
 		y=50
-		width=1020
+		width=1200
 		height=0
 	}
 	"basic attribute" {
@@ -1532,7 +1532,7 @@ polyline {
 	}
 	points {
 		(0,50)
-		(1020,50)
+		(1200,50)
 	}
 }
 text {
@@ -2038,4 +2038,167 @@ text {
 	}
 	textix="Collimator"
 	align="horiz. right"
+}
+text {
+	object {
+		x=990
+		y=35
+		width=95
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Q Threshold"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=985
+		y=30
+		width=0
+		height=189
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(985,30)
+		(985,219)
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=87
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBYUP:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=87
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBYUP:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=107
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBYDOWN:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=107
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBYDOWN:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=127
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBXUP:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=127
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBXUP:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=147
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBXDOWN:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=147
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBXDOWN:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=57
+		width=45
+		height=15
+	}
+	control {
+		chan="IBFBYCOL:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
 }

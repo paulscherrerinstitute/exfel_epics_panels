@@ -6,7 +6,7 @@ file {
 display {
 	object {
 		x=3
-		y=290
+		y=274
 		width=510
 		height=400
 	}
@@ -336,7 +336,7 @@ rectangle {
 "related display" {
 	object {
 		x=5
-		y=155
+		y=180
 		width=140
 		height=20
 	}
@@ -347,7 +347,7 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-IBFB FB"
+	label="-IBFB Expert"
 }
 "shell command" {
 	object {
@@ -801,7 +801,7 @@ text {
 "related display" {
 	object {
 		x=5
-		y=180
+		y=155
 		width=140
 		height=20
 	}
@@ -812,7 +812,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-IBFB plots"
+	label="-IBFB Operation"
 }
 "related display" {
 	object {
