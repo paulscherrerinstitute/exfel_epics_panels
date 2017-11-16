@@ -5,9 +5,9 @@ file {
 }
 display {
 	object {
-		x=12
-		y=444
-		width=1000
+		x=10
+		y=513
+		width=1200
 		height=260
 	}
 	clr=14
@@ -91,7 +91,7 @@ rectangle {
 	object {
 		x=0
 		y=0
-		width=1020
+		width=1200
 		height=30
 	}
 	"basic attribute" {
@@ -115,7 +115,7 @@ polyline {
 	object {
 		x=0
 		y=50
-		width=1020
+		width=1200
 		height=0
 	}
 	"basic attribute" {
@@ -123,22 +123,7 @@ polyline {
 	}
 	points {
 		(0,50)
-		(1020,50)
-	}
-}
-polyline {
-	object {
-		x=0
-		y=30
-		width=1020
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(0,30)
-		(1020,30)
+		(1200,50)
 	}
 }
 text {
@@ -1001,7 +986,7 @@ polyline {
 	object {
 		x=0
 		y=140
-		width=1020
+		width=1200
 		height=0
 	}
 	"basic attribute" {
@@ -1009,7 +994,7 @@ polyline {
 	}
 	points {
 		(0,140)
-		(1020,140)
+		(1200,140)
 	}
 }
 "message button" {
@@ -1442,5 +1427,63 @@ polyline {
 	points {
 		(511,30)
 		(511,219)
+	}
+}
+polyline {
+	object {
+		x=970
+		y=30
+		width=0
+		height=189
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(970,30)
+		(970,219)
+	}
+}
+text {
+	object {
+		x=975
+		y=35
+		width=95
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Q Threshold"
+	align="horiz. centered"
+}
+"text entry" {
+	object {
+		x=975
+		y=117
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1647-IBFB:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1025
+		y=117
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1647-IBFB:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
 	}
 }

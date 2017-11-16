@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=3
-		y=286
+		x=189
+		y=135
 		width=1200
-		height=650
+		height=780
 	}
 	clr=14
 	bclr=4
@@ -89,19 +89,23 @@ display {
 }
 rectangle {
 	object {
-		x=535
-		y=30
-		width=65
-		height=20
+		x=255
+		y=85
+		width=120
+		height=65
 	}
 	"basic attribute" {
-		clr=30
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(DEV):Y-FB-ERROR"
 	}
 }
 "cartesian plot" {
 	object {
 		x=0
-		y=50
+		y=185
 		width=600
 		height=300
 	}
@@ -120,6 +124,14 @@ rectangle {
 	trace[1] {
 		ydata="$(DEV):Y-BPM1-SP-WAV.AVAL"
 		data_clr=0
+	}
+	trace[2] {
+		ydata="$(DEV):Y-STATS-DOWN-BPM1-MIN-WAV.AVAL"
+		data_clr=5
+	}
+	trace[3] {
+		ydata="$(DEV):Y-STATS-DOWN-BPM1-MAX-WAV.AVAL"
+		data_clr=5
 	}
 }
 rectangle {
@@ -146,47 +158,10 @@ text {
 	textix="XFEL IBFB Controller [$(DEV)]"
 	align="horiz. centered"
 }
-rectangle {
-	object {
-		x=470
-		y=30
-		width=65
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-}
-text {
-	object {
-		x=480
-		y=35
-		width=45
-		height=10
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="BPM1/KICK1"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=545
-		y=35
-		width=45
-		height=10
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="BPM2/KICK2"
-	align="horiz. centered"
-}
 "choice button" {
 	object {
-		x=130
-		y=30
+		x=125
+		y=165
 		width=80
 		height=15
 	}
@@ -199,8 +174,8 @@ text {
 }
 text {
 	object {
-		x=45
-		y=30
+		x=40
+		y=165
 		width=40
 		height=10
 	}
@@ -212,8 +187,8 @@ text {
 }
 text {
 	object {
-		x=250
-		y=30
+		x=245
+		y=165
 		width=40
 		height=10
 	}
@@ -223,24 +198,10 @@ text {
 	textix="Clean method"
 	align="horiz. centered"
 }
-"choice button" {
-	object {
-		x=315
-		y=30
-		width=80
-		height=15
-	}
-	control {
-		chan="$(DEV):Y-BPM-CLEAN-SMP-METHOD"
-		clr=14
-		bclr=4
-	}
-	stacking="column"
-}
 "cartesian plot" {
 	object {
 		x=0
-		y=350
+		y=485
 		width=600
 		height=300
 	}
@@ -260,11 +221,19 @@ text {
 		ydata="$(DEV):Y-BPM2-SP-WAV.AVAL"
 		data_clr=0
 	}
+	trace[2] {
+		ydata="$(DEV):Y-STATS-DOWN-BPM2-MIN-WAV.AVAL"
+		data_clr=5
+	}
+	trace[3] {
+		ydata="$(DEV):Y-STATS-DOWN-BPM2-MAX-WAV.AVAL"
+		data_clr=5
+	}
 }
 "cartesian plot" {
 	object {
 		x=600
-		y=50
+		y=185
 		width=600
 		height=300
 	}
@@ -278,17 +247,25 @@ text {
 	erase_oldest="plot last n pts"
 	trace[0] {
 		ydata="$(DEV):X-BPM1-DOWN-POS-WAV"
-		data_clr=20
+		data_clr=25
 	}
 	trace[1] {
 		ydata="$(DEV):X-BPM1-SP-WAV.AVAL"
 		data_clr=0
 	}
+	trace[2] {
+		ydata="$(DEV):X-STATS-DOWN-BPM1-MIN-WAV.AVAL"
+		data_clr=5
+	}
+	trace[3] {
+		ydata="$(DEV):X-STATS-DOWN-BPM1-MAX-WAV.AVAL"
+		data_clr=5
+	}
 }
 "cartesian plot" {
 	object {
 		x=600
-		y=350
+		y=485
 		width=600
 		height=300
 	}
@@ -302,17 +279,25 @@ text {
 	erase_oldest="plot last n pts"
 	trace[0] {
 		ydata="$(DEV):X-BPM2-DOWN-POS-WAV"
-		data_clr=20
+		data_clr=25
 	}
 	trace[1] {
 		ydata="$(DEV):X-BPM2-SP-WAV.AVAL"
 		data_clr=0
 	}
+	trace[2] {
+		ydata="$(DEV):X-STATS-DOWN-BPM2-MIN-WAV.AVAL"
+		data_clr=5
+	}
+	trace[3] {
+		ydata="$(DEV):X-STATS-DOWN-BPM2-MAX-WAV.AVAL"
+		data_clr=5
+	}
 }
 text {
 	object {
-		x=645
-		y=30
+		x=650
+		y=165
 		width=40
 		height=10
 	}
@@ -324,8 +309,8 @@ text {
 }
 "choice button" {
 	object {
-		x=730
-		y=30
+		x=735
+		y=165
 		width=80
 		height=15
 	}
@@ -338,8 +323,8 @@ text {
 }
 text {
 	object {
-		x=850
-		y=30
+		x=855
+		y=165
 		width=40
 		height=10
 	}
@@ -349,17 +334,1349 @@ text {
 	textix="Clean method"
 	align="horiz. centered"
 }
-"choice button" {
+"message button" {
 	object {
-		x=915
-		y=30
-		width=80
-		height=15
+		x=10
+		y=50
+		width=120
+		height=20
+	}
+	control {
+		chan="$(DEV):Y-FB-CMD"
+		clr=14
+		bclr=4
+	}
+	label="Update to position"
+	press_msg="32"
+	release_msg="0"
+}
+text {
+	object {
+		x=55
+		y=35
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Set Point"
+	align="horiz. centered"
+}
+menu {
+	object {
+		x=315
+		y=160
+		width=98
+		height=20
+	}
+	control {
+		chan="$(DEV):Y-BPM-CLEAN-SMP-METHOD"
+		clr=14
+		bclr=4
+	}
+}
+menu {
+	object {
+		x=920
+		y=160
+		width=98
+		height=20
 	}
 	control {
 		chan="$(DEV):X-BPM-CLEAN-SMP-METHOD"
 		clr=14
 		bclr=4
 	}
+}
+"wheel switch" {
+	object {
+		x=10
+		y=90
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):Y-FB-SP-POS"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"wheel switch" {
+	object {
+		x=70
+		y=90
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):Y-FB-SP-ANGLE"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=20
+		y=75
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=80
+		y=75
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM2"
+	align="horiz. centered"
+}
+"message button" {
+	object {
+		x=610
+		y=50
+		width=120
+		height=20
+	}
+	control {
+		chan="$(DEV):X-FB-CMD"
+		clr=14
+		bclr=4
+	}
+	label="Update to position"
+	press_msg="32"
+	release_msg="0"
+}
+text {
+	object {
+		x=655
+		y=35
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Set Point"
+	align="horiz. centered"
+}
+"wheel switch" {
+	object {
+		x=610
+		y=90
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):X-FB-SP-POS"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"wheel switch" {
+	object {
+		x=670
+		y=90
+		width=60
+		height=30
+	}
+	control {
+		chan="$(DEV):X-FB-SP-ANGLE"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=620
+		y=75
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=680
+		y=75
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM2"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=600
+		y=30
+		width=2
+		height=219
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(601,31)
+		(601,248)
+	}
+}
+"message button" {
+	object {
+		x=440
+		y=160
+		width=100
+		height=20
+	}
+	control {
+		chan="$(DEV):Y-FB-CMD"
+		clr=14
+		bclr=4
+	}
+	label="Reset min/max"
+	press_msg="48"
+	release_msg="0"
+}
+text {
+	object {
+		x=405
+		y=45
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Statistics"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=485
+		y=55
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=545
+		y=55
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM2"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=380
+		y=30
+		width=2
+		height=81
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(381,31)
+		(381,110)
+	}
+}
+polyline {
+	object {
+		x=380
+		y=70
+		width=220
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(380,70)
+		(600,70)
+	}
+}
+polyline {
+	object {
+		x=470
+		y=30
+		width=0
+		height=80
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(470,30)
+		(470,110)
+	}
+}
+polyline {
+	object {
+		x=600
+		y=30
+		width=2
+		height=81
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(601,31)
+		(601,110)
+	}
+}
+polyline {
+	object {
+		x=535
+		y=30
+		width=0
+		height=80
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(535,30)
+		(535,110)
+	}
+}
+text {
+	object {
+		x=385
+		y=75
+		width=80
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Std Dev [um]"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=385
+		y=95
+		width=80
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="p-p [um]"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=380
+		y=110
+		width=220
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(380,110)
+		(600,110)
+	}
+}
+polyline {
+	object {
+		x=380
+		y=90
+		width=220
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(380,90)
+		(600,90)
+	}
+}
+"text entry" {
+	object {
+		x=540
+		y=35
+		width=55
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-STATS-DOWN-BPM-BKT-START"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=475
+		y=75
+		width=55
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-STATS-DOWN-BPM1-STD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=540
+		y=75
+		width=55
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-STATS-DOWN-BPM2-STD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=475
+		y=95
+		width=55
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-STATS-DOWN-BPM1-P-P"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=540
+		y=95
+		width=55
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-STATS-DOWN-BPM2-P-P"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"message button" {
+	object {
+		x=1045
+		y=160
+		width=100
+		height=20
+	}
+	control {
+		chan="$(DEV):X-FB-CMD"
+		clr=14
+		bclr=4
+	}
+	label="Reset min/max"
+	press_msg="48"
+	release_msg="0"
+}
+text {
+	object {
+		x=995
+		y=40
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Statistics"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=1085
+		y=55
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=1145
+		y=55
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM2"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=980
+		y=30
+		width=2
+		height=81
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(981,31)
+		(981,110)
+	}
+}
+polyline {
+	object {
+		x=980
+		y=70
+		width=220
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(980,70)
+		(1200,70)
+	}
+}
+polyline {
+	object {
+		x=1070
+		y=30
+		width=0
+		height=80
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(1070,30)
+		(1070,110)
+	}
+}
+polyline {
+	object {
+		x=1200
+		y=30
+		width=2
+		height=81
+	}
+	"basic attribute" {
+		clr=0
+		width=2
+	}
+	points {
+		(1201,31)
+		(1201,110)
+	}
+}
+polyline {
+	object {
+		x=1135
+		y=30
+		width=0
+		height=80
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(1135,30)
+		(1135,110)
+	}
+}
+text {
+	object {
+		x=985
+		y=75
+		width=80
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Std Dev [um]"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=985
+		y=95
+		width=80
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="p-p [um]"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=980
+		y=110
+		width=220
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(980,110)
+		(1200,110)
+	}
+}
+polyline {
+	object {
+		x=980
+		y=90
+		width=220
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(980,90)
+		(1200,90)
+	}
+}
+"text entry" {
+	object {
+		x=1140
+		y=35
+		width=55
+		height=15
+	}
+	control {
+		chan="$(DEV):X-STATS-DOWN-BPM-BKT-START"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1075
+		y=75
+		width=55
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-STATS-DOWN-BPM1-STD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1140
+		y=75
+		width=55
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-STATS-DOWN-BPM2-STD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1075
+		y=95
+		width=55
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-STATS-DOWN-BPM1-P-P"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1140
+		y=95
+		width=55
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-STATS-DOWN-BPM2-P-P"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=165
+		y=30
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Feedback"
+	align="horiz. right"
+}
+"choice button" {
+	object {
+		x=255
+		y=30
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-FB-FAST-ON"
+		clr=14
+		bclr=4
+	}
 	stacking="column"
+}
+text {
+	object {
+		x=165
+		y=45
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Feed forward"
+	align="horiz. right"
+}
+"choice button" {
+	object {
+		x=255
+		y=45
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-FF-FAST-ON"
+		clr=14
+		bclr=4
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=165
+		y=60
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Adaptive FF"
+	align="horiz. right"
+}
+"choice button" {
+	object {
+		x=255
+		y=60
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-AFF-ENA"
+		clr=14
+		bclr=4
+	}
+	stacking="column"
+}
+"message button" {
+	object {
+		x=255
+		y=75
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-FB-CMD"
+		clr=14
+		bclr=4
+	}
+	label="AFF Reset"
+	press_msg="25"
+	release_msg="0"
+}
+"text update" {
+	object {
+		x=265
+		y=105
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-KICK1-OUT-MEAN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=325
+		y=105
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-KICK2-OUT-MEAN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=265
+		y=90
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=325
+		y=90
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK2"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=165
+		y=105
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Kicker mean"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=155
+		width=1200
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,155)
+		(1200,155)
+	}
+}
+rectangle {
+	object {
+		x=855
+		y=85
+		width=120
+		height=65
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="$(DEV):Y-FB-ERROR"
+	}
+}
+text {
+	object {
+		x=765
+		y=30
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Feedback"
+	align="horiz. right"
+}
+"choice button" {
+	object {
+		x=855
+		y=30
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):X-FB-FAST-ON"
+		clr=14
+		bclr=4
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=765
+		y=45
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Feed forward"
+	align="horiz. right"
+}
+"choice button" {
+	object {
+		x=855
+		y=45
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):X-FF-FAST-ON"
+		clr=14
+		bclr=4
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=765
+		y=60
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Adaptive FF"
+	align="horiz. right"
+}
+"choice button" {
+	object {
+		x=855
+		y=60
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):X-AFF-ENA"
+		clr=14
+		bclr=4
+	}
+	stacking="column"
+}
+"message button" {
+	object {
+		x=855
+		y=75
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):X-FB-CMD"
+		clr=14
+		bclr=4
+	}
+	label="AFF Reset"
+	press_msg="25"
+	release_msg="0"
+}
+"text update" {
+	object {
+		x=865
+		y=105
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-KICK1-OUT-MEAN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=925
+		y=105
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-KICK2-OUT-MEAN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=865
+		y=90
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=925
+		y=90
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="KICK2"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=765
+		y=105
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Kicker mean"
+	align="horiz. right"
+}
+text {
+	object {
+		x=385
+		y=115
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Amplifier gate"
+	align="horiz. right"
+}
+"choice button" {
+	object {
+		x=475
+		y=115
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):Y-AMP-GATE-ENA"
+		clr=14
+		bclr=4
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=985
+		y=115
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Amplifier gate"
+	align="horiz. right"
+}
+"choice button" {
+	object {
+		x=1075
+		y=115
+		width=120
+		height=15
+	}
+	control {
+		chan="$(DEV):X-AMP-GATE-ENA"
+		clr=14
+		bclr=4
+	}
+	stacking="column"
+}
+text {
+	object {
+		x=165
+		y=120
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Kicker min"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=265
+		y=120
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-KICK1-OUT-MIN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=325
+		y=120
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-KICK2-OUT-MIN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=165
+		y=135
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Kicker min"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=265
+		y=135
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-KICK1-OUT-MAX"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=325
+		y=135
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):Y-KICK2-OUT-MAX"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=765
+		y=120
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Kicker min"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=865
+		y=120
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-KICK1-OUT-MIN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=925
+		y=120
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-KICK2-OUT-MIN"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+text {
+	object {
+		x=765
+		y=135
+		width=85
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Kicker min"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=865
+		y=135
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-KICK1-OUT-MAX"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=925
+		y=135
+		width=40
+		height=10
+	}
+	monitor {
+		chan="$(DEV):X-KICK2-OUT-MAX"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
 }

@@ -174,7 +174,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="firefox http://mdi7xfelpc1:49011 &"
+		name="firefox http://131.169.44.223:49011 &"
 	}
 	clr=14
 	bclr=57
@@ -189,7 +189,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="firefox http://localhost &"
+		name="firefox http://131.169.44.223 &"
 	}
 	clr=14
 	bclr=57
