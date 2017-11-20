@@ -37,6 +37,8 @@ classdef ca_ibfb < handle
       PLAYER_EOP = int32(-16777216);
       VALID_X = int32(2^24);
       VALID_Y = int32(2^25);      
+      CHARGE_X = int32(2^26);
+      CHARGE_Y = int32(2^27);      
       SFPSASE1UP    = 0;
       SFPSASE2UP    = 1;
       SFPSASE1DOWN  = 2;
@@ -520,14 +522,16 @@ classdef ca_ibfb < handle
       obj.play.mem_play_cmd.put(int32(0));
     end
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
-    function play_gen_bpm_data(obj, bpmidx, offset, packets, posx, posy)
+    function play_gen_bpm_data(obj, bpmidx, offset, packets, posx, posy, bunch_space)
       obj.bpms(bpmidx).packets.num = packets;
       obj.bpms(bpmidx).packets.timestamp = offset + obj.BUCKET_SPACE*(0:(obj.BUCKET_NUMBER-1));
       % byte 0 - control word
       % byte 1 - bpm ID
       % byte 2-3 - bucket number
       buckets = (0:(obj.BUCKET_NUMBER-1));
-      obj.bpms(bpmidx).packets.control = int32(buckets + bpmidx * 2^16) + obj.VALID_X + obj.VALID_Y;
+      bunch   = int32(zeros(1, obj.BUCKET_NUMBER));
+      bunch(1:bunch_space:end) = 1;
+      obj.bpms(bpmidx).packets.control = int32(buckets + bpmidx * 2^16) + obj.VALID_X + obj.VALID_Y + obj.CHARGE_X.*bunch + obj.CHARGE_Y.*bunch;
       obj.bpms(bpmidx).packets.x(:) = posx + 1e-2*(0:(obj.BUCKET_NUMBER-1));
       obj.bpms(bpmidx).packets.y(:) = posy + 1e-2*(0:(obj.BUCKET_NUMBER-1));           
     end      

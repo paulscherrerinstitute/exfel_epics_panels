@@ -342,12 +342,12 @@ rectangle {
 	}
 	display[0] {
 		label="BPM"
-		name="IBFBCTRLFB.adl"
+		name="IBFBCTRLWAV.adl"
 		args="DEV=IBFBCTRL"
 	}
 	clr=14
 	bclr=57
-	label="-IBFB FB"
+	label="-IBFB Operation"
 }
 "shell command" {
 	object {
@@ -823,12 +823,12 @@ text {
 	}
 	display[0] {
 		label="BPM"
-		name="IBFBCTRLWAV.adl"
+		name="IBFBCTRLFB.adl"
 		args="DEV=IBFBCTRL"
 	}
 	clr=14
 	bclr=57
-	label="-IBFB plots"
+	label="-IBFB Expert"
 }
 "related display" {
 	object {
