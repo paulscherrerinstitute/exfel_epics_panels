@@ -1,6 +1,6 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/IBFBCTRLWAV.adl"
+	name="/xfel/controls/App/config/medm/IBFBCTRLWAV.adl"
 	version=030105
 }
 display {
@@ -1456,7 +1456,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="Amplifier gate"
+	textix="Amplifier"
 	align="horiz. right"
 }
 "choice button" {

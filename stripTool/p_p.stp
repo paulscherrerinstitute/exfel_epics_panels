@@ -1,0 +1,54 @@
+StripConfig                   1.2
+Strip.Time.Timespan           37
+Strip.Time.NumSamples         7200
+Strip.Time.SampleInterval     0.100000
+Strip.Time.RefreshInterval    0.100000
+Strip.Color.Background        65535     65535     65535     
+Strip.Color.Foreground        0         0         0         
+Strip.Color.Grid              48573     48830     48573     
+Strip.Color.Color1            0         0         65535     
+Strip.Color.Color2            27499     36494     8481      
+Strip.Color.Color3            42405     10280     10537     
+Strip.Color.Color4            23130     40606     42405     
+Strip.Color.Color5            65535     42662     0         
+Strip.Color.Color6            42405     8224      63479     
+Strip.Color.Color7            65535     0         0         
+Strip.Color.Color8            65535     55255     0         
+Strip.Color.Color9            48573     36494     35980     
+Strip.Color.Color10           40092     53199     12593     
+Strip.Option.GridXon          1
+Strip.Option.GridYon          1
+Strip.Option.AxisYcolorStat   1
+Strip.Option.GraphLineWidth   2
+Strip.Curve.0.Name            IBFBCTRL:Y-STATS-DOWN-BPM1-P-P
+Strip.Curve.1.Name            IBFBCTRL:X-STATS-DOWN-BPM1-P-P
+Strip.Curve.2.Name            IBFBCTRL:Y-STATS-DOWN-BPM2-P-P
+Strip.Curve.3.Name            IBFBCTRL:X-STATS-DOWN-BPM2-P-P
+Strip.Curve.0.Units           
+Strip.Curve.1.Units           
+Strip.Curve.2.Units           
+Strip.Curve.3.Units           
+Strip.Curve.0.Comment         
+Strip.Curve.1.Comment         
+Strip.Curve.2.Comment         
+Strip.Curve.3.Comment         
+Strip.Curve.0.Precision       6
+Strip.Curve.1.Precision       6
+Strip.Curve.2.Precision       6
+Strip.Curve.3.Precision       6
+Strip.Curve.0.Min              0.000000
+Strip.Curve.1.Min              0.000000
+Strip.Curve.2.Min              0.000000
+Strip.Curve.3.Min              0.000000
+Strip.Curve.0.Max              30.000000
+Strip.Curve.1.Max              30.000000
+Strip.Curve.2.Max              30.000000
+Strip.Curve.3.Max              30.000000
+Strip.Curve.0.Scale           0
+Strip.Curve.1.Scale           0
+Strip.Curve.2.Scale           0
+Strip.Curve.3.Scale           0
+Strip.Curve.0.PlotStatus      1
+Strip.Curve.1.PlotStatus      1
+Strip.Curve.2.PlotStatus      1
+Strip.Curve.3.PlotStatus      1
