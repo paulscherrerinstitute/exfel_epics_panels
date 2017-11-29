@@ -1,30 +1,30 @@
 
 %% program BPM data
-%    play_gen_bpm_data(bpmidx,           offset, packets,  posx,  posy)
+%    play_gen_bpm_data(bpmidx,           offset, packets,  posx,  posy, bunch_spacing, bunch_num)
 % Y plane
-ibfb.play_gen_bpm_data(ibfb.BPMDOWNY1,       60,   100,  0.11,  -0.1, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMDOWNY2,       63,   100,  0.12,   0.2, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMUPY1,         66,    10,  0.21, -0.21, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMUPY2,         69,    10,  0.22, -0.22, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMSASE1Y1,     232,   500,  1.11,  -1.1, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMSASE1Y2,     138,   500,  1.12,   0.8, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMSASE2Y1,     142,   500,  1.11, -1.11, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMSASE2Y2,     145,   500,  1.12, -1.12, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMSASE3Y1,     232,   500,  1.11, -1.11, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMSASE3Y2,     235,   500,  1.12, -1.12, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMCOL1,        138,   500,  1.12, -1.12, 4);
+ibfb.play_gen_bpm_data(ibfb.BPMDOWNY1,       60,   200,  0.11,  -0.1, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMDOWNY2,       63,   200,  0.12,   0.2, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMUPY1,         66,    10,  0.21, -0.21, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMUPY2,         69,    10,  0.22, -0.22, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMSASE1Y1,     232,   500,  1.11,  -1.1, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMSASE1Y2,     138,   500,  1.12,   0.8, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMSASE2Y1,     142,   500,  1.11, -1.11, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMSASE2Y2,     145,   500,  1.12, -1.12, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMSASE3Y1,     232,   500,  1.11, -1.11, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMSASE3Y2,     235,   500,  1.12, -1.12, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMCOL1,        138,   500,  1.12, -1.12, 4, 30);
 
 % X plane
-ibfb.play_gen_bpm_data(ibfb.BPMDOWNX1,       38,    10,   2.3, -0.20, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMDOWNX2,       41,    10,  -2.3,  0.50, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMUPX1,         32,    10,  -2.3,  1.20, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMUPX2,         35,    10,  -2.3,  1.20, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMSASE1X1,     132,  500,  -2.3,  1.23, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMSASE1X2,     135,  500,  -2.3,  1.33, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMSASE2X1,     142,  500,  -2.3,  1.23, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMSASE2X2,     145,  500,  -2.3,  1.33, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMSASE3X1,     232,  500,  1.11, -1.11, 4);
-ibfb.play_gen_bpm_data(ibfb.BPMSASE3X2,     235,  500,  1.12, -1.12, 4);
+ibfb.play_gen_bpm_data(ibfb.BPMDOWNX1,       38,    10,   2.3, -0.20, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMDOWNX2,       41,    10,  -2.3,  0.50, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMUPX1,         32,    10,  -2.3,  1.20, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMUPX2,         35,    10,  -2.3,  1.20, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMSASE1X1,     132,   500,  -2.3,  1.23, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMSASE1X2,     135,   500,  -2.3,  1.33, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMSASE2X1,     142,   500,  -2.3,  1.23, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMSASE2X2,     145,   500,  -2.3,  1.33, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMSASE3X1,     232,   500,  1.11, -1.11, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMSASE3X2,     235,   500,  1.12, -1.12, 4, 30);
 
 %% program players
 % PLAY1 fast feedback Y plane
