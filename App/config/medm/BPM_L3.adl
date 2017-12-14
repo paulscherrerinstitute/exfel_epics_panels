@@ -4766,7 +4766,7 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-IPC????"
+	label="-IPC1706"
 }
 rectangle {
 	object {
@@ -4894,7 +4894,7 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-IPC????"
+	label="-IPC1707"
 }
 rectangle {
 	object {
@@ -5061,7 +5061,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-IPC????"
+	label="-IPC1598"
 }
 rectangle {
 	object {
@@ -5189,7 +5189,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-IPC????"
+	label="-IPC1596"
 }
 rectangle {
 	object {
