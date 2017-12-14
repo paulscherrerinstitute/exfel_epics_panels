@@ -1066,7 +1066,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1583"
 }
 rectangle {
 	object {
