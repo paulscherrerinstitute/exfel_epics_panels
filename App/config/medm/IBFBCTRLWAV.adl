@@ -1555,7 +1555,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="Kicker min"
+	textix="Kicker max"
 	align="horiz. right"
 }
 "text update" {
@@ -1645,7 +1645,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="Kicker min"
+	textix="Kicker max"
 	align="horiz. right"
 }
 "text update" {
