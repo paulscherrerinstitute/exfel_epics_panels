@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=2617
-		y=282
+		x=181
+		y=235
 		width=700
 		height=570
 	}
@@ -1198,7 +1198,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1503"
 }
 rectangle {
 	object {
@@ -1242,7 +1242,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="2"
+	textix="0"
 	align="horiz. centered"
 }
 text {
@@ -1255,7 +1255,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="0"
+	textix="2"
 	align="horiz. centered"
 }
 text {
@@ -1270,36 +1270,6 @@ text {
 	}
 	textix="0"
 	align="horiz. centered"
-}
-"message button" {
-	object {
-		x=300
-		y=170
-		width=100
-		height=20
-	}
-	control {
-		chan="BUTBPM:BPM-STRING.AA"
-		clr=14
-		bclr=40
-	}
-	label="BPMA-2191-T1"
-	press_msg="xfelgpac1di2194t1:51235#BPMA-2191-T1"
-}
-"message button" {
-	object {
-		x=400
-		y=170
-		width=100
-		height=20
-	}
-	control {
-		chan="BUTBPM:BPM-STRING.AA"
-		clr=14
-		bclr=40
-	}
-	label="BPMA-2197-T1"
-	press_msg="xfelgpac1di2194t1:51236#BPMA-2197-T1"
 }
 "shell command" {
 	object {
@@ -1531,7 +1501,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1494"
 }
 rectangle {
 	object {
@@ -1685,7 +1655,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1487"
 }
 rectangle {
 	object {
@@ -1839,7 +1809,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1548"
 }
 rectangle {
 	object {
@@ -1993,7 +1963,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1470"
 }
 rectangle {
 	object {
@@ -2147,7 +2117,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1507"
 }
 rectangle {
 	object {
@@ -2301,7 +2271,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1543"
 }
 rectangle {
 	object {
@@ -2455,7 +2425,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1502"
 }
 rectangle {
 	object {
@@ -2609,7 +2579,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1499"
 }
 rectangle {
 	object {
@@ -2763,7 +2733,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1525"
 }
 rectangle {
 	object {
@@ -2917,7 +2887,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1508"
 }
 rectangle {
 	object {
@@ -3071,7 +3041,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1511"
 }
 rectangle {
 	object {
@@ -3225,7 +3195,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1606"
 }
 rectangle {
 	object {
@@ -3379,7 +3349,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1519"
 }
 rectangle {
 	object {
@@ -3533,7 +3503,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1516"
 }
 rectangle {
 	object {
@@ -3687,7 +3657,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1624"
 }
 rectangle {
 	object {
@@ -3841,7 +3811,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1539"
 }
 rectangle {
 	object {
@@ -3995,7 +3965,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1492"
 }
 rectangle {
 	object {
@@ -4149,7 +4119,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1491"
 }
 rectangle {
 	object {
@@ -4303,7 +4273,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1571"
 }
 rectangle {
 	object {
@@ -4362,4 +4332,56 @@ rectangle {
 	}
 	label="BPME-2422-SA2"
 	press_msg="xfelgpac1di2423sa2:51236#BPME-2422-SA2"
+}
+rectangle {
+	object {
+		x=300
+		y=170
+		width=100
+		height=20
+	}
+	"basic attribute" {
+		clr=30
+	}
+}
+"message button" {
+	object {
+		x=400
+		y=170
+		width=100
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=30
+	}
+	label="BPME-2191-T1"
+	press_msg="xfelgpac1di2194t1:51236#BPME-2191-T1"
+}
+rectangle {
+	object {
+		x=500
+		y=170
+		width=100
+		height=20
+	}
+	"basic attribute" {
+		clr=30
+	}
+}
+"message button" {
+	object {
+		x=600
+		y=170
+		width=100
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=30
+	}
+	label="BPME-2197-T1"
+	press_msg="xfelgpac1di2194t1:51238#BPME-2197-T1"
 }
