@@ -1,0 +1,81 @@
+# European XFEL GPAC Linux hosts
+#
+# Allowed image file names:
+# but       - 4x Button BPM
+# cav       - 2x Cavity BPM
+# ren       - 2x Re-entrant BPM
+# butcav    - 2x Button BPM, 1x Cavity BPM
+# butren    - 2x Button BPM, 1x Re-entrant BPM
+# but2      - 2x Button BPM, no ADC card for BPM2 FPGA
+# ren2      - 1x Re-entrant, no ADC card for BPM1 FPGA
+#
+# hostname              image_name    
+xfelgpac2di55i1         cav
+xfelgpac3di55i1         butcav
+xfelgpac4di94i1         cav
+xfelgpac1di176b1        butcav
+xfelgpac1di203b1        butcav
+xfelgpac1di390b2        butcav
+xfelgpac1di415b2        butcav
+xfelgpac1di1685cl       cav
+xfelgpac2di1720cl       butcav
+xfelgpac1di1828cl       butcav
+xfelgpac1di1899tl       cav
+xfelgpac2di1899tl       cav
+xfelgpac3di1899tl       cav
+xfelgpac4di1899tl       cav
+xfelgpac1di2232t2       cav
+xfelgpac1di2244sa1      cav
+xfelgpac1di2256sa1      cav
+xfelgpac1di2268sa1      cav
+xfelgpac1di2280sa1      cav
+xfelgpac1di2293sa1      cav
+xfelgpac1di2305sa1      cav
+xfelgpac1di2317sa1      cav
+xfelgpac1di2329sa1      cav
+xfelgpac1di2341sa1      cav
+xfelgpac1di2354sa1      cav
+xfelgpac1di2366sa1      cav
+xfelgpac1di2378sa1      cav
+xfelgpac1di2390sa1      cav
+xfelgpac1di2402sa1      cav
+xfelgpac1di2415sa1      cav
+xfelgpac1di2427sa1      cav
+xfelgpac1di2439sa1      cav
+xfelgpac1di2451sa1      cav
+xfelgpac1di2463sa1      cav2
+xfelgpac1di2793t4       cav
+xfelgpac1di2808sa3      cav
+xfelgpac1di2820sa3      cav
+xfelgpac1di2832sa3      cav
+xfelgpac1di2845sa3      cav
+xfelgpac1di2857sa3      cav
+xfelgpac1di2869sa3      cav
+xfelgpac1di2881sa3      cav
+xfelgpac1di2893sa3      cav
+xfelgpac1di2906sa3      cav
+xfelgpac1di2918sa3      cav
+xfelgpac1di2931sa3      cav
+xfelgpac1di2943sa3      butcav
+xfelgpac1di3065t4d      butcav
+xfelgpac1di2194t1       cav
+xfelgpac1di2207sa2      ibfbcav
+xfelgpac1di2219sa2      ibfbcav
+xfelgpac1di2231sa2      ibfbcav
+xfelgpac1di2244sa2      ibfbcav
+xfelgpac1di2256sa2      ibfbcav
+xfelgpac1di2268sa2      ibfbcav
+xfelgpac1di2280sa2      ibfbcav
+xfelgpac1di2292sa2      ibfbcav
+xfelgpac1di2305sa2      ibfbcav
+xfelgpac1di2317sa2      ibfbcav
+xfelgpac1di2329sa2      ibfbcav
+xfelgpac1di2341sa2      ibfbcav
+xfelgpac1di2353sa2      ibfbcav
+xfelgpac1di2366sa2      ibfbcav
+xfelgpac1di2378sa2      ibfbcav
+xfelgpac1di2390sa2      ibfbcav
+xfelgpac1di2402sa2      ibfbcav
+xfelgpac1di2414sa2      ibfbcav
+xfelgpac1di2423sa2      ibfbcav2
+xfelgpac1di3145t5d      butcav
