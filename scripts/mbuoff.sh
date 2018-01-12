@@ -9,7 +9,7 @@
 #	mbuon.sh <mmc2_hostname>
 #
 # 
-
+echo -n > empty.bin
 tftp $1 << 'ENDTFTP'
 binary
 put empty.bin PWR_OFF
