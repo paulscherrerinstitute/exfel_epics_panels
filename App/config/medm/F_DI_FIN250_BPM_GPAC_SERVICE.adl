@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=722
-		y=71
+		x=50
+		y=107
 		width=810
 		height=460
 	}
@@ -4952,7 +4952,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="XF Alarm"
+	textix="MPS Alarm"
 	align="horiz. right"
 }
 text {
@@ -4965,7 +4965,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="XF Alarm Test 1"
+	textix="DosyMon Alarm 1"
 	align="horiz. right"
 }
 "choice button" {
@@ -5019,7 +5019,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="XF Alarm Test 2"
+	textix="DosyMon Alarm 2"
 	align="horiz. right"
 }
 text {
@@ -5032,7 +5032,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="XF Alarm Test 3"
+	textix="DosyMon Alarm 3"
 	align="horiz. right"
 }
 "choice button" {
@@ -5051,7 +5051,7 @@ text {
 }
 "choice button" {
 	object {
-		x=660
+		x=680
 		y=400
 		width=60
 		height=15
@@ -5065,7 +5065,7 @@ text {
 }
 text {
 	object {
-		x=585
+		x=605
 		y=400
 		width=70
 		height=10
@@ -5073,12 +5073,12 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="Reset"
+	textix="DosyMon Sleep"
 	align="horiz. right"
 }
 text {
 	object {
-		x=585
+		x=605
 		y=415
 		width=70
 		height=10
@@ -5091,7 +5091,7 @@ text {
 }
 "choice button" {
 	object {
-		x=660
+		x=680
 		y=415
 		width=60
 		height=15
