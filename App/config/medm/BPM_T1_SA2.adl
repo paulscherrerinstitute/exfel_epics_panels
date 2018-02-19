@@ -127,7 +127,7 @@ polyline {
 		x=300
 		y=30
 		width=0
-		height=520
+		height=540
 	}
 	"basic attribute" {
 		clr=0
@@ -137,7 +137,7 @@ polyline {
 	}
 	points {
 		(300,30)
-		(300,550)
+		(300,570)
 	}
 }
 text {
@@ -176,14 +176,14 @@ polyline {
 		x=240
 		y=30
 		width=0
-		height=520
+		height=540
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
 		(240,30)
-		(240,550)
+		(240,570)
 	}
 }
 polyline {
@@ -294,7 +294,7 @@ polyline {
 		x=260
 		y=50
 		width=0
-		height=500
+		height=520
 	}
 	"basic attribute" {
 		clr=0
@@ -304,7 +304,7 @@ polyline {
 	}
 	points {
 		(260,50)
-		(260,550)
+		(260,570)
 	}
 }
 text {
@@ -325,7 +325,7 @@ polyline {
 		x=280
 		y=50
 		width=0
-		height=500
+		height=520
 	}
 	"basic attribute" {
 		clr=0
@@ -335,7 +335,7 @@ polyline {
 	}
 	points {
 		(280,50)
-		(280,550)
+		(280,570)
 	}
 }
 text {
@@ -4309,7 +4309,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=300
+		x=500
 		y=550
 		width=100
 		height=20
@@ -4320,7 +4320,7 @@ rectangle {
 }
 "message button" {
 	object {
-		x=400
+		x=600
 		y=550
 		width=100
 		height=20
@@ -4331,7 +4331,7 @@ rectangle {
 		bclr=30
 	}
 	label="BPME-2422-SA2"
-	press_msg="xfelgpac1di2423sa2:51236#BPME-2422-SA2"
+	press_msg="xfelgpac1di2423sa2:51238#BPME-2422-SA2"
 }
 rectangle {
 	object {

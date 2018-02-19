@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=19
-		y=282
+		x=1185
+		y=239
 		width=700
 		height=370
 	}
@@ -595,7 +595,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1510"
 }
 rectangle {
 	object {
@@ -757,7 +757,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1448"
 }
 rectangle {
 	object {
@@ -919,7 +919,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1480"
 }
 rectangle {
 	object {
@@ -1081,7 +1081,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1547"
 }
 rectangle {
 	object {
@@ -1243,7 +1243,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1637"
 }
 rectangle {
 	object {
@@ -1403,7 +1403,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1426"
 }
 rectangle {
 	object {
@@ -1596,7 +1596,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1527"
 }
 rectangle {
 	object {
@@ -1758,7 +1758,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1557"
 }
 rectangle {
 	object {
@@ -1920,7 +1920,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1477"
 }
 rectangle {
 	object {
@@ -2082,7 +2082,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1439"
 }
 rectangle {
 	object {
@@ -2244,7 +2244,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1553"
 }
 rectangle {
 	object {
@@ -2409,7 +2409,7 @@ polyline {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1467"
 }
 rectangle {
 	object {
@@ -2556,7 +2556,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1475"
 }
 rectangle {
 	object {
@@ -2699,7 +2699,7 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1462"
 }
 rectangle {
 	object {
@@ -2861,7 +2861,7 @@ text {
 	}
 	clr=14
 	bclr=57
-	label="-GPAC"
+	label="-IPC1607"
 }
 rectangle {
 	object {
