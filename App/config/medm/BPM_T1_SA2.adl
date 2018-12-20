@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=181
-		y=235
+		x=965
+		y=60
 		width=700
 		height=570
 	}
@@ -4384,4 +4384,19 @@ rectangle {
 	}
 	label="BPME-2197-T1"
 	press_msg="xfelgpac1di2194t1:51238#BPME-2197-T1"
+}
+"message button" {
+	object {
+		x=500
+		y=150
+		width=100
+		height=20
+	}
+	control {
+		chan="BUTBPM:BPM-STRING.AA"
+		clr=14
+		bclr=40
+	}
+	label="BPMA-2184-T1"
+	press_msg="xfelgpac1di2175t1:51237#BPMA-2184-T1"
 }
