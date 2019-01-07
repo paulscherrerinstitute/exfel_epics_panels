@@ -2,8 +2,8 @@
 %% program BPM data
 %    play_gen_bpm_data(bpmidx,           offset, packets,  posx,  posy, bunch_spacing, bunch_num)
 % Y plane
-ibfb.play_gen_bpm_data(ibfb.BPMDOWNY1,       60,   200,  0.11,  -0.1, 4, 30);
-ibfb.play_gen_bpm_data(ibfb.BPMDOWNY2,       63,   200,  0.12,   0.2, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMDOWNY1,       60,   2700,  0.11,  -0.1, 4, 30);
+ibfb.play_gen_bpm_data(ibfb.BPMDOWNY2,       63,   0,  0.12,   0.2, 4, 30);
 ibfb.play_gen_bpm_data(ibfb.BPMUPY1,         66,    10,  0.21, -0.21, 4, 30);
 ibfb.play_gen_bpm_data(ibfb.BPMUPY2,         69,    10,  0.22, -0.22, 4, 30);
 ibfb.play_gen_bpm_data(ibfb.BPMSASE1Y1,     232,   500,  1.11,  -1.1, 4, 30);
