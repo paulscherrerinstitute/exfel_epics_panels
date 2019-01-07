@@ -4355,3 +4355,18 @@ rectangle {
 		chan="XFELGPAC1DI2074TLD:S7GPAC-STATUS"
 	}
 }
+"message button" {
+	object {
+		x=600
+		y=130
+		width=100
+		height=20
+	}
+	control {
+		chan="BUTBPM:BPM-STRING.AA"
+		clr=14
+		bclr=40
+	}
+	label="BPMA-2223-T2"
+	press_msg="xfelgpac1di2180t2:51238#BPMA-2223-T2"
+}

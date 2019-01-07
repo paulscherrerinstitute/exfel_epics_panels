@@ -1,0 +1,31 @@
+# European XFEL GPAC Linux hosts
+#
+# Allowed image file names:
+# but       - 4x Button BPM
+# cav       - 2x Cavity BPM
+# ren       - 2x Re-entrant BPM
+# butcav    - 2x Button BPM, 1x Cavity BPM
+# butren    - 2x Button BPM, 1x Re-entrant BPM
+# but2      - 2x Button BPM, no ADC card for BPM2 FPGA
+# ren2      - 1x Re-entrant, no ADC card for BPM1 FPGA
+#
+# hostname              image_name    
+xfelgpac1di2244sa1      cav
+xfelgpac1di2256sa1      cav
+xfelgpac1di2268sa1      cav
+xfelgpac1di2280sa1      cav
+xfelgpac1di2293sa1      cav
+xfelgpac1di2305sa1      cav
+xfelgpac1di2317sa1      cav
+xfelgpac1di2329sa1      cav
+xfelgpac1di2341sa1      cav
+xfelgpac1di2354sa1      cav
+xfelgpac1di2366sa1      cav
+xfelgpac1di2378sa1      cav
+xfelgpac1di2390sa1      cav
+xfelgpac1di2402sa1      cav
+xfelgpac1di2415sa1      cav
+xfelgpac1di2427sa1      cav
+xfelgpac1di2439sa1      cav
+xfelgpac1di2451sa1      cav
+xfelgpac1di2463sa1      cav2

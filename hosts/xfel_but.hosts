@@ -1,0 +1,108 @@
+# European XFEL GPAC Linux hosts
+#
+# Allowed image file names:
+# but       - 4x Button BPM
+# cav       - 2x Cavity BPM
+# ren       - 2x Re-entrant BPM
+# butcav    - 2x Button BPM, 1x Cavity BPM
+# butren    - 2x Button BPM, 1x Re-entrant BPM
+# but2      - 2x Button BPM, no ADC card for BPM2 FPGA
+# ren2      - 1x Re-entrant, no ADC card for BPM1 FPGA
+#
+# hostname              image_name    
+xfelgpac1di30i1         but
+xfelgpac1di55i1         butren
+xfelgpac3di55i1         butcav
+xfelgpac1di59i1         but
+xfelgpac1di94i1         but
+xfelgpac2di94i1         but
+xfelgpac3di94i1         but2
+xfelgpac1di107i1        but
+xfelgpac2di107i1        but
+xfelgpac1di160l1        butren
+xfelgpac1di176b1        butcav
+xfelgpac1di203b1        butcav
+xfelgpac1di215b1        but
+xfelgpac1di220b1        but
+xfelgpac1di240b1        but
+xfelgpac1di276l2        butren
+xfelgpac1di324l2        butren
+xfelgpac1di372l2        butren
+xfelgpac1di390b2        butcav
+xfelgpac1di415b2        butcav
+xfelgpac1di438b2        but
+xfelgpac1di458b2        but
+xfelgpac2di458b2        but
+xfelgpac3di458b2        but
+xfelgpac1di514l3        but
+xfelgpac1di562l3        but
+xfelgpac1di610l3        but
+xfelgpac1di661l3        but
+xfelgpac1di709l3        butren
+xfelgpac1di757l3        but
+xfelgpac1di808l3        butren
+xfelgpac1di856l3        but
+xfelgpac1di904l3        but
+xfelgpac1di955l3        but
+xfelgpac1di1003l3       but
+xfelgpac1di1051l3       but
+xfelgpac1di1102l3       butren
+xfelgpac1di1150l3       but
+xfelgpac1di1198l3       butren
+xfelgpac1di1249l3       but
+xfelgpac1di1297l3       butren
+xfelgpac1di1345l3       but
+xfelgpac1di1396l3       butren
+xfelgpac1di1444l3       butren
+xfelgpac1di1499l3       but2
+xfelgpac1di1601l3       but
+xfelgpac1di1656l3       but
+xfelgpac1di1685cl       cav
+xfelgpac1di1720cl       but
+xfelgpac2di1720cl       butcav
+xfelgpac1di1755cl       but
+xfelgpac2di1755cl       but
+xfelgpac1di1793cl       but
+xfelgpac1di1828cl       butcav
+xfelgpac1di1862tl       but
+xfelgpac1di1973tl       but
+xfelgpac1di2018tl       but
+xfelgpac1di2100t2       but2
+xfelgpac1dixs1ug3r02t1  but
+xfelgpac1di2180t2       but
+xfelgpac1di2225t2       but2
+xfelgpac1di2480t4       but
+xfelgpac1di2548t4       but
+xfelgpac1di2590t4       but
+xfelgpac1di2623t4       but
+xfelgpac1di2686t4       but
+xfelgpac1dixs3ug2t4     but
+xfelgpac1dixs3ug2t4     but
+xfelgpac1di2943sa3      butcav
+xfelgpac1di3065t4d      butcav
+xfelgpac2di3065t4d      but
+xfelgpac1di3090t4d      but2
+xfelgpac1di2047t1       but
+xfelgpac1di2074t1       but
+xfelgpac2di2100t1       but
+xfelgpac1di2175t1       but2
+xfelgpac1di2444t3       but
+xfelgpac1di2500t3       but
+xfelgpac1di2550t3       but
+xfelgpac1di2585t3       but
+xfelgpac1di2632t3       but
+xfelgpac1di2723un1      but
+xfelgpac1di2785t5       but
+xfelgpac1di2820t5       but
+xfelgpac1di2848t5       but
+xfelgpac1di2911t5       but
+xfelgpac1di2972t5       but
+xfelgpac1di3055t5d      but
+xfelgpac1di3145t5d      butcav
+xfelgpac1dixsdu1ug1t5d  but
+xfelgpac2dixsdu1ug1t5d  but2
+xfelgpac1di2018tld      but
+xfelgpac1di2047tld      but
+xfelgpac1di2074tld      but2
+xfelgpac3di2100tld      but
+xfelgpac1dixs1ug3tld    but2

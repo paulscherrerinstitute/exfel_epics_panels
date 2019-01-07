@@ -10,9 +10,7 @@
 # ren2      - 1x Re-entrant, no ADC card for BPM1 FPGA
 #
 # hostname              image_name    
-xfelgpac1di30i1         but
-xfelgpac1di55i1         butren
-xfelgpac2di55i1         cav
-xfelgpac3di55i1         butcav
-xfelgpac1di59i1         but
-xfelddgpac1di59i1         but
+xfelgpac1di3055t5d      but
+xfelgpac1di3145t5d      butcav
+xfelgpac1dixsdu1ug1t5d  but
+xfelgpac2dixsdu1ug1t5d  but2

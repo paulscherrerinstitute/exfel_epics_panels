@@ -1,0 +1,17 @@
+# PSI Development Linux hosts
+#
+# Allowed image file names:
+# but4      - 4x Button BPM
+# cav2      - 2x Cavity BPM
+# ren2      - 2x Re-entrant BPM
+# but2cav1  - 2x Button BPM, 1x Cavity BPM
+# but2ren1  - 2x Button BPM, 1x Re-entrant BPM
+# but2      - 2x Button BPM, no ADC card for BPM2 FPGA
+# ibfbctrl  - IBFB controller with DAC16HL
+#
+# hostname              image_name    
+# test systems
+xfelgpacibfbsw          ibfbsw
+xfelgpacibfbctrl        ibfbctrl
+xfelgpacibfbmon         ibfbmon
+xfelgpacibfbplay        ibfbplay
