@@ -1,14 +1,14 @@
 
 file {
-	name="/xfel/controls/App/config/medm/IBFBCAV.adl"
+	name="/afs/psi.ch/user/r/rybaniec_r/ibfb/exfel_epics_panels/App/config/medm/test.adl"
 	version=030105
 }
 display {
 	object {
-		x=13
-		y=810
-		width=1200
-		height=220
+		x=1142
+		y=69
+		width=1090
+		height=1201
 	}
 	clr=14
 	bclr=4
@@ -131,14 +131,14 @@ polyline {
 		x=640
 		y=30
 		width=0
-		height=189
+		height=1200
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
 		(640,30)
-		(640,219)
+		(640,1230)
 	}
 }
 text {
@@ -159,14 +159,14 @@ polyline {
 		x=775
 		y=30
 		width=0
-		height=189
+		height=1200
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
 		(775,30)
-		(775,219)
+		(775,1230)
 	}
 }
 polyline {
@@ -174,14 +174,14 @@ polyline {
 		x=85
 		y=30
 		width=0
-		height=189
+		height=1200
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
 		(85,30)
-		(85,219)
+		(85,1230)
 	}
 }
 text {
@@ -241,14 +241,14 @@ polyline {
 		x=880
 		y=30
 		width=0
-		height=189
+		height=1200
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
 		(880,30)
-		(880,219)
+		(880,1230)
 	}
 }
 text {
@@ -279,38 +279,6 @@ text {
 	clr=14
 	bclr=57
 	label="-XFELTIM"
-}
-rectangle {
-	object {
-		x=715
-		y=365
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=0"
-		chan="IBFBXDOWN:S7GPAC-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=715
-		y=365
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=1"
-		chan="IBFBXDOWN:S7GPAC-STATUS"
-	}
 }
 "text entry" {
 	object {
@@ -412,38 +380,6 @@ text {
 	bclr=57
 	label="-XFELTIM"
 }
-rectangle {
-	object {
-		x=715
-		y=345
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=0"
-		chan="IBFBXUP:S7GPAC-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=715
-		y=345
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=1"
-		chan="IBFBXUP:S7GPAC-STATUS"
-	}
-}
 "related display" {
 	object {
 		x=330
@@ -460,38 +396,6 @@ rectangle {
 	bclr=57
 	label="-XFELTIM"
 }
-rectangle {
-	object {
-		x=715
-		y=325
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=0"
-		chan="IBFBYDOWN:S7GPAC-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=715
-		y=325
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=1"
-		chan="IBFBYDOWN:S7GPAC-STATUS"
-	}
-}
 "related display" {
 	object {
 		x=330
@@ -507,38 +411,6 @@ rectangle {
 	clr=14
 	bclr=57
 	label="-XFELTIM"
-}
-rectangle {
-	object {
-		x=715
-		y=305
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=0"
-		chan="IBFBYUP:S7GPAC-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=715
-		y=305
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=1"
-		chan="IBFBYUP:S7GPAC-STATUS"
-	}
 }
 "text entry" {
 	object {
@@ -849,66 +721,6 @@ polyline {
 		(1200,171)
 	}
 }
-"message button" {
-	object {
-		x=635
-		y=305
-		width=80
-		height=20
-	}
-	control {
-		chan="CAVBPM:BPM-STRING.AA"
-		clr=14
-		bclr=57
-	}
-	label="BPMI-1878-TL"
-	press_msg="xfelgpac1di1899tl:51236#BPMI-1878-TL"
-}
-"message button" {
-	object {
-		x=720
-		y=305
-		width=80
-		height=20
-	}
-	control {
-		chan="CAVBPM:BPM-STRING.AA"
-		clr=14
-		bclr=57
-	}
-	label="BPMI-1860-TL"
-	press_msg="xfelgpac1di1899tl:51238#BPMI-1860-TL"
-}
-"message button" {
-	object {
-		x=635
-		y=325
-		width=80
-		height=20
-	}
-	control {
-		chan="CAVBPM:BPM-STRING.AA"
-		clr=14
-		bclr=57
-	}
-	label="BPMI-1930-TL"
-	press_msg="xfelgpac2di1899tl:51236#BPMI-1930-TL"
-}
-"message button" {
-	object {
-		x=720
-		y=325
-		width=80
-		height=20
-	}
-	control {
-		chan="CAVBPM:BPM-STRING.AA"
-		clr=14
-		bclr=57
-	}
-	label="BPMI-1910-TL"
-	press_msg="xfelgpac2di1899tl:51238#BPMI-1910-TL"
-}
 "related display" {
 	object {
 		x=260
@@ -1161,66 +973,6 @@ rectangle {
 		chan="XFELGPAC1DI1899TL:S7GPAC-STATUS"
 	}
 }
-"message button" {
-	object {
-		x=635
-		y=345
-		width=80
-		height=20
-	}
-	control {
-		chan="CAVBPM:BPM-STRING.AA"
-		clr=14
-		bclr=57
-	}
-	label="BPMI-1889-TL"
-	press_msg="xfelgpac3di1899tl:51236#BPMI-1889-TL"
-}
-"message button" {
-	object {
-		x=635
-		y=365
-		width=80
-		height=20
-	}
-	control {
-		chan="CAVBPM:BPM-STRING.AA"
-		clr=14
-		bclr=57
-	}
-	label="BPMI-1939-TL"
-	press_msg="xfelgpac4di1899tl:51236#BPMI-1939-TL"
-}
-"message button" {
-	object {
-		x=720
-		y=345
-		width=80
-		height=20
-	}
-	control {
-		chan="CAVBPM:BPM-STRING.AA"
-		clr=14
-		bclr=57
-	}
-	label="BPMI-1863-TL"
-	press_msg="xfelgpac3di1899tl:51238#BPMI-1863-TL"
-}
-"message button" {
-	object {
-		x=720
-		y=365
-		width=80
-		height=20
-	}
-	control {
-		chan="CAVBPM:BPM-STRING.AA"
-		clr=14
-		bclr=57
-	}
-	label="BPMI-1925-TL"
-	press_msg="xfelgpac4di1899tl:51238#BPMI-1925-TL"
-}
 text {
 	object {
 		x=885
@@ -1236,17 +988,17 @@ text {
 }
 polyline {
 	object {
-		x=509
+		x=515
 		y=30
 		width=0
-		height=189
+		height=1200
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
-		(509,30)
-		(509,219)
+		(515,30)
+		(515,1230)
 	}
 }
 rectangle {
@@ -1564,38 +1316,6 @@ text {
 	bclr=57
 	label="-XFELTIM"
 }
-rectangle {
-	object {
-		x=715
-		y=275
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=0"
-		chan="IBFBYCOL:S7GPAC-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=715
-		y=275
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=1"
-		chan="IBFBYCOL:S7GPAC-STATUS"
-	}
-}
 "text entry" {
 	object {
 		x=830
@@ -1639,21 +1359,6 @@ rectangle {
 	}
 	limits {
 	}
-}
-"message button" {
-	object {
-		x=720
-		y=275
-		width=80
-		height=20
-	}
-	control {
-		chan="CAVBPM:BPM-STRING.AA"
-		clr=14
-		bclr=57
-	}
-	label="BPMI-1837-CL"
-	press_msg="xfelgpac1di1828cl:51238#BPMI-1837-CL"
 }
 "related display" {
 	object {
@@ -1889,58 +1594,6 @@ rectangle {
 text {
 	object {
 		x=10
-		y=290
-		width=70
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="Downstream Y"
-	align="horiz. right"
-}
-text {
-	object {
-		x=10
-		y=270
-		width=70
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="Upstream Y"
-	align="horiz. right"
-}
-text {
-	object {
-		x=10
-		y=310
-		width=70
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="Upstream X"
-	align="horiz. right"
-}
-text {
-	object {
-		x=10
-		y=330
-		width=70
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="Downstream X"
-	align="horiz. right"
-}
-text {
-	object {
-		x=10
 		y=175
 		width=70
 		height=15
@@ -1950,66 +1603,6 @@ text {
 	}
 	textix="SASE 1"
 	align="horiz. right"
-}
-"shell command" {
-	object {
-		x=90
-		y=175
-		width=80
-		height=20
-	}
-	command[0] {
-		label="Terminal"
-		name="./xfel_qt.sh BPMI-2241-SA1 BPM_GPAC_CAV_SMP.ui &"
-	}
-	clr=14
-	bclr=57
-	label="-BPMI-2241-SA1"
-}
-"shell command" {
-	object {
-		x=175
-		y=175
-		width=80
-		height=20
-	}
-	command[0] {
-		label="Terminal"
-		name="./xfel_qt.sh BPMI-2247-SA1 BPM_GPAC_CAV_SMP.ui &"
-	}
-	clr=14
-	bclr=57
-	label="-BPMI-2247-SA1"
-}
-"shell command" {
-	object {
-		x=90
-		y=195
-		width=80
-		height=20
-	}
-	command[0] {
-		label="Terminal"
-		name="./xfel_qt.sh BPMI-2253-SA1 BPM_GPAC_CAV_SMP.ui &"
-	}
-	clr=14
-	bclr=57
-	label="-BPMI-2253-SA1"
-}
-"shell command" {
-	object {
-		x=175
-		y=195
-		width=80
-		height=20
-	}
-	command[0] {
-		label="Terminal"
-		name="./xfel_qt.sh BPMI-2259-SA1 BPM_GPAC_CAV_SMP.ui &"
-	}
-	clr=14
-	bclr=57
-	label="-BPMI-2259-SA1"
 }
 "shell command" {
 	object {
@@ -2025,19 +1618,6 @@ text {
 	clr=14
 	bclr=57
 	label="-BPMI-1837-CL"
-}
-text {
-	object {
-		x=10
-		y=245
-		width=70
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="Collimator"
-	align="horiz. right"
 }
 text {
 	object {
@@ -2057,14 +1637,14 @@ polyline {
 		x=985
 		y=30
 		width=0
-		height=189
+		height=1200
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
 		(985,30)
-		(985,219)
+		(985,1230)
 	}
 }
 "text entry" {
@@ -2196,6 +1776,12868 @@ polyline {
 	}
 	control {
 		chan="IBFBYCOL:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+polyline {
+	object {
+		x=0
+		y=560
+		width=1200
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,560)
+		(1200,560)
+	}
+}
+polyline {
+	object {
+		x=0
+		y=950
+		width=1200
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,950)
+		(1200,950)
+	}
+}
+text {
+	object {
+		x=10
+		y=955
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SASE 3"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=565
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SASE 2"
+	align="horiz. right"
+}
+
+"shell command" {
+    object {
+        x=90
+        y=175
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2241-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2241-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=175
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2247-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2247-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=175
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2244SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1423"
+}
+rectangle {
+	object {
+		x=325
+		y=175
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1423:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=175
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1423:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=175
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1423"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=175
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2244sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2244sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2244sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=178
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1423:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=178
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1423:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1423:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1423:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1423:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1423:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1423:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1423:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1423:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1423:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=195
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2253-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2253-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=195
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2259-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2259-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=195
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2256SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1431"
+}
+rectangle {
+	object {
+		x=325
+		y=195
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1431:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=195
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1431:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=195
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1431"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=195
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2256sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2256sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2256sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=198
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1431:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=198
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1431:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=198
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1431:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=198
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1431:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=198
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1431:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=198
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1431:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=198
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1431:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=198
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1431:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=198
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1431:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=198
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1431:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=215
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2265-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2265-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=215
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2271-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2271-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=215
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2268SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1428"
+}
+rectangle {
+	object {
+		x=325
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1428:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1428:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=215
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1428"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=215
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2268sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2268sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2268sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=218
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1428:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=218
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1428:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=218
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1428:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=218
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1428:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=218
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1428:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=218
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1428:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=218
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1428:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=218
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1428:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=218
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1428:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=218
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1428:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=235
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2278-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2278-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=235
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2284-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2284-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=235
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2280SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1509"
+}
+rectangle {
+	object {
+		x=325
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1509:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1509:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=235
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1509"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=235
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2280sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2280sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2280sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=238
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1509:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=238
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1509:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=238
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1509:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=238
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1509:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=238
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1509:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=238
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1509:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=238
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1509:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=238
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1509:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=238
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1509:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=238
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1509:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=255
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2290-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2290-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=255
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2296-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2296-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=255
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2293SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1440"
+}
+rectangle {
+	object {
+		x=325
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1440:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1440:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=255
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1440"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=255
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2293sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2293sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2293sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=258
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1440:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=258
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1440:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=258
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1440:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=258
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1440:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=258
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1440:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=258
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1440:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=258
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1440:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=258
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1440:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=258
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1440:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=258
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1440:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=275
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2302-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2302-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=275
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2308-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2308-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=275
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2305SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1486"
+}
+rectangle {
+	object {
+		x=325
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1486:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1486:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=275
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1486"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=275
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2305sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2305sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2305sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=278
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1486:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=278
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1486:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=278
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1486:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=278
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1486:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=278
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1486:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=278
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1486:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=278
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1486:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=278
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1486:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=278
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1486:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=278
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1486:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=295
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2314-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2314-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=295
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2320-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2320-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=295
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2317SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1445"
+}
+rectangle {
+	object {
+		x=325
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1445:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1445:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=295
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1445"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=295
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2317sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2317sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2317sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=298
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1445:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=298
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1445:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=298
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1445:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=298
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1445:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=298
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1445:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=298
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1445:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=298
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1445:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=298
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1445:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=298
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1445:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=298
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1445:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=315
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2326-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2326-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=315
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2332-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2332-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=315
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2329SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1441"
+}
+rectangle {
+	object {
+		x=325
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1441:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1441:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=315
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1441"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=315
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2329sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2329sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2329sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=318
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1441:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=318
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1441:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=318
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1441:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=318
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1441:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=318
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1441:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=318
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1441:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=318
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1441:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=318
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1441:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=318
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1441:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=318
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1441:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=335
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2339-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2339-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=335
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2345-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2345-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=335
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2341SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1496"
+}
+rectangle {
+	object {
+		x=325
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1496:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1496:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=335
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1496"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=335
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2341sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2341sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2341sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=338
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1496:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=338
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1496:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=338
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1496:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=338
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1496:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=338
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1496:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=338
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1496:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=338
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1496:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=338
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1496:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=338
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1496:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=338
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1496:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=355
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2351-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2351-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=355
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2357-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2357-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=355
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2354SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1554"
+}
+rectangle {
+	object {
+		x=325
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1554:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1554:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=355
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1554"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=355
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2354sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2354sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2354sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=358
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1554:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=358
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1554:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=358
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1554:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=358
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1554:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=358
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1554:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=358
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1554:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=358
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1554:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=358
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1554:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=358
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1554:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=358
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1554:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=375
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2363-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2363-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=375
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2369-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2369-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=375
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2366SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1620"
+}
+rectangle {
+	object {
+		x=325
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1620:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1620:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=375
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1620"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=375
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2366sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2366sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2366sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=378
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1620:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=378
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1620:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=378
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1620:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=378
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1620:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=378
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1620:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=378
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1620:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=378
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1620:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=378
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1620:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=378
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1620:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=378
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1620:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=395
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2375-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2375-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=395
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2381-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2381-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=395
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2378SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1600"
+}
+rectangle {
+	object {
+		x=325
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1600:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1600:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=395
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1600"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=395
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2378sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2378sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2378sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=398
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1600:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=398
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1600:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1600:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1600:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1600:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1600:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1600:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1600:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1600:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=398
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1600:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=415
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2387-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2387-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=415
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2393-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2393-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=415
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2390SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1621"
+}
+rectangle {
+	object {
+		x=325
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1621:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1621:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=415
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1621"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=415
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2390sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2390sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2390sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=418
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1621:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=418
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1621:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1621:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1621:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1621:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1621:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1621:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1621:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1621:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=418
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1621:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=435
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2400-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2400-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=435
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2406-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2406-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=435
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2402SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1541"
+}
+rectangle {
+	object {
+		x=325
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1541:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1541:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=435
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1541"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=435
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2402sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2402sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2402sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=438
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1541:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=438
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1541:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1541:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1541:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1541:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1541:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1541:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1541:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1541:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=438
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1541:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=455
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2412-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2412-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=455
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2418-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2418-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=455
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2415SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1617"
+}
+rectangle {
+	object {
+		x=325
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1617:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1617:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=455
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1617"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=455
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2415sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2415sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2415sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=458
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1617:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=458
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1617:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=458
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1617:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=458
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1617:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=458
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1617:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=458
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1617:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=458
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1617:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=458
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1617:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=458
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1617:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=458
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1617:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=475
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2424-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2424-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=475
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2430-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2430-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=475
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2427SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1544"
+}
+rectangle {
+	object {
+		x=325
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1544:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1544:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=475
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1544"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=475
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2427sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2427sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2427sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=478
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1544:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=478
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1544:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=478
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1544:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=478
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1544:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=478
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1544:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=478
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1544:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=478
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1544:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=478
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1544:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=478
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1544:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=478
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1544:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=495
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2436-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2436-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=495
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2442-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2442-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=495
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2439SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1618"
+}
+rectangle {
+	object {
+		x=325
+		y=495
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1618:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=495
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1618:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=495
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1618"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=495
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2439sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2439sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2439sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=498
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1618:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=498
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1618:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=498
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1618:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=498
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1618:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=498
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1618:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=498
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1618:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=498
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1618:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=498
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1618:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=498
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1618:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=498
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1618:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=515
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2448-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2448-SA1"
+}
+"shell command" {
+    object {
+        x=175
+        y=515
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2454-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2454-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=515
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2451SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1613"
+}
+rectangle {
+	object {
+		x=325
+		y=515
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1613:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=515
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1613:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=515
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1613"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=515
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2451sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2451sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2451sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=518
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1613:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=518
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1613:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=518
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1613:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=518
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1613:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=518
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1613:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=518
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1613:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=518
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1613:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=518
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1613:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=518
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1613:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=518
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1613:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=535
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2461-SA1 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2461-SA1"
+}
+"related display" {
+	object {
+		x=260
+		y=535
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2463SA1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1635"
+}
+rectangle {
+	object {
+		x=325
+		y=535
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1635:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=535
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1635:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=535
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1635"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=535
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2463sa1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2463sa1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2463sa1"
+}
+"choice button" {
+	object {
+		x=520
+		y=538
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1635:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=538
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1635:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=538
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1635:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=538
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1635:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=538
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1635:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=538
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1635:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=538
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1635:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=538
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1635:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=538
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1635:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=538
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1635:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=565
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2203-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2203-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=565
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2209-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2209-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=565
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2207SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1494"
+}
+rectangle {
+	object {
+		x=325
+		y=565
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1494:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=565
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1494:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=565
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1494"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=565
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2207sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2207sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2207sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=568
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1494:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=568
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1494:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=568
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1494:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=568
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1494:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=568
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1494:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=568
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1494:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=568
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1494:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=568
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1494:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=568
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1494:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=568
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1494:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=585
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2215-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2215-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=585
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2221-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2221-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=585
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2219SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1487"
+}
+rectangle {
+	object {
+		x=325
+		y=585
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1487:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=585
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1487:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=585
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1487"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=585
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2219sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2219sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2219sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=588
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1487:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=588
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1487:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=588
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1487:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=588
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1487:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=588
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1487:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=588
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1487:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=588
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1487:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=588
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1487:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=588
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1487:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=588
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1487:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=605
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2227-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2227-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=605
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2233-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2233-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=605
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2231SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1548"
+}
+rectangle {
+	object {
+		x=325
+		y=605
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1548:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=605
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1548:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=605
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1548"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=605
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2231sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2231sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2231sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=608
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1548:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=608
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1548:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=608
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1548:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=608
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1548:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=608
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1548:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=608
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1548:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=608
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1548:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=608
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1548:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=608
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1548:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=608
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1548:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=625
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2239-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2239-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=625
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2245-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2245-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=625
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2244SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1470"
+}
+rectangle {
+	object {
+		x=325
+		y=625
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1470:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=625
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1470:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=625
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1470"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=625
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2244sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2244sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2244sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=628
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1470:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=628
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1470:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=628
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1470:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=628
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1470:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=628
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1470:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=628
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1470:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=628
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1470:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=628
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1470:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=628
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1470:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=628
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1470:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=645
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2252-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2252-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=645
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2258-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2258-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=645
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2256SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1507"
+}
+rectangle {
+	object {
+		x=325
+		y=645
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1507:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=645
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1507:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=645
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1507"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=645
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2256sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2256sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2256sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=648
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1507:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=648
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1507:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=648
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1507:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=648
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1507:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=648
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1507:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=648
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1507:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=648
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1507:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=648
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1507:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=648
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1507:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=648
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1507:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=665
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2264-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2264-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=665
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2270-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2270-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=665
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2268SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1543"
+}
+rectangle {
+	object {
+		x=325
+		y=665
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1543:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=665
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1543:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=665
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1543"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=665
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2268sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2268sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2268sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=668
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1543:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=668
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1543:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=668
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1543:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=668
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1543:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=668
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1543:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=668
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1543:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=668
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1543:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=668
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1543:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=668
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1543:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=668
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1543:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=685
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2276-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2276-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=685
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2282-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2282-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=685
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2280SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1502"
+}
+rectangle {
+	object {
+		x=325
+		y=685
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1502:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=685
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1502:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=685
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1502"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=685
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2280sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2280sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2280sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=688
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1502:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=688
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1502:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=688
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1502:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=688
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1502:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=688
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1502:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=688
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1502:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=688
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1502:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=688
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1502:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=688
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1502:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=688
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1502:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=705
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2288-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2288-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=705
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2294-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2294-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=705
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2292SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1499"
+}
+rectangle {
+	object {
+		x=325
+		y=705
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1499:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=705
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1499:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=705
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1499"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=705
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2292sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2292sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2292sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=708
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1499:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=708
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1499:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=708
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1499:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=708
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1499:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=708
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1499:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=708
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1499:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=708
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1499:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=708
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1499:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=708
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1499:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=708
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1499:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=725
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2300-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2300-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=725
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2306-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2306-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=725
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2305SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1525"
+}
+rectangle {
+	object {
+		x=325
+		y=725
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1525:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=725
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1525:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=725
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1525"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=725
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2305sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2305sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2305sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=728
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1525:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=728
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1525:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=728
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1525:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=728
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1525:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=728
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1525:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=728
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1525:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=728
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1525:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=728
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1525:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=728
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1525:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=728
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1525:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=745
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2313-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2313-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=745
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2319-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2319-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=745
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2317SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1508"
+}
+rectangle {
+	object {
+		x=325
+		y=745
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1508:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=745
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1508:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=745
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1508"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=745
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2317sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2317sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2317sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=748
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1508:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=748
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1508:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=748
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1508:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=748
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1508:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=748
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1508:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=748
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1508:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=748
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1508:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=748
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1508:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=748
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1508:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=748
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1508:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=765
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2325-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2325-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=765
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2331-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2331-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=765
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2329SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1511"
+}
+rectangle {
+	object {
+		x=325
+		y=765
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1511:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=765
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1511:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=765
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1511"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=765
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2329sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2329sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2329sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=768
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1511:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=768
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1511:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=768
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1511:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=768
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1511:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=768
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1511:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=768
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1511:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=768
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1511:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=768
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1511:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=768
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1511:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=768
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1511:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=785
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2337-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2337-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=785
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2343-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2343-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=785
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2341SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1606"
+}
+rectangle {
+	object {
+		x=325
+		y=785
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1606:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=785
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1606:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=785
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1606"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=785
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2341sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2341sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2341sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=788
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1606:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=788
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1606:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=788
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1606:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=788
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1606:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=788
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1606:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=788
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1606:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=788
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1606:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=788
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1606:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=788
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1606:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=788
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1606:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=805
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2349-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2349-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=805
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2355-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2355-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=805
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2353SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1519"
+}
+rectangle {
+	object {
+		x=325
+		y=805
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1519:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=805
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1519:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=805
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1519"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=805
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2353sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2353sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2353sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=808
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1519:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=808
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1519:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=808
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1519:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=808
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1519:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=808
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1519:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=808
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1519:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=808
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1519:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=808
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1519:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=808
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1519:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=808
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1519:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=825
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2361-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2361-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=825
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2367-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2367-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=825
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2366SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1516"
+}
+rectangle {
+	object {
+		x=325
+		y=825
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1516:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=825
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1516:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=825
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1516"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=825
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2366sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2366sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2366sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=828
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1516:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=828
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1516:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=828
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1516:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=828
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1516:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=828
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1516:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=828
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1516:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=828
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1516:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=828
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1516:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=828
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1516:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=828
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1516:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=845
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2373-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2373-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=845
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2380-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2380-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=845
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2378SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1624"
+}
+rectangle {
+	object {
+		x=325
+		y=845
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1624:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=845
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1624:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=845
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1624"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=845
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2378sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2378sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2378sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=848
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1624:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=848
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1624:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=848
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1624:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=848
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1624:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=848
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1624:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=848
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1624:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=848
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1624:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=848
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1624:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=848
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1624:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=848
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1624:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=865
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2386-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2386-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=865
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2392-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2392-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=865
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2390SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1539"
+}
+rectangle {
+	object {
+		x=325
+		y=865
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1539:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=865
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1539:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=865
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1539"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=865
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2390sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2390sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2390sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=868
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1539:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=868
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1539:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=868
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1539:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=868
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1539:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=868
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1539:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=868
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1539:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=868
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1539:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=868
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1539:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=868
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1539:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=868
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1539:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=885
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2398-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2398-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=885
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2404-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2404-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=885
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2402SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1492"
+}
+rectangle {
+	object {
+		x=325
+		y=885
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1492:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=885
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1492:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=885
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1492"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=885
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2402sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2402sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2402sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=888
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1492:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=888
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1492:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=888
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1492:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=888
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1492:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=888
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1492:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=888
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1492:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=888
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1492:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=888
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1492:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=888
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1492:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=888
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1492:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=905
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2410-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2410-SA2"
+}
+"shell command" {
+    object {
+        x=175
+        y=905
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2416-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2416-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=905
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2414SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1491"
+}
+rectangle {
+	object {
+		x=325
+		y=905
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1491:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=905
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1491:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=905
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1491"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=905
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2414sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2414sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2414sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=908
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1491:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=908
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1491:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=908
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1491:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=908
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1491:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=908
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1491:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=908
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1491:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=908
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1491:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=908
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1491:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=908
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1491:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=908
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1491:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=925
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2422-SA2 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2422-SA2"
+}
+"related display" {
+	object {
+		x=260
+		y=925
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2423SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1571"
+}
+rectangle {
+	object {
+		x=325
+		y=925
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1571:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=925
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1571:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=925
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1571"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=925
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2423sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2423sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2423sa2"
+}
+"choice button" {
+	object {
+		x=520
+		y=928
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1571:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=928
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1571:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=928
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1571:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=928
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1571:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=928
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1571:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=928
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1571:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=928
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1571:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=928
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1571:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=928
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1571:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=928
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1571:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=955
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2806-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2806-SA3"
+}
+"shell command" {
+    object {
+        x=175
+        y=955
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2812-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2812-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=955
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2808SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1447"
+}
+rectangle {
+	object {
+		x=325
+		y=955
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1447:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=955
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1447:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=955
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1447"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=955
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2808sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2808sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2808sa3"
+}
+"choice button" {
+	object {
+		x=520
+		y=958
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1447:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=958
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1447:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=958
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1447:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=958
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1447:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=958
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1447:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=958
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1447:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=958
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1447:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=958
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1447:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=958
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1447:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=958
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1447:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=975
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2818-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2818-SA3"
+}
+"shell command" {
+    object {
+        x=175
+        y=975
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2824-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2824-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=975
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2820SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1450"
+}
+rectangle {
+	object {
+		x=325
+		y=975
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1450:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=975
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1450:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=975
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1450"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=975
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2820sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2820sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2820sa3"
+}
+"choice button" {
+	object {
+		x=520
+		y=978
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1450:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=978
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1450:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=978
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1450:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=978
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1450:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=978
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1450:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=978
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1450:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=978
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1450:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=978
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1450:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=978
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1450:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=978
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1450:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=995
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2830-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2830-SA3"
+}
+"shell command" {
+    object {
+        x=175
+        y=995
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2836-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2836-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=995
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2832SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1444"
+}
+rectangle {
+	object {
+		x=325
+		y=995
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1444:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=995
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1444:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=995
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1444"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=995
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2832sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2832sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2832sa3"
+}
+"choice button" {
+	object {
+		x=520
+		y=998
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1444:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=998
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1444:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=998
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1444:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=998
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1444:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=998
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1444:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=998
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1444:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=998
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1444:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=998
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1444:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=998
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1444:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=998
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1444:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=1015
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2842-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2842-SA3"
+}
+"shell command" {
+    object {
+        x=175
+        y=1015
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2849-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2849-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=1015
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2845SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1538"
+}
+rectangle {
+	object {
+		x=325
+		y=1015
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1538:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=1015
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1538:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=1015
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1538"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=1015
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2845sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2845sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2845sa3"
+}
+"choice button" {
+	object {
+		x=520
+		y=1018
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1538:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=1018
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1538:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=1018
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1538:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=1018
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1538:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=1018
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1538:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=1018
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1538:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=1018
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1538:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=1018
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1538:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=1018
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1538:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=1018
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1538:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=1035
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2861-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2861-SA3"
+}
+"shell command" {
+    object {
+        x=175
+        y=1035
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2849-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2849-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=1035
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2857SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1522"
+}
+rectangle {
+	object {
+		x=325
+		y=1035
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1522:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=1035
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1522:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=1035
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1522"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=1035
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2857sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2857sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2857sa3"
+}
+"choice button" {
+	object {
+		x=520
+		y=1038
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1522:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=1038
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1522:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=1038
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1522:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=1038
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1522:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=1038
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1522:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=1038
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1522:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=1038
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1522:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=1038
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1522:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=1038
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1522:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=1038
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1522:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=1055
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2867-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2867-SA3"
+}
+"shell command" {
+    object {
+        x=175
+        y=1055
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2873-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2873-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=1055
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2869SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1430"
+}
+rectangle {
+	object {
+		x=325
+		y=1055
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1430:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=1055
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1430:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=1055
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1430"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=1055
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2869sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2869sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2869sa3"
+}
+"choice button" {
+	object {
+		x=520
+		y=1058
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1430:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=1058
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1430:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=1058
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1430:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=1058
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1430:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=1058
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1430:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=1058
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1430:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=1058
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1430:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=1058
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1430:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=1058
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1430:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=1058
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1430:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=1075
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2879-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2879-SA3"
+}
+"shell command" {
+    object {
+        x=175
+        y=1075
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2885-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2885-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=1075
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2881SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1421"
+}
+rectangle {
+	object {
+		x=325
+		y=1075
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1421:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=1075
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1421:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=1075
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1421"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=1075
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2881sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2881sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2881sa3"
+}
+"choice button" {
+	object {
+		x=520
+		y=1078
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1421:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=1078
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1421:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=1078
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1421:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=1078
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1421:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=1078
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1421:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=1078
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1421:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=1078
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1421:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=1078
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1421:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=1078
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1421:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=1078
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1421:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=1095
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2891-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2891-SA3"
+}
+"shell command" {
+    object {
+        x=175
+        y=1095
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2897-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2897-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=1095
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2893SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1434"
+}
+rectangle {
+	object {
+		x=325
+		y=1095
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1434:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=1095
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1434:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=1095
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1434"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=1095
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2893sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2893sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2893sa3"
+}
+"choice button" {
+	object {
+		x=520
+		y=1098
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1434:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=1098
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1434:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=1098
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1434:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=1098
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1434:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=1098
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1434:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=1098
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1434:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=1098
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1434:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=1098
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1434:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=1098
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1434:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=1098
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1434:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=1115
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2903-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2903-SA3"
+}
+"shell command" {
+    object {
+        x=175
+        y=1115
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2910-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2910-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=1115
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2906SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1476"
+}
+rectangle {
+	object {
+		x=325
+		y=1115
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1476:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=1115
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1476:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=1115
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1476"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=1115
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2906sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2906sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2906sa3"
+}
+"choice button" {
+	object {
+		x=520
+		y=1118
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1476:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=1118
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1476:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=1118
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1476:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=1118
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1476:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=1118
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1476:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=1118
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1476:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=1118
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1476:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=1118
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1476:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=1118
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1476:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=1118
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1476:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=1135
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2916-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2916-SA3"
+}
+"shell command" {
+    object {
+        x=175
+        y=1135
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2922-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2922-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=1135
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2918SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1506"
+}
+rectangle {
+	object {
+		x=325
+		y=1135
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1506:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=1135
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1506:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=1135
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1506"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=1135
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2918sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2918sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2918sa3"
+}
+"choice button" {
+	object {
+		x=520
+		y=1138
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1506:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=1138
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1506:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=1138
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1506:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=1138
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1506:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=1138
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1506:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=1138
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1506:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=1138
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1506:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=1138
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1506:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=1138
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1506:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=1138
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1506:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=1155
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2928-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2928-SA3"
+}
+"shell command" {
+    object {
+        x=175
+        y=1155
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2934-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2934-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=1155
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2931SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1498"
+}
+rectangle {
+	object {
+		x=325
+		y=1155
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1498:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=1155
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1498:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=1155
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1498"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=1155
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2931sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2931sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2931sa3"
+}
+"choice button" {
+	object {
+		x=520
+		y=1158
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1498:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=1158
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1498:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=1158
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1498:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=1158
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1498:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=1158
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1498:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=1158
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1498:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=1158
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1498:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=1158
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1498:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=1158
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1498:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=1158
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1498:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"shell command" {
+    object {
+        x=90
+        y=1175
+		width=85
+        height=20
+	}
+    command[0] {
+        label="Terminal"
+        name="./xfel_qt.sh BPME-2940-SA3 BPM_GPAC_CAV_SMP.ui &"
+    }
+    clr=14
+    bclr=57
+    label="-BPME-2940-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=1175
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2943SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1588"
+}
+rectangle {
+	object {
+		x=325
+		y=1175
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IPC1588:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=1175
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IPC1588:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=1175
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=IPC1588"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=1175
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2943sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2943sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2943sa3"
+}
+"choice button" {
+	object {
+		x=520
+		y=1178
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1588:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=1178
+		width=55
+		height=15
+	}
+	control {
+		chan="IPC1588:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text entry" {
+	object {
+		x=667
+		y=1178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1588:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=717
+		y=1178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1588:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=780
+		y=1178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1588:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=830
+		y=1178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1588:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=885
+		y=1178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1588:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=935
+		y=1178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1588:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=990
+		y=1178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1588:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=1040
+		y=1178
+		width=45
+		height=15
+	}
+	control {
+		chan="IPC1588:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
