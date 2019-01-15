@@ -1898,7 +1898,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1423:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2244SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1914,7 +1914,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1423:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2244SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -2155,7 +2155,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1431:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2256SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -2171,7 +2171,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1431:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2256SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -2412,7 +2412,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1428:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2268SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -2428,7 +2428,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1428:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2268SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -2669,7 +2669,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1509:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2280SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -2685,7 +2685,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1509:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2280SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -2926,7 +2926,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1440:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2293SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -2942,7 +2942,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1440:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2293SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -3183,7 +3183,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1486:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2305SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -3199,7 +3199,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1486:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2305SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -3440,7 +3440,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1445:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2317SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -3456,7 +3456,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1445:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2317SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -3697,7 +3697,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1441:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2329SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -3713,7 +3713,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1441:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2329SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -3954,7 +3954,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1496:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2341SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -3970,7 +3970,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1496:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2341SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -4211,7 +4211,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1554:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2354SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -4227,7 +4227,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1554:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2354SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -4468,7 +4468,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1620:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2366SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -4484,7 +4484,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1620:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2366SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -4725,7 +4725,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1600:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2378SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -4741,7 +4741,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1600:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2378SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -4982,7 +4982,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1621:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2390SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -4998,7 +4998,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1621:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2390SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -5239,7 +5239,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1541:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2402SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -5255,7 +5255,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1541:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2402SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -5496,7 +5496,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1617:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2415SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -5512,7 +5512,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1617:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2415SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -5753,7 +5753,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1544:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2427SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -5769,7 +5769,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1544:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2427SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -6010,7 +6010,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1618:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2439SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -6026,7 +6026,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1618:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2439SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -6267,7 +6267,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1613:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2451SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -6283,7 +6283,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1613:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2451SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -6509,7 +6509,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1635:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2463SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -6525,7 +6525,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1635:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2463SA1:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -6766,7 +6766,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1494:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2207SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -6782,7 +6782,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1494:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2207SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -7023,7 +7023,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1487:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2219SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -7039,7 +7039,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1487:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2219SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -7280,7 +7280,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1548:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2231SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -7296,7 +7296,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1548:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2231SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -7537,7 +7537,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1470:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2244SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -7553,7 +7553,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1470:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2244SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -7794,7 +7794,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1507:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2256SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -7810,7 +7810,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1507:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2256SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -8051,7 +8051,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1543:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2268SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -8067,7 +8067,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1543:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2268SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -8308,7 +8308,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1502:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2280SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -8324,7 +8324,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1502:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2280SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -8565,7 +8565,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1499:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2292SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -8581,7 +8581,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1499:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2292SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -8822,7 +8822,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1525:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2305SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -8838,7 +8838,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1525:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2305SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -9079,7 +9079,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1508:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2317SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -9095,7 +9095,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1508:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2317SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -9336,7 +9336,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1511:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2329SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -9352,7 +9352,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1511:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2329SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -9593,7 +9593,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1606:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2341SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -9609,7 +9609,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1606:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2341SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -9850,7 +9850,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1519:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2353SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -9866,7 +9866,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1519:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2353SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -10107,7 +10107,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1516:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2366SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -10123,7 +10123,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1516:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2366SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -10364,7 +10364,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1624:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2378SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -10380,7 +10380,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1624:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2378SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -10621,7 +10621,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1539:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2390SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -10637,7 +10637,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1539:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2390SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -10878,7 +10878,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1492:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2402SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -10894,7 +10894,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1492:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2402SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -11135,7 +11135,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1491:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2414SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -11151,7 +11151,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1491:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2414SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -11377,7 +11377,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1571:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2423SA2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -11393,7 +11393,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1571:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2423SA2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -11634,7 +11634,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1447:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2808SA3:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -11650,7 +11650,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1447:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2808SA3:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -11891,7 +11891,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1450:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2820SA3:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -11907,7 +11907,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1450:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2820SA3:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -12148,7 +12148,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1444:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2832SA3:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -12164,7 +12164,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1444:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2832SA3:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -12405,7 +12405,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1538:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2845SA3:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -12421,7 +12421,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1538:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2845SA3:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -12662,7 +12662,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1522:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2857SA3:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -12678,7 +12678,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1522:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2857SA3:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -12919,7 +12919,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1430:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2869SA3:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -12935,7 +12935,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1430:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2869SA3:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -13176,7 +13176,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1421:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2881SA3:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -13192,7 +13192,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1421:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2881SA3:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -13433,7 +13433,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1434:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2893SA3:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -13449,7 +13449,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1434:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2893SA3:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -13690,7 +13690,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1476:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2906SA3:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -13706,7 +13706,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1476:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2906SA3:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -13947,7 +13947,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1506:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2918SA3:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -13963,7 +13963,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1506:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2918SA3:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -14204,7 +14204,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1498:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2931SA3:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -14220,7 +14220,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1498:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2931SA3:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -14446,7 +14446,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1588:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2943SA3:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -14462,7 +14462,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1588:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2943SA3:S7GPAC-STATUS"
 	}
 }
 "related display" {
