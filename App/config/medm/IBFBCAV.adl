@@ -1927,7 +1927,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1423"
+		args="DEV=XFELGPAC1DI2244SA1"
 	}
 	clr=14
 	bclr=57
@@ -1948,6 +1948,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2244sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=175
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2241-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=175
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2241-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -1956,7 +1988,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1423:BPM1-ENABLED"
+		chan="BPME-2241-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -1970,7 +2002,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1423:BPM2-ENABLED"
+		chan="BPME-2247-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -1984,7 +2016,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1423:BPM1-TRG-DELAY"
+		chan="BPME-2241-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -1999,7 +2031,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1423:BPM2-TRG-DELAY"
+		chan="BPME-2247-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -2014,7 +2046,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1423:BPM1-BPM-ID"
+		chan="BPME-2241-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -2029,7 +2061,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1423:BPM2-BPM-ID"
+		chan="BPME-2247-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -2044,7 +2076,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1423:BPM1-ROUTER-ENA"
+		chan="BPME-2241-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -2059,7 +2091,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1423:BPM2-ROUTER-ENA"
+		chan="BPME-2247-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -2074,7 +2106,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1423:BPM1-Q-THRESHOLD"
+		chan="BPME-2241-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -2089,7 +2121,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1423:BPM2-Q-THRESHOLD"
+		chan="BPME-2247-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -2184,7 +2216,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1431"
+		args="DEV=XFELGPAC1DI2256SA1"
 	}
 	clr=14
 	bclr=57
@@ -2205,6 +2237,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2256sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=195
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2253-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=195
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2253-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -2213,7 +2277,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1431:BPM1-ENABLED"
+		chan="BPME-2253-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -2227,7 +2291,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1431:BPM2-ENABLED"
+		chan="BPME-2259-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -2241,7 +2305,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1431:BPM1-TRG-DELAY"
+		chan="BPME-2253-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -2256,7 +2320,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1431:BPM2-TRG-DELAY"
+		chan="BPME-2259-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -2271,7 +2335,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1431:BPM1-BPM-ID"
+		chan="BPME-2253-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -2286,7 +2350,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1431:BPM2-BPM-ID"
+		chan="BPME-2259-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -2301,7 +2365,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1431:BPM1-ROUTER-ENA"
+		chan="BPME-2253-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -2316,7 +2380,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1431:BPM2-ROUTER-ENA"
+		chan="BPME-2259-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -2331,7 +2395,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1431:BPM1-Q-THRESHOLD"
+		chan="BPME-2253-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -2346,7 +2410,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1431:BPM2-Q-THRESHOLD"
+		chan="BPME-2259-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -2441,7 +2505,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1428"
+		args="DEV=XFELGPAC1DI2268SA1"
 	}
 	clr=14
 	bclr=57
@@ -2462,6 +2526,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2268sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2265-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2265-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -2470,7 +2566,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1428:BPM1-ENABLED"
+		chan="BPME-2265-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -2484,7 +2580,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1428:BPM2-ENABLED"
+		chan="BPME-2271-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -2498,7 +2594,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1428:BPM1-TRG-DELAY"
+		chan="BPME-2265-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -2513,7 +2609,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1428:BPM2-TRG-DELAY"
+		chan="BPME-2271-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -2528,7 +2624,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1428:BPM1-BPM-ID"
+		chan="BPME-2265-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -2543,7 +2639,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1428:BPM2-BPM-ID"
+		chan="BPME-2271-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -2558,7 +2654,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1428:BPM1-ROUTER-ENA"
+		chan="BPME-2265-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -2573,7 +2669,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1428:BPM2-ROUTER-ENA"
+		chan="BPME-2271-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -2588,7 +2684,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1428:BPM1-Q-THRESHOLD"
+		chan="BPME-2265-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -2603,7 +2699,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1428:BPM2-Q-THRESHOLD"
+		chan="BPME-2271-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -2698,7 +2794,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1509"
+		args="DEV=XFELGPAC1DI2280SA1"
 	}
 	clr=14
 	bclr=57
@@ -2719,6 +2815,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2280sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2278-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2278-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -2727,7 +2855,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1509:BPM1-ENABLED"
+		chan="BPME-2278-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -2741,7 +2869,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1509:BPM2-ENABLED"
+		chan="BPME-2284-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -2755,7 +2883,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1509:BPM1-TRG-DELAY"
+		chan="BPME-2278-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -2770,7 +2898,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1509:BPM2-TRG-DELAY"
+		chan="BPME-2284-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -2785,7 +2913,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1509:BPM1-BPM-ID"
+		chan="BPME-2278-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -2800,7 +2928,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1509:BPM2-BPM-ID"
+		chan="BPME-2284-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -2815,7 +2943,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1509:BPM1-ROUTER-ENA"
+		chan="BPME-2278-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -2830,7 +2958,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1509:BPM2-ROUTER-ENA"
+		chan="BPME-2284-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -2845,7 +2973,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1509:BPM1-Q-THRESHOLD"
+		chan="BPME-2278-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -2860,7 +2988,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1509:BPM2-Q-THRESHOLD"
+		chan="BPME-2284-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -2955,7 +3083,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1440"
+		args="DEV=XFELGPAC1DI2293SA1"
 	}
 	clr=14
 	bclr=57
@@ -2976,6 +3104,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2293sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2290-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2290-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -2984,7 +3144,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1440:BPM1-ENABLED"
+		chan="BPME-2290-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -2998,7 +3158,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1440:BPM2-ENABLED"
+		chan="BPME-2296-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -3012,7 +3172,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1440:BPM1-TRG-DELAY"
+		chan="BPME-2290-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -3027,7 +3187,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1440:BPM2-TRG-DELAY"
+		chan="BPME-2296-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -3042,7 +3202,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1440:BPM1-BPM-ID"
+		chan="BPME-2290-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -3057,7 +3217,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1440:BPM2-BPM-ID"
+		chan="BPME-2296-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -3072,7 +3232,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1440:BPM1-ROUTER-ENA"
+		chan="BPME-2290-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -3087,7 +3247,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1440:BPM2-ROUTER-ENA"
+		chan="BPME-2296-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -3102,7 +3262,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1440:BPM1-Q-THRESHOLD"
+		chan="BPME-2290-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -3117,7 +3277,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1440:BPM2-Q-THRESHOLD"
+		chan="BPME-2296-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -3212,7 +3372,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1486"
+		args="DEV=XFELGPAC1DI2305SA1"
 	}
 	clr=14
 	bclr=57
@@ -3233,6 +3393,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2305sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2302-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2302-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -3241,7 +3433,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1486:BPM1-ENABLED"
+		chan="BPME-2302-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -3255,7 +3447,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1486:BPM2-ENABLED"
+		chan="BPME-2308-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -3269,7 +3461,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1486:BPM1-TRG-DELAY"
+		chan="BPME-2302-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -3284,7 +3476,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1486:BPM2-TRG-DELAY"
+		chan="BPME-2308-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -3299,7 +3491,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1486:BPM1-BPM-ID"
+		chan="BPME-2302-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -3314,7 +3506,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1486:BPM2-BPM-ID"
+		chan="BPME-2308-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -3329,7 +3521,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1486:BPM1-ROUTER-ENA"
+		chan="BPME-2302-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -3344,7 +3536,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1486:BPM2-ROUTER-ENA"
+		chan="BPME-2308-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -3359,7 +3551,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1486:BPM1-Q-THRESHOLD"
+		chan="BPME-2302-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -3374,7 +3566,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1486:BPM2-Q-THRESHOLD"
+		chan="BPME-2308-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -3469,7 +3661,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1445"
+		args="DEV=XFELGPAC1DI2317SA1"
 	}
 	clr=14
 	bclr=57
@@ -3490,6 +3682,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2317sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2314-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2314-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -3498,7 +3722,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1445:BPM1-ENABLED"
+		chan="BPME-2314-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -3512,7 +3736,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1445:BPM2-ENABLED"
+		chan="BPME-2320-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -3526,7 +3750,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1445:BPM1-TRG-DELAY"
+		chan="BPME-2314-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -3541,7 +3765,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1445:BPM2-TRG-DELAY"
+		chan="BPME-2320-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -3556,7 +3780,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1445:BPM1-BPM-ID"
+		chan="BPME-2314-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -3571,7 +3795,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1445:BPM2-BPM-ID"
+		chan="BPME-2320-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -3586,7 +3810,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1445:BPM1-ROUTER-ENA"
+		chan="BPME-2314-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -3601,7 +3825,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1445:BPM2-ROUTER-ENA"
+		chan="BPME-2320-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -3616,7 +3840,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1445:BPM1-Q-THRESHOLD"
+		chan="BPME-2314-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -3631,7 +3855,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1445:BPM2-Q-THRESHOLD"
+		chan="BPME-2320-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -3726,7 +3950,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1441"
+		args="DEV=XFELGPAC1DI2329SA1"
 	}
 	clr=14
 	bclr=57
@@ -3747,6 +3971,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2329sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2326-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2326-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -3755,7 +4011,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1441:BPM1-ENABLED"
+		chan="BPME-2326-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -3769,7 +4025,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1441:BPM2-ENABLED"
+		chan="BPME-2332-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -3783,7 +4039,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1441:BPM1-TRG-DELAY"
+		chan="BPME-2326-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -3798,7 +4054,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1441:BPM2-TRG-DELAY"
+		chan="BPME-2332-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -3813,7 +4069,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1441:BPM1-BPM-ID"
+		chan="BPME-2326-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -3828,7 +4084,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1441:BPM2-BPM-ID"
+		chan="BPME-2332-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -3843,7 +4099,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1441:BPM1-ROUTER-ENA"
+		chan="BPME-2326-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -3858,7 +4114,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1441:BPM2-ROUTER-ENA"
+		chan="BPME-2332-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -3873,7 +4129,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1441:BPM1-Q-THRESHOLD"
+		chan="BPME-2326-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -3888,7 +4144,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1441:BPM2-Q-THRESHOLD"
+		chan="BPME-2332-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -3983,7 +4239,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1496"
+		args="DEV=XFELGPAC1DI2341SA1"
 	}
 	clr=14
 	bclr=57
@@ -4004,6 +4260,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2341sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2339-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2339-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -4012,7 +4300,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1496:BPM1-ENABLED"
+		chan="BPME-2339-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -4026,7 +4314,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1496:BPM2-ENABLED"
+		chan="BPME-2345-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -4040,7 +4328,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1496:BPM1-TRG-DELAY"
+		chan="BPME-2339-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -4055,7 +4343,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1496:BPM2-TRG-DELAY"
+		chan="BPME-2345-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -4070,7 +4358,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1496:BPM1-BPM-ID"
+		chan="BPME-2339-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -4085,7 +4373,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1496:BPM2-BPM-ID"
+		chan="BPME-2345-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -4100,7 +4388,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1496:BPM1-ROUTER-ENA"
+		chan="BPME-2339-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -4115,7 +4403,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1496:BPM2-ROUTER-ENA"
+		chan="BPME-2345-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -4130,7 +4418,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1496:BPM1-Q-THRESHOLD"
+		chan="BPME-2339-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -4145,7 +4433,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1496:BPM2-Q-THRESHOLD"
+		chan="BPME-2345-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -4240,7 +4528,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1554"
+		args="DEV=XFELGPAC1DI2354SA1"
 	}
 	clr=14
 	bclr=57
@@ -4261,6 +4549,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2354sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2351-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2351-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -4269,7 +4589,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1554:BPM1-ENABLED"
+		chan="BPME-2351-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -4283,7 +4603,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1554:BPM2-ENABLED"
+		chan="BPME-2357-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -4297,7 +4617,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1554:BPM1-TRG-DELAY"
+		chan="BPME-2351-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -4312,7 +4632,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1554:BPM2-TRG-DELAY"
+		chan="BPME-2357-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -4327,7 +4647,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1554:BPM1-BPM-ID"
+		chan="BPME-2351-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -4342,7 +4662,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1554:BPM2-BPM-ID"
+		chan="BPME-2357-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -4357,7 +4677,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1554:BPM1-ROUTER-ENA"
+		chan="BPME-2351-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -4372,7 +4692,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1554:BPM2-ROUTER-ENA"
+		chan="BPME-2357-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -4387,7 +4707,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1554:BPM1-Q-THRESHOLD"
+		chan="BPME-2351-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -4402,7 +4722,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1554:BPM2-Q-THRESHOLD"
+		chan="BPME-2357-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -4497,7 +4817,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1620"
+		args="DEV=XFELGPAC1DI2366SA1"
 	}
 	clr=14
 	bclr=57
@@ -4518,6 +4838,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2366sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2363-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2363-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -4526,7 +4878,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1620:BPM1-ENABLED"
+		chan="BPME-2363-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -4540,7 +4892,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1620:BPM2-ENABLED"
+		chan="BPME-2369-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -4554,7 +4906,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1620:BPM1-TRG-DELAY"
+		chan="BPME-2363-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -4569,7 +4921,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1620:BPM2-TRG-DELAY"
+		chan="BPME-2369-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -4584,7 +4936,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1620:BPM1-BPM-ID"
+		chan="BPME-2363-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -4599,7 +4951,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1620:BPM2-BPM-ID"
+		chan="BPME-2369-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -4614,7 +4966,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1620:BPM1-ROUTER-ENA"
+		chan="BPME-2363-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -4629,7 +4981,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1620:BPM2-ROUTER-ENA"
+		chan="BPME-2369-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -4644,7 +4996,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1620:BPM1-Q-THRESHOLD"
+		chan="BPME-2363-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -4659,7 +5011,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1620:BPM2-Q-THRESHOLD"
+		chan="BPME-2369-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -4754,7 +5106,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1600"
+		args="DEV=XFELGPAC1DI2378SA1"
 	}
 	clr=14
 	bclr=57
@@ -4775,6 +5127,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2378sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2375-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2375-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -4783,7 +5167,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1600:BPM1-ENABLED"
+		chan="BPME-2375-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -4797,7 +5181,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1600:BPM2-ENABLED"
+		chan="BPME-2381-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -4811,7 +5195,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1600:BPM1-TRG-DELAY"
+		chan="BPME-2375-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -4826,7 +5210,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1600:BPM2-TRG-DELAY"
+		chan="BPME-2381-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -4841,7 +5225,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1600:BPM1-BPM-ID"
+		chan="BPME-2375-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -4856,7 +5240,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1600:BPM2-BPM-ID"
+		chan="BPME-2381-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -4871,7 +5255,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1600:BPM1-ROUTER-ENA"
+		chan="BPME-2375-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -4886,7 +5270,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1600:BPM2-ROUTER-ENA"
+		chan="BPME-2381-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -4901,7 +5285,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1600:BPM1-Q-THRESHOLD"
+		chan="BPME-2375-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -4916,7 +5300,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1600:BPM2-Q-THRESHOLD"
+		chan="BPME-2381-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -5011,7 +5395,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1621"
+		args="DEV=XFELGPAC1DI2390SA1"
 	}
 	clr=14
 	bclr=57
@@ -5032,6 +5416,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2390sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2387-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2387-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -5040,7 +5456,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1621:BPM1-ENABLED"
+		chan="BPME-2387-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -5054,7 +5470,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1621:BPM2-ENABLED"
+		chan="BPME-2393-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -5068,7 +5484,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1621:BPM1-TRG-DELAY"
+		chan="BPME-2387-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -5083,7 +5499,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1621:BPM2-TRG-DELAY"
+		chan="BPME-2393-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -5098,7 +5514,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1621:BPM1-BPM-ID"
+		chan="BPME-2387-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -5113,7 +5529,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1621:BPM2-BPM-ID"
+		chan="BPME-2393-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -5128,7 +5544,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1621:BPM1-ROUTER-ENA"
+		chan="BPME-2387-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -5143,7 +5559,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1621:BPM2-ROUTER-ENA"
+		chan="BPME-2393-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -5158,7 +5574,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1621:BPM1-Q-THRESHOLD"
+		chan="BPME-2387-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -5173,7 +5589,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1621:BPM2-Q-THRESHOLD"
+		chan="BPME-2393-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -5268,7 +5684,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1541"
+		args="DEV=XFELGPAC1DI2402SA1"
 	}
 	clr=14
 	bclr=57
@@ -5289,6 +5705,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2402sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2400-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2400-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -5297,7 +5745,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1541:BPM1-ENABLED"
+		chan="BPME-2400-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -5311,7 +5759,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1541:BPM2-ENABLED"
+		chan="BPME-2406-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -5325,7 +5773,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1541:BPM1-TRG-DELAY"
+		chan="BPME-2400-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -5340,7 +5788,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1541:BPM2-TRG-DELAY"
+		chan="BPME-2406-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -5355,7 +5803,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1541:BPM1-BPM-ID"
+		chan="BPME-2400-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -5370,7 +5818,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1541:BPM2-BPM-ID"
+		chan="BPME-2406-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -5385,7 +5833,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1541:BPM1-ROUTER-ENA"
+		chan="BPME-2400-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -5400,7 +5848,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1541:BPM2-ROUTER-ENA"
+		chan="BPME-2406-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -5415,7 +5863,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1541:BPM1-Q-THRESHOLD"
+		chan="BPME-2400-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -5430,7 +5878,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1541:BPM2-Q-THRESHOLD"
+		chan="BPME-2406-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -5525,7 +5973,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1617"
+		args="DEV=XFELGPAC1DI2415SA1"
 	}
 	clr=14
 	bclr=57
@@ -5546,6 +5994,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2415sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2412-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2412-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -5554,7 +6034,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1617:BPM1-ENABLED"
+		chan="BPME-2412-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -5568,7 +6048,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1617:BPM2-ENABLED"
+		chan="BPME-2418-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -5582,7 +6062,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1617:BPM1-TRG-DELAY"
+		chan="BPME-2412-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -5597,7 +6077,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1617:BPM2-TRG-DELAY"
+		chan="BPME-2418-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -5612,7 +6092,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1617:BPM1-BPM-ID"
+		chan="BPME-2412-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -5627,7 +6107,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1617:BPM2-BPM-ID"
+		chan="BPME-2418-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -5642,7 +6122,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1617:BPM1-ROUTER-ENA"
+		chan="BPME-2412-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -5657,7 +6137,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1617:BPM2-ROUTER-ENA"
+		chan="BPME-2418-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -5672,7 +6152,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1617:BPM1-Q-THRESHOLD"
+		chan="BPME-2412-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -5687,7 +6167,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1617:BPM2-Q-THRESHOLD"
+		chan="BPME-2418-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -5782,7 +6262,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1544"
+		args="DEV=XFELGPAC1DI2427SA1"
 	}
 	clr=14
 	bclr=57
@@ -5803,6 +6283,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2427sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2424-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2424-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -5811,7 +6323,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1544:BPM1-ENABLED"
+		chan="BPME-2424-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -5825,7 +6337,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1544:BPM2-ENABLED"
+		chan="BPME-2430-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -5839,7 +6351,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1544:BPM1-TRG-DELAY"
+		chan="BPME-2424-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -5854,7 +6366,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1544:BPM2-TRG-DELAY"
+		chan="BPME-2430-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -5869,7 +6381,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1544:BPM1-BPM-ID"
+		chan="BPME-2424-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -5884,7 +6396,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1544:BPM2-BPM-ID"
+		chan="BPME-2430-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -5899,7 +6411,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1544:BPM1-ROUTER-ENA"
+		chan="BPME-2424-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -5914,7 +6426,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1544:BPM2-ROUTER-ENA"
+		chan="BPME-2430-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -5929,7 +6441,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1544:BPM1-Q-THRESHOLD"
+		chan="BPME-2424-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -5944,7 +6456,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1544:BPM2-Q-THRESHOLD"
+		chan="BPME-2430-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -6039,7 +6551,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1618"
+		args="DEV=XFELGPAC1DI2439SA1"
 	}
 	clr=14
 	bclr=57
@@ -6060,6 +6572,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2439sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=495
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2436-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=495
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2436-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -6068,7 +6612,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1618:BPM1-ENABLED"
+		chan="BPME-2436-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -6082,7 +6626,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1618:BPM2-ENABLED"
+		chan="BPME-2442-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -6096,7 +6640,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1618:BPM1-TRG-DELAY"
+		chan="BPME-2436-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -6111,7 +6655,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1618:BPM2-TRG-DELAY"
+		chan="BPME-2442-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -6126,7 +6670,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1618:BPM1-BPM-ID"
+		chan="BPME-2436-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -6141,7 +6685,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1618:BPM2-BPM-ID"
+		chan="BPME-2442-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -6156,7 +6700,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1618:BPM1-ROUTER-ENA"
+		chan="BPME-2436-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -6171,7 +6715,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1618:BPM2-ROUTER-ENA"
+		chan="BPME-2442-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -6186,7 +6730,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1618:BPM1-Q-THRESHOLD"
+		chan="BPME-2436-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -6201,7 +6745,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1618:BPM2-Q-THRESHOLD"
+		chan="BPME-2442-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -6296,7 +6840,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1613"
+		args="DEV=XFELGPAC1DI2451SA1"
 	}
 	clr=14
 	bclr=57
@@ -6317,6 +6861,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2451sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=515
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2448-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=515
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2448-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -6325,7 +6901,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1613:BPM1-ENABLED"
+		chan="BPME-2448-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -6339,7 +6915,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1613:BPM2-ENABLED"
+		chan="BPME-2454-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -6353,7 +6929,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1613:BPM1-TRG-DELAY"
+		chan="BPME-2448-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -6368,7 +6944,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1613:BPM2-TRG-DELAY"
+		chan="BPME-2454-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -6383,7 +6959,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1613:BPM1-BPM-ID"
+		chan="BPME-2448-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -6398,7 +6974,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1613:BPM2-BPM-ID"
+		chan="BPME-2454-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -6413,7 +6989,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1613:BPM1-ROUTER-ENA"
+		chan="BPME-2448-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -6428,7 +7004,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1613:BPM2-ROUTER-ENA"
+		chan="BPME-2454-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -6443,7 +7019,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1613:BPM1-Q-THRESHOLD"
+		chan="BPME-2448-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -6458,7 +7034,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1613:BPM2-Q-THRESHOLD"
+		chan="BPME-2454-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -6538,7 +7114,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1635"
+		args="DEV=XFELGPAC1DI2463SA1"
 	}
 	clr=14
 	bclr=57
@@ -6559,6 +7135,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2463sa1"
 }
+rectangle {
+	object {
+		x=510
+		y=535
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2461-SA1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=535
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2461-SA1:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -6567,21 +7175,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1635:BPM1-ENABLED"
-		clr=14
-		bclr=56
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=580
-		y=538
-		width=55
-		height=15
-	}
-	control {
-		chan="IPC1635:BPM2-ENABLED"
+		chan="BPME-2461-SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -6595,22 +7189,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1635:BPM1-TRG-DELAY"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=717
-		y=538
-		width=45
-		height=15
-	}
-	control {
-		chan="IPC1635:BPM2-TRG-DELAY"
+		chan="BPME-2461-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -6625,22 +7204,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1635:BPM1-BPM-ID"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=830
-		y=538
-		width=45
-		height=15
-	}
-	control {
-		chan="IPC1635:BPM2-BPM-ID"
+		chan="BPME-2461-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -6655,22 +7219,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1635:BPM1-ROUTER-ENA"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=935
-		y=538
-		width=45
-		height=15
-	}
-	control {
-		chan="IPC1635:BPM2-ROUTER-ENA"
+		chan="BPME-2461-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -6685,22 +7234,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1635:BPM1-Q-THRESHOLD"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=1040
-		y=538
-		width=45
-		height=15
-	}
-	control {
-		chan="IPC1635:BPM2-Q-THRESHOLD"
+		chan="BPME-2461-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -6795,7 +7329,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1494"
+		args="DEV=XFELGPAC1DI2207SA2"
 	}
 	clr=14
 	bclr=57
@@ -6816,6 +7350,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2207sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=565
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2203-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=565
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2203-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -6824,7 +7390,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1494:BPM1-ENABLED"
+		chan="BPME-2203-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -6838,7 +7404,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1494:BPM2-ENABLED"
+		chan="BPME-2209-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -6852,7 +7418,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1494:BPM1-TRG-DELAY"
+		chan="BPME-2203-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -6867,7 +7433,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1494:BPM2-TRG-DELAY"
+		chan="BPME-2209-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -6882,7 +7448,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1494:BPM1-BPM-ID"
+		chan="BPME-2203-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -6897,7 +7463,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1494:BPM2-BPM-ID"
+		chan="BPME-2209-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -6912,7 +7478,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1494:BPM1-ROUTER-ENA"
+		chan="BPME-2203-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -6927,7 +7493,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1494:BPM2-ROUTER-ENA"
+		chan="BPME-2209-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -6942,7 +7508,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1494:BPM1-Q-THRESHOLD"
+		chan="BPME-2203-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -6957,7 +7523,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1494:BPM2-Q-THRESHOLD"
+		chan="BPME-2209-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -7052,7 +7618,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1487"
+		args="DEV=XFELGPAC1DI2219SA2"
 	}
 	clr=14
 	bclr=57
@@ -7073,6 +7639,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2219sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=585
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2215-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=585
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2215-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -7081,7 +7679,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1487:BPM1-ENABLED"
+		chan="BPME-2215-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -7095,7 +7693,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1487:BPM2-ENABLED"
+		chan="BPME-2221-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -7109,7 +7707,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1487:BPM1-TRG-DELAY"
+		chan="BPME-2215-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -7124,7 +7722,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1487:BPM2-TRG-DELAY"
+		chan="BPME-2221-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -7139,7 +7737,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1487:BPM1-BPM-ID"
+		chan="BPME-2215-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -7154,7 +7752,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1487:BPM2-BPM-ID"
+		chan="BPME-2221-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -7169,7 +7767,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1487:BPM1-ROUTER-ENA"
+		chan="BPME-2215-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -7184,7 +7782,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1487:BPM2-ROUTER-ENA"
+		chan="BPME-2221-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -7199,7 +7797,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1487:BPM1-Q-THRESHOLD"
+		chan="BPME-2215-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -7214,7 +7812,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1487:BPM2-Q-THRESHOLD"
+		chan="BPME-2221-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -7309,7 +7907,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1548"
+		args="DEV=XFELGPAC1DI2231SA2"
 	}
 	clr=14
 	bclr=57
@@ -7330,6 +7928,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2231sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=605
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2227-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=605
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2227-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -7338,7 +7968,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1548:BPM1-ENABLED"
+		chan="BPME-2227-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -7352,7 +7982,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1548:BPM2-ENABLED"
+		chan="BPME-2233-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -7366,7 +7996,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1548:BPM1-TRG-DELAY"
+		chan="BPME-2227-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -7381,7 +8011,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1548:BPM2-TRG-DELAY"
+		chan="BPME-2233-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -7396,7 +8026,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1548:BPM1-BPM-ID"
+		chan="BPME-2227-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -7411,7 +8041,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1548:BPM2-BPM-ID"
+		chan="BPME-2233-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -7426,7 +8056,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1548:BPM1-ROUTER-ENA"
+		chan="BPME-2227-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -7441,7 +8071,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1548:BPM2-ROUTER-ENA"
+		chan="BPME-2233-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -7456,7 +8086,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1548:BPM1-Q-THRESHOLD"
+		chan="BPME-2227-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -7471,7 +8101,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1548:BPM2-Q-THRESHOLD"
+		chan="BPME-2233-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -7566,7 +8196,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1470"
+		args="DEV=XFELGPAC1DI2244SA2"
 	}
 	clr=14
 	bclr=57
@@ -7587,6 +8217,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2244sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=625
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2239-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=625
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2239-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -7595,7 +8257,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1470:BPM1-ENABLED"
+		chan="BPME-2239-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -7609,7 +8271,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1470:BPM2-ENABLED"
+		chan="BPME-2245-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -7623,7 +8285,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1470:BPM1-TRG-DELAY"
+		chan="BPME-2239-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -7638,7 +8300,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1470:BPM2-TRG-DELAY"
+		chan="BPME-2245-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -7653,7 +8315,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1470:BPM1-BPM-ID"
+		chan="BPME-2239-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -7668,7 +8330,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1470:BPM2-BPM-ID"
+		chan="BPME-2245-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -7683,7 +8345,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1470:BPM1-ROUTER-ENA"
+		chan="BPME-2239-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -7698,7 +8360,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1470:BPM2-ROUTER-ENA"
+		chan="BPME-2245-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -7713,7 +8375,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1470:BPM1-Q-THRESHOLD"
+		chan="BPME-2239-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -7728,7 +8390,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1470:BPM2-Q-THRESHOLD"
+		chan="BPME-2245-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -7823,7 +8485,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1507"
+		args="DEV=XFELGPAC1DI2256SA2"
 	}
 	clr=14
 	bclr=57
@@ -7844,6 +8506,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2256sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=645
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2252-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=645
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2252-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -7852,7 +8546,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1507:BPM1-ENABLED"
+		chan="BPME-2252-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -7866,7 +8560,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1507:BPM2-ENABLED"
+		chan="BPME-2258-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -7880,7 +8574,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1507:BPM1-TRG-DELAY"
+		chan="BPME-2252-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -7895,7 +8589,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1507:BPM2-TRG-DELAY"
+		chan="BPME-2258-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -7910,7 +8604,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1507:BPM1-BPM-ID"
+		chan="BPME-2252-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -7925,7 +8619,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1507:BPM2-BPM-ID"
+		chan="BPME-2258-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -7940,7 +8634,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1507:BPM1-ROUTER-ENA"
+		chan="BPME-2252-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -7955,7 +8649,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1507:BPM2-ROUTER-ENA"
+		chan="BPME-2258-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -7970,7 +8664,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1507:BPM1-Q-THRESHOLD"
+		chan="BPME-2252-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -7985,7 +8679,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1507:BPM2-Q-THRESHOLD"
+		chan="BPME-2258-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -8080,7 +8774,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1543"
+		args="DEV=XFELGPAC1DI2268SA2"
 	}
 	clr=14
 	bclr=57
@@ -8101,6 +8795,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2268sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=665
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2264-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=665
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2264-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -8109,7 +8835,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1543:BPM1-ENABLED"
+		chan="BPME-2264-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -8123,7 +8849,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1543:BPM2-ENABLED"
+		chan="BPME-2270-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -8137,7 +8863,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1543:BPM1-TRG-DELAY"
+		chan="BPME-2264-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -8152,7 +8878,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1543:BPM2-TRG-DELAY"
+		chan="BPME-2270-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -8167,7 +8893,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1543:BPM1-BPM-ID"
+		chan="BPME-2264-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -8182,7 +8908,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1543:BPM2-BPM-ID"
+		chan="BPME-2270-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -8197,7 +8923,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1543:BPM1-ROUTER-ENA"
+		chan="BPME-2264-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -8212,7 +8938,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1543:BPM2-ROUTER-ENA"
+		chan="BPME-2270-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -8227,7 +8953,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1543:BPM1-Q-THRESHOLD"
+		chan="BPME-2264-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -8242,7 +8968,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1543:BPM2-Q-THRESHOLD"
+		chan="BPME-2270-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -8337,7 +9063,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1502"
+		args="DEV=XFELGPAC1DI2280SA2"
 	}
 	clr=14
 	bclr=57
@@ -8358,6 +9084,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2280sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=685
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2276-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=685
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2276-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -8366,7 +9124,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1502:BPM1-ENABLED"
+		chan="BPME-2276-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -8380,7 +9138,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1502:BPM2-ENABLED"
+		chan="BPME-2282-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -8394,7 +9152,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1502:BPM1-TRG-DELAY"
+		chan="BPME-2276-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -8409,7 +9167,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1502:BPM2-TRG-DELAY"
+		chan="BPME-2282-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -8424,7 +9182,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1502:BPM1-BPM-ID"
+		chan="BPME-2276-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -8439,7 +9197,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1502:BPM2-BPM-ID"
+		chan="BPME-2282-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -8454,7 +9212,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1502:BPM1-ROUTER-ENA"
+		chan="BPME-2276-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -8469,7 +9227,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1502:BPM2-ROUTER-ENA"
+		chan="BPME-2282-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -8484,7 +9242,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1502:BPM1-Q-THRESHOLD"
+		chan="BPME-2276-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -8499,7 +9257,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1502:BPM2-Q-THRESHOLD"
+		chan="BPME-2282-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -8594,7 +9352,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1499"
+		args="DEV=XFELGPAC1DI2292SA2"
 	}
 	clr=14
 	bclr=57
@@ -8615,6 +9373,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2292sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=705
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2288-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=705
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2288-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -8623,7 +9413,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1499:BPM1-ENABLED"
+		chan="BPME-2288-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -8637,7 +9427,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1499:BPM2-ENABLED"
+		chan="BPME-2294-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -8651,7 +9441,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1499:BPM1-TRG-DELAY"
+		chan="BPME-2288-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -8666,7 +9456,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1499:BPM2-TRG-DELAY"
+		chan="BPME-2294-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -8681,7 +9471,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1499:BPM1-BPM-ID"
+		chan="BPME-2288-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -8696,7 +9486,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1499:BPM2-BPM-ID"
+		chan="BPME-2294-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -8711,7 +9501,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1499:BPM1-ROUTER-ENA"
+		chan="BPME-2288-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -8726,7 +9516,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1499:BPM2-ROUTER-ENA"
+		chan="BPME-2294-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -8741,7 +9531,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1499:BPM1-Q-THRESHOLD"
+		chan="BPME-2288-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -8756,7 +9546,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1499:BPM2-Q-THRESHOLD"
+		chan="BPME-2294-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -8851,7 +9641,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1525"
+		args="DEV=XFELGPAC1DI2305SA2"
 	}
 	clr=14
 	bclr=57
@@ -8872,6 +9662,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2305sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=725
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2300-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=725
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2300-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -8880,7 +9702,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1525:BPM1-ENABLED"
+		chan="BPME-2300-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -8894,7 +9716,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1525:BPM2-ENABLED"
+		chan="BPME-2306-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -8908,7 +9730,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1525:BPM1-TRG-DELAY"
+		chan="BPME-2300-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -8923,7 +9745,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1525:BPM2-TRG-DELAY"
+		chan="BPME-2306-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -8938,7 +9760,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1525:BPM1-BPM-ID"
+		chan="BPME-2300-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -8953,7 +9775,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1525:BPM2-BPM-ID"
+		chan="BPME-2306-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -8968,7 +9790,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1525:BPM1-ROUTER-ENA"
+		chan="BPME-2300-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -8983,7 +9805,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1525:BPM2-ROUTER-ENA"
+		chan="BPME-2306-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -8998,7 +9820,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1525:BPM1-Q-THRESHOLD"
+		chan="BPME-2300-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -9013,7 +9835,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1525:BPM2-Q-THRESHOLD"
+		chan="BPME-2306-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -9108,7 +9930,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1508"
+		args="DEV=XFELGPAC1DI2317SA2"
 	}
 	clr=14
 	bclr=57
@@ -9129,6 +9951,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2317sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=745
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2313-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=745
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2313-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -9137,7 +9991,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1508:BPM1-ENABLED"
+		chan="BPME-2313-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -9151,7 +10005,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1508:BPM2-ENABLED"
+		chan="BPME-2319-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -9165,7 +10019,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1508:BPM1-TRG-DELAY"
+		chan="BPME-2313-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -9180,7 +10034,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1508:BPM2-TRG-DELAY"
+		chan="BPME-2319-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -9195,7 +10049,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1508:BPM1-BPM-ID"
+		chan="BPME-2313-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -9210,7 +10064,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1508:BPM2-BPM-ID"
+		chan="BPME-2319-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -9225,7 +10079,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1508:BPM1-ROUTER-ENA"
+		chan="BPME-2313-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -9240,7 +10094,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1508:BPM2-ROUTER-ENA"
+		chan="BPME-2319-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -9255,7 +10109,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1508:BPM1-Q-THRESHOLD"
+		chan="BPME-2313-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -9270,7 +10124,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1508:BPM2-Q-THRESHOLD"
+		chan="BPME-2319-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -9365,7 +10219,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1511"
+		args="DEV=XFELGPAC1DI2329SA2"
 	}
 	clr=14
 	bclr=57
@@ -9386,6 +10240,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2329sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=765
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2325-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=765
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2325-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -9394,7 +10280,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1511:BPM1-ENABLED"
+		chan="BPME-2325-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -9408,7 +10294,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1511:BPM2-ENABLED"
+		chan="BPME-2331-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -9422,7 +10308,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1511:BPM1-TRG-DELAY"
+		chan="BPME-2325-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -9437,7 +10323,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1511:BPM2-TRG-DELAY"
+		chan="BPME-2331-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -9452,7 +10338,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1511:BPM1-BPM-ID"
+		chan="BPME-2325-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -9467,7 +10353,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1511:BPM2-BPM-ID"
+		chan="BPME-2331-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -9482,7 +10368,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1511:BPM1-ROUTER-ENA"
+		chan="BPME-2325-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -9497,7 +10383,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1511:BPM2-ROUTER-ENA"
+		chan="BPME-2331-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -9512,7 +10398,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1511:BPM1-Q-THRESHOLD"
+		chan="BPME-2325-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -9527,7 +10413,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1511:BPM2-Q-THRESHOLD"
+		chan="BPME-2331-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -9622,7 +10508,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1606"
+		args="DEV=XFELGPAC1DI2341SA2"
 	}
 	clr=14
 	bclr=57
@@ -9643,6 +10529,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2341sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=785
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2337-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=785
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2337-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -9651,7 +10569,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1606:BPM1-ENABLED"
+		chan="BPME-2337-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -9665,7 +10583,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1606:BPM2-ENABLED"
+		chan="BPME-2343-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -9679,7 +10597,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1606:BPM1-TRG-DELAY"
+		chan="BPME-2337-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -9694,7 +10612,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1606:BPM2-TRG-DELAY"
+		chan="BPME-2343-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -9709,7 +10627,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1606:BPM1-BPM-ID"
+		chan="BPME-2337-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -9724,7 +10642,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1606:BPM2-BPM-ID"
+		chan="BPME-2343-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -9739,7 +10657,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1606:BPM1-ROUTER-ENA"
+		chan="BPME-2337-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -9754,7 +10672,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1606:BPM2-ROUTER-ENA"
+		chan="BPME-2343-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -9769,7 +10687,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1606:BPM1-Q-THRESHOLD"
+		chan="BPME-2337-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -9784,7 +10702,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1606:BPM2-Q-THRESHOLD"
+		chan="BPME-2343-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -9879,7 +10797,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1519"
+		args="DEV=XFELGPAC1DI2353SA2"
 	}
 	clr=14
 	bclr=57
@@ -9900,6 +10818,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2353sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=805
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2349-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=805
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2349-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -9908,7 +10858,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1519:BPM1-ENABLED"
+		chan="BPME-2349-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -9922,7 +10872,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1519:BPM2-ENABLED"
+		chan="BPME-2355-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -9936,7 +10886,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1519:BPM1-TRG-DELAY"
+		chan="BPME-2349-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -9951,7 +10901,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1519:BPM2-TRG-DELAY"
+		chan="BPME-2355-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -9966,7 +10916,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1519:BPM1-BPM-ID"
+		chan="BPME-2349-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -9981,7 +10931,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1519:BPM2-BPM-ID"
+		chan="BPME-2355-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -9996,7 +10946,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1519:BPM1-ROUTER-ENA"
+		chan="BPME-2349-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -10011,7 +10961,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1519:BPM2-ROUTER-ENA"
+		chan="BPME-2355-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -10026,7 +10976,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1519:BPM1-Q-THRESHOLD"
+		chan="BPME-2349-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -10041,7 +10991,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1519:BPM2-Q-THRESHOLD"
+		chan="BPME-2355-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -10136,7 +11086,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1516"
+		args="DEV=XFELGPAC1DI2366SA2"
 	}
 	clr=14
 	bclr=57
@@ -10157,6 +11107,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2366sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=825
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2361-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=825
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2361-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -10165,7 +11147,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1516:BPM1-ENABLED"
+		chan="BPME-2361-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -10179,7 +11161,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1516:BPM2-ENABLED"
+		chan="BPME-2367-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -10193,7 +11175,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1516:BPM1-TRG-DELAY"
+		chan="BPME-2361-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -10208,7 +11190,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1516:BPM2-TRG-DELAY"
+		chan="BPME-2367-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -10223,7 +11205,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1516:BPM1-BPM-ID"
+		chan="BPME-2361-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -10238,7 +11220,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1516:BPM2-BPM-ID"
+		chan="BPME-2367-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -10253,7 +11235,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1516:BPM1-ROUTER-ENA"
+		chan="BPME-2361-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -10268,7 +11250,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1516:BPM2-ROUTER-ENA"
+		chan="BPME-2367-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -10283,7 +11265,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1516:BPM1-Q-THRESHOLD"
+		chan="BPME-2361-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -10298,7 +11280,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1516:BPM2-Q-THRESHOLD"
+		chan="BPME-2367-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -10393,7 +11375,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1624"
+		args="DEV=XFELGPAC1DI2378SA2"
 	}
 	clr=14
 	bclr=57
@@ -10414,6 +11396,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2378sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=845
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2373-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=845
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2373-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -10422,7 +11436,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1624:BPM1-ENABLED"
+		chan="BPME-2373-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -10436,7 +11450,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1624:BPM2-ENABLED"
+		chan="BPME-2380-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -10450,7 +11464,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1624:BPM1-TRG-DELAY"
+		chan="BPME-2373-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -10465,7 +11479,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1624:BPM2-TRG-DELAY"
+		chan="BPME-2380-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -10480,7 +11494,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1624:BPM1-BPM-ID"
+		chan="BPME-2373-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -10495,7 +11509,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1624:BPM2-BPM-ID"
+		chan="BPME-2380-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -10510,7 +11524,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1624:BPM1-ROUTER-ENA"
+		chan="BPME-2373-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -10525,7 +11539,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1624:BPM2-ROUTER-ENA"
+		chan="BPME-2380-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -10540,7 +11554,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1624:BPM1-Q-THRESHOLD"
+		chan="BPME-2373-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -10555,7 +11569,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1624:BPM2-Q-THRESHOLD"
+		chan="BPME-2380-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -10650,7 +11664,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1539"
+		args="DEV=XFELGPAC1DI2390SA2"
 	}
 	clr=14
 	bclr=57
@@ -10671,6 +11685,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2390sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=865
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2386-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=865
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2386-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -10679,7 +11725,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1539:BPM1-ENABLED"
+		chan="BPME-2386-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -10693,7 +11739,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1539:BPM2-ENABLED"
+		chan="BPME-2392-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -10707,7 +11753,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1539:BPM1-TRG-DELAY"
+		chan="BPME-2386-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -10722,7 +11768,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1539:BPM2-TRG-DELAY"
+		chan="BPME-2392-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -10737,7 +11783,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1539:BPM1-BPM-ID"
+		chan="BPME-2386-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -10752,7 +11798,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1539:BPM2-BPM-ID"
+		chan="BPME-2392-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -10767,7 +11813,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1539:BPM1-ROUTER-ENA"
+		chan="BPME-2386-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -10782,7 +11828,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1539:BPM2-ROUTER-ENA"
+		chan="BPME-2392-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -10797,7 +11843,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1539:BPM1-Q-THRESHOLD"
+		chan="BPME-2386-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -10812,7 +11858,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1539:BPM2-Q-THRESHOLD"
+		chan="BPME-2392-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -10907,7 +11953,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1492"
+		args="DEV=XFELGPAC1DI2402SA2"
 	}
 	clr=14
 	bclr=57
@@ -10928,6 +11974,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2402sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=885
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2398-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=885
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2398-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -10936,7 +12014,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1492:BPM1-ENABLED"
+		chan="BPME-2398-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -10950,7 +12028,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1492:BPM2-ENABLED"
+		chan="BPME-2404-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -10964,7 +12042,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1492:BPM1-TRG-DELAY"
+		chan="BPME-2398-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -10979,7 +12057,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1492:BPM2-TRG-DELAY"
+		chan="BPME-2404-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -10994,7 +12072,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1492:BPM1-BPM-ID"
+		chan="BPME-2398-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -11009,7 +12087,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1492:BPM2-BPM-ID"
+		chan="BPME-2404-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -11024,7 +12102,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1492:BPM1-ROUTER-ENA"
+		chan="BPME-2398-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -11039,7 +12117,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1492:BPM2-ROUTER-ENA"
+		chan="BPME-2404-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -11054,7 +12132,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1492:BPM1-Q-THRESHOLD"
+		chan="BPME-2398-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -11069,7 +12147,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1492:BPM2-Q-THRESHOLD"
+		chan="BPME-2404-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -11164,7 +12242,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1491"
+		args="DEV=XFELGPAC1DI2414SA2"
 	}
 	clr=14
 	bclr=57
@@ -11185,6 +12263,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2414sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=905
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2410-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=905
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2410-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -11193,7 +12303,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1491:BPM1-ENABLED"
+		chan="BPME-2410-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -11207,7 +12317,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1491:BPM2-ENABLED"
+		chan="BPME-2416-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -11221,7 +12331,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1491:BPM1-TRG-DELAY"
+		chan="BPME-2410-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -11236,7 +12346,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1491:BPM2-TRG-DELAY"
+		chan="BPME-2416-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -11251,7 +12361,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1491:BPM1-BPM-ID"
+		chan="BPME-2410-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -11266,7 +12376,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1491:BPM2-BPM-ID"
+		chan="BPME-2416-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -11281,7 +12391,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1491:BPM1-ROUTER-ENA"
+		chan="BPME-2410-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -11296,7 +12406,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1491:BPM2-ROUTER-ENA"
+		chan="BPME-2416-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -11311,7 +12421,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1491:BPM1-Q-THRESHOLD"
+		chan="BPME-2410-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -11326,7 +12436,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1491:BPM2-Q-THRESHOLD"
+		chan="BPME-2416-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -11406,7 +12516,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1571"
+		args="DEV=XFELGPAC1DI2423SA2"
 	}
 	clr=14
 	bclr=57
@@ -11427,6 +12537,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2423sa2"
 }
+rectangle {
+	object {
+		x=510
+		y=925
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2422-SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=925
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2422-SA2:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -11435,21 +12577,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1571:BPM1-ENABLED"
-		clr=14
-		bclr=56
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=580
-		y=928
-		width=55
-		height=15
-	}
-	control {
-		chan="IPC1571:BPM2-ENABLED"
+		chan="BPME-2422-SA2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -11463,22 +12591,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1571:BPM1-TRG-DELAY"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=717
-		y=928
-		width=45
-		height=15
-	}
-	control {
-		chan="IPC1571:BPM2-TRG-DELAY"
+		chan="BPME-2422-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -11493,22 +12606,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1571:BPM1-BPM-ID"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=830
-		y=928
-		width=45
-		height=15
-	}
-	control {
-		chan="IPC1571:BPM2-BPM-ID"
+		chan="BPME-2422-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -11523,22 +12621,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1571:BPM1-ROUTER-ENA"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=935
-		y=928
-		width=45
-		height=15
-	}
-	control {
-		chan="IPC1571:BPM2-ROUTER-ENA"
+		chan="BPME-2422-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -11553,22 +12636,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1571:BPM1-Q-THRESHOLD"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=1040
-		y=928
-		width=45
-		height=15
-	}
-	control {
-		chan="IPC1571:BPM2-Q-THRESHOLD"
+		chan="BPME-2422-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -11663,7 +12731,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1447"
+		args="DEV=XFELGPAC1DI2808SA3"
 	}
 	clr=14
 	bclr=57
@@ -11684,6 +12752,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2808sa3"
 }
+rectangle {
+	object {
+		x=510
+		y=955
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2806-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=955
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2806-SA3:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -11692,7 +12792,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1447:BPM1-ENABLED"
+		chan="BPME-2806-SA3:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -11706,7 +12806,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1447:BPM2-ENABLED"
+		chan="BPME-2812-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -11720,7 +12820,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1447:BPM1-TRG-DELAY"
+		chan="BPME-2806-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -11735,7 +12835,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1447:BPM2-TRG-DELAY"
+		chan="BPME-2812-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -11750,7 +12850,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1447:BPM1-BPM-ID"
+		chan="BPME-2806-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -11765,7 +12865,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1447:BPM2-BPM-ID"
+		chan="BPME-2812-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -11780,7 +12880,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1447:BPM1-ROUTER-ENA"
+		chan="BPME-2806-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -11795,7 +12895,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1447:BPM2-ROUTER-ENA"
+		chan="BPME-2812-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -11810,7 +12910,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1447:BPM1-Q-THRESHOLD"
+		chan="BPME-2806-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -11825,7 +12925,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1447:BPM2-Q-THRESHOLD"
+		chan="BPME-2812-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -11920,7 +13020,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1450"
+		args="DEV=XFELGPAC1DI2820SA3"
 	}
 	clr=14
 	bclr=57
@@ -11941,6 +13041,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2820sa3"
 }
+rectangle {
+	object {
+		x=510
+		y=975
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2818-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=975
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2818-SA3:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -11949,7 +13081,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1450:BPM1-ENABLED"
+		chan="BPME-2818-SA3:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -11963,7 +13095,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1450:BPM2-ENABLED"
+		chan="BPME-2824-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -11977,7 +13109,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1450:BPM1-TRG-DELAY"
+		chan="BPME-2818-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -11992,7 +13124,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1450:BPM2-TRG-DELAY"
+		chan="BPME-2824-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -12007,7 +13139,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1450:BPM1-BPM-ID"
+		chan="BPME-2818-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -12022,7 +13154,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1450:BPM2-BPM-ID"
+		chan="BPME-2824-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -12037,7 +13169,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1450:BPM1-ROUTER-ENA"
+		chan="BPME-2818-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -12052,7 +13184,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1450:BPM2-ROUTER-ENA"
+		chan="BPME-2824-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -12067,7 +13199,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1450:BPM1-Q-THRESHOLD"
+		chan="BPME-2818-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -12082,7 +13214,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1450:BPM2-Q-THRESHOLD"
+		chan="BPME-2824-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -12177,7 +13309,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1444"
+		args="DEV=XFELGPAC1DI2832SA3"
 	}
 	clr=14
 	bclr=57
@@ -12198,6 +13330,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2832sa3"
 }
+rectangle {
+	object {
+		x=510
+		y=995
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2830-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=995
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2830-SA3:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -12206,7 +13370,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1444:BPM1-ENABLED"
+		chan="BPME-2830-SA3:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -12220,7 +13384,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1444:BPM2-ENABLED"
+		chan="BPME-2836-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -12234,7 +13398,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1444:BPM1-TRG-DELAY"
+		chan="BPME-2830-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -12249,7 +13413,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1444:BPM2-TRG-DELAY"
+		chan="BPME-2836-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -12264,7 +13428,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1444:BPM1-BPM-ID"
+		chan="BPME-2830-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -12279,7 +13443,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1444:BPM2-BPM-ID"
+		chan="BPME-2836-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -12294,7 +13458,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1444:BPM1-ROUTER-ENA"
+		chan="BPME-2830-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -12309,7 +13473,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1444:BPM2-ROUTER-ENA"
+		chan="BPME-2836-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -12324,7 +13488,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1444:BPM1-Q-THRESHOLD"
+		chan="BPME-2830-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -12339,7 +13503,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1444:BPM2-Q-THRESHOLD"
+		chan="BPME-2836-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -12434,7 +13598,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1538"
+		args="DEV=XFELGPAC1DI2845SA3"
 	}
 	clr=14
 	bclr=57
@@ -12455,6 +13619,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2845sa3"
 }
+rectangle {
+	object {
+		x=510
+		y=1015
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2842-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=1015
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2842-SA3:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -12463,7 +13659,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1538:BPM1-ENABLED"
+		chan="BPME-2842-SA3:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -12477,7 +13673,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1538:BPM2-ENABLED"
+		chan="BPME-2849-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -12491,7 +13687,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1538:BPM1-TRG-DELAY"
+		chan="BPME-2842-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -12506,7 +13702,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1538:BPM2-TRG-DELAY"
+		chan="BPME-2849-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -12521,7 +13717,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1538:BPM1-BPM-ID"
+		chan="BPME-2842-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -12536,7 +13732,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1538:BPM2-BPM-ID"
+		chan="BPME-2849-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -12551,7 +13747,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1538:BPM1-ROUTER-ENA"
+		chan="BPME-2842-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -12566,7 +13762,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1538:BPM2-ROUTER-ENA"
+		chan="BPME-2849-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -12581,7 +13777,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1538:BPM1-Q-THRESHOLD"
+		chan="BPME-2842-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -12596,7 +13792,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1538:BPM2-Q-THRESHOLD"
+		chan="BPME-2849-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -12691,7 +13887,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1522"
+		args="DEV=XFELGPAC1DI2857SA3"
 	}
 	clr=14
 	bclr=57
@@ -12712,6 +13908,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2857sa3"
 }
+rectangle {
+	object {
+		x=510
+		y=1035
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2861-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=1035
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2861-SA3:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -12720,7 +13948,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1522:BPM1-ENABLED"
+		chan="BPME-2861-SA3:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -12734,7 +13962,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1522:BPM2-ENABLED"
+		chan="BPME-2849-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -12748,7 +13976,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1522:BPM1-TRG-DELAY"
+		chan="BPME-2861-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -12763,7 +13991,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1522:BPM2-TRG-DELAY"
+		chan="BPME-2849-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -12778,7 +14006,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1522:BPM1-BPM-ID"
+		chan="BPME-2861-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -12793,7 +14021,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1522:BPM2-BPM-ID"
+		chan="BPME-2849-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -12808,7 +14036,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1522:BPM1-ROUTER-ENA"
+		chan="BPME-2861-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -12823,7 +14051,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1522:BPM2-ROUTER-ENA"
+		chan="BPME-2849-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -12838,7 +14066,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1522:BPM1-Q-THRESHOLD"
+		chan="BPME-2861-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -12853,7 +14081,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1522:BPM2-Q-THRESHOLD"
+		chan="BPME-2849-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -12948,7 +14176,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1430"
+		args="DEV=XFELGPAC1DI2869SA3"
 	}
 	clr=14
 	bclr=57
@@ -12969,6 +14197,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2869sa3"
 }
+rectangle {
+	object {
+		x=510
+		y=1055
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2867-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=1055
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2867-SA3:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -12977,7 +14237,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1430:BPM1-ENABLED"
+		chan="BPME-2867-SA3:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -12991,7 +14251,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1430:BPM2-ENABLED"
+		chan="BPME-2873-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -13005,7 +14265,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1430:BPM1-TRG-DELAY"
+		chan="BPME-2867-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -13020,7 +14280,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1430:BPM2-TRG-DELAY"
+		chan="BPME-2873-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -13035,7 +14295,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1430:BPM1-BPM-ID"
+		chan="BPME-2867-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -13050,7 +14310,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1430:BPM2-BPM-ID"
+		chan="BPME-2873-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -13065,7 +14325,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1430:BPM1-ROUTER-ENA"
+		chan="BPME-2867-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -13080,7 +14340,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1430:BPM2-ROUTER-ENA"
+		chan="BPME-2873-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -13095,7 +14355,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1430:BPM1-Q-THRESHOLD"
+		chan="BPME-2867-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -13110,7 +14370,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1430:BPM2-Q-THRESHOLD"
+		chan="BPME-2873-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -13205,7 +14465,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1421"
+		args="DEV=XFELGPAC1DI2881SA3"
 	}
 	clr=14
 	bclr=57
@@ -13226,6 +14486,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2881sa3"
 }
+rectangle {
+	object {
+		x=510
+		y=1075
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2879-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=1075
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2879-SA3:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -13234,7 +14526,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1421:BPM1-ENABLED"
+		chan="BPME-2879-SA3:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -13248,7 +14540,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1421:BPM2-ENABLED"
+		chan="BPME-2885-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -13262,7 +14554,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1421:BPM1-TRG-DELAY"
+		chan="BPME-2879-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -13277,7 +14569,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1421:BPM2-TRG-DELAY"
+		chan="BPME-2885-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -13292,7 +14584,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1421:BPM1-BPM-ID"
+		chan="BPME-2879-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -13307,7 +14599,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1421:BPM2-BPM-ID"
+		chan="BPME-2885-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -13322,7 +14614,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1421:BPM1-ROUTER-ENA"
+		chan="BPME-2879-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -13337,7 +14629,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1421:BPM2-ROUTER-ENA"
+		chan="BPME-2885-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -13352,7 +14644,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1421:BPM1-Q-THRESHOLD"
+		chan="BPME-2879-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -13367,7 +14659,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1421:BPM2-Q-THRESHOLD"
+		chan="BPME-2885-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -13462,7 +14754,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1434"
+		args="DEV=XFELGPAC1DI2893SA3"
 	}
 	clr=14
 	bclr=57
@@ -13483,6 +14775,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2893sa3"
 }
+rectangle {
+	object {
+		x=510
+		y=1095
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2891-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=1095
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2891-SA3:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -13491,7 +14815,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1434:BPM1-ENABLED"
+		chan="BPME-2891-SA3:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -13505,7 +14829,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1434:BPM2-ENABLED"
+		chan="BPME-2897-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -13519,7 +14843,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1434:BPM1-TRG-DELAY"
+		chan="BPME-2891-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -13534,7 +14858,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1434:BPM2-TRG-DELAY"
+		chan="BPME-2897-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -13549,7 +14873,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1434:BPM1-BPM-ID"
+		chan="BPME-2891-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -13564,7 +14888,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1434:BPM2-BPM-ID"
+		chan="BPME-2897-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -13579,7 +14903,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1434:BPM1-ROUTER-ENA"
+		chan="BPME-2891-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -13594,7 +14918,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1434:BPM2-ROUTER-ENA"
+		chan="BPME-2897-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -13609,7 +14933,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1434:BPM1-Q-THRESHOLD"
+		chan="BPME-2891-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -13624,7 +14948,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1434:BPM2-Q-THRESHOLD"
+		chan="BPME-2897-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -13719,7 +15043,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1476"
+		args="DEV=XFELGPAC1DI2906SA3"
 	}
 	clr=14
 	bclr=57
@@ -13740,6 +15064,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2906sa3"
 }
+rectangle {
+	object {
+		x=510
+		y=1115
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2903-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=1115
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2903-SA3:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -13748,7 +15104,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1476:BPM1-ENABLED"
+		chan="BPME-2903-SA3:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -13762,7 +15118,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1476:BPM2-ENABLED"
+		chan="BPME-2910-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -13776,7 +15132,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1476:BPM1-TRG-DELAY"
+		chan="BPME-2903-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -13791,7 +15147,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1476:BPM2-TRG-DELAY"
+		chan="BPME-2910-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -13806,7 +15162,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1476:BPM1-BPM-ID"
+		chan="BPME-2903-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -13821,7 +15177,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1476:BPM2-BPM-ID"
+		chan="BPME-2910-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -13836,7 +15192,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1476:BPM1-ROUTER-ENA"
+		chan="BPME-2903-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -13851,7 +15207,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1476:BPM2-ROUTER-ENA"
+		chan="BPME-2910-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -13866,7 +15222,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1476:BPM1-Q-THRESHOLD"
+		chan="BPME-2903-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -13881,7 +15237,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1476:BPM2-Q-THRESHOLD"
+		chan="BPME-2910-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -13976,7 +15332,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1506"
+		args="DEV=XFELGPAC1DI2918SA3"
 	}
 	clr=14
 	bclr=57
@@ -13997,6 +15353,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2918sa3"
 }
+rectangle {
+	object {
+		x=510
+		y=1135
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2916-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=1135
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2916-SA3:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -14005,7 +15393,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1506:BPM1-ENABLED"
+		chan="BPME-2916-SA3:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -14019,7 +15407,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1506:BPM2-ENABLED"
+		chan="BPME-2922-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -14033,7 +15421,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1506:BPM1-TRG-DELAY"
+		chan="BPME-2916-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -14048,7 +15436,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1506:BPM2-TRG-DELAY"
+		chan="BPME-2922-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -14063,7 +15451,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1506:BPM1-BPM-ID"
+		chan="BPME-2916-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -14078,7 +15466,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1506:BPM2-BPM-ID"
+		chan="BPME-2922-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -14093,7 +15481,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1506:BPM1-ROUTER-ENA"
+		chan="BPME-2916-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -14108,7 +15496,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1506:BPM2-ROUTER-ENA"
+		chan="BPME-2922-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -14123,7 +15511,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1506:BPM1-Q-THRESHOLD"
+		chan="BPME-2916-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -14138,7 +15526,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1506:BPM2-Q-THRESHOLD"
+		chan="BPME-2922-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -14233,7 +15621,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1498"
+		args="DEV=XFELGPAC1DI2931SA3"
 	}
 	clr=14
 	bclr=57
@@ -14254,6 +15642,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2931sa3"
 }
+rectangle {
+	object {
+		x=510
+		y=1155
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2928-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=1155
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2928-SA3:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -14262,7 +15682,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1498:BPM1-ENABLED"
+		chan="BPME-2928-SA3:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -14276,7 +15696,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1498:BPM2-ENABLED"
+		chan="BPME-2934-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -14290,7 +15710,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1498:BPM1-TRG-DELAY"
+		chan="BPME-2928-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -14305,7 +15725,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1498:BPM2-TRG-DELAY"
+		chan="BPME-2934-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -14320,7 +15740,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1498:BPM1-BPM-ID"
+		chan="BPME-2928-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -14335,7 +15755,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1498:BPM2-BPM-ID"
+		chan="BPME-2934-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -14350,7 +15770,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1498:BPM1-ROUTER-ENA"
+		chan="BPME-2928-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -14365,7 +15785,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1498:BPM2-ROUTER-ENA"
+		chan="BPME-2934-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -14380,7 +15800,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1498:BPM1-Q-THRESHOLD"
+		chan="BPME-2928-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -14395,7 +15815,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1498:BPM2-Q-THRESHOLD"
+		chan="BPME-2934-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -14475,7 +15895,7 @@ rectangle {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1588"
+		args="DEV=XFELGPAC1DI2943SA3"
 	}
 	clr=14
 	bclr=57
@@ -14496,6 +15916,38 @@ rectangle {
 	bclr=57
 	label="-xfelgpac1di2943sa3"
 }
+rectangle {
+	object {
+		x=510
+		y=1175
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2940-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=1175
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2940-SA3:S7GPAC-STATUS"
+	}
+}
 "choice button" {
 	object {
 		x=520
@@ -14504,21 +15956,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1588:BPM1-ENABLED"
-		clr=14
-		bclr=56
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=580
-		y=1178
-		width=55
-		height=15
-	}
-	control {
-		chan="IPC1588:BPM2-ENABLED"
+		chan="BPME-2940-SA3:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -14532,22 +15970,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1588:BPM1-TRG-DELAY"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=717
-		y=1178
-		width=45
-		height=15
-	}
-	control {
-		chan="IPC1588:BPM2-TRG-DELAY"
+		chan="BPME-2940-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -14562,22 +15985,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1588:BPM1-BPM-ID"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=830
-		y=1178
-		width=45
-		height=15
-	}
-	control {
-		chan="IPC1588:BPM2-BPM-ID"
+		chan="BPME-2940-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -14592,22 +16000,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1588:BPM1-ROUTER-ENA"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=935
-		y=1178
-		width=45
-		height=15
-	}
-	control {
-		chan="IPC1588:BPM2-ROUTER-ENA"
+		chan="BPME-2940-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -14622,22 +16015,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1588:BPM1-Q-THRESHOLD"
-		clr=14
-		bclr=4
-	}
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=1040
-		y=1178
-		width=45
-		height=15
-	}
-	control {
-		chan="IPC1588:BPM2-Q-THRESHOLD"
+		chan="BPME-2940-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
