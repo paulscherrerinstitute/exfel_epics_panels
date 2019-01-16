@@ -348,7 +348,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1647-IBFB:BPM1-TRG-DELAY"
+		chan="IPC1629-IBFB:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -363,7 +363,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1647-IBFB:BPM2-TRG-DELAY"
+		chan="IPC1629-IBFB:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -378,7 +378,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1647-IBFB:BPM1-BPM-ID"
+		chan="IPC1629-IBFB:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -393,7 +393,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1647-IBFB:BPM2-BPM-ID"
+		chan="IPC1629-IBFB:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -408,7 +408,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1647-IBFB:BPM1-ENABLED"
+		chan="IPC1629-IBFB:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -422,7 +422,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1647-IBFB:BPM2-ENABLED"
+		chan="IPC1629-IBFB:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -960,7 +960,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1647-IBFB:BPM1-ROUTER-ENA"
+		chan="IPC1629-IBFB:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -975,7 +975,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="IPC1647-IBFB:BPM2-ROUTER-ENA"
+		chan="IPC1629-IBFB:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -1143,11 +1143,11 @@ polyline {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T ipc1647 -bg rgb:40/A0/90 -e telnet -l root ipc1647 &"
+		name="xterm -T ipc1629 -bg rgb:40/A0/90 -e telnet -l root ipc1629 &"
 	}
 	clr=14
 	bclr=57
-	label="-ipc1647"
+	label="-ipc1629"
 }
 "related display" {
 	object {
@@ -1175,11 +1175,11 @@ polyline {
 	display[0] {
 		label="BPM"
 		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
-		args="DEV=IPC1647"
+		args="DEV=IPC1629"
 	}
 	clr=14
 	bclr=57
-	label="-IPC1647"
+	label="-IPC1629"
 }
 rectangle {
 	object {
@@ -1258,7 +1258,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1647:S7GPAC-STATUS"
+		chan="IPC1629:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1274,7 +1274,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1647:S7GPAC-STATUS"
+		chan="IPC1629:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1395,7 +1395,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1647-IBFB:S7GPAC-STATUS"
+		chan="IPC1629-IBFB:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1411,7 +1411,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1647-IBFB:S7GPAC-STATUS"
+		chan="IPC1629-IBFB:S7GPAC-STATUS"
 	}
 }
 polyline {
@@ -1465,7 +1465,7 @@ text {
 		height=15
 	}
 	control {
-		chan="IPC1647-IBFB:BPM1-Q-THRESHOLD"
+		chan="IPC1629-IBFB:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -1480,7 +1480,7 @@ text {
 		height=15
 	}
 	control {
-		chan="IPC1647-IBFB:BPM2-Q-THRESHOLD"
+		chan="IPC1629-IBFB:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
