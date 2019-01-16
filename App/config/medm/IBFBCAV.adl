@@ -2002,129 +2002,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2247-SA1:BPM2-ENABLED"
+		chan="BPME-2241-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=178
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2241-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=178
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2247-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2241-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=178
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2241-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=178
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2247-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2241-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=178
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2241-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=178
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2247-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2241-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=178
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2241-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=178
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2247-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2241-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -2291,129 +2299,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2259-SA1:BPM2-ENABLED"
+		chan="BPME-2253-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=198
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2253-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=198
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2259-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2253-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=198
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2253-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=198
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2259-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2253-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=198
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2253-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=198
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2259-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2253-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=198
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2253-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=198
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2259-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2253-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -2580,129 +2596,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2271-SA1:BPM2-ENABLED"
+		chan="BPME-2265-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=218
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2265-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=218
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2271-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2265-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=218
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2265-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=218
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2271-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2265-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=218
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2265-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=218
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2271-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2265-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=218
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2265-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=218
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2271-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2265-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -2869,129 +2893,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2284-SA1:BPM2-ENABLED"
+		chan="BPME-2278-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=238
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2278-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=238
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2284-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2278-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=238
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2278-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=238
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2284-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2278-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=238
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2278-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=238
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2284-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2278-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=238
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2278-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=238
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2284-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2278-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -3158,129 +3190,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2296-SA1:BPM2-ENABLED"
+		chan="BPME-2290-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=258
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2290-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=258
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2296-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2290-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=258
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2290-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=258
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2296-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2290-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=258
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2290-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=258
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2296-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2290-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=258
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2290-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=258
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2296-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2290-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -3447,129 +3487,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2308-SA1:BPM2-ENABLED"
+		chan="BPME-2302-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=278
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2302-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=278
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2308-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2302-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=278
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2302-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=278
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2308-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2302-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=278
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2302-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=278
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2308-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2302-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=278
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2302-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=278
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2308-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2302-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -3736,129 +3784,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2320-SA1:BPM2-ENABLED"
+		chan="BPME-2314-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=298
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2314-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=298
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2320-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2314-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=298
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2314-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=298
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2320-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2314-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=298
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2314-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=298
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2320-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2314-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=298
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2314-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=298
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2320-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2314-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -4025,129 +4081,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2332-SA1:BPM2-ENABLED"
+		chan="BPME-2326-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=318
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2326-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=318
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2332-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2326-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=318
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2326-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=318
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2332-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2326-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=318
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2326-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=318
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2332-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2326-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=318
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2326-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=318
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2332-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2326-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -4314,129 +4378,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2345-SA1:BPM2-ENABLED"
+		chan="BPME-2339-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=338
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2339-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=338
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2345-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2339-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=338
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2339-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=338
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2345-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2339-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=338
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2339-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=338
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2345-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2339-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=338
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2339-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=338
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2345-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2339-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -4603,129 +4675,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2357-SA1:BPM2-ENABLED"
+		chan="BPME-2351-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=358
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2351-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=358
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2357-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2351-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=358
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2351-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=358
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2357-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2351-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=358
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2351-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=358
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2357-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2351-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=358
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2351-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=358
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2357-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2351-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -4892,129 +4972,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2369-SA1:BPM2-ENABLED"
+		chan="BPME-2363-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=378
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2363-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=378
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2369-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2363-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=378
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2363-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=378
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2369-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2363-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=378
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2363-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=378
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2369-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2363-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=378
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2363-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=378
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2369-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2363-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -5181,129 +5269,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2381-SA1:BPM2-ENABLED"
+		chan="BPME-2375-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=398
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2375-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=398
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2381-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2375-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=398
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2375-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=398
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2381-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2375-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=398
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2375-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=398
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2381-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2375-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=398
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2375-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=398
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2381-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2375-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -5470,129 +5566,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2393-SA1:BPM2-ENABLED"
+		chan="BPME-2387-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=418
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2387-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=418
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2393-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2387-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=418
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2387-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=418
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2393-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2387-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=418
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2387-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=418
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2393-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2387-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=418
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2387-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=418
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2393-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2387-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -5759,129 +5863,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2406-SA1:BPM2-ENABLED"
+		chan="BPME-2400-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=438
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2400-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=438
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2406-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2400-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=438
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2400-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=438
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2406-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2400-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=438
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2400-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=438
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2406-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2400-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=438
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2400-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=438
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2406-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2400-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -6048,129 +6160,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2418-SA1:BPM2-ENABLED"
+		chan="BPME-2412-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=458
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2412-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=458
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2418-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2412-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=458
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2412-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=458
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2418-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2412-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=458
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2412-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=458
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2418-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2412-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=458
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2412-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=458
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2418-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2412-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -6337,129 +6457,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2430-SA1:BPM2-ENABLED"
+		chan="BPME-2424-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=478
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2424-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=478
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2430-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2424-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=478
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2424-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=478
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2430-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2424-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=478
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2424-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=478
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2430-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2424-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=478
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2424-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=478
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2430-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2424-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -6626,129 +6754,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2442-SA1:BPM2-ENABLED"
+		chan="BPME-2436-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=498
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2436-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=498
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2442-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2436-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=498
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2436-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=498
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2442-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2436-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=498
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2436-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=498
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2442-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2436-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=498
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2436-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=498
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2442-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2436-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -6915,129 +7051,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2454-SA1:BPM2-ENABLED"
+		chan="BPME-2448-SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=518
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2448-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=518
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2454-SA1:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2448-SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=518
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2448-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=518
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2454-SA1:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2448-SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=518
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2448-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=518
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2454-SA1:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2448-SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=518
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2448-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=518
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2454-SA1:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2448-SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -7181,63 +7325,67 @@ rectangle {
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=538
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2461-SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=538
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2461-SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=538
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2461-SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=538
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2461-SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -7404,129 +7552,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2209-SA2:BPM2-ENABLED"
+		chan="BPME-2203-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=568
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2203-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=568
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2209-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2203-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=568
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2203-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=568
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2209-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2203-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=568
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2203-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=568
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2209-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2203-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=568
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2203-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=568
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2209-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2203-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -7693,129 +7849,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2221-SA2:BPM2-ENABLED"
+		chan="BPME-2215-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=588
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2215-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=588
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2221-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2215-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=588
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2215-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=588
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2221-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2215-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=588
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2215-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=588
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2221-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2215-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=588
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2215-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=588
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2221-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2215-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -7982,129 +8146,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2233-SA2:BPM2-ENABLED"
+		chan="BPME-2227-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=608
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2227-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=608
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2233-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2227-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=608
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2227-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=608
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2233-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2227-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=608
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2227-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=608
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2233-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2227-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=608
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2227-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=608
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2233-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2227-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -8271,129 +8443,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2245-SA2:BPM2-ENABLED"
+		chan="BPME-2239-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=628
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2239-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=628
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2245-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2239-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=628
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2239-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=628
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2245-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2239-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=628
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2239-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=628
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2245-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2239-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=628
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2239-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=628
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2245-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2239-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -8560,129 +8740,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2258-SA2:BPM2-ENABLED"
+		chan="BPME-2252-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=648
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2252-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=648
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2258-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2252-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=648
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2252-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=648
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2258-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2252-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=648
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2252-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=648
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2258-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2252-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=648
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2252-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=648
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2258-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2252-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -8849,129 +9037,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2270-SA2:BPM2-ENABLED"
+		chan="BPME-2264-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=668
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2264-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=668
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2270-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2264-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=668
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2264-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=668
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2270-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2264-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=668
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2264-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=668
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2270-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2264-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=668
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2264-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=668
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2270-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2264-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -9138,129 +9334,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2282-SA2:BPM2-ENABLED"
+		chan="BPME-2276-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=688
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2276-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=688
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2282-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2276-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=688
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2276-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=688
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2282-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2276-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=688
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2276-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=688
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2282-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2276-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=688
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2276-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=688
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2282-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2276-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -9427,129 +9631,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2294-SA2:BPM2-ENABLED"
+		chan="BPME-2288-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=708
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2288-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=708
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2294-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2288-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=708
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2288-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=708
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2294-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2288-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=708
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2288-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=708
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2294-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2288-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=708
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2288-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=708
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2294-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2288-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -9716,129 +9928,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2306-SA2:BPM2-ENABLED"
+		chan="BPME-2300-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=728
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2300-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=728
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2306-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2300-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=728
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2300-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=728
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2306-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2300-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=728
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2300-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=728
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2306-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2300-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=728
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2300-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=728
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2306-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2300-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -10005,129 +10225,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2319-SA2:BPM2-ENABLED"
+		chan="BPME-2313-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=748
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2313-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=748
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2319-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2313-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=748
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2313-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=748
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2319-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2313-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=748
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2313-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=748
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2319-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2313-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=748
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2313-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=748
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2319-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2313-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -10294,129 +10522,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2331-SA2:BPM2-ENABLED"
+		chan="BPME-2325-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=768
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2325-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=768
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2331-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2325-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=768
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2325-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=768
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2331-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2325-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=768
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2325-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=768
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2331-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2325-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=768
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2325-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=768
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2331-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2325-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -10583,129 +10819,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2343-SA2:BPM2-ENABLED"
+		chan="BPME-2337-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=788
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2337-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=788
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2343-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2337-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=788
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2337-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=788
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2343-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2337-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=788
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2337-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=788
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2343-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2337-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=788
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2337-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=788
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2343-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2337-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -10872,129 +11116,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2355-SA2:BPM2-ENABLED"
+		chan="BPME-2349-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=808
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2349-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=808
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2355-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2349-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=808
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2349-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=808
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2355-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2349-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=808
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2349-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=808
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2355-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2349-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=808
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2349-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=808
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2355-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2349-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -11161,129 +11413,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2367-SA2:BPM2-ENABLED"
+		chan="BPME-2361-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=828
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2361-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=828
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2367-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2361-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=828
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2361-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=828
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2367-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2361-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=828
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2361-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=828
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2367-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2361-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=828
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2361-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=828
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2367-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2361-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -11450,129 +11710,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2380-SA2:BPM2-ENABLED"
+		chan="BPME-2373-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=848
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2373-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=848
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2380-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2373-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=848
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2373-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=848
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2380-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2373-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=848
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2373-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=848
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2380-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2373-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=848
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2373-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=848
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2380-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2373-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -11739,129 +12007,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2392-SA2:BPM2-ENABLED"
+		chan="BPME-2386-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=868
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2386-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=868
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2392-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2386-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=868
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2386-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=868
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2392-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2386-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=868
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2386-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=868
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2392-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2386-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=868
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2386-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=868
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2392-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2386-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -12028,129 +12304,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2404-SA2:BPM2-ENABLED"
+		chan="BPME-2398-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=888
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2398-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=888
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2404-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2398-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=888
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2398-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=888
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2404-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2398-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=888
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2398-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=888
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2404-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2398-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=888
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2398-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=888
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2404-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2398-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -12317,129 +12601,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2416-SA2:BPM2-ENABLED"
+		chan="BPME-2410-SA2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=908
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2410-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=908
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2416-SA2:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2410-SA2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=908
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2410-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=908
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2416-SA2:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2410-SA2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=908
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2410-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=908
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2416-SA2:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2410-SA2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=908
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2410-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=908
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2416-SA2:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2410-SA2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -12583,63 +12875,67 @@ rectangle {
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=928
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2422-SA2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=928
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2422-SA2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=928
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2422-SA2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=928
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2422-SA2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -12806,129 +13102,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2812-SA3:BPM2-ENABLED"
+		chan="BPME-2806-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=958
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2806-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=958
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2812-SA3:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2806-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=958
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2806-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=958
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2812-SA3:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2806-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=958
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2806-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=958
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2812-SA3:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2806-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=958
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2806-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=958
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2812-SA3:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2806-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -13095,129 +13399,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2824-SA3:BPM2-ENABLED"
+		chan="BPME-2818-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=978
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2818-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=978
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2824-SA3:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2818-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=978
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2818-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=978
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2824-SA3:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2818-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=978
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2818-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=978
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2824-SA3:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2818-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=978
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2818-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=978
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2824-SA3:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2818-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -13384,129 +13696,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2836-SA3:BPM2-ENABLED"
+		chan="BPME-2830-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=998
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2830-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=998
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2836-SA3:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2830-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=998
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2830-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=998
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2836-SA3:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2830-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=998
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2830-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=998
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2836-SA3:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2830-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=998
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2830-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=998
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2836-SA3:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2830-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -13673,129 +13993,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2849-SA3:BPM2-ENABLED"
+		chan="BPME-2842-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=1018
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2842-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=1018
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2849-SA3:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2842-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=1018
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2842-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=1018
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2849-SA3:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2842-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=1018
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2842-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=1018
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2849-SA3:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2842-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=1018
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2842-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=1018
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2849-SA3:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2842-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -13962,129 +14290,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2849-SA3:BPM2-ENABLED"
+		chan="BPME-2861-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=1038
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2861-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=1038
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2849-SA3:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2861-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=1038
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2861-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=1038
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2849-SA3:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2861-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=1038
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2861-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=1038
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2849-SA3:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2861-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=1038
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2861-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=1038
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2849-SA3:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2861-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -14251,129 +14587,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2873-SA3:BPM2-ENABLED"
+		chan="BPME-2867-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=1058
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2867-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=1058
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2873-SA3:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2867-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=1058
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2867-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=1058
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2873-SA3:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2867-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=1058
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2867-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=1058
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2873-SA3:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2867-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=1058
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2867-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=1058
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2873-SA3:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2867-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -14540,129 +14884,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2885-SA3:BPM2-ENABLED"
+		chan="BPME-2879-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=1078
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2879-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=1078
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2885-SA3:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2879-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=1078
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2879-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=1078
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2885-SA3:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2879-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=1078
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2879-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=1078
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2885-SA3:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2879-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=1078
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2879-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=1078
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2885-SA3:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2879-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -14829,129 +15181,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2897-SA3:BPM2-ENABLED"
+		chan="BPME-2891-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=1098
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2891-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=1098
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2897-SA3:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2891-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=1098
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2891-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=1098
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2897-SA3:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2891-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=1098
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2891-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=1098
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2897-SA3:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2891-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=1098
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2891-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=1098
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2897-SA3:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2891-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -15118,129 +15478,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2910-SA3:BPM2-ENABLED"
+		chan="BPME-2903-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=1118
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2903-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=1118
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2910-SA3:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2903-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=1118
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2903-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=1118
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2910-SA3:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2903-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=1118
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2903-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=1118
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2910-SA3:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2903-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=1118
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2903-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=1118
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2910-SA3:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2903-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -15407,129 +15775,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2922-SA3:BPM2-ENABLED"
+		chan="BPME-2916-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=1138
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2916-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=1138
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2922-SA3:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2916-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=1138
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2916-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=1138
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2922-SA3:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2916-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=1138
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2916-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=1138
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2922-SA3:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2916-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=1138
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2916-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=1138
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2922-SA3:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2916-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -15696,129 +16072,137 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2934-SA3:BPM2-ENABLED"
+		chan="BPME-2928-SA3:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=1158
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2928-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=717
 		y=1158
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2934-SA3:BPM2-TRG-DELAY"
+	monitor {
+		chan="BPME-2928-SA3:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=1158
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2928-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=830
 		y=1158
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2934-SA3:BPM2-BPM-ID"
+	monitor {
+		chan="BPME-2928-SA3:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=1158
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2928-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=935
 		y=1158
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2934-SA3:BPM2-ROUTER-ENA"
+	monitor {
+		chan="BPME-2928-SA3:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=1158
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2928-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=1040
 		y=1158
 		width=45
 		height=15
 	}
-	control {
-		chan="BPME-2934-SA3:BPM2-Q-THRESHOLD"
+	monitor {
+		chan="BPME-2928-SA3:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
@@ -15962,63 +16346,67 @@ rectangle {
 	}
 	stacking="column"
 }
-"text entry" {
+"text update" {
 	object {
 		x=667
 		y=1178
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2940-SA3:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=780
 		y=1178
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2940-SA3:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=885
 		y=1178
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2940-SA3:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
-"text entry" {
+"text update" {
 	object {
 		x=990
 		y=1178
 		width=45
 		height=15
 	}
-	control {
+	monitor {
 		chan="BPME-2940-SA3:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
+	align="horiz. right"
 	limits {
 	}
 }
