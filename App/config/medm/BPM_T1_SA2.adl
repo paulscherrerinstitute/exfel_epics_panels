@@ -1,14 +1,14 @@
 
 file {
-	name="/xfel/controls/App/config/medm/BPM_T1_SA2.adl"
+	name="/home/rrybanie/ibfb/exfel_epics_panels/App/config/medm/BPM_T1_SA2.adl"
 	version=030105
 }
 display {
 	object {
-		x=965
-		y=60
+		x=1730
+		y=299
 		width=700
-		height=570
+		height=593
 	}
 	clr=14
 	bclr=4
@@ -127,7 +127,7 @@ polyline {
 		x=300
 		y=30
 		width=0
-		height=540
+		height=561
 	}
 	"basic attribute" {
 		clr=0
@@ -137,7 +137,7 @@ polyline {
 	}
 	points {
 		(300,30)
-		(300,570)
+		(300,591)
 	}
 }
 text {
@@ -176,14 +176,14 @@ polyline {
 		x=240
 		y=30
 		width=0
-		height=540
+		height=560
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
 		(240,30)
-		(240,570)
+		(240,590)
 	}
 }
 polyline {
@@ -294,7 +294,7 @@ polyline {
 		x=260
 		y=50
 		width=0
-		height=520
+		height=541
 	}
 	"basic attribute" {
 		clr=0
@@ -304,7 +304,7 @@ polyline {
 	}
 	points {
 		(260,50)
-		(260,570)
+		(260,591)
 	}
 }
 text {
@@ -325,7 +325,7 @@ polyline {
 		x=280
 		y=50
 		width=0
-		height=520
+		height=540
 	}
 	"basic attribute" {
 		clr=0
@@ -335,7 +335,7 @@ polyline {
 	}
 	points {
 		(280,50)
-		(280,570)
+		(280,590)
 	}
 }
 text {
@@ -2514,7 +2514,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=335
+		y=355
 		width=10
 		height=10
 	}
@@ -2527,7 +2527,7 @@ text {
 text {
 	object {
 		x=265
-		y=335
+		y=355
 		width=10
 		height=10
 	}
@@ -2540,7 +2540,7 @@ text {
 text {
 	object {
 		x=285
-		y=335
+		y=355
 		width=10
 		height=10
 	}
@@ -2553,7 +2553,7 @@ text {
 "shell command" {
 	object {
 		x=40
-		y=330
+		y=350
 		width=130
 		height=20
 	}
@@ -2568,7 +2568,7 @@ text {
 "related display" {
 	object {
 		x=170
-		y=330
+		y=350
 		width=65
 		height=20
 	}
@@ -2584,7 +2584,7 @@ text {
 rectangle {
 	object {
 		x=235
-		y=330
+		y=350
 		width=5
 		height=20
 	}
@@ -2600,7 +2600,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=330
+		y=350
 		width=5
 		height=20
 	}
@@ -2616,7 +2616,7 @@ rectangle {
 rectangle {
 	object {
 		x=300
-		y=330
+		y=350
 		width=100
 		height=20
 	}
@@ -2627,7 +2627,7 @@ rectangle {
 "message button" {
 	object {
 		x=400
-		y=330
+		y=350
 		width=100
 		height=20
 	}
@@ -2642,7 +2642,7 @@ rectangle {
 rectangle {
 	object {
 		x=500
-		y=330
+		y=350
 		width=100
 		height=20
 	}
@@ -2653,7 +2653,7 @@ rectangle {
 "message button" {
 	object {
 		x=600
-		y=330
+		y=350
 		width=100
 		height=20
 	}
@@ -2668,7 +2668,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=355
+		y=375
 		width=10
 		height=10
 	}
@@ -2681,7 +2681,7 @@ text {
 text {
 	object {
 		x=265
-		y=355
+		y=375
 		width=10
 		height=10
 	}
@@ -2694,7 +2694,7 @@ text {
 text {
 	object {
 		x=285
-		y=355
+		y=375
 		width=10
 		height=10
 	}
@@ -2707,7 +2707,7 @@ text {
 "shell command" {
 	object {
 		x=40
-		y=350
+		y=370
 		width=130
 		height=20
 	}
@@ -2722,7 +2722,7 @@ text {
 "related display" {
 	object {
 		x=170
-		y=350
+		y=370
 		width=65
 		height=20
 	}
@@ -2738,7 +2738,7 @@ text {
 rectangle {
 	object {
 		x=235
-		y=350
+		y=370
 		width=5
 		height=20
 	}
@@ -2754,7 +2754,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=350
+		y=370
 		width=5
 		height=20
 	}
@@ -2770,7 +2770,7 @@ rectangle {
 rectangle {
 	object {
 		x=300
-		y=350
+		y=370
 		width=100
 		height=20
 	}
@@ -2781,7 +2781,7 @@ rectangle {
 "message button" {
 	object {
 		x=400
-		y=350
+		y=370
 		width=100
 		height=20
 	}
@@ -2796,7 +2796,7 @@ rectangle {
 rectangle {
 	object {
 		x=500
-		y=350
+		y=370
 		width=100
 		height=20
 	}
@@ -2807,7 +2807,7 @@ rectangle {
 "message button" {
 	object {
 		x=600
-		y=350
+		y=370
 		width=100
 		height=20
 	}
@@ -2822,7 +2822,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=375
+		y=395
 		width=10
 		height=10
 	}
@@ -2835,7 +2835,7 @@ text {
 text {
 	object {
 		x=265
-		y=375
+		y=395
 		width=10
 		height=10
 	}
@@ -2848,7 +2848,7 @@ text {
 text {
 	object {
 		x=285
-		y=375
+		y=395
 		width=10
 		height=10
 	}
@@ -2861,7 +2861,7 @@ text {
 "shell command" {
 	object {
 		x=40
-		y=370
+		y=390
 		width=130
 		height=20
 	}
@@ -2876,7 +2876,7 @@ text {
 "related display" {
 	object {
 		x=170
-		y=370
+		y=390
 		width=65
 		height=20
 	}
@@ -2892,7 +2892,7 @@ text {
 rectangle {
 	object {
 		x=235
-		y=370
+		y=390
 		width=5
 		height=20
 	}
@@ -2908,7 +2908,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=370
+		y=390
 		width=5
 		height=20
 	}
@@ -2924,7 +2924,7 @@ rectangle {
 rectangle {
 	object {
 		x=300
-		y=370
+		y=390
 		width=100
 		height=20
 	}
@@ -2935,7 +2935,7 @@ rectangle {
 "message button" {
 	object {
 		x=400
-		y=370
+		y=390
 		width=100
 		height=20
 	}
@@ -2950,7 +2950,7 @@ rectangle {
 rectangle {
 	object {
 		x=500
-		y=370
+		y=390
 		width=100
 		height=20
 	}
@@ -2961,7 +2961,7 @@ rectangle {
 "message button" {
 	object {
 		x=600
-		y=370
+		y=390
 		width=100
 		height=20
 	}
@@ -2976,7 +2976,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=395
+		y=415
 		width=10
 		height=10
 	}
@@ -2989,7 +2989,7 @@ text {
 text {
 	object {
 		x=265
-		y=395
+		y=415
 		width=10
 		height=10
 	}
@@ -3002,7 +3002,7 @@ text {
 text {
 	object {
 		x=285
-		y=395
+		y=415
 		width=10
 		height=10
 	}
@@ -3015,7 +3015,7 @@ text {
 "shell command" {
 	object {
 		x=40
-		y=390
+		y=410
 		width=130
 		height=20
 	}
@@ -3030,7 +3030,7 @@ text {
 "related display" {
 	object {
 		x=170
-		y=390
+		y=410
 		width=65
 		height=20
 	}
@@ -3046,7 +3046,7 @@ text {
 rectangle {
 	object {
 		x=235
-		y=390
+		y=410
 		width=5
 		height=20
 	}
@@ -3062,7 +3062,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=390
+		y=410
 		width=5
 		height=20
 	}
@@ -3078,7 +3078,7 @@ rectangle {
 rectangle {
 	object {
 		x=300
-		y=390
+		y=410
 		width=100
 		height=20
 	}
@@ -3089,7 +3089,7 @@ rectangle {
 "message button" {
 	object {
 		x=400
-		y=390
+		y=410
 		width=100
 		height=20
 	}
@@ -3104,7 +3104,7 @@ rectangle {
 rectangle {
 	object {
 		x=500
-		y=390
+		y=410
 		width=100
 		height=20
 	}
@@ -3115,7 +3115,7 @@ rectangle {
 "message button" {
 	object {
 		x=600
-		y=390
+		y=410
 		width=100
 		height=20
 	}
@@ -3130,7 +3130,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=415
+		y=435
 		width=10
 		height=10
 	}
@@ -3143,7 +3143,7 @@ text {
 text {
 	object {
 		x=265
-		y=415
+		y=435
 		width=10
 		height=10
 	}
@@ -3156,7 +3156,7 @@ text {
 text {
 	object {
 		x=285
-		y=415
+		y=435
 		width=10
 		height=10
 	}
@@ -3169,7 +3169,7 @@ text {
 "shell command" {
 	object {
 		x=40
-		y=410
+		y=430
 		width=130
 		height=20
 	}
@@ -3184,7 +3184,7 @@ text {
 "related display" {
 	object {
 		x=170
-		y=410
+		y=430
 		width=65
 		height=20
 	}
@@ -3200,7 +3200,7 @@ text {
 rectangle {
 	object {
 		x=235
-		y=410
+		y=430
 		width=5
 		height=20
 	}
@@ -3216,7 +3216,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=410
+		y=430
 		width=5
 		height=20
 	}
@@ -3232,7 +3232,7 @@ rectangle {
 rectangle {
 	object {
 		x=300
-		y=410
+		y=430
 		width=100
 		height=20
 	}
@@ -3243,7 +3243,7 @@ rectangle {
 "message button" {
 	object {
 		x=400
-		y=410
+		y=430
 		width=100
 		height=20
 	}
@@ -3258,7 +3258,7 @@ rectangle {
 rectangle {
 	object {
 		x=500
-		y=410
+		y=430
 		width=100
 		height=20
 	}
@@ -3269,7 +3269,7 @@ rectangle {
 "message button" {
 	object {
 		x=600
-		y=410
+		y=430
 		width=100
 		height=20
 	}
@@ -3284,7 +3284,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=435
+		y=455
 		width=10
 		height=10
 	}
@@ -3297,7 +3297,7 @@ text {
 text {
 	object {
 		x=265
-		y=435
+		y=455
 		width=10
 		height=10
 	}
@@ -3310,7 +3310,7 @@ text {
 text {
 	object {
 		x=285
-		y=435
+		y=455
 		width=10
 		height=10
 	}
@@ -3323,7 +3323,7 @@ text {
 "shell command" {
 	object {
 		x=40
-		y=430
+		y=450
 		width=130
 		height=20
 	}
@@ -3338,7 +3338,7 @@ text {
 "related display" {
 	object {
 		x=170
-		y=430
+		y=450
 		width=65
 		height=20
 	}
@@ -3354,7 +3354,7 @@ text {
 rectangle {
 	object {
 		x=235
-		y=430
+		y=450
 		width=5
 		height=20
 	}
@@ -3370,7 +3370,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=430
+		y=450
 		width=5
 		height=20
 	}
@@ -3386,7 +3386,7 @@ rectangle {
 rectangle {
 	object {
 		x=300
-		y=430
+		y=450
 		width=100
 		height=20
 	}
@@ -3397,7 +3397,7 @@ rectangle {
 "message button" {
 	object {
 		x=400
-		y=430
+		y=450
 		width=100
 		height=20
 	}
@@ -3412,7 +3412,7 @@ rectangle {
 rectangle {
 	object {
 		x=500
-		y=430
+		y=450
 		width=100
 		height=20
 	}
@@ -3423,7 +3423,7 @@ rectangle {
 "message button" {
 	object {
 		x=600
-		y=430
+		y=450
 		width=100
 		height=20
 	}
@@ -3438,7 +3438,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=455
+		y=475
 		width=10
 		height=10
 	}
@@ -3451,7 +3451,7 @@ text {
 text {
 	object {
 		x=265
-		y=455
+		y=475
 		width=10
 		height=10
 	}
@@ -3464,7 +3464,7 @@ text {
 text {
 	object {
 		x=285
-		y=455
+		y=475
 		width=10
 		height=10
 	}
@@ -3477,7 +3477,7 @@ text {
 "shell command" {
 	object {
 		x=40
-		y=450
+		y=470
 		width=130
 		height=20
 	}
@@ -3492,7 +3492,7 @@ text {
 "related display" {
 	object {
 		x=170
-		y=450
+		y=470
 		width=65
 		height=20
 	}
@@ -3508,7 +3508,7 @@ text {
 rectangle {
 	object {
 		x=235
-		y=450
+		y=470
 		width=5
 		height=20
 	}
@@ -3524,7 +3524,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=450
+		y=470
 		width=5
 		height=20
 	}
@@ -3540,7 +3540,7 @@ rectangle {
 rectangle {
 	object {
 		x=300
-		y=450
+		y=470
 		width=100
 		height=20
 	}
@@ -3551,7 +3551,7 @@ rectangle {
 "message button" {
 	object {
 		x=400
-		y=450
+		y=470
 		width=100
 		height=20
 	}
@@ -3566,7 +3566,7 @@ rectangle {
 rectangle {
 	object {
 		x=500
-		y=450
+		y=470
 		width=100
 		height=20
 	}
@@ -3577,7 +3577,7 @@ rectangle {
 "message button" {
 	object {
 		x=600
-		y=450
+		y=470
 		width=100
 		height=20
 	}
@@ -3592,7 +3592,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=475
+		y=495
 		width=10
 		height=10
 	}
@@ -3605,7 +3605,7 @@ text {
 text {
 	object {
 		x=265
-		y=475
+		y=495
 		width=10
 		height=10
 	}
@@ -3618,7 +3618,7 @@ text {
 text {
 	object {
 		x=285
-		y=475
+		y=495
 		width=10
 		height=10
 	}
@@ -3631,7 +3631,7 @@ text {
 "shell command" {
 	object {
 		x=40
-		y=470
+		y=490
 		width=130
 		height=20
 	}
@@ -3646,7 +3646,7 @@ text {
 "related display" {
 	object {
 		x=170
-		y=470
+		y=490
 		width=65
 		height=20
 	}
@@ -3662,7 +3662,7 @@ text {
 rectangle {
 	object {
 		x=235
-		y=470
+		y=490
 		width=5
 		height=20
 	}
@@ -3678,7 +3678,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=470
+		y=490
 		width=5
 		height=20
 	}
@@ -3694,7 +3694,7 @@ rectangle {
 rectangle {
 	object {
 		x=300
-		y=470
+		y=490
 		width=100
 		height=20
 	}
@@ -3705,7 +3705,7 @@ rectangle {
 "message button" {
 	object {
 		x=400
-		y=470
+		y=490
 		width=100
 		height=20
 	}
@@ -3720,7 +3720,7 @@ rectangle {
 rectangle {
 	object {
 		x=500
-		y=470
+		y=490
 		width=100
 		height=20
 	}
@@ -3731,7 +3731,7 @@ rectangle {
 "message button" {
 	object {
 		x=600
-		y=470
+		y=490
 		width=100
 		height=20
 	}
@@ -3746,7 +3746,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=495
+		y=515
 		width=10
 		height=10
 	}
@@ -3759,7 +3759,7 @@ text {
 text {
 	object {
 		x=265
-		y=495
+		y=515
 		width=10
 		height=10
 	}
@@ -3772,7 +3772,7 @@ text {
 text {
 	object {
 		x=285
-		y=495
+		y=515
 		width=10
 		height=10
 	}
@@ -3785,7 +3785,7 @@ text {
 "shell command" {
 	object {
 		x=40
-		y=490
+		y=510
 		width=130
 		height=20
 	}
@@ -3800,7 +3800,7 @@ text {
 "related display" {
 	object {
 		x=170
-		y=490
+		y=510
 		width=65
 		height=20
 	}
@@ -3816,7 +3816,7 @@ text {
 rectangle {
 	object {
 		x=235
-		y=490
+		y=510
 		width=5
 		height=20
 	}
@@ -3832,7 +3832,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=490
+		y=510
 		width=5
 		height=20
 	}
@@ -3848,7 +3848,7 @@ rectangle {
 rectangle {
 	object {
 		x=300
-		y=490
+		y=510
 		width=100
 		height=20
 	}
@@ -3859,7 +3859,7 @@ rectangle {
 "message button" {
 	object {
 		x=400
-		y=490
+		y=510
 		width=100
 		height=20
 	}
@@ -3874,7 +3874,7 @@ rectangle {
 rectangle {
 	object {
 		x=500
-		y=490
+		y=510
 		width=100
 		height=20
 	}
@@ -3885,7 +3885,7 @@ rectangle {
 "message button" {
 	object {
 		x=600
-		y=490
+		y=510
 		width=100
 		height=20
 	}
@@ -3900,7 +3900,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=515
+		y=535
 		width=10
 		height=10
 	}
@@ -3913,7 +3913,7 @@ text {
 text {
 	object {
 		x=265
-		y=515
+		y=535
 		width=10
 		height=10
 	}
@@ -3926,7 +3926,7 @@ text {
 text {
 	object {
 		x=285
-		y=515
+		y=535
 		width=10
 		height=10
 	}
@@ -3939,7 +3939,7 @@ text {
 "shell command" {
 	object {
 		x=40
-		y=510
+		y=530
 		width=130
 		height=20
 	}
@@ -3954,7 +3954,7 @@ text {
 "related display" {
 	object {
 		x=170
-		y=510
+		y=530
 		width=65
 		height=20
 	}
@@ -3970,7 +3970,7 @@ text {
 rectangle {
 	object {
 		x=235
-		y=510
+		y=530
 		width=5
 		height=20
 	}
@@ -3986,7 +3986,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=510
+		y=530
 		width=5
 		height=20
 	}
@@ -4002,7 +4002,7 @@ rectangle {
 rectangle {
 	object {
 		x=300
-		y=510
+		y=530
 		width=100
 		height=20
 	}
@@ -4013,7 +4013,7 @@ rectangle {
 "message button" {
 	object {
 		x=400
-		y=510
+		y=530
 		width=100
 		height=20
 	}
@@ -4028,7 +4028,7 @@ rectangle {
 rectangle {
 	object {
 		x=500
-		y=510
+		y=530
 		width=100
 		height=20
 	}
@@ -4039,7 +4039,7 @@ rectangle {
 "message button" {
 	object {
 		x=600
-		y=510
+		y=530
 		width=100
 		height=20
 	}
@@ -4054,7 +4054,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=535
+		y=555
 		width=10
 		height=10
 	}
@@ -4067,7 +4067,7 @@ text {
 text {
 	object {
 		x=265
-		y=535
+		y=555
 		width=10
 		height=10
 	}
@@ -4080,7 +4080,7 @@ text {
 text {
 	object {
 		x=285
-		y=535
+		y=555
 		width=10
 		height=10
 	}
@@ -4093,7 +4093,7 @@ text {
 "shell command" {
 	object {
 		x=40
-		y=530
+		y=550
 		width=130
 		height=20
 	}
@@ -4108,7 +4108,7 @@ text {
 "related display" {
 	object {
 		x=170
-		y=530
+		y=550
 		width=65
 		height=20
 	}
@@ -4124,7 +4124,7 @@ text {
 rectangle {
 	object {
 		x=235
-		y=530
+		y=550
 		width=5
 		height=20
 	}
@@ -4140,7 +4140,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=530
+		y=550
 		width=5
 		height=20
 	}
@@ -4156,7 +4156,7 @@ rectangle {
 rectangle {
 	object {
 		x=300
-		y=530
+		y=550
 		width=100
 		height=20
 	}
@@ -4167,7 +4167,7 @@ rectangle {
 "message button" {
 	object {
 		x=400
-		y=530
+		y=550
 		width=100
 		height=20
 	}
@@ -4182,7 +4182,7 @@ rectangle {
 rectangle {
 	object {
 		x=500
-		y=530
+		y=550
 		width=100
 		height=20
 	}
@@ -4193,7 +4193,7 @@ rectangle {
 "message button" {
 	object {
 		x=600
-		y=530
+		y=550
 		width=100
 		height=20
 	}
@@ -4208,7 +4208,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=555
+		y=575
 		width=10
 		height=10
 	}
@@ -4221,7 +4221,7 @@ text {
 text {
 	object {
 		x=265
-		y=555
+		y=575
 		width=10
 		height=10
 	}
@@ -4234,7 +4234,7 @@ text {
 text {
 	object {
 		x=285
-		y=555
+		y=575
 		width=10
 		height=10
 	}
@@ -4247,7 +4247,7 @@ text {
 "shell command" {
 	object {
 		x=40
-		y=550
+		y=570
 		width=130
 		height=20
 	}
@@ -4262,7 +4262,7 @@ text {
 "related display" {
 	object {
 		x=170
-		y=550
+		y=570
 		width=65
 		height=20
 	}
@@ -4278,7 +4278,7 @@ text {
 rectangle {
 	object {
 		x=235
-		y=550
+		y=570
 		width=5
 		height=20
 	}
@@ -4294,7 +4294,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=550
+		y=570
 		width=5
 		height=20
 	}
@@ -4310,7 +4310,7 @@ rectangle {
 rectangle {
 	object {
 		x=500
-		y=550
+		y=570
 		width=100
 		height=20
 	}
@@ -4321,7 +4321,7 @@ rectangle {
 "message button" {
 	object {
 		x=600
-		y=550
+		y=570
 		width=100
 		height=20
 	}
@@ -4399,4 +4399,158 @@ rectangle {
 	}
 	label="BPMA-2184-T1"
 	press_msg="xfelgpac1di2175t1:51237#BPMA-2184-T1"
+}
+text {
+	object {
+		x=245
+		y=335
+		width=10
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=265
+		y=335
+		width=10
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=285
+		y=335
+		width=10
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+	align="horiz. centered"
+}
+"shell command" {
+	object {
+		x=40
+		y=330
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2286sa2 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2286sa2 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2286sa2"
+}
+"related display" {
+	object {
+		x=170
+		y=330
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2286SA2"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1639"
+}
+rectangle {
+	object {
+		x=235
+		y=330
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2286SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=330
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2286SA2:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=300
+		y=330
+		width=100
+		height=20
+	}
+	"basic attribute" {
+		clr=30
+	}
+}
+"message button" {
+	object {
+		x=400
+		y=330
+		width=100
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=30
+	}
+	label="BPME-2249-SA2"
+	press_msg="xfelgpac1di2286sa2:51236#BPME-2249-SA2"
+}
+rectangle {
+	object {
+		x=500
+		y=330
+		width=100
+		height=20
+	}
+	"basic attribute" {
+		clr=30
+	}
+}
+"message button" {
+	object {
+		x=600
+		y=330
+		width=100
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=30
+	}
+	label="BPME-2303-SA2"
+	press_msg="xfelgpac1di2286sa2:51238#BPME-2303-SA2"
 }
