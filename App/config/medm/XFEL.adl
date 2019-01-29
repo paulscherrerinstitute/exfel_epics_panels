@@ -204,7 +204,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -fg black -bg yellow -e ssh wkoprek@xfeluser1 &"
+		name="xterm -fg black -bg yellow -e ssh xfeluser1 &"
 	}
 	clr=14
 	bclr=57
@@ -363,7 +363,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T xfelpsiibfb -fg black -bg tan1 -e ssh wkoprek@xfelpsiibfb &"
+		name="xterm -T xfelpsiibfb -fg black -bg tan1 -e ssh xfelpsiibfb &"
 	}
 	clr=14
 	bclr=57
@@ -378,7 +378,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T xfelpsibpm1 -fg black -bg DarkOrchid1 -e ssh wkoprek@xfelpsibpm1 &"
+		name="xterm -T xfelpsibpm1 -fg black -bg DarkOrchid1 -e ssh xfelpsibpm1 &"
 	}
 	clr=14
 	bclr=57
@@ -393,7 +393,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T xfelpsibpm2 -fg black -bg SeaGreen1 -e ssh wkoprek@xfelpsibpm2 &"
+		name="xterm -T xfelpsibpm2 -fg black -bg SeaGreen1 -e ssh xfelpsibpm2 &"
 	}
 	clr=14
 	bclr=57
