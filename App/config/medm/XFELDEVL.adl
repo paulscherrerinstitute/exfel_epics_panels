@@ -1,14 +1,14 @@
 
 file {
-	name="/xfel/controls/App/config/medm/XFELDEVL.adl"
+	name="/home/wkoprek/XFELDEVL.adl"
 	version=030105
 }
 display {
 	object {
-		x=81
-		y=333
+		x=71
+		y=104
 		width=600
-		height=320
+		height=340
 	}
 	clr=14
 	bclr=4
@@ -85,6 +85,54 @@ display {
 		3cb420,
 		289315,
 		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=410
+		y=310
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="3FLFXTDS:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=545
+		y=310
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="4FLFXTDS:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=170
+		y=310
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="FLASHFGPACDIAG3:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -1293,5 +1341,130 @@ rectangle {
 		vis="calc"
 		calc="A=1"
 		chan="3FLFDIAG:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=105
+		y=310
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=FLASHFGPACDIAG3"
+	}
+	clr=14
+	bclr=57
+	label="-Timing"
+}
+"related display" {
+	object {
+		x=5
+		y=310
+		width=100
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=FLASHFGPACDIAG3"
+	}
+	clr=14
+	bclr=57
+	label="-FLASHFGPACDIAG3"
+}
+rectangle {
+	object {
+		x=170
+		y=310
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="FLASHFGPACDIAG3:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=175
+		y=310
+		width=100
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T flashfgpacdiag3 -bg rgb:40/A0/90 -e telnet -l root flashfgpacdiag3 &"
+	}
+	clr=14
+	bclr=57
+	label="-flashfgpacdiag3"
+}
+"shell command" {
+	object {
+		x=280
+		y=310
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh 3FLFXTDS BPM_GPAC_CAV_SMP_single.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-3FLFXTDS"
+}
+rectangle {
+	object {
+		x=410
+		y=310
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="3FLFXTDS:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=415
+		y=310
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh 4FLFXTDS BPM_GPAC_CAV_SMP_single.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-4FLFXTDS"
+}
+rectangle {
+	object {
+		x=545
+		y=310
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="4FLFXTDS:S7GPAC-STATUS"
 	}
 }
