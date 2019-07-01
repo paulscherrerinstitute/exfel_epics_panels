@@ -1,13 +1,13 @@
 
 file {
-	name="/afs/psi.ch/user/r/rybaniec_r/ibfb/exfel_epics_panels/App/config/medm/IBFB_SA_template.adl"
+	name="/afs/psi.ch/user/r/rybaniec_r/ibfb/exfel_epics_panels/scripts/medm/IBFBCAV_SA_template.adl"
 	version=030105
 }
 display {
 	object {
 		x=1140
 		y=81
-		width=1092
+		width=1107
 		height=650
 	}
 	clr=14
@@ -91,7 +91,7 @@ rectangle {
 	object {
 		x=-1725
 		y=0
-		width=2813
+		width=2830
 		height=30
 	}
 	"basic attribute" {

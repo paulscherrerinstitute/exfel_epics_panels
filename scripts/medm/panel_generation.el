@@ -293,14 +293,15 @@ rectangle {
 (defun medm-insert-line (y bpm-1-name bpm-2-name ipc-name host-name locserv-name &optional hide-gtx-status)
   ""
   (let ((locserv-name (if locserv-name locserv-name (if bpm-1-name bpm-1-name bpm-2-name)))
-        ;; this would hide the gtx when name is not existing
-        ;; (bpm-1-gtx-hide (if bpm-1-name (when (consp hide-gtx-status) (car hide-gtx-status)) t))
-        ;; (bpm-2-gtx-hide (if bpm-2-name (when (consp hide-gtx-status) (cdr hide-gtx-status)) t))
+        ;; this would hide the gtx when name is not existing or is 't
+        (bpm-1-gtx-hide (if bpm-1-name (when (consp hide-gtx-status) (car hide-gtx-status)) t))
+        (bpm-2-gtx-hide (if bpm-2-name (when (consp hide-gtx-status) (cdr hide-gtx-status)) t)))
 
-        ;; this won't hide gtx status when name is not there
-        (bpm-1-gtx-hide (when (consp hide-gtx-status) (car hide-gtx-status)))
-        (bpm-2-gtx-hide (when (consp hide-gtx-status) (cdr hide-gtx-status))))
-    
+    (when (equal bpm-1-name "NONE")
+      (setq bpm-1-name nil))
+    (when (equal bpm-2-name "NONE")
+      (setq bpm-2-name nil))
+
     (when bpm-1-name
       (medm-bpm-serv-message 90 y bpm-1-name host-name 51236))
     (when bpm-2-name
@@ -366,7 +367,7 @@ rectangle {
    for sase-name in '("SA1" "SA2" "SA3")
    for mbu-list-name in (list sa1-list sa2-list sa3-list)
    do
-   (with-temp-file (concat "IBFBCAV_" sase-name ".adl")
+   (with-temp-file (concat "../../App/config/medm/" "IBFBCAV_" sase-name ".adl")
      (insert-file-contents "IBFBCAV_SA_template.adl")
      (goto-char (point-max))
      (insert "\n")

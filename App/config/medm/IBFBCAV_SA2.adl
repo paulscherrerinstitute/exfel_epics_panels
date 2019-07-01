@@ -1,13 +1,13 @@
 
 file {
-	name="/afs/psi.ch/user/r/rybaniec_r/ibfb/exfel_epics_panels/App/config/medm/IBFB_SA_template.adl"
+	name="/afs/psi.ch/user/r/rybaniec_r/ibfb/exfel_epics_panels/scripts/medm/IBFBCAV_SA_template.adl"
 	version=030105
 }
 display {
 	object {
 		x=1140
 		y=81
-		width=1092
+		width=1107
 		height=650
 	}
 	clr=14
@@ -91,7 +91,7 @@ rectangle {
 	object {
 		x=-1725
 		y=0
-		width=2813
+		width=2830
 		height=30
 	}
 	"basic attribute" {
@@ -922,38 +922,6 @@ rectangle {
 }
 rectangle {
 	object {
-		x=641
-		y=95
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X100000) > 0"
-		chan="IBFBYCOL:COM-SFP-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=641
-		y=95
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X100000) = 0"
-		chan="IBFBYCOL:COM-SFP-STATUS"
-	}
-}
-rectangle {
-	object {
 		x=646
 		y=95
 		width=5
@@ -982,38 +950,6 @@ rectangle {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
 		chan="IBFBYCOL:COM-SFP-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=660
-		y=95
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X80) > 0"
-		chan="IBFBYCOL:BPM1-IBFB-GTX-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=660
-		y=95
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X80) = 0"
-		chan="IBFBYCOL:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -1114,38 +1050,6 @@ rectangle {
 }
 rectangle {
 	object {
-		x=1120
-		y=95
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X02) = 0"
-		chan="IBFBYCOL:BPM1-PING-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=1120
-		y=95
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X02) > 0"
-		chan="IBFBYCOL:BPM1-PING-STATUS"
-	}
-}
-rectangle {
-	object {
 		x=1125
 		y=95
 		width=5
@@ -1174,22 +1078,6 @@ rectangle {
 		vis="calc"
 		calc="(A & 0X02) > 0"
 		chan="IBFBYCOL:BPM2-PING-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=1140
-		y=95
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X08) > 0"
-		chan="IBFBYCOL:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -12626,7 +12514,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2422-SA2:S7GPAC-STATUS"
+		chan="NONE:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -12642,7 +12530,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2422-SA2:S7GPAC-STATUS"
+		chan="NONE:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -12653,7 +12541,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2422-SA2:BPM2-ENABLED"
+		chan="NONE:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -12672,7 +12560,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2422-SA2:COM-SFP-STATUS"
+		chan="NONE:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -12688,7 +12576,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2422-SA2:COM-SFP-STATUS"
+		chan="NONE:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -12704,7 +12592,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2422-SA2:COM-SFP-STATUS"
+		chan="NONE:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -12720,7 +12608,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2422-SA2:COM-SFP-STATUS"
+		chan="NONE:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -12736,7 +12624,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2422-SA2:BPM1-IBFB-GTX-STATUS"
+		chan="NONE:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -12752,7 +12640,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2422-SA2:BPM1-IBFB-GTX-STATUS"
+		chan="NONE:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -12768,7 +12656,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2422-SA2:BPM2-IBFB-GTX-STATUS"
+		chan="NONE:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -12784,7 +12672,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2422-SA2:BPM2-IBFB-GTX-STATUS"
+		chan="NONE:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -12795,7 +12683,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2422-SA2:BPM2-TRG-DELAY"
+		chan="NONE:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -12811,7 +12699,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2422-SA2:BPM2-BPM-ID"
+		chan="NONE:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -12827,7 +12715,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2422-SA2:BPM2-ROUTER-ENA"
+		chan="NONE:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -12843,7 +12731,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2422-SA2:BPM2-Q-THRESHOLD"
+		chan="NONE:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -12864,7 +12752,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2422-SA2:BPM1-PING-STATUS"
+		chan="NONE:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -12880,7 +12768,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2422-SA2:BPM1-PING-STATUS"
+		chan="NONE:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -12896,7 +12784,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2422-SA2:BPM2-PING-STATUS"
+		chan="NONE:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -12912,7 +12800,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2422-SA2:BPM2-PING-STATUS"
+		chan="NONE:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -12928,7 +12816,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2422-SA2:BPM1-PING-STATUS"
+		chan="NONE:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -12944,6 +12832,6 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2422-SA2:BPM2-PING-STATUS"
+		chan="NONE:BPM2-PING-STATUS"
 	}
 }

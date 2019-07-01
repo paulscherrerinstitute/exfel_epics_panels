@@ -20,7 +20,7 @@
 ("495" "xfelgpac1di2427sa1" "IPC1544" "BPME-2424-SA1" "BPME-2430-SA1")
 ("515" "xfelgpac1di2439sa1" "IPC1618" "BPME-2436-SA1" "BPME-2442-SA1")
 ("535" "xfelgpac1di2451sa1" "IPC1613" "BPME-2448-SA1" "BPME-2454-SA1")
-("555" "xfelgpac1di2463sa1" "IPC1635"  nil            "BPME-2461-SA1")))
+("555" "xfelgpac1di2463sa1" "IPC1635"  "NONE"         "BPME-2461-SA1")))
 
 (setq sa2-list '(
 ("170" "xfelgpac1di2194t1"  "IPC1503" "BPME-2191-T1"  "BPME-2197-T1" )                 
@@ -42,11 +42,10 @@
 ("495" "xfelgpac1di2390sa2" "IPC1539" "BPME-2386-SA2" "BPME-2392-SA2")
 ("515" "xfelgpac1di2402sa2" "IPC1492" "BPME-2398-SA2" "BPME-2404-SA2")
 ("535" "xfelgpac1di2414sa2" "IPC1491" "BPME-2410-SA2" "BPME-2416-SA2")
-("555" "xfelgpac1di2423sa2" "IPC1571"  nil            "BPME-2422-SA2")))
+("555" "xfelgpac1di2423sa2" "IPC1571"  "NONE"              "BPME-2422-SA2")))
 
 (setq sa3-list '(
-("170" "xfelgpac1di2793t4"  "IPC1500" "BPME-2794-T4"  "BPME-2800-T4" )                 
-("195" "xfelgpac1di2194t1"  "IPC1503" "BPME-2191-T1"  "BPME-2197-T1" )                                  
+("195" "xfelgpac1di2793t4"  "IPC1500" "BPME-2794-T4"  "BPME-2800-T4" )                 
 ("210" "xfelgpac1di2808sa3" "IPC1447" "BPME-2806-SA3" "BPME-2812-SA3")
 ("235" "xfelgpac1di2820sa3" "IPC1450" "BPME-2818-SA3" "BPME-2824-SA3")
 ("255" "xfelgpac1di2832sa3" "IPC1444" "BPME-2830-SA3" "BPME-2836-SA3")
@@ -58,7 +57,7 @@
 ("375" "xfelgpac1di2906sa3" "IPC1476" "BPME-2903-SA3" "BPME-2910-SA3")
 ("395" "xfelgpac1di2918sa3" "IPC1506" "BPME-2916-SA3" "BPME-2922-SA3")
 ("415" "xfelgpac1di2931sa3" "IPC1498" "BPME-2928-SA3" "BPME-2934-SA3")
-("435" "xfelgpac1di2943sa3" "IPC1588"  nil            "BPME-2940-SA3")))
+("435" "xfelgpac1di2943sa3" "IPC1588"  "NONE"              "BPME-2940-SA3")))
 
 
 
