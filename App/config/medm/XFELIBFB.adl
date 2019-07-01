@@ -1,12 +1,12 @@
 
 file {
-	name="/xfel/controls/App/config/medm/XFELIBFB.adl"
+	name="/afs/psi.ch/user/r/rybaniec_r/ibfb/exfel_epics_panels/App/config/medm/XFELIBFB.adl"
 	version=030105
 }
 display {
 	object {
-		x=3
-		y=274
+		x=1021
+		y=764
 		width=510
 		height=400
 	}
@@ -739,17 +739,17 @@ text {
 	object {
 		x=5
 		y=305
-		width=140
+		width=80
 		height=20
 	}
 	display[0] {
 		label="BPM"
-		name="IBFBCAV.adl"
+		name="IBFBCAV_SA1.adl"
 		args="DEV=IBFBCTRL"
 	}
 	clr=14
 	bclr=57
-	label="-Feedback BPMs"
+	label="-Feedback SA1"
 }
 "related display" {
 	object {
@@ -1688,4 +1688,36 @@ text {
 	clr=14
 	bclr=57
 	label="-SASE plots"
+}
+"related display" {
+	object {
+		x=85
+		y=305
+		width=30
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="IBFBCAV_SA2.adl"
+		args="DEV=IBFBCTRL"
+	}
+	clr=14
+	bclr=57
+	label="-SA2"
+}
+"related display" {
+	object {
+		x=115
+		y=305
+		width=30
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="IBFBCAV_SA3.adl"
+		args="DEV=IBFBCTRL"
+	}
+	clr=14
+	bclr=57
+	label="-SA3"
 }
