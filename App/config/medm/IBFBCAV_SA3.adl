@@ -1,0 +1,9823 @@
+
+file {
+	name="/afs/psi.ch/user/r/rybaniec_r/ibfb/exfel_epics_panels/App/config/medm/IBFB_SA_template.adl"
+	version=030105
+}
+display {
+	object {
+		x=1140
+		y=81
+		width=1092
+		height=650
+	}
+	clr=14
+	bclr=4
+	cmap=""
+	gridSpacing=5
+	gridOn=1
+	snapToGrid=1
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=-1725
+		y=0
+		width=2813
+		height=30
+	}
+	"basic attribute" {
+		clr=1
+	}
+}
+polyline {
+	object {
+		x=0
+		y=121
+		width=1200
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,121)
+		(1200,121)
+	}
+}
+polyline {
+	object {
+		x=640
+		y=65
+		width=0
+		height=1233
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(640,65)
+		(640,1298)
+	}
+}
+text {
+	object {
+		x=699
+		y=72
+		width=95
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Trigger delay"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=790
+		y=65
+		width=0
+		height=1200
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(790,65)
+		(790,1265)
+	}
+}
+polyline {
+	object {
+		x=84
+		y=65
+		width=1
+		height=1203
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(84,65)
+		(85,1268)
+	}
+}
+text {
+	object {
+		x=15
+		y=73
+		width=50
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPMs"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=10
+		y=143
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Downstream Y"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=123
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Upstream Y"
+	align="horiz. right"
+}
+text {
+	object {
+		x=795
+		y=72
+		width=95
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM ID"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=895
+		y=65
+		width=0
+		height=1200
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(895,65)
+		(895,1265)
+	}
+}
+text {
+	object {
+		x=520
+		y=75
+		width=100
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Enabled Mode"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=10
+		y=183
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Downstream X"
+	align="horiz. right"
+}
+text {
+	object {
+		x=10
+		y=163
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Upstream X"
+	align="horiz. right"
+}
+polyline {
+	object {
+		x=0
+		y=212
+		width=1200
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,212)
+		(1200,212)
+	}
+}
+text {
+	object {
+		x=900
+		y=73
+		width=95
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Router"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=515
+		y=65
+		width=1
+		height=1202
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(516,65)
+		(515,1267)
+	}
+}
+"shell command" {
+	object {
+		x=360
+		y=68
+		width=150
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh CAVBPM BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-Cavity BPM (Qt)"
+}
+polyline {
+	object {
+		x=0
+		y=91
+		width=1200
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,91)
+		(1200,91)
+	}
+}
+text {
+	object {
+		x=10
+		y=93
+		width=70
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Collimator Y"
+	align="horiz. right"
+}
+text {
+	object {
+		x=1005
+		y=73
+		width=95
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Q Threshold"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=1000
+		y=65
+		width=0
+		height=1200
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(1000,65)
+		(1000,1265)
+	}
+}
+polyline {
+	object {
+		x=0
+		y=650
+		width=1200
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(0,650)
+		(1200,650)
+	}
+}
+polyline {
+	object {
+		x=688
+		y=65
+		width=659
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(688,65)
+		(1347,65)
+	}
+}
+polyline {
+	object {
+		x=688
+		y=66
+		width=0
+		height=1200
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(688,66)
+		(688,1266)
+	}
+}
+polyline {
+	object {
+		x=-20
+		y=65
+		width=659
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(-20,65)
+		(639,65)
+	}
+}
+text {
+	object {
+		x=578
+		y=35
+		width=40
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=607
+		y=35
+		width=40
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM2"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=526
+		y=35
+		width=40
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RXLOSS GTX0"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=664
+		y=35
+		width=40
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=691
+		y=35
+		width=40
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM2"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=743
+		y=35
+		width=40
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="GTX0 RXSYNC"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=648
+		y=40
+		width=0
+		height=45
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(648,85)
+		(648,40)
+		(648,52)
+		(648,52)
+	}
+}
+polyline {
+	object {
+		x=662
+		y=40
+		width=0
+		height=45
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(662,85)
+		(662,40)
+	}
+}
+polyline {
+	object {
+		x=643
+		y=55
+		width=0
+		height=30
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(643,85)
+		(643,55)
+	}
+}
+polyline {
+	object {
+		x=597
+		y=55
+		width=45
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(642,55)
+		(597,55)
+	}
+}
+polyline {
+	object {
+		x=597
+		y=50
+		width=0
+		height=5
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(597,55)
+		(597,50)
+	}
+}
+polyline {
+	object {
+		x=667
+		y=55
+		width=0
+		height=30
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(667,85)
+		(667,55)
+	}
+}
+polyline {
+	object {
+		x=667
+		y=55
+		width=43
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(710,55)
+		(667,55)
+	}
+}
+polyline {
+	object {
+		x=710
+		y=50
+		width=0
+		height=5
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(710,55)
+		(710,50)
+	}
+}
+polyline {
+	object {
+		x=662
+		y=40
+		width=5
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(662,40)
+		(667,40)
+	}
+}
+polyline {
+	object {
+		x=642
+		y=40
+		width=5
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(642,40)
+		(647,40)
+	}
+}
+text {
+	object {
+		x=90
+		y=70
+		width=50
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Device:"
+}
+"text update" {
+	object {
+		x=135
+		y=70
+		width=100
+		height=16
+	}
+	monitor {
+		chan="CAVBPM:CONN-DEV.SVAL"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=90
+		y=85
+		width=149
+		height=5
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="CAVBPM:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=90
+		y=85
+		width=149
+		height=5
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="CAVBPM:S7GPAC-STATUS"
+	}
+}
+"message button" {
+	object {
+		x=255
+		y=68
+		width=100
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=4
+	}
+	label="Disconnect"
+	press_msg=":51235# "
+}
+
+text {
+	object {
+		x=445
+		y=10
+        width=200
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="IBFB BPMs SASE SA3"
+    align="horiz. centered"
+}
+text {
+	object {
+		x=40
+		y=413
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="SASE SA3"
+    align="horiz. centered"
+}
+"message button" {
+object {
+x=175
+y=95
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPMI-1837-CL"
+press_msg="xfelgpac1di1828cl:51238#BPMI-1837-CL"
+}
+"related display" {
+	object {
+		x=260
+		y=95
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI1828CL"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1605"
+}
+rectangle {
+	object {
+		x=325
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI1828CL:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI1828CL:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=95
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI1828CL"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=95
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di1828cl -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di1828cl &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di1828cl"
+}
+rectangle {
+	object {
+		x=510
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBYCOL:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBYCOL:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=580
+		y=98
+		width=55
+		height=15
+	}
+	control {
+		chan="IBFBYCOL:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="IBFBYCOL:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="IBFBYCOL:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="IBFBYCOL:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) = 0"
+		chan="IBFBYCOL:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="IBFBYCOL:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="IBFBYCOL:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="IBFBYCOL:BPM2-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="IBFBYCOL:BPM2-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=98
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYCOL:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=98
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYCOL:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=98
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYCOL:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=98
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYCOL:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="IBFBYCOL:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="IBFBYCOL:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="IBFBYCOL:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="IBFBYCOL:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="IBFBYCOL:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1145
+		y=95
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="IBFBYCOL:BPM2-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=90
+y=125
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPMI-1860-TL"
+press_msg="xfelgpac1di1899tl:51236#BPMI-1860-TL"
+}
+"message button" {
+object {
+x=175
+y=125
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPMI-1878-TL"
+press_msg="xfelgpac1di1899tl:51238#BPMI-1878-TL"
+}
+"related display" {
+	object {
+		x=260
+		y=125
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI1899TL"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1627"
+}
+rectangle {
+	object {
+		x=325
+		y=125
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI1899TL:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=125
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI1899TL:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=125
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI1899TL"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=125
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di1899tl -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di1899tl &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di1899tl"
+}
+rectangle {
+	object {
+		x=510
+		y=125
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBYUP:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=125
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBYUP:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=128
+		width=55
+		height=15
+	}
+	control {
+		chan="IBFBYUP:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=128
+		width=55
+		height=15
+	}
+	control {
+		chan="IBFBYUP:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text update" {
+	object {
+		x=692
+		y=128
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYUP:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=128
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYUP:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=128
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYUP:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=128
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYUP:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=128
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYUP:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=128
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYUP:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=128
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYUP:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=128
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYUP:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"message button" {
+object {
+x=90
+y=145
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPMI-1910-TL"
+press_msg="xfelgpac2di1899tl:51236#BPMI-1910-TL"
+}
+"message button" {
+object {
+x=175
+y=145
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPMI-1930-TL"
+press_msg="xfelgpac2di1899tl:51238#BPMI-1930-TL"
+}
+"related display" {
+	object {
+		x=260
+		y=145
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC2DI1899TL"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1576"
+}
+rectangle {
+	object {
+		x=325
+		y=145
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC2DI1899TL:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=145
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC2DI1899TL:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=145
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC2DI1899TL"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=145
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac2di1899tl -bg rgb:40/A0/90 -e telnet -l root xfelgpac2di1899tl &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac2di1899tl"
+}
+rectangle {
+	object {
+		x=510
+		y=145
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBYDOWN:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=145
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBYDOWN:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=148
+		width=55
+		height=15
+	}
+	control {
+		chan="IBFBYDOWN:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=148
+		width=55
+		height=15
+	}
+	control {
+		chan="IBFBYDOWN:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=145
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="IBFBYDOWN:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=145
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="IBFBYDOWN:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=145
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="IBFBYDOWN:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=145
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="IBFBYDOWN:BPM1-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=692
+		y=148
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYDOWN:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=148
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYDOWN:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=148
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYDOWN:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=148
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYDOWN:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=148
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYDOWN:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=148
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYDOWN:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=148
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYDOWN:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=148
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBYDOWN:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=145
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="IBFBYDOWN:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=145
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="IBFBYDOWN:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=145
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="IBFBYDOWN:BPM1-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=90
+y=165
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPMI-1863-TL"
+press_msg="xfelgpac3di1899tl:51236#BPMI-1863-TL"
+}
+"message button" {
+object {
+x=175
+y=165
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPMI-1889-TL"
+press_msg="xfelgpac3di1899tl:51238#BPMI-1889-TL"
+}
+"related display" {
+	object {
+		x=260
+		y=165
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC3DI1899TL"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1488"
+}
+rectangle {
+	object {
+		x=325
+		y=165
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC3DI1899TL:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=165
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC3DI1899TL:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=165
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC3DI1899TL"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=165
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac3di1899tl -bg rgb:40/A0/90 -e telnet -l root xfelgpac3di1899tl &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac3di1899tl"
+}
+rectangle {
+	object {
+		x=510
+		y=165
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBXUP:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=165
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBXUP:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=168
+		width=55
+		height=15
+	}
+	control {
+		chan="IBFBXUP:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=168
+		width=55
+		height=15
+	}
+	control {
+		chan="IBFBXUP:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"text update" {
+	object {
+		x=692
+		y=168
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXUP:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=168
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXUP:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=168
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXUP:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=168
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXUP:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=168
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXUP:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=168
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXUP:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=168
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXUP:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=168
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXUP:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"message button" {
+object {
+x=90
+y=185
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPMI-1925-TL"
+press_msg="xfelgpac4di1899tl:51236#BPMI-1925-TL"
+}
+"message button" {
+object {
+x=175
+y=185
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPMI-1939-TL"
+press_msg="xfelgpac4di1899tl:51238#BPMI-1939-TL"
+}
+"related display" {
+	object {
+		x=260
+		y=185
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC4DI1899TL"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1623"
+}
+rectangle {
+	object {
+		x=325
+		y=185
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC4DI1899TL:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=185
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC4DI1899TL:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=185
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC4DI1899TL"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=185
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac4di1899tl -bg rgb:40/A0/90 -e telnet -l root xfelgpac4di1899tl &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac4di1899tl"
+}
+rectangle {
+	object {
+		x=510
+		y=185
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="IBFBXDOWN:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=185
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="IBFBXDOWN:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=188
+		width=55
+		height=15
+	}
+	control {
+		chan="IBFBXDOWN:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=188
+		width=55
+		height=15
+	}
+	control {
+		chan="IBFBXDOWN:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=185
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="IBFBXDOWN:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=185
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="IBFBXDOWN:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=185
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="IBFBXDOWN:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=185
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="IBFBXDOWN:BPM1-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=692
+		y=188
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXDOWN:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=188
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXDOWN:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=188
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXDOWN:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=188
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXDOWN:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=188
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXDOWN:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=188
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXDOWN:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=188
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXDOWN:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=188
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IBFBXDOWN:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=185
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="IBFBXDOWN:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=185
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="IBFBXDOWN:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=185
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="IBFBXDOWN:BPM1-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=90
+y=215
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2794-T4"
+press_msg="xfelgpac1di2793t4:51236#BPME-2794-T4"
+}
+"message button" {
+object {
+x=175
+y=215
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2800-T4"
+press_msg="xfelgpac1di2793t4:51238#BPME-2800-T4"
+}
+"related display" {
+	object {
+		x=260
+		y=215
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2793T4"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1500"
+}
+rectangle {
+	object {
+		x=325
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2793T4:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2793T4:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=215
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI2793T4"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=215
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2793t4 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2793t4 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2793t4"
+}
+rectangle {
+	object {
+		x=510
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2794-T4:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2794-T4:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=218
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2794-T4:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=218
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2794-T4:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="BPME-2794-T4:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="BPME-2794-T4:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="BPME-2794-T4:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) = 0"
+		chan="BPME-2794-T4:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2794-T4:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2794-T4:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2794-T4:BPM2-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2794-T4:BPM2-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=692
+		y=218
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2794-T4:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=218
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2794-T4:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=218
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2794-T4:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=218
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2794-T4:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=218
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2794-T4:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=218
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2794-T4:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=218
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2794-T4:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=218
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2794-T4:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2794-T4:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2794-T4:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2794-T4:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2794-T4:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2794-T4:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1145
+		y=215
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2794-T4:BPM2-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=90
+y=235
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2191-T1"
+press_msg="xfelgpac1di2194t1:51236#BPME-2191-T1"
+}
+"message button" {
+object {
+x=175
+y=235
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2197-T1"
+press_msg="xfelgpac1di2194t1:51238#BPME-2197-T1"
+}
+"related display" {
+	object {
+		x=260
+		y=235
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2194T1"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1503"
+}
+rectangle {
+	object {
+		x=325
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2194T1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2194T1:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=235
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI2194T1"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=235
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2194t1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2194t1 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2194t1"
+}
+rectangle {
+	object {
+		x=510
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2191-T1:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2191-T1:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=238
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2191-T1:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=238
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2191-T1:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="BPME-2191-T1:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="BPME-2191-T1:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="BPME-2191-T1:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) = 0"
+		chan="BPME-2191-T1:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2191-T1:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2191-T1:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2191-T1:BPM2-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2191-T1:BPM2-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=692
+		y=238
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2191-T1:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=238
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2191-T1:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=238
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2191-T1:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=238
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2191-T1:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=238
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2191-T1:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=238
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2191-T1:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=238
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2191-T1:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=238
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2191-T1:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2191-T1:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2191-T1:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2191-T1:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2191-T1:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2191-T1:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1145
+		y=235
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2191-T1:BPM2-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=90
+y=255
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2806-SA3"
+press_msg="xfelgpac1di2808sa3:51236#BPME-2806-SA3"
+}
+"message button" {
+object {
+x=175
+y=255
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2812-SA3"
+press_msg="xfelgpac1di2808sa3:51238#BPME-2812-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=255
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2808SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1447"
+}
+rectangle {
+	object {
+		x=325
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2808SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2808SA3:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=255
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI2808SA3"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=255
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2808sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2808sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2808sa3"
+}
+rectangle {
+	object {
+		x=510
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2806-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2806-SA3:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=258
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2806-SA3:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=258
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2806-SA3:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="BPME-2806-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="BPME-2806-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="BPME-2806-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) = 0"
+		chan="BPME-2806-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2806-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2806-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2806-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2806-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=692
+		y=258
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2806-SA3:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=258
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2806-SA3:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=258
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2806-SA3:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=258
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2806-SA3:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=258
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2806-SA3:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=258
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2806-SA3:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=258
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2806-SA3:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=258
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2806-SA3:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2806-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2806-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2806-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2806-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2806-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1145
+		y=255
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2806-SA3:BPM2-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=90
+y=275
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2818-SA3"
+press_msg="xfelgpac1di2820sa3:51236#BPME-2818-SA3"
+}
+"message button" {
+object {
+x=175
+y=275
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2824-SA3"
+press_msg="xfelgpac1di2820sa3:51238#BPME-2824-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=275
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2820SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1450"
+}
+rectangle {
+	object {
+		x=325
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2820SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2820SA3:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=275
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI2820SA3"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=275
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2820sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2820sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2820sa3"
+}
+rectangle {
+	object {
+		x=510
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2818-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2818-SA3:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=278
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2818-SA3:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=278
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2818-SA3:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="BPME-2818-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="BPME-2818-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="BPME-2818-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) = 0"
+		chan="BPME-2818-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2818-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2818-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2818-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2818-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=692
+		y=278
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2818-SA3:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=278
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2818-SA3:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=278
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2818-SA3:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=278
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2818-SA3:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=278
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2818-SA3:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=278
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2818-SA3:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=278
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2818-SA3:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=278
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2818-SA3:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2818-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2818-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2818-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2818-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2818-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1145
+		y=275
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2818-SA3:BPM2-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=90
+y=295
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2830-SA3"
+press_msg="xfelgpac1di2832sa3:51236#BPME-2830-SA3"
+}
+"message button" {
+object {
+x=175
+y=295
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2836-SA3"
+press_msg="xfelgpac1di2832sa3:51238#BPME-2836-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=295
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2832SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1444"
+}
+rectangle {
+	object {
+		x=325
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2832SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2832SA3:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=295
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI2832SA3"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=295
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2832sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2832sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2832sa3"
+}
+rectangle {
+	object {
+		x=510
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2830-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2830-SA3:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=298
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2830-SA3:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=298
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2830-SA3:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="BPME-2830-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="BPME-2830-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="BPME-2830-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) = 0"
+		chan="BPME-2830-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2830-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2830-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2830-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2830-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=692
+		y=298
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2830-SA3:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=298
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2830-SA3:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=298
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2830-SA3:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=298
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2830-SA3:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=298
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2830-SA3:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=298
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2830-SA3:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=298
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2830-SA3:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=298
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2830-SA3:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2830-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2830-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2830-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2830-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2830-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1145
+		y=295
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2830-SA3:BPM2-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=90
+y=315
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2842-SA3"
+press_msg="xfelgpac1di2845sa3:51236#BPME-2842-SA3"
+}
+"message button" {
+object {
+x=175
+y=315
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2849-SA3"
+press_msg="xfelgpac1di2845sa3:51238#BPME-2849-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=315
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2845SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1538"
+}
+rectangle {
+	object {
+		x=325
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2845SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2845SA3:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=315
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI2845SA3"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=315
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2845sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2845sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2845sa3"
+}
+rectangle {
+	object {
+		x=510
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2842-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2842-SA3:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=318
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2842-SA3:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=318
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2842-SA3:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="BPME-2842-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="BPME-2842-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="BPME-2842-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) = 0"
+		chan="BPME-2842-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2842-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2842-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2842-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2842-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=692
+		y=318
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2842-SA3:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=318
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2842-SA3:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=318
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2842-SA3:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=318
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2842-SA3:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=318
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2842-SA3:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=318
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2842-SA3:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=318
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2842-SA3:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=318
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2842-SA3:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2842-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2842-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2842-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2842-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2842-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1145
+		y=315
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2842-SA3:BPM2-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=90
+y=335
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2861-SA3"
+press_msg="xfelgpac1di2857sa3:51236#BPME-2861-SA3"
+}
+"message button" {
+object {
+x=175
+y=335
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2849-SA3"
+press_msg="xfelgpac1di2857sa3:51238#BPME-2849-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=335
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2857SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1522"
+}
+rectangle {
+	object {
+		x=325
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2857SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2857SA3:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=335
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI2857SA3"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=335
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2857sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2857sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2857sa3"
+}
+rectangle {
+	object {
+		x=510
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2861-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2861-SA3:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=338
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2861-SA3:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=338
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2861-SA3:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="BPME-2861-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="BPME-2861-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="BPME-2861-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) = 0"
+		chan="BPME-2861-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2861-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2861-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2861-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2861-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=692
+		y=338
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2861-SA3:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=338
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2861-SA3:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=338
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2861-SA3:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=338
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2861-SA3:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=338
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2861-SA3:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=338
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2861-SA3:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=338
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2861-SA3:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=338
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2861-SA3:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2861-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2861-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2861-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2861-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2861-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1145
+		y=335
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2861-SA3:BPM2-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=90
+y=355
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2867-SA3"
+press_msg="xfelgpac1di2869sa3:51236#BPME-2867-SA3"
+}
+"message button" {
+object {
+x=175
+y=355
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2873-SA3"
+press_msg="xfelgpac1di2869sa3:51238#BPME-2873-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=355
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2869SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1430"
+}
+rectangle {
+	object {
+		x=325
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2869SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2869SA3:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=355
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI2869SA3"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=355
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2869sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2869sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2869sa3"
+}
+rectangle {
+	object {
+		x=510
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2867-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2867-SA3:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=358
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2867-SA3:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=358
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2867-SA3:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="BPME-2867-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="BPME-2867-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="BPME-2867-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) = 0"
+		chan="BPME-2867-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2867-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2867-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2867-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2867-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=692
+		y=358
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2867-SA3:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=358
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2867-SA3:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=358
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2867-SA3:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=358
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2867-SA3:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=358
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2867-SA3:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=358
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2867-SA3:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=358
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2867-SA3:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=358
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2867-SA3:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2867-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2867-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2867-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2867-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2867-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1145
+		y=355
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2867-SA3:BPM2-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=90
+y=375
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2879-SA3"
+press_msg="xfelgpac1di2881sa3:51236#BPME-2879-SA3"
+}
+"message button" {
+object {
+x=175
+y=375
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2885-SA3"
+press_msg="xfelgpac1di2881sa3:51238#BPME-2885-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=375
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2881SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1421"
+}
+rectangle {
+	object {
+		x=325
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2881SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2881SA3:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=375
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI2881SA3"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=375
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2881sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2881sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2881sa3"
+}
+rectangle {
+	object {
+		x=510
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2879-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2879-SA3:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=378
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2879-SA3:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=378
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2879-SA3:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="BPME-2879-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="BPME-2879-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="BPME-2879-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) = 0"
+		chan="BPME-2879-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2879-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2879-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2879-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2879-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=692
+		y=378
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2879-SA3:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=378
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2879-SA3:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=378
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2879-SA3:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=378
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2879-SA3:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=378
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2879-SA3:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=378
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2879-SA3:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=378
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2879-SA3:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=378
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2879-SA3:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2879-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2879-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2879-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2879-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2879-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1145
+		y=375
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2879-SA3:BPM2-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=90
+y=395
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2891-SA3"
+press_msg="xfelgpac1di2893sa3:51236#BPME-2891-SA3"
+}
+"message button" {
+object {
+x=175
+y=395
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2897-SA3"
+press_msg="xfelgpac1di2893sa3:51238#BPME-2897-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=395
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2893SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1434"
+}
+rectangle {
+	object {
+		x=325
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2893SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2893SA3:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=395
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI2893SA3"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=395
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2893sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2893sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2893sa3"
+}
+rectangle {
+	object {
+		x=510
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2891-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2891-SA3:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=398
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2891-SA3:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=398
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2891-SA3:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="BPME-2891-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="BPME-2891-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="BPME-2891-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) = 0"
+		chan="BPME-2891-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2891-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2891-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2891-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2891-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=692
+		y=398
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2891-SA3:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=398
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2891-SA3:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=398
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2891-SA3:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=398
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2891-SA3:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=398
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2891-SA3:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=398
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2891-SA3:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=398
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2891-SA3:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=398
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2891-SA3:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2891-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2891-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2891-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2891-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2891-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1145
+		y=395
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2891-SA3:BPM2-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=90
+y=415
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2903-SA3"
+press_msg="xfelgpac1di2906sa3:51236#BPME-2903-SA3"
+}
+"message button" {
+object {
+x=175
+y=415
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2910-SA3"
+press_msg="xfelgpac1di2906sa3:51238#BPME-2910-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=415
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2906SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1476"
+}
+rectangle {
+	object {
+		x=325
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2906SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2906SA3:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=415
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI2906SA3"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=415
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2906sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2906sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2906sa3"
+}
+rectangle {
+	object {
+		x=510
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2903-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2903-SA3:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=418
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2903-SA3:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=418
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2903-SA3:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="BPME-2903-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="BPME-2903-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="BPME-2903-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) = 0"
+		chan="BPME-2903-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2903-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2903-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2903-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2903-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=692
+		y=418
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2903-SA3:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=418
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2903-SA3:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=418
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2903-SA3:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=418
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2903-SA3:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=418
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2903-SA3:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=418
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2903-SA3:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=418
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2903-SA3:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=418
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2903-SA3:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2903-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2903-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2903-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2903-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2903-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1145
+		y=415
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2903-SA3:BPM2-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=90
+y=435
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2916-SA3"
+press_msg="xfelgpac1di2918sa3:51236#BPME-2916-SA3"
+}
+"message button" {
+object {
+x=175
+y=435
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2922-SA3"
+press_msg="xfelgpac1di2918sa3:51238#BPME-2922-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=435
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2918SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1506"
+}
+rectangle {
+	object {
+		x=325
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2918SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2918SA3:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=435
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI2918SA3"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=435
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2918sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2918sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2918sa3"
+}
+rectangle {
+	object {
+		x=510
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2916-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2916-SA3:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=438
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2916-SA3:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=438
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2916-SA3:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="BPME-2916-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="BPME-2916-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="BPME-2916-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) = 0"
+		chan="BPME-2916-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2916-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2916-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2916-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2916-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=692
+		y=438
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2916-SA3:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=438
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2916-SA3:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=438
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2916-SA3:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=438
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2916-SA3:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=438
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2916-SA3:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=438
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2916-SA3:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=438
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2916-SA3:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=438
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2916-SA3:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2916-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2916-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2916-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2916-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2916-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1145
+		y=435
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2916-SA3:BPM2-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=90
+y=455
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2928-SA3"
+press_msg="xfelgpac1di2931sa3:51236#BPME-2928-SA3"
+}
+"message button" {
+object {
+x=175
+y=455
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2934-SA3"
+press_msg="xfelgpac1di2931sa3:51238#BPME-2934-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=455
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2931SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1498"
+}
+rectangle {
+	object {
+		x=325
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2931SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2931SA3:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=455
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI2931SA3"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=455
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2931sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2931sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2931sa3"
+}
+rectangle {
+	object {
+		x=510
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2928-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2928-SA3:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=520
+		y=458
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2928-SA3:BPM1-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+"choice button" {
+	object {
+		x=580
+		y=458
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2928-SA3:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="BPME-2928-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="BPME-2928-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="BPME-2928-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) = 0"
+		chan="BPME-2928-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2928-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2928-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2928-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2928-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=692
+		y=458
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2928-SA3:BPM1-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=458
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2928-SA3:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=795
+		y=458
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2928-SA3:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=458
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2928-SA3:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=900
+		y=458
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2928-SA3:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=458
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2928-SA3:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1005
+		y=458
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2928-SA3:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=458
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2928-SA3:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2928-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2928-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2928-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2928-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2928-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1145
+		y=455
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2928-SA3:BPM2-PING-STATUS"
+	}
+}
+"message button" {
+object {
+x=175
+y=475
+width=85
+height=20
+}
+control {
+chan="CAVBPM:BPM-STRING.AA"
+clr=14
+bclr=57
+}
+label="BPME-2940-SA3"
+press_msg="xfelgpac1di2943sa3:51238#BPME-2940-SA3"
+}
+"related display" {
+	object {
+		x=260
+		y=475
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2943SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1588"
+}
+rectangle {
+	object {
+		x=325
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2943SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=325
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2943SA3:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=330
+		y=475
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=XFELGPAC1DI2943SA3"
+	}
+	clr=14
+	bclr=57
+	label="-XFELTIM"
+}
+"shell command" {
+	object {
+		x=395
+		y=475
+		width=115
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2943sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2943sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2943sa3"
+}
+rectangle {
+	object {
+		x=510
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="BPME-2940-SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=510
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="BPME-2940-SA3:S7GPAC-STATUS"
+	}
+}
+"choice button" {
+	object {
+		x=580
+		y=478
+		width=55
+		height=15
+	}
+	control {
+		chan="BPME-2940-SA3:BPM2-ENABLED"
+		clr=14
+		bclr=56
+	}
+	stacking="column"
+}
+rectangle {
+	object {
+		x=641
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="BPME-2940-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="BPME-2940-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="BPME-2940-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) = 0"
+		chan="BPME-2940-SA3:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2940-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2940-SA3:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2940-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=665
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2940-SA3:BPM2-IBFB-GTX-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=742
+		y=478
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2940-SA3:BPM2-TRG-DELAY"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=845
+		y=478
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2940-SA3:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=950
+		y=478
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2940-SA3:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1055
+		y=478
+		width=45
+		height=15
+	}
+	monitor {
+		chan="BPME-2940-SA3:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2940-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1120
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2940-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPME-2940-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1125
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPME-2940-SA3:BPM2-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1140
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2940-SA3:BPM1-PING-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=1145
+		y=475
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPME-2940-SA3:BPM2-PING-STATUS"
+	}
+}
