@@ -62,7 +62,7 @@
 
 
 (setq ffcol-list '(
-("" "xfelgpac1di1828cl" "IPC1605"  nil           "BPMI-1837-CL" "IBFBYCOL")))
+("" "xfelgpac1di1828cl" "IPC1605"  nil           "BPMI-1837-CL" "IBFBYCOL" (t . nil) (t . nil) )))
 
 (setq ffb-list '(
 ("" "xfelgpac1di1899tl" "IPC1627" "BPMI-1860-TL" "BPMI-1878-TL" "IBFBYUP" (t . t))

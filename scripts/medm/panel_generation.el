@@ -190,14 +190,14 @@ rectangle {
 }
 " x y (upcase dev-name) x y (upcase dev-name))))
 
-(defun medm-rectangle-red-green-status-more (x y dev-name channel-name visibility-red visibility-green)       
+(defun medm-rectangle-red-green-status-more (x y dev-name channel-name visibility-red visibility-green &optional width)
   (when visibility-red
     (insert (format
              "rectangle {
 	object {
 		x=%d
 		y=%d
-		width=5
+		width=%d
 		height=20
 	}
 	\"basic attribute\" {
@@ -209,14 +209,14 @@ rectangle {
 		chan=\"%s:%s\"
 	}
 }
-" x y (upcase visibility-red) (upcase dev-name) (upcase channel-name))))
+" x y (if width width 5) (upcase visibility-red) (upcase dev-name) (upcase channel-name))))
   (when visibility-green
     (insert (format
 "rectangle {
 	object {
 		x=%d
 		y=%d
-		width=5
+		width=%d
 		height=20
 	}
 	\"basic attribute\" {
@@ -228,7 +228,7 @@ rectangle {
 		chan=\"%s:%s\"
 	}
 }
-" x y (upcase visibility-green) (upcase dev-name) (upcase channel-name)))))
+" x y (if width width 5) (upcase visibility-green) (upcase dev-name) (upcase channel-name)))))
 
 (defun medm-choice-button (x y dev-name channel)
   ""
@@ -290,12 +290,14 @@ rectangle {
 }
 " x (+ 3 y) (upcase dev-name) (upcase channel))))
 
-(defun medm-insert-line (y bpm-1-name bpm-2-name ipc-name host-name locserv-name &optional hide-gtx-status)
+(defun medm-insert-line (y bpm-1-name bpm-2-name ipc-name host-name locserv-name &optional hide-gtx-status hide-bpm-id)
   ""
   (let ((locserv-name (if locserv-name locserv-name (if bpm-1-name bpm-1-name bpm-2-name)))
         ;; this would hide the gtx when name is not existing or is 't
         (bpm-1-gtx-hide (if bpm-1-name (when (consp hide-gtx-status) (car hide-gtx-status)) t))
-        (bpm-2-gtx-hide (if bpm-2-name (when (consp hide-gtx-status) (cdr hide-gtx-status)) t)))
+        (bpm-2-gtx-hide (if bpm-2-name (when (consp hide-gtx-status) (cdr hide-gtx-status)) t))
+        (bpm-1-id-hide (if bpm-1-name (when (consp hide-bpm-id) (car hide-bpm-id)) t))
+        (bpm-2-id-hide (if bpm-2-name (when (consp hide-bpm-id) (cdr hide-bpm-id)) t)))
 
     (when (equal bpm-1-name "NONE")
       (setq bpm-1-name nil))
@@ -311,24 +313,28 @@ rectangle {
     (medm-related-xfeltim 330 y host-name)
     (medm-xterm-shell-command 395 y host-name)
     (medm-rectangle-red-green-status 510 y locserv-name)
-    (when bpm-1-name (medm-choice-button 520 y locserv-name "BPM1-ENABLED"))
-    (when bpm-2-name (medm-choice-button 580 y locserv-name "BPM2-ENABLED"))
-    (unless bpm-1-gtx-hide (medm-rectangle-red-green-status-more 641 y locserv-name "COM-SFP-STATUS" "(A & 0x100000) > 0" "(A & 0x100000) = 0"))
-    (unless bpm-2-gtx-hide (medm-rectangle-red-green-status-more 646 y locserv-name "COM-SFP-STATUS" "(A & 0x10000000) > 0" "(A & 0x10000000) = 0"))
-    (unless bpm-1-gtx-hide (medm-rectangle-red-green-status-more 660 y locserv-name "BPM1-IBFB-GTX-STATUS" "(A & 0x80) > 0" "(A & 0x80) = 0"))
-    (unless bpm-2-gtx-hide (medm-rectangle-red-green-status-more 665 y locserv-name "BPM2-IBFB-GTX-STATUS" "(A & 0x80) > 0" "(A & 0x80) = 0"))
-    (when bpm-1-name (medm-text-update 692 y locserv-name "BPM1-TRG-DELAY"))
-    (when bpm-2-name (medm-text-update 742 y locserv-name "BPM2-TRG-DELAY"))
-    (when bpm-1-name (medm-text-update 795 y locserv-name "BPM1-BPM-ID"))
-    (when bpm-2-name (medm-text-update 845 y locserv-name "BPM2-BPM-ID"))
-    (when bpm-1-name (medm-text-update 900 y locserv-name "BPM1-ROUTER-ENA"))
-    (when bpm-2-name (medm-text-update 950 y locserv-name "BPM2-ROUTER-ENA"))
-    (when bpm-1-name (medm-text-update 1005 y locserv-name "BPM1-Q-THRESHOLD"))
-    (when bpm-2-name (medm-text-update 1055 y locserv-name "BPM2-Q-THRESHOLD"))
-    (unless bpm-1-gtx-hide (medm-rectangle-red-green-status-more 1120 y locserv-name "BPM1-PING-STATUS" "(A & 0x02) = 0" "(A & 0x02) > 0"))
-    (unless bpm-2-gtx-hide (medm-rectangle-red-green-status-more 1125 y locserv-name "BPM2-PING-STATUS" "(A & 0x02) = 0" "(A & 0x02) > 0"))
-    (unless bpm-1-gtx-hide (medm-rectangle-red-green-status-more 1140 y locserv-name "BPM1-PING-STATUS" nil "(A & 0x08) > 0"))
-    (unless bpm-2-gtx-hide (medm-rectangle-red-green-status-more 1145 y locserv-name "BPM2-PING-STATUS" nil "(A & 0x08) > 0"))
+    (unless bpm-1-id-hide (medm-choice-button 520 y locserv-name "BPM1-ENABLED"))
+    (unless bpm-2-id-hide (medm-choice-button 580 y locserv-name "BPM2-ENABLED"))
+    (unless bpm-1-gtx-hide (medm-rectangle-red-green-status-more 642 y locserv-name "COM-SFP-STATUS" "(A & 0x100000) > 0" "(A & 0x100000) = 0" 7)) ;; RXLOSS
+    (unless bpm-1-gtx-hide (medm-rectangle-red-green-status-more 652 y locserv-name "BPM1-IBFB-GTX-STATUS" "(A & 0x80) > 0" "(A & 0x80) = 0" 7)) ;; RXSYNC
+    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 662 y locserv-name "BPM1-IBFB-ROUTER-STATUS" "(A & 0x02) = 0" "(A & 0x02) > 0" 7)) ;; P0 ping
+    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 672 y locserv-name "BPM1-IBFB-ROUTER-STATUS" nil "(A & 0x08) > 0" 7)) ;; P0 addressed
+    (unless bpm-2-gtx-hide (medm-rectangle-red-green-status-more 690 y locserv-name "COM-SFP-STATUS" "(A & 0x10000000) > 0" "(A & 0x10000000) = 0" 7))
+    (unless bpm-2-gtx-hide (medm-rectangle-red-green-status-more 700 y locserv-name "BPM2-IBFB-GTX-STATUS" "(A & 0x80) > 0" "(A & 0x80) = 0" 7))
+    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 710 y locserv-name "BPM2-IBFB-ROUTER-STATUS" nil "(A & 0x08) > 0" 7))
+    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 720 y locserv-name "BPM2-IBFB-ROUTER-STATUS" "(A & 0x02) = 0" "(A & 0x02) > 0" 7))
+    ;;(unless bpm-1-id-hide (medm-text-update 640 y locserv-name "BPM1-TRG-DELAY"))
+    ;;(unless bpm-2-id-hide (medm-text-update 690 y locserv-name "BPM2-TRG-DELAY"))
+    (unless bpm-1-id-hide (medm-text-update 743 y locserv-name "BPM1-BPM-ID"))
+    (unless bpm-2-id-hide (medm-text-update 793 y locserv-name "BPM2-BPM-ID"))
+    (unless bpm-1-id-hide (medm-text-update 848 y locserv-name "BPM1-ROUTER-ENA"))
+    (unless bpm-2-id-hide (medm-text-update 898 y locserv-name "BPM2-ROUTER-ENA"))
+    (unless bpm-1-id-hide (medm-text-update 953 y locserv-name "BPM1-Q-THRESHOLD"))
+    (unless bpm-2-id-hide (medm-text-update 1003 y locserv-name "BPM2-Q-THRESHOLD"))
+    ;; (unless bpm-1-gtx-hide (medm-rectangle-red-green-status-more 1068 y locserv-name "BPM1-PING-STATUS" "(A & 0x02) = 0" "(A & 0x02) > 0"))
+    ;; (unless bpm-2-gtx-hide (medm-rectangle-red-green-status-more 1073 y locserv-name "BPM2-PING-STATUS" "(A & 0x02) = 0" "(A & 0x02) > 0"))
+    ;; (unless bpm-1-gtx-hide (medm-rectangle-red-green-status-more 1088 y locserv-name "BPM1-PING-STATUS" nil "(A & 0x08) > 0"))
+    ;; (unless bpm-2-gtx-hide (medm-rectangle-red-green-status-more 1093 y locserv-name "BPM2-PING-STATUS" nil "(A & 0x08) > 0"))
     ))
                     
 ;; (defun medm-test ()
@@ -380,7 +386,7 @@ rectangle {
            (setq y (+ 20 y))))
        (let ((y (+ y-offset 85)))
          (dolist (line ffb-list)
-           (medm-insert-line y (fourth line) (fifth line) (third line) (second line) (sixth line) (seventh line))
+           (medm-insert-line y (fourth line) (fifth line) (third line) (second line) (sixth line) (seventh line) (eighth line))
            (setq y (+ 20 y))))
        (let ((y (+ y-offset 175)))
          (dolist (line mbu-list-name)

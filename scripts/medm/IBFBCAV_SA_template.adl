@@ -5,9 +5,9 @@ file {
 }
 display {
 	object {
-		x=1140
-		y=81
-		width=1107
+		x=1429
+		y=651
+		width=1070
 		height=650
 	}
 	clr=14
@@ -128,22 +128,9 @@ polyline {
 		(640,1298)
 	}
 }
-text {
-	object {
-		x=699
-		y=72
-		width=95
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="Trigger delay"
-	align="horiz. centered"
-}
 polyline {
 	object {
-		x=790
+		x=738
 		y=65
 		width=0
 		height=1200
@@ -152,8 +139,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(790,65)
-		(790,1265)
+		(738,65)
+		(738,1265)
 	}
 }
 polyline {
@@ -212,8 +199,8 @@ text {
 }
 text {
 	object {
-		x=795
-		y=72
+		x=743
+		y=74
 		width=95
 		height=15
 	}
@@ -225,7 +212,7 @@ text {
 }
 polyline {
 	object {
-		x=895
+		x=843
 		y=65
 		width=0
 		height=1200
@@ -234,14 +221,14 @@ polyline {
 		clr=0
 	}
 	points {
-		(895,65)
-		(895,1265)
+		(843,65)
+		(843,1265)
 	}
 }
 text {
 	object {
 		x=520
-		y=75
+		y=74
 		width=100
 		height=15
 	}
@@ -294,8 +281,8 @@ polyline {
 }
 text {
 	object {
-		x=900
-		y=73
+		x=848
+		y=74
 		width=95
 		height=15
 	}
@@ -365,8 +352,8 @@ text {
 }
 text {
 	object {
-		x=1005
-		y=73
+		x=953
+		y=74
 		width=95
 		height=15
 	}
@@ -378,7 +365,7 @@ text {
 }
 polyline {
 	object {
-		x=1000
+		x=948
 		y=65
 		width=0
 		height=1200
@@ -387,8 +374,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(1000,65)
-		(1000,1265)
+		(948,65)
+		(948,1265)
 	}
 }
 polyline {
@@ -408,7 +395,7 @@ polyline {
 }
 polyline {
 	object {
-		x=688
+		x=640
 		y=65
 		width=659
 		height=0
@@ -417,8 +404,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(688,65)
-		(1347,65)
+		(640,65)
+		(1299,65)
 	}
 }
 polyline {
@@ -453,8 +440,21 @@ polyline {
 }
 text {
 	object {
-		x=578
-		y=35
+		x=584
+		y=30
+		width=40
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="GTX0 RXLOSS"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=644
+		y=74
 		width=40
 		height=15
 	}
@@ -466,60 +466,8 @@ text {
 }
 text {
 	object {
-		x=607
-		y=35
-		width=40
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="BPM2"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=526
-		y=35
-		width=40
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="RXLOSS GTX0"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=664
-		y=35
-		width=40
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="BPM1"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=691
-		y=35
-		width=40
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="BPM2"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=743
-		y=35
+		x=584
+		y=45
 		width=40
 		height=15
 	}
@@ -528,158 +476,6 @@ text {
 	}
 	textix="GTX0 RXSYNC"
 	align="horiz. centered"
-}
-polyline {
-	object {
-		x=648
-		y=40
-		width=0
-		height=45
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(648,85)
-		(648,40)
-		(648,52)
-		(648,52)
-	}
-}
-polyline {
-	object {
-		x=662
-		y=40
-		width=0
-		height=45
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(662,85)
-		(662,40)
-	}
-}
-polyline {
-	object {
-		x=643
-		y=55
-		width=0
-		height=30
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(643,85)
-		(643,55)
-	}
-}
-polyline {
-	object {
-		x=597
-		y=55
-		width=45
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(642,55)
-		(597,55)
-	}
-}
-polyline {
-	object {
-		x=597
-		y=50
-		width=0
-		height=5
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(597,55)
-		(597,50)
-	}
-}
-polyline {
-	object {
-		x=667
-		y=55
-		width=0
-		height=30
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(667,85)
-		(667,55)
-	}
-}
-polyline {
-	object {
-		x=667
-		y=55
-		width=43
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(710,55)
-		(667,55)
-	}
-}
-polyline {
-	object {
-		x=710
-		y=50
-		width=0
-		height=5
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(710,55)
-		(710,50)
-	}
-}
-polyline {
-	object {
-		x=662
-		y=40
-		width=5
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(662,40)
-		(667,40)
-	}
-}
-polyline {
-	object {
-		x=642
-		y=40
-		width=5
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(642,40)
-		(647,40)
-	}
 }
 text {
 	object {
@@ -754,4 +550,162 @@ rectangle {
 	}
 	label="Disconnect"
 	press_msg=":51235# "
+}
+text {
+	object {
+		x=695
+		y=74
+		width=40
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM2"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=645
+		y=50
+		width=0
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(645,50)
+		(645,60)
+	}
+}
+polyline {
+	object {
+		x=652
+		y=35
+		width=0
+		height=25
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(652,35)
+		(652,60)
+	}
+}
+polyline {
+	object {
+		x=642
+		y=35
+		width=10
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(642,35)
+		(652,35)
+	}
+}
+polyline {
+	object {
+		x=639
+		y=50
+		width=5
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(639,50)
+		(644,50)
+	}
+}
+polyline {
+	object {
+		x=666
+		y=35
+		width=0
+		height=25
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(666,35)
+		(666,60)
+	}
+}
+polyline {
+	object {
+		x=674
+		y=50
+		width=0
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(674,50)
+		(674,60)
+	}
+}
+polyline {
+	object {
+		x=667
+		y=35
+		width=10
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(667,35)
+		(677,35)
+	}
+}
+polyline {
+	object {
+		x=674
+		y=50
+		width=5
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(674,50)
+		(679,50)
+	}
+}
+text {
+	object {
+		x=684
+		y=30
+		width=40
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="P0 Ping"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=684
+		y=45
+		width=40
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="P0 Addressed"
 }
