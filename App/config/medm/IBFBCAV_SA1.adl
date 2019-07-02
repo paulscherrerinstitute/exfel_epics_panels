@@ -2630,7 +2630,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2229-T2:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2232T2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -2646,7 +2646,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2229-T2:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2232T2:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -2657,7 +2657,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2229-T2:BPM1-ENABLED"
+		chan="XFELGPAC1DI2232T2:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -2671,7 +2671,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2229-T2:BPM2-ENABLED"
+		chan="XFELGPAC1DI2232T2:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -2690,7 +2690,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2229-T2:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2232T2:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -2706,7 +2706,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2229-T2:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2232T2:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -2722,7 +2722,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2229-T2:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2232T2:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -2738,7 +2738,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2229-T2:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2232T2:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -2754,7 +2754,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2229-T2:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2232T2:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -2770,7 +2770,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2229-T2:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2232T2:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -2786,7 +2786,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2229-T2:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2232T2:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -2802,7 +2802,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2229-T2:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2232T2:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -2813,7 +2813,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2229-T2:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2232T2:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -2829,7 +2829,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2229-T2:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2232T2:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -2845,7 +2845,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2229-T2:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2232T2:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -2861,7 +2861,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2229-T2:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2232T2:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -2877,7 +2877,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2229-T2:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2232T2:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -2893,7 +2893,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2229-T2:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2232T2:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -2909,7 +2909,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2229-T2:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2232T2:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -2925,7 +2925,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2229-T2:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2232T2:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -2946,7 +2946,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2229-T2:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2232T2:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -2962,7 +2962,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2229-T2:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2232T2:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -2978,7 +2978,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2229-T2:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2232T2:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -2994,7 +2994,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2229-T2:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2232T2:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -3010,7 +3010,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2229-T2:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2232T2:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -3026,7 +3026,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2229-T2:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2232T2:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -3151,7 +3151,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2241-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2244SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -3167,7 +3167,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2241-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2244SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -3178,7 +3178,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2241-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2244SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -3192,7 +3192,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2241-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2244SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -3211,7 +3211,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2241-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2244SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -3227,7 +3227,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2241-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2244SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -3243,7 +3243,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2241-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2244SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -3259,7 +3259,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2241-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2244SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -3275,7 +3275,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2241-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2244SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -3291,7 +3291,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2241-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2244SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -3307,7 +3307,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2241-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2244SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -3323,7 +3323,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2241-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2244SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -3334,7 +3334,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2241-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2244SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -3350,7 +3350,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2241-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2244SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -3366,7 +3366,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2241-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2244SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -3382,7 +3382,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2241-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2244SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -3398,7 +3398,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2241-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2244SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -3414,7 +3414,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2241-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2244SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -3430,7 +3430,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2241-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2244SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -3446,7 +3446,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2241-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2244SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -3467,7 +3467,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2241-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2244SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -3483,7 +3483,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2241-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2244SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -3499,7 +3499,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2241-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2244SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -3515,7 +3515,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2241-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2244SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -3531,7 +3531,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2241-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2244SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -3547,7 +3547,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2241-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2244SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -3672,7 +3672,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2253-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2256SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -3688,7 +3688,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2253-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2256SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -3699,7 +3699,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2253-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2256SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -3713,7 +3713,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2253-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2256SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -3732,7 +3732,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2253-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2256SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -3748,7 +3748,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2253-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2256SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -3764,7 +3764,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2253-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2256SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -3780,7 +3780,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2253-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2256SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -3796,7 +3796,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2253-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2256SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -3812,7 +3812,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2253-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2256SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -3828,7 +3828,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2253-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2256SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -3844,7 +3844,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2253-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2256SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -3855,7 +3855,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2253-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2256SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -3871,7 +3871,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2253-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2256SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -3887,7 +3887,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2253-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2256SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -3903,7 +3903,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2253-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2256SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -3919,7 +3919,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2253-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2256SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -3935,7 +3935,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2253-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2256SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -3951,7 +3951,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2253-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2256SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -3967,7 +3967,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2253-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2256SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -3988,7 +3988,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2253-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2256SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -4004,7 +4004,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2253-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2256SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -4020,7 +4020,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2253-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2256SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -4036,7 +4036,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2253-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2256SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -4052,7 +4052,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2253-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2256SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -4068,7 +4068,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2253-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2256SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -4193,7 +4193,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2265-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2268SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -4209,7 +4209,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2265-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2268SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -4220,7 +4220,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2265-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2268SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -4234,7 +4234,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2265-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2268SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -4253,7 +4253,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2265-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2268SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -4269,7 +4269,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2265-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2268SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -4285,7 +4285,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2265-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2268SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -4301,7 +4301,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2265-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2268SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -4317,7 +4317,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2265-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2268SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -4333,7 +4333,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2265-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2268SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -4349,7 +4349,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2265-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2268SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -4365,7 +4365,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2265-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2268SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -4376,7 +4376,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2265-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2268SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -4392,7 +4392,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2265-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2268SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -4408,7 +4408,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2265-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2268SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -4424,7 +4424,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2265-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2268SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -4440,7 +4440,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2265-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2268SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -4456,7 +4456,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2265-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2268SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -4472,7 +4472,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2265-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2268SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -4488,7 +4488,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2265-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2268SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -4509,7 +4509,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2265-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2268SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -4525,7 +4525,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2265-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2268SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -4541,7 +4541,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2265-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2268SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -4557,7 +4557,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2265-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2268SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -4573,7 +4573,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2265-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2268SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -4589,7 +4589,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2265-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2268SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -4714,7 +4714,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2278-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2280SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -4730,7 +4730,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2278-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2280SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -4741,7 +4741,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2278-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2280SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -4755,7 +4755,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2278-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2280SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -4774,7 +4774,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2278-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2280SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -4790,7 +4790,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2278-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2280SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -4806,7 +4806,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2278-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2280SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -4822,7 +4822,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2278-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2280SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -4838,7 +4838,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2278-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2280SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -4854,7 +4854,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2278-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2280SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -4870,7 +4870,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2278-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2280SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -4886,7 +4886,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2278-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2280SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -4897,7 +4897,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2278-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2280SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -4913,7 +4913,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2278-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2280SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -4929,7 +4929,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2278-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2280SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -4945,7 +4945,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2278-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2280SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -4961,7 +4961,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2278-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2280SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -4977,7 +4977,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2278-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2280SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -4993,7 +4993,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2278-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2280SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -5009,7 +5009,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2278-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2280SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -5030,7 +5030,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2278-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2280SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -5046,7 +5046,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2278-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2280SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -5062,7 +5062,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2278-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2280SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -5078,7 +5078,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2278-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2280SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -5094,7 +5094,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2278-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2280SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -5110,7 +5110,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2278-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2280SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -5235,7 +5235,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2290-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2293SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -5251,7 +5251,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2290-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2293SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -5262,7 +5262,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2290-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2293SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -5276,7 +5276,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2290-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2293SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -5295,7 +5295,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2290-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2293SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -5311,7 +5311,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2290-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2293SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -5327,7 +5327,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2290-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2293SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -5343,7 +5343,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2290-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2293SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -5359,7 +5359,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2290-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2293SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -5375,7 +5375,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2290-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2293SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -5391,7 +5391,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2290-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2293SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -5407,7 +5407,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2290-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2293SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -5418,7 +5418,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2290-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2293SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -5434,7 +5434,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2290-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2293SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -5450,7 +5450,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2290-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2293SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -5466,7 +5466,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2290-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2293SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -5482,7 +5482,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2290-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2293SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -5498,7 +5498,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2290-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2293SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -5514,7 +5514,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2290-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2293SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -5530,7 +5530,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2290-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2293SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -5551,7 +5551,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2290-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2293SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -5567,7 +5567,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2290-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2293SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -5583,7 +5583,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2290-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2293SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -5599,7 +5599,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2290-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2293SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -5615,7 +5615,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2290-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2293SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -5631,7 +5631,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2290-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2293SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -5756,7 +5756,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2302-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2305SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -5772,7 +5772,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2302-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2305SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -5783,7 +5783,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2302-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2305SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -5797,7 +5797,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2302-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2305SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -5816,7 +5816,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2302-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2305SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -5832,7 +5832,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2302-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2305SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -5848,7 +5848,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2302-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2305SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -5864,7 +5864,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2302-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2305SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -5880,7 +5880,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2302-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2305SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -5896,7 +5896,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2302-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2305SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -5912,7 +5912,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2302-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2305SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -5928,7 +5928,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2302-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2305SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -5939,7 +5939,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2302-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2305SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -5955,7 +5955,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2302-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2305SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -5971,7 +5971,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2302-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2305SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -5987,7 +5987,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2302-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2305SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -6003,7 +6003,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2302-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2305SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -6019,7 +6019,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2302-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2305SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -6035,7 +6035,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2302-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2305SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -6051,7 +6051,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2302-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2305SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -6072,7 +6072,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2302-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2305SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -6088,7 +6088,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2302-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2305SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -6104,7 +6104,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2302-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2305SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -6120,7 +6120,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2302-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2305SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -6136,7 +6136,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2302-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2305SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -6152,7 +6152,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2302-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2305SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -6277,7 +6277,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2314-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2317SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -6293,7 +6293,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2314-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2317SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -6304,7 +6304,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2314-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2317SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -6318,7 +6318,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2314-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2317SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -6337,7 +6337,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2314-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2317SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -6353,7 +6353,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2314-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2317SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -6369,7 +6369,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2314-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2317SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -6385,7 +6385,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2314-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2317SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -6401,7 +6401,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2314-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2317SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -6417,7 +6417,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2314-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2317SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -6433,7 +6433,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2314-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2317SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -6449,7 +6449,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2314-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2317SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -6460,7 +6460,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2314-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2317SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -6476,7 +6476,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2314-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2317SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -6492,7 +6492,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2314-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2317SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -6508,7 +6508,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2314-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2317SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -6524,7 +6524,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2314-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2317SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -6540,7 +6540,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2314-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2317SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -6556,7 +6556,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2314-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2317SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -6572,7 +6572,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2314-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2317SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -6593,7 +6593,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2314-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2317SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -6609,7 +6609,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2314-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2317SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -6625,7 +6625,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2314-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2317SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -6641,7 +6641,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2314-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2317SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -6657,7 +6657,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2314-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2317SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -6673,7 +6673,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2314-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2317SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -6798,7 +6798,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2326-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2329SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -6814,7 +6814,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2326-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2329SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -6825,7 +6825,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2326-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2329SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -6839,7 +6839,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2326-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2329SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -6858,7 +6858,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2326-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2329SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -6874,7 +6874,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2326-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2329SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -6890,7 +6890,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2326-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2329SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -6906,7 +6906,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2326-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2329SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -6922,7 +6922,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2326-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2329SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -6938,7 +6938,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2326-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2329SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -6954,7 +6954,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2326-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2329SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -6970,7 +6970,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2326-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2329SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -6981,7 +6981,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2326-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2329SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -6997,7 +6997,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2326-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2329SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -7013,7 +7013,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2326-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2329SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -7029,7 +7029,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2326-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2329SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -7045,7 +7045,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2326-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2329SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -7061,7 +7061,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2326-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2329SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -7077,7 +7077,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2326-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2329SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -7093,7 +7093,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2326-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2329SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -7114,7 +7114,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2326-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2329SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -7130,7 +7130,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2326-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2329SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -7146,7 +7146,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2326-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2329SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -7162,7 +7162,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2326-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2329SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -7178,7 +7178,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2326-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2329SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -7194,7 +7194,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2326-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2329SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -7319,7 +7319,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2339-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2341SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -7335,7 +7335,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2339-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2341SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -7346,7 +7346,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2339-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2341SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -7360,7 +7360,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2339-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2341SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -7379,7 +7379,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2339-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2341SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -7395,7 +7395,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2339-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2341SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -7411,7 +7411,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2339-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2341SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -7427,7 +7427,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2339-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2341SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -7443,7 +7443,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2339-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2341SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -7459,7 +7459,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2339-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2341SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -7475,7 +7475,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2339-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2341SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -7491,7 +7491,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2339-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2341SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -7502,7 +7502,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2339-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2341SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -7518,7 +7518,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2339-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2341SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -7534,7 +7534,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2339-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2341SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -7550,7 +7550,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2339-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2341SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -7566,7 +7566,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2339-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2341SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -7582,7 +7582,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2339-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2341SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -7598,7 +7598,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2339-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2341SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -7614,7 +7614,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2339-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2341SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -7635,7 +7635,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2339-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2341SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -7651,7 +7651,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2339-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2341SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -7667,7 +7667,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2339-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2341SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -7683,7 +7683,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2339-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2341SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -7699,7 +7699,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2339-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2341SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -7715,7 +7715,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2339-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2341SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -7840,7 +7840,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2351-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2354SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -7856,7 +7856,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2351-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2354SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -7867,7 +7867,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2351-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2354SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -7881,7 +7881,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2351-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2354SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -7900,7 +7900,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2351-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2354SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -7916,7 +7916,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2351-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2354SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -7932,7 +7932,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2351-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2354SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -7948,7 +7948,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2351-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2354SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -7964,7 +7964,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2351-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2354SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -7980,7 +7980,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2351-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2354SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -7996,7 +7996,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2351-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2354SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -8012,7 +8012,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2351-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2354SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -8023,7 +8023,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2351-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2354SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -8039,7 +8039,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2351-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2354SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -8055,7 +8055,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2351-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2354SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -8071,7 +8071,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2351-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2354SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -8087,7 +8087,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2351-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2354SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -8103,7 +8103,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2351-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2354SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -8119,7 +8119,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2351-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2354SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -8135,7 +8135,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2351-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2354SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -8156,7 +8156,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2351-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2354SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -8172,7 +8172,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2351-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2354SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -8188,7 +8188,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2351-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2354SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -8204,7 +8204,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2351-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2354SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -8220,7 +8220,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2351-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2354SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -8236,7 +8236,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2351-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2354SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -8361,7 +8361,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2363-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2366SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -8377,7 +8377,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2363-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2366SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -8388,7 +8388,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2363-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2366SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -8402,7 +8402,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2363-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2366SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -8421,7 +8421,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2363-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2366SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -8437,7 +8437,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2363-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2366SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -8453,7 +8453,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2363-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2366SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -8469,7 +8469,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2363-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2366SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -8485,7 +8485,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2363-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2366SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -8501,7 +8501,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2363-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2366SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -8517,7 +8517,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2363-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2366SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -8533,7 +8533,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2363-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2366SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -8544,7 +8544,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2363-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2366SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -8560,7 +8560,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2363-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2366SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -8576,7 +8576,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2363-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2366SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -8592,7 +8592,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2363-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2366SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -8608,7 +8608,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2363-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2366SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -8624,7 +8624,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2363-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2366SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -8640,7 +8640,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2363-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2366SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -8656,7 +8656,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2363-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2366SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -8677,7 +8677,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2363-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2366SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -8693,7 +8693,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2363-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2366SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -8709,7 +8709,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2363-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2366SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -8725,7 +8725,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2363-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2366SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -8741,7 +8741,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2363-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2366SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -8757,7 +8757,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2363-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2366SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -8882,7 +8882,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2375-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2378SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -8898,7 +8898,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2375-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2378SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -8909,7 +8909,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2375-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2378SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -8923,7 +8923,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2375-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2378SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -8942,7 +8942,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2375-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2378SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -8958,7 +8958,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2375-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2378SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -8974,7 +8974,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2375-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2378SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -8990,7 +8990,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2375-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2378SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -9006,7 +9006,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2375-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2378SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -9022,7 +9022,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2375-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2378SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -9038,7 +9038,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2375-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2378SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -9054,7 +9054,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2375-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2378SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -9065,7 +9065,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2375-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2378SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -9081,7 +9081,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2375-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2378SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -9097,7 +9097,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2375-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2378SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -9113,7 +9113,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2375-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2378SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -9129,7 +9129,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2375-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2378SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -9145,7 +9145,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2375-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2378SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -9161,7 +9161,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2375-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2378SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -9177,7 +9177,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2375-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2378SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -9198,7 +9198,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2375-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2378SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -9214,7 +9214,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2375-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2378SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -9230,7 +9230,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2375-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2378SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -9246,7 +9246,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2375-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2378SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -9262,7 +9262,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2375-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2378SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -9278,7 +9278,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2375-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2378SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -9403,7 +9403,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2387-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2390SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -9419,7 +9419,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2387-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2390SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -9430,7 +9430,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2387-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2390SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -9444,7 +9444,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2387-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2390SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -9463,7 +9463,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2387-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2390SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -9479,7 +9479,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2387-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2390SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -9495,7 +9495,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2387-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2390SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -9511,7 +9511,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2387-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2390SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -9527,7 +9527,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2387-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2390SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -9543,7 +9543,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2387-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2390SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -9559,7 +9559,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2387-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2390SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -9575,7 +9575,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2387-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2390SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -9586,7 +9586,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2387-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2390SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -9602,7 +9602,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2387-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2390SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -9618,7 +9618,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2387-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2390SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -9634,7 +9634,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2387-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2390SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -9650,7 +9650,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2387-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2390SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -9666,7 +9666,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2387-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2390SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -9682,7 +9682,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2387-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2390SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -9698,7 +9698,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2387-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2390SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -9719,7 +9719,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2387-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2390SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -9735,7 +9735,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2387-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2390SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -9751,7 +9751,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2387-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2390SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -9767,7 +9767,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2387-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2390SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -9783,7 +9783,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2387-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2390SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -9799,7 +9799,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2387-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2390SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -9924,7 +9924,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2400-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2402SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -9940,7 +9940,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2400-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2402SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -9951,7 +9951,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2400-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2402SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -9965,7 +9965,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2400-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2402SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -9984,7 +9984,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2400-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2402SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -10000,7 +10000,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2400-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2402SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -10016,7 +10016,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2400-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2402SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -10032,7 +10032,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2400-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2402SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -10048,7 +10048,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2400-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2402SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -10064,7 +10064,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2400-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2402SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -10080,7 +10080,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2400-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2402SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -10096,7 +10096,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2400-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2402SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -10107,7 +10107,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2400-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2402SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -10123,7 +10123,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2400-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2402SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -10139,7 +10139,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2400-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2402SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -10155,7 +10155,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2400-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2402SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -10171,7 +10171,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2400-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2402SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -10187,7 +10187,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2400-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2402SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -10203,7 +10203,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2400-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2402SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -10219,7 +10219,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2400-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2402SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -10240,7 +10240,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2400-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2402SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -10256,7 +10256,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2400-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2402SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -10272,7 +10272,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2400-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2402SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -10288,7 +10288,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2400-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2402SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -10304,7 +10304,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2400-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2402SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -10320,7 +10320,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2400-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2402SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -10445,7 +10445,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2412-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2415SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -10461,7 +10461,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2412-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2415SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -10472,7 +10472,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2412-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2415SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -10486,7 +10486,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2412-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2415SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -10505,7 +10505,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2412-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2415SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -10521,7 +10521,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2412-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2415SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -10537,7 +10537,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2412-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2415SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -10553,7 +10553,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2412-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2415SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -10569,7 +10569,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2412-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2415SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -10585,7 +10585,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2412-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2415SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -10601,7 +10601,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2412-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2415SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -10617,7 +10617,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2412-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2415SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -10628,7 +10628,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2412-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2415SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -10644,7 +10644,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2412-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2415SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -10660,7 +10660,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2412-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2415SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -10676,7 +10676,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2412-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2415SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -10692,7 +10692,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2412-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2415SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -10708,7 +10708,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2412-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2415SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -10724,7 +10724,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2412-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2415SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -10740,7 +10740,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2412-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2415SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -10761,7 +10761,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2412-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2415SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -10777,7 +10777,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2412-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2415SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -10793,7 +10793,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2412-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2415SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -10809,7 +10809,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2412-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2415SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -10825,7 +10825,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2412-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2415SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -10841,7 +10841,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2412-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2415SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -10966,7 +10966,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2424-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2427SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -10982,7 +10982,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2424-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2427SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -10993,7 +10993,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2424-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2427SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -11007,7 +11007,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2424-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2427SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -11026,7 +11026,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2424-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2427SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -11042,7 +11042,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2424-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2427SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -11058,7 +11058,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2424-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2427SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -11074,7 +11074,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2424-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2427SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -11090,7 +11090,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2424-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2427SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -11106,7 +11106,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2424-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2427SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -11122,7 +11122,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2424-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2427SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -11138,7 +11138,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2424-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2427SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -11149,7 +11149,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2424-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2427SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -11165,7 +11165,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2424-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2427SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -11181,7 +11181,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2424-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2427SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -11197,7 +11197,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2424-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2427SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -11213,7 +11213,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2424-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2427SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -11229,7 +11229,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2424-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2427SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -11245,7 +11245,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2424-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2427SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -11261,7 +11261,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2424-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2427SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -11282,7 +11282,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2424-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2427SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -11298,7 +11298,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2424-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2427SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -11314,7 +11314,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2424-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2427SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -11330,7 +11330,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2424-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2427SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -11346,7 +11346,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2424-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2427SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -11362,7 +11362,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2424-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2427SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -11487,7 +11487,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2436-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2439SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -11503,7 +11503,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2436-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2439SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -11514,7 +11514,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2436-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2439SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -11528,7 +11528,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2436-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2439SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -11547,7 +11547,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2436-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2439SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -11563,7 +11563,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2436-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2439SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -11579,7 +11579,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2436-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2439SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -11595,7 +11595,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2436-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2439SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -11611,7 +11611,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2436-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2439SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -11627,7 +11627,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2436-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2439SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -11643,7 +11643,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2436-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2439SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -11659,7 +11659,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2436-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2439SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -11670,7 +11670,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2436-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2439SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -11686,7 +11686,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2436-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2439SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -11702,7 +11702,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2436-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2439SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -11718,7 +11718,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2436-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2439SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -11734,7 +11734,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2436-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2439SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -11750,7 +11750,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2436-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2439SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -11766,7 +11766,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2436-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2439SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -11782,7 +11782,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2436-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2439SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -11803,7 +11803,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2436-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2439SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -11819,7 +11819,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2436-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2439SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -11835,7 +11835,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2436-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2439SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -11851,7 +11851,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2436-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2439SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -11867,7 +11867,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2436-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2439SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -11883,7 +11883,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2436-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2439SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -12008,7 +12008,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="BPME-2448-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2451SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -12024,7 +12024,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="BPME-2448-SA1:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2451SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -12035,7 +12035,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2448-SA1:BPM1-ENABLED"
+		chan="XFELGPAC1DI2451SA1:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -12049,7 +12049,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="BPME-2448-SA1:BPM2-ENABLED"
+		chan="XFELGPAC1DI2451SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -12068,7 +12068,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="BPME-2448-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2451SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -12084,7 +12084,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2448-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2451SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -12100,7 +12100,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="BPME-2448-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2451SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -12116,7 +12116,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="BPME-2448-SA1:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2451SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -12132,7 +12132,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2448-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2451SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -12148,7 +12148,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2448-SA1:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2451SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -12164,7 +12164,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="BPME-2448-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2451SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -12180,7 +12180,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="BPME-2448-SA1:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2451SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -12191,7 +12191,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2448-SA1:BPM1-TRG-DELAY"
+		chan="XFELGPAC1DI2451SA1:BPM1-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -12207,7 +12207,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2448-SA1:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2451SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -12223,7 +12223,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2448-SA1:BPM1-BPM-ID"
+		chan="XFELGPAC1DI2451SA1:BPM1-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -12239,7 +12239,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2448-SA1:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2451SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -12255,7 +12255,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2448-SA1:BPM1-ROUTER-ENA"
+		chan="XFELGPAC1DI2451SA1:BPM1-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -12271,7 +12271,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2448-SA1:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2451SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -12287,7 +12287,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2448-SA1:BPM1-Q-THRESHOLD"
+		chan="XFELGPAC1DI2451SA1:BPM1-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -12303,7 +12303,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="BPME-2448-SA1:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2451SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -12324,7 +12324,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2448-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2451SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -12340,7 +12340,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2448-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2451SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -12356,7 +12356,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="BPME-2448-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2451SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -12372,7 +12372,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="BPME-2448-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2451SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -12388,7 +12388,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2448-SA1:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2451SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -12404,7 +12404,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="BPME-2448-SA1:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2451SA1:BPM2-PING-STATUS"
 	}
 }
 "message button" {
@@ -12514,7 +12514,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="NONE:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2463SA1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -12530,7 +12530,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="NONE:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2463SA1:S7GPAC-STATUS"
 	}
 }
 "choice button" {
@@ -12541,7 +12541,7 @@ rectangle {
 		height=15
 	}
 	control {
-		chan="NONE:BPM2-ENABLED"
+		chan="XFELGPAC1DI2463SA1:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -12560,7 +12560,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="NONE:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2463SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -12576,7 +12576,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="NONE:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2463SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -12592,7 +12592,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="NONE:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2463SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -12608,7 +12608,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="NONE:COM-SFP-STATUS"
+		chan="XFELGPAC1DI2463SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -12624,7 +12624,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="NONE:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2463SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -12640,7 +12640,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="NONE:BPM1-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2463SA1:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -12656,7 +12656,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="NONE:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2463SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
@@ -12672,7 +12672,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="NONE:BPM2-IBFB-GTX-STATUS"
+		chan="XFELGPAC1DI2463SA1:BPM2-IBFB-GTX-STATUS"
 	}
 }
 "text update" {
@@ -12683,7 +12683,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="NONE:BPM2-TRG-DELAY"
+		chan="XFELGPAC1DI2463SA1:BPM2-TRG-DELAY"
 		clr=14
 		bclr=4
 	}
@@ -12699,7 +12699,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="NONE:BPM2-BPM-ID"
+		chan="XFELGPAC1DI2463SA1:BPM2-BPM-ID"
 		clr=14
 		bclr=4
 	}
@@ -12715,7 +12715,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="NONE:BPM2-ROUTER-ENA"
+		chan="XFELGPAC1DI2463SA1:BPM2-ROUTER-ENA"
 		clr=14
 		bclr=4
 	}
@@ -12731,7 +12731,7 @@ rectangle {
 		height=15
 	}
 	monitor {
-		chan="NONE:BPM2-Q-THRESHOLD"
+		chan="XFELGPAC1DI2463SA1:BPM2-Q-THRESHOLD"
 		clr=14
 		bclr=4
 	}
@@ -12752,7 +12752,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="NONE:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2463SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -12768,7 +12768,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="NONE:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2463SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -12784,7 +12784,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="NONE:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2463SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -12800,7 +12800,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="NONE:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2463SA1:BPM2-PING-STATUS"
 	}
 }
 rectangle {
@@ -12816,7 +12816,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="NONE:BPM1-PING-STATUS"
+		chan="XFELGPAC1DI2463SA1:BPM1-PING-STATUS"
 	}
 }
 rectangle {
@@ -12832,6 +12832,6 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="NONE:BPM2-PING-STATUS"
+		chan="XFELGPAC1DI2463SA1:BPM2-PING-STATUS"
 	}
 }

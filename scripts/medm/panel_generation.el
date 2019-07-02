@@ -384,7 +384,7 @@ rectangle {
            (setq y (+ 20 y))))
        (let ((y (+ y-offset 175)))
          (dolist (line mbu-list-name)
-           (medm-insert-line y (fourth line) (fifth line) (third line) (second line) nil)
+           (medm-insert-line y (fourth line) (fifth line) (third line) (second line) (sixth line))
            (setq y (+ 20 y))))))))
        
 
