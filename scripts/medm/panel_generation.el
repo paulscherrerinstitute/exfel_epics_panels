@@ -321,8 +321,8 @@ rectangle {
     (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 672 y locserv-name "BPM1-IBFB-ROUTER-STATUS" nil "(A & 0x08) > 0" 7)) ;; P0 addressed
     (unless bpm-2-gtx-hide (medm-rectangle-red-green-status-more 690 y locserv-name "COM-SFP-STATUS" "(A & 0x10000000) > 0" "(A & 0x10000000) = 0" 7))
     (unless bpm-2-gtx-hide (medm-rectangle-red-green-status-more 700 y locserv-name "BPM2-IBFB-GTX-STATUS" "(A & 0x80) > 0" "(A & 0x80) = 0" 7))
-    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 710 y locserv-name "BPM2-IBFB-ROUTER-STATUS" nil "(A & 0x08) > 0" 7))
-    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 720 y locserv-name "BPM2-IBFB-ROUTER-STATUS" "(A & 0x02) = 0" "(A & 0x02) > 0" 7))
+    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 710 y locserv-name "BPM2-IBFB-ROUTER-STATUS" "(A & 0x02) = 0" "(A & 0x02) > 0" 7))
+    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 720 y locserv-name "BPM2-IBFB-ROUTER-STATUS" nil "(A & 0x08) > 0" 7))
     ;;(unless bpm-1-id-hide (medm-text-update 640 y locserv-name "BPM1-TRG-DELAY"))
     ;;(unless bpm-2-id-hide (medm-text-update 690 y locserv-name "BPM2-TRG-DELAY"))
     (unless bpm-1-id-hide (medm-text-update 743 y locserv-name "BPM1-BPM-ID"))
