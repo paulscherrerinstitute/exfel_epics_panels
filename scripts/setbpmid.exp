@@ -1,0 +1,45 @@
+#!/usr/bin/expect -f
+
+##################################################################
+# This script logs into a GPAC and updates BPMID and sets router #
+##################################################################
+
+
+# If it all goes pear shaped the script will timeout after 20 seconds.
+set timeout 20
+
+# First argument = server to connect to
+set server [lindex $argv 0]
+
+# Second argument is BPMID1
+set BPMID1 [lindex $argv 1]
+
+# Second argument is BPMID2
+set BPMID2 [lindex $argv 2]
+
+spawn telnet $server
+sleep .5
+
+expect "login: "
+sleep .1
+
+send "root\r"
+sleep .1
+
+expect "assword: "
+sleep .1
+
+send "gpac4ever\r"
+sleep .1
+
+expect "#"
+sleep .1
+
+
+send "setbpmid.sh 1 $BPMID1 43 0; setbpmid.sh 2 $BPMID2 43 0\r"
+sleep .5
+
+send "exit\r"
+# for debugging while running script
+interact
+

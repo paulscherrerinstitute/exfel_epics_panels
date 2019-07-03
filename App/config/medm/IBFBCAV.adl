@@ -1,14 +1,14 @@
 
 file {
-	name="/afs/psi.ch/user/r/rybaniec_r/ibfb/exfel_epics_panels/App/config/medm/test_template.adl"
+	name="/xfel/controls/App/config/medm/IBFBCAV.adl"
 	version=030105
 }
 display {
 	object {
 		x=439
-		y=199
+		y=60
 		width=1092
-		height=1241
+		height=985
 	}
 	clr=14
 	bclr=4
@@ -85,6 +85,70 @@ display {
 		3cb420,
 		289315,
 		1a7309,
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=575
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) > 0"
+		chan="BPME-2461-SA1:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=660
+		y=575
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X80) = 0"
+		chan="BPME-2461-SA1:BPM1-IBFB-GTX-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=575
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) > 0"
+		chan="BPME-2461-SA1:COM-SFP-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=646
+		y=555
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X10000000) > 0"
+		chan="BPME-2448-SA1:COM-SFP-STATUS"
 	}
 }
 rectangle {
@@ -822,21 +886,20 @@ rectangle {
 	label="Disconnect"
 	press_msg=":51235# "
 }
-
 "message button" {
-object {
-x=175
-y=95
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPMI-1837-CL"
-press_msg="xfelgpac1di1828cl:51238#BPMI-1837-CL"
+	object {
+		x=175
+		y=95
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPMI-1837-CL"
+	press_msg="xfelgpac1di1828cl:51238#BPMI-1837-CL"
 }
 "related display" {
 	object {
@@ -1092,34 +1155,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=125
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPMI-1860-TL"
-press_msg="xfelgpac1di1899tl:51236#BPMI-1860-TL"
+	object {
+		x=90
+		y=125
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPMI-1860-TL"
+	press_msg="xfelgpac1di1899tl:51236#BPMI-1860-TL"
 }
 "message button" {
-object {
-x=175
-y=125
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPMI-1878-TL"
-press_msg="xfelgpac1di1899tl:51238#BPMI-1878-TL"
+	object {
+		x=175
+		y=125
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPMI-1878-TL"
+	press_msg="xfelgpac1di1899tl:51238#BPMI-1878-TL"
 }
 "related display" {
 	object {
@@ -1389,34 +1452,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=145
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPMI-1910-TL"
-press_msg="xfelgpac2di1899tl:51236#BPMI-1910-TL"
+	object {
+		x=90
+		y=145
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPMI-1910-TL"
+	press_msg="xfelgpac2di1899tl:51236#BPMI-1910-TL"
 }
 "message button" {
-object {
-x=175
-y=145
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPMI-1930-TL"
-press_msg="xfelgpac2di1899tl:51238#BPMI-1930-TL"
+	object {
+		x=175
+		y=145
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPMI-1930-TL"
+	press_msg="xfelgpac2di1899tl:51238#BPMI-1930-TL"
 }
 "related display" {
 	object {
@@ -1750,34 +1813,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=165
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPMI-1863-TL"
-press_msg="xfelgpac3di1899tl:51236#BPMI-1863-TL"
+	object {
+		x=90
+		y=165
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPMI-1863-TL"
+	press_msg="xfelgpac3di1899tl:51236#BPMI-1863-TL"
 }
 "message button" {
-object {
-x=175
-y=165
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPMI-1889-TL"
-press_msg="xfelgpac3di1899tl:51238#BPMI-1889-TL"
+	object {
+		x=175
+		y=165
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPMI-1889-TL"
+	press_msg="xfelgpac3di1899tl:51238#BPMI-1889-TL"
 }
 "related display" {
 	object {
@@ -2047,34 +2110,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=185
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPMI-1925-TL"
-press_msg="xfelgpac4di1899tl:51236#BPMI-1925-TL"
+	object {
+		x=90
+		y=185
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPMI-1925-TL"
+	press_msg="xfelgpac4di1899tl:51236#BPMI-1925-TL"
 }
 "message button" {
-object {
-x=175
-y=185
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPMI-1939-TL"
-press_msg="xfelgpac4di1899tl:51238#BPMI-1939-TL"
+	object {
+		x=175
+		y=185
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPMI-1939-TL"
+	press_msg="xfelgpac4di1899tl:51238#BPMI-1939-TL"
 }
 "related display" {
 	object {
@@ -2408,34 +2471,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=215
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2241-SA1"
-press_msg="xfelgpac1di2244sa1:51236#BPME-2241-SA1"
+	object {
+		x=90
+		y=215
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2241-SA1"
+	press_msg="xfelgpac1di2244sa1:51236#BPME-2241-SA1"
 }
 "message button" {
-object {
-x=175
-y=215
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2247-SA1"
-press_msg="xfelgpac1di2244sa1:51238#BPME-2247-SA1"
+	object {
+		x=175
+		y=215
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2247-SA1"
+	press_msg="xfelgpac1di2244sa1:51238#BPME-2247-SA1"
 }
 "related display" {
 	object {
@@ -2833,34 +2896,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=235
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2253-SA1"
-press_msg="xfelgpac1di2256sa1:51236#BPME-2253-SA1"
+	object {
+		x=90
+		y=235
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2253-SA1"
+	press_msg="xfelgpac1di2256sa1:51236#BPME-2253-SA1"
 }
 "message button" {
-object {
-x=175
-y=235
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2259-SA1"
-press_msg="xfelgpac1di2256sa1:51238#BPME-2259-SA1"
+	object {
+		x=175
+		y=235
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2259-SA1"
+	press_msg="xfelgpac1di2256sa1:51238#BPME-2259-SA1"
 }
 "related display" {
 	object {
@@ -3258,34 +3321,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=255
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2265-SA1"
-press_msg="xfelgpac1di2268sa1:51236#BPME-2265-SA1"
+	object {
+		x=90
+		y=255
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2265-SA1"
+	press_msg="xfelgpac1di2268sa1:51236#BPME-2265-SA1"
 }
 "message button" {
-object {
-x=175
-y=255
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2271-SA1"
-press_msg="xfelgpac1di2268sa1:51238#BPME-2271-SA1"
+	object {
+		x=175
+		y=255
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2271-SA1"
+	press_msg="xfelgpac1di2268sa1:51238#BPME-2271-SA1"
 }
 "related display" {
 	object {
@@ -3683,34 +3746,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=275
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2278-SA1"
-press_msg="xfelgpac1di2280sa1:51236#BPME-2278-SA1"
+	object {
+		x=90
+		y=275
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2278-SA1"
+	press_msg="xfelgpac1di2280sa1:51236#BPME-2278-SA1"
 }
 "message button" {
-object {
-x=175
-y=275
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2284-SA1"
-press_msg="xfelgpac1di2280sa1:51238#BPME-2284-SA1"
+	object {
+		x=175
+		y=275
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2284-SA1"
+	press_msg="xfelgpac1di2280sa1:51238#BPME-2284-SA1"
 }
 "related display" {
 	object {
@@ -4108,34 +4171,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=295
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2290-SA1"
-press_msg="xfelgpac1di2293sa1:51236#BPME-2290-SA1"
+	object {
+		x=90
+		y=295
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2290-SA1"
+	press_msg="xfelgpac1di2293sa1:51236#BPME-2290-SA1"
 }
 "message button" {
-object {
-x=175
-y=295
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2296-SA1"
-press_msg="xfelgpac1di2293sa1:51238#BPME-2296-SA1"
+	object {
+		x=175
+		y=295
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2296-SA1"
+	press_msg="xfelgpac1di2293sa1:51238#BPME-2296-SA1"
 }
 "related display" {
 	object {
@@ -4533,34 +4596,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=315
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2302-SA1"
-press_msg="xfelgpac1di2305sa1:51236#BPME-2302-SA1"
+	object {
+		x=90
+		y=315
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2302-SA1"
+	press_msg="xfelgpac1di2305sa1:51236#BPME-2302-SA1"
 }
 "message button" {
-object {
-x=175
-y=315
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2308-SA1"
-press_msg="xfelgpac1di2305sa1:51238#BPME-2308-SA1"
+	object {
+		x=175
+		y=315
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2308-SA1"
+	press_msg="xfelgpac1di2305sa1:51238#BPME-2308-SA1"
 }
 "related display" {
 	object {
@@ -4958,34 +5021,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=335
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2314-SA1"
-press_msg="xfelgpac1di2317sa1:51236#BPME-2314-SA1"
+	object {
+		x=90
+		y=335
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2314-SA1"
+	press_msg="xfelgpac1di2317sa1:51236#BPME-2314-SA1"
 }
 "message button" {
-object {
-x=175
-y=335
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2320-SA1"
-press_msg="xfelgpac1di2317sa1:51238#BPME-2320-SA1"
+	object {
+		x=175
+		y=335
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2320-SA1"
+	press_msg="xfelgpac1di2317sa1:51238#BPME-2320-SA1"
 }
 "related display" {
 	object {
@@ -5383,34 +5446,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=355
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2326-SA1"
-press_msg="xfelgpac1di2329sa1:51236#BPME-2326-SA1"
+	object {
+		x=90
+		y=355
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2326-SA1"
+	press_msg="xfelgpac1di2329sa1:51236#BPME-2326-SA1"
 }
 "message button" {
-object {
-x=175
-y=355
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2332-SA1"
-press_msg="xfelgpac1di2329sa1:51238#BPME-2332-SA1"
+	object {
+		x=175
+		y=355
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2332-SA1"
+	press_msg="xfelgpac1di2329sa1:51238#BPME-2332-SA1"
 }
 "related display" {
 	object {
@@ -5808,34 +5871,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=375
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2339-SA1"
-press_msg="xfelgpac1di2341sa1:51236#BPME-2339-SA1"
+	object {
+		x=90
+		y=375
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2339-SA1"
+	press_msg="xfelgpac1di2341sa1:51236#BPME-2339-SA1"
 }
 "message button" {
-object {
-x=175
-y=375
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2345-SA1"
-press_msg="xfelgpac1di2341sa1:51238#BPME-2345-SA1"
+	object {
+		x=175
+		y=375
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2345-SA1"
+	press_msg="xfelgpac1di2341sa1:51238#BPME-2345-SA1"
 }
 "related display" {
 	object {
@@ -6233,34 +6296,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=395
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2351-SA1"
-press_msg="xfelgpac1di2354sa1:51236#BPME-2351-SA1"
+	object {
+		x=90
+		y=395
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2351-SA1"
+	press_msg="xfelgpac1di2354sa1:51236#BPME-2351-SA1"
 }
 "message button" {
-object {
-x=175
-y=395
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2357-SA1"
-press_msg="xfelgpac1di2354sa1:51238#BPME-2357-SA1"
+	object {
+		x=175
+		y=395
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2357-SA1"
+	press_msg="xfelgpac1di2354sa1:51238#BPME-2357-SA1"
 }
 "related display" {
 	object {
@@ -6658,34 +6721,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=415
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2363-SA1"
-press_msg="xfelgpac1di2366sa1:51236#BPME-2363-SA1"
+	object {
+		x=90
+		y=415
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2363-SA1"
+	press_msg="xfelgpac1di2366sa1:51236#BPME-2363-SA1"
 }
 "message button" {
-object {
-x=175
-y=415
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2369-SA1"
-press_msg="xfelgpac1di2366sa1:51238#BPME-2369-SA1"
+	object {
+		x=175
+		y=415
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2369-SA1"
+	press_msg="xfelgpac1di2366sa1:51238#BPME-2369-SA1"
 }
 "related display" {
 	object {
@@ -7083,34 +7146,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=435
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2375-SA1"
-press_msg="xfelgpac1di2378sa1:51236#BPME-2375-SA1"
+	object {
+		x=90
+		y=435
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2375-SA1"
+	press_msg="xfelgpac1di2378sa1:51236#BPME-2375-SA1"
 }
 "message button" {
-object {
-x=175
-y=435
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2381-SA1"
-press_msg="xfelgpac1di2378sa1:51238#BPME-2381-SA1"
+	object {
+		x=175
+		y=435
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2381-SA1"
+	press_msg="xfelgpac1di2378sa1:51238#BPME-2381-SA1"
 }
 "related display" {
 	object {
@@ -7508,34 +7571,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=455
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2387-SA1"
-press_msg="xfelgpac1di2390sa1:51236#BPME-2387-SA1"
+	object {
+		x=90
+		y=455
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2387-SA1"
+	press_msg="xfelgpac1di2390sa1:51236#BPME-2387-SA1"
 }
 "message button" {
-object {
-x=175
-y=455
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2393-SA1"
-press_msg="xfelgpac1di2390sa1:51238#BPME-2393-SA1"
+	object {
+		x=175
+		y=455
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2393-SA1"
+	press_msg="xfelgpac1di2390sa1:51238#BPME-2393-SA1"
 }
 "related display" {
 	object {
@@ -7933,34 +7996,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=475
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2400-SA1"
-press_msg="xfelgpac1di2402sa1:51236#BPME-2400-SA1"
+	object {
+		x=90
+		y=475
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2400-SA1"
+	press_msg="xfelgpac1di2402sa1:51236#BPME-2400-SA1"
 }
 "message button" {
-object {
-x=175
-y=475
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2406-SA1"
-press_msg="xfelgpac1di2402sa1:51238#BPME-2406-SA1"
+	object {
+		x=175
+		y=475
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2406-SA1"
+	press_msg="xfelgpac1di2402sa1:51238#BPME-2406-SA1"
 }
 "related display" {
 	object {
@@ -8358,34 +8421,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=495
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2412-SA1"
-press_msg="xfelgpac1di2415sa1:51236#BPME-2412-SA1"
+	object {
+		x=90
+		y=495
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2412-SA1"
+	press_msg="xfelgpac1di2415sa1:51236#BPME-2412-SA1"
 }
 "message button" {
-object {
-x=175
-y=495
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2418-SA1"
-press_msg="xfelgpac1di2415sa1:51238#BPME-2418-SA1"
+	object {
+		x=175
+		y=495
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2418-SA1"
+	press_msg="xfelgpac1di2415sa1:51238#BPME-2418-SA1"
 }
 "related display" {
 	object {
@@ -8783,34 +8846,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=515
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2424-SA1"
-press_msg="xfelgpac1di2427sa1:51236#BPME-2424-SA1"
+	object {
+		x=90
+		y=515
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2424-SA1"
+	press_msg="xfelgpac1di2427sa1:51236#BPME-2424-SA1"
 }
 "message button" {
-object {
-x=175
-y=515
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2430-SA1"
-press_msg="xfelgpac1di2427sa1:51238#BPME-2430-SA1"
+	object {
+		x=175
+		y=515
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2430-SA1"
+	press_msg="xfelgpac1di2427sa1:51238#BPME-2430-SA1"
 }
 "related display" {
 	object {
@@ -9208,34 +9271,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=535
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2436-SA1"
-press_msg="xfelgpac1di2439sa1:51236#BPME-2436-SA1"
+	object {
+		x=90
+		y=535
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2436-SA1"
+	press_msg="xfelgpac1di2439sa1:51236#BPME-2436-SA1"
 }
 "message button" {
-object {
-x=175
-y=535
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2442-SA1"
-press_msg="xfelgpac1di2439sa1:51238#BPME-2442-SA1"
+	object {
+		x=175
+		y=535
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2442-SA1"
+	press_msg="xfelgpac1di2439sa1:51238#BPME-2442-SA1"
 }
 "related display" {
 	object {
@@ -9633,34 +9696,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=555
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2448-SA1"
-press_msg="xfelgpac1di2451sa1:51236#BPME-2448-SA1"
+	object {
+		x=90
+		y=555
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2448-SA1"
+	press_msg="xfelgpac1di2451sa1:51236#BPME-2448-SA1"
 }
 "message button" {
-object {
-x=175
-y=555
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2454-SA1"
-press_msg="xfelgpac1di2451sa1:51238#BPME-2454-SA1"
+	object {
+		x=175
+		y=555
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2454-SA1"
+	press_msg="xfelgpac1di2451sa1:51238#BPME-2454-SA1"
 }
 "related display" {
 	object {
@@ -9830,22 +9893,6 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="BPME-2448-SA1:COM-SFP-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=646
-		y=555
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X10000000) > 0"
 		chan="BPME-2448-SA1:COM-SFP-STATUS"
 	}
 }
@@ -10058,19 +10105,19 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=175
-y=575
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2461-SA1"
-press_msg="xfelgpac1di2463sa1:51238#BPME-2461-SA1"
+	object {
+		x=175
+		y=575
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2461-SA1"
+	press_msg="xfelgpac1di2463sa1:51238#BPME-2461-SA1"
 }
 "related display" {
 	object {
@@ -10326,34 +10373,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=605
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2203-SA2"
-press_msg="xfelgpac1di2207sa2:51236#BPME-2203-SA2"
+	object {
+		x=90
+		y=605
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2203-SA2"
+	press_msg="xfelgpac1di2207sa2:51236#BPME-2203-SA2"
 }
 "message button" {
-object {
-x=175
-y=605
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2209-SA2"
-press_msg="xfelgpac1di2207sa2:51238#BPME-2209-SA2"
+	object {
+		x=175
+		y=605
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2209-SA2"
+	press_msg="xfelgpac1di2207sa2:51238#BPME-2209-SA2"
 }
 "related display" {
 	object {
@@ -10751,34 +10798,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=625
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2215-SA2"
-press_msg="xfelgpac1di2219sa2:51236#BPME-2215-SA2"
+	object {
+		x=90
+		y=625
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2215-SA2"
+	press_msg="xfelgpac1di2219sa2:51236#BPME-2215-SA2"
 }
 "message button" {
-object {
-x=175
-y=625
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2221-SA2"
-press_msg="xfelgpac1di2219sa2:51238#BPME-2221-SA2"
+	object {
+		x=175
+		y=625
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2221-SA2"
+	press_msg="xfelgpac1di2219sa2:51238#BPME-2221-SA2"
 }
 "related display" {
 	object {
@@ -11176,34 +11223,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=645
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2227-SA2"
-press_msg="xfelgpac1di2231sa2:51236#BPME-2227-SA2"
+	object {
+		x=90
+		y=645
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2227-SA2"
+	press_msg="xfelgpac1di2231sa2:51236#BPME-2227-SA2"
 }
 "message button" {
-object {
-x=175
-y=645
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2233-SA2"
-press_msg="xfelgpac1di2231sa2:51238#BPME-2233-SA2"
+	object {
+		x=175
+		y=645
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2233-SA2"
+	press_msg="xfelgpac1di2231sa2:51238#BPME-2233-SA2"
 }
 "related display" {
 	object {
@@ -11601,34 +11648,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=665
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2239-SA2"
-press_msg="xfelgpac1di2244sa2:51236#BPME-2239-SA2"
+	object {
+		x=90
+		y=665
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2239-SA2"
+	press_msg="xfelgpac1di2244sa2:51236#BPME-2239-SA2"
 }
 "message button" {
-object {
-x=175
-y=665
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2245-SA2"
-press_msg="xfelgpac1di2244sa2:51238#BPME-2245-SA2"
+	object {
+		x=175
+		y=665
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2245-SA2"
+	press_msg="xfelgpac1di2244sa2:51238#BPME-2245-SA2"
 }
 "related display" {
 	object {
@@ -12026,34 +12073,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=685
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2252-SA2"
-press_msg="xfelgpac1di2256sa2:51236#BPME-2252-SA2"
+	object {
+		x=90
+		y=685
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2252-SA2"
+	press_msg="xfelgpac1di2256sa2:51236#BPME-2252-SA2"
 }
 "message button" {
-object {
-x=175
-y=685
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2258-SA2"
-press_msg="xfelgpac1di2256sa2:51238#BPME-2258-SA2"
+	object {
+		x=175
+		y=685
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2258-SA2"
+	press_msg="xfelgpac1di2256sa2:51238#BPME-2258-SA2"
 }
 "related display" {
 	object {
@@ -12451,34 +12498,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=705
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2264-SA2"
-press_msg="xfelgpac1di2268sa2:51236#BPME-2264-SA2"
+	object {
+		x=90
+		y=705
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2264-SA2"
+	press_msg="xfelgpac1di2268sa2:51236#BPME-2264-SA2"
 }
 "message button" {
-object {
-x=175
-y=705
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2270-SA2"
-press_msg="xfelgpac1di2268sa2:51238#BPME-2270-SA2"
+	object {
+		x=175
+		y=705
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2270-SA2"
+	press_msg="xfelgpac1di2268sa2:51238#BPME-2270-SA2"
 }
 "related display" {
 	object {
@@ -12876,34 +12923,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=725
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2276-SA2"
-press_msg="xfelgpac1di2280sa2:51236#BPME-2276-SA2"
+	object {
+		x=90
+		y=725
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2276-SA2"
+	press_msg="xfelgpac1di2280sa2:51236#BPME-2276-SA2"
 }
 "message button" {
-object {
-x=175
-y=725
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2282-SA2"
-press_msg="xfelgpac1di2280sa2:51238#BPME-2282-SA2"
+	object {
+		x=175
+		y=725
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2282-SA2"
+	press_msg="xfelgpac1di2280sa2:51238#BPME-2282-SA2"
 }
 "related display" {
 	object {
@@ -13301,34 +13348,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=745
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2288-SA2"
-press_msg="xfelgpac1di2292sa2:51236#BPME-2288-SA2"
+	object {
+		x=90
+		y=745
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2288-SA2"
+	press_msg="xfelgpac1di2292sa2:51236#BPME-2288-SA2"
 }
 "message button" {
-object {
-x=175
-y=745
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2294-SA2"
-press_msg="xfelgpac1di2292sa2:51238#BPME-2294-SA2"
+	object {
+		x=175
+		y=745
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2294-SA2"
+	press_msg="xfelgpac1di2292sa2:51238#BPME-2294-SA2"
 }
 "related display" {
 	object {
@@ -13726,34 +13773,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=765
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2300-SA2"
-press_msg="xfelgpac1di2305sa2:51236#BPME-2300-SA2"
+	object {
+		x=90
+		y=765
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2300-SA2"
+	press_msg="xfelgpac1di2305sa2:51236#BPME-2300-SA2"
 }
 "message button" {
-object {
-x=175
-y=765
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2306-SA2"
-press_msg="xfelgpac1di2305sa2:51238#BPME-2306-SA2"
+	object {
+		x=175
+		y=765
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2306-SA2"
+	press_msg="xfelgpac1di2305sa2:51238#BPME-2306-SA2"
 }
 "related display" {
 	object {
@@ -14151,34 +14198,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=785
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2313-SA2"
-press_msg="xfelgpac1di2317sa2:51236#BPME-2313-SA2"
+	object {
+		x=90
+		y=785
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2313-SA2"
+	press_msg="xfelgpac1di2317sa2:51236#BPME-2313-SA2"
 }
 "message button" {
-object {
-x=175
-y=785
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2319-SA2"
-press_msg="xfelgpac1di2317sa2:51238#BPME-2319-SA2"
+	object {
+		x=175
+		y=785
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2319-SA2"
+	press_msg="xfelgpac1di2317sa2:51238#BPME-2319-SA2"
 }
 "related display" {
 	object {
@@ -14576,34 +14623,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=805
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2325-SA2"
-press_msg="xfelgpac1di2329sa2:51236#BPME-2325-SA2"
+	object {
+		x=90
+		y=805
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2325-SA2"
+	press_msg="xfelgpac1di2329sa2:51236#BPME-2325-SA2"
 }
 "message button" {
-object {
-x=175
-y=805
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2331-SA2"
-press_msg="xfelgpac1di2329sa2:51238#BPME-2331-SA2"
+	object {
+		x=175
+		y=805
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2331-SA2"
+	press_msg="xfelgpac1di2329sa2:51238#BPME-2331-SA2"
 }
 "related display" {
 	object {
@@ -15001,34 +15048,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=825
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2337-SA2"
-press_msg="xfelgpac1di2341sa2:51236#BPME-2337-SA2"
+	object {
+		x=90
+		y=825
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2337-SA2"
+	press_msg="xfelgpac1di2341sa2:51236#BPME-2337-SA2"
 }
 "message button" {
-object {
-x=175
-y=825
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2343-SA2"
-press_msg="xfelgpac1di2341sa2:51238#BPME-2343-SA2"
+	object {
+		x=175
+		y=825
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2343-SA2"
+	press_msg="xfelgpac1di2341sa2:51238#BPME-2343-SA2"
 }
 "related display" {
 	object {
@@ -15426,34 +15473,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=845
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2349-SA2"
-press_msg="xfelgpac1di2353sa2:51236#BPME-2349-SA2"
+	object {
+		x=90
+		y=845
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2349-SA2"
+	press_msg="xfelgpac1di2353sa2:51236#BPME-2349-SA2"
 }
 "message button" {
-object {
-x=175
-y=845
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2355-SA2"
-press_msg="xfelgpac1di2353sa2:51238#BPME-2355-SA2"
+	object {
+		x=175
+		y=845
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2355-SA2"
+	press_msg="xfelgpac1di2353sa2:51238#BPME-2355-SA2"
 }
 "related display" {
 	object {
@@ -15851,34 +15898,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=865
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2361-SA2"
-press_msg="xfelgpac1di2366sa2:51236#BPME-2361-SA2"
+	object {
+		x=90
+		y=865
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2361-SA2"
+	press_msg="xfelgpac1di2366sa2:51236#BPME-2361-SA2"
 }
 "message button" {
-object {
-x=175
-y=865
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2367-SA2"
-press_msg="xfelgpac1di2366sa2:51238#BPME-2367-SA2"
+	object {
+		x=175
+		y=865
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2367-SA2"
+	press_msg="xfelgpac1di2366sa2:51238#BPME-2367-SA2"
 }
 "related display" {
 	object {
@@ -16276,34 +16323,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=885
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2373-SA2"
-press_msg="xfelgpac1di2378sa2:51236#BPME-2373-SA2"
+	object {
+		x=90
+		y=885
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2373-SA2"
+	press_msg="xfelgpac1di2378sa2:51236#BPME-2373-SA2"
 }
 "message button" {
-object {
-x=175
-y=885
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2380-SA2"
-press_msg="xfelgpac1di2378sa2:51238#BPME-2380-SA2"
+	object {
+		x=175
+		y=885
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2380-SA2"
+	press_msg="xfelgpac1di2378sa2:51238#BPME-2380-SA2"
 }
 "related display" {
 	object {
@@ -16701,34 +16748,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=905
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2386-SA2"
-press_msg="xfelgpac1di2390sa2:51236#BPME-2386-SA2"
+	object {
+		x=90
+		y=905
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2386-SA2"
+	press_msg="xfelgpac1di2390sa2:51236#BPME-2386-SA2"
 }
 "message button" {
-object {
-x=175
-y=905
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2392-SA2"
-press_msg="xfelgpac1di2390sa2:51238#BPME-2392-SA2"
+	object {
+		x=175
+		y=905
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2392-SA2"
+	press_msg="xfelgpac1di2390sa2:51238#BPME-2392-SA2"
 }
 "related display" {
 	object {
@@ -17126,34 +17173,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=925
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2398-SA2"
-press_msg="xfelgpac1di2402sa2:51236#BPME-2398-SA2"
+	object {
+		x=90
+		y=925
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2398-SA2"
+	press_msg="xfelgpac1di2402sa2:51236#BPME-2398-SA2"
 }
 "message button" {
-object {
-x=175
-y=925
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2404-SA2"
-press_msg="xfelgpac1di2402sa2:51238#BPME-2404-SA2"
+	object {
+		x=175
+		y=925
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2404-SA2"
+	press_msg="xfelgpac1di2402sa2:51238#BPME-2404-SA2"
 }
 "related display" {
 	object {
@@ -17551,34 +17598,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=945
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2410-SA2"
-press_msg="xfelgpac1di2414sa2:51236#BPME-2410-SA2"
+	object {
+		x=90
+		y=945
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2410-SA2"
+	press_msg="xfelgpac1di2414sa2:51236#BPME-2410-SA2"
 }
 "message button" {
-object {
-x=175
-y=945
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2416-SA2"
-press_msg="xfelgpac1di2414sa2:51238#BPME-2416-SA2"
+	object {
+		x=175
+		y=945
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2416-SA2"
+	press_msg="xfelgpac1di2414sa2:51238#BPME-2416-SA2"
 }
 "related display" {
 	object {
@@ -17976,19 +18023,19 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=175
-y=965
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2422-SA2"
-press_msg="xfelgpac1di2423sa2:51238#BPME-2422-SA2"
+	object {
+		x=175
+		y=965
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2422-SA2"
+	press_msg="xfelgpac1di2423sa2:51238#BPME-2422-SA2"
 }
 "related display" {
 	object {
@@ -18244,34 +18291,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=995
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2806-SA3"
-press_msg="xfelgpac1di2808sa3:51236#BPME-2806-SA3"
+	object {
+		x=90
+		y=995
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2806-SA3"
+	press_msg="xfelgpac1di2808sa3:51236#BPME-2806-SA3"
 }
 "message button" {
-object {
-x=175
-y=995
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2812-SA3"
-press_msg="xfelgpac1di2808sa3:51238#BPME-2812-SA3"
+	object {
+		x=175
+		y=995
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2812-SA3"
+	press_msg="xfelgpac1di2808sa3:51238#BPME-2812-SA3"
 }
 "related display" {
 	object {
@@ -18669,34 +18716,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=1015
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2818-SA3"
-press_msg="xfelgpac1di2820sa3:51236#BPME-2818-SA3"
+	object {
+		x=90
+		y=1015
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2818-SA3"
+	press_msg="xfelgpac1di2820sa3:51236#BPME-2818-SA3"
 }
 "message button" {
-object {
-x=175
-y=1015
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2824-SA3"
-press_msg="xfelgpac1di2820sa3:51238#BPME-2824-SA3"
+	object {
+		x=175
+		y=1015
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2824-SA3"
+	press_msg="xfelgpac1di2820sa3:51238#BPME-2824-SA3"
 }
 "related display" {
 	object {
@@ -19094,34 +19141,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=1035
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2830-SA3"
-press_msg="xfelgpac1di2832sa3:51236#BPME-2830-SA3"
+	object {
+		x=90
+		y=1035
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2830-SA3"
+	press_msg="xfelgpac1di2832sa3:51236#BPME-2830-SA3"
 }
 "message button" {
-object {
-x=175
-y=1035
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2836-SA3"
-press_msg="xfelgpac1di2832sa3:51238#BPME-2836-SA3"
+	object {
+		x=175
+		y=1035
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2836-SA3"
+	press_msg="xfelgpac1di2832sa3:51238#BPME-2836-SA3"
 }
 "related display" {
 	object {
@@ -19519,34 +19566,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=1055
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2842-SA3"
-press_msg="xfelgpac1di2845sa3:51236#BPME-2842-SA3"
+	object {
+		x=90
+		y=1055
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2842-SA3"
+	press_msg="xfelgpac1di2845sa3:51236#BPME-2842-SA3"
 }
 "message button" {
-object {
-x=175
-y=1055
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2849-SA3"
-press_msg="xfelgpac1di2845sa3:51238#BPME-2849-SA3"
+	object {
+		x=175
+		y=1055
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2849-SA3"
+	press_msg="xfelgpac1di2845sa3:51238#BPME-2849-SA3"
 }
 "related display" {
 	object {
@@ -19944,34 +19991,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=1075
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2861-SA3"
-press_msg="xfelgpac1di2857sa3:51236#BPME-2861-SA3"
+	object {
+		x=90
+		y=1075
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2861-SA3"
+	press_msg="xfelgpac1di2857sa3:51236#BPME-2861-SA3"
 }
 "message button" {
-object {
-x=175
-y=1075
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2849-SA3"
-press_msg="xfelgpac1di2857sa3:51238#BPME-2849-SA3"
+	object {
+		x=175
+		y=1075
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2849-SA3"
+	press_msg="xfelgpac1di2857sa3:51238#BPME-2849-SA3"
 }
 "related display" {
 	object {
@@ -20369,34 +20416,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=1095
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2867-SA3"
-press_msg="xfelgpac1di2869sa3:51236#BPME-2867-SA3"
+	object {
+		x=90
+		y=1095
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2867-SA3"
+	press_msg="xfelgpac1di2869sa3:51236#BPME-2867-SA3"
 }
 "message button" {
-object {
-x=175
-y=1095
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2873-SA3"
-press_msg="xfelgpac1di2869sa3:51238#BPME-2873-SA3"
+	object {
+		x=175
+		y=1095
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2873-SA3"
+	press_msg="xfelgpac1di2869sa3:51238#BPME-2873-SA3"
 }
 "related display" {
 	object {
@@ -20794,34 +20841,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=1115
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2879-SA3"
-press_msg="xfelgpac1di2881sa3:51236#BPME-2879-SA3"
+	object {
+		x=90
+		y=1115
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2879-SA3"
+	press_msg="xfelgpac1di2881sa3:51236#BPME-2879-SA3"
 }
 "message button" {
-object {
-x=175
-y=1115
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2885-SA3"
-press_msg="xfelgpac1di2881sa3:51238#BPME-2885-SA3"
+	object {
+		x=175
+		y=1115
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2885-SA3"
+	press_msg="xfelgpac1di2881sa3:51238#BPME-2885-SA3"
 }
 "related display" {
 	object {
@@ -21219,34 +21266,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=1135
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2891-SA3"
-press_msg="xfelgpac1di2893sa3:51236#BPME-2891-SA3"
+	object {
+		x=90
+		y=1135
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2891-SA3"
+	press_msg="xfelgpac1di2893sa3:51236#BPME-2891-SA3"
 }
 "message button" {
-object {
-x=175
-y=1135
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2897-SA3"
-press_msg="xfelgpac1di2893sa3:51238#BPME-2897-SA3"
+	object {
+		x=175
+		y=1135
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2897-SA3"
+	press_msg="xfelgpac1di2893sa3:51238#BPME-2897-SA3"
 }
 "related display" {
 	object {
@@ -21644,34 +21691,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=1155
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2903-SA3"
-press_msg="xfelgpac1di2906sa3:51236#BPME-2903-SA3"
+	object {
+		x=90
+		y=1155
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2903-SA3"
+	press_msg="xfelgpac1di2906sa3:51236#BPME-2903-SA3"
 }
 "message button" {
-object {
-x=175
-y=1155
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2910-SA3"
-press_msg="xfelgpac1di2906sa3:51238#BPME-2910-SA3"
+	object {
+		x=175
+		y=1155
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2910-SA3"
+	press_msg="xfelgpac1di2906sa3:51238#BPME-2910-SA3"
 }
 "related display" {
 	object {
@@ -22069,34 +22116,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=1175
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2916-SA3"
-press_msg="xfelgpac1di2918sa3:51236#BPME-2916-SA3"
+	object {
+		x=90
+		y=1175
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2916-SA3"
+	press_msg="xfelgpac1di2918sa3:51236#BPME-2916-SA3"
 }
 "message button" {
-object {
-x=175
-y=1175
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2922-SA3"
-press_msg="xfelgpac1di2918sa3:51238#BPME-2922-SA3"
+	object {
+		x=175
+		y=1175
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2922-SA3"
+	press_msg="xfelgpac1di2918sa3:51238#BPME-2922-SA3"
 }
 "related display" {
 	object {
@@ -22494,34 +22541,34 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=90
-y=1195
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2928-SA3"
-press_msg="xfelgpac1di2931sa3:51236#BPME-2928-SA3"
+	object {
+		x=90
+		y=1195
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2928-SA3"
+	press_msg="xfelgpac1di2931sa3:51236#BPME-2928-SA3"
 }
 "message button" {
-object {
-x=175
-y=1195
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2934-SA3"
-press_msg="xfelgpac1di2931sa3:51238#BPME-2934-SA3"
+	object {
+		x=175
+		y=1195
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2934-SA3"
+	press_msg="xfelgpac1di2931sa3:51238#BPME-2934-SA3"
 }
 "related display" {
 	object {
@@ -22919,19 +22966,19 @@ rectangle {
 	}
 }
 "message button" {
-object {
-x=175
-y=1215
-width=85
-height=20
-}
-control {
-chan="CAVBPM:BPM-STRING.AA"
-clr=14
-bclr=57
-}
-label="BPME-2940-SA3"
-press_msg="xfelgpac1di2943sa3:51238#BPME-2940-SA3"
+	object {
+		x=175
+		y=1215
+		width=85
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=57
+	}
+	label="BPME-2940-SA3"
+	press_msg="xfelgpac1di2943sa3:51238#BPME-2940-SA3"
 }
 "related display" {
 	object {
@@ -23184,5 +23231,21 @@ rectangle {
 	}
 	align="horiz. right"
 	limits {
+	}
+}
+rectangle {
+	object {
+		x=641
+		y=575
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X100000) = 0"
+		chan="BPME-2461-SA1:COM-SFP-STATUS"
 	}
 }

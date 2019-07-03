@@ -1,0 +1,40 @@
+#!/usr/bin/expect -f
+
+##################################################
+# This script logs into a GPAC and makes a reset #
+##################################################
+
+# If it all goes pear shaped the script will timeout after 20 seconds.
+set timeout 3
+
+# First argument = server to connect to
+set server [lindex $argv 0]
+
+
+spawn telnet $server
+sleep .5
+
+expect "login: "
+sleep .1
+
+send "root\r"
+sleep .1
+
+expect "assword: "
+sleep .1
+
+send "gpac4ever\r"
+sleep .1
+
+expect "#"
+sleep .1
+
+
+send "/mnt/cf/usr/bin/restart.sh\r"
+sleep .5
+
+close
+#send "exit\r"
+# for debugging while running script
+interact
+
