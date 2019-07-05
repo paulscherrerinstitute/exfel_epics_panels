@@ -1,13 +1,13 @@
 
 file {
-	name="/afs/psi.ch/user/r/rybaniec_r/ibfb/exfel_epics_panels/scripts/medm/IBFBCAV_SA_template.adl"
+	name="/home/rrybanie/ibfb/exfel_epics_panels/scripts/medm/IBFBCAV_SA_template.adl"
 	version=030105
 }
 display {
 	object {
-		x=1429
-		y=651
-		width=1070
+		x=899
+		y=360
+		width=1100
 		height=650
 	}
 	clr=14
@@ -91,7 +91,7 @@ rectangle {
 	object {
 		x=-1725
 		y=0
-		width=2830
+		width=2850
 		height=30
 	}
 	"basic attribute" {
@@ -130,7 +130,7 @@ polyline {
 }
 polyline {
 	object {
-		x=738
+		x=774
 		y=65
 		width=0
 		height=1200
@@ -139,8 +139,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(738,65)
-		(738,1265)
+		(774,65)
+		(774,1265)
 	}
 }
 polyline {
@@ -199,7 +199,7 @@ text {
 }
 text {
 	object {
-		x=743
+		x=777
 		y=74
 		width=95
 		height=15
@@ -212,7 +212,7 @@ text {
 }
 polyline {
 	object {
-		x=843
+		x=877
 		y=65
 		width=0
 		height=1200
@@ -221,8 +221,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(843,65)
-		(843,1265)
+		(877,65)
+		(877,1265)
 	}
 }
 text {
@@ -281,7 +281,7 @@ polyline {
 }
 text {
 	object {
-		x=848
+		x=882
 		y=74
 		width=95
 		height=15
@@ -352,7 +352,7 @@ text {
 }
 text {
 	object {
-		x=953
+		x=987
 		y=74
 		width=95
 		height=15
@@ -365,7 +365,7 @@ text {
 }
 polyline {
 	object {
-		x=948
+		x=982
 		y=65
 		width=0
 		height=1200
@@ -374,8 +374,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(948,65)
-		(948,1265)
+		(982,65)
+		(982,1265)
 	}
 }
 polyline {
@@ -410,7 +410,7 @@ polyline {
 }
 polyline {
 	object {
-		x=688
+		x=705
 		y=66
 		width=0
 		height=1200
@@ -419,8 +419,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(688,66)
-		(688,1266)
+		(705,66)
+		(705,1266)
 	}
 }
 polyline {
@@ -453,7 +453,7 @@ text {
 }
 text {
 	object {
-		x=644
+		x=654
 		y=74
 		width=40
 		height=15
@@ -553,7 +553,7 @@ rectangle {
 }
 text {
 	object {
-		x=695
+		x=712
 		y=74
 		width=40
 		height=15
@@ -686,7 +686,7 @@ polyline {
 }
 text {
 	object {
-		x=684
+		x=700
 		y=30
 		width=40
 		height=15
@@ -694,7 +694,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="P0 Ping"
+	textix="P0,FPGA Ping"
 	align="horiz. centered"
 }
 text {
@@ -707,7 +707,7 @@ text {
 	"basic attribute" {
 		clr=0
 	}
-	textix="P0 Addressed"
+	textix="P0,FPGA Addressed"
 }
 
 text {
@@ -876,7 +876,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=710
 		y=95
 		width=7
 		height=20
@@ -892,7 +892,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=710
 		y=95
 		width=7
 		height=20
@@ -908,7 +908,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=95
 		width=7
 		height=20
@@ -924,7 +924,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=95
 		width=7
 		height=20
@@ -940,7 +940,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=98
 		width=45
 		height=15
@@ -956,7 +956,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=98
 		width=45
 		height=15
@@ -972,7 +972,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=98
 		width=45
 		height=15
@@ -1157,7 +1157,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=743
+		x=776
 		y=128
 		width=45
 		height=15
@@ -1173,7 +1173,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=128
 		width=45
 		height=15
@@ -1189,7 +1189,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=128
 		width=45
 		height=15
@@ -1205,7 +1205,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=128
 		width=45
 		height=15
@@ -1221,7 +1221,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=128
 		width=45
 		height=15
@@ -1237,7 +1237,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=128
 		width=45
 		height=15
@@ -1486,7 +1486,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=743
+		x=776
 		y=148
 		width=45
 		height=15
@@ -1502,7 +1502,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=148
 		width=45
 		height=15
@@ -1518,7 +1518,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=148
 		width=45
 		height=15
@@ -1534,7 +1534,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=148
 		width=45
 		height=15
@@ -1550,7 +1550,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=148
 		width=45
 		height=15
@@ -1566,7 +1566,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=148
 		width=45
 		height=15
@@ -1751,7 +1751,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=743
+		x=776
 		y=168
 		width=45
 		height=15
@@ -1767,7 +1767,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=168
 		width=45
 		height=15
@@ -1783,7 +1783,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=168
 		width=45
 		height=15
@@ -1799,7 +1799,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=168
 		width=45
 		height=15
@@ -1815,7 +1815,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=168
 		width=45
 		height=15
@@ -1831,7 +1831,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=168
 		width=45
 		height=15
@@ -2080,7 +2080,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=743
+		x=776
 		y=188
 		width=45
 		height=15
@@ -2096,7 +2096,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=188
 		width=45
 		height=15
@@ -2112,7 +2112,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=188
 		width=45
 		height=15
@@ -2128,7 +2128,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=188
 		width=45
 		height=15
@@ -2144,7 +2144,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=188
 		width=45
 		height=15
@@ -2160,7 +2160,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=188
 		width=45
 		height=15
@@ -2457,7 +2457,55 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=682
+		y=215
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2793T4:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=682
+		y=215
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2793T4:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=692
+		y=215
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2793T4:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=710
 		y=215
 		width=7
 		height=20
@@ -2473,7 +2521,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=710
 		y=215
 		width=7
 		height=20
@@ -2489,7 +2537,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=215
 		width=7
 		height=20
@@ -2505,7 +2553,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=215
 		width=7
 		height=20
@@ -2521,7 +2569,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=215
 		width=7
 		height=20
@@ -2537,7 +2585,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=215
 		width=7
 		height=20
@@ -2553,7 +2601,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
+		x=740
 		y=215
 		width=7
 		height=20
@@ -2567,9 +2615,57 @@ rectangle {
 		chan="XFELGPAC1DI2793T4:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
+rectangle {
+	object {
+		x=750
+		y=215
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2793T4:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=750
+		y=215
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2793T4:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=760
+		y=215
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2793T4:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
 "text update" {
 	object {
-		x=743
+		x=776
 		y=218
 		width=45
 		height=15
@@ -2585,7 +2681,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=218
 		width=45
 		height=15
@@ -2601,7 +2697,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=218
 		width=45
 		height=15
@@ -2617,7 +2713,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=218
 		width=45
 		height=15
@@ -2633,7 +2729,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=218
 		width=45
 		height=15
@@ -2649,7 +2745,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=218
 		width=45
 		height=15
@@ -2946,7 +3042,55 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=682
+		y=235
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2808SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=682
+		y=235
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2808SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=692
+		y=235
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2808SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=710
 		y=235
 		width=7
 		height=20
@@ -2962,7 +3106,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=710
 		y=235
 		width=7
 		height=20
@@ -2978,7 +3122,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=235
 		width=7
 		height=20
@@ -2994,7 +3138,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=235
 		width=7
 		height=20
@@ -3010,7 +3154,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=235
 		width=7
 		height=20
@@ -3026,7 +3170,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=235
 		width=7
 		height=20
@@ -3042,7 +3186,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
+		x=740
 		y=235
 		width=7
 		height=20
@@ -3056,9 +3200,57 @@ rectangle {
 		chan="XFELGPAC1DI2808SA3:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
+rectangle {
+	object {
+		x=750
+		y=235
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2808SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=750
+		y=235
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2808SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=760
+		y=235
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2808SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
 "text update" {
 	object {
-		x=743
+		x=776
 		y=238
 		width=45
 		height=15
@@ -3074,7 +3266,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=238
 		width=45
 		height=15
@@ -3090,7 +3282,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=238
 		width=45
 		height=15
@@ -3106,7 +3298,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=238
 		width=45
 		height=15
@@ -3122,7 +3314,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=238
 		width=45
 		height=15
@@ -3138,7 +3330,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=238
 		width=45
 		height=15
@@ -3435,7 +3627,55 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=682
+		y=255
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2820SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=682
+		y=255
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2820SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=692
+		y=255
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2820SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=710
 		y=255
 		width=7
 		height=20
@@ -3451,7 +3691,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=710
 		y=255
 		width=7
 		height=20
@@ -3467,7 +3707,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=255
 		width=7
 		height=20
@@ -3483,7 +3723,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=255
 		width=7
 		height=20
@@ -3499,7 +3739,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=255
 		width=7
 		height=20
@@ -3515,7 +3755,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=255
 		width=7
 		height=20
@@ -3531,7 +3771,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
+		x=740
 		y=255
 		width=7
 		height=20
@@ -3545,9 +3785,57 @@ rectangle {
 		chan="XFELGPAC1DI2820SA3:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
+rectangle {
+	object {
+		x=750
+		y=255
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2820SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=750
+		y=255
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2820SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=760
+		y=255
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2820SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
 "text update" {
 	object {
-		x=743
+		x=776
 		y=258
 		width=45
 		height=15
@@ -3563,7 +3851,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=258
 		width=45
 		height=15
@@ -3579,7 +3867,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=258
 		width=45
 		height=15
@@ -3595,7 +3883,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=258
 		width=45
 		height=15
@@ -3611,7 +3899,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=258
 		width=45
 		height=15
@@ -3627,7 +3915,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=258
 		width=45
 		height=15
@@ -3924,7 +4212,55 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=682
+		y=275
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2832SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=682
+		y=275
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2832SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=692
+		y=275
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2832SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=710
 		y=275
 		width=7
 		height=20
@@ -3940,7 +4276,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=710
 		y=275
 		width=7
 		height=20
@@ -3956,7 +4292,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=275
 		width=7
 		height=20
@@ -3972,7 +4308,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=275
 		width=7
 		height=20
@@ -3988,7 +4324,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=275
 		width=7
 		height=20
@@ -4004,7 +4340,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=275
 		width=7
 		height=20
@@ -4020,7 +4356,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
+		x=740
 		y=275
 		width=7
 		height=20
@@ -4034,9 +4370,57 @@ rectangle {
 		chan="XFELGPAC1DI2832SA3:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
+rectangle {
+	object {
+		x=750
+		y=275
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2832SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=750
+		y=275
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2832SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=760
+		y=275
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2832SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
 "text update" {
 	object {
-		x=743
+		x=776
 		y=278
 		width=45
 		height=15
@@ -4052,7 +4436,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=278
 		width=45
 		height=15
@@ -4068,7 +4452,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=278
 		width=45
 		height=15
@@ -4084,7 +4468,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=278
 		width=45
 		height=15
@@ -4100,7 +4484,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=278
 		width=45
 		height=15
@@ -4116,7 +4500,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=278
 		width=45
 		height=15
@@ -4413,7 +4797,55 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=682
+		y=295
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2845SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=682
+		y=295
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2845SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=692
+		y=295
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2845SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=710
 		y=295
 		width=7
 		height=20
@@ -4429,7 +4861,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=710
 		y=295
 		width=7
 		height=20
@@ -4445,7 +4877,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=295
 		width=7
 		height=20
@@ -4461,7 +4893,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=295
 		width=7
 		height=20
@@ -4477,7 +4909,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=295
 		width=7
 		height=20
@@ -4493,7 +4925,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=295
 		width=7
 		height=20
@@ -4509,7 +4941,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
+		x=740
 		y=295
 		width=7
 		height=20
@@ -4523,9 +4955,57 @@ rectangle {
 		chan="XFELGPAC1DI2845SA3:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
+rectangle {
+	object {
+		x=750
+		y=295
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2845SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=750
+		y=295
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2845SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=760
+		y=295
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2845SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
 "text update" {
 	object {
-		x=743
+		x=776
 		y=298
 		width=45
 		height=15
@@ -4541,7 +5021,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=298
 		width=45
 		height=15
@@ -4557,7 +5037,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=298
 		width=45
 		height=15
@@ -4573,7 +5053,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=298
 		width=45
 		height=15
@@ -4589,7 +5069,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=298
 		width=45
 		height=15
@@ -4605,7 +5085,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=298
 		width=45
 		height=15
@@ -4902,7 +5382,55 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=682
+		y=315
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2857SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=682
+		y=315
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2857SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=692
+		y=315
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2857SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=710
 		y=315
 		width=7
 		height=20
@@ -4918,7 +5446,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=710
 		y=315
 		width=7
 		height=20
@@ -4934,7 +5462,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=315
 		width=7
 		height=20
@@ -4950,7 +5478,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=315
 		width=7
 		height=20
@@ -4966,7 +5494,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=315
 		width=7
 		height=20
@@ -4982,7 +5510,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=315
 		width=7
 		height=20
@@ -4998,7 +5526,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
+		x=740
 		y=315
 		width=7
 		height=20
@@ -5012,9 +5540,57 @@ rectangle {
 		chan="XFELGPAC1DI2857SA3:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
+rectangle {
+	object {
+		x=750
+		y=315
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2857SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=750
+		y=315
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2857SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=760
+		y=315
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2857SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
 "text update" {
 	object {
-		x=743
+		x=776
 		y=318
 		width=45
 		height=15
@@ -5030,7 +5606,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=318
 		width=45
 		height=15
@@ -5046,7 +5622,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=318
 		width=45
 		height=15
@@ -5062,7 +5638,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=318
 		width=45
 		height=15
@@ -5078,7 +5654,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=318
 		width=45
 		height=15
@@ -5094,7 +5670,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=318
 		width=45
 		height=15
@@ -5391,7 +5967,55 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=682
+		y=335
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2869SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=682
+		y=335
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2869SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=692
+		y=335
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2869SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=710
 		y=335
 		width=7
 		height=20
@@ -5407,7 +6031,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=710
 		y=335
 		width=7
 		height=20
@@ -5423,7 +6047,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=335
 		width=7
 		height=20
@@ -5439,7 +6063,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=335
 		width=7
 		height=20
@@ -5455,7 +6079,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=335
 		width=7
 		height=20
@@ -5471,7 +6095,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=335
 		width=7
 		height=20
@@ -5487,7 +6111,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
+		x=740
 		y=335
 		width=7
 		height=20
@@ -5501,9 +6125,57 @@ rectangle {
 		chan="XFELGPAC1DI2869SA3:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
+rectangle {
+	object {
+		x=750
+		y=335
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2869SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=750
+		y=335
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2869SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=760
+		y=335
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2869SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
 "text update" {
 	object {
-		x=743
+		x=776
 		y=338
 		width=45
 		height=15
@@ -5519,7 +6191,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=338
 		width=45
 		height=15
@@ -5535,7 +6207,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=338
 		width=45
 		height=15
@@ -5551,7 +6223,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=338
 		width=45
 		height=15
@@ -5567,7 +6239,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=338
 		width=45
 		height=15
@@ -5583,7 +6255,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=338
 		width=45
 		height=15
@@ -5880,7 +6552,55 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=682
+		y=355
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2881SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=682
+		y=355
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2881SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=692
+		y=355
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2881SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=710
 		y=355
 		width=7
 		height=20
@@ -5896,7 +6616,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=710
 		y=355
 		width=7
 		height=20
@@ -5912,7 +6632,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=355
 		width=7
 		height=20
@@ -5928,7 +6648,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=355
 		width=7
 		height=20
@@ -5944,7 +6664,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=355
 		width=7
 		height=20
@@ -5960,7 +6680,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=355
 		width=7
 		height=20
@@ -5976,7 +6696,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
+		x=740
 		y=355
 		width=7
 		height=20
@@ -5990,9 +6710,57 @@ rectangle {
 		chan="XFELGPAC1DI2881SA3:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
+rectangle {
+	object {
+		x=750
+		y=355
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2881SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=750
+		y=355
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2881SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=760
+		y=355
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2881SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
 "text update" {
 	object {
-		x=743
+		x=776
 		y=358
 		width=45
 		height=15
@@ -6008,7 +6776,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=358
 		width=45
 		height=15
@@ -6024,7 +6792,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=358
 		width=45
 		height=15
@@ -6040,7 +6808,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=358
 		width=45
 		height=15
@@ -6056,7 +6824,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=358
 		width=45
 		height=15
@@ -6072,7 +6840,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=358
 		width=45
 		height=15
@@ -6369,7 +7137,55 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=682
+		y=375
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2893SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=682
+		y=375
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2893SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=692
+		y=375
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2893SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=710
 		y=375
 		width=7
 		height=20
@@ -6385,7 +7201,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=710
 		y=375
 		width=7
 		height=20
@@ -6401,7 +7217,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=375
 		width=7
 		height=20
@@ -6417,7 +7233,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=375
 		width=7
 		height=20
@@ -6433,7 +7249,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=375
 		width=7
 		height=20
@@ -6449,7 +7265,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=375
 		width=7
 		height=20
@@ -6465,7 +7281,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
+		x=740
 		y=375
 		width=7
 		height=20
@@ -6479,9 +7295,57 @@ rectangle {
 		chan="XFELGPAC1DI2893SA3:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
+rectangle {
+	object {
+		x=750
+		y=375
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2893SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=750
+		y=375
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2893SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=760
+		y=375
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2893SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
 "text update" {
 	object {
-		x=743
+		x=776
 		y=378
 		width=45
 		height=15
@@ -6497,7 +7361,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=378
 		width=45
 		height=15
@@ -6513,7 +7377,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=378
 		width=45
 		height=15
@@ -6529,7 +7393,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=378
 		width=45
 		height=15
@@ -6545,7 +7409,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=378
 		width=45
 		height=15
@@ -6561,7 +7425,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=378
 		width=45
 		height=15
@@ -6858,7 +7722,55 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=682
+		y=395
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2906SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=682
+		y=395
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2906SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=692
+		y=395
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2906SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=710
 		y=395
 		width=7
 		height=20
@@ -6874,7 +7786,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=710
 		y=395
 		width=7
 		height=20
@@ -6890,7 +7802,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=395
 		width=7
 		height=20
@@ -6906,7 +7818,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=395
 		width=7
 		height=20
@@ -6922,7 +7834,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=395
 		width=7
 		height=20
@@ -6938,7 +7850,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=395
 		width=7
 		height=20
@@ -6954,7 +7866,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
+		x=740
 		y=395
 		width=7
 		height=20
@@ -6968,9 +7880,57 @@ rectangle {
 		chan="XFELGPAC1DI2906SA3:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
+rectangle {
+	object {
+		x=750
+		y=395
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2906SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=750
+		y=395
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2906SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=760
+		y=395
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2906SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
 "text update" {
 	object {
-		x=743
+		x=776
 		y=398
 		width=45
 		height=15
@@ -6986,7 +7946,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=398
 		width=45
 		height=15
@@ -7002,7 +7962,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=398
 		width=45
 		height=15
@@ -7018,7 +7978,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=398
 		width=45
 		height=15
@@ -7034,7 +7994,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=398
 		width=45
 		height=15
@@ -7050,7 +8010,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=398
 		width=45
 		height=15
@@ -7347,7 +8307,55 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=682
+		y=415
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2918SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=682
+		y=415
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2918SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=692
+		y=415
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2918SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=710
 		y=415
 		width=7
 		height=20
@@ -7363,7 +8371,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=710
 		y=415
 		width=7
 		height=20
@@ -7379,7 +8387,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=415
 		width=7
 		height=20
@@ -7395,7 +8403,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=415
 		width=7
 		height=20
@@ -7411,7 +8419,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=415
 		width=7
 		height=20
@@ -7427,7 +8435,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=415
 		width=7
 		height=20
@@ -7443,7 +8451,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
+		x=740
 		y=415
 		width=7
 		height=20
@@ -7457,9 +8465,57 @@ rectangle {
 		chan="XFELGPAC1DI2918SA3:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
+rectangle {
+	object {
+		x=750
+		y=415
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2918SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=750
+		y=415
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2918SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=760
+		y=415
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2918SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
 "text update" {
 	object {
-		x=743
+		x=776
 		y=418
 		width=45
 		height=15
@@ -7475,7 +8531,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=418
 		width=45
 		height=15
@@ -7491,7 +8547,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=418
 		width=45
 		height=15
@@ -7507,7 +8563,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=418
 		width=45
 		height=15
@@ -7523,7 +8579,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=418
 		width=45
 		height=15
@@ -7539,7 +8595,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=418
 		width=45
 		height=15
@@ -7836,7 +8892,55 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=682
+		y=435
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2931SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=682
+		y=435
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2931SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=692
+		y=435
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2931SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=710
 		y=435
 		width=7
 		height=20
@@ -7852,7 +8956,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=710
 		y=435
 		width=7
 		height=20
@@ -7868,7 +8972,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=435
 		width=7
 		height=20
@@ -7884,7 +8988,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=435
 		width=7
 		height=20
@@ -7900,7 +9004,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=435
 		width=7
 		height=20
@@ -7916,7 +9020,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=435
 		width=7
 		height=20
@@ -7932,7 +9036,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
+		x=740
 		y=435
 		width=7
 		height=20
@@ -7946,9 +9050,57 @@ rectangle {
 		chan="XFELGPAC1DI2931SA3:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
+rectangle {
+	object {
+		x=750
+		y=435
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2931SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=750
+		y=435
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2931SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=760
+		y=435
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2931SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
 "text update" {
 	object {
-		x=743
+		x=776
 		y=438
 		width=45
 		height=15
@@ -7964,7 +9116,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=438
 		width=45
 		height=15
@@ -7980,7 +9132,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=438
 		width=45
 		height=15
@@ -7996,7 +9148,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=438
 		width=45
 		height=15
@@ -8012,7 +9164,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=438
 		width=45
 		height=15
@@ -8028,7 +9180,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=438
 		width=45
 		height=15
@@ -8310,7 +9462,55 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=682
+		y=455
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2943SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=682
+		y=455
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2943SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=692
+		y=455
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2943SA3:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=710
 		y=455
 		width=7
 		height=20
@@ -8326,7 +9526,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
+		x=710
 		y=455
 		width=7
 		height=20
@@ -8342,7 +9542,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=455
 		width=7
 		height=20
@@ -8358,7 +9558,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
+		x=720
 		y=455
 		width=7
 		height=20
@@ -8374,7 +9574,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=455
 		width=7
 		height=20
@@ -8390,7 +9590,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
+		x=730
 		y=455
 		width=7
 		height=20
@@ -8406,7 +9606,7 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
+		x=740
 		y=455
 		width=7
 		height=20
@@ -8420,9 +9620,57 @@ rectangle {
 		chan="XFELGPAC1DI2943SA3:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
+rectangle {
+	object {
+		x=750
+		y=455
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="XFELGPAC1DI2943SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=750
+		y=455
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="XFELGPAC1DI2943SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=760
+		y=455
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="XFELGPAC1DI2943SA3:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
 "text update" {
 	object {
-		x=743
+		x=776
 		y=458
 		width=45
 		height=15
@@ -8438,7 +9686,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
+		x=826
 		y=458
 		width=45
 		height=15
@@ -8454,7 +9702,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
+		x=881
 		y=458
 		width=45
 		height=15
@@ -8470,7 +9718,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
+		x=931
 		y=458
 		width=45
 		height=15
@@ -8486,7 +9734,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
+		x=986
 		y=458
 		width=45
 		height=15
@@ -8502,7 +9750,7 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
+		x=1036
 		y=458
 		width=45
 		height=15

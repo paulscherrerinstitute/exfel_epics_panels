@@ -319,18 +319,22 @@ rectangle {
     (unless bpm-1-gtx-hide (medm-rectangle-red-green-status-more 652 y locserv-name "BPM1-IBFB-GTX-STATUS" "(A & 0x80) > 0" "(A & 0x80) = 0" 7)) ;; RXSYNC
     (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 662 y locserv-name "BPM1-IBFB-ROUTER-STATUS" "(A & 0x02) = 0" "(A & 0x02) > 0" 7)) ;; P0 ping
     (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 672 y locserv-name "BPM1-IBFB-ROUTER-STATUS" nil "(A & 0x08) > 0" 7)) ;; P0 addressed
-    (unless bpm-2-gtx-hide (medm-rectangle-red-green-status-more 690 y locserv-name "COM-SFP-STATUS" "(A & 0x10000000) > 0" "(A & 0x10000000) = 0" 7))
-    (unless bpm-2-gtx-hide (medm-rectangle-red-green-status-more 700 y locserv-name "BPM2-IBFB-GTX-STATUS" "(A & 0x80) > 0" "(A & 0x80) = 0" 7))
-    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 710 y locserv-name "BPM2-IBFB-ROUTER-STATUS" "(A & 0x02) = 0" "(A & 0x02) > 0" 7))
-    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 720 y locserv-name "BPM2-IBFB-ROUTER-STATUS" nil "(A & 0x08) > 0" 7))
+    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 682 y locserv-name "BPM1-IBFB-ROUTER-STATUS" "(A & 0x01) = 0" "(A & 0x01) > 0" 7)) ;; FPGA ping
+    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 692 y locserv-name "BPM1-IBFB-ROUTER-STATUS" nil "(A & 0x04) > 0" 7)) ;; FPGA addressed
+    (unless bpm-2-gtx-hide (medm-rectangle-red-green-status-more 710 y locserv-name "COM-SFP-STATUS" "(A & 0x10000000) > 0" "(A & 0x10000000) = 0" 7))
+    (unless bpm-2-gtx-hide (medm-rectangle-red-green-status-more 720 y locserv-name "BPM2-IBFB-GTX-STATUS" "(A & 0x80) > 0" "(A & 0x80) = 0" 7))
+    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 730 y locserv-name "BPM2-IBFB-ROUTER-STATUS" "(A & 0x02) = 0" "(A & 0x02) > 0" 7))
+    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 740 y locserv-name "BPM2-IBFB-ROUTER-STATUS" nil "(A & 0x08) > 0" 7))
+    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 750 y locserv-name "BPM2-IBFB-ROUTER-STATUS" "(A & 0x01) = 0" "(A & 0x01) > 0" 7)) ;; FPGA ping
+    (unless (or bpm-1-gtx-hide bpm-2-gtx-hide) (medm-rectangle-red-green-status-more 760 y locserv-name "BPM2-IBFB-ROUTER-STATUS" nil "(A & 0x04) > 0" 7)) ;; FPGA addressed
     ;;(unless bpm-1-id-hide (medm-text-update 640 y locserv-name "BPM1-TRG-DELAY"))
     ;;(unless bpm-2-id-hide (medm-text-update 690 y locserv-name "BPM2-TRG-DELAY"))
-    (unless bpm-1-id-hide (medm-text-update 743 y locserv-name "BPM1-BPM-ID"))
-    (unless bpm-2-id-hide (medm-text-update 793 y locserv-name "BPM2-BPM-ID"))
-    (unless bpm-1-id-hide (medm-text-update 848 y locserv-name "BPM1-ROUTER-ENA"))
-    (unless bpm-2-id-hide (medm-text-update 898 y locserv-name "BPM2-ROUTER-ENA"))
-    (unless bpm-1-id-hide (medm-text-update 953 y locserv-name "BPM1-Q-THRESHOLD"))
-    (unless bpm-2-id-hide (medm-text-update 1003 y locserv-name "BPM2-Q-THRESHOLD"))
+    (unless bpm-1-id-hide (medm-text-update 776 y locserv-name "BPM1-BPM-ID"))
+    (unless bpm-2-id-hide (medm-text-update 826 y locserv-name "BPM2-BPM-ID"))
+    (unless bpm-1-id-hide (medm-text-update 881 y locserv-name "BPM1-ROUTER-ENA"))
+    (unless bpm-2-id-hide (medm-text-update 931 y locserv-name "BPM2-ROUTER-ENA"))
+    (unless bpm-1-id-hide (medm-text-update 986 y locserv-name "BPM1-Q-THRESHOLD"))
+    (unless bpm-2-id-hide (medm-text-update 1036 y locserv-name "BPM2-Q-THRESHOLD"))
     ;; (unless bpm-1-gtx-hide (medm-rectangle-red-green-status-more 1068 y locserv-name "BPM1-PING-STATUS" "(A & 0x02) = 0" "(A & 0x02) > 0"))
     ;; (unless bpm-2-gtx-hide (medm-rectangle-red-green-status-more 1073 y locserv-name "BPM2-PING-STATUS" "(A & 0x02) = 0" "(A & 0x02) > 0"))
     ;; (unless bpm-1-gtx-hide (medm-rectangle-red-green-status-more 1088 y locserv-name "BPM1-PING-STATUS" nil "(A & 0x08) > 0"))
