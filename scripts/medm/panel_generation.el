@@ -69,6 +69,26 @@
 }
 "  x y bpm-name bpm-name)))
 
+(defun medm-bpm-psi-shell-command (x y bpm-name)
+  "insert shell command"
+  (insert (format
+           "\"shell command\" {
+    object {
+        x=%d
+        y=%d
+		width=85
+        height=20
+	}
+    command[0] {
+        label=\"Terminal\"
+        name=\"./psi_qt.sh %s BPM_GPAC_CAV_SMP.ui &\"
+    }
+    clr=14
+    bclr=57
+    label=\"-%s\"
+}
+"  x y bpm-name bpm-name)))
+
 (defun medm-bpm-serv-message (x y bpm-name host-name port-number)
   (insert (format
 "\"message button\" {
@@ -290,6 +310,23 @@ rectangle {
 }
 " x (+ 3 y) (upcase dev-name) (upcase channel))))
 
+(defun medm-insert-line-psi (y bpm-1-name bpm-2-name ipc-name host-name locserv-name &optional hide-gtx-status hide-bpm-id)
+  ""
+  (unless (equal bpm-1-name "NONE")
+    (medm-bpm-psi-shell-command 90 y (concat ipc-name "-CAV1")))
+  (unless (equal bpm-2-name "NONE")
+    (medm-bpm-psi-shell-command 175 y (concat ipc-name "-CAV2")))
+  (medm-insert-line y bpm-1-name bpm-2-name ipc-name host-name locserv-name hide-gtx-status hide-bpm-id))
+
+(defun medm-insert-line-xfel (y bpm-1-name bpm-2-name ipc-name host-name locserv-name &optional hide-gtx-status hide-bpm-id)
+  ""
+  (unless (equal bpm-1-name "NONE")
+    (medm-bpm-serv-message 90 y bpm-1-name host-name 51236))
+  (unless (equal bpm-2-name "NONE")
+    (medm-bpm-serv-message 175 y bpm-2-name host-name 51238))
+  (medm-insert-line y bpm-1-name bpm-2-name ipc-name host-name locserv-name hide-gtx-status hide-bpm-id))
+
+  
 (defun medm-insert-line (y bpm-1-name bpm-2-name ipc-name host-name locserv-name &optional hide-gtx-status hide-bpm-id)
   ""
   (let ((locserv-name (if locserv-name locserv-name (if bpm-1-name bpm-1-name bpm-2-name)))
@@ -304,10 +341,10 @@ rectangle {
     (when (equal bpm-2-name "NONE")
       (setq bpm-2-name nil))
 
-    (when bpm-1-name
-      (medm-bpm-serv-message 90 y bpm-1-name host-name 51236))
-    (when bpm-2-name
-      (medm-bpm-serv-message 175 y bpm-2-name host-name 51238))
+    ;; (when bpm-1-name
+    ;;   (medm-bpm-serv-message 90 y bpm-1-name host-name 51236))
+    ;; (when bpm-2-name
+    ;;   (medm-bpm-serv-message 175 y bpm-2-name host-name 51238))
     (medm-related-gpac-service 260 y host-name ipc-name)
     (medm-rectangle-red-green-status 325 y host-name)
     (medm-related-xfeltim 330 y host-name)
@@ -347,23 +384,23 @@ rectangle {
 ;;     (let ((y-offset 40))
 ;;       (let ((y (+ y-offset 55)))
 ;;         (dolist (line ffcol-list)
-;;           (medm-insert-line y (fourth line) (fifth line) (third line) (second line) (sixth line))
+;;           (medm-insert-line-xfel y (fourth line) (fifth line) (third line) (second line) (sixth line))
 ;;           (setq y (+ 20 y))))
 ;;       (let ((y (+ y-offset 85)))
 ;;         (dolist (line ffb-list)
-;;           (medm-insert-line y (fourth line) (fifth line) (third line) (second line) (sixth line) (seventh line))
+;;           (medm-insert-line-xfel y (fourth line) (fifth line) (third line) (second line) (sixth line) (seventh line))
 ;;           (setq y (+ 20 y))))
 ;;       (let ((y (+ y-offset 175)))
 ;;         (dolist (line sa1-list)
-;;           (medm-insert-line y (fourth line) (fifth line) (third line) (second line) nil)
+;;           (medm-insert-line-xfel y (fourth line) (fifth line) (third line) (second line) nil)
 ;;           (setq y (+ 20 y))))
 ;;       (let ((y (+ y-offset 565)))
 ;;         (dolist (line sa2-list)
-;;           (medm-insert-line y (fourth line) (fifth line) (third line) (second line) nil)
+;;           (medm-insert-line-xfel y (fourth line) (fifth line) (third line) (second line) nil)
 ;;           (setq y (+ 20 y))))
 ;;       (let ((y (+ y-offset 955)))
 ;;         (dolist (line sa3-list)
-;;           (medm-insert-line y (fourth line) (fifth line) (third line) (second line) nil)
+;;           (medm-insert-line-xfel y (fourth line) (fifth line) (third line) (second line) nil)
 ;;           (setq y (+ 20 y)))))))
 
 (defun ibfb-xfel ()
@@ -382,15 +419,15 @@ rectangle {
      (let ((y-offset 40))
        (let ((y (+ y-offset 55)))
          (dolist (line ffcol-list)
-           (medm-insert-line y (fourth line) (fifth line) (third line) (second line) (sixth line))
+           (medm-insert-line-xfel y (fourth line) (fifth line) (third line) (second line) (sixth line))
            (setq y (+ 20 y))))
        (let ((y (+ y-offset 85)))
          (dolist (line ffb-list)
-           (medm-insert-line y (fourth line) (fifth line) (third line) (second line) (sixth line) (seventh line) (eighth line))
+           (medm-insert-line-xfel y (fourth line) (fifth line) (third line) (second line) (sixth line) (seventh line) (eighth line))
            (setq y (+ 20 y))))
        (let ((y (+ y-offset 175)))
          (dolist (line mbu-list-name)
-           (medm-insert-line y (fourth line) (fifth line) (third line) (second line) (sixth line))
+           (medm-insert-line-xfel y (fourth line) (fifth line) (third line) (second line) (sixth line))
            (setq y (+ 20 y))))))))
        
 
@@ -405,14 +442,14 @@ rectangle {
                             ("212" "ipc1536"           "IPC1536" "IPC1536-IBFB" "IPC1536-IBFB") 
 
                             )))
-    (with-temp-file "IBFBCAV_PSI.adl"
+    (with-temp-file (concat "../../App/config/medm/" "IBFBCAV_PSI.adl")
       (insert-file-contents "IBFBCAV_PSI_template.adl")
       (goto-char (point-max))
       (insert "\n")
       (let ((y-offset 40))
         (let ((y (+ y-offset 55)))
           (dolist (line ibfbcav-psi-list)
-            (medm-insert-line y (fourth line) (fifth line) (third line) (second line) (sixth line))
+            (medm-insert-line-psi y (fourth line) (fifth line) (third line) (second line) (sixth line))
             (setq y (+ 20 y))))))))
 
 
