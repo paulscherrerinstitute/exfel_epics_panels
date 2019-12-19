@@ -1,14 +1,14 @@
 
 file {
-	name="/home/goran/epics/xfel/App/config/medm/F_DI_FIN250_BPM_GPAC_BUT_RFFE.adl"
+	name="/afs/psi.ch/user/r/rybaniec_r/ibfb/exfel_epics_panels/App/config/medm/F_DI_FIN250_BPM_GPAC_BUT_RFFE.adl"
 	version=030105
 }
 display {
 	object {
-		x=10
-		y=92
-		width=1000
-		height=655
+		x=734
+		y=485
+		width=998
+		height=685
 	}
 	clr=14
 	bclr=4
@@ -2125,7 +2125,7 @@ text {
 polyline {
 	object {
 		x=560
-		y=530
+		y=560
 		width=440
 		height=0
 	}
@@ -2136,8 +2136,8 @@ polyline {
 		chan="$(DEV):RFFE-HS-5V-I.EGU"
 	}
 	points {
-		(560,530)
-		(1000,530)
+		(560,560)
+		(1000,560)
 	}
 }
 rectangle {
@@ -2588,7 +2588,7 @@ polyline {
 "choice button" {
 	object {
 		x=690
-		y=540
+		y=569
 		width=50
 		height=15
 	}
@@ -2602,7 +2602,7 @@ polyline {
 text {
 	object {
 		x=590
-		y=540
+		y=569
 		width=60
 		height=10
 	}
@@ -2614,7 +2614,7 @@ text {
 "wheel switch" {
 	object {
 		x=690
-		y=560
+		y=589
 		width=50
 		height=30
 	}
@@ -2629,7 +2629,7 @@ text {
 text {
 	object {
 		x=635
-		y=569
+		y=598
 		width=50
 		height=10
 	}
@@ -2642,7 +2642,7 @@ text {
 text {
 	object {
 		x=635
-		y=599
+		y=628
 		width=50
 		height=10
 	}
@@ -2655,7 +2655,7 @@ text {
 "wheel switch" {
 	object {
 		x=690
-		y=589
+		y=618
 		width=50
 		height=30
 	}
@@ -2670,16 +2670,16 @@ text {
 "choice button" {
 	object {
 		x=760
-		y=105
+		y=106
 		width=120
-		height=15
+		height=30
 	}
 	control {
 		chan="$(DEV):AGC-ENA"
 		clr=14
 		bclr=4
 	}
-	stacking="column"
+	stacking="row column"
 }
 polyline {
 	object {
@@ -3220,7 +3220,7 @@ polyline {
 		x=740
 		y=80
 		width=0
-		height=450
+		height=480
 	}
 	"basic attribute" {
 		clr=0
@@ -3230,7 +3230,7 @@ polyline {
 	}
 	points {
 		(740,80)
-		(740,530)
+		(740,560)
 	}
 }
 text {
@@ -3582,7 +3582,7 @@ text {
 text {
 	object {
 		x=775
-		y=550
+		y=579
 		width=120
 		height=10
 	}
@@ -3594,7 +3594,7 @@ text {
 text {
 	object {
 		x=750
-		y=535
+		y=564
 		width=20
 		height=10
 	}
@@ -3606,7 +3606,7 @@ text {
 text {
 	object {
 		x=775
-		y=560
+		y=589
 		width=120
 		height=10
 	}
@@ -3618,7 +3618,7 @@ text {
 text {
 	object {
 		x=775
-		y=580
+		y=609
 		width=120
 		height=10
 	}
@@ -3630,7 +3630,7 @@ text {
 text {
 	object {
 		x=775
-		y=570
+		y=599
 		width=120
 		height=10
 	}
@@ -3642,7 +3642,7 @@ text {
 text {
 	object {
 		x=775
-		y=590
+		y=619
 		width=120
 		height=10
 	}
@@ -3654,7 +3654,7 @@ text {
 text {
 	object {
 		x=775
-		y=600
+		y=629
 		width=120
 		height=10
 	}
@@ -3666,7 +3666,7 @@ text {
 text {
 	object {
 		x=775
-		y=620
+		y=649
 		width=120
 		height=10
 	}
@@ -3678,7 +3678,7 @@ text {
 text {
 	object {
 		x=775
-		y=610
+		y=639
 		width=120
 		height=10
 	}
@@ -3690,7 +3690,7 @@ text {
 text {
 	object {
 		x=775
-		y=630
+		y=659
 		width=120
 		height=10
 	}
@@ -3702,7 +3702,7 @@ text {
 text {
 	object {
 		x=635
-		y=630
+		y=659
 		width=50
 		height=10
 	}
@@ -3715,7 +3715,7 @@ text {
 "wheel switch" {
 	object {
 		x=690
-		y=620
+		y=649
 		width=50
 		height=30
 	}
@@ -3790,7 +3790,7 @@ byte {
 byte {
 	object {
 		x=750
-		y=550
+		y=579
 		width=20
 		height=90
 	}
@@ -4160,7 +4160,7 @@ polyline {
 		x=900
 		y=80
 		width=0
-		height=450
+		height=480
 	}
 	"basic attribute" {
 		clr=0
@@ -4170,13 +4170,13 @@ polyline {
 	}
 	points {
 		(900,80)
-		(900,530)
+		(900,560)
 	}
 }
 "wheel switch" {
 	object {
 		x=940
-		y=585
+		y=614
 		width=50
 		height=30
 	}
@@ -4191,7 +4191,7 @@ polyline {
 text {
 	object {
 		x=880
-		y=595
+		y=624
 		width=50
 		height=10
 	}
@@ -4215,5 +4215,66 @@ text {
 	}
 	align="horiz. centered"
 	limits {
+	}
+}
+text {
+	object {
+		x=746
+		y=540
+		width=20
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Destination Detected"
+}
+bar {
+	object {
+		x=940
+		y=295
+		width=15
+		height=15
+	}
+	monitor {
+		chan="$(DEV):AGC-STATE"
+		clr=14
+		bclr=4
+	}
+	direction="down"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=875
+		y=540
+		width=20
+		height=12
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="$(DEV):X2TIM-DEST-BUNCH-FOUND-RD"
+	}
+}
+rectangle {
+	object {
+		x=875
+		y=540
+		width=20
+		height=12
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="$(DEV):X2TIM-DEST-BUNCH-FOUND-RD"
 	}
 }

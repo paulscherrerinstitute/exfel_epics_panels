@@ -69,7 +69,7 @@
 }
 "  x y bpm-name bpm-name)))
 
-(defun medm-bpm-psi-shell-command (x y bpm-name)
+(defun medm-bpm-psi-shell-command-cav (x y bpm-name)
   "insert shell command"
   (insert (format
            "\"shell command\" {
@@ -88,6 +88,46 @@
     label=\"-%s\"
 }
 "  x y bpm-name bpm-name)))
+
+(defun medm-bpm-psi-shell-command-ren (x y bpm-name)
+  "insert shell command"
+  (insert (format
+           "\"shell command\" {
+    object {
+        x=%d
+        y=%d
+		width=85
+        height=20
+	}
+    command[0] {
+        label=\"Terminal\"
+        name=\"./psi_qt.sh %s BPM_GPAC_REN_SMP.ui &\"
+    }
+    clr=14
+    bclr=57
+    label=\"-%s\"
+}
+"  x y bpm-name bpm-name)))
+
+(defun medm-bpm-psi-related-but (x y bpm-name)
+  (insert (format 
+           "\"related display\" {
+	object {
+		x=%d
+		y=%d
+		width=85
+		height=20
+	}
+	display[0] {
+		label=\"BPM\"
+		name=\"F_DI_FIN250_BPM_GPAC_BUT.adl\"
+		args=\"DEV=%s\"
+	}
+	clr=14
+	bclr=57
+	label=\"-%s\"
+}
+" x y bpm-name bpm-name)))
 
 (defun medm-bpm-serv-message (x y bpm-name host-name port-number)
   (insert (format
@@ -310,12 +350,37 @@ rectangle {
 }
 " x (+ 3 y) (upcase dev-name) (upcase channel))))
 
-(defun medm-insert-line-psi (y bpm-1-name bpm-2-name ipc-name host-name locserv-name &optional hide-gtx-status hide-bpm-id)
+(defun medm-insert-line-psi (y bpm-1-name bpm-2-name ipc-name host-name locserv-name cav-type &optional hide-gtx-status hide-bpm-id)
   ""
-  (unless (equal bpm-1-name "NONE")
-    (medm-bpm-psi-shell-command 90 y (concat ipc-name "-CAV1")))
-  (unless (equal bpm-2-name "NONE")
-    (medm-bpm-psi-shell-command 175 y (concat ipc-name "-CAV2")))
+  (case (first cav-type)
+    (:cav
+     (unless (equal bpm-1-name "NONE")
+       (medm-bpm-psi-shell-command-cav 90 y (concat ipc-name "-CAV1"))))
+     ;;(unless (equal bpm-2-name "NONE")
+     ;;  (medm-bpm-psi-shell-command-cav 175 y (concat ipc-name "-CAV2"))))
+    (:but
+     (unless (equal bpm-1-name "NONE")
+       (medm-bpm-psi-related-but 90 y (concat ipc-name "-BUT1"))))
+     ;;(unless (equal bpm-2-name "NONE")
+     ;;  (medm-bpm-psi-shell-command-cav 175 y (concat ipc-name "-BUT2"))))
+    (:ren
+     (unless (equal bpm-1-name "NONE")
+       (medm-bpm-psi-shell-command-ren 90 y (concat ipc-name "-REN1")))))
+     ;;(unless (equal bpm-2-name "NONE")
+  ;;  (medm-bpm-psi-shell-command-cav 175 y (concat ipc-name "-REN2")))))
+
+  (case (second cav-type)
+    (:cav
+     (unless (equal bpm-2-name "NONE")
+      (medm-bpm-psi-shell-command-cav 175 y (concat ipc-name "-CAV2"))))
+    (:but
+     (unless (equal bpm-2-name "NONE")
+      (medm-bpm-psi-related-but 175 y (concat ipc-name "-BUT2"))))
+    (:ren
+     (unless (equal bpm-2-name "NONE")
+       (medm-bpm-psi-shell-command-ren 175 y (concat ipc-name "-REN2")))))
+    
+  
   (medm-insert-line y bpm-1-name bpm-2-name ipc-name host-name locserv-name hide-gtx-status hide-bpm-id))
 
 (defun medm-insert-line-xfel (y bpm-1-name bpm-2-name ipc-name host-name locserv-name &optional hide-gtx-status hide-bpm-id)
@@ -435,11 +500,13 @@ rectangle {
   "add test"
   (interactive)
   (let ((ibfbcav-psi-list '(
-                            ("210" "xfelgpac1di1899tl" "IPC1627" "BPMI-1860-TL" "BPMI-1878-TL")
-                            ("235" "xfelgpac2di1899tl" "IPC1576" "BPMI-1910-TL" "BPMI-1930-TL")
-                            ("255" "xfelgpac3di1899tl" "IPC1488" "BPMI-1863-TL" "BPMI-1889-TL")
-                            ("275" "ipc1629"           "IPC1629" "IPC1629-IBFB" "IPC1629-IBFB")
-                            ("212" "ipc1536"           "IPC1536" "IPC1536-IBFB" "IPC1536-IBFB") 
+                            ("210" "xfelgpac1di1899tl" "IPC1627" "BPMI-1860-TL" "BPMI-1878-TL" (:cav  :cav))
+                            ("235" "xfelgpac2di1899tl" "IPC1576" "BPMI-1910-TL" "BPMI-1930-TL" (:cav  :cav))
+                            ("255" "xfelgpac3di1899tl" "IPC1488" "BPMI-1863-TL" "BPMI-1889-TL" (:cav  :cav))
+                            ("275" "ipc1629"           "IPC1629" "IPC1629-IBFB" "IPC1629-IBFB" (:cav  :cav))
+                            ("295" "ipc1536"           "IPC1536" "IPC1536-IBFB" "IPC1536-IBFB" (:cav  :cav))
+                            ("315" "ipc1716"           "IPC1716" "IPC1716-REN" "IPC1716-REN" (:ren :ren))
+                            ("335" "ipc1708"           "IPC1708" "IPC1708-BUT" "IPC1708-BUT" (:but :but))
 
                             )))
     (with-temp-file (concat "../../App/config/medm/" "IBFBCAV_PSI.adl")
@@ -449,7 +516,7 @@ rectangle {
       (let ((y-offset 40))
         (let ((y (+ y-offset 55)))
           (dolist (line ibfbcav-psi-list)
-            (medm-insert-line-psi y (fourth line) (fifth line) (third line) (second line) (sixth line))
+            (medm-insert-line-psi y (fourth line) (fifth line) (third line) (second line) nil (sixth line))
             (setq y (+ 20 y))))))))
 
 

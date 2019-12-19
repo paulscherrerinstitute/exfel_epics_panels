@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>307</width>
-    <height>450</height>
+    <width>300</width>
+    <height>506</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -25,7 +25,7 @@
   <property name="maximumSize">
    <size>
     <width>16777215</width>
-    <height>16777215</height>
+    <height>100000</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -107,13 +107,10 @@
       </property>
       <property name="font">
        <font>
-        <pointsize>9</pointsize>
+        <pointsize>12</pointsize>
         <weight>50</weight>
         <bold>false</bold>
        </font>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::NoFrame</enum>
       </property>
       <property name="text">
        <string>$(DEV)</string>
@@ -147,6 +144,9 @@
         <blue>255</blue>
        </color>
       </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
      </widget>
     </item>
     <item>
@@ -168,7 +168,7 @@
     <item>
      <widget class="QGroupBox" name="groupBox">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -256,7 +256,7 @@
        <property name="minValue">
         <double>0.000000000000000</double>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>caLineEdit::None</enum>
        </property>
        <property name="formatType">
@@ -280,7 +280,7 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>8</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="channel" stdset="0">
@@ -318,7 +318,7 @@
        <property name="minValue">
         <double>0.000000000000000</double>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>caLineEdit::Height</enum>
        </property>
        <property name="formatType">
@@ -392,7 +392,7 @@
        <property name="minValue">
         <double>0.000000000000000</double>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>caLineEdit::None</enum>
        </property>
        <property name="formatType">
@@ -485,7 +485,7 @@
        <property name="endBit">
         <number>1</number>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>EPushButton::None</enum>
        </property>
       </widget>
@@ -799,7 +799,7 @@
         </property>
         <property name="font">
          <font>
-          <pointsize>8</pointsize>
+          <pointsize>10</pointsize>
          </font>
         </property>
         <property name="channel" stdset="0">
@@ -837,7 +837,7 @@
         <property name="minValue">
          <double>0.000000000000000</double>
         </property>
-        <property name="fontScaleMode">
+        <property name="fontScaleMode" stdset="0">
          <enum>caLineEdit::Height</enum>
         </property>
         <property name="formatType">
@@ -855,7 +855,7 @@
         </property>
         <property name="font">
          <font>
-          <pointsize>8</pointsize>
+          <pointsize>10</pointsize>
          </font>
         </property>
         <property name="channel" stdset="0">
@@ -893,7 +893,7 @@
         <property name="minValue">
          <double>0.000000000000000</double>
         </property>
-        <property name="fontScaleMode">
+        <property name="fontScaleMode" stdset="0">
          <enum>caLineEdit::Height</enum>
         </property>
         <property name="formatType">
@@ -981,8 +981,14 @@
       </property>
       <property name="minimumSize">
        <size>
-        <width>285</width>
-        <height>115</height>
+        <width>307</width>
+        <height>123</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>1000</height>
        </size>
       </property>
       <property name="font">
@@ -1051,7 +1057,7 @@
        <property name="minValue">
         <double>0.000000000000000</double>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>caLineEdit::None</enum>
        </property>
        <property name="formatType">
@@ -1113,7 +1119,7 @@
        <property name="font">
         <font>
          <family>Lucida Sans Typewriter</family>
-         <pointsize>8</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="channel" stdset="0">
@@ -1151,7 +1157,7 @@
        <property name="minValue">
         <double>0.000000000000000</double>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>caLineEdit::Height</enum>
        </property>
        <property name="formatType">
@@ -1214,7 +1220,7 @@
        <property name="minValue">
         <double>0.000000000000000</double>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>caLineEdit::None</enum>
        </property>
        <property name="formatType">
@@ -1270,7 +1276,7 @@
        <property name="endBit">
         <number>1</number>
        </property>
-       <property name="fontScaleMode">
+       <property name="fontScaleMode" stdset="0">
         <enum>EPushButton::None</enum>
        </property>
       </widget>
@@ -1653,7 +1659,7 @@
         <property name="font">
          <font>
           <family>Lucida Sans Typewriter</family>
-          <pointsize>8</pointsize>
+          <pointsize>10</pointsize>
          </font>
         </property>
         <property name="channel" stdset="0">
@@ -1691,7 +1697,7 @@
         <property name="minValue">
          <double>0.000000000000000</double>
         </property>
-        <property name="fontScaleMode">
+        <property name="fontScaleMode" stdset="0">
          <enum>caLineEdit::Height</enum>
         </property>
         <property name="formatType">
@@ -1710,7 +1716,7 @@
         <property name="font">
          <font>
           <family>Lucida Sans Typewriter</family>
-          <pointsize>8</pointsize>
+          <pointsize>10</pointsize>
          </font>
         </property>
         <property name="channel" stdset="0">
@@ -1748,7 +1754,7 @@
         <property name="minValue">
          <double>0.000000000000000</double>
         </property>
-        <property name="fontScaleMode">
+        <property name="fontScaleMode" stdset="0">
          <enum>caLineEdit::Height</enum>
         </property>
         <property name="formatType">
@@ -1761,15 +1767,21 @@
     <item>
      <widget class="QGroupBox" name="groupBox_3">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
       <property name="minimumSize">
        <size>
-        <width>285</width>
-        <height>0</height>
+        <width>300</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>350</height>
        </size>
       </property>
       <property name="font">
@@ -1782,237 +1794,376 @@
       <property name="title">
        <string>Gain Feedback</string>
       </property>
-      <layout class="QGridLayout" name="gridLayout_2">
-       <property name="leftMargin">
-        <number>5</number>
+      <widget class="caMenu" name="caMenu_2">
+       <property name="geometry">
+        <rect>
+         <x>145</x>
+         <y>37</y>
+         <width>73</width>
+         <height>18</height>
+        </rect>
        </property>
-       <property name="topMargin">
-        <number>2</number>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
        </property>
-       <property name="rightMargin">
-        <number>2</number>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
        </property>
-       <property name="bottomMargin">
-        <number>2</number>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
        </property>
-       <property name="horizontalSpacing">
-        <number>2</number>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEV):XY-GAIN-FB-ON</string>
        </property>
-       <item row="1" column="1">
-        <widget class="caMenu" name="caMenu_2">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <weight>50</weight>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="channel" stdset="0">
-          <string notr="true">$(DEV):XY-GAIN-FB-ON</string>
-         </property>
-         <property name="colorMode">
-          <enum>caMenu::Static</enum>
-         </property>
-         <property name="foreground">
-          <color>
-           <red>0</red>
-           <green>0</green>
-           <blue>0</blue>
-          </color>
-         </property>
-         <property name="background">
-          <color>
-           <red>187</red>
-           <green>193</green>
-           <blue>135</blue>
-          </color>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="caMenu" name="caMenu_1">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <weight>50</weight>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="channel" stdset="0">
-          <string notr="true">$(DEV):REF-GAIN-FB-ON</string>
-         </property>
-         <property name="colorMode">
-          <enum>caMenu::Static</enum>
-         </property>
-         <property name="foreground">
-          <color>
-           <red>0</red>
-           <green>0</green>
-           <blue>0</blue>
-          </color>
-         </property>
-         <property name="background">
-          <color>
-           <red>187</red>
-           <green>193</green>
-           <blue>135</blue>
-          </color>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="caLineEdit" name="calineedit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>20</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>8</pointsize>
-          </font>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-         </property>
-         <property name="channel" stdset="0">
-          <string notr="true">$(DEV):REF-GAIN-FB-VAL</string>
-         </property>
-         <property name="background">
-          <color>
-           <red>187</red>
-           <green>187</green>
-           <blue>187</blue>
-          </color>
-         </property>
-         <property name="colorMode">
-          <enum>caLineEdit::Static</enum>
-         </property>
-         <property name="fontScaleMode">
-          <enum>caLineEdit::None</enum>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="caLineEdit" name="calineedit_2">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>20</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>8</pointsize>
-          </font>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-         </property>
-         <property name="channel" stdset="0">
-          <string notr="true">$(DEV):XY-GAIN-FB-VAL</string>
-         </property>
-         <property name="background">
-          <color>
-           <red>187</red>
-           <green>187</green>
-           <blue>187</blue>
-          </color>
-         </property>
-         <property name="colorMode">
-          <enum>caLineEdit::Static</enum>
-         </property>
-         <property name="fontScaleMode">
-          <enum>caLineEdit::None</enum>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="0">
-        <widget class="QLabel" name="label_46">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>15</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <weight>50</weight>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>REF</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QLabel" name="label_47">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>15</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <weight>50</weight>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>X/Y</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-      </layout>
+       <property name="colorMode">
+        <enum>caMenu::Static</enum>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="background">
+        <color>
+         <red>187</red>
+         <green>193</green>
+         <blue>135</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="caMenu" name="caMenu_1">
+       <property name="geometry">
+        <rect>
+         <x>6</x>
+         <y>37</y>
+         <width>73</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEV):REF-GAIN-FB-ON</string>
+       </property>
+       <property name="colorMode">
+        <enum>caMenu::Static</enum>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="background">
+        <color>
+         <red>187</red>
+         <green>193</green>
+         <blue>135</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="caLineEdit" name="calineedit">
+       <property name="geometry">
+        <rect>
+         <x>6</x>
+         <y>61</y>
+         <width>125</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEV):REF-GAIN-FB-VAL</string>
+       </property>
+       <property name="background">
+        <color>
+         <red>187</red>
+         <green>187</green>
+         <blue>187</blue>
+        </color>
+       </property>
+       <property name="colorMode">
+        <enum>caLineEdit::Static</enum>
+       </property>
+       <property name="fontScaleMode" stdset="0">
+        <enum>caLineEdit::None</enum>
+       </property>
+      </widget>
+      <widget class="caLineEdit" name="calineedit_2">
+       <property name="geometry">
+        <rect>
+         <x>145</x>
+         <y>61</y>
+         <width>125</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEV):XY-GAIN-FB-VAL</string>
+       </property>
+       <property name="background">
+        <color>
+         <red>187</red>
+         <green>187</green>
+         <blue>187</blue>
+        </color>
+       </property>
+       <property name="colorMode">
+        <enum>caLineEdit::Static</enum>
+       </property>
+       <property name="fontScaleMode" stdset="0">
+        <enum>caLineEdit::None</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_46">
+       <property name="geometry">
+        <rect>
+         <x>6</x>
+         <y>16</y>
+         <width>19</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>15</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>REF</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_47">
+       <property name="geometry">
+        <rect>
+         <x>145</x>
+         <y>16</y>
+         <width>16</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>15</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>X/Y</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="caTextEntry" name="catextentry">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>90</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEV):X2TIM-DEST-BUNCH-MASK</string>
+       </property>
+       <property name="background">
+        <color>
+         <red>187</red>
+         <green>187</green>
+         <blue>187</blue>
+        </color>
+       </property>
+       <property name="colorMode">
+        <enum>caLineEdit::Static</enum>
+       </property>
+       <property name="formatType">
+        <enum>caLineEdit::hexadecimal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_56">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>115</y>
+         <width>181</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>15</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Bunch in Destination Detected</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="caLed" name="caled">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>115</y>
+         <width>26</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="rectangular">
+        <bool>true</bool>
+       </property>
+       <property name="gradientEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">$(DEV):X2TIM-DEST-BUNCH-FOUND-RD</string>
+       </property>
+       <property name="trueColor">
+        <color>
+         <red>0</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_57">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>146</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>15</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Bunch Destination Mask</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
      </widget>
     </item>
     <item>
      <widget class="QGroupBox" name="groupBox_4">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -2020,7 +2171,7 @@
       <property name="minimumSize">
        <size>
         <width>285</width>
-        <height>0</height>
+        <height>30</height>
        </size>
       </property>
       <property name="font">
@@ -2155,6 +2306,11 @@
    <class>caGraphics</class>
    <extends>QWidget</extends>
    <header>caGraphics</header>
+  </customwidget>
+  <customwidget>
+   <class>caLed</class>
+   <extends>QWidget</extends>
+   <header>caLed</header>
   </customwidget>
   <customwidget>
    <class>caLineEdit</class>
