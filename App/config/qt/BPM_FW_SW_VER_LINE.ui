@@ -539,7 +539,7 @@
     <enum>caGraphics::Calc</enum>
    </property>
    <property name="visibilityCalc">
-    <string notr="true">(A&amp;0x00040004)=0x40</string>
+    <string notr="true">(A&amp;0x00040004)=0x04</string>
    </property>
    <property name="channel" stdset="0">
     <string notr="true">$(GPAC):FW-SW-CHECK</string>
