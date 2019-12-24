@@ -905,6 +905,51 @@
     <string notr="true">$(GPAC):FW-SW-CHECK</string>
    </property>
   </widget>
+  <widget class="caGraphics" name="cagraphics_13">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>0</y>
+     <width>246</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>150</red>
+     <green>150</green>
+     <blue>150</blue>
+    </color>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+   <property name="lineSize">
+    <number>1</number>
+   </property>
+   <property name="lineColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caGraphics::Static</enum>
+   </property>
+   <property name="visibility">
+    <enum>caGraphics::IfZero</enum>
+   </property>
+   <property name="visibilityCalc">
+    <string notr="true"/>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):S7GPAC-STATUS</string>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>
