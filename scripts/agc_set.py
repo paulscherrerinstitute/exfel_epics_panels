@@ -1,75 +1,78 @@
+#!/usr/bin/python3
+
+import argparse
+import collections
 import epics
 import time
 from multiprocessing import Process, Queue
 import pexpect
 from datetime import datetime
 
-inj = (
-("xfelgpac1di30i1",  "0xFE", "0xFE", "but" , "but"     ),
-("xfelgpac1di55i1",  "0xFA", "0xFA", "but" , "ren"     ),
-("xfelgpac2di55i1",  "0xFA", "0xFA", "cav" , "cav"     ),
-("xfelgpac3di55i1",  "0xFA", "0xFA", "but" , "cav"     ),
-("xfelgpac1di59i1",  "0xFA", "0xFA", "but" , "but"     ),
-("xfelgpac1di94i1",  "0xEA", "0xEA", "but" , "but"     ),
-("xfelgpac2di94i1",  "0xEA", "0xEA", "but" , "but"     ),
-("xfelgpac3di94i1",  "0xEA", "0xEA", "but" , ""        ),
-("xfelgpac4di94i1",  "0xEA", "0xEA", "cav" , "cav"     ),
-("xfelgpac1di107i1", "0xEA", "0xEA", "but" , "but"     ),
-("xfelgpac2di107i1", "0xEA", "0xEA", "but" , "but"     ),
-("xfelgpac1di160l1", "0xEA", "0xEA", "but" , "ren"     ),
-("xfelgpac2di160l1", "0xEA", "0xEA", ""    , "ren"    )
-)
 
-rest=(
-    # ("xfelgpac1di176b1", "0xEA", "0xEA", "but", "cav"),
-    # ("xfelgpac1di203b1", "0xEA", "0xEA", "but", "cav"),
-    # ("xfelgpac1di215b1", "0xEA", "0xEA", "but", "but"),
-    # ("xfelgpac1di220b1", "0xEA", "0xEA", "but", "but"),
-    # ("xfelgpac1di240b1", "0xEA", "0xEA", "but", "but"),
-    # ("xfelgpac1di276l2", "0xCA", "0xCA", "but", "ren"),
-    # ("xfelgpac2di276l2", "0xCA", "0xCA", "", "ren"),
-    # ("xfelgpac1di324l2", "0xCA", "0xCA", "but", "ren"),
-    # ("xfelgpac2di324l2", "0xCA", "0xCA", "", "ren"),
-    # ("xfelgpac1di372l2", "0xCA", "0xCA", "but", "ren"),
-    # ("xfelgpac2di372l2", "0xCA", "0xCA", "", "ren"),
-    # ("xfelgpac1di390b2", "0xCA", "0xCA", "but", "cav"),
-    # ("xfelgpac1di415b2", "0xCA", "0xCA", "but", "cav"),
-    # ("xfelgpac1di438b2", "0xCA", "0xCA", "but", "but"),
-    # ("xfelgpac1di458b2", "0xCA", "0xCA", "but", "but"),
-    # ("xfelgpac2di458b2", "0xCA", "0xCA", "but", "but"),
-    # ("xfelgpac3di458b2", "0xCA", "0xCA", "but", "but"),
-    # ("xfelgpac1di514l3", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac1di562l3", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac2di562l3", "0x8A", "0x8A", "", "ren"),
-    # ("xfelgpac1di610l3", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac2di610l3", "0x8A", "0x8A", "", "ren"),
-    # ("xfelgpac1di661l3", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac1di709l3", "0x8A", "0x8A", "but", "ren"),
-    # ("xfelgpac2di709l3", "0x8A", "0x8A", "", "ren"),
-    # ("xfelgpac1di757l3", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac2di757l3", "0x8A", "0x8A", "", "ren"),
-    # ("xfelgpac1di808l3", "0x8A", "0x8A", "but", "ren"),
-    # ("xfelgpac2di808l3", "0x8A", "0x8A", "", "ren"),
-    # ("xfelgpac1di856l3", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac1di904l3", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac1di955l3", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac1di1003l3", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac1di1051l3", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac1di1102l3", "0x8A", "0x8A", "but", "ren"),
-    # ("xfelgpac2di1102l3", "0x8A", "0x8A", "", "ren"),
-    # ("xfelgpac1di1150l3", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac1di1198l3", "0x8A", "0x8A", "but", "ren"),
-    # ("xfelgpac1di1249l3", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac1di1297l3", "0x8A", "0x8A", "but", "ren"),
-    # ("xfelgpac1di1345l3", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac1di1396l3", "0x8A", "0x8A", "but", "ren"),
-    # ("xfelgpac1di1444l3", "0x8A", "0x8A", "but", "ren"),
-    # ("xfelgpac1di1499l3", "0x8A", "0x8A", "but", ""),
-    # ("xfelgpac1di1601l3", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac1di1656l3", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac1di1685cl", "0x8A", "0x8A", "cav", "cav"),
-    # ("xfelgpac1di1720cl", "0x8A", "0x8A", "but", "but"),
-    # ("xfelgpac2di1720cl", "0x8A", "0x8A", "but", "cav"),
+#mbu name, bpm0_mask, bpm1_mask, bpm0_type, bpm1_type
+mbu_list = (
+    ("xfelgpac1di30i1",  "0xFE", "0xFE", "but" , "but"     ),
+    ("xfelgpac1di55i1",  "0xFA", "0xFA", "but" , "ren"     ),
+    ("xfelgpac2di55i1",  "0xFA", "0xFA", "cav" , "cav"     ),
+    ("xfelgpac3di55i1",  "0xFA", "0xFA", "but" , "cav"     ),
+    ("xfelgpac1di59i1",  "0xFA", "0xFA", "but" , "but"     ),
+    ("xfelgpac1di94i1",  "0xEA", "0xEA", "but" , "but"     ),
+    ("xfelgpac2di94i1",  "0xEA", "0xEA", "but" , "but"     ),
+    ("xfelgpac3di94i1",  "0xEA", "0xEA", "but" , ""        ),
+    ("xfelgpac4di94i1",  "0xEA", "0xEA", "cav" , "cav"     ),
+    ("xfelgpac1di107i1", "0xEA", "0xEA", "but" , "but"     ),
+    ("xfelgpac2di107i1", "0xEA", "0xEA", "but" , "but"     ),
+    ("xfelgpac1di160l1", "0xEA", "0xEA", "but" , "ren"     ),
+    ("xfelgpac2di160l1", "0xEA", "0xEA", ""    , "ren"    ),
+    ("xfelgpac1di176b1", "0xEA", "0xEA", "but", "cav"),
+    ("xfelgpac1di203b1", "0xEA", "0xEA", "but", "cav"),
+    ("xfelgpac1di215b1", "0xEA", "0xEA", "but", "but"),
+    ("xfelgpac1di220b1", "0xEA", "0xEA", "but", "but"),
+    ("xfelgpac1di240b1", "0xEA", "0xEA", "but", "but"),
+    ("xfelgpac1di276l2", "0xCA", "0xCA", "but", "ren"),
+    ("xfelgpac2di276l2", "0xCA", "0xCA", "", "ren"),
+    ("xfelgpac1di324l2", "0xCA", "0xCA", "but", "ren"),
+    ("xfelgpac2di324l2", "0xCA", "0xCA", "", "ren"),
+    ("xfelgpac1di372l2", "0xCA", "0xCA", "but", "ren"),
+    ("xfelgpac2di372l2", "0xCA", "0xCA", "", "ren"),
+    ("xfelgpac1di390b2", "0xCA", "0xCA", "but", "cav"),
+    ("xfelgpac1di415b2", "0xCA", "0xCA", "but", "cav"),
+    ("xfelgpac1di438b2", "0xCA", "0xCA", "but", "but"),
+    ("xfelgpac1di458b2", "0xCA", "0xCA", "but", "but"),
+    ("xfelgpac2di458b2", "0xCA", "0xCA", "but", "but"),
+    ("xfelgpac3di458b2", "0xCA", "0xCA", "but", "but"),
+    ("xfelgpac1di514l3", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac1di562l3", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac2di562l3", "0x8A", "0x8A", "", "ren"),
+    ("xfelgpac1di610l3", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac2di610l3", "0x8A", "0x8A", "", "ren"),
+    ("xfelgpac1di661l3", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac1di709l3", "0x8A", "0x8A", "but", "ren"),
+    ("xfelgpac2di709l3", "0x8A", "0x8A", "", "ren"),
+    ("xfelgpac1di757l3", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac2di757l3", "0x8A", "0x8A", "", "ren"),
+    ("xfelgpac1di808l3", "0x8A", "0x8A", "but", "ren"),
+    ("xfelgpac2di808l3", "0x8A", "0x8A", "", "ren"),
+    ("xfelgpac1di856l3", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac1di904l3", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac1di955l3", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac1di1003l3", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac1di1051l3", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac1di1102l3", "0x8A", "0x8A", "but", "ren"),
+    ("xfelgpac2di1102l3", "0x8A", "0x8A", "", "ren"),
+    ("xfelgpac1di1150l3", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac1di1198l3", "0x8A", "0x8A", "but", "ren"),
+    ("xfelgpac1di1249l3", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac1di1297l3", "0x8A", "0x8A", "but", "ren"),
+    ("xfelgpac1di1345l3", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac1di1396l3", "0x8A", "0x8A", "but", "ren"),
+    ("xfelgpac1di1444l3", "0x8A", "0x8A", "but", "ren"),
+    ("xfelgpac1di1499l3", "0x8A", "0x8A", "but", ""),
+    ("xfelgpac1di1601l3", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac1di1656l3", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac1di1685cl", "0x8A", "0x8A", "cav", "cav"),
+    ("xfelgpac1di1720cl", "0x8A", "0x8A", "but", "but"),
+    ("xfelgpac2di1720cl", "0x8A", "0x8A", "but", "cav"),
     ("xfelgpac1di1755cl", "0x8A", "0x8A", "but", "but"),
     ("xfelgpac2di1755cl", "0x8A", "0x8A", "but", "but"),
     ("xfelgpac1di1793cl", "0x8A", "0x8A", "but", "but"),
@@ -174,6 +177,22 @@ rest=(
     ("xfelgpac1dixs1ug3tld", "0x80", "0x80", "but", "")
 )
 
+class bpmProcess:
+    def __init__(self,target, host, bpm_type, queue, slot, dest_mask, debug):
+        self.proc = Process(target=target, args=(host, bpm_type, slot, dest_mask, queue, debug))
+        self.host = host
+        self.bpm_type = bpm_type
+        self.slot = slot
+        self.mask = dest_mask
+        self.queue = queue
+        self.debug = debug
+
+class bpmProcessRet:
+    def __init__(self,return_value, error = False, error_string = "No error"):
+        self.error = error
+        self.return_value = return_value
+        self.error_string = error_string
+
 def cavtype(nam):
     ret = "EMPTY "
     if nam == "but":
@@ -187,9 +206,9 @@ def cavtype(nam):
 EEPROM_READY = 2
 EEPROM_WRITING = 4
 
-def set_button_bpm_dst_mask(host, bpmnum, dst_mask, queue, dbg = False):
+def set_button_bpm_dst_mask(host, bpmnum, port_offset, dst_mask, dbg = False):
     if dbg: print('set_button_bpm_dst_mask({}, {:d}, 0x{:04x})'.format(host, bpmnum, dst_mask))
-    port_offset = 51245
+    #port_offset = 51245
     dest_addr =  host + ":" + str(port_offset+bpmnum)
     epics.caput("BUTBPMSERV:S7GPAC-ADDR", dest_addr)
     time.sleep(0.5)
@@ -218,10 +237,10 @@ def set_button_bpm_dst_mask(host, bpmnum, dst_mask, queue, dbg = False):
         else:
             if dbg: print("EEPROM not ready" + " x=" + str(x))
         time.sleep(1.0)
+    return  bpmProcessRet(0)
 
-    queue.put(0) # no error
 
-def set_cavity_bpm_dst_mask(host, bpmnum, dst_mask, queue, dbg = False):
+def set_cavity_bpm_dst_mask(host, bpmnum, port_offset, dst_mask, dbg = False):
     if dbg: print('set_cavity_bpm_dst_mask({}, {:d}, 0x{:04x})'.format(host, bpmnum, dst_mask))
     child = pexpect.spawn('telnet ' + host)
     child.expect('login:')
@@ -234,103 +253,142 @@ def set_cavity_bpm_dst_mask(host, bpmnum, dst_mask, queue, dbg = False):
     child.expect('changed to ')
     child.expect('\r')
     if dbg: print('script OK, mask changed to: {}'.format(str(child.before)))
+    return bpmProcessRet(0)
 
-    queue.put(0) # no error
-     
-now = datetime.now()
-nowstr = now.strftime('%Y_%m_%d_%H%M')
+def set_bpm_dst_mask(host, bpm_type, bpmnum, dst_mask, queue, dbg = False):
+    retval = bpmSetFuncDict[bpm_type](host, bpmnum, bpmServerNamesDict[bpm_type], dst_mask, dbg)
+    queue.put(retval) # no error
 
-f_success = open("agc_set_{}.log".format(nowstr), "w+")
-f_failed = open("agc_set_{}.err".format(nowstr), "w+")
+def get_universal_bpm_dst_mask(host, server_name, bpmnum, port_offset, dst_mask, dbg = False):
+    if dbg: print('get_universal_dst_mask({}, {}, {:d}'.format(host, server_name, bpmnum))
+    #port_offset = 51245
+    dest_addr =  host + ":" + str(port_offset+bpmnum)
+    epics.caput(server_name + ":S7GPAC-ADDR", dest_addr)
+    time.sleep(0.5)
+    while epics.caget(server_name + ":S7GPAC-STATUS") != 1:
+        time.sleep(0.5)
 
-# host = 'xfelgpac1di30i1'
-# mask = 0xFE
-# num = 0
+    time.sleep(1)
+    ret = epics.caget(server_name + ":X2TIM-DEST-BUNCH-MASK")
+    epics.caput(server_name + ":S7GPAC-ADDR", ":" + str(port_offset+bpmnum))
+    return bpmProcessRet(ret)
 
-
-# for num in range(0,4):
-#     p = Process(target=set_button_bpm_dst_mask, args=(host, num, mask))
-#     print('Running {} BPM: {:d}'.format(host, num))
-#     p.start()
-#     p.join(60)
-#     if p.is_alive():
-#         p.terminate()
-#         p.join()
-#         f_failed.write('{} Slot:{:d} 0x{:08x}\n'.format(host, num, mask))
-#         print('Timeout')
-#     else:
-#         f_success.write('{} Slot:{:d} 0x{:08x}\n'.format(host, num, mask))
-#         print('Done')
-
-# host = 'xfelgpac1di30i1'
-# mask = 0xFE
-# num = 0
-
-# host = 'xfelgpac1di55i1'
-# mask = 0xFA
-# num = 1
-
-# p = Process(target=set_cavity_bpm_dst_mask, args=(host, num, mask, True))
-# print('Running {} BPM: {:d}'.format(host, num))
-# p.start()
-# p.join(60)
-# if p.is_alive():
-#     p.terminate()
-#     p.join()
-#     f_failed.write('{} Slot:{:d} 0x{:08x}\n'.format(host, num, mask))
-#     print('Timeout')
-# else:
-#     f_success.write('{} Slot:{:d} 0x{:08x}\n'.format(host, num, mask))
-#     print('Done')
-
-
-def set_mbu_dst_mask(bpm_entry, f_success=False, f_failed=False, dbg=False):
-    queue = Queue()
+def read_bpm_dst_mask(host, bpm_type, bpmnum, dst_mask, queue, dbg = False):
+    if dbg: print('read_bpm_dst_mask(host={}, bpm_type={}, bpmnum={}, dst_mask={}'.format(host, bpm_type, bpmnum, dst_mask))
+    retval = bpmGetFuncDict[bpm_type](host, bpmServerNamesDict[bpm_type], bpmnum, bpmServerPortOffsetDict[bpm_type], dst_mask, dbg)
+    queue.put(retval)
+                  
+def verify_bpm_dst_mask(host, bpm_type, bpmnum, dst_mask, queue, dbg = False):
+    retval = bpmGetFuncDict[bpm_type](host, bpmServerNamesDict[bpm_type], bpmnum, bpmServerPortOffsetDict[bpm_type], dst_mask, dbg)
+    if retval.error:
+        queue.put(retval)
+    elif retval.return_value == dst_mask:
+        queue.put(retval)
+    else:
+        queue.put(bpmProcessRet(retval.return_value, error = True, error_string = 'Expected 0x{:08x} got 0x{:08x}'.format(dst_mask, retval.return_value)))
+        
+bpmProcDict = {'set': set_bpm_dst_mask, 'read' : read_bpm_dst_mask, 'verify' : verify_bpm_dst_mask}
+bpmSetFuncDict = {'but': set_button_bpm_dst_mask, 'cav' : set_cavity_bpm_dst_mask, 'ren' : set_cavity_bpm_dst_mask}
+bpmGetFuncDict = {'but': get_universal_bpm_dst_mask, 'cav' : get_universal_bpm_dst_mask, 'ren' : get_universal_bpm_dst_mask}
+bpmServerNamesDict = {'but' : 'BUTBPMSERV', 'cav' : 'CAVBPM', 'ren' : 'RENBPM'}
+bpmServerPortOffsetDict = {'but' : 51245, 'cav' : 51235, 'ren' : 51235}
+                  
+def make_proc_mbu_dst_mask(proc_type, bpm_entry, queue, slot, dbg):
+#    if dbg: print('make_proc_mbu_dst_mask(proc_type={}, bpm_entry={}, slot={}'.format(proc_type, bpm_entry, slot))
+#    if dbg: print('bpmProcDict[proc_type]=={}'.format(bpmProcDict[proc_type]))
     host = bpm_entry[0]
-    processes = list()
-    slots = list()
-    types = list()
-    for i in range(0,2):
-        mask = int(bpm_entry[1+i],16)
-        bpm_type = bpm_entry[3+i]
-        if bpm_type == "but":
-            processes.extend([Process(target=set_button_bpm_dst_mask,
-                                      args=(host, num, mask, queue, dbg))
-                              for num in [2*i, 2*i+1]])
-            slots.extend([num for num in [2*i, 2*i+1]])
-            types.extend([bpm_type for num in [2*i, 2*i+1]])
-        elif bpm_type == "cav" or bpm_type == "ren" :
-            processes.extend([Process(target=set_cavity_bpm_dst_mask,
-                                      args=(host, i+1, mask, queue, dbg))])
-            slots.extend([2*i])
-            types.extend([bpm_type])
+    dest_mask = int(bpm_entry[1+slot//2],16)
+    bpm_type = bpm_entry[3+slot//2]
+    retproc = None
+    if bpm_type == '':
+        return retproc
+    elif bpm_type == "but":
+        retproc = bpmProcess(bpmProcDict[proc_type],host,bpm_type,queue,slot,dest_mask,dbg)
+    else:
+        if slot == 0 or slot == 2:
+            retproc = bpmProcess(bpmProcDict[proc_type],host,bpm_type,queue,slot+1,dest_mask,dbg)
+    return retproc
 
-    print('{}'.format(slots))
-    print('{}'.format(types))
-    for (p,slot,typ) in zip(processes,slots,types):
-        print('Running {} BPM: {} Type: {}'.format(host, slot+1, typ))
-        p.start()
-        try:
-            timeouted=False
-            proc_ret=queue.get(timeout=60)
-        except:
-            timeouted=True
-            
-        if p.is_alive():
-            p.terminate()
-            p.join()
+def execute_processes(bpm_process_l, f_success=False, f_failed=False, dbg=False):
+    for proc in bpm_process_l:
+        if proc:
+            print('Running {} BPM: {} Type: {}'.format(proc.host, proc.slot+1, proc.bpm_type))
+            proc.proc.start()
+            try:
+                timeouted=False
+                proc_ret=proc.queue.get(timeout=60)
+            except:
+                timeouted=True
 
-        if timeouted:
-            if f_failed: f_failed.write('{} Slot:{:d} Type:{} 0x{:08x}\n'.format(host, slot+1, typ, mask))
-            print('Timeout')
-        elif proc_ret == 0:
-            if f_success: f_success.write('{} Slot:{:d} Type:{} 0x{:08x}\n'.format(host, slot+1, typ, mask))
-            print('Done')
-        else:
-            if f_failed: f_failed.write('{} Slot:{:d} Type:{} 0x{:08x}\n'.format(host, slot+1, typ, mask))
-            print('Error: {:d}'.format(proc_ret))
+            if proc.proc.is_alive():
+                proc.proc.terminate()
+                proc.proc.join()
 
-for bpm in rest:
-    set_mbu_dst_mask(bpm, f_success, f_failed, True)          
-     
+            proc.queue.close()
+
+            if timeouted:
+                if f_failed: f_failed.write('{} Slot:{:d} Type:{} 0x{:08x} Timeout\n'.format(proc.host, proc.slot+1, proc.bpm_type, proc.mask))
+                print('Timeout')
+            elif not proc_ret.error:
+                if f_success: f_success.write('{} Slot:{:d} Type:{} 0x{:08x}\n'.format(proc.host, proc.slot+1, proc.bpm_type, proc_ret.return_value))
+                print('Done, returned: 0x{:08x}'.format(proc_ret.return_value))
+            else:
+                if f_failed: f_failed.write('{} Slot:{:d} Type:{} Error: {}\n'.format(proc.host, proc.slot+1, proc.bpm_type, proc_ret.error_string))
+                print('Error: {}'.format(proc_ret.error_string))
+
+def main():
+    parser = argparse.ArgumentParser(description='Set/Read/Verify AGC location mask')
+    parser.add_argument('action', choices=['set', 'read', 'verify'], help='action to be performed')
+    parser.add_argument('-a', '--all', help='perform action on all known MBUs', action='store_true')
+    parser.add_argument('mbu', nargs='*', help='list of MBUs to perform action on, optionally use --all')
+    parser.add_argument('-v', '--verbose', help='show debug messages', action='store_true')
+    args = parser.parse_args()
+
+    if args.verbose:
+        print('Verbose mode on')
+        print('Selected action is: ' + args.action)
     
+    # names of all known MBUs
+    mbu_names = [m[0] for m in mbu_list]
+    
+    if not args.all:
+        #check if we got some unknown MBUs
+        unknown = [x for x in args.mbu if x not in mbu_names]
+        if unknown:
+            print('Unknown MBUs selected: ' + ', '.join(unknown))
+            return -1
+        else:
+            selected_mbus = args.mbu
+    else:
+        print('Using ALL MBUs')
+        selected_mbus = mbu_names
+
+    if args.verbose:
+        print('List of MBUs: \n' + '\n'.join(selected_mbus))
+
+    now = datetime.now()
+    nowstr = now.strftime('%Y_%m_%d_%H%M')
+    f_success_name = "agc_set_{}.log".format(nowstr)
+    f_failed_name = "agc_set_{}.err".format(nowstr)
+    
+    f_success = open(f_success_name, "w+")
+    if args.verbose:
+        print('Opened log file: ' + f_success_name)
+
+    f_failed = open(f_failed_name, "w+")
+    if args.verbose:
+        print('Opened error file: ' + f_failed_name)
+
+    process_list = []
+    
+    for mbu in selected_mbus:
+        mbu_entry = next((x for x in mbu_list if x[0] == mbu))
+        for slot in range(0,4):
+            queue = Queue()
+            process_list.append(make_proc_mbu_dst_mask(args.action, mbu_entry, queue, slot, args.verbose))
+
+    execute_processes(process_list, f_success, f_failed, args.verbose)
+
+
+if __name__ == "__main__":
+    main()
