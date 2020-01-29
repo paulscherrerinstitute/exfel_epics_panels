@@ -206,8 +206,8 @@ def cavtype(nam):
 EEPROM_READY = 2
 EEPROM_WRITING = 4
 
-def set_button_bpm_dst_mask(host, bpmnum, port_offset, dst_mask, dbg = False):
-    if dbg: print('set_button_bpm_dst_mask({}, {:d}, 0x{:04x})'.format(host, bpmnum, dst_mask))
+def set_button_bpm_dst_mask(host, bpm_type, bpmnum, port_offset, dst_mask, dbg = False):
+    if dbg: print('set_button_bpm_dst_mask({}, {}, {}, {}, 0x{:04x})'.format(host, bpm_type, bpmnum, port_offset,  dst_mask))
     #port_offset = 51245
     dest_addr =  host + ":" + str(port_offset+bpmnum)
     epics.caput("BUTBPMSERV:S7GPAC-ADDR", dest_addr)
@@ -224,6 +224,7 @@ def set_button_bpm_dst_mask(host, bpmnum, port_offset, dst_mask, dbg = False):
             time.sleep(1.0)
                 
     epics.caput("BUTBPMSERV:X2TIM-DEST-BUNCH-MASK", dst_mask)
+    time.sleep(2)
     epics.caput("BUTBPMSERV:BPM-EEPROM-CMD", 2)
     time.sleep(0.5)
     epics.caput("BUTBPMSERV:BPM-EEPROM-CMD", 0)
@@ -240,7 +241,7 @@ def set_button_bpm_dst_mask(host, bpmnum, port_offset, dst_mask, dbg = False):
     return  bpmProcessRet(0)
 
 
-def set_cavity_bpm_dst_mask(host, bpmnum, port_offset, dst_mask, dbg = False):
+def set_cavity_bpm_dst_mask(host, bpm_type, bpmnum, port_offset, dst_mask, dbg = False):
     if dbg: print('set_cavity_bpm_dst_mask({}, {:d}, 0x{:04x})'.format(host, bpmnum, dst_mask))
     child = pexpect.spawn('telnet ' + host)
     child.expect('login:')
@@ -256,12 +257,13 @@ def set_cavity_bpm_dst_mask(host, bpmnum, port_offset, dst_mask, dbg = False):
     return bpmProcessRet(0)
 
 def set_bpm_dst_mask(host, bpm_type, bpmnum, dst_mask, queue, dbg = False):
-    retval = bpmSetFuncDict[bpm_type](host, bpmnum, bpmServerNamesDict[bpm_type], dst_mask, dbg)
+    retval = bpmSetFuncDict[bpm_type](host, bpm_type, bpmnum, bpmServerPortOffsetDict[bpm_type], dst_mask, dbg)
     queue.put(retval) # no error
 
-def get_universal_bpm_dst_mask(host, server_name, bpmnum, port_offset, dst_mask, dbg = False):
-    if dbg: print('get_universal_dst_mask({}, {}, {:d}'.format(host, server_name, bpmnum))
+def get_universal_bpm_dst_mask(host, bpm_type, bpmnum, port_offset, dst_mask, dbg = False):
+    if dbg: print('get_universal_dst_mask({}, {}, {:d}'.format(host, bpm_type, bpmnum))
     #port_offset = 51245
+    server_name = bpmServerNamesDict[bpm_type]
     dest_addr =  host + ":" + str(port_offset+bpmnum)
     epics.caput(server_name + ":S7GPAC-ADDR", dest_addr)
     time.sleep(0.5)
@@ -269,17 +271,44 @@ def get_universal_bpm_dst_mask(host, server_name, bpmnum, port_offset, dst_mask,
         time.sleep(0.5)
 
     time.sleep(1)
-    ret = epics.caget(server_name + ":X2TIM-DEST-BUNCH-MASK")
+    print("GOT: " + epics.caget(server_name + ":X2TIM-DEST-BUNCH-MASK.VAL",as_string=True))
+    time.sleep(0.5)
+    ret = epics.caget(server_name + ":X2TIM-DEST-BUNCH-MASK.VAL")
     epics.caput(server_name + ":S7GPAC-ADDR", ":" + str(port_offset+bpmnum))
     return bpmProcessRet(ret)
 
+def get_direct_bpm_dst_mask(host, bpm_type, bpmnum, dst_mask, queue, dbg = False ):
+    if dbg: print('get_direct_dst_mask({}, {}, {:d})'.format(host, bpm_type, bpmnum))
+    addr = bpmMrdOffsets[bpm_type][bpmnum];
+    if dbg: print('read from addr: 0x{:08x}'.format(addr))
+    child = pexpect.spawn('telnet ' + host)
+    child.expect('login:')
+    child.sendline('root')
+    child.expect('Password:')
+    child.sendline('gpac4ever')
+    child.expect('#')
+    if dbg: print('login OK')
+    child.sendline('mrd 0x{:08x},1,1'.format(addr))
+    child.expect(':\s+')
+    child.expect('\r')
+    try:
+        retval = int(child.before,16)
+    except:
+        if dbg: print('returned value not hex, got: {}'.format(str(child.before)))
+        return bpmProcessRet(0, error=True, error_string='returned value not hex, got: {}'.format(str(child.before)))
+    else:
+        if dbg: print('success, mask is: 0x{:08x}'.format(retval))
+        return bpmProcessRet(retval)
+
+
+
 def read_bpm_dst_mask(host, bpm_type, bpmnum, dst_mask, queue, dbg = False):
     if dbg: print('read_bpm_dst_mask(host={}, bpm_type={}, bpmnum={}, dst_mask={}'.format(host, bpm_type, bpmnum, dst_mask))
-    retval = bpmGetFuncDict[bpm_type](host, bpmServerNamesDict[bpm_type], bpmnum, bpmServerPortOffsetDict[bpm_type], dst_mask, dbg)
+    retval = bpmGetFuncDict[bpm_type](host, bpm_type, bpmnum, bpmServerPortOffsetDict[bpm_type], dst_mask, dbg)
     queue.put(retval)
                   
 def verify_bpm_dst_mask(host, bpm_type, bpmnum, dst_mask, queue, dbg = False):
-    retval = bpmGetFuncDict[bpm_type](host, bpmServerNamesDict[bpm_type], bpmnum, bpmServerPortOffsetDict[bpm_type], dst_mask, dbg)
+    retval = bpmGetFuncDict[bpm_type](host, bpm_type, bpmnum, bpmServerPortOffsetDict[bpm_type], dst_mask, dbg)
     if retval.error:
         queue.put(retval)
     elif retval.return_value == dst_mask:
@@ -287,12 +316,42 @@ def verify_bpm_dst_mask(host, bpm_type, bpmnum, dst_mask, queue, dbg = False):
     else:
         queue.put(bpmProcessRet(retval.return_value, error = True, error_string = 'Expected 0x{:08x} got 0x{:08x}'.format(dst_mask, retval.return_value)))
         
+
+bpmServerNamesDict = {'but' : 'BUTBPMSERV', 'cav' : 'CAVBPM', 'ren' : 'RENBPM'}
+bpmServerPortOffsetDict = {'but' : 51245, 'cav' : 51235, 'ren' : 51235}
 bpmProcDict = {'set': set_bpm_dst_mask, 'read' : read_bpm_dst_mask, 'verify' : verify_bpm_dst_mask}
 bpmSetFuncDict = {'but': set_button_bpm_dst_mask, 'cav' : set_cavity_bpm_dst_mask, 'ren' : set_cavity_bpm_dst_mask}
 bpmGetFuncDict = {'but': get_universal_bpm_dst_mask, 'cav' : get_universal_bpm_dst_mask, 'ren' : get_universal_bpm_dst_mask}
-bpmServerNamesDict = {'but' : 'BUTBPMSERV', 'cav' : 'CAVBPM', 'ren' : 'RENBPM'}
-bpmServerPortOffsetDict = {'but' : 51245, 'cav' : 51235, 'ren' : 51235}
-                  
+
+### Ofsets taken from .sub and .rd gpacsrv configuration files
+# BPMSERV
+# BUT_EEPROM      0x00000048		  1	 # 0x0084 - X2TIM-DEST-BUNCH-MASK
+# BPM1
+# 0x80A04000  BUT_EEPROM        # 0x08004000 in BPM FPGA
+# BPM2
+# 0x80A06000  BUT_EEPROM        # 0x08006000 in BPM FPGA
+# BPM3
+# 0x81204000  BUT_EEPROM        # 0x08004000 in BPM FPGA
+# BPM4
+# 0x81206000  BUT_EEPROM        # 0x08004000 in BPM FPGA
+# CAVBPM
+# SYS_INIT        0x00000500          1    # 0x0294 - X2TIM-DEST-BUNCH-MASK
+# BPM1
+# 0x80838000      SYS_INIT
+# BPM2
+# 0x81038000      SYS_INIT
+# REENCAV
+# SYS_INIT        0x00000500          1    # 0x0218 - X2TIM-DEST-BUNCH-MASK
+# BPM1
+# 0x80838000    SYS_INIT
+# BPM2
+# 0x81038000    SYS_INIT
+###
+
+bpmMrdOffsets = {'but' : (0x80A04000 + 0x48, 0x80A06000 + 0x48, 0x81204000 + 0x48, 0x81206000 + 0x48),
+                 'cav' : (0x80838000 + 0x500, 0x80838000 + 0x500, 0x81038000 + 0x500, 0x81038000 + 0x500),
+                 'ren' : (0x80838000 + 0x500, 0x80838000 + 0x500, 0x81038000 + 0x500, 0x81038000 + 0x500)}
+
 def make_proc_mbu_dst_mask(proc_type, bpm_entry, queue, slot, dbg):
 #    if dbg: print('make_proc_mbu_dst_mask(proc_type={}, bpm_entry={}, slot={}'.format(proc_type, bpm_entry, slot))
 #    if dbg: print('bpmProcDict[proc_type]=={}'.format(bpmProcDict[proc_type]))
@@ -338,8 +397,11 @@ def execute_processes(bpm_process_l, f_success=False, f_failed=False, dbg=False)
 
 def main():
     parser = argparse.ArgumentParser(description='Set/Read/Verify AGC location mask')
+    group = parser.add_mutually_exclusive_group()
     parser.add_argument('action', choices=['set', 'read', 'verify'], help='action to be performed')
-    parser.add_argument('-a', '--all', help='perform action on all known MBUs', action='store_true')
+    group.add_argument('-a', '--all', help='perform action on all known MBUs', action='store_true')
+    parser.add_argument('-d', '--direct', help='use direct readback using mrd and not EPICS', action='store_true')
+    group.add_argument('-f', '--file', help='load MBU list from first column of a file', type=argparse.FileType('r'))
     parser.add_argument('mbu', nargs='*', help='list of MBUs to perform action on, optionally use --all')
     parser.add_argument('-v', '--verbose', help='show debug messages', action='store_true')
     args = parser.parse_args()
@@ -350,18 +412,29 @@ def main():
     
     # names of all known MBUs
     mbu_names = [m[0] for m in mbu_list]
+
     
-    if not args.all:
-        #check if we got some unknown MBUs
-        unknown = [x for x in args.mbu if x not in mbu_names]
-        if unknown:
-            print('Unknown MBUs selected: ' + ', '.join(unknown))
-            return -1
-        else:
-            selected_mbus = args.mbu
-    else:
+    if args.direct:
+        for key in bpmGetFuncDict.keys():
+            bpmGetFuncDict[key] = get_direct_bpm_dst_mask
+
+    if args.all:
         print('Using ALL MBUs')
         selected_mbus = mbu_names
+    elif args.file:
+        print('Using file {}'.format(args.file.name))
+        selected_mbus = [line.split()[0] for line in args.file]
+        #remove duplicates
+        #selected_mbus = list(set(selected_mbus))
+        #this removes duplicates and preserves order, but is O(n^2)
+        selected_mbus=[ii for n,ii in enumerate(selected_mbus) if ii not in selected_mbus[:n]]
+    else:
+        selected_mbus = args.mbu
+              
+    unknown = [x for x in selected_mbus if x not in mbu_names]
+    if unknown:
+        print('Unknown MBUs selected: ' + ', '.join(unknown))
+        return -1
 
     if args.verbose:
         print('List of MBUs: \n' + '\n'.join(selected_mbus))
@@ -372,14 +445,13 @@ def main():
     f_failed_name = "agc_set_{}.err".format(nowstr)
     
     f_success = open(f_success_name, "w+")
-    if args.verbose:
-        print('Opened log file: ' + f_success_name)
+    print('Opened log file: ' + f_success_name)
 
     f_failed = open(f_failed_name, "w+")
-    if args.verbose:
-        print('Opened error file: ' + f_failed_name)
+    print('Opened error file: ' + f_failed_name)
 
     process_list = []
+
     
     for mbu in selected_mbus:
         mbu_entry = next((x for x in mbu_list if x[0] == mbu))
