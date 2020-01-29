@@ -4253,12 +4253,12 @@ rectangle {
 		height=12
 	}
 	"basic attribute" {
-		clr=15
+		clr=14
 	}
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="$(DEV):X2TIM-DEST-BUNCH-FOUND-RD"
+		chan="BUTBPMSERV:X2TIM-DEST-BUNCH-FOUND-RD"
 	}
 }
 rectangle {
