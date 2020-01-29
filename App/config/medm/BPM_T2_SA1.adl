@@ -3581,7 +3581,7 @@ text {
 		bclr=40
 	}
 	label="BPMA-2071-T2"
-	press_msg="xfelgpac1di2100t2:51235#BPMA-2071-T2"
+	press_msg="xfelgpac1di2074tld:51235#BPMA-2071-T2"
 }
 "message button" {
 	object {
@@ -3596,7 +3596,7 @@ text {
 		bclr=40
 	}
 	label="BPMA-2086-T2"
-	press_msg="xfelgpac1di2100t2:51236#BPMA-2086-T2"
+	press_msg="xfelgpac1di2074tld:51236#BPMA-2086-T2"
 }
 "message button" {
 	object {
