@@ -4275,6 +4275,6 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="$(DEV):X2TIM-DEST-BUNCH-FOUND-RD"
+		chan="BUTBPMSERV:X2TIM-DEST-BUNCH-FOUND-RD"
 	}
 }
