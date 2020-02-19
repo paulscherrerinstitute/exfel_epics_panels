@@ -1,12 +1,12 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/XFEL_PSI.adl"
+	name="/afs/psi.ch/group/8221/koprek_w/github.com/XFEL/exfel_epics_panels/App/config/medm/XFEL_PSI.adl"
 	version=030105
 }
 display {
 	object {
-		x=19
-		y=39
+		x=1965
+		y=239
 		width=810
 		height=620
 	}
@@ -231,11 +231,11 @@ polyline {
 	display[0] {
 		label="Button BPM"
 		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
-		args="DEV=IPC1587-BUT1"
+		args="DEV=IPC1708-BUT1"
 	}
 	clr=14
 	bclr=57
-	label="-IPC1587-BUT1"
+	label="-IPC1708-BUT1"
 }
 "related display" {
 	object {
@@ -247,7 +247,7 @@ polyline {
 	display[0] {
 		label="BPM"
 		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
-		args="DEV=IPC1587"
+		args="DEV=IPC1708"
 	}
 	clr=14
 	bclr=57
@@ -266,7 +266,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1587:S7GPAC-STATUS"
+		chan="IPC1708:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -282,7 +282,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1587:S7GPAC-STATUS"
+		chan="IPC1708:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -298,7 +298,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1587-BUT1:S7GPAC-STATUS"
+		chan="IPC1708-BUT1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -314,7 +314,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1587-BUT1:S7GPAC-STATUS"
+		chan="IPC1708-BUT1:S7GPAC-STATUS"
 	}
 }
 "shell command" {
@@ -326,11 +326,11 @@ rectangle {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T ipc1587 -bg rgb:40/A0/90 -e telnet -l root ipc1587 &"
+		name="xterm -T ipc1708 -bg rgb:40/A0/90 -e telnet -l root ipc1708 &"
 	}
 	clr=14
 	bclr=57
-	label="-ipc1587"
+	label="-ipc1708"
 }
 text {
 	object {
@@ -400,11 +400,11 @@ polyline {
 	display[0] {
 		label="Button BPM"
 		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
-		args="DEV=IPC1587-BUT2"
+		args="DEV=IPC1708-BUT2"
 	}
 	clr=14
 	bclr=57
-	label="-IPC1587-BUT2"
+	label="-IPC1708-BUT2"
 }
 rectangle {
 	object {
@@ -419,7 +419,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1587-BUT2:S7GPAC-STATUS"
+		chan="IPC1708-BUT2:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -435,7 +435,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1587-BUT2:S7GPAC-STATUS"
+		chan="IPC1708-BUT2:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -448,11 +448,11 @@ rectangle {
 	display[0] {
 		label="Button BPM"
 		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
-		args="DEV=IPC1587-BUT3"
+		args="DEV=IPC1708-BUT3"
 	}
 	clr=14
 	bclr=57
-	label="-IPC1587-BUT3"
+	label="-IPC1708-BUT3"
 }
 rectangle {
 	object {
@@ -467,7 +467,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1587-BUT3:S7GPAC-STATUS"
+		chan="IPC1708-BUT3:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -483,7 +483,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1587-BUT3:S7GPAC-STATUS"
+		chan="IPC1708-BUT3:S7GPAC-STATUS"
 	}
 }
 "related display" {
@@ -1894,11 +1894,11 @@ polyline {
 	}
 	command[0] {
 		label="Terminal"
-		name="firefox http://ipc1587.psi.ch &"
+		name="firefox http://ipc1708.psi.ch &"
 	}
 	clr=14
 	bclr=57
-	label="-ipc1587"
+	label="-ipc1708"
 }
 "shell command" {
 	object {
@@ -2017,7 +2017,7 @@ polyline {
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1587"
+		args="DEV=IPC1708"
 	}
 	clr=14
 	bclr=57
@@ -2096,11 +2096,11 @@ polyline {
 	display[0] {
 		label="Button BPM"
 		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
-		args="DEV=IPC1587-BUT4"
+		args="DEV=IPC1708-BUT4"
 	}
 	clr=14
 	bclr=57
-	label="-IPC1587-BUT4"
+	label="-IPC1708-BUT4"
 }
 rectangle {
 	object {
@@ -2115,7 +2115,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1587-BUT4:S7GPAC-STATUS"
+		chan="IPC1708-BUT4:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -2131,7 +2131,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1587-BUT4:S7GPAC-STATUS"
+		chan="IPC1708-BUT4:S7GPAC-STATUS"
 	}
 }
 text {
