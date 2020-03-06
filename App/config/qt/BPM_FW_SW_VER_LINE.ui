@@ -42,9 +42,12 @@
     <rect>
      <x>185</x>
      <y>0</y>
-     <width>195</width>
+     <width>105</width>
      <height>15</height>
     </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
    </property>
    <property name="channel" stdset="0">
     <string notr="true">$(GPAC):FW-SW-CHECK</string>
@@ -53,7 +56,7 @@
     <enum>caByte::Left</enum>
    </property>
    <property name="startBit">
-    <number>0</number>
+    <number>6</number>
    </property>
    <property name="endBit">
     <number>12</number>
@@ -323,6 +326,630 @@
     </color>
    </property>
   </widget>
+  <widget class="caGraphics" name="cagraphics">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+   <property name="lineSize">
+    <number>1</number>
+   </property>
+   <property name="lineColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caGraphics::Static</enum>
+   </property>
+   <property name="visibility">
+    <enum>caGraphics::Calc</enum>
+   </property>
+   <property name="visibilityCalc">
+    <string notr="true">(A&amp;0x00100010)=0x10</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):FW-SW-CHECK</string>
+   </property>
+  </widget>
+  <widget class="caByte" name="cabyte_6">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>0</y>
+     <width>30</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):FW-SW-CHECK</string>
+   </property>
+   <property name="direction">
+    <enum>caByte::Left</enum>
+   </property>
+   <property name="startBit">
+    <number>0</number>
+   </property>
+   <property name="endBit">
+    <number>1</number>
+   </property>
+   <property name="foreground" stdset="0">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="background" stdset="0">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_2">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+   <property name="lineSize">
+    <number>1</number>
+   </property>
+   <property name="lineColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caGraphics::Static</enum>
+   </property>
+   <property name="visibility">
+    <enum>caGraphics::Calc</enum>
+   </property>
+   <property name="visibilityCalc">
+    <string notr="true">(A&amp;0x00100010)=0</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):FW-SW-CHECK</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_3">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>150</red>
+     <green>150</green>
+     <blue>150</blue>
+    </color>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+   <property name="lineSize">
+    <number>1</number>
+   </property>
+   <property name="lineColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caGraphics::Static</enum>
+   </property>
+   <property name="visibility">
+    <enum>caGraphics::Calc</enum>
+   </property>
+   <property name="visibilityCalc">
+    <string notr="true">(A&amp;0x00100000)&gt;0</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):FW-SW-CHECK</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_4">
+   <property name="geometry">
+    <rect>
+     <x>335</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+   <property name="lineSize">
+    <number>1</number>
+   </property>
+   <property name="lineColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caGraphics::Static</enum>
+   </property>
+   <property name="visibility">
+    <enum>caGraphics::Calc</enum>
+   </property>
+   <property name="visibilityCalc">
+    <string notr="true">(A&amp;0x00040004)=0x04</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):FW-SW-CHECK</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_5">
+   <property name="geometry">
+    <rect>
+     <x>335</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+   <property name="lineSize">
+    <number>1</number>
+   </property>
+   <property name="lineColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caGraphics::Static</enum>
+   </property>
+   <property name="visibility">
+    <enum>caGraphics::Calc</enum>
+   </property>
+   <property name="visibilityCalc">
+    <string notr="true">(A&amp;0x00040004)=0</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):FW-SW-CHECK</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_6">
+   <property name="geometry">
+    <rect>
+     <x>335</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>150</red>
+     <green>150</green>
+     <blue>150</blue>
+    </color>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+   <property name="lineSize">
+    <number>1</number>
+   </property>
+   <property name="lineColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caGraphics::Static</enum>
+   </property>
+   <property name="visibility">
+    <enum>caGraphics::Calc</enum>
+   </property>
+   <property name="visibilityCalc">
+    <string notr="true">(A&amp;0x00040000)&gt;0</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):FW-SW-CHECK</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_7">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+   <property name="lineSize">
+    <number>1</number>
+   </property>
+   <property name="lineColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caGraphics::Static</enum>
+   </property>
+   <property name="visibility">
+    <enum>caGraphics::Calc</enum>
+   </property>
+   <property name="visibilityCalc">
+    <string notr="true">(A&amp;0x00080008)=0x08</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):FW-SW-CHECK</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_8">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>150</red>
+     <green>150</green>
+     <blue>150</blue>
+    </color>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+   <property name="lineSize">
+    <number>1</number>
+   </property>
+   <property name="lineColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caGraphics::Static</enum>
+   </property>
+   <property name="visibility">
+    <enum>caGraphics::Calc</enum>
+   </property>
+   <property name="visibilityCalc">
+    <string notr="true">(A&amp;0x00080000)&gt;0</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):FW-SW-CHECK</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_9">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+   <property name="lineSize">
+    <number>1</number>
+   </property>
+   <property name="lineColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caGraphics::Static</enum>
+   </property>
+   <property name="visibility">
+    <enum>caGraphics::Calc</enum>
+   </property>
+   <property name="visibilityCalc">
+    <string notr="true">(A&amp;0x00080008)=0</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):FW-SW-CHECK</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_10">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+   <property name="lineSize">
+    <number>1</number>
+   </property>
+   <property name="lineColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caGraphics::Static</enum>
+   </property>
+   <property name="visibility">
+    <enum>caGraphics::Calc</enum>
+   </property>
+   <property name="visibilityCalc">
+    <string notr="true">(A&amp;0x00200020)=0x20</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):FW-SW-CHECK</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_11">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+   <property name="lineSize">
+    <number>1</number>
+   </property>
+   <property name="lineColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caGraphics::Static</enum>
+   </property>
+   <property name="visibility">
+    <enum>caGraphics::Calc</enum>
+   </property>
+   <property name="visibilityCalc">
+    <string notr="true">(A&amp;0x00200020)=0</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):FW-SW-CHECK</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_12">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>0</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>150</red>
+     <green>150</green>
+     <blue>150</blue>
+    </color>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+   <property name="lineSize">
+    <number>1</number>
+   </property>
+   <property name="lineColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caGraphics::Static</enum>
+   </property>
+   <property name="visibility">
+    <enum>caGraphics::Calc</enum>
+   </property>
+   <property name="visibilityCalc">
+    <string notr="true">(A&amp;0x00200000)&gt;0</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):FW-SW-CHECK</string>
+   </property>
+  </widget>
+  <widget class="caGraphics" name="cagraphics_13">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>0</y>
+     <width>246</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>150</red>
+     <green>150</green>
+     <blue>150</blue>
+    </color>
+   </property>
+   <property name="fillstyle" stdset="0">
+    <enum>caGraphics::Filled</enum>
+   </property>
+   <property name="lineSize">
+    <number>1</number>
+   </property>
+   <property name="lineColor">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caGraphics::Static</enum>
+   </property>
+   <property name="visibility">
+    <enum>caGraphics::IfZero</enum>
+   </property>
+   <property name="visibilityCalc">
+    <string notr="true"/>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(GPAC):S7GPAC-STATUS</string>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>
@@ -334,6 +961,11 @@
    <class>caLabel</class>
    <extends>QLabel</extends>
    <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caGraphics</class>
+   <extends>QWidget</extends>
+   <header>caGraphics</header>
   </customwidget>
   <customwidget>
    <class>caLineEdit</class>
