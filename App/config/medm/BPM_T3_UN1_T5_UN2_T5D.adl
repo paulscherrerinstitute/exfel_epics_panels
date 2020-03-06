@@ -2785,7 +2785,7 @@ text {
 		bclr=40
 	}
 	label="BPMD-3159-T5D"
-	press_msg="xfelgpac1dixsdu1ug1t5d:51235#BPMD-3159-T5D"
+	press_msg="xfelgpac1dixsdu1ug1t5d:51235#D-3159-T5D"
 }
 "message button" {
 	object {
@@ -2800,7 +2800,7 @@ text {
 		bclr=40
 	}
 	label="BPMD-3162-T5D"
-	press_msg="xfelgpac1dixsdu1ug1t5d:51236#BPMD-3162-T5D"
+	press_msg="xfelgpac1dixsdu1ug1t5d:51236#D-3162-T5D"
 }
 "message button" {
 	object {
@@ -2815,7 +2815,7 @@ text {
 		bclr=40
 	}
 	label="BPMD-3172-T5D"
-	press_msg="xfelgpac1dixsdu1ug1t5d:51237#BPMD-3172-T5D"
+	press_msg="xfelgpac1dixsdu1ug1t5d:51237#D-3172-T5D"
 }
 "message button" {
 	object {
@@ -2830,7 +2830,7 @@ text {
 		bclr=40
 	}
 	label="BPMD-3177-T5D"
-	press_msg="xfelgpac1dixsdu1ug1t5d:51238#BPMD-3177-T5D"
+	press_msg="xfelgpac1dixsdu1ug1t5d:51238#D-3177-T5D"
 }
 "shell command" {
 	object {
@@ -2947,7 +2947,7 @@ text {
 		bclr=40
 	}
 	label="BPMD-3180-T5D"
-	press_msg="xfelgpac2dixsdu1ug1t5d:51235#BPMD-3180-T5D"
+	press_msg="xfelgpac2dixsdu1ug1t5d:51235#D-3180-T5D"
 }
 "message button" {
 	object {
@@ -2962,5 +2962,5 @@ text {
 		bclr=40
 	}
 	label="BPMW-3185-T5D"
-	press_msg="xfelgpac2dixsdu1ug1t5d:51236#BPMW-3185-T5D"
+	press_msg="xfelgpac2dixsdu1ug1t5d:51236#W-3185-T5D"
 }

@@ -1,12 +1,12 @@
 
 file {
-	name="/home/goran/epics/xfel/App/config/medm/F_DI_FIN250_BPM_GPAC_BUT_EEPROM.adl"
+	name="/afs/psi.ch/user/r/rybaniec_r/ibfb/exfel_epics_panels/App/config/medm/F_DI_FIN250_BPM_GPAC_BUT_EEPROM.adl"
 	version=030105
 }
 display {
 	object {
-		x=42
-		y=468
+		x=1128
+		y=460
 		width=600
 		height=700
 	}
@@ -1574,9 +1574,9 @@ text {
 text {
 	object {
 		x=470
-		y=305
+		y=326
 		width=60
-		height=10
+		height=17
 	}
 	"basic attribute" {
 		clr=0
@@ -1587,9 +1587,9 @@ text {
 menu {
 	object {
 		x=540
-		y=300
+		y=321
 		width=50
-		height=20
+		height=21
 	}
 	control {
 		chan="$(DEV):BPM-EEPROM-SELECT-SET"
@@ -1600,9 +1600,9 @@ menu {
 "message button" {
 	object {
 		x=470
-		y=385
+		y=406
 		width=120
-		height=15
+		height=17
 	}
 	control {
 		chan="$(DEV):BPM-EEPROM-CMD"
@@ -1616,9 +1616,9 @@ menu {
 "message button" {
 	object {
 		x=470
-		y=345
+		y=366
 		width=120
-		height=15
+		height=17
 	}
 	control {
 		chan="$(DEV):BPM-EEPROM-CMD"
@@ -1632,9 +1632,9 @@ menu {
 "message button" {
 	object {
 		x=470
-		y=365
+		y=386
 		width=120
-		height=15
+		height=17
 	}
 	control {
 		chan="$(DEV):BPM-EEPROM-CMD"
@@ -1677,37 +1677,37 @@ text {
 polyline {
 	object {
 		x=330
-		y=295
+		y=316
 		width=0
-		height=130
+		height=131
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
-		(330,295)
-		(330,425)
+		(330,316)
+		(330,447)
 	}
 }
 polyline {
 	object {
 		x=595
-		y=295
+		y=316
 		width=0
-		height=130
+		height=131
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
-		(595,295)
-		(595,425)
+		(595,316)
+		(595,447)
 	}
 }
 polyline {
 	object {
 		x=330
-		y=295
+		y=316
 		width=265
 		height=0
 	}
@@ -1715,14 +1715,14 @@ polyline {
 		clr=0
 	}
 	points {
-		(330,295)
-		(595,295)
+		(330,316)
+		(595,316)
 	}
 }
 polyline {
 	object {
 		x=330
-		y=425
+		y=446
 		width=265
 		height=0
 	}
@@ -1730,16 +1730,16 @@ polyline {
 		clr=0
 	}
 	points {
-		(330,425)
-		(595,425)
+		(330,446)
+		(595,446)
 	}
 }
 "text entry" {
 	object {
 		x=340
-		y=325
+		y=346
 		width=250
-		height=15
+		height=17
 	}
 	control {
 		chan="$(DEV):BPM-EEPROM-SET-DESC"
@@ -1808,9 +1808,9 @@ text {
 "message button" {
 	object {
 		x=470
-		y=405
+		y=426
 		width=120
-		height=15
+		height=17
 	}
 	control {
 		chan="$(DEV):BPM-EEPROM-CMD"
@@ -1823,10 +1823,10 @@ text {
 }
 text {
 	object {
-		x=340
-		y=277
+		x=405
+		y=297
 		width=60
-		height=12
+		height=17
 	}
 	"basic attribute" {
 		clr=0
@@ -1836,8 +1836,8 @@ text {
 }
 "text entry" {
 	object {
-		x=410
-		y=275
+		x=475
+		y=296
 		width=80
 		height=15
 	}
@@ -2005,6 +2005,35 @@ text {
 		bclr=4
 	}
 	align="horiz. centered"
+	limits {
+	}
+}
+text {
+	object {
+		x=330
+		y=277
+		width=135
+		height=12
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Bunch Destination Mask"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=475
+		y=275
+		width=79
+		height=15
+	}
+	control {
+		chan="$(DEV):X2TIM-DEST-BUNCH-MASK"
+		clr=14
+		bclr=4
+	}
+	format="hexadecimal"
 	limits {
 	}
 }
