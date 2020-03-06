@@ -1,14 +1,14 @@
 
 file {
-	name="/home/wkoprek/XFELDEVL.adl"
+	name="/xfel/controls/App/config/medm/XFELDEVL.adl"
 	version=030105
 }
 display {
 	object {
-		x=71
-		y=104
-		width=600
-		height=340
+		x=745
+		y=241
+		width=595
+		height=373
 	}
 	clr=14
 	bclr=4
@@ -89,8 +89,8 @@ display {
 }
 rectangle {
 	object {
-		x=410
-		y=310
+		x=408
+		y=338
 		width=5
 		height=20
 	}
@@ -105,8 +105,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=545
-		y=310
+		x=543
+		y=338
 		width=5
 		height=20
 	}
@@ -121,8 +121,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=170
-		y=310
+		x=168
+		y=338
 		width=5
 		height=20
 	}
@@ -137,8 +137,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=0
-		y=120
+		x=-2
+		y=148
 		width=600
 		height=20
 	}
@@ -669,8 +669,8 @@ rectangle {
 }
 text {
 	object {
-		x=265
-		y=125
+		x=263
+		y=153
 		width=60
 		height=10
 	}
@@ -683,7 +683,7 @@ text {
 polyline {
 	object {
 		x=0
-		y=120
+		y=146
 		width=601
 		height=2
 	}
@@ -692,14 +692,14 @@ polyline {
 		width=2
 	}
 	points {
-		(1,121)
-		(600,121)
+		(1,147)
+		(600,147)
 	}
 }
 "related display" {
 	object {
-		x=275
-		y=145
+		x=273
+		y=173
 		width=130
 		height=20
 	}
@@ -714,8 +714,8 @@ polyline {
 }
 rectangle {
 	object {
-		x=405
-		y=145
+		x=403
+		y=173
 		width=5
 		height=20
 	}
@@ -730,8 +730,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=405
-		y=145
+		x=403
+		y=173
 		width=5
 		height=20
 	}
@@ -747,7 +747,7 @@ rectangle {
 rectangle {
 	object {
 		x=0
-		y=185
+		y=213
 		width=600
 		height=20
 	}
@@ -758,7 +758,7 @@ rectangle {
 text {
 	object {
 		x=265
-		y=190
+		y=216
 		width=60
 		height=10
 	}
@@ -771,7 +771,7 @@ text {
 polyline {
 	object {
 		x=0
-		y=185
+		y=211
 		width=601
 		height=2
 	}
@@ -780,14 +780,14 @@ polyline {
 		width=2
 	}
 	points {
-		(1,186)
-		(600,186)
+		(1,212)
+		(600,212)
 	}
 }
 "shell command" {
 	object {
-		x=280
-		y=210
+		x=278
+		y=238
 		width=130
 		height=20
 	}
@@ -801,8 +801,8 @@ polyline {
 }
 "related display" {
 	object {
-		x=5
-		y=210
+		x=3
+		y=238
 		width=100
 		height=20
 	}
@@ -817,8 +817,8 @@ polyline {
 }
 rectangle {
 	object {
-		x=170
-		y=210
+		x=168
+		y=238
 		width=5
 		height=20
 	}
@@ -833,8 +833,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=170
-		y=210
+		x=168
+		y=238
 		width=5
 		height=20
 	}
@@ -849,8 +849,8 @@ rectangle {
 }
 "related display" {
 	object {
-		x=105
-		y=210
+		x=103
+		y=238
 		width=65
 		height=20
 	}
@@ -865,8 +865,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=410
-		y=210
+		x=408
+		y=238
 		width=5
 		height=20
 	}
@@ -881,8 +881,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=410
-		y=210
+		x=408
+		y=238
 		width=5
 		height=20
 	}
@@ -897,8 +897,8 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=175
-		y=210
+		x=173
+		y=238
 		width=100
 		height=20
 	}
@@ -912,8 +912,8 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=415
-		y=210
+		x=413
+		y=238
 		width=130
 		height=20
 	}
@@ -927,8 +927,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=545
-		y=210
+		x=543
+		y=238
 		width=5
 		height=20
 	}
@@ -943,8 +943,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=545
-		y=210
+		x=543
+		y=238
 		width=5
 		height=20
 	}
@@ -959,8 +959,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=0
-		y=245
+		x=-2
+		y=273
 		width=600
 		height=20
 	}
@@ -971,7 +971,7 @@ rectangle {
 text {
 	object {
 		x=265
-		y=250
+		y=276
 		width=60
 		height=10
 	}
@@ -984,7 +984,7 @@ text {
 polyline {
 	object {
 		x=0
-		y=245
+		y=271
 		width=601
 		height=2
 	}
@@ -993,14 +993,14 @@ polyline {
 		width=2
 	}
 	points {
-		(1,246)
-		(600,246)
+		(1,272)
+		(600,272)
 	}
 }
 "shell command" {
 	object {
-		x=280
-		y=270
+		x=278
+		y=298
 		width=130
 		height=20
 	}
@@ -1014,8 +1014,8 @@ polyline {
 }
 "related display" {
 	object {
-		x=5
-		y=270
+		x=3
+		y=298
 		width=100
 		height=20
 	}
@@ -1030,8 +1030,8 @@ polyline {
 }
 rectangle {
 	object {
-		x=170
-		y=270
+		x=168
+		y=298
 		width=5
 		height=20
 	}
@@ -1046,8 +1046,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=170
-		y=270
+		x=168
+		y=298
 		width=5
 		height=20
 	}
@@ -1062,8 +1062,8 @@ rectangle {
 }
 "related display" {
 	object {
-		x=105
-		y=270
+		x=103
+		y=298
 		width=65
 		height=20
 	}
@@ -1078,8 +1078,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=410
-		y=270
+		x=408
+		y=298
 		width=5
 		height=20
 	}
@@ -1094,8 +1094,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=410
-		y=270
+		x=408
+		y=298
 		width=5
 		height=20
 	}
@@ -1110,8 +1110,8 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=175
-		y=270
+		x=173
+		y=298
 		width=100
 		height=20
 	}
@@ -1125,8 +1125,8 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=415
-		y=270
+		x=413
+		y=298
 		width=130
 		height=20
 	}
@@ -1140,8 +1140,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=545
-		y=270
+		x=543
+		y=298
 		width=5
 		height=20
 	}
@@ -1156,8 +1156,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=545
-		y=270
+		x=543
+		y=298
 		width=5
 		height=20
 	}
@@ -1172,8 +1172,8 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=280
-		y=290
+		x=278
+		y=318
 		width=130
 		height=20
 	}
@@ -1187,8 +1187,8 @@ rectangle {
 }
 "related display" {
 	object {
-		x=5
-		y=290
+		x=3
+		y=318
 		width=100
 		height=20
 	}
@@ -1203,8 +1203,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=170
-		y=290
+		x=168
+		y=318
 		width=5
 		height=20
 	}
@@ -1219,8 +1219,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=170
-		y=290
+		x=168
+		y=318
 		width=5
 		height=20
 	}
@@ -1235,8 +1235,8 @@ rectangle {
 }
 "related display" {
 	object {
-		x=105
-		y=290
+		x=103
+		y=318
 		width=65
 		height=20
 	}
@@ -1251,8 +1251,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=410
-		y=290
+		x=408
+		y=318
 		width=5
 		height=20
 	}
@@ -1267,8 +1267,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=410
-		y=290
+		x=408
+		y=318
 		width=5
 		height=20
 	}
@@ -1283,8 +1283,8 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=175
-		y=290
+		x=173
+		y=318
 		width=100
 		height=20
 	}
@@ -1298,8 +1298,8 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=415
-		y=290
+		x=413
+		y=318
 		width=130
 		height=20
 	}
@@ -1313,8 +1313,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=545
-		y=290
+		x=543
+		y=318
 		width=5
 		height=20
 	}
@@ -1329,8 +1329,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=545
-		y=290
+		x=543
+		y=318
 		width=5
 		height=20
 	}
@@ -1345,8 +1345,8 @@ rectangle {
 }
 "related display" {
 	object {
-		x=105
-		y=310
+		x=103
+		y=338
 		width=65
 		height=20
 	}
@@ -1361,8 +1361,8 @@ rectangle {
 }
 "related display" {
 	object {
-		x=5
-		y=310
+		x=3
+		y=338
 		width=100
 		height=20
 	}
@@ -1377,8 +1377,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=170
-		y=310
+		x=168
+		y=338
 		width=5
 		height=20
 	}
@@ -1393,8 +1393,8 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=175
-		y=310
+		x=173
+		y=338
 		width=100
 		height=20
 	}
@@ -1408,8 +1408,8 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=280
-		y=310
+		x=278
+		y=338
 		width=130
 		height=20
 	}
@@ -1423,8 +1423,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=410
-		y=310
+		x=408
+		y=338
 		width=5
 		height=20
 	}
@@ -1439,8 +1439,8 @@ rectangle {
 }
 "shell command" {
 	object {
-		x=415
-		y=310
+		x=413
+		y=338
 		width=130
 		height=20
 	}
@@ -1454,8 +1454,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=545
-		y=310
+		x=543
+		y=338
 		width=5
 		height=20
 	}
@@ -1466,5 +1466,178 @@ rectangle {
 		vis="calc"
 		calc="A=1"
 		chan="4FLFXTDS:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=175
+		y=120
+		width=100
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T mbugpacCR0963 -bg rgb:40/A0/90 -e telnet -l root mbugpacCR0963 &"
+	}
+	clr=14
+	bclr=57
+	label="-mbugpacCR0963"
+}
+"related display" {
+	object {
+		x=5
+		y=120
+		width=100
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=DEVCR0963"
+	}
+	clr=14
+	bclr=57
+	label="-DEVCR0963"
+}
+rectangle {
+	object {
+		x=170
+		y=120
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="DEVCR0963:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=170
+		y=120
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="DEVCR0963:S7GPAC-STATUS"
+	}
+}
+"related display" {
+	object {
+		x=105
+		y=120
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="XFELTIM.adl"
+		args="DEV=DEVCR0963"
+	}
+	clr=14
+	bclr=57
+	label="-Timing"
+}
+"shell command" {
+	object {
+		x=280
+		y=120
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh DEVCR09631 BPM_GPAC_REN_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-DEVCR09631"
+}
+rectangle {
+	object {
+		x=410
+		y=120
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="DEVCR09631:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=410
+		y=120
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="DEVCR09631:S7GPAC-STATUS"
+	}
+}
+"shell command" {
+	object {
+		x=415
+		y=120
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="./xfel_qt.sh DEVCR09632 BPM_GPAC_REN_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-DEVCR09632"
+}
+rectangle {
+	object {
+		x=545
+		y=120
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="DEVCR09632:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=545
+		y=120
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="DEVCR09632:S7GPAC-STATUS"
 	}
 }
