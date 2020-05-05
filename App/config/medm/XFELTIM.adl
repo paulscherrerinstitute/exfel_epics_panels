@@ -1,12 +1,12 @@
 
 file {
-	name="/home/goran/epics/xfel/App/config/medm/XFELTIM.adl"
+	name="/xfel/controls/App/config/medm/XFELTIM.adl"
 	version=030105
 }
 display {
 	object {
-		x=347
-		y=488
+		x=95
+		y=496
 		width=680
 		height=380
 	}
@@ -2511,4 +2511,190 @@ text {
 	}
 	textix="SASE5"
 	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=30
+		y=295
+		width=40
+		height=15
+	}
+	control {
+		chan="$(DEV):XFELTIM-EVENT-0"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=5
+		y=295
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+	align="horiz. right"
+}
+text {
+	object {
+		x=30
+		y=275
+		width=40
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Event"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=5
+		y=315
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="1"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=30
+		y=315
+		width=40
+		height=15
+	}
+	control {
+		chan="$(DEV):XFELTIM-EVENT-1"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=30
+		y=335
+		width=40
+		height=15
+	}
+	control {
+		chan="$(DEV):XFELTIM-EVENT-2"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=5
+		y=335
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2"
+	align="horiz. right"
+}
+text {
+	object {
+		x=5
+		y=355
+		width=15
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="3"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=30
+		y=355
+		width=40
+		height=15
+	}
+	control {
+		chan="$(DEV):XFELTIM-EVENT-3"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=60
+		y=275
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Destination"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=75
+		y=295
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BUT1/CAV1/REN1"
+}
+text {
+	object {
+		x=80
+		y=315
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BUT2"
+}
+text {
+	object {
+		x=80
+		y=335
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BUT3/CAV2/REN2"
+}
+text {
+	object {
+		x=80
+		y=355
+		width=100
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BUT4"
 }
