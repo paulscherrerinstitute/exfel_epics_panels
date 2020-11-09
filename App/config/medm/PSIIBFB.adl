@@ -1,12 +1,12 @@
 
 file {
-	name="/afs/psi.ch/user/k/koprek_w/github.com/XFEL/xfel_epics_panels/App/config/medm/PSIIBFB.adl"
+	name="/afs/psi.ch/group/8221/koprek_w//github.com/XFEL/exfel_epics_panels/App/config/medm/PSIIBFB.adl"
 	version=030105
 }
 display {
 	object {
-		x=14
-		y=41
+		x=81
+		y=33
 		width=520
 		height=400
 	}
@@ -108,7 +108,7 @@ text {
 	"basic attribute" {
 		clr=14
 	}
-	textix="E-XFEL IBFB Test Setup"
+	textix="E-XFEL IBFB Test Setup [MTEST-XFEL-IBFB]"
 	align="horiz. centered"
 }
 polyline {
@@ -135,11 +135,11 @@ polyline {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T fin129-softioc:50001 -bg rgb:30/40/60 -fg white -e telnet -l root fin129-softioc 50001 &"
+		name="xterm -T psi-softioc-2:50201 -bg rgb:30/40/60 -fg white -e telnet -l root psi-softioc-2 50201 &"
 	}
 	clr=14
 	bclr=57
-	label="-fin129-softioc:50001"
+	label="-psi-softioc-2:50201"
 }
 "related display" {
 	object {
@@ -502,7 +502,7 @@ rectangle {
 	}
 	clr=14
 	bclr=57
-	label="-finlc xterm"
+	label="-gfalc xterm"
 }
 text {
 	object {
@@ -526,11 +526,11 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -e ssh doocsadm@xfelcpu1 &"
+		name="xterm -e ssh doocsadm@xfelcpuibfb &"
 	}
 	clr=14
 	bclr=57
-	label="-xfelcpu1"
+	label="-xfelcpuibfb"
 }
 text {
 	object {
