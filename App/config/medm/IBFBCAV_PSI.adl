@@ -1,14 +1,14 @@
 
 file {
-	name="/afs/psi.ch/user/r/rybaniec_r/ibfb/exfel_epics_panels/scripts/medm/IBFBCAV_PSI_template.adl"
+	name="/afs/psi.ch/group/8221/koprek_w/github.com/XFEL/exfel_epics_panels/App/config/medm/IBFBCAV_PSI.adl"
 	version=030105
 }
 display {
 	object {
-		x=797
-		y=254
-		width=1250
-		height=315
+		x=73
+		y=24
+		width=1106
+		height=260
 	}
 	clr=14
 	bclr=4
@@ -89,6 +89,102 @@ display {
 }
 rectangle {
 	object {
+		x=763
+		y=191
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) = 0"
+		chan="IPC1629-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=763
+		y=211
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) = 0"
+		chan="IPC1536-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=672
+		y=211
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) = 0"
+		chan="IPC1536-IBFB:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=672
+		y=191
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) = 0"
+		chan="IPC1629-IBFB:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=693
+		y=211
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) = 0"
+		chan="IPC1536-IBFB:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=693
+		y=191
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) = 0"
+		chan="IPC1629-IBFB:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
 		x=-1680
 		y=0
 		width=3020
@@ -114,7 +210,7 @@ text {
 polyline {
 	object {
 		x=640
-		y=65
+		y=101
 		width=0
 		height=1233
 	}
@@ -122,27 +218,14 @@ polyline {
 		clr=0
 	}
 	points {
-		(640,65)
-		(640,1298)
+		(640,101)
+		(640,1334)
 	}
-}
-text {
-	object {
-		x=684
-		y=72
-		width=95
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="Trigger delay"
-	align="horiz. centered"
 }
 polyline {
 	object {
 		x=775
-		y=65
+		y=102
 		width=0
 		height=1200
 	}
@@ -150,14 +233,14 @@ polyline {
 		clr=0
 	}
 	points {
-		(775,65)
-		(775,1265)
+		(775,102)
+		(775,1302)
 	}
 }
 polyline {
 	object {
 		x=84
-		y=65
+		y=102
 		width=1
 		height=1203
 	}
@@ -165,14 +248,14 @@ polyline {
 		clr=0
 	}
 	points {
-		(84,65)
-		(85,1268)
+		(84,102)
+		(85,1305)
 	}
 }
 text {
 	object {
 		x=15
-		y=73
+		y=109
 		width=50
 		height=15
 	}
@@ -185,7 +268,7 @@ text {
 text {
 	object {
 		x=10
-		y=116
+		y=152
 		width=70
 		height=15
 	}
@@ -198,7 +281,7 @@ text {
 text {
 	object {
 		x=10
-		y=96
+		y=132
 		width=70
 		height=15
 	}
@@ -211,7 +294,7 @@ text {
 text {
 	object {
 		x=780
-		y=72
+		y=108
 		width=95
 		height=15
 	}
@@ -224,7 +307,7 @@ text {
 polyline {
 	object {
 		x=880
-		y=65
+		y=101
 		width=0
 		height=1200
 	}
@@ -232,14 +315,14 @@ polyline {
 		clr=0
 	}
 	points {
-		(880,65)
-		(880,1265)
+		(880,101)
+		(880,1301)
 	}
 }
 text {
 	object {
 		x=520
-		y=75
+		y=111
 		width=100
 		height=15
 	}
@@ -249,51 +332,25 @@ text {
 	textix="Enabled Mode"
 	align="horiz. centered"
 }
-text {
-	object {
-		x=10
-		y=156
-		width=70
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="Downstream X"
-	align="horiz. right"
-}
-text {
-	object {
-		x=10
-		y=136
-		width=70
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="Upstream X"
-	align="horiz. right"
-}
 polyline {
 	object {
 		x=-103
-		y=250
-		width=1500
+		y=260
+		width=1205
 		height=0
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
-		(-103,250)
-		(1397,250)
+		(-103,260)
+		(1102,260)
 	}
 }
 text {
 	object {
 		x=885
-		y=73
+		y=109
 		width=95
 		height=15
 	}
@@ -306,7 +363,7 @@ text {
 polyline {
 	object {
 		x=515
-		y=65
+		y=102
 		width=1
 		height=1202
 	}
@@ -314,14 +371,14 @@ polyline {
 		clr=0
 	}
 	points {
-		(516,65)
-		(515,1267)
+		(516,102)
+		(515,1304)
 	}
 }
 "shell command" {
 	object {
 		x=360
-		y=68
+		y=104
 		width=150
 		height=20
 	}
@@ -336,7 +393,7 @@ polyline {
 polyline {
 	object {
 		x=0
-		y=91
+		y=127
 		width=1100
 		height=0
 	}
@@ -344,14 +401,14 @@ polyline {
 		clr=0
 	}
 	points {
-		(0,91)
-		(1100,91)
+		(0,127)
+		(1100,127)
 	}
 }
 text {
 	object {
 		x=990
-		y=73
+		y=109
 		width=95
 		height=15
 	}
@@ -364,7 +421,7 @@ text {
 polyline {
 	object {
 		x=985
-		y=65
+		y=102
 		width=0
 		height=1200
 	}
@@ -372,8 +429,8 @@ polyline {
 		clr=0
 	}
 	points {
-		(985,65)
-		(985,1265)
+		(985,102)
+		(985,1302)
 	}
 }
 polyline {
@@ -434,23 +491,23 @@ text {
 }
 polyline {
 	object {
-		x=688
-		y=65
-		width=412
+		x=776
+		y=101
+		width=325
 		height=0
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
-		(688,65)
-		(1100,65)
+		(776,101)
+		(1101,101)
 	}
 }
 polyline {
 	object {
-		x=688
-		y=66
+		x=707
+		y=100
 		width=0
 		height=1200
 	}
@@ -458,14 +515,14 @@ polyline {
 		clr=0
 	}
 	points {
-		(688,66)
-		(688,1266)
+		(707,100)
+		(707,1300)
 	}
 }
 polyline {
 	object {
 		x=-20
-		y=65
+		y=101
 		width=659
 		height=0
 	}
@@ -473,124 +530,27 @@ polyline {
 		clr=0
 	}
 	points {
-		(-20,65)
-		(639,65)
+		(-20,101)
+		(639,101)
 	}
 }
 text {
 	object {
-		x=578
-		y=35
+		x=580
+		y=64
 		width=40
 		height=15
 	}
 	"basic attribute" {
 		clr=0
 	}
-	textix="BPM1"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=607
-		y=35
-		width=40
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="BPM2"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=526
-		y=35
-		width=40
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="RXLOSS GTX0"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=664
-		y=35
-		width=40
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="BPM1"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=691
-		y=35
-		width=40
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="BPM2"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=743
-		y=35
-		width=40
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="GTX0 RXSYNC"
+	textix="Local ping"
 	align="horiz. centered"
 }
 polyline {
 	object {
-		x=648
-		y=40
-		width=0
-		height=45
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(648,85)
-		(648,40)
-		(648,52)
-		(648,52)
-	}
-}
-polyline {
-	object {
-		x=662
-		y=40
-		width=0
-		height=45
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(662,85)
-		(662,40)
-	}
-}
-polyline {
-	object {
-		x=643
-		y=55
+		x=665
+		y=70
 		width=0
 		height=30
 	}
@@ -598,119 +558,89 @@ polyline {
 		clr=0
 	}
 	points {
-		(643,85)
-		(643,55)
+		(665,100)
+		(665,70)
 	}
 }
 polyline {
 	object {
-		x=597
-		y=55
-		width=45
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(642,55)
-		(597,55)
-	}
-}
-polyline {
-	object {
-		x=597
-		y=50
+		x=645
+		y=91
 		width=0
-		height=5
+		height=10
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
-		(597,55)
-		(597,50)
+		(645,101)
+		(645,91)
 	}
 }
 polyline {
 	object {
-		x=667
-		y=55
+		x=635
+		y=90
+		width=10
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(645,90)
+		(635,90)
+	}
+}
+polyline {
+	object {
+		x=675
+		y=60
 		width=0
-		height=30
+		height=40
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
-		(667,85)
-		(667,55)
+		(675,100)
+		(675,60)
 	}
 }
 polyline {
 	object {
-		x=667
-		y=55
-		width=43
+		x=635
+		y=70
+		width=30
 		height=0
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
-		(710,55)
-		(667,55)
+		(635,70)
+		(665,70)
 	}
 }
 polyline {
 	object {
-		x=710
-		y=50
-		width=0
-		height=5
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(710,55)
-		(710,50)
-	}
-}
-polyline {
-	object {
-		x=662
-		y=40
-		width=5
+		x=634
+		y=80
+		width=20
 		height=0
 	}
 	"basic attribute" {
 		clr=0
 	}
 	points {
-		(662,40)
-		(667,40)
-	}
-}
-polyline {
-	object {
-		x=642
-		y=40
-		width=5
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(642,40)
-		(647,40)
+		(634,80)
+		(654,80)
 	}
 }
 text {
 	object {
 		x=90
-		y=70
+		y=106
 		width=50
 		height=10
 	}
@@ -722,7 +652,7 @@ text {
 "text update" {
 	object {
 		x=135
-		y=70
+		y=106
 		width=100
 		height=16
 	}
@@ -737,7 +667,7 @@ text {
 rectangle {
 	object {
 		x=90
-		y=85
+		y=121
 		width=149
 		height=5
 	}
@@ -753,7 +683,7 @@ rectangle {
 rectangle {
 	object {
 		x=90
-		y=85
+		y=121
 		width=149
 		height=5
 	}
@@ -769,7 +699,7 @@ rectangle {
 "message button" {
 	object {
 		x=255
-		y=68
+		y=104
 		width=100
 		height=20
 	}
@@ -781,240 +711,10 @@ rectangle {
 	label="Disconnect"
 	press_msg=":51235# "
 }
-text {
-	object {
-		x=1042
-		y=35
-		width=40
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="BPM1"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=1071
-		y=35
-		width=40
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="BPM2"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=1003
-		y=35
-		width=40
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="GOT PING"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=1128
-		y=35
-		width=40
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="BPM1"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=1155
-		y=35
-		width=40
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="BPM2"
-	align="horiz. centered"
-}
-text {
-	object {
-		x=1197
-		y=35
-		width=40
-		height=15
-	}
-	"basic attribute" {
-		clr=0
-	}
-	textix="ADDRESSED"
-	align="horiz. centered"
-}
-polyline {
-	object {
-		x=1112
-		y=40
-		width=0
-		height=45
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(1112,85)
-		(1112,40)
-		(1112,52)
-		(1112,52)
-	}
-}
-polyline {
-	object {
-		x=1126
-		y=40
-		width=0
-		height=45
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(1126,85)
-		(1126,40)
-	}
-}
-polyline {
-	object {
-		x=1107
-		y=55
-		width=0
-		height=30
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(1107,85)
-		(1107,55)
-	}
-}
-polyline {
-	object {
-		x=1061
-		y=55
-		width=45
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(1106,55)
-		(1061,55)
-	}
-}
-polyline {
-	object {
-		x=1061
-		y=50
-		width=0
-		height=5
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(1061,55)
-		(1061,50)
-	}
-}
-polyline {
-	object {
-		x=1131
-		y=55
-		width=0
-		height=30
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(1131,85)
-		(1131,55)
-	}
-}
-polyline {
-	object {
-		x=1131
-		y=55
-		width=43
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(1174,55)
-		(1131,55)
-	}
-}
-polyline {
-	object {
-		x=1174
-		y=50
-		width=0
-		height=5
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(1174,55)
-		(1174,50)
-	}
-}
-polyline {
-	object {
-		x=1126
-		y=40
-		width=5
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(1126,40)
-		(1131,40)
-	}
-}
-polyline {
-	object {
-		x=1106
-		y=40
-		width=5
-		height=0
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(1106,40)
-		(1111,40)
-	}
-}
 polyline {
 	object {
 		x=1100
-		y=65
+		y=101
 		width=0
 		height=1200
 	}
@@ -1022,60 +722,44 @@ polyline {
 		clr=0
 	}
 	points {
-		(1100,65)
-		(1100,1265)
+		(1100,101)
+		(1100,1301)
 	}
 }
-polyline {
+"shell command" {
 	object {
-		x=1145
-		y=65
-		width=0
-		height=1200
-	}
-	"basic attribute" {
-		clr=0
-	}
-	points {
-		(1145,65)
-		(1145,1265)
-	}
-}
-
-"shell command" {
-    object {
-        x=90
-        y=95
+		x=90
+		y=131
 		width=85
-        height=20
+		height=20
 	}
-    command[0] {
-        label="Terminal"
-        name="./psi_qt.sh IPC1627-CAV1 BPM_GPAC_CAV_SMP.ui &"
-    }
-    clr=14
-    bclr=57
-    label="-IPC1627-CAV1"
+	command[0] {
+		label="Terminal"
+		name="./psi_qt.sh IPC1627-CAV1 BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1627-CAV1"
 }
 "shell command" {
-    object {
-        x=175
-        y=95
+	object {
+		x=175
+		y=131
 		width=85
-        height=20
+		height=20
 	}
-    command[0] {
-        label="Terminal"
-        name="./psi_qt.sh IPC1627-CAV2 BPM_GPAC_CAV_SMP.ui &"
-    }
-    clr=14
-    bclr=57
-    label="-IPC1627-CAV2"
+	command[0] {
+		label="Terminal"
+		name="./psi_qt.sh IPC1627-CAV2 BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1627-CAV2"
 }
 "related display" {
 	object {
 		x=260
-		y=95
+		y=131
 		width=65
 		height=20
 	}
@@ -1091,7 +775,7 @@ polyline {
 rectangle {
 	object {
 		x=325
-		y=95
+		y=131
 		width=5
 		height=20
 	}
@@ -1107,7 +791,7 @@ rectangle {
 rectangle {
 	object {
 		x=325
-		y=95
+		y=131
 		width=5
 		height=20
 	}
@@ -1123,7 +807,7 @@ rectangle {
 "related display" {
 	object {
 		x=330
-		y=95
+		y=131
 		width=65
 		height=20
 	}
@@ -1139,7 +823,7 @@ rectangle {
 "shell command" {
 	object {
 		x=395
-		y=95
+		y=131
 		width=115
 		height=20
 	}
@@ -1154,7 +838,7 @@ rectangle {
 rectangle {
 	object {
 		x=510
-		y=95
+		y=131
 		width=5
 		height=20
 	}
@@ -1170,7 +854,7 @@ rectangle {
 rectangle {
 	object {
 		x=510
-		y=95
+		y=131
 		width=5
 		height=20
 	}
@@ -1186,7 +870,7 @@ rectangle {
 "choice button" {
 	object {
 		x=520
-		y=98
+		y=134
 		width=55
 		height=15
 	}
@@ -1200,7 +884,7 @@ rectangle {
 "choice button" {
 	object {
 		x=580
-		y=98
+		y=134
 		width=55
 		height=15
 	}
@@ -1214,7 +898,7 @@ rectangle {
 rectangle {
 	object {
 		x=642
-		y=95
+		y=131
 		width=7
 		height=20
 	}
@@ -1230,7 +914,7 @@ rectangle {
 rectangle {
 	object {
 		x=642
-		y=95
+		y=131
 		width=7
 		height=20
 	}
@@ -1246,7 +930,7 @@ rectangle {
 rectangle {
 	object {
 		x=652
-		y=95
+		y=131
 		width=7
 		height=20
 	}
@@ -1262,7 +946,7 @@ rectangle {
 rectangle {
 	object {
 		x=652
-		y=95
+		y=131
 		width=7
 		height=20
 	}
@@ -1278,7 +962,7 @@ rectangle {
 rectangle {
 	object {
 		x=662
-		y=95
+		y=131
 		width=7
 		height=20
 	}
@@ -1294,7 +978,7 @@ rectangle {
 rectangle {
 	object {
 		x=662
-		y=95
+		y=131
 		width=7
 		height=20
 	}
@@ -1310,7 +994,7 @@ rectangle {
 rectangle {
 	object {
 		x=672
-		y=95
+		y=131
 		width=7
 		height=20
 	}
@@ -1325,8 +1009,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
-		y=95
+		x=713
+		y=131
 		width=7
 		height=20
 	}
@@ -1341,8 +1025,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
-		y=95
+		x=713
+		y=131
 		width=7
 		height=20
 	}
@@ -1357,8 +1041,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
-		y=95
+		x=723
+		y=131
 		width=7
 		height=20
 	}
@@ -1373,8 +1057,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
-		y=95
+		x=723
+		y=131
 		width=7
 		height=20
 	}
@@ -1389,8 +1073,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
-		y=95
+		x=733
+		y=131
 		width=7
 		height=20
 	}
@@ -1405,8 +1089,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
-		y=95
+		x=733
+		y=131
 		width=7
 		height=20
 	}
@@ -1421,8 +1105,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
-		y=95
+		x=743
+		y=131
 		width=7
 		height=20
 	}
@@ -1437,8 +1121,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=743
-		y=98
+		x=780
+		y=134
 		width=45
 		height=15
 	}
@@ -1453,8 +1137,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
-		y=98
+		x=830
+		y=134
 		width=45
 		height=15
 	}
@@ -1469,8 +1153,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
-		y=98
+		x=885
+		y=134
 		width=45
 		height=15
 	}
@@ -1485,8 +1169,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
-		y=98
+		x=935
+		y=134
 		width=45
 		height=15
 	}
@@ -1501,8 +1185,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
-		y=98
+		x=990
+		y=134
 		width=45
 		height=15
 	}
@@ -1517,8 +1201,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
-		y=98
+		x=1040
+		y=134
 		width=45
 		height=15
 	}
@@ -1532,39 +1216,39 @@ rectangle {
 	}
 }
 "shell command" {
-    object {
-        x=90
-        y=115
+	object {
+		x=90
+		y=151
 		width=85
-        height=20
+		height=20
 	}
-    command[0] {
-        label="Terminal"
-        name="./psi_qt.sh IPC1576-CAV1 BPM_GPAC_CAV_SMP.ui &"
-    }
-    clr=14
-    bclr=57
-    label="-IPC1576-CAV1"
+	command[0] {
+		label="Terminal"
+		name="./psi_qt.sh IPC1576-CAV1 BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1576-CAV1"
 }
 "shell command" {
-    object {
-        x=175
-        y=115
+	object {
+		x=175
+		y=151
 		width=85
-        height=20
+		height=20
 	}
-    command[0] {
-        label="Terminal"
-        name="./psi_qt.sh IPC1576-CAV2 BPM_GPAC_CAV_SMP.ui &"
-    }
-    clr=14
-    bclr=57
-    label="-IPC1576-CAV2"
+	command[0] {
+		label="Terminal"
+		name="./psi_qt.sh IPC1576-CAV2 BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1576-CAV2"
 }
 "related display" {
 	object {
 		x=260
-		y=115
+		y=151
 		width=65
 		height=20
 	}
@@ -1580,7 +1264,7 @@ rectangle {
 rectangle {
 	object {
 		x=325
-		y=115
+		y=151
 		width=5
 		height=20
 	}
@@ -1596,7 +1280,7 @@ rectangle {
 rectangle {
 	object {
 		x=325
-		y=115
+		y=151
 		width=5
 		height=20
 	}
@@ -1612,7 +1296,7 @@ rectangle {
 "related display" {
 	object {
 		x=330
-		y=115
+		y=151
 		width=65
 		height=20
 	}
@@ -1628,7 +1312,7 @@ rectangle {
 "shell command" {
 	object {
 		x=395
-		y=115
+		y=151
 		width=115
 		height=20
 	}
@@ -1643,7 +1327,7 @@ rectangle {
 rectangle {
 	object {
 		x=510
-		y=115
+		y=151
 		width=5
 		height=20
 	}
@@ -1659,7 +1343,7 @@ rectangle {
 rectangle {
 	object {
 		x=510
-		y=115
+		y=151
 		width=5
 		height=20
 	}
@@ -1675,7 +1359,7 @@ rectangle {
 "choice button" {
 	object {
 		x=520
-		y=118
+		y=154
 		width=55
 		height=15
 	}
@@ -1689,7 +1373,7 @@ rectangle {
 "choice button" {
 	object {
 		x=580
-		y=118
+		y=154
 		width=55
 		height=15
 	}
@@ -1703,7 +1387,7 @@ rectangle {
 rectangle {
 	object {
 		x=642
-		y=115
+		y=151
 		width=7
 		height=20
 	}
@@ -1719,7 +1403,7 @@ rectangle {
 rectangle {
 	object {
 		x=642
-		y=115
+		y=151
 		width=7
 		height=20
 	}
@@ -1735,7 +1419,7 @@ rectangle {
 rectangle {
 	object {
 		x=652
-		y=115
+		y=151
 		width=7
 		height=20
 	}
@@ -1751,7 +1435,7 @@ rectangle {
 rectangle {
 	object {
 		x=652
-		y=115
+		y=151
 		width=7
 		height=20
 	}
@@ -1767,7 +1451,7 @@ rectangle {
 rectangle {
 	object {
 		x=662
-		y=115
+		y=151
 		width=7
 		height=20
 	}
@@ -1783,7 +1467,7 @@ rectangle {
 rectangle {
 	object {
 		x=662
-		y=115
+		y=151
 		width=7
 		height=20
 	}
@@ -1799,7 +1483,7 @@ rectangle {
 rectangle {
 	object {
 		x=672
-		y=115
+		y=151
 		width=7
 		height=20
 	}
@@ -1814,8 +1498,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
-		y=115
+		x=713
+		y=151
 		width=7
 		height=20
 	}
@@ -1830,8 +1514,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
-		y=115
+		x=713
+		y=151
 		width=7
 		height=20
 	}
@@ -1846,8 +1530,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
-		y=115
+		x=723
+		y=151
 		width=7
 		height=20
 	}
@@ -1862,8 +1546,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
-		y=115
+		x=723
+		y=151
 		width=7
 		height=20
 	}
@@ -1878,8 +1562,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
-		y=115
+		x=733
+		y=151
 		width=7
 		height=20
 	}
@@ -1894,8 +1578,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
-		y=115
+		x=733
+		y=151
 		width=7
 		height=20
 	}
@@ -1910,8 +1594,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
-		y=115
+		x=743
+		y=151
 		width=7
 		height=20
 	}
@@ -1926,8 +1610,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=743
-		y=118
+		x=780
+		y=154
 		width=45
 		height=15
 	}
@@ -1942,8 +1626,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
-		y=118
+		x=830
+		y=154
 		width=45
 		height=15
 	}
@@ -1958,8 +1642,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
-		y=118
+		x=885
+		y=154
 		width=45
 		height=15
 	}
@@ -1974,8 +1658,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
-		y=118
+		x=935
+		y=154
 		width=45
 		height=15
 	}
@@ -1990,8 +1674,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
-		y=118
+		x=990
+		y=154
 		width=45
 		height=15
 	}
@@ -2006,8 +1690,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
-		y=118
+		x=1040
+		y=154
 		width=45
 		height=15
 	}
@@ -2021,39 +1705,39 @@ rectangle {
 	}
 }
 "shell command" {
-    object {
-        x=90
-        y=135
+	object {
+		x=90
+		y=171
 		width=85
-        height=20
+		height=20
 	}
-    command[0] {
-        label="Terminal"
-        name="./psi_qt.sh IPC1488-CAV1 BPM_GPAC_CAV_SMP.ui &"
-    }
-    clr=14
-    bclr=57
-    label="-IPC1488-CAV1"
+	command[0] {
+		label="Terminal"
+		name="./psi_qt.sh IPC1488-CAV1 BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1488-CAV1"
 }
 "shell command" {
-    object {
-        x=175
-        y=135
+	object {
+		x=175
+		y=171
 		width=85
-        height=20
+		height=20
 	}
-    command[0] {
-        label="Terminal"
-        name="./psi_qt.sh IPC1488-CAV2 BPM_GPAC_CAV_SMP.ui &"
-    }
-    clr=14
-    bclr=57
-    label="-IPC1488-CAV2"
+	command[0] {
+		label="Terminal"
+		name="./psi_qt.sh IPC1488-CAV2 BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1488-CAV2"
 }
 "related display" {
 	object {
 		x=260
-		y=135
+		y=171
 		width=65
 		height=20
 	}
@@ -2069,7 +1753,7 @@ rectangle {
 rectangle {
 	object {
 		x=325
-		y=135
+		y=171
 		width=5
 		height=20
 	}
@@ -2085,7 +1769,7 @@ rectangle {
 rectangle {
 	object {
 		x=325
-		y=135
+		y=171
 		width=5
 		height=20
 	}
@@ -2101,7 +1785,7 @@ rectangle {
 "related display" {
 	object {
 		x=330
-		y=135
+		y=171
 		width=65
 		height=20
 	}
@@ -2117,7 +1801,7 @@ rectangle {
 "shell command" {
 	object {
 		x=395
-		y=135
+		y=171
 		width=115
 		height=20
 	}
@@ -2132,7 +1816,7 @@ rectangle {
 rectangle {
 	object {
 		x=510
-		y=135
+		y=171
 		width=5
 		height=20
 	}
@@ -2148,7 +1832,7 @@ rectangle {
 rectangle {
 	object {
 		x=510
-		y=135
+		y=171
 		width=5
 		height=20
 	}
@@ -2164,7 +1848,7 @@ rectangle {
 "choice button" {
 	object {
 		x=520
-		y=138
+		y=174
 		width=55
 		height=15
 	}
@@ -2178,7 +1862,7 @@ rectangle {
 "choice button" {
 	object {
 		x=580
-		y=138
+		y=174
 		width=55
 		height=15
 	}
@@ -2192,7 +1876,7 @@ rectangle {
 rectangle {
 	object {
 		x=642
-		y=135
+		y=171
 		width=7
 		height=20
 	}
@@ -2208,7 +1892,7 @@ rectangle {
 rectangle {
 	object {
 		x=642
-		y=135
+		y=171
 		width=7
 		height=20
 	}
@@ -2224,7 +1908,7 @@ rectangle {
 rectangle {
 	object {
 		x=652
-		y=135
+		y=171
 		width=7
 		height=20
 	}
@@ -2240,7 +1924,7 @@ rectangle {
 rectangle {
 	object {
 		x=652
-		y=135
+		y=171
 		width=7
 		height=20
 	}
@@ -2256,7 +1940,7 @@ rectangle {
 rectangle {
 	object {
 		x=662
-		y=135
+		y=171
 		width=7
 		height=20
 	}
@@ -2272,7 +1956,7 @@ rectangle {
 rectangle {
 	object {
 		x=662
-		y=135
+		y=171
 		width=7
 		height=20
 	}
@@ -2288,7 +1972,7 @@ rectangle {
 rectangle {
 	object {
 		x=672
-		y=135
+		y=171
 		width=7
 		height=20
 	}
@@ -2303,8 +1987,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
-		y=135
+		x=713
+		y=171
 		width=7
 		height=20
 	}
@@ -2319,8 +2003,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
-		y=135
+		x=713
+		y=171
 		width=7
 		height=20
 	}
@@ -2335,8 +2019,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
-		y=135
+		x=723
+		y=171
 		width=7
 		height=20
 	}
@@ -2351,8 +2035,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
-		y=135
+		x=723
+		y=171
 		width=7
 		height=20
 	}
@@ -2367,8 +2051,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
-		y=135
+		x=733
+		y=171
 		width=7
 		height=20
 	}
@@ -2383,8 +2067,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
-		y=135
+		x=733
+		y=171
 		width=7
 		height=20
 	}
@@ -2399,8 +2083,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=720
-		y=135
+		x=743
+		y=171
 		width=7
 		height=20
 	}
@@ -2415,8 +2099,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=743
-		y=138
+		x=780
+		y=174
 		width=45
 		height=15
 	}
@@ -2431,8 +2115,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
-		y=138
+		x=830
+		y=174
 		width=45
 		height=15
 	}
@@ -2447,8 +2131,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
-		y=138
+		x=885
+		y=174
 		width=45
 		height=15
 	}
@@ -2463,8 +2147,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
-		y=138
+		x=935
+		y=174
 		width=45
 		height=15
 	}
@@ -2479,8 +2163,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
-		y=138
+		x=990
+		y=174
 		width=45
 		height=15
 	}
@@ -2495,8 +2179,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
-		y=138
+		x=1040
+		y=174
 		width=45
 		height=15
 	}
@@ -2510,39 +2194,39 @@ rectangle {
 	}
 }
 "shell command" {
-    object {
-        x=90
-        y=155
+	object {
+		x=90
+		y=191
 		width=85
-        height=20
+		height=20
 	}
-    command[0] {
-        label="Terminal"
-        name="./psi_qt.sh IPC1629-CAV1 BPM_GPAC_CAV_SMP.ui &"
-    }
-    clr=14
-    bclr=57
-    label="-IPC1629-CAV1"
+	command[0] {
+		label="Terminal"
+		name="./psi_qt.sh IPC1629-CAV1 BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1629-CAV1"
 }
 "shell command" {
-    object {
-        x=175
-        y=155
+	object {
+		x=175
+		y=191
 		width=85
-        height=20
+		height=20
 	}
-    command[0] {
-        label="Terminal"
-        name="./psi_qt.sh IPC1629-CAV2 BPM_GPAC_CAV_SMP.ui &"
-    }
-    clr=14
-    bclr=57
-    label="-IPC1629-CAV2"
+	command[0] {
+		label="Terminal"
+		name="./psi_qt.sh IPC1629-CAV2 BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1629-CAV2"
 }
 "related display" {
 	object {
 		x=260
-		y=155
+		y=191
 		width=65
 		height=20
 	}
@@ -2558,7 +2242,7 @@ rectangle {
 rectangle {
 	object {
 		x=325
-		y=155
+		y=191
 		width=5
 		height=20
 	}
@@ -2574,7 +2258,7 @@ rectangle {
 rectangle {
 	object {
 		x=325
-		y=155
+		y=191
 		width=5
 		height=20
 	}
@@ -2590,7 +2274,7 @@ rectangle {
 "related display" {
 	object {
 		x=330
-		y=155
+		y=191
 		width=65
 		height=20
 	}
@@ -2606,7 +2290,7 @@ rectangle {
 "shell command" {
 	object {
 		x=395
-		y=155
+		y=191
 		width=115
 		height=20
 	}
@@ -2621,7 +2305,7 @@ rectangle {
 rectangle {
 	object {
 		x=510
-		y=155
+		y=191
 		width=5
 		height=20
 	}
@@ -2637,7 +2321,7 @@ rectangle {
 rectangle {
 	object {
 		x=510
-		y=155
+		y=191
 		width=5
 		height=20
 	}
@@ -2653,7 +2337,7 @@ rectangle {
 "choice button" {
 	object {
 		x=520
-		y=158
+		y=194
 		width=55
 		height=15
 	}
@@ -2667,7 +2351,7 @@ rectangle {
 "choice button" {
 	object {
 		x=580
-		y=158
+		y=194
 		width=55
 		height=15
 	}
@@ -2681,7 +2365,7 @@ rectangle {
 rectangle {
 	object {
 		x=642
-		y=155
+		y=191
 		width=7
 		height=20
 	}
@@ -2697,7 +2381,7 @@ rectangle {
 rectangle {
 	object {
 		x=642
-		y=155
+		y=191
 		width=7
 		height=20
 	}
@@ -2713,7 +2397,7 @@ rectangle {
 rectangle {
 	object {
 		x=652
-		y=155
+		y=191
 		width=7
 		height=20
 	}
@@ -2729,7 +2413,7 @@ rectangle {
 rectangle {
 	object {
 		x=652
-		y=155
+		y=191
 		width=7
 		height=20
 	}
@@ -2745,7 +2429,7 @@ rectangle {
 rectangle {
 	object {
 		x=662
-		y=155
+		y=191
 		width=7
 		height=20
 	}
@@ -2761,7 +2445,7 @@ rectangle {
 rectangle {
 	object {
 		x=662
-		y=155
+		y=191
 		width=7
 		height=20
 	}
@@ -2777,7 +2461,7 @@ rectangle {
 rectangle {
 	object {
 		x=672
-		y=155
+		y=191
 		width=7
 		height=20
 	}
@@ -2792,8 +2476,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
-		y=155
+		x=713
+		y=191
 		width=7
 		height=20
 	}
@@ -2808,8 +2492,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
-		y=155
+		x=713
+		y=191
 		width=7
 		height=20
 	}
@@ -2824,8 +2508,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
-		y=155
+		x=723
+		y=191
 		width=7
 		height=20
 	}
@@ -2840,8 +2524,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
-		y=155
+		x=723
+		y=191
 		width=7
 		height=20
 	}
@@ -2856,8 +2540,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
-		y=155
+		x=733
+		y=191
 		width=7
 		height=20
 	}
@@ -2872,8 +2556,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
-		y=155
+		x=733
+		y=191
 		width=7
 		height=20
 	}
@@ -2886,26 +2570,10 @@ rectangle {
 		chan="IPC1629-IBFB:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
-rectangle {
-	object {
-		x=720
-		y=155
-		width=7
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X08) > 0"
-		chan="IPC1629-IBFB:BPM2-IBFB-ROUTER-STATUS"
-	}
-}
 "text update" {
 	object {
-		x=743
-		y=158
+		x=780
+		y=194
 		width=45
 		height=15
 	}
@@ -2920,8 +2588,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
-		y=158
+		x=830
+		y=194
 		width=45
 		height=15
 	}
@@ -2936,8 +2604,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
-		y=158
+		x=885
+		y=194
 		width=45
 		height=15
 	}
@@ -2952,8 +2620,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
-		y=158
+		x=935
+		y=194
 		width=45
 		height=15
 	}
@@ -2968,8 +2636,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
-		y=158
+		x=990
+		y=194
 		width=45
 		height=15
 	}
@@ -2984,8 +2652,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
-		y=158
+		x=1040
+		y=194
 		width=45
 		height=15
 	}
@@ -2999,39 +2667,39 @@ rectangle {
 	}
 }
 "shell command" {
-    object {
-        x=90
-        y=175
+	object {
+		x=90
+		y=211
 		width=85
-        height=20
+		height=20
 	}
-    command[0] {
-        label="Terminal"
-        name="./psi_qt.sh IPC1536-CAV1 BPM_GPAC_CAV_SMP.ui &"
-    }
-    clr=14
-    bclr=57
-    label="-IPC1536-CAV1"
+	command[0] {
+		label="Terminal"
+		name="./psi_qt.sh IPC1536-CAV1 BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1536-CAV1"
 }
 "shell command" {
-    object {
-        x=175
-        y=175
+	object {
+		x=175
+		y=211
 		width=85
-        height=20
+		height=20
 	}
-    command[0] {
-        label="Terminal"
-        name="./psi_qt.sh IPC1536-CAV2 BPM_GPAC_CAV_SMP.ui &"
-    }
-    clr=14
-    bclr=57
-    label="-IPC1536-CAV2"
+	command[0] {
+		label="Terminal"
+		name="./psi_qt.sh IPC1536-CAV2 BPM_GPAC_CAV_SMP.ui &"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1536-CAV2"
 }
 "related display" {
 	object {
 		x=260
-		y=175
+		y=211
 		width=65
 		height=20
 	}
@@ -3047,7 +2715,7 @@ rectangle {
 rectangle {
 	object {
 		x=325
-		y=175
+		y=211
 		width=5
 		height=20
 	}
@@ -3063,7 +2731,7 @@ rectangle {
 rectangle {
 	object {
 		x=325
-		y=175
+		y=211
 		width=5
 		height=20
 	}
@@ -3079,7 +2747,7 @@ rectangle {
 "related display" {
 	object {
 		x=330
-		y=175
+		y=211
 		width=65
 		height=20
 	}
@@ -3095,7 +2763,7 @@ rectangle {
 "shell command" {
 	object {
 		x=395
-		y=175
+		y=211
 		width=115
 		height=20
 	}
@@ -3110,7 +2778,7 @@ rectangle {
 rectangle {
 	object {
 		x=510
-		y=175
+		y=211
 		width=5
 		height=20
 	}
@@ -3126,7 +2794,7 @@ rectangle {
 rectangle {
 	object {
 		x=510
-		y=175
+		y=211
 		width=5
 		height=20
 	}
@@ -3142,7 +2810,7 @@ rectangle {
 "choice button" {
 	object {
 		x=520
-		y=178
+		y=214
 		width=55
 		height=15
 	}
@@ -3156,7 +2824,7 @@ rectangle {
 "choice button" {
 	object {
 		x=580
-		y=178
+		y=214
 		width=55
 		height=15
 	}
@@ -3170,7 +2838,7 @@ rectangle {
 rectangle {
 	object {
 		x=642
-		y=175
+		y=211
 		width=7
 		height=20
 	}
@@ -3186,7 +2854,7 @@ rectangle {
 rectangle {
 	object {
 		x=642
-		y=175
+		y=211
 		width=7
 		height=20
 	}
@@ -3202,7 +2870,7 @@ rectangle {
 rectangle {
 	object {
 		x=652
-		y=175
+		y=211
 		width=7
 		height=20
 	}
@@ -3218,7 +2886,7 @@ rectangle {
 rectangle {
 	object {
 		x=652
-		y=175
+		y=211
 		width=7
 		height=20
 	}
@@ -3234,7 +2902,7 @@ rectangle {
 rectangle {
 	object {
 		x=662
-		y=175
+		y=211
 		width=7
 		height=20
 	}
@@ -3250,7 +2918,7 @@ rectangle {
 rectangle {
 	object {
 		x=662
-		y=175
+		y=211
 		width=7
 		height=20
 	}
@@ -3266,7 +2934,7 @@ rectangle {
 rectangle {
 	object {
 		x=672
-		y=175
+		y=211
 		width=7
 		height=20
 	}
@@ -3281,8 +2949,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
-		y=175
+		x=713
+		y=211
 		width=7
 		height=20
 	}
@@ -3297,8 +2965,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=690
-		y=175
+		x=713
+		y=211
 		width=7
 		height=20
 	}
@@ -3313,8 +2981,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
-		y=175
+		x=723
+		y=211
 		width=7
 		height=20
 	}
@@ -3329,8 +2997,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=700
-		y=175
+		x=723
+		y=211
 		width=7
 		height=20
 	}
@@ -3345,8 +3013,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
-		y=175
+		x=733
+		y=211
 		width=7
 		height=20
 	}
@@ -3361,8 +3029,8 @@ rectangle {
 }
 rectangle {
 	object {
-		x=710
-		y=175
+		x=733
+		y=211
 		width=7
 		height=20
 	}
@@ -3375,26 +3043,10 @@ rectangle {
 		chan="IPC1536-IBFB:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
-rectangle {
-	object {
-		x=720
-		y=175
-		width=7
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X08) > 0"
-		chan="IPC1536-IBFB:BPM2-IBFB-ROUTER-STATUS"
-	}
-}
 "text update" {
 	object {
-		x=743
-		y=178
+		x=780
+		y=214
 		width=45
 		height=15
 	}
@@ -3409,8 +3061,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=793
-		y=178
+		x=830
+		y=214
 		width=45
 		height=15
 	}
@@ -3425,8 +3077,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=848
-		y=178
+		x=885
+		y=214
 		width=45
 		height=15
 	}
@@ -3441,8 +3093,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=898
-		y=178
+		x=935
+		y=214
 		width=45
 		height=15
 	}
@@ -3457,8 +3109,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=953
-		y=178
+		x=990
+		y=214
 		width=45
 		height=15
 	}
@@ -3473,8 +3125,8 @@ rectangle {
 }
 "text update" {
 	object {
-		x=1003
-		y=178
+		x=1040
+		y=214
 		width=45
 		height=15
 	}
@@ -3487,243 +3139,10 @@ rectangle {
 	limits {
 	}
 }
-"shell command" {
-    object {
-        x=90
-        y=195
-		width=85
-        height=20
-	}
-    command[0] {
-        label="Terminal"
-        name="./psi_qt.sh IPC1716-REN1 BPM_GPAC_REN_SMP.ui &"
-    }
-    clr=14
-    bclr=57
-    label="-IPC1716-REN1"
-}
-"shell command" {
-    object {
-        x=175
-        y=195
-		width=85
-        height=20
-	}
-    command[0] {
-        label="Terminal"
-        name="./psi_qt.sh IPC1716-REN2 BPM_GPAC_REN_SMP.ui &"
-    }
-    clr=14
-    bclr=57
-    label="-IPC1716-REN2"
-}
-"related display" {
-	object {
-		x=260
-		y=195
-		width=65
-		height=20
-	}
-	display[0] {
-		label="BPM"
-		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
-		args="DEV=IPC1716"
-	}
-	clr=14
-	bclr=57
-	label="-IPC1716"
-}
 rectangle {
 	object {
-		x=325
-		y=195
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=0"
-		chan="IPC1716:S7GPAC-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=325
-		y=195
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=1"
-		chan="IPC1716:S7GPAC-STATUS"
-	}
-}
-"related display" {
-	object {
-		x=330
-		y=195
-		width=65
-		height=20
-	}
-	display[0] {
-		label="BPM"
-		name="XFELTIM.adl"
-		args="DEV=IPC1716"
-	}
-	clr=14
-	bclr=57
-	label="-XFELTIM"
-}
-"shell command" {
-	object {
-		x=395
-		y=195
-		width=115
-		height=20
-	}
-	command[0] {
-		label="Terminal"
-		name="xterm -T ipc1716 -bg rgb:40/A0/90 -e telnet -l root ipc1716 &"
-	}
-	clr=14
-	bclr=57
-	label="-ipc1716"
-}
-rectangle {
-	object {
-		x=510
-		y=195
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=0"
-		chan="IPC1716-REN:S7GPAC-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=510
-		y=195
-		width=5
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A=1"
-		chan="IPC1716-REN:S7GPAC-STATUS"
-	}
-}
-"choice button" {
-	object {
-		x=520
-		y=198
-		width=55
-		height=15
-	}
-	control {
-		chan="IPC1716-REN:BPM1-ENABLED"
-		clr=14
-		bclr=56
-	}
-	stacking="column"
-}
-"choice button" {
-	object {
-		x=580
-		y=198
-		width=55
-		height=15
-	}
-	control {
-		chan="IPC1716-REN:BPM2-ENABLED"
-		clr=14
-		bclr=56
-	}
-	stacking="column"
-}
-rectangle {
-	object {
-		x=642
-		y=195
-		width=7
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X100000) > 0"
-		chan="IPC1716-REN:COM-SFP-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=642
-		y=195
-		width=7
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X100000) = 0"
-		chan="IPC1716-REN:COM-SFP-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=652
-		y=195
-		width=7
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X80) > 0"
-		chan="IPC1716-REN:BPM1-IBFB-GTX-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=652
-		y=195
-		width=7
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X80) = 0"
-		chan="IPC1716-REN:BPM1-IBFB-GTX-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=662
-		y=195
+		x=683
+		y=131
 		width=7
 		height=20
 	}
@@ -3733,13 +3152,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="IPC1716-REN:BPM1-IBFB-ROUTER-STATUS"
+		chan="BPMI-1860-TL:BPM1-IBFB-ROUTER-STATUS"
 	}
 }
 rectangle {
 	object {
-		x=662
-		y=195
+		x=683
+		y=131
 		width=7
 		height=20
 	}
@@ -3749,29 +3168,722 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="IPC1716-REN:BPM1-IBFB-ROUTER-STATUS"
+		chan="BPMI-1860-TL:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=693
+		y=131
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPMI-1860-TL:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=683
+		y=151
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPMI-1910-TL:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=683
+		y=151
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPMI-1910-TL:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=693
+		y=151
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPMI-1910-TL:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=683
+		y=171
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPMI-1863-TL:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=683
+		y=171
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPMI-1863-TL:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=693
+		y=171
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPMI-1863-TL:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=683
+		y=191
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="IPC1629-IBFB:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=683
+		y=191
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="IPC1629-IBFB:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=693
+		y=191
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="IPC1629-IBFB:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=683
+		y=211
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="IPC1536-IBFB:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=683
+		y=211
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="IPC1536-IBFB:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=693
+		y=211
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="IPC1536-IBFB:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=753
+		y=131
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPMI-1860-TL:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=753
+		y=131
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPMI-1860-TL:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=763
+		y=131
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPMI-1860-TL:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=753
+		y=151
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPMI-1910-TL:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=753
+		y=151
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPMI-1910-TL:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=763
+		y=151
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPMI-1910-TL:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=753
+		y=171
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) = 0"
+		chan="BPMI-1863-TL:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=753
+		y=171
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X02) > 0"
+		chan="BPMI-1863-TL:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=763
+		y=171
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="BPMI-1863-TL:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=753
+		y=191
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="IPC1629-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=753
+		y=191
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="IPC1629-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=763
+		y=191
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="IPC1629-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=753
+		y=211
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="IPC1536-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=753
+		y=211
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="IPC1536-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=763
+		y=211
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="IPC1536-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+text {
+	object {
+		x=590
+		y=85
+		width=40
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RXLOSS"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=591
+		y=75
+		width=40
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="RXSYNC"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=655
+		y=80
+		width=0
+		height=20
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(655,100)
+		(655,80)
+	}
+}
+text {
+	object {
+		x=566
+		y=55
+		width=40
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Local addressed"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=635
+		y=60
+		width=40
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(635,60)
+		(675,60)
+	}
+}
+text {
+	object {
+		x=645
+		y=105
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM1"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=710
+		y=105
+		width=60
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="BPM2"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=572
+		y=45
+		width=40
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Neigbour ping"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=555
+		y=35
+		width=40
+		height=15
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="Neighbour addressed"
+	align="horiz. centered"
+}
+polyline {
+	object {
+		x=635
+		y=40
+		width=60
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(635,40)
+		(695,40)
+	}
+}
+polyline {
+	object {
+		x=635
+		y=50
+		width=50
+		height=0
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(635,50)
+		(685,50)
+	}
+}
+polyline {
+	object {
+		x=685
+		y=50
+		width=0
+		height=50
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(685,100)
+		(685,50)
+	}
+}
+polyline {
+	object {
+		x=695
+		y=40
+		width=0
+		height=60
+	}
+	"basic attribute" {
+		clr=0
+	}
+	points {
+		(695,100)
+		(695,40)
+	}
+}
+rectangle {
+	object {
+		x=743
+		y=191
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) = 0"
+		chan="IPC1629-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=743
+		y=210
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) = 0"
+		chan="IPC1536-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=743
+		y=191
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="IPC1629-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=743
+		y=211
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) > 0"
+		chan="IPC1536-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=763
+		y=231
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) = 0"
+		chan="IPC1908-IBFB:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
 rectangle {
 	object {
 		x=672
-		y=195
-		width=7
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X08) > 0"
-		chan="IPC1716-REN:BPM1-IBFB-ROUTER-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=690
-		y=195
+		y=231
 		width=7
 		height=20
 	}
@@ -3780,30 +3892,14 @@ rectangle {
 	}
 	"dynamic attribute" {
 		vis="calc"
-		calc="(A & 0X10000000) > 0"
-		chan="IPC1716-REN:COM-SFP-STATUS"
+		calc="(A & 0X08) = 0"
+		chan="IPC1908-IBFB:BPM1-IBFB-ROUTER-STATUS"
 	}
 }
 rectangle {
 	object {
-		x=690
-		y=195
-		width=7
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X10000000) = 0"
-		chan="IPC1716-REN:COM-SFP-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=700
-		y=195
+		x=693
+		y=231
 		width=7
 		height=20
 	}
@@ -3812,222 +3908,60 @@ rectangle {
 	}
 	"dynamic attribute" {
 		vis="calc"
-		calc="(A & 0X80) > 0"
-		chan="IPC1716-REN:BPM2-IBFB-GTX-STATUS"
+		calc="(A & 0X04) = 0"
+		chan="IPC1908-IBFB:BPM1-IBFB-ROUTER-STATUS"
 	}
 }
-rectangle {
-	object {
-		x=700
-		y=195
-		width=7
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X80) = 0"
-		chan="IPC1716-REN:BPM2-IBFB-GTX-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=710
-		y=195
-		width=7
-		height=20
-	}
-	"basic attribute" {
-		clr=20
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X02) = 0"
-		chan="IPC1716-REN:BPM2-IBFB-ROUTER-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=710
-		y=195
-		width=7
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X02) > 0"
-		chan="IPC1716-REN:BPM2-IBFB-ROUTER-STATUS"
-	}
-}
-rectangle {
-	object {
-		x=720
-		y=195
-		width=7
-		height=20
-	}
-	"basic attribute" {
-		clr=15
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="(A & 0X08) > 0"
-		chan="IPC1716-REN:BPM2-IBFB-ROUTER-STATUS"
-	}
-}
-"text update" {
-	object {
-		x=743
-		y=198
-		width=45
-		height=15
-	}
-	monitor {
-		chan="IPC1716-REN:BPM1-BPM-ID"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=793
-		y=198
-		width=45
-		height=15
-	}
-	monitor {
-		chan="IPC1716-REN:BPM2-BPM-ID"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=848
-		y=198
-		width=45
-		height=15
-	}
-	monitor {
-		chan="IPC1716-REN:BPM1-ROUTER-ENA"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=898
-		y=198
-		width=45
-		height=15
-	}
-	monitor {
-		chan="IPC1716-REN:BPM2-ROUTER-ENA"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=953
-		y=198
-		width=45
-		height=15
-	}
-	monitor {
-		chan="IPC1716-REN:BPM1-Q-THRESHOLD"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=1003
-		y=198
-		width=45
-		height=15
-	}
-	monitor {
-		chan="IPC1716-REN:BPM2-Q-THRESHOLD"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	limits {
-	}
-}
-"related display" {
+"shell command" {
 	object {
 		x=90
-		y=215
+		y=231
 		width=85
 		height=20
 	}
-	display[0] {
-		label="BPM"
-		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
-		args="DEV=IPC1708-BUT1"
+	command[0] {
+		label="Terminal"
+		name="./psi_qt.sh IPC1908-CAV1 BPM_GPAC_CAV_SMP.ui &"
 	}
 	clr=14
 	bclr=57
-	label="-IPC1708-BUT1"
+	label="-IPC1908-CAV1"
 }
-"related display" {
+"shell command" {
 	object {
 		x=175
-		y=215
+		y=231
 		width=85
 		height=20
 	}
-	display[0] {
-		label="BPM"
-		name="F_DI_FIN250_BPM_GPAC_BUT.adl"
-		args="DEV=IPC1708-BUT2"
+	command[0] {
+		label="Terminal"
+		name="./psi_qt.sh IPC1908-CAV2 BPM_GPAC_CAV_SMP.ui &"
 	}
 	clr=14
 	bclr=57
-	label="-IPC1708-BUT2"
+	label="-IPC1908-CAV2"
 }
 "related display" {
 	object {
 		x=260
-		y=215
+		y=231
 		width=65
 		height=20
 	}
 	display[0] {
 		label="BPM"
 		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
-		args="DEV=IPC1708"
+		args="DEV=IPC1908"
 	}
 	clr=14
 	bclr=57
-	label="-IPC1708"
+	label="-IPC1908"
 }
 rectangle {
 	object {
 		x=325
-		y=215
+		y=231
 		width=5
 		height=20
 	}
@@ -4037,13 +3971,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1708:S7GPAC-STATUS"
+		chan="IPC1908:S7GPAC-STATUS"
 	}
 }
 rectangle {
 	object {
 		x=325
-		y=215
+		y=231
 		width=5
 		height=20
 	}
@@ -4053,20 +3987,20 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1708:S7GPAC-STATUS"
+		chan="IPC1908:S7GPAC-STATUS"
 	}
 }
 "related display" {
 	object {
 		x=330
-		y=215
+		y=231
 		width=65
 		height=20
 	}
 	display[0] {
 		label="BPM"
 		name="XFELTIM.adl"
-		args="DEV=IPC1708"
+		args="DEV=IPC1908"
 	}
 	clr=14
 	bclr=57
@@ -4075,22 +4009,22 @@ rectangle {
 "shell command" {
 	object {
 		x=395
-		y=215
+		y=231
 		width=115
 		height=20
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T ipc1708 -bg rgb:40/A0/90 -e telnet -l root ipc1708 &"
+		name="xterm -T ipc1908 -bg rgb:40/A0/90 -e telnet -l root ipc1908 &"
 	}
 	clr=14
 	bclr=57
-	label="-ipc1708"
+	label="-ipc1908"
 }
 rectangle {
 	object {
 		x=510
-		y=215
+		y=231
 		width=5
 		height=20
 	}
@@ -4100,13 +4034,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="IPC1708-BUT:S7GPAC-STATUS"
+		chan="IPC1908-IBFB:S7GPAC-STATUS"
 	}
 }
 rectangle {
 	object {
 		x=510
-		y=215
+		y=231
 		width=5
 		height=20
 	}
@@ -4116,18 +4050,18 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="IPC1708-BUT:S7GPAC-STATUS"
+		chan="IPC1908-IBFB:S7GPAC-STATUS"
 	}
 }
 "choice button" {
 	object {
 		x=520
-		y=218
+		y=234
 		width=55
 		height=15
 	}
 	control {
-		chan="IPC1708-BUT:BPM1-ENABLED"
+		chan="IPC1908-IBFB:BPM1-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -4136,12 +4070,12 @@ rectangle {
 "choice button" {
 	object {
 		x=580
-		y=218
+		y=234
 		width=55
 		height=15
 	}
 	control {
-		chan="IPC1708-BUT:BPM2-ENABLED"
+		chan="IPC1908-IBFB:BPM2-ENABLED"
 		clr=14
 		bclr=56
 	}
@@ -4150,7 +4084,7 @@ rectangle {
 rectangle {
 	object {
 		x=642
-		y=215
+		y=231
 		width=7
 		height=20
 	}
@@ -4160,13 +4094,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) > 0"
-		chan="IPC1708-BUT:COM-SFP-STATUS"
+		chan="IPC1908-IBFB:COM-SFP-STATUS"
 	}
 }
 rectangle {
 	object {
 		x=642
-		y=215
+		y=231
 		width=7
 		height=20
 	}
@@ -4176,13 +4110,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X100000) = 0"
-		chan="IPC1708-BUT:COM-SFP-STATUS"
+		chan="IPC1908-IBFB:COM-SFP-STATUS"
 	}
 }
 rectangle {
 	object {
 		x=652
-		y=215
+		y=231
 		width=7
 		height=20
 	}
@@ -4192,13 +4126,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="IPC1708-BUT:BPM1-IBFB-GTX-STATUS"
+		chan="IPC1908-IBFB:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
 	object {
 		x=652
-		y=215
+		y=231
 		width=7
 		height=20
 	}
@@ -4208,13 +4142,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="IPC1708-BUT:BPM1-IBFB-GTX-STATUS"
+		chan="IPC1908-IBFB:BPM1-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
 	object {
 		x=662
-		y=215
+		y=231
 		width=7
 		height=20
 	}
@@ -4224,13 +4158,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="IPC1708-BUT:BPM1-IBFB-ROUTER-STATUS"
+		chan="IPC1908-IBFB:BPM1-IBFB-ROUTER-STATUS"
 	}
 }
 rectangle {
 	object {
 		x=662
-		y=215
+		y=231
 		width=7
 		height=20
 	}
@@ -4240,13 +4174,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="IPC1708-BUT:BPM1-IBFB-ROUTER-STATUS"
+		chan="IPC1908-IBFB:BPM1-IBFB-ROUTER-STATUS"
 	}
 }
 rectangle {
 	object {
 		x=672
-		y=215
+		y=231
 		width=7
 		height=20
 	}
@@ -4256,13 +4190,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="IPC1708-BUT:BPM1-IBFB-ROUTER-STATUS"
+		chan="IPC1908-IBFB:BPM1-IBFB-ROUTER-STATUS"
 	}
 }
 rectangle {
 	object {
-		x=690
-		y=215
+		x=713
+		y=231
 		width=7
 		height=20
 	}
@@ -4272,13 +4206,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) > 0"
-		chan="IPC1708-BUT:COM-SFP-STATUS"
+		chan="IPC1908-IBFB:COM-SFP-STATUS"
 	}
 }
 rectangle {
 	object {
-		x=690
-		y=215
+		x=713
+		y=231
 		width=7
 		height=20
 	}
@@ -4288,13 +4222,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X10000000) = 0"
-		chan="IPC1708-BUT:COM-SFP-STATUS"
+		chan="IPC1908-IBFB:COM-SFP-STATUS"
 	}
 }
 rectangle {
 	object {
-		x=700
-		y=215
+		x=723
+		y=231
 		width=7
 		height=20
 	}
@@ -4304,13 +4238,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) > 0"
-		chan="IPC1708-BUT:BPM2-IBFB-GTX-STATUS"
+		chan="IPC1908-IBFB:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
 	object {
-		x=700
-		y=215
+		x=723
+		y=231
 		width=7
 		height=20
 	}
@@ -4320,13 +4254,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X80) = 0"
-		chan="IPC1708-BUT:BPM2-IBFB-GTX-STATUS"
+		chan="IPC1908-IBFB:BPM2-IBFB-GTX-STATUS"
 	}
 }
 rectangle {
 	object {
-		x=710
-		y=215
+		x=733
+		y=231
 		width=7
 		height=20
 	}
@@ -4336,13 +4270,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) = 0"
-		chan="IPC1708-BUT:BPM2-IBFB-ROUTER-STATUS"
+		chan="IPC1908-IBFB:BPM2-IBFB-ROUTER-STATUS"
 	}
 }
 rectangle {
 	object {
-		x=710
-		y=215
+		x=733
+		y=231
 		width=7
 		height=20
 	}
@@ -4352,13 +4286,221 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X02) > 0"
-		chan="IPC1708-BUT:BPM2-IBFB-ROUTER-STATUS"
+		chan="IPC1908-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+"text update" {
+	object {
+		x=780
+		y=234
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IPC1908-IBFB:BPM1-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=830
+		y=234
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IPC1908-IBFB:BPM2-BPM-ID"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=885
+		y=234
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IPC1908-IBFB:BPM1-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=935
+		y=234
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IPC1908-IBFB:BPM2-ROUTER-ENA"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=990
+		y=234
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IPC1908-IBFB:BPM1-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=1040
+		y=234
+		width=45
+		height=15
+	}
+	monitor {
+		chan="IPC1908-IBFB:BPM2-Q-THRESHOLD"
+		clr=14
+		bclr=4
+	}
+	align="horiz. right"
+	limits {
 	}
 }
 rectangle {
 	object {
-		x=720
-		y=215
+		x=683
+		y=231
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="IPC1908-IBFB:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=683
+		y=231
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="IPC1908-IBFB:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=693
+		y=231
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="IPC1908-IBFB:BPM1-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=753
+		y=231
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) = 0"
+		chan="IPC1908-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=753
+		y=231
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X01) > 0"
+		chan="IPC1908-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=763
+		y=231
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X04) > 0"
+		chan="IPC1908-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=743
+		y=230
+		width=7
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="(A & 0X08) = 0"
+		chan="IPC1908-IBFB:BPM2-IBFB-ROUTER-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=743
+		y=230
 		width=7
 		height=20
 	}
@@ -4368,102 +4510,6 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="(A & 0X08) > 0"
-		chan="IPC1708-BUT:BPM2-IBFB-ROUTER-STATUS"
-	}
-}
-"text update" {
-	object {
-		x=743
-		y=218
-		width=45
-		height=15
-	}
-	monitor {
-		chan="IPC1708-BUT:BPM1-BPM-ID"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=793
-		y=218
-		width=45
-		height=15
-	}
-	monitor {
-		chan="IPC1708-BUT:BPM2-BPM-ID"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=848
-		y=218
-		width=45
-		height=15
-	}
-	monitor {
-		chan="IPC1708-BUT:BPM1-ROUTER-ENA"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=898
-		y=218
-		width=45
-		height=15
-	}
-	monitor {
-		chan="IPC1708-BUT:BPM2-ROUTER-ENA"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=953
-		y=218
-		width=45
-		height=15
-	}
-	monitor {
-		chan="IPC1708-BUT:BPM1-Q-THRESHOLD"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=1003
-		y=218
-		width=45
-		height=15
-	}
-	monitor {
-		chan="IPC1708-BUT:BPM2-Q-THRESHOLD"
-		clr=14
-		bclr=4
-	}
-	align="horiz. right"
-	limits {
+		chan="IPC1908-IBFB:BPM2-IBFB-ROUTER-STATUS"
 	}
 }

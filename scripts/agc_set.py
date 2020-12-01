@@ -83,7 +83,7 @@ mbu_list = (
     ("xfelgpac3di1899tl", "0x8A", "0x8A", "cav", "cav"),
     ("xfelgpac4di1899tl", "0x8A", "0x8A", "cav", "cav"),
     ("xfelgpac1di1973tl", "0x8A", "0x8A", "but", "but"),
-    ("xfelgpac1di2018tl", "0x8", "0x2", "but", "but"),
+    ("xfelgpac1di2018tl", "0x0A", "0x2", "but", "but"),
     ("xfelgpac1di2100t2", "0x8", "0x8", "but", ""),
     ("xfelgpac1dixs1ug3r02t1", "0x8", "0x2", "but", "but"),
     ("xfelgpac1di2180t2", "0x8", "0x8", "but", "but"),
