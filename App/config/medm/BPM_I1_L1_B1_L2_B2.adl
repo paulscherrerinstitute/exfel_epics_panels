@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=949
-		y=338
+		x=435
+		y=236
 		width=700
 		height=670
 	}
@@ -414,11 +414,11 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T xfelgpac2di55i1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac2di55i1 &"
+		name="xterm -T xfelgpac2di55i1 -bg rgb:40/A0/90 -e telnet -l root xfelgpac3di55i1_1 &"
 	}
 	clr=14
 	bclr=57
-	label="-xfelgpac2di55i1"
+	label="-xfelgpac3di55i1_1"
 }
 "shell command" {
 	object {
@@ -492,11 +492,11 @@ text {
 	display[0] {
 		label="BPM"
 		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
-		args="DEV=XFELGPAC2DI55I1"
+		args="DEV=XFELGPAC3DI55I1_1"
 	}
 	clr=14
 	bclr=57
-	label="-IPC1485"
+	label="-IPC1925"
 }
 "related display" {
 	object {
@@ -639,7 +639,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="XFELGPAC2DI55I1:S7GPAC-STATUS"
+		chan="XFELGPAC3DI55I1_1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -655,7 +655,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="XFELGPAC2DI55I1:S7GPAC-STATUS"
+		chan="XFELGPAC3DI55I1_1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -3309,7 +3309,7 @@ text {
 		bclr=30
 	}
 	label="BPMF-47-I1"
-	press_msg="xfelgpac2di55i1:51236#BPMF-47-I1"
+	press_msg="xfelgpac3di55i1_1:51236#BPMF-47-I1"
 }
 "message button" {
 	object {
@@ -3324,7 +3324,7 @@ text {
 		bclr=30
 	}
 	label="BPMF-48-I1"
-	press_msg="xfelgpac2di55i1:51238#BPMF-48-I1"
+	press_msg="xfelgpac3di55i1_1:51238#BPMF-48-I1"
 }
 "message button" {
 	object {
