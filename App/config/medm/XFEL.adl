@@ -219,7 +219,7 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="firefox http://ttfinfo.desy.de/XFELelog &"
+		name="firefox http://ttfinfo.desy.de &"
 	}
 	clr=14
 	bclr=57
@@ -531,4 +531,19 @@ text {
 	clr=14
 	bclr=57
 	label="-XFEL Main"
+}
+"shell command" {
+	object {
+		x=715
+		y=130
+		width=110
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="firefox http://doocs-git.desy.de/cgit/vendor/psi/exfel_maintenance.git &"
+	}
+	clr=14
+	bclr=57
+	label="-DOOCS Git"
 }

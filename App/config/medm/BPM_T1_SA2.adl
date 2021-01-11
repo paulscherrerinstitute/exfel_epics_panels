@@ -1,6 +1,6 @@
 
 file {
-	name="/home/rrybanie/ibfb/exfel_epics_panels/App/config/medm/BPM_T1_SA2.adl"
+	name="/xfel/controls/App/config/medm/BPM_T1_SA2.adl"
 	version=030105
 }
 display {
@@ -4176,8 +4176,8 @@ rectangle {
 		clr=14
 		bclr=30
 	}
-	label="BPME-2410-SA2"
-	press_msg="xfelgpac1di2414sa2:51236#BPME-2410-SA2"
+	label="BPME-2416-SA2"
+	press_msg="xfelgpac1di2414sa2:51236#BPME-2416-SA2"
 }
 rectangle {
 	object {
@@ -4202,8 +4202,8 @@ rectangle {
 		clr=14
 		bclr=30
 	}
-	label="BPME-2416-SA2"
-	press_msg="xfelgpac1di2414sa2:51238#BPME-2416-SA2"
+	label="BPME-2410-SA2"
+	press_msg="xfelgpac1di2414sa2:51238#BPME-2410-SA2"
 }
 text {
 	object {
