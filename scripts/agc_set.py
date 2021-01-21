@@ -83,7 +83,7 @@ mbu_list = (
     ("xfelgpac3di1899tl", "0x8A", "0x8A", "cav", "cav"),
     ("xfelgpac4di1899tl", "0x8A", "0x8A", "cav", "cav"),
     ("xfelgpac1di1973tl", "0x8A", "0x8A", "but", "but"),
-    ("xfelgpac1di2018tl", "0x0A", "0x2", "but", "but"),
+    ("xfelgpac1di2018tl", "0x0A", "0x8", "but", "but"),
     ("xfelgpac1di2100t2", "0x8", "0x8", "but", ""),
     ("xfelgpac1dixs1ug3r02t1", "0x8", "0x2", "but", "but"),
     ("xfelgpac1di2180t2", "0x8", "0x8", "but", "but"),
@@ -174,7 +174,19 @@ mbu_list = (
     ("xfelgpac1di2047tld", "0x80", "0x80", "but", "but"),
     ("xfelgpac1di2074tld", "0x8", "0x80", "but", "but"),
     ("xfelgpac3di2100tld", "0x80", "0x80", "but", "but"),
-    ("xfelgpac1dixs1ug3tld", "0x80", "0x80", "but", "")
+    ("xfelgpac1dixs1ug3tld", "0x80", "0x80", "but", ""),
+    ### Added 21.01.2021
+    ("xfelgpac3di55i1_1", "0xFA", "0xFA", "cav", "cav"),
+    ("xfelgpac2di1198l3", "0x8A",  "0x8A", "" , "ren"),
+    ("xfelgpac2di1249l3", "0x8A",  "0x8A", "" , "ren"),
+    ("xfelgpac1di1685cl_1", "0x8A", "0x8A", "cav", "cav"),
+    ("xfelgpac1di2944sa3", "0x8", "0x8", "cav", "cav"),
+    ("xfelgpac1di2951sa3", "0x8", "0x8", "cav", "cav"),
+    ("xfelgpac1di2955sa3", "0x8", "0x8", "but", "cav"),
+
+
+
+
 )
 
 class bpmProcess:
@@ -441,8 +453,8 @@ def main():
 
     now = datetime.now()
     nowstr = now.strftime('%Y_%m_%d_%H%M')
-    f_success_name = "agc_set_{}.log".format(nowstr)
-    f_failed_name = "agc_set_{}.err".format(nowstr)
+    f_success_name = "agc_set/agc_set_{}.log".format(nowstr)
+    f_failed_name = "agc_set/agc_set_{}.err".format(nowstr)
     
     f_success = open(f_success_name, "w+")
     print('Opened log file: ' + f_success_name)
