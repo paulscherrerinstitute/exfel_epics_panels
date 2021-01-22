@@ -135,11 +135,11 @@ polyline {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T psi-softioc-2:50201 -bg rgb:30/40/60 -fg white -e telnet -l root psi-softioc-2 50201 &"
+		name="xterm -T psi-softioc:50203 -bg rgb:30/40/60 -fg white -e telnet -l root psi-softioc 50203 &"
 	}
 	clr=14
 	bclr=57
-	label="-psi-softioc-2:50201"
+	label="-psi-softioc:50203"
 }
 "related display" {
 	object {
