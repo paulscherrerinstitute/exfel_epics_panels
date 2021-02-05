@@ -1,14 +1,14 @@
 
 file {
-	name="/xfel/controls/App/config/medm/BPM_T4_SA3_T4D.adl"
-	version=030105
+	name="/home/rrybanie/ibfb/exfel_epics_panels/App/config/medm/BPM_T4_SA3_T4D.adl"
+	version=030115
 }
 display {
 	object {
-		x=798
-		y=237
-		width=700
-		height=510
+		x=431
+		y=332
+		width=703
+		height=553
 	}
 	clr=14
 	bclr=4
@@ -2263,7 +2263,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=435
+		y=475
 		width=10
 		height=10
 	}
@@ -2276,7 +2276,7 @@ text {
 text {
 	object {
 		x=265
-		y=435
+		y=475
 		width=10
 		height=10
 	}
@@ -2289,7 +2289,7 @@ text {
 text {
 	object {
 		x=285
-		y=435
+		y=475
 		width=10
 		height=10
 	}
@@ -2302,29 +2302,29 @@ text {
 "shell command" {
 	object {
 		x=40
-		y=430
+		y=470
 		width=130
 		height=20
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -T xfelgpac1di2943sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2943sa3 &"
+		name="xterm -T xfelgpac1di2955sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2955sa3 &"
 	}
 	clr=14
 	bclr=57
-	label="-xfelgpac1di2943sa3"
+	label="-xfelgpac1di2955sa3"
 }
 "related display" {
 	object {
 		x=170
-		y=430
+		y=470
 		width=65
 		height=20
 	}
 	display[0] {
 		label="BPM"
 		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
-		args="DEV=XFELGPAC1DI2943SA3"
+		args="DEV=XFELGPAC1DI2955SA3"
 	}
 	clr=14
 	bclr=57
@@ -2333,7 +2333,7 @@ text {
 rectangle {
 	object {
 		x=235
-		y=430
+		y=470
 		width=5
 		height=20
 	}
@@ -2343,13 +2343,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="XFELGPAC1DI2943SA3:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2955SA3:S7GPAC-STATUS"
 	}
 }
 rectangle {
 	object {
 		x=235
-		y=430
+		y=470
 		width=5
 		height=20
 	}
@@ -2359,13 +2359,13 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="XFELGPAC1DI2943SA3:S7GPAC-STATUS"
+		chan="XFELGPAC1DI2955SA3:S7GPAC-STATUS"
 	}
 }
 rectangle {
 	object {
 		x=500
-		y=430
+		y=470
 		width=100
 		height=20
 	}
@@ -2376,7 +2376,7 @@ rectangle {
 "message button" {
 	object {
 		x=600
-		y=430
+		y=470
 		width=100
 		height=20
 	}
@@ -2385,13 +2385,13 @@ rectangle {
 		clr=14
 		bclr=30
 	}
-	label="BPME-2940-SA3"
-	press_msg="xfelgpac1di2943sa3:51238#BPME-2940-SA3"
+	label="BPME-2955-SA3"
+	press_msg="xfelgpac1di2955sa3:51238#BPME-2955-SA3"
 }
 "message button" {
 	object {
 		x=300
-		y=430
+		y=470
 		width=100
 		height=20
 	}
@@ -2401,12 +2401,12 @@ rectangle {
 		bclr=40
 	}
 	label="BPMA-2961-T4D"
-	press_msg="xfelgpac1di2943sa3:51235#BPMA-2961-T4D"
+	press_msg="xfelgpac1di2955sa3:51235#BPMA-2961-T4D"
 }
 "message button" {
 	object {
 		x=400
-		y=430
+		y=470
 		width=100
 		height=20
 	}
@@ -2416,12 +2416,12 @@ rectangle {
 		bclr=40
 	}
 	label="BPMA-2974-T4D"
-	press_msg="xfelgpac1di2943sa3:51236#BPMA-2974-T4D"
+	press_msg="xfelgpac1di2955sa3:51236#BPMA-2974-T4D"
 }
 polyline {
 	object {
 		x=0
-		y=450
+		y=490
 		width=700
 		height=0
 	}
@@ -2432,14 +2432,14 @@ polyline {
 		chan="$(DEV):$(RFFE)-HS-5V-I.EGU"
 	}
 	points {
-		(0,450)
-		(700,450)
+		(0,490)
+		(700,490)
 	}
 }
 "shell command" {
 	object {
 		x=40
-		y=450
+		y=490
 		width=130
 		height=20
 	}
@@ -2454,7 +2454,7 @@ polyline {
 "related display" {
 	object {
 		x=170
-		y=450
+		y=490
 		width=65
 		height=20
 	}
@@ -2470,7 +2470,7 @@ polyline {
 rectangle {
 	object {
 		x=235
-		y=450
+		y=490
 		width=5
 		height=20
 	}
@@ -2486,7 +2486,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=450
+		y=490
 		width=5
 		height=20
 	}
@@ -2502,7 +2502,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=455
+		y=495
 		width=10
 		height=10
 	}
@@ -2515,7 +2515,7 @@ text {
 text {
 	object {
 		x=265
-		y=455
+		y=495
 		width=10
 		height=10
 	}
@@ -2528,7 +2528,7 @@ text {
 text {
 	object {
 		x=285
-		y=455
+		y=495
 		width=10
 		height=10
 	}
@@ -2541,7 +2541,7 @@ text {
 "message button" {
 	object {
 		x=300
-		y=450
+		y=490
 		width=100
 		height=20
 	}
@@ -2556,7 +2556,7 @@ text {
 "message button" {
 	object {
 		x=400
-		y=450
+		y=490
 		width=100
 		height=20
 	}
@@ -2571,7 +2571,7 @@ text {
 rectangle {
 	object {
 		x=500
-		y=450
+		y=490
 		width=100
 		height=20
 	}
@@ -2582,7 +2582,7 @@ rectangle {
 "message button" {
 	object {
 		x=600
-		y=450
+		y=490
 		width=100
 		height=20
 	}
@@ -2597,7 +2597,7 @@ rectangle {
 "shell command" {
 	object {
 		x=40
-		y=470
+		y=510
 		width=130
 		height=20
 	}
@@ -2612,7 +2612,7 @@ rectangle {
 "related display" {
 	object {
 		x=170
-		y=470
+		y=510
 		width=65
 		height=20
 	}
@@ -2628,7 +2628,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=470
+		y=510
 		width=5
 		height=20
 	}
@@ -2644,7 +2644,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=470
+		y=510
 		width=5
 		height=20
 	}
@@ -2660,7 +2660,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=475
+		y=515
 		width=10
 		height=10
 	}
@@ -2673,7 +2673,7 @@ text {
 text {
 	object {
 		x=265
-		y=475
+		y=515
 		width=10
 		height=10
 	}
@@ -2686,7 +2686,7 @@ text {
 text {
 	object {
 		x=285
-		y=475
+		y=515
 		width=10
 		height=10
 	}
@@ -2699,7 +2699,7 @@ text {
 "message button" {
 	object {
 		x=300
-		y=470
+		y=510
 		width=100
 		height=20
 	}
@@ -2714,7 +2714,7 @@ text {
 "message button" {
 	object {
 		x=400
-		y=470
+		y=510
 		width=100
 		height=20
 	}
@@ -2729,7 +2729,7 @@ text {
 "message button" {
 	object {
 		x=500
-		y=470
+		y=510
 		width=100
 		height=20
 	}
@@ -2744,7 +2744,7 @@ text {
 "message button" {
 	object {
 		x=600
-		y=470
+		y=510
 		width=100
 		height=20
 	}
@@ -2759,7 +2759,7 @@ text {
 text {
 	object {
 		x=5
-		y=475
+		y=515
 		width=25
 		height=10
 	}
@@ -2772,7 +2772,7 @@ text {
 "shell command" {
 	object {
 		x=40
-		y=490
+		y=530
 		width=130
 		height=20
 	}
@@ -2787,7 +2787,7 @@ text {
 "related display" {
 	object {
 		x=170
-		y=490
+		y=530
 		width=65
 		height=20
 	}
@@ -2803,7 +2803,7 @@ text {
 rectangle {
 	object {
 		x=235
-		y=490
+		y=530
 		width=5
 		height=20
 	}
@@ -2819,7 +2819,7 @@ rectangle {
 rectangle {
 	object {
 		x=235
-		y=490
+		y=530
 		width=5
 		height=20
 	}
@@ -2835,7 +2835,7 @@ rectangle {
 text {
 	object {
 		x=245
-		y=495
+		y=535
 		width=10
 		height=10
 	}
@@ -2848,7 +2848,7 @@ text {
 text {
 	object {
 		x=265
-		y=495
+		y=535
 		width=10
 		height=10
 	}
@@ -2861,7 +2861,7 @@ text {
 text {
 	object {
 		x=285
-		y=495
+		y=535
 		width=10
 		height=10
 	}
@@ -2874,7 +2874,7 @@ text {
 "message button" {
 	object {
 		x=300
-		y=490
+		y=530
 		width=100
 		height=20
 	}
@@ -4015,7 +4015,7 @@ text {
 "message button" {
 	object {
 		x=400
-		y=490
+		y=530
 		width=100
 		height=20
 	}
@@ -4026,4 +4026,312 @@ text {
 	}
 	label="BPMA-2984-T4D"
 	press_msg="xfelgpac1di3090t4d:51236#BPMA-2984-T4D"
+}
+text {
+	object {
+		x=245
+		y=435
+		width=10
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=265
+		y=435
+		width=10
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=285
+		y=435
+		width=10
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+	align="horiz. centered"
+}
+"shell command" {
+	object {
+		x=40
+		y=430
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2944sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2944sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2944sa3"
+}
+"related display" {
+	object {
+		x=170
+		y=430
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2944SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1911"
+}
+rectangle {
+	object {
+		x=235
+		y=430
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2944SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=430
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2944SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=300
+		y=430
+		width=100
+		height=20
+	}
+	"basic attribute" {
+		clr=30
+	}
+}
+"message button" {
+	object {
+		x=400
+		y=430
+		width=100
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=30
+	}
+	label="BPME-2940-SA3"
+	press_msg="xfelgpac1di2944sa3:51236#BPME-2940-SA3"
+}
+rectangle {
+	object {
+		x=500
+		y=430
+		width=100
+		height=20
+	}
+	"basic attribute" {
+		clr=30
+	}
+}
+"message button" {
+	object {
+		x=600
+		y=430
+		width=100
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=30
+	}
+	label="BPME-2944-SA3"
+	press_msg="xfelgpac1di2944sa3:51238#BPME-2944-SA3"
+}
+text {
+	object {
+		x=245
+		y=455
+		width=10
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=265
+		y=455
+		width=10
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="2"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=285
+		y=455
+		width=10
+		height=10
+	}
+	"basic attribute" {
+		clr=0
+	}
+	textix="0"
+	align="horiz. centered"
+}
+"shell command" {
+	object {
+		x=40
+		y=450
+		width=130
+		height=20
+	}
+	command[0] {
+		label="Terminal"
+		name="xterm -T xfelgpac1di2951sa3 -bg rgb:40/A0/90 -e telnet -l root xfelgpac1di2951sa3 &"
+	}
+	clr=14
+	bclr=57
+	label="-xfelgpac1di2951sa3"
+}
+"related display" {
+	object {
+		x=170
+		y=450
+		width=65
+		height=20
+	}
+	display[0] {
+		label="BPM"
+		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
+		args="DEV=XFELGPAC1DI2951SA3"
+	}
+	clr=14
+	bclr=57
+	label="-IPC1910"
+}
+rectangle {
+	object {
+		x=235
+		y=450
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=20
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=0"
+		chan="XFELGPAC1DI2951SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=235
+		y=450
+		width=5
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=1"
+		chan="XFELGPAC1DI2951SA3:S7GPAC-STATUS"
+	}
+}
+rectangle {
+	object {
+		x=300
+		y=450
+		width=100
+		height=20
+	}
+	"basic attribute" {
+		clr=30
+	}
+}
+"message button" {
+	object {
+		x=400
+		y=450
+		width=100
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=30
+	}
+	label="BPME-2947-SA3"
+	press_msg="xfelgpac1di2951sa3:51236#BPME-2947-SA3"
+}
+rectangle {
+	object {
+		x=500
+		y=450
+		width=100
+		height=20
+	}
+	"basic attribute" {
+		clr=30
+	}
+}
+"message button" {
+	object {
+		x=600
+		y=450
+		width=100
+		height=20
+	}
+	control {
+		chan="CAVBPM:BPM-STRING.AA"
+		clr=14
+		bclr=30
+	}
+	label="BPME-2951-SA3"
+	press_msg="xfelgpac1di2951sa3:51238#BPME-2951-SA3"
 }

@@ -1,12 +1,12 @@
 
 file {
-	name="/xfel/controls/App/config/medm/BPM_CL_TL_TLD.adl"
-	version=030105
+	name="/home/rrybanie/ibfb/exfel_epics_panels/App/config/medm/BPM_CL_TL_TLD.adl"
+	version=030115
 }
 display {
 	object {
-		x=29
-		y=632
+		x=31
+		y=634
 		width=700
 		height=470
 	}
@@ -285,11 +285,11 @@ text {
 	}
 	command[0] {
 		label="Terminal"
-		name="xterm -bg rgb:40/A0/90 -T xfelgpac1di1685cl -e telnet -l root xfelgpac1di1685cl &"
+		name="xterm -bg rgb:40/A0/90 -T xfelgpac1di1685cl_1 -e telnet -l root xfelgpac1di1685cl_1 &"
 	}
 	clr=14
 	bclr=57
-	label="-xfelgpac1di1685cl"
+	label="-xfelgpac1di1685cl_1"
 }
 "shell command" {
 	object {
@@ -394,11 +394,11 @@ text {
 	display[0] {
 		label="BPM"
 		name="F_DI_FIN250_BPM_GPAC_SERVICE.adl"
-		args="DEV=XFELGPAC1DI1685CL"
+		args="DEV=XFELGPAC1DI1685CL_1"
 	}
 	clr=14
 	bclr=57
-	label="-IPC1512"
+	label="-IPC1914"
 }
 rectangle {
 	object {
@@ -413,7 +413,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=0"
-		chan="XFELGPAC1DI1685CL:S7GPAC-STATUS"
+		chan="XFELGPAC1DI1685CL_1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -429,7 +429,7 @@ rectangle {
 	"dynamic attribute" {
 		vis="calc"
 		calc="A=1"
-		chan="XFELGPAC1DI1685CL:S7GPAC-STATUS"
+		chan="XFELGPAC1DI1685CL_1:S7GPAC-STATUS"
 	}
 }
 rectangle {
@@ -2721,7 +2721,7 @@ rectangle {
 		bclr=30
 	}
 	label="BPMI-1675-CL"
-	press_msg="xfelgpac1di1685cl:51236#BPMI-1675-CL"
+	press_msg="xfelgpac1di1685cl_1:51236#BPMI-1675-CL"
 }
 rectangle {
 	object {
@@ -2747,7 +2747,7 @@ rectangle {
 		bclr=30
 	}
 	label="BPMI-1693-CL"
-	press_msg="xfelgpac1di1685cl:51238#BPMI-1693-CL"
+	press_msg="xfelgpac1di1685cl_1:51238#BPMI-1693-CL"
 }
 "message button" {
 	object {
