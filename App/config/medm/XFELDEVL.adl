@@ -1,7 +1,7 @@
 
 file {
-	name="/xfel/controls/App/config/medm/XFELDEVL.adl"
-	version=030105
+	name="/home/psiepics/xfel/App/config/medm/XFELDEVL.adl"
+	version=030115
 }
 display {
 	object {
@@ -1556,7 +1556,7 @@ rectangle {
 	}
 	command[0] {
 		label="Terminal"
-		name="./xfel_qt.sh DEVCR09631 BPM_GPAC_REN_SMP.ui &"
+		name="./xfel_qt.sh DEVCR09631 BPM_GPAC_CAV_SMP_single.ui &"
 	}
 	clr=14
 	bclr=57
@@ -1603,7 +1603,7 @@ rectangle {
 	}
 	command[0] {
 		label="Terminal"
-		name="./xfel_qt.sh DEVCR09632 BPM_GPAC_REN_SMP.ui &"
+		name="./xfel_qt.sh DEVCR09632 BPM_GPAC_CAV_SMP_single.ui &"
 	}
 	clr=14
 	bclr=57
